@@ -75,7 +75,7 @@
       bottom: 24px;
       z-index: 5;
       display: grid;
-      grid-template-columns: repeat(4, minmax(104px, auto));
+      grid-template-columns: repeat(9, minmax(86px, auto));
       gap: 8px;
       max-width: calc(100% - 60px);
     }
@@ -84,8 +84,8 @@
       background: rgba(255,255,255,0.82);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 9px 11px;
-      min-height: 54px;
+      padding: 8px 10px;
+      min-height: 50px;
       box-shadow: 0 8px 20px rgba(32,45,63,0.05);
     }
 
@@ -99,7 +99,7 @@
 
     .metric span {
       font-variant-numeric: tabular-nums;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 800;
     }
 
@@ -228,6 +228,46 @@
       accent-color: var(--green);
     }
 
+    .formula-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .formula-row {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding-bottom: 9px;
+      border-bottom: 1px solid #e4ebf3;
+    }
+
+    .formula-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .formula-row b {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .formula-row code {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      white-space: normal;
+    }
+
+    .formula-row span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
     .label-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -344,10 +384,15 @@
       <h1 class="title">자전거 바퀴와 세차운동</h1>
       <canvas id="scene"></canvas>
       <div class="readout" aria-live="polite">
-        <div class="metric"><b>질량</b><span id="massMetric">3.0 kg</span></div>
-        <div class="metric"><b>축 길이</b><span id="distanceMetric">1.00 m</span></div>
+        <div class="metric"><b>질량</b><span id="massMetric">1.5 kg</span></div>
+        <div class="metric"><b>축 길이</b><span id="distanceMetric">0.40 m</span></div>
         <div class="metric"><b>중력</b><span id="gravityMetric">9.81 m/s²</span></div>
-        <div class="metric"><b>토크</b><span id="torqueMetric">29.4 N·m</span></div>
+        <div class="metric"><b>무게 W</b><span id="weightMetric">14.7 N</span></div>
+        <div class="metric"><b>각도 θ</b><span id="thetaMetric">90°</span></div>
+        <div class="metric"><b>접선 Fθ</b><span id="tangentMetric">-14.7 N</span></div>
+        <div class="metric"><b>토크</b><span id="torqueMetric">5.9 N·m</span></div>
+        <div class="metric"><b id="angularMetricLabel">각운동량 L</b><span id="angularMetric">1.29</span></div>
+        <div class="metric"><b>세차 Ω</b><span id="precessionMetric">4.58 rad/s</span></div>
       </div>
     </section>
 
@@ -368,21 +413,27 @@
         </div>
 
         <div class="row">
+          <label for="timeScale">시간 배속</label>
+          <output id="timeScaleOutput">0.10x</output>
+          <input id="timeScale" type="range" min="0.05" max="1" step="0.05" value="0.1" />
+        </div>
+
+        <div class="row">
           <label for="spinSpeed">바퀴 회전속도</label>
           <output id="spinOutput">7.0 rad/s</output>
           <input id="spinSpeed" type="range" min="0" max="14" step="0.1" value="7" />
         </div>
 
         <div class="row">
-          <label for="mass">바퀴와 축의 무게</label>
-          <output id="massOutput">3.0 kg</output>
-          <input id="mass" type="range" min="0.5" max="12" step="0.1" value="3" />
+          <label for="mass">바퀴와 축의 질량</label>
+          <output id="massOutput">1.5 kg</output>
+          <input id="mass" type="range" min="1" max="2" step="0.1" value="1.5" />
         </div>
 
         <div class="row">
           <label for="distance">축 끝에서 바퀴까지 거리</label>
-          <output id="distanceOutput">1.00 m</output>
-          <input id="distance" type="range" min="0.2" max="2.5" step="0.05" value="1" />
+          <output id="distanceOutput">0.40 m</output>
+          <input id="distance" type="range" min="0.2" max="0.6" step="0.02" value="0.4" />
         </div>
 
         <div class="row">
@@ -397,7 +448,45 @@
 
       <section id="displayPanel" class="section">
         <h2>표시</h2>
+        <div class="play-row">
+          <button id="showAllLabels" type="button">일괄 켜기</button>
+          <button id="hideAllLabels" type="button">일괄 끄기</button>
+        </div>
         <div class="label-grid" id="labelToggles"></div>
+      </section>
+
+      <section class="section">
+        <h2>공식</h2>
+        <div class="formula-list">
+          <div class="formula-row">
+            <b>각운동량</b>
+            <div><code>L = Iω, &nbsp; I ≈ mR²</code><span id="angularFormula">L = 1.29 kg·m²/s</span></div>
+          </div>
+          <div class="formula-row">
+            <b>무게</b>
+            <div><code>W = mg</code><span id="weightFormula">W = 14.7 N</span></div>
+          </div>
+          <div class="formula-row">
+            <b>토크</b>
+            <div><code>τ = r × W, &nbsp; |τ| ≈ rmg</code><span id="torqueFormula">τ = 5.9 N·m</span></div>
+          </div>
+          <div class="formula-row">
+            <b>세차</b>
+            <div><code>Ω ≈ |τ| / |L| = rmg / (Iω)</code><span id="precessionFormula">빠르게 회전할 때의 근사</span></div>
+          </div>
+          <div class="formula-row">
+            <b>접선 성분</b>
+            <div><code>Fθ = -mg sin θ</code><span id="tangentFormula">θ는 아래쪽 평형에서 잰 각도</span></div>
+          </div>
+          <div class="formula-row">
+            <b>진자 낙하</b>
+            <div><code>Iₚ θ¨ = -mgr sin θ</code><span id="pendulumFormula">L = 0일 때의 운동</span></div>
+          </div>
+          <div class="formula-row">
+            <b>L_pend</b>
+            <div><code>L_pend,x = -Iₚ θ˙, &nbsp; Iₚ ≈ mr²</code><span id="pendulumLFormula">L_pend = 0.00 kg·m²/s</span></div>
+          </div>
+        </div>
       </section>
 
       <section id="explainPanel" class="section" hidden>
@@ -413,6 +502,7 @@
       <section class="section">
         <h2>초기 상태</h2>
         <p class="hint">바퀴는 표시된 방향으로 회전하고, 축의 한쪽은 검은 고정점에 묶여 있으며, 중력은 아래 방향으로 작용한다.</p>
+        <p class="hint">가정: 바퀴 중심이 축+바퀴의 무게중심(CM)이고, r은 고정점에서 그 무게중심까지의 위치벡터다. xy평면 격자 한 칸은 20 cm다.</p>
       </section>
     </aside>
   </main>
@@ -420,6 +510,7 @@
   <script>
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
+    let labelQueue = [];
 
     const colors = {
       ink: "#152033",
@@ -429,11 +520,15 @@
       pivot: "#111827",
       wheel: "rgba(215, 232, 244, 0.92)",
       wheelEdge: "#38566e",
+      x: "#df4b3f",
+      y: "#23a455",
+      spokeRed: "#df4b3f",
+      spokeBlue: "#2d6cdf",
       L: "#f18422",
-      mg: "#4b5563",
+      mg: "#86d98a",
       twist: "#23a455",
       tau: "#cb3d83",
-      dL: "#118d99",
+      dL: "#cb3d83",
       r: "#2d6cdf",
       z: "#4968a8",
       orbit: "rgba(55, 83, 121, 0.62)",
@@ -447,14 +542,11 @@
     };
 
     const labels = [
-      ["L", "각운동량 L"],
-      ["mg", "무게 mg"],
-      ["twist", "비틀림"],
-      ["tau", "토크 τ"],
-      ["dL", "dL/dt"],
-      ["r", "위치벡터 r"],
-      ["path", "세차 경로"],
-      ["spin", "회전 표시"]
+      ["L", "L: 각운동량"],
+      ["mg", "mg: 무게"],
+      ["twist", "Fθ: 접선 성분"],
+      ["tau", "τ = dL/dt: 토크"],
+      ["r", "r: 무게중심 벡터"]
     ];
 
     const flow = [
@@ -474,16 +566,16 @@
       },
       {
         key: "twist",
-        code: "3 비틀림",
-        title: "무거운 쪽 하강",
-        body: "바퀴가 있는 쪽 축 끝이 아래로 떨어지려는 효과가 비틀림을 만든다.",
+        code: "3 Fθ",
+        title: "접선 성분",
+        body: "mg의 접선 성분 Fθ가 축을 아래쪽으로 돌리려는 효과를 만든다.",
         color: colors.twist
       },
       {
         key: "tau",
         code: "4 τ",
-        title: "비틀림을 토크로 표현",
-        body: "그 효과를 τ = r × mg 라는 토크 벡터로 표현한다.",
+        title: "접선 성분을 토크로 표현",
+        body: "그 회전 효과를 τ = r × mg 라는 토크 벡터로 표현한다.",
         color: colors.tau
       },
       {
@@ -496,6 +588,19 @@
     ];
 
     const STEP_DURATION = 2.15;
+    const DEFAULT_MASS_KG = 1.5;
+    const DEFAULT_DISTANCE_M = 0.4;
+    const MAX_MASS_KG = 2;
+    const MAX_DISTANCE_M = 0.6;
+    const GRID_STEP_M = 0.2;
+    const SCENE_UNITS_PER_METER = 2;
+    const WHEEL_RADIUS_M = 0.35;
+    const MAX_ANGULAR_MOMENTUM = MAX_MASS_KG * WHEEL_RADIUS_M * WHEEL_RADIUS_M * 14;
+    const SPIN_L_THRESHOLD = 0.08;
+    const PENDULUM_MAX_ANGLE = Math.PI / 2;
+    const MG_ARROW_LENGTH = 0.46;
+    const MAX_TORQUE_MAGNITUDE = MAX_MASS_KG * gravityMap.earth.g * MAX_DISTANCE_M;
+    const TORQUE_ARROW_REFERENCE = MAX_TORQUE_MAGNITUDE / 0.72;
 
     const state = {
       mode: "general",
@@ -504,11 +609,17 @@
       explanationTime: 0,
       activeStep: -1,
       direction: 1,
+      timeScale: 0.1,
       spinSpeed: 7,
-      mass: 3,
-      distance: 1,
+      mass: DEFAULT_MASS_KG,
+      distance: DEFAULT_DISTANCE_M,
       gravity: "earth",
       phase: 0.1,
+      droop: 0,
+      pendulumTime: 0,
+      pendulumAngle: PENDULUM_MAX_ANGLE,
+      pendulumVelocity: 0,
+      pendulumInitialized: false,
       wheelSpin: 0,
       visible: Object.fromEntries(labels.map(([key]) => [key, true]))
     };
@@ -520,6 +631,8 @@
       explainPanel: document.getElementById("explainPanel"),
       timeToggle: document.getElementById("timeToggle"),
       directionToggle: document.getElementById("directionToggle"),
+      timeScale: document.getElementById("timeScale"),
+      timeScaleOutput: document.getElementById("timeScaleOutput"),
       spinSpeed: document.getElementById("spinSpeed"),
       spinOutput: document.getElementById("spinOutput"),
       mass: document.getElementById("mass"),
@@ -532,11 +645,26 @@
       explainStop: document.getElementById("explainStop"),
       timeline: document.getElementById("timeline"),
       displayPanel: document.getElementById("displayPanel"),
+      showAllLabels: document.getElementById("showAllLabels"),
+      hideAllLabels: document.getElementById("hideAllLabels"),
       labelToggles: document.getElementById("labelToggles"),
       massMetric: document.getElementById("massMetric"),
       distanceMetric: document.getElementById("distanceMetric"),
       gravityMetric: document.getElementById("gravityMetric"),
-      torqueMetric: document.getElementById("torqueMetric")
+      weightMetric: document.getElementById("weightMetric"),
+      angularMetricLabel: document.getElementById("angularMetricLabel"),
+      angularMetric: document.getElementById("angularMetric"),
+      torqueMetric: document.getElementById("torqueMetric"),
+      precessionMetric: document.getElementById("precessionMetric"),
+      thetaMetric: document.getElementById("thetaMetric"),
+      tangentMetric: document.getElementById("tangentMetric"),
+      angularFormula: document.getElementById("angularFormula"),
+      weightFormula: document.getElementById("weightFormula"),
+      torqueFormula: document.getElementById("torqueFormula"),
+      precessionFormula: document.getElementById("precessionFormula"),
+      tangentFormula: document.getElementById("tangentFormula"),
+      pendulumFormula: document.getElementById("pendulumFormula"),
+      pendulumLFormula: document.getElementById("pendulumLFormula")
     };
 
     function v(x, y, z) { return { x, y, z }; }
@@ -619,37 +747,58 @@
     function arrow3(a, b, color, width = 5, alpha = 1) {
       const p0 = screenProject(a);
       const p1 = screenProject(b);
+      const dx = p1.x - p0.x;
+      const dy = p1.y - p0.y;
+      const distance = Math.hypot(dx, dy);
+      if (distance < 0.5) return;
+      const ux = dx / distance;
+      const uy = dy / distance;
       const paint = color.startsWith("#") ? rgba(color, alpha) : color;
+      const head = Math.min(12 + width * 1.5, distance * 0.45);
+      const headWidth = head * 0.72;
+      const base = {
+        x: p1.x - ux * head,
+        y: p1.y - uy * head
+      };
+      const px = -uy;
+      const py = ux;
       ctx.strokeStyle = paint;
       ctx.fillStyle = paint;
       ctx.lineWidth = width;
-      ctx.lineCap = "round";
+      ctx.lineCap = "butt";
       ctx.beginPath();
       ctx.moveTo(p0.x, p0.y);
-      ctx.lineTo(p1.x, p1.y);
+      ctx.lineTo(base.x, base.y);
       ctx.stroke();
-      const angle = Math.atan2(p1.y - p0.y, p1.x - p0.x);
-      const head = 12 + width * 1.5;
-      const spread = Math.PI / 7;
       ctx.beginPath();
       ctx.moveTo(p1.x, p1.y);
-      ctx.lineTo(p1.x - head * Math.cos(angle - spread), p1.y - head * Math.sin(angle - spread));
-      ctx.lineTo(p1.x - head * Math.cos(angle + spread), p1.y - head * Math.sin(angle + spread));
+      ctx.lineTo(base.x + px * headWidth * 0.5, base.y + py * headWidth * 0.5);
+      ctx.lineTo(base.x - px * headWidth * 0.5, base.y - py * headWidth * 0.5);
       ctx.closePath();
       ctx.fill();
     }
 
     function label3(text, p, color, alpha = 1) {
+      labelQueue.push({ text, p, color, alpha });
+    }
+
+    function flushLabels() {
+      for (const label of labelQueue) drawLabelNow(label);
+      labelQueue = [];
+    }
+
+    function drawLabelNow({ text, p, color, alpha = 1 }) {
       const point = screenProject(p);
       ctx.save();
       ctx.globalAlpha = alpha;
       ctx.font = "800 14px 'Malgun Gothic', 'Segoe UI', sans-serif";
       const metrics = ctx.measureText(text);
-      const w = metrics.width + 16;
-      const h = 26;
+      const w = metrics.width + 8;
+      const h = 20;
       ctx.fillStyle = colors.labelBg;
       ctx.strokeStyle = "rgba(185, 199, 217, 0.85)";
-      roundRect(point.x - w / 2, point.y - h / 2, w, h, 7);
+      ctx.lineWidth = 1;
+      roundRect(point.x - w / 2, point.y - h / 2, w, h, 5);
       ctx.fill();
       ctx.stroke();
       ctx.fillStyle = color;
@@ -693,6 +842,10 @@
       return pts;
     }
 
+    function metersToScene(meters) {
+      return meters * SCENE_UNITS_PER_METER;
+    }
+
     function basisFromAxis(axis) {
       let u = cross(axis, v(0, 0, 1));
       if (length(u) < 0.02) u = cross(axis, v(1, 0, 0));
@@ -701,21 +854,27 @@
       return { u, w };
     }
 
-    function drawPlane(radius = 1.45) {
-      const rings = [0.45, 0.85, 1.25, radius];
+    function drawPlane(radius = metersToScene(MAX_DISTANCE_M)) {
+      const rings = [];
+      for (let m = GRID_STEP_M; m <= MAX_DISTANCE_M + 0.001; m += GRID_STEP_M) {
+        rings.push(metersToScene(m));
+      }
       for (const ring of rings) {
-        ellipse3(circleXY(ring, 0), colors.grid, ring === radius ? 2 : 1);
+        ellipse3(circleXY(ring, 0), colors.grid, Math.abs(ring - radius) < 0.001 ? 2 : 1);
       }
       for (let i = 0; i < 12; i++) {
         const a = Math.PI * 2 * i / 12;
         line3(v(0, 0, 0), v(radius * Math.cos(a), radius * Math.sin(a), 0), colors.grid, 1);
       }
-      arrow3(v(0, 0, 0), v(0, 0, 1.55), colors.z, 4, 0.9);
-      label3("z", v(0, 0, 1.68), colors.z, 0.95);
     }
 
-    function drawWheel(center, axis, spin, alpha = 1) {
-      const { u, w } = basisFromAxis(axis);
+    function drawZAxisTop(radius = 1.55) {
+      arrow3(v(0, 0, 0), v(0, 0, radius), colors.grid, 2, 1);
+      drawLabelNow({ text: "z", p: v(0, 0, radius + 0.065), color: colors.grid, alpha: 1 });
+    }
+
+    function drawWheel(center, axis, spin, alpha = 1, basisOverride = null) {
+      const { u, w } = basisOverride || basisFromAxis(axis);
       const radius = 0.28;
       const rim = [];
       for (let i = 0; i < 84; i++) {
@@ -727,20 +886,22 @@
       ctx.save();
       ctx.globalAlpha = alpha;
       ctx.strokeStyle = colors.wheelEdge;
-      ctx.lineWidth = 3;
+      ctx.lineWidth = 2;
       ctx.beginPath();
       projected.forEach((p, i) => i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y));
       ctx.closePath();
       ctx.stroke();
       ctx.strokeStyle = "rgba(56, 86, 110, 0.30)";
-      ctx.lineWidth = 8;
+      ctx.lineWidth = 4;
       ctx.stroke();
-      ctx.strokeStyle = "rgba(56, 86, 110, 0.64)";
-      ctx.lineWidth = 2;
+      ctx.lineWidth = 1;
       const c = screenProject(center);
       for (let i = 0; i < 12; i++) {
-        const a = spin + Math.PI * 2 * i / 12;
-        const outer = screenProject(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
+        const localAngle = Math.PI * 2 * i / 12;
+        const a = spin + localAngle;
+        const radial = add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)));
+        const outer = screenProject(add(center, radial));
+        ctx.strokeStyle = Math.sin(localAngle) >= 0 ? colors.spokeRed : colors.spokeBlue;
         ctx.beginPath();
         ctx.moveTo(c.x, c.y);
         ctx.lineTo(outer.x, outer.y);
@@ -749,25 +910,20 @@
       ctx.restore();
     }
 
-    function drawSpinMarker(center, axis, spin, alpha) {
-      if (!state.visible.spin) return;
-      const { u, w } = basisFromAxis(axis);
-      const a0 = spin + 0.5;
-      const a1 = a0 + 0.58 * state.direction;
-      const p0 = add(center, add(mul(u, 0.36 * Math.cos(a0)), mul(w, 0.36 * Math.sin(a0))));
-      const p1 = add(center, add(mul(u, 0.36 * Math.cos(a1)), mul(w, 0.36 * Math.sin(a1))));
-      arrow3(p0, p1, colors.L, 4, alpha);
-      label3("회전", add(center, mul(w, 0.46)), colors.L, alpha);
-    }
-
     function shouldShow(key) {
-      if (state.mode === "general") return state.visible[key];
+      if (state.mode === "general") {
+        if (key === "dL") return state.visible.tau;
+        return state.visible[key];
+      }
       const index = flow.findIndex(step => step.key === key);
       return index >= 0 && index <= state.activeStep;
     }
 
     function labelAlpha(key) {
-      if (state.mode === "general") return state.visible[key] ? 1 : 0;
+      if (state.mode === "general") {
+        if (key === "dL") return state.visible.tau ? 1 : 0;
+        return state.visible[key] ? 1 : 0;
+      }
       const index = flow.findIndex(step => step.key === key);
       if (index < 0 || index > state.activeStep) return 0;
       if (index === state.activeStep) return 1;
@@ -775,35 +931,191 @@
     }
 
     function drawTwist(axis, center, alpha) {
-      const start = add(center, v(0, 0, 0.42));
-      const end = add(center, v(0, 0, -0.36));
-      arrow3(start, end, colors.twist, 7, alpha);
-      label3("무거운 쪽 하강", add(start, v(0, 0, 0.15)), colors.twist, alpha);
+      const down = v(0, 0, -1);
+      const alongAxis = mul(axis, dot(down, axis));
+      const tangent = sub(down, alongAxis);
+      const tangentStrength = length(tangent);
+      const tangentDir = tangentStrength > 0.001 ? normalize(tangent) : down;
+      const arrowLength = MG_ARROW_LENGTH * tangentStrength;
+      const start = center;
+      const end = add(center, mul(tangentDir, arrowLength));
+      if (arrowLength > 0.018) arrow3(start, end, colors.twist, 7, alpha);
+      label3(arrowLength > 0.018 ? "Fθ" : "Fθ≈0", add(end, mul(tangentDir, 0.05)), colors.twist, alpha);
+    }
+
+    function wheelInertia() {
+      return state.mass * WHEEL_RADIUS_M * WHEEL_RADIUS_M;
+    }
+
+    function angularMomentumMagnitude() {
+      return wheelInertia() * state.spinSpeed;
+    }
+
+    function isPendulumMode() {
+      return angularMomentumMagnitude() <= SPIN_L_THRESHOLD;
+    }
+
+    function pendulumOmega() {
+      return Math.sqrt(gravityMap[state.gravity].g / Math.max(0.2, state.distance));
+    }
+
+    function pendulumTheta() {
+      return state.pendulumAngle;
+    }
+
+    function pendulumThetaDot() {
+      return state.pendulumVelocity;
+    }
+
+    function pendulumInertia() {
+      return state.mass * state.distance * state.distance;
+    }
+
+    function pendulumAngularMomentum() {
+      return -pendulumInertia() * pendulumThetaDot();
+    }
+
+    function maxPendulumAngularMomentum() {
+      const g = gravityMap[state.gravity].g;
+      const thetaDotMax = Math.sqrt(
+        2 * g * Math.max(0, 1 - Math.cos(PENDULUM_MAX_ANGLE)) / Math.max(0.2, state.distance)
+      );
+      return pendulumInertia() * thetaDotMax;
+    }
+
+    function weightMagnitude() {
+      return state.mass * gravityMap[state.gravity].g;
+    }
+
+    function leverFactorForCurrentPose() {
+      if (isPendulumMode()) return Math.abs(Math.sin(pendulumTheta()));
+      return Math.max(0, Math.cos(state.droop));
+    }
+
+    function signedTangentFactorForCurrentPose() {
+      if (isPendulumMode()) return -Math.sin(pendulumTheta());
+      return -Math.max(0, Math.cos(state.droop));
+    }
+
+    function torqueMagnitude(axis) {
+      const leverFactor = axis ? Math.hypot(axis.x, axis.y) : leverFactorForCurrentPose();
+      return state.distance * weightMagnitude() * Math.max(0, leverFactor);
+    }
+
+    function resetPendulum() {
+      state.pendulumTime = 0;
+      state.pendulumAngle = PENDULUM_MAX_ANGLE;
+      state.pendulumVelocity = 0;
+      state.pendulumInitialized = true;
+    }
+
+    function resetMotionForCurrentSettings() {
+      state.phase = 0.1;
+      state.droop = 0;
+      state.wheelSpin = 0;
+      state.pendulumTime = 0;
+      state.pendulumAngle = PENDULUM_MAX_ANGLE;
+      state.pendulumVelocity = 0;
+      state.pendulumInitialized = isPendulumMode();
+    }
+
+    function resetOnlyWhenPendulumParameterChange(wasPendulum) {
+      if (wasPendulum || isPendulumMode()) resetMotionForCurrentSettings();
+    }
+
+    function clearPendulumStateForPrecession() {
+      state.pendulumTime = 0;
+      state.pendulumAngle = PENDULUM_MAX_ANGLE;
+      state.pendulumVelocity = 0;
+      state.pendulumInitialized = false;
+    }
+
+    function advancePendulum(dt) {
+      if (!state.pendulumInitialized) resetPendulum();
+      const omega2 = gravityMap[state.gravity].g / Math.max(0.2, state.distance);
+      const acceleration = theta => -omega2 * Math.sin(theta);
+
+      const theta0 = state.pendulumAngle;
+      const vel0 = state.pendulumVelocity;
+      const k1Theta = vel0;
+      const k1Vel = acceleration(theta0);
+      const k2Theta = vel0 + 0.5 * dt * k1Vel;
+      const k2Vel = acceleration(theta0 + 0.5 * dt * k1Theta);
+      const k3Theta = vel0 + 0.5 * dt * k2Vel;
+      const k3Vel = acceleration(theta0 + 0.5 * dt * k2Theta);
+      const k4Theta = vel0 + dt * k3Vel;
+      const k4Vel = acceleration(theta0 + dt * k3Theta);
+
+      state.pendulumAngle += dt * (k1Theta + 2 * k2Theta + 2 * k3Theta + k4Theta) / 6;
+      state.pendulumVelocity += dt * (k1Vel + 2 * k2Vel + 2 * k3Vel + k4Vel) / 6;
+      state.pendulumTime += dt;
+    }
+
+    function pendulumAxes() {
+      const xAxis = v(0, 1, 0);
+      const yAxis = v(1, 0, 0);
+      return { xAxis, yAxis };
+    }
+
+    function drawPendulumAxes(xAxis, yAxis, scale) {
+      arrow3(v(0, 0, 0), mul(xAxis, scale), colors.grid, 2, 1);
+      label3("x", mul(xAxis, scale + 0.13), colors.grid, 1);
+      arrow3(v(0, 0, 0), mul(yAxis, scale), colors.grid, 2, 1);
+      label3("y", mul(yAxis, scale + 0.13), colors.grid, 1);
+    }
+
+    function drawPendulumArc(yAxis, scale) {
+      const points = [];
+      for (let i = 0; i <= 80; i++) {
+        const theta = -PENDULUM_MAX_ANGLE + 2 * PENDULUM_MAX_ANGLE * i / 80;
+        const axis = normalize(add(mul(yAxis, Math.sin(theta)), v(0, 0, -Math.cos(theta))));
+        points.push(mul(axis, scale));
+      }
+      ellipse3(points, colors.r, 2, true, 0.58);
     }
 
     function drawScene() {
       const dpr = window.devicePixelRatio || 1;
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+      labelQueue = [];
       drawPlane();
+      const pendulumMode = isPendulumMode();
+      const physicalScale = metersToScene(state.distance);
 
-      if (state.visible.path || state.mode === "explain") {
-        ellipse3(circleXY(1.47, 0), colors.orbit, 2, true, state.mode === "explain" ? 0.48 : 0.78);
-      }
-
-      const axis = normalize(v(Math.cos(state.phase), Math.sin(state.phase), 0));
+      const { xAxis, yAxis } = pendulumAxes();
+      const horizontalAxis = pendulumMode ? yAxis : normalize(v(Math.cos(state.phase), Math.sin(state.phase), 0));
+      const theta = pendulumTheta();
+      const axis = pendulumMode
+        ? normalize(add(mul(yAxis, Math.sin(theta)), v(0, 0, -Math.cos(theta))))
+        : normalize(add(mul(horizontalAxis, Math.cos(state.droop)), v(0, 0, -Math.sin(state.droop))));
       const tauDir = normalize(cross(axis, v(0, 0, -1)));
       const pivot = v(0, 0, 0);
-      const physicalScale = Math.min(1.25, 0.68 + state.distance * 0.38);
       const center = mul(axis, physicalScale);
-      const axleEnd = mul(axis, physicalScale + 0.27);
       const lDir = mul(axis, state.direction);
-      const lTip = mul(lDir, physicalScale + 0.47);
-      const torque = state.mass * gravityMap[state.gravity].g * state.distance;
-      const torqueScale = Math.min(0.72, 0.22 + torque / 86);
+      const lFactor = Math.min(1, angularMomentumMagnitude() / MAX_ANGULAR_MOMENTUM);
+      const lLength = lFactor < 0.02 ? 0.18 : 0.20 + 1.10 * lFactor;
+      const lTip = mul(lDir, lLength);
+      const torque = torqueMagnitude(axis);
+      const torqueScale = Math.min(0.72, torque / TORQUE_ARROW_REFERENCE);
+      const tauTip = add(center, mul(tauDir, torqueScale));
 
-      drawWheel(center, axis, state.wheelSpin);
-      line3(pivot, axleEnd, colors.axis, 8, 0.95);
-      drawSpinMarker(center, axis, state.wheelSpin, 0.95);
+      if (pendulumMode) {
+        drawPendulumAxes(xAxis, yAxis, metersToScene(MAX_DISTANCE_M));
+        drawPendulumArc(yAxis, physicalScale);
+      }
+
+      if (shouldShow("mg")) {
+        const a = labelAlpha("mg");
+        const mgTip = add(center, v(0, 0, -MG_ARROW_LENGTH));
+        arrow3(center, mgTip, colors.mg, 5, a);
+        label3("mg", add(mgTip, v(0, 0, -0.09)), colors.mg, a);
+      }
+
+      if (shouldShow("twist")) {
+        drawTwist(axis, center, labelAlpha("twist"));
+      }
+
+      line3(pivot, center, colors.axis, 2, 0.95);
 
       const p = screenProject(pivot);
       ctx.fillStyle = colors.pivot;
@@ -813,52 +1125,97 @@
 
       if (shouldShow("L")) {
         const a = labelAlpha("L");
-        arrow3(pivot, lTip, colors.L, 7, a);
-        label3("L", mul(lDir, physicalScale + 0.42), colors.L, a);
+        if (pendulumMode) {
+          const lPend = pendulumAngularMomentum();
+          const lPendMax = maxPendulumAngularMomentum();
+          const xAxisLength = metersToScene(MAX_DISTANCE_M);
+          const pendulumLMag = Math.min(xAxisLength, Math.abs(lPend) / Math.max(0.001, lPendMax) * xAxisLength);
+          if (pendulumLMag > 0.03) {
+            const pendulumLDir = mul(xAxis, Math.sign(lPend));
+            arrow3(pivot, mul(pendulumLDir, pendulumLMag), colors.L, 6, a);
+            label3("L_pend", mul(pendulumLDir, pendulumLMag + 0.06), colors.L, a);
+          }
+        } else {
+          arrow3(pivot, lTip, colors.L, 7, a);
+          label3("L", mul(lDir, lLength + 0.04), colors.L, a);
+        }
       }
 
       if (state.mode === "general" && state.visible.r || state.mode === "explain" && state.activeStep >= 3) {
         const a = state.mode === "general" ? 0.95 : 0.42;
-        arrow3(pivot, center, colors.r, 4, a);
-        label3("r", mul(axis, physicalScale * 0.58), colors.r, a);
-      }
-
-      if (shouldShow("mg")) {
-        const a = labelAlpha("mg");
-        const mgTip = add(center, v(0, 0, -0.46));
-        arrow3(center, mgTip, colors.mg, 5, a);
-        label3("mg", add(mgTip, v(0, 0, -0.08)), colors.mg, a);
-      }
-
-      if (shouldShow("twist")) {
-        drawTwist(axis, center, labelAlpha("twist"));
+        arrow3(pivot, center, colors.r, 2, a);
+        label3("r", mul(axis, physicalScale + 0.06), colors.r, a);
       }
 
       if (shouldShow("tau")) {
         const a = labelAlpha("tau");
-        arrow3(add(center, mul(tauDir, -0.18)), add(center, mul(tauDir, torqueScale)), colors.tau, 7, a);
-        label3("τ = r × mg", add(center, mul(tauDir, torqueScale + 0.16)), colors.tau, a);
+        if (torqueScale > 0.018) arrow3(center, tauTip, colors.tau, 7, a);
+        label3(torqueScale > 0.018 ? "τ" : "τ≈0", add(tauTip, mul(tauDir, 0.06)), colors.tau, a);
       }
 
       if (shouldShow("dL")) {
         const a = labelAlpha("dL");
-        const dLTip = add(lTip, mul(tauDir, torqueScale * 0.70));
-        arrow3(lTip, dLTip, colors.dL, 6, a);
-        label3("dL/dt", add(dLTip, v(0, 0, 0.15)), colors.dL, a);
-        line3(pivot, mul(normalize(dLTip), physicalScale + 0.47), colors.dL, 4, a * 0.42);
+        if (pendulumMode) {
+          label3("dL/dt = τ", add(center, mul(tauDir, torqueScale + 0.12)), colors.dL, a);
+        } else {
+          const dLTip = add(lTip, mul(tauDir, torqueScale));
+          arrow3(lTip, dLTip, colors.dL, 6, a);
+          label3("dL/dt", add(dLTip, mul(tauDir, 0.12)), colors.dL, a);
+          if (shouldShow("tau")) {
+            line3(tauTip, dLTip, colors.dL, 2, Math.min(a, labelAlpha("tau")) * 0.62);
+          }
+        }
       }
+      const wheelBasis = pendulumMode
+        ? { u: xAxis, w: normalize(cross(axis, xAxis)) }
+        : null;
+      drawWheel(center, axis, state.wheelSpin, 1, wheelBasis);
+      flushLabels();
+      drawZAxisTop();
     }
 
     function updateMetrics() {
       const g = gravityMap[state.gravity].g;
-      const torque = state.mass * g * state.distance;
+      const weight = weightMagnitude();
+      const angularMomentum = angularMomentumMagnitude();
+      const pendulumMode = isPendulumMode();
+      const torque = torqueMagnitude();
+      const precession = angularMomentum > 0.01 ? torque / angularMomentum : 0;
+      const visualPrecession = angularMomentum > 0.01 ? precession * state.timeScale : 0;
+      const leverFactor = leverFactorForCurrentPose();
+      const signedTangentFactor = signedTangentFactorForCurrentPose();
+      const tangentForce = weight * signedTangentFactor;
+      const thetaDeg = pendulumMode ? (pendulumTheta() * 180 / Math.PI) : (90 - state.droop * 180 / Math.PI);
+      const lPend = pendulumMode ? pendulumAngularMomentum() : 0;
+      const lPendMax = pendulumMode ? maxPendulumAngularMomentum() : 0;
+      const thetaDotDisplay = pendulumMode ? pendulumThetaDot() : 0;
       controls.massMetric.textContent = `${state.mass.toFixed(1)} kg`;
       controls.distanceMetric.textContent = `${state.distance.toFixed(2)} m`;
       controls.gravityMetric.textContent = `${g.toFixed(2)} m/s²`;
+      controls.weightMetric.textContent = `${weight.toFixed(1)} N`;
+      controls.angularMetricLabel.textContent = pendulumMode ? "L_pend" : "각운동량 L";
+      controls.angularMetric.textContent = pendulumMode
+        ? `${lPend.toFixed(3)} kg·m²/s`
+        : `${angularMomentum.toFixed(2)} kg·m²/s`;
       controls.torqueMetric.textContent = `${torque.toFixed(1)} N·m`;
+      controls.precessionMetric.textContent = angularMomentum > 0.01 ? `${precession.toFixed(2)} rad/s` : "-";
+      controls.thetaMetric.textContent = `${thetaDeg.toFixed(0)}°`;
+      controls.tangentMetric.textContent = `${tangentForce.toFixed(1)} N`;
       controls.massOutput.textContent = `${state.mass.toFixed(1)} kg`;
       controls.distanceOutput.textContent = `${state.distance.toFixed(2)} m`;
+      controls.timeScaleOutput.textContent = `${state.timeScale.toFixed(2)}x`;
       controls.spinOutput.textContent = `${state.spinSpeed.toFixed(1)} rad/s`;
+      controls.angularFormula.textContent = `R = ${WHEEL_RADIUS_M.toFixed(2)} m 근사, L = ${angularMomentum.toFixed(2)} kg·m²/s`;
+      controls.weightFormula.textContent = `W = ${state.mass.toFixed(1)} × ${g.toFixed(2)} = ${weight.toFixed(1)} N`;
+      controls.torqueFormula.textContent = `|τ| = rW sinθ ≈ ${state.distance.toFixed(2)} × ${weight.toFixed(1)} × ${leverFactor.toFixed(2)} = ${torque.toFixed(1)} N·m`;
+      controls.precessionFormula.textContent = angularMomentum > 0.01
+        ? `Ω ≈ ${torque.toFixed(2)} / ${angularMomentum.toFixed(2)} = ${precession.toFixed(2)} rad/s. 화면 Ω = Ω × ${state.timeScale.toFixed(2)} = ${visualPrecession.toFixed(2)} rad/s.`
+        : `L이 거의 0이면 세차 근사가 깨지고 축이 아래로 처진다.`;
+      controls.tangentFormula.textContent = `θ ≈ ${thetaDeg.toFixed(0)}°, Fθ ≈ ${weight.toFixed(1)} × ${signedTangentFactor.toFixed(2)} = ${tangentForce.toFixed(1)} N`;
+      controls.pendulumFormula.textContent = isPendulumMode()
+        ? `진자 모드: θ가 +90°와 -90° 사이를 대칭 왕복한다.`
+        : `빠른 스핀 모드에서는 축 처짐을 0으로 되돌려 세차 근사를 표시한다.`;
+      controls.pendulumLFormula.textContent = `θ˙ = ${thetaDotDisplay.toFixed(2)} rad/s, L_pend = ${lPend.toFixed(3)} kg·m²/s, 최대 |L_pend| ≈ ${lPendMax.toFixed(3)}`;
       controls.directionToggle.textContent = state.direction > 0 ? "회전: 반시계" : "회전: 시계";
       controls.timeToggle.textContent = state.running ? "시간 정지" : "시간 진행";
       controls.timeToggle.classList.toggle("primary", state.running);
@@ -964,20 +1321,33 @@
       state.direction *= -1;
       updateMetrics();
     });
+    controls.timeScale.addEventListener("input", () => {
+      state.timeScale = Number(controls.timeScale.value);
+      updateMetrics();
+    });
     controls.spinSpeed.addEventListener("input", () => {
+      const wasPendulum = isPendulumMode();
       state.spinSpeed = Number(controls.spinSpeed.value);
+      if (wasPendulum && !isPendulumMode()) clearPendulumStateForPrecession();
+      if (!wasPendulum && isPendulumMode()) resetMotionForCurrentSettings();
       updateMetrics();
     });
     controls.mass.addEventListener("input", () => {
+      const wasPendulum = isPendulumMode();
       state.mass = Number(controls.mass.value);
+      resetOnlyWhenPendulumParameterChange(wasPendulum);
       updateMetrics();
     });
     controls.distance.addEventListener("input", () => {
+      const wasPendulum = isPendulumMode();
       state.distance = Number(controls.distance.value);
+      resetOnlyWhenPendulumParameterChange(wasPendulum);
       updateMetrics();
     });
     controls.gravity.addEventListener("change", () => {
+      const wasPendulum = isPendulumMode();
       state.gravity = controls.gravity.value;
+      resetOnlyWhenPendulumParameterChange(wasPendulum);
       updateMetrics();
     });
     controls.explainPlay.addEventListener("click", () => {
@@ -987,19 +1357,34 @@
     });
     controls.explainRestart.addEventListener("click", restartExplanation);
     controls.explainStop.addEventListener("click", stopExplanation);
+    controls.showAllLabels.addEventListener("click", () => {
+      for (const [key] of labels) state.visible[key] = true;
+      renderToggles();
+    });
+    controls.hideAllLabels.addEventListener("click", () => {
+      for (const [key] of labels) state.visible[key] = false;
+      renderToggles();
+    });
 
     function tick(now) {
       if (!tick.last) tick.last = now;
-      const dt = Math.min(0.05, (now - tick.last) / 1000);
+      const rawDt = Math.min(0.05, (now - tick.last) / 1000);
+      const dt = rawDt * state.timeScale;
       tick.last = now;
 
       if (state.running || state.mode === "explain") {
-        const g = gravityMap[state.gravity].g;
-        const torque = state.mass * g * state.distance;
-        const angularMomentum = Math.max(1.2, state.mass * state.distance * state.distance * Math.max(1, state.spinSpeed));
-        const precession = Math.min(0.72, torque / angularMomentum * 0.10);
-        state.phase += state.direction * precession * dt;
+        const angularMomentum = angularMomentumMagnitude();
+        if (angularMomentum > SPIN_L_THRESHOLD) {
+          const precession = torqueMagnitude() / angularMomentum;
+          state.phase += state.direction * precession * dt;
+          state.droop += (0 - state.droop) * Math.min(1, dt * 2.4);
+          state.pendulumInitialized = false;
+        } else {
+          advancePendulum(dt);
+          state.droop = 0;
+        }
         state.wheelSpin += state.direction * state.spinSpeed * dt;
+        updateMetrics();
       }
 
       if (state.mode === "explain" && state.explanationPlaying) {
