@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자전거 바퀴와 세차운동</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --ink: #152033;
+      --muted: #66758a;
+      --line: #d7e0eb;
+      --panel: rgba(255, 255, 255, 0.92);
+      --panel-solid: #ffffff;
+      --blue: #2d6cdf;
+      --orange: #f18422;
+      --gray: #4b5563;
+      --pink: #cb3d83;
+      --green: #269668;
+      --twist-green: #23a455;
+      --red: #df4b3f;
+      --teal: #118d99;
+      font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      overflow: hidden;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      height: 100vh;
+      min-height: 620px;
+    }
+
+    .stage {
+      position: relative;
+      min-width: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 44% 48%, rgba(255,255,255,0.9), rgba(246,248,251,0.5) 45%, rgba(235,241,248,0.9) 100%);
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .title {
+      position: absolute;
+      left: 30px;
+      top: 24px;
+      z-index: 5;
+      margin: 0;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .readout {
+      position: absolute;
+      left: 30px;
+      bottom: 24px;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(104px, auto));
+      gap: 8px;
+      max-width: calc(100% - 60px);
+    }
+
+    .metric {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 11px;
+      min-height: 54px;
+      box-shadow: 0 8px 20px rgba(32,45,63,0.05);
+    }
+
+    .metric b {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .metric span {
+      font-variant-numeric: tabular-nums;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .sidebar {
+      height: 100vh;
+      min-height: 620px;
+      overflow: auto;
+      padding: 20px 18px;
+      border-left: 1px solid var(--line);
+      background: rgba(248,250,253,0.96);
+    }
+
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 18px rgba(32,45,63,0.04);
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .mode-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    button,
+    select,
+    input {
+      font: inherit;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 8px;
+      min-height: 38px;
+      padding: 8px 10px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: #b7c4d4;
+      background: #f9fbfd;
+    }
+
+    button.active {
+      border-color: var(--blue);
+      background: #e8f0ff;
+      color: #174fb4;
+    }
+
+    button.primary {
+      border-color: #1f7a55;
+      background: var(--green);
+      color: #fff;
+    }
+
+    button.danger {
+      border-color: #c53d31;
+      background: #fff1ef;
+      color: #b7372e;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin: 11px 0;
+    }
+
+    .row label,
+    .label-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .row output {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    input[type="range"] {
+      grid-column: 1 / -1;
+      width: 100%;
+      accent-color: var(--blue);
+    }
+
+    select {
+      width: 148px;
+      min-height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      padding: 5px 8px;
+      font-weight: 700;
+    }
+
+    .switch-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .switch-row input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--green);
+    }
+
+    .label-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 12px;
+    }
+
+    .play-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .play-row.three {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 7px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 10px;
+      align-items: start;
+      border-radius: 8px;
+      padding: 8px;
+      border: 1px solid transparent;
+      opacity: 0.52;
+      cursor: pointer;
+    }
+
+    .step:hover {
+      border-color: rgba(38, 150, 104, 0.28);
+      background: rgba(38, 150, 104, 0.05);
+    }
+
+    .step.done {
+      opacity: 0.38;
+    }
+
+    .step.current {
+      opacity: 1;
+      border-color: rgba(38,150,104,0.32);
+      background: rgba(38,150,104,0.09);
+    }
+
+    .step code {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      border-radius: 7px;
+      color: #fff;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .step h3 {
+      margin: 0 0 3px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        overflow: auto;
+      }
+
+      .app {
+        display: block;
+        height: auto;
+      }
+
+      .stage {
+        height: 64vh;
+        min-height: 460px;
+      }
+
+      .sidebar {
+        height: auto;
+        min-height: 0;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .readout {
+        grid-template-columns: repeat(2, minmax(104px, auto));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="stage" aria-label="세차운동 3D 시뮬레이션">
+      <h1 class="title">자전거 바퀴와 세차운동</h1>
+      <canvas id="scene"></canvas>
+      <div class="readout" aria-live="polite">
+        <div class="metric"><b>질량</b><span id="massMetric">3.0 kg</span></div>
+        <div class="metric"><b>축 길이</b><span id="distanceMetric">1.00 m</span></div>
+        <div class="metric"><b>중력</b><span id="gravityMetric">9.81 m/s²</span></div>
+        <div class="metric"><b>토크</b><span id="torqueMetric">29.4 N·m</span></div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="section">
+        <h2>모드</h2>
+        <div class="mode-tabs">
+          <button id="generalMode" class="active" type="button">설명 중지</button>
+          <button id="explainMode" type="button">설명 시작</button>
+        </div>
+      </section>
+
+      <section id="generalPanel" class="section">
+        <h2>조작</h2>
+        <div class="play-row">
+          <button id="timeToggle" class="primary" type="button">시간 진행</button>
+          <button id="directionToggle" type="button">회전: 반시계</button>
+        </div>
+
+        <div class="row">
+          <label for="spinSpeed">바퀴 회전속도</label>
+          <output id="spinOutput">7.0 rad/s</output>
+          <input id="spinSpeed" type="range" min="0" max="14" step="0.1" value="7" />
+        </div>
+
+        <div class="row">
+          <label for="mass">바퀴와 축의 무게</label>
+          <output id="massOutput">3.0 kg</output>
+          <input id="mass" type="range" min="0.5" max="12" step="0.1" value="3" />
+        </div>
+
+        <div class="row">
+          <label for="distance">축 끝에서 바퀴까지 거리</label>
+          <output id="distanceOutput">1.00 m</output>
+          <input id="distance" type="range" min="0.2" max="2.5" step="0.05" value="1" />
+        </div>
+
+        <div class="row">
+          <label for="gravity">중력</label>
+          <select id="gravity">
+            <option value="earth" selected>지구</option>
+            <option value="moon">달</option>
+            <option value="mars">화성</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="displayPanel" class="section">
+        <h2>표시</h2>
+        <div class="label-grid" id="labelToggles"></div>
+      </section>
+
+      <section id="explainPanel" class="section" hidden>
+        <h2>설명 재생</h2>
+        <div class="play-row three">
+          <button id="explainPlay" class="primary" type="button">재생</button>
+          <button id="explainRestart" type="button">재시작</button>
+          <button id="explainStop" class="danger" type="button">중지</button>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section">
+        <h2>초기 상태</h2>
+        <p class="hint">바퀴는 표시된 방향으로 회전하고, 축의 한쪽은 검은 고정점에 묶여 있으며, 중력은 아래 방향으로 작용한다.</p>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+
+    const colors = {
+      ink: "#152033",
+      muted: "#66758a",
+      grid: "rgba(72, 101, 138, 0.34)",
+      axis: "#2f3b4c",
+      pivot: "#111827",
+      wheel: "rgba(215, 232, 244, 0.92)",
+      wheelEdge: "#38566e",
+      L: "#f18422",
+      mg: "#4b5563",
+      twist: "#23a455",
+      tau: "#cb3d83",
+      dL: "#118d99",
+      r: "#2d6cdf",
+      z: "#4968a8",
+      orbit: "rgba(55, 83, 121, 0.62)",
+      labelBg: "rgba(255,255,255,0.90)"
+    };
+
+    const gravityMap = {
+      earth: { label: "지구", g: 9.81 },
+      moon: { label: "달", g: 1.62 },
+      mars: { label: "화성", g: 3.71 }
+    };
+
+    const labels = [
+      ["L", "각운동량 L"],
+      ["mg", "무게 mg"],
+      ["twist", "비틀림"],
+      ["tau", "토크 τ"],
+      ["dL", "dL/dt"],
+      ["r", "위치벡터 r"],
+      ["path", "세차 경로"],
+      ["spin", "회전 표시"]
+    ];
+
+    const flow = [
+      {
+        key: "L",
+        code: "1 L",
+        title: "바퀴의 각운동량",
+        body: "빠르게 회전하는 바퀴의 L은 바퀴축 방향이다.",
+        color: colors.L
+      },
+      {
+        key: "mg",
+        code: "2 mg",
+        title: "무게중심에 걸리는 힘",
+        body: "무게 mg가 바퀴의 무게중심에서 아래로 작용한다.",
+        color: colors.mg
+      },
+      {
+        key: "twist",
+        code: "3 비틀림",
+        title: "무거운 쪽 하강",
+        body: "바퀴가 있는 쪽 축 끝이 아래로 떨어지려는 효과가 비틀림을 만든다.",
+        color: colors.twist
+      },
+      {
+        key: "tau",
+        code: "4 τ",
+        title: "비틀림을 토크로 표현",
+        body: "그 효과를 τ = r × mg 라는 토크 벡터로 표현한다.",
+        color: colors.tau
+      },
+      {
+        key: "dL",
+        code: "5 dL/dt",
+        title: "토크가 L을 바꿈",
+        body: "토크는 시간당 각운동량 변화다. dL/dt = τ.",
+        color: colors.dL
+      }
+    ];
+
+    const STEP_DURATION = 2.15;
+
+    const state = {
+      mode: "general",
+      running: true,
+      explanationPlaying: false,
+      explanationTime: 0,
+      activeStep: -1,
+      direction: 1,
+      spinSpeed: 7,
+      mass: 3,
+      distance: 1,
+      gravity: "earth",
+      phase: 0.1,
+      wheelSpin: 0,
+      visible: Object.fromEntries(labels.map(([key]) => [key, true]))
+    };
+
+    const controls = {
+      generalMode: document.getElementById("generalMode"),
+      explainMode: document.getElementById("explainMode"),
+      generalPanel: document.getElementById("generalPanel"),
+      explainPanel: document.getElementById("explainPanel"),
+      timeToggle: document.getElementById("timeToggle"),
+      directionToggle: document.getElementById("directionToggle"),
+      spinSpeed: document.getElementById("spinSpeed"),
+      spinOutput: document.getElementById("spinOutput"),
+      mass: document.getElementById("mass"),
+      massOutput: document.getElementById("massOutput"),
+      distance: document.getElementById("distance"),
+      distanceOutput: document.getElementById("distanceOutput"),
+      gravity: document.getElementById("gravity"),
+      explainPlay: document.getElementById("explainPlay"),
+      explainRestart: document.getElementById("explainRestart"),
+      explainStop: document.getElementById("explainStop"),
+      timeline: document.getElementById("timeline"),
+      displayPanel: document.getElementById("displayPanel"),
+      labelToggles: document.getElementById("labelToggles"),
+      massMetric: document.getElementById("massMetric"),
+      distanceMetric: document.getElementById("distanceMetric"),
+      gravityMetric: document.getElementById("gravityMetric"),
+      torqueMetric: document.getElementById("torqueMetric")
+    };
+
+    function v(x, y, z) { return { x, y, z }; }
+    function add(a, b) { return v(a.x + b.x, a.y + b.y, a.z + b.z); }
+    function sub(a, b) { return v(a.x - b.x, a.y - b.y, a.z - b.z); }
+    function mul(a, s) { return v(a.x * s, a.y * s, a.z * s); }
+    function dot(a, b) { return a.x * b.x + a.y * b.y + a.z * b.z; }
+    function cross(a, b) {
+      return v(
+        a.y * b.z - a.z * b.y,
+        a.z * b.x - a.x * b.z,
+        a.x * b.y - a.y * b.x
+      );
+    }
+    function length(a) { return Math.hypot(a.x, a.y, a.z); }
+    function normalize(a) {
+      const n = length(a) || 1;
+      return mul(a, 1 / n);
+    }
+    function rgba(hex, alpha) {
+      const clean = hex.replace("#", "");
+      const n = parseInt(clean, 16);
+      return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+    }
+
+    const camera = {
+      eye: v(3.6, -5.2, 3.0),
+      target: v(0, 0, 0.18),
+      right: v(1, 0, 0),
+      up: v(0, 0, 1),
+      forward: v(0, 1, 0),
+      scale: 1,
+      origin: { x: 0, y: 0 }
+    };
+
+    function updateCamera() {
+      camera.forward = normalize(sub(camera.target, camera.eye));
+      camera.right = normalize(cross(camera.forward, v(0, 0, 1)));
+      camera.up = normalize(cross(camera.right, camera.forward));
+      camera.origin = { x: canvas.width * 0.42, y: canvas.height * 0.57 };
+      camera.scale = Math.min(canvas.width, canvas.height) * 0.26;
+    }
+
+    function project(p) {
+      const shifted = sub(p, camera.target);
+      return {
+        x: camera.origin.x + dot(shifted, camera.right) * camera.scale,
+        y: camera.origin.y - dot(shifted, camera.up) * camera.scale,
+        depth: dot(sub(p, camera.target), camera.forward)
+      };
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.round(rect.width * dpr));
+      canvas.height = Math.max(1, Math.round(rect.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      updateCamera();
+    }
+
+    function screenProject(p) {
+      const dpr = window.devicePixelRatio || 1;
+      const projected = project(p);
+      return { x: projected.x / dpr, y: projected.y / dpr, depth: projected.depth };
+    }
+
+    function line3(a, b, color, width = 2, alpha = 1) {
+      const p0 = screenProject(a);
+      const p1 = screenProject(b);
+      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(p0.x, p0.y);
+      ctx.lineTo(p1.x, p1.y);
+      ctx.stroke();
+    }
+
+    function arrow3(a, b, color, width = 5, alpha = 1) {
+      const p0 = screenProject(a);
+      const p1 = screenProject(b);
+      const paint = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.strokeStyle = paint;
+      ctx.fillStyle = paint;
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(p0.x, p0.y);
+      ctx.lineTo(p1.x, p1.y);
+      ctx.stroke();
+      const angle = Math.atan2(p1.y - p0.y, p1.x - p0.x);
+      const head = 12 + width * 1.5;
+      const spread = Math.PI / 7;
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p1.x - head * Math.cos(angle - spread), p1.y - head * Math.sin(angle - spread));
+      ctx.lineTo(p1.x - head * Math.cos(angle + spread), p1.y - head * Math.sin(angle + spread));
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    function label3(text, p, color, alpha = 1) {
+      const point = screenProject(p);
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.font = "800 14px 'Malgun Gothic', 'Segoe UI', sans-serif";
+      const metrics = ctx.measureText(text);
+      const w = metrics.width + 16;
+      const h = 26;
+      ctx.fillStyle = colors.labelBg;
+      ctx.strokeStyle = "rgba(185, 199, 217, 0.85)";
+      roundRect(point.x - w / 2, point.y - h / 2, w, h, 7);
+      ctx.fill();
+      ctx.stroke();
+      ctx.fillStyle = color;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, point.x, point.y + 1);
+      ctx.restore();
+    }
+
+    function roundRect(x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + w, y, x + w, y + h, r);
+      ctx.arcTo(x + w, y + h, x, y + h, r);
+      ctx.arcTo(x, y + h, x, y, r);
+      ctx.arcTo(x, y, x + w, y, r);
+      ctx.closePath();
+    }
+
+    function ellipse3(points, color, width = 1, dashed = false, alpha = 1) {
+      ctx.save();
+      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.lineWidth = width;
+      if (dashed) ctx.setLineDash([8, 7]);
+      ctx.beginPath();
+      points.forEach((point, index) => {
+        const p = screenProject(point);
+        if (index === 0) ctx.moveTo(p.x, p.y);
+        else ctx.lineTo(p.x, p.y);
+      });
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function circleXY(radius, z, steps = 160) {
+      const pts = [];
+      for (let i = 0; i <= steps; i++) {
+        const a = Math.PI * 2 * i / steps;
+        pts.push(v(radius * Math.cos(a), radius * Math.sin(a), z));
+      }
+      return pts;
+    }
+
+    function basisFromAxis(axis) {
+      let u = cross(axis, v(0, 0, 1));
+      if (length(u) < 0.02) u = cross(axis, v(1, 0, 0));
+      u = normalize(u);
+      const w = normalize(cross(axis, u));
+      return { u, w };
+    }
+
+    function drawPlane(radius = 1.45) {
+      const rings = [0.45, 0.85, 1.25, radius];
+      for (const ring of rings) {
+        ellipse3(circleXY(ring, 0), colors.grid, ring === radius ? 2 : 1);
+      }
+      for (let i = 0; i < 12; i++) {
+        const a = Math.PI * 2 * i / 12;
+        line3(v(0, 0, 0), v(radius * Math.cos(a), radius * Math.sin(a), 0), colors.grid, 1);
+      }
+      arrow3(v(0, 0, 0), v(0, 0, 1.55), colors.z, 4, 0.9);
+      label3("z", v(0, 0, 1.68), colors.z, 0.95);
+    }
+
+    function drawWheel(center, axis, spin, alpha = 1) {
+      const { u, w } = basisFromAxis(axis);
+      const radius = 0.28;
+      const rim = [];
+      for (let i = 0; i < 84; i++) {
+        const a = Math.PI * 2 * i / 84;
+        rim.push(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
+      }
+
+      const projected = rim.map(screenProject);
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = colors.wheelEdge;
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      projected.forEach((p, i) => i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y));
+      ctx.closePath();
+      ctx.stroke();
+      ctx.strokeStyle = "rgba(56, 86, 110, 0.30)";
+      ctx.lineWidth = 8;
+      ctx.stroke();
+      ctx.strokeStyle = "rgba(56, 86, 110, 0.64)";
+      ctx.lineWidth = 2;
+      const c = screenProject(center);
+      for (let i = 0; i < 12; i++) {
+        const a = spin + Math.PI * 2 * i / 12;
+        const outer = screenProject(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
+        ctx.beginPath();
+        ctx.moveTo(c.x, c.y);
+        ctx.lineTo(outer.x, outer.y);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function drawSpinMarker(center, axis, spin, alpha) {
+      if (!state.visible.spin) return;
+      const { u, w } = basisFromAxis(axis);
+      const a0 = spin + 0.5;
+      const a1 = a0 + 0.58 * state.direction;
+      const p0 = add(center, add(mul(u, 0.36 * Math.cos(a0)), mul(w, 0.36 * Math.sin(a0))));
+      const p1 = add(center, add(mul(u, 0.36 * Math.cos(a1)), mul(w, 0.36 * Math.sin(a1))));
+      arrow3(p0, p1, colors.L, 4, alpha);
+      label3("회전", add(center, mul(w, 0.46)), colors.L, alpha);
+    }
+
+    function shouldShow(key) {
+      if (state.mode === "general") return state.visible[key];
+      const index = flow.findIndex(step => step.key === key);
+      return index >= 0 && index <= state.activeStep;
+    }
+
+    function labelAlpha(key) {
+      if (state.mode === "general") return state.visible[key] ? 1 : 0;
+      const index = flow.findIndex(step => step.key === key);
+      if (index < 0 || index > state.activeStep) return 0;
+      if (index === state.activeStep) return 1;
+      return 0.34;
+    }
+
+    function drawTwist(axis, center, alpha) {
+      const start = add(center, v(0, 0, 0.42));
+      const end = add(center, v(0, 0, -0.36));
+      arrow3(start, end, colors.twist, 7, alpha);
+      label3("무거운 쪽 하강", add(start, v(0, 0, 0.15)), colors.twist, alpha);
+    }
+
+    function drawScene() {
+      const dpr = window.devicePixelRatio || 1;
+      ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+      drawPlane();
+
+      if (state.visible.path || state.mode === "explain") {
+        ellipse3(circleXY(1.47, 0), colors.orbit, 2, true, state.mode === "explain" ? 0.48 : 0.78);
+      }
+
+      const axis = normalize(v(Math.cos(state.phase), Math.sin(state.phase), 0));
+      const tauDir = normalize(cross(axis, v(0, 0, -1)));
+      const pivot = v(0, 0, 0);
+      const physicalScale = Math.min(1.25, 0.68 + state.distance * 0.38);
+      const center = mul(axis, physicalScale);
+      const axleEnd = mul(axis, physicalScale + 0.27);
+      const lDir = mul(axis, state.direction);
+      const lTip = mul(lDir, physicalScale + 0.47);
+      const torque = state.mass * gravityMap[state.gravity].g * state.distance;
+      const torqueScale = Math.min(0.72, 0.22 + torque / 86);
+
+      drawWheel(center, axis, state.wheelSpin);
+      line3(pivot, axleEnd, colors.axis, 8, 0.95);
+      drawSpinMarker(center, axis, state.wheelSpin, 0.95);
+
+      const p = screenProject(pivot);
+      ctx.fillStyle = colors.pivot;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (shouldShow("L")) {
+        const a = labelAlpha("L");
+        arrow3(pivot, lTip, colors.L, 7, a);
+        label3("L", mul(lDir, physicalScale + 0.42), colors.L, a);
+      }
+
+      if (state.mode === "general" && state.visible.r || state.mode === "explain" && state.activeStep >= 3) {
+        const a = state.mode === "general" ? 0.95 : 0.42;
+        arrow3(pivot, center, colors.r, 4, a);
+        label3("r", mul(axis, physicalScale * 0.58), colors.r, a);
+      }
+
+      if (shouldShow("mg")) {
+        const a = labelAlpha("mg");
+        const mgTip = add(center, v(0, 0, -0.46));
+        arrow3(center, mgTip, colors.mg, 5, a);
+        label3("mg", add(mgTip, v(0, 0, -0.08)), colors.mg, a);
+      }
+
+      if (shouldShow("twist")) {
+        drawTwist(axis, center, labelAlpha("twist"));
+      }
+
+      if (shouldShow("tau")) {
+        const a = labelAlpha("tau");
+        arrow3(add(center, mul(tauDir, -0.18)), add(center, mul(tauDir, torqueScale)), colors.tau, 7, a);
+        label3("τ = r × mg", add(center, mul(tauDir, torqueScale + 0.16)), colors.tau, a);
+      }
+
+      if (shouldShow("dL")) {
+        const a = labelAlpha("dL");
+        const dLTip = add(lTip, mul(tauDir, torqueScale * 0.70));
+        arrow3(lTip, dLTip, colors.dL, 6, a);
+        label3("dL/dt", add(dLTip, v(0, 0, 0.15)), colors.dL, a);
+        line3(pivot, mul(normalize(dLTip), physicalScale + 0.47), colors.dL, 4, a * 0.42);
+      }
+    }
+
+    function updateMetrics() {
+      const g = gravityMap[state.gravity].g;
+      const torque = state.mass * g * state.distance;
+      controls.massMetric.textContent = `${state.mass.toFixed(1)} kg`;
+      controls.distanceMetric.textContent = `${state.distance.toFixed(2)} m`;
+      controls.gravityMetric.textContent = `${g.toFixed(2)} m/s²`;
+      controls.torqueMetric.textContent = `${torque.toFixed(1)} N·m`;
+      controls.massOutput.textContent = `${state.mass.toFixed(1)} kg`;
+      controls.distanceOutput.textContent = `${state.distance.toFixed(2)} m`;
+      controls.spinOutput.textContent = `${state.spinSpeed.toFixed(1)} rad/s`;
+      controls.directionToggle.textContent = state.direction > 0 ? "회전: 반시계" : "회전: 시계";
+      controls.timeToggle.textContent = state.running ? "시간 정지" : "시간 진행";
+      controls.timeToggle.classList.toggle("primary", state.running);
+    }
+
+    function renderToggles() {
+      controls.labelToggles.innerHTML = "";
+      for (const [key, name] of labels) {
+        const row = document.createElement("label");
+        row.className = "switch-row";
+        row.innerHTML = `<span>${name}</span><input type="checkbox" ${state.visible[key] ? "checked" : ""} />`;
+        const input = row.querySelector("input");
+        input.addEventListener("change", () => {
+          state.visible[key] = input.checked;
+        });
+        controls.labelToggles.appendChild(row);
+      }
+    }
+
+    function renderTimeline() {
+      controls.timeline.innerHTML = "";
+      flow.forEach((step, index) => {
+        const node = document.createElement("div");
+        node.className = "step";
+        if (state.mode === "explain") {
+          if (index < state.activeStep) node.classList.add("done");
+          if (index === state.activeStep) node.classList.add("current");
+        }
+        node.innerHTML = `
+          <code style="background:${step.color}">${step.code}</code>
+          <div><h3>${step.title}</h3><p>${step.body}</p></div>
+        `;
+        node.tabIndex = 0;
+        node.setAttribute("role", "button");
+        node.setAttribute("aria-label", `${step.code} ${step.title} 단계로 이동`);
+        node.addEventListener("click", () => pauseAtStep(index));
+        node.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            pauseAtStep(index);
+          }
+        });
+        controls.timeline.appendChild(node);
+      });
+    }
+
+    function setMode(mode) {
+      state.mode = mode;
+      state.activeStep = mode === "explain" ? Math.max(0, state.activeStep) : -1;
+      state.explanationPlaying = mode === "explain";
+      state.explanationTime = mode === "explain" ? state.explanationTime : 0;
+      controls.generalMode.classList.toggle("active", mode === "general");
+      controls.explainMode.classList.toggle("active", mode === "explain");
+      controls.generalPanel.hidden = mode !== "general";
+      controls.explainPanel.hidden = mode !== "explain";
+      controls.displayPanel.hidden = mode !== "general";
+      controls.explainPlay.textContent = state.explanationPlaying ? "일시정지" : "재생";
+      renderTimeline();
+    }
+
+    function pauseAtStep(index) {
+      state.mode = "explain";
+      state.activeStep = index;
+      state.explanationTime = index * STEP_DURATION;
+      state.explanationPlaying = false;
+      controls.generalMode.classList.toggle("active", false);
+      controls.explainMode.classList.toggle("active", true);
+      controls.generalPanel.hidden = true;
+      controls.explainPanel.hidden = false;
+      controls.displayPanel.hidden = true;
+      controls.explainPlay.textContent = "재생";
+      renderTimeline();
+    }
+
+    function restartExplanation() {
+      state.mode = "explain";
+      state.explanationTime = 0;
+      state.activeStep = 0;
+      state.explanationPlaying = true;
+      controls.generalMode.classList.toggle("active", false);
+      controls.explainMode.classList.toggle("active", true);
+      controls.generalPanel.hidden = true;
+      controls.explainPanel.hidden = false;
+      controls.displayPanel.hidden = true;
+      controls.explainPlay.textContent = "일시정지";
+      renderTimeline();
+    }
+
+    function stopExplanation() {
+      state.explanationPlaying = false;
+      state.explanationTime = 0;
+      state.activeStep = -1;
+      setMode("general");
+    }
+
+    controls.generalMode.addEventListener("click", stopExplanation);
+    controls.explainMode.addEventListener("click", () => setMode("explain"));
+    controls.timeToggle.addEventListener("click", () => {
+      state.running = !state.running;
+      updateMetrics();
+    });
+    controls.directionToggle.addEventListener("click", () => {
+      state.direction *= -1;
+      updateMetrics();
+    });
+    controls.spinSpeed.addEventListener("input", () => {
+      state.spinSpeed = Number(controls.spinSpeed.value);
+      updateMetrics();
+    });
+    controls.mass.addEventListener("input", () => {
+      state.mass = Number(controls.mass.value);
+      updateMetrics();
+    });
+    controls.distance.addEventListener("input", () => {
+      state.distance = Number(controls.distance.value);
+      updateMetrics();
+    });
+    controls.gravity.addEventListener("change", () => {
+      state.gravity = controls.gravity.value;
+      updateMetrics();
+    });
+    controls.explainPlay.addEventListener("click", () => {
+      if (state.mode !== "explain") setMode("explain");
+      state.explanationPlaying = !state.explanationPlaying;
+      controls.explainPlay.textContent = state.explanationPlaying ? "일시정지" : "재생";
+    });
+    controls.explainRestart.addEventListener("click", restartExplanation);
+    controls.explainStop.addEventListener("click", stopExplanation);
+
+    function tick(now) {
+      if (!tick.last) tick.last = now;
+      const dt = Math.min(0.05, (now - tick.last) / 1000);
+      tick.last = now;
+
+      if (state.running || state.mode === "explain") {
+        const g = gravityMap[state.gravity].g;
+        const torque = state.mass * g * state.distance;
+        const angularMomentum = Math.max(1.2, state.mass * state.distance * state.distance * Math.max(1, state.spinSpeed));
+        const precession = Math.min(0.72, torque / angularMomentum * 0.10);
+        state.phase += state.direction * precession * dt;
+        state.wheelSpin += state.direction * state.spinSpeed * dt;
+      }
+
+      if (state.mode === "explain" && state.explanationPlaying) {
+        state.explanationTime += dt;
+        const nextStep = Math.min(flow.length - 1, Math.floor(state.explanationTime / STEP_DURATION));
+        if (nextStep !== state.activeStep) {
+          state.activeStep = nextStep;
+          renderTimeline();
+        }
+        if (state.explanationTime >= STEP_DURATION * flow.length) {
+          state.explanationPlaying = false;
+          controls.explainPlay.textContent = "재생";
+        }
+      }
+
+      drawScene();
+      requestAnimationFrame(tick);
+    }
+
+    window.addEventListener("resize", resize);
+    renderToggles();
+    renderTimeline();
+    updateMetrics();
+    resize();
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>
