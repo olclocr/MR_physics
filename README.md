@@ -1,39 +1,12 @@
 # MR Physics Visualizations
 
-MRI/NMR에서 쓰는 실험실 좌표계, 회전좌표계, `B0`, `B1`, RF pulse, flip angle을
-Python으로 시각화하는 작은 프로젝트입니다.
+MRI/NMR 직관과 자전거 바퀴 세차운동을 정리한 문서 및 웹앱 프로젝트입니다.
 
-현재 구현은 외부 수치 라이브러리 없이 `Pillow`만 사용합니다. 로컬에 `ffmpeg`가 없어도
-바로 재생 가능한 animated GIF를 생성합니다.
+## 구성
 
-## 빠른 실행
+- [MR physics 정리](docs/mr_physics.md)
+- [자전거 바퀴 세차운동 인터랙티브 웹앱](docs/bicycle_wheel_precession_interactive.html)
 
-```powershell
-python scripts/generate_videos.py
-```
+## 사용
 
-생성 파일:
-
-- `outputs/rf_phase_sweep.gif`
-- `outputs/rf_flip_angle_0_360.gif`
-- `outputs/rotating_frame_precession.gif`
-- `outputs/gyroscope_torque_precession.gif`
-- `outputs/gyroscope_short_x_push.gif`
-
-MR physics 정리는 [docs/mr_physics.md](docs/mr_physics.md)에 있습니다.
-
-## 옵션
-
-```powershell
-python scripts/generate_videos.py --frames 73 --size 640 --duration-ms 60
-```
-
-- `--frames`: 애니메이션 프레임 수
-- `--size`: 정사각형 영상 한 변의 픽셀 크기
-- `--duration-ms`: GIF 프레임당 표시 시간
-
-## 의존성
-
-```powershell
-python -m pip install -r requirements.txt
-```
+웹앱은 별도 빌드 없이 `docs/bicycle_wheel_precession_interactive.html` 파일을 브라우저에서 열어 실행할 수 있습니다.

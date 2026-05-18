@@ -1,0 +1,1418 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>양성자 스핀 MR 시뮬레이션</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --ink: #162033;
+      --muted: #617088;
+      --line: #d8e0eb;
+      --panel: rgba(255, 255, 255, 0.93);
+      --blue: #2563eb;
+      --cyan: #0891b2;
+      --green: #219461;
+      --orange: #e8761d;
+      --red: #d73f3f;
+      --violet: #7c3aed;
+      --axis: #4b5563;
+      font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      height: 100vh;
+      min-height: 620px;
+    }
+
+    .stage {
+      position: relative;
+      min-width: 0;
+      min-height: 620px;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(239,244,251,0.58)),
+        radial-gradient(circle at 46% 48%, rgba(255,255,255,0.96), rgba(232,239,248,0.78) 60%, rgba(224,232,243,0.9));
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .title {
+      position: absolute;
+      left: 28px;
+      top: 22px;
+      z-index: 2;
+      margin: 0;
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.15;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      position: absolute;
+      left: 29px;
+      top: 70px;
+      z-index: 2;
+      margin: 0;
+      max-width: min(760px, calc(100% - 58px));
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .readout {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 20px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(112px, 1fr));
+      gap: 8px;
+      max-width: 860px;
+    }
+
+    .metric {
+      min-width: 0;
+      min-height: 56px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.86);
+      padding: 8px 10px;
+      box-shadow: 0 8px 20px rgba(28, 38, 56, 0.055);
+    }
+
+    .metric b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sidebar {
+      height: 100vh;
+      min-height: 620px;
+      border-left: 1px solid var(--line);
+      background: rgba(248, 250, 253, 0.96);
+      padding: 18px;
+      overflow: auto;
+    }
+
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 18px rgba(28, 38, 56, 0.045);
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .control-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 4px 12px;
+      margin: 12px 0;
+    }
+
+    .control-row label {
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .control-row output {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    input[type="range"] {
+      grid-column: 1 / -1;
+      width: 100%;
+      accent-color: var(--blue);
+    }
+
+    select {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 6px 8px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: #b8c5d6;
+      background: #f9fbfe;
+    }
+
+    button.primary {
+      border-color: #1f7a55;
+      background: var(--green);
+      color: #fff;
+    }
+
+    button.primary:hover {
+      background: #1d8256;
+    }
+
+    button:disabled {
+      cursor: default;
+      opacity: 0.62;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .data-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .data-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: baseline;
+      gap: 12px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.76);
+      padding-bottom: 7px;
+      font-size: 13px;
+    }
+
+    .data-line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .data-line span {
+      color: var(--muted);
+      font-weight: 750;
+    }
+
+    .data-line b {
+      font-size: 13px;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .legend-item {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .pulse-bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #edf2f8;
+      overflow: hidden;
+    }
+
+    .pulse-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--orange), var(--red));
+      border-radius: inherit;
+      transition: width 80ms linear;
+    }
+
+    .timeline {
+      position: relative;
+      height: 46px;
+      margin: 12px 0 8px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fafe;
+      overflow: hidden;
+    }
+
+    .timeline-progress {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 0%;
+      background: linear-gradient(90deg, rgba(33,148,97,0.18), rgba(8,145,178,0.2));
+      border-right: 2px solid var(--cyan);
+    }
+
+    .timeline-event {
+      position: absolute;
+      top: 6px;
+      width: 1px;
+      height: 32px;
+      background: rgba(75, 85, 99, 0.38);
+    }
+
+    .timeline-event span {
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      max-width: 72px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.1;
+      font-weight: 850;
+      text-align: center;
+      white-space: normal;
+    }
+
+    @media (max-width: 900px) {
+      .app {
+        display: block;
+        height: auto;
+        min-height: 0;
+      }
+
+      .stage {
+        min-height: 66vh;
+      }
+
+      .sidebar {
+        height: auto;
+        min-height: 0;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .readout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: none;
+      }
+
+      .subtitle {
+        top: 62px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .stage {
+        min-height: 660px;
+      }
+
+      .title {
+        left: 18px;
+        top: 17px;
+      }
+
+      .subtitle {
+        left: 19px;
+        top: 58px;
+        font-size: 13px;
+      }
+
+      .readout {
+        left: 14px;
+        right: 14px;
+        bottom: 16px;
+      }
+
+      .control-row {
+        gap: 4px 8px;
+      }
+
+      .legend {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="stage" aria-label="양성자 스핀 MR 시뮬레이션 장면">
+      <canvas id="scene"></canvas>
+      <h1 class="title">양성자 스핀 MR 시뮬레이션</h1>
+      <p class="subtitle">회전좌표계에서 RF B1 pulse가 순자화 M을 x'축 둘레로 flip시키는 Bloch vector 모델</p>
+      <div class="readout" aria-live="polite">
+        <div class="metric"><b>라모어 주파수</b><span id="f0Metric">-</span></div>
+        <div class="metric"><b>현재 flip</b><span id="flipMetric">-</span></div>
+        <div class="metric"><b>Mz / M0</b><span id="mzMetric">-</span></div>
+        <div class="metric"><b>Mxy / M0</b><span id="mxyMetric">-</span></div>
+        <div class="metric"><b>RF pulse 시간</b><span id="pulseMetric">-</span></div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="section">
+        <h2>자기장과 flip</h2>
+        <div class="control-row">
+          <label for="b0Control">B0 정자기장</label>
+          <output id="b0Output" for="b0Control">3.0 T</output>
+          <input id="b0Control" type="range" min="1.5" max="3" value="3" step="0.1" />
+        </div>
+        <div class="control-row">
+          <label for="b1Control">B1 RF 세기</label>
+          <output id="b1Output" for="b1Control">10 uT</output>
+          <input id="b1Control" type="range" min="1" max="30" value="10" step="0.5" />
+        </div>
+        <div class="control-row">
+          <label for="flipControl">목표 RF pulse angle</label>
+          <output id="flipOutput" for="flipControl">90°</output>
+          <input id="flipControl" type="range" min="0" max="360" value="90" step="1" />
+        </div>
+        <div class="control-row">
+          <label for="timeScaleControl">RF 재생 속도</label>
+          <output id="timeScaleControlOutput" for="timeScaleControl">실제의 1/1200</output>
+          <input id="timeScaleControl" type="range" min="1000" max="10000" value="1200" step="100" />
+        </div>
+        <div class="button-grid">
+          <button id="startPulse" class="primary" type="button">▶ RF 펄스 시작</button>
+          <button id="resetPulse" type="button">↺ 초기화</button>
+        </div>
+        <p class="note">기본 B1=10 uT는 90° hard pulse가 약 0.59 ms가 되는 값입니다. 실제 장비에서는 pulse shape, duration, transmit gain 보정에 따라 달라집니다.</p>
+      </section>
+
+      <section class="section">
+        <h2>Pulse sequence</h2>
+        <div class="control-row">
+          <label for="sequenceMode">시퀀스</label>
+          <select id="sequenceMode">
+            <option value="custom">자유 RF + relaxation</option>
+            <option value="t1w">T1W spin echo</option>
+            <option value="t2w">T2W spin echo</option>
+            <option value="chemical">Chemical shift water/fat</option>
+          </select>
+        </div>
+        <div class="timeline" aria-hidden="true">
+          <div id="sequenceProgress" class="timeline-progress"></div>
+          <div id="sequenceTimeline"></div>
+        </div>
+        <div class="button-grid">
+          <button id="runSequence" class="primary" type="button">▶ 시퀀스 실행</button>
+          <button id="applyPreset" type="button">Preset 적용</button>
+        </div>
+        <div class="control-row">
+          <label for="trControl">TR</label>
+          <output id="trOutput" for="trControl">500 ms</output>
+          <input id="trControl" type="range" min="100" max="5000" value="500" step="10" />
+        </div>
+        <div class="control-row">
+          <label for="teControl">TE</label>
+          <output id="teOutput" for="teControl">15 ms</output>
+          <input id="teControl" type="range" min="1" max="300" value="15" step="0.1" />
+        </div>
+        <div class="control-row">
+          <label for="t1Control">조직 T1</label>
+          <output id="t1Output" for="t1Control">900 ms</output>
+          <input id="t1Control" type="range" min="200" max="2500" value="900" step="10" />
+        </div>
+        <div class="control-row">
+          <label for="t2Control">조직 T2</label>
+          <output id="t2Output" for="t2Control">80 ms</output>
+          <input id="t2Control" type="range" min="20" max="500" value="80" step="5" />
+        </div>
+        <div class="control-row">
+          <label for="offResControl">회전좌표계 Δf</label>
+          <output id="offResOutput" for="offResControl">0 Hz</output>
+          <input id="offResControl" type="range" min="-120" max="120" value="0" step="1" />
+        </div>
+        <div class="control-row">
+          <label for="fatControl">fat fraction</label>
+          <output id="fatOutput" for="fatControl">40%</output>
+          <input id="fatControl" type="range" min="0" max="100" value="40" step="5" />
+        </div>
+        <p class="note">시퀀스 시간축은 TR/TE를 한 화면에서 보기 위해 압축 재생합니다. RF pulse 자체는 위의 1/N 재생 속도를 따릅니다.</p>
+      </section>
+
+      <section class="section">
+        <h2>현재 상태</h2>
+        <div class="pulse-bar" aria-hidden="true">
+          <div id="pulseFill" class="pulse-fill"></div>
+        </div>
+        <p class="note" id="pulseState">평형 상태</p>
+        <div class="data-grid">
+          <div class="data-line"><span>B0 대비 M0</span><b id="m0Output">-</b></div>
+          <div class="data-line"><span>nutation 주파수</span><b id="nutationOutput">-</b></div>
+          <div class="data-line"><span>실제 pulse duration</span><b id="durationOutput">-</b></div>
+          <div class="data-line"><span>화면 시간 배율</span><b id="timeScaleOutput">-</b></div>
+          <div class="data-line"><span>시퀀스 시간</span><b id="sequenceTimeOutput">-</b></div>
+          <div class="data-line"><span>signal estimate</span><b id="signalOutput">-</b></div>
+          <div class="data-line"><span>이벤트</span><b id="eventOutput">-</b></div>
+          <div class="data-line"><span>표시 벡터 길이</span><b id="visualScaleOutput">-</b></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>표시 요소</h2>
+        <div class="legend">
+          <div class="legend-item"><i class="swatch" style="background:#4b5563"></i><span>회전좌표계 x', y', z</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#2563eb"></i><span>B0, z축</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#e8761d"></i><span>B1 RF, x'축</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#d73f3f"></i><span>순자화 M</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#219461"></i><span>z 성분 Mz</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#0891b2"></i><span>xy 성분 Mxy</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#0ea5e9"></i><span>Water vector</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#f59e0b"></i><span>Fat vector</span></div>
+        </div>
+        <p class="note">M0 크기는 B0에 선형 비례하도록 두고, 3.0 T를 화면 최대 길이로 정규화했습니다. B1 화살표와 pulse 진행 시간에는 보기 위한 배율이 적용됩니다.</p>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+
+    const controls = {
+      b0: document.getElementById("b0Control"),
+      b1: document.getElementById("b1Control"),
+      flip: document.getElementById("flipControl"),
+      timeScale: document.getElementById("timeScaleControl"),
+      sequenceMode: document.getElementById("sequenceMode"),
+      tr: document.getElementById("trControl"),
+      te: document.getElementById("teControl"),
+      t1: document.getElementById("t1Control"),
+      t2: document.getElementById("t2Control"),
+      offRes: document.getElementById("offResControl"),
+      fat: document.getElementById("fatControl"),
+      start: document.getElementById("startPulse"),
+      reset: document.getElementById("resetPulse"),
+      runSequence: document.getElementById("runSequence"),
+      applyPreset: document.getElementById("applyPreset"),
+      b0Output: document.getElementById("b0Output"),
+      b1Output: document.getElementById("b1Output"),
+      flipOutput: document.getElementById("flipOutput"),
+      timeScaleOutput: document.getElementById("timeScaleControlOutput"),
+      trOutput: document.getElementById("trOutput"),
+      teOutput: document.getElementById("teOutput"),
+      t1Output: document.getElementById("t1Output"),
+      t2Output: document.getElementById("t2Output"),
+      offResOutput: document.getElementById("offResOutput"),
+      fatOutput: document.getElementById("fatOutput"),
+      f0Metric: document.getElementById("f0Metric"),
+      flipMetric: document.getElementById("flipMetric"),
+      mzMetric: document.getElementById("mzMetric"),
+      mxyMetric: document.getElementById("mxyMetric"),
+      pulseMetric: document.getElementById("pulseMetric"),
+      pulseFill: document.getElementById("pulseFill"),
+      pulseState: document.getElementById("pulseState"),
+      sequenceTimeline: document.getElementById("sequenceTimeline"),
+      sequenceProgress: document.getElementById("sequenceProgress"),
+      m0Output: document.getElementById("m0Output"),
+      nutationOutput: document.getElementById("nutationOutput"),
+      durationOutput: document.getElementById("durationOutput"),
+      timeScaleStatus: document.getElementById("timeScaleOutput"),
+      sequenceTimeOutput: document.getElementById("sequenceTimeOutput"),
+      signalOutput: document.getElementById("signalOutput"),
+      eventOutput: document.getElementById("eventOutput"),
+      visualScaleOutput: document.getElementById("visualScaleOutput")
+    };
+
+    const colors = {
+      axis: "#4b5563",
+      grid: "#9aa8bb",
+      plane: "#c6d2e3",
+      b0: "#2563eb",
+      b1: "#e8761d",
+      m: "#d73f3f",
+      mz: "#219461",
+      mxy: "#0891b2",
+      water: "#0ea5e9",
+      fat: "#f59e0b",
+      arc: "#7c3aed",
+      guide: "#8191a8"
+    };
+
+    const PROTON_GAMMA_MHZ_T = 42.57747892;
+    const PROTON_GAMMA_RAD_T_S = PROTON_GAMMA_MHZ_T * 1e6 * 2 * Math.PI;
+    const MIN_VISUAL_SECONDS = 0.55;
+    const MAX_VISUAL_SECONDS = 12;
+    const POST_RF_MS_PER_SECOND = 180;
+    const CHEMICAL_SHIFT_PPM = 3.5;
+    const MAX_VECTOR_LENGTH = 1.18;
+
+    const state = {
+      b0: Number(controls.b0.value),
+      b1MicroT: Number(controls.b1.value),
+      targetDeg: Number(controls.flip.value),
+      timeScale: Number(controls.timeScale.value),
+      sequenceMode: controls.sequenceMode.value,
+      trMs: Number(controls.tr.value),
+      teMs: Number(controls.te.value),
+      t1Ms: Number(controls.t1.value),
+      t2Ms: Number(controls.t2.value),
+      offResHz: Number(controls.offRes.value),
+      fatFraction: Number(controls.fat.value) / 100,
+      currentDeg: 0,
+      phaseRad: 0,
+      freeMs: 0,
+      running: false,
+      mode: "idle",
+      rfActive: false,
+      elapsed: 0,
+      visualDuration: 1,
+      completed: false,
+      sequenceElapsedMs: 0,
+      sequenceDurationMs: 0,
+      sequenceVisualDuration: 6,
+      activeEvent: "평형 상태"
+    };
+
+    let labelQueue = [];
+    const camera = {
+      eye: v(2.9, -3.6, 2.35),
+      target: v(0, 0, 0.18),
+      origin: { x: 0, y: 0 },
+      scale: 1,
+      forward: v(0, 0, 0),
+      right: v(1, 0, 0),
+      up: v(0, 0, 1)
+    };
+
+    function v(x, y, z) {
+      return { x, y, z };
+    }
+
+    function add(a, b) {
+      return v(a.x + b.x, a.y + b.y, a.z + b.z);
+    }
+
+    function sub(a, b) {
+      return v(a.x - b.x, a.y - b.y, a.z - b.z);
+    }
+
+    function mul(a, s) {
+      return v(a.x * s, a.y * s, a.z * s);
+    }
+
+    function dot(a, b) {
+      return a.x * b.x + a.y * b.y + a.z * b.z;
+    }
+
+    function cross(a, b) {
+      return v(
+        a.y * b.z - a.z * b.y,
+        a.z * b.x - a.x * b.z,
+        a.x * b.y - a.y * b.x
+      );
+    }
+
+    function length(a) {
+      return Math.hypot(a.x, a.y, a.z);
+    }
+
+    function normalize(a) {
+      const n = length(a) || 1;
+      return mul(a, 1 / n);
+    }
+
+    function clamp(n, min, max) {
+      return Math.max(min, Math.min(max, n));
+    }
+
+    function rgba(hex, alpha) {
+      const clean = hex.replace("#", "");
+      const n = parseInt(clean, 16);
+      const r = (n >> 16) & 255;
+      const g = (n >> 8) & 255;
+      const b = n & 255;
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function updateCamera() {
+      camera.forward = normalize(sub(camera.target, camera.eye));
+      camera.right = normalize(cross(camera.forward, v(0, 0, 1)));
+      camera.up = normalize(cross(camera.right, camera.forward));
+      const mobile = canvas.clientWidth < 520;
+      camera.origin = {
+        x: canvas.clientWidth * (mobile ? 0.49 : 0.46),
+        y: canvas.clientHeight * (mobile ? 0.46 : 0.55)
+      };
+      camera.scale = Math.min(canvas.clientWidth, canvas.clientHeight) * (mobile ? 0.24 : 0.29);
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.round(rect.width * dpr));
+      canvas.height = Math.max(1, Math.round(rect.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      updateCamera();
+      drawScene();
+    }
+
+    function project(p) {
+      const shifted = sub(p, camera.target);
+      return {
+        x: camera.origin.x + dot(shifted, camera.right) * camera.scale,
+        y: camera.origin.y - dot(shifted, camera.up) * camera.scale
+      };
+    }
+
+    function line3(a, b, color, width = 2, alpha = 1, dashed = false) {
+      const p0 = project(a);
+      const p1 = project(b);
+      ctx.save();
+      ctx.strokeStyle = rgba(color, alpha);
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      if (dashed) ctx.setLineDash([7, 7]);
+      ctx.beginPath();
+      ctx.moveTo(p0.x, p0.y);
+      ctx.lineTo(p1.x, p1.y);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function arrow3(a, b, color, width = 4, alpha = 1) {
+      const p0 = project(a);
+      const p1 = project(b);
+      const dx = p1.x - p0.x;
+      const dy = p1.y - p0.y;
+      const len = Math.hypot(dx, dy);
+      if (len < 0.5) return;
+
+      const ux = dx / len;
+      const uy = dy / len;
+      const head = clamp(width * 3.1, 9, 18);
+      const wing = head * 0.52;
+      ctx.save();
+      ctx.strokeStyle = rgba(color, alpha);
+      ctx.fillStyle = rgba(color, alpha);
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(p0.x, p0.y);
+      ctx.lineTo(p1.x, p1.y);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p1.x - ux * head - uy * wing, p1.y - uy * head + ux * wing);
+      ctx.lineTo(p1.x - ux * head + uy * wing, p1.y - uy * head - ux * wing);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function ellipsePath(points, color, width = 1.2, alpha = 1, dashed = false) {
+      if (!points.length) return;
+      ctx.save();
+      ctx.strokeStyle = rgba(color, alpha);
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      if (dashed) ctx.setLineDash([6, 6]);
+      const first = project(points[0]);
+      ctx.beginPath();
+      ctx.moveTo(first.x, first.y);
+      for (let i = 1; i < points.length; i += 1) {
+        const p = project(points[i]);
+        ctx.lineTo(p.x, p.y);
+      }
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function label3(text, position, color = colors.axis, alpha = 1, align = "center") {
+      labelQueue.push({ text, position, color, alpha, align });
+    }
+
+    function drawLabels() {
+      for (const label of labelQueue) {
+        const p = project(label.position);
+        ctx.save();
+        ctx.font = "800 13px Malgun Gothic, Segoe UI, sans-serif";
+        ctx.textAlign = label.align;
+        ctx.textBaseline = "middle";
+        const width = ctx.measureText(label.text).width + 14;
+        const x = label.align === "left" ? p.x : label.align === "right" ? p.x - width : p.x - width / 2;
+        const y = p.y - 13;
+        roundRect(x, y, width, 26, 7);
+        ctx.fillStyle = "rgba(255,255,255,0.82)";
+        ctx.fill();
+        ctx.strokeStyle = rgba(label.color, Math.min(0.55, label.alpha));
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.fillStyle = rgba(label.color, label.alpha);
+        ctx.fillText(label.text, label.align === "left" ? p.x + 7 : label.align === "right" ? p.x - 7 : p.x, p.y);
+        ctx.restore();
+      }
+      labelQueue = [];
+    }
+
+    function roundRect(x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + w, y, x + w, y + h, r);
+      ctx.arcTo(x + w, y + h, x, y + h, r);
+      ctx.arcTo(x, y + h, x, y, r);
+      ctx.arcTo(x, y, x + w, y, r);
+      ctx.closePath();
+    }
+
+    function circleXY(radius, z = 0, steps = 160) {
+      const pts = [];
+      for (let i = 0; i <= steps; i += 1) {
+        const t = i / steps * Math.PI * 2;
+        pts.push(v(Math.cos(t) * radius, Math.sin(t) * radius, z));
+      }
+      return pts;
+    }
+
+    function arcYZ(radius, startDeg, endDeg, steps = 90) {
+      const pts = [];
+      const start = startDeg * Math.PI / 180;
+      const end = endDeg * Math.PI / 180;
+      const sweep = end - start;
+      const count = Math.max(2, Math.ceil(Math.abs(sweep) / (Math.PI * 2) * steps));
+      for (let i = 0; i <= count; i += 1) {
+        const a = start + sweep * i / count;
+        pts.push(v(0, Math.sin(a) * radius, Math.cos(a) * radius));
+      }
+      return pts;
+    }
+
+    function vectorFromRatios(m0Scene, mxyRatio, mzRatio, phaseRad) {
+      const transverse = m0Scene * mxyRatio;
+      const x = transverse * Math.sin(phaseRad);
+      const y = transverse * Math.cos(phaseRad);
+      return {
+        m: v(x, y, m0Scene * mzRatio),
+        mz: v(0, 0, m0Scene * mzRatio),
+        mxy: v(x, y, 0)
+      };
+    }
+
+    function chemicalShiftHz() {
+      return PROTON_GAMMA_MHZ_T * 1e6 * state.b0 * CHEMICAL_SHIFT_PPM * 1e-6;
+    }
+
+    function spinEchoSignal() {
+      return (1 - Math.exp(-state.trMs / state.t1Ms)) * Math.exp(-state.teMs / state.t2Ms);
+    }
+
+    function chemicalSignalAtTE() {
+      const fat = state.fatFraction;
+      const water = 1 - fat;
+      const phase = -2 * Math.PI * chemicalShiftHz() * state.teMs / 1000;
+      const re = water + fat * Math.cos(phase);
+      const im = fat * Math.sin(phase);
+      return Math.hypot(re, im) * Math.exp(-state.teMs / state.t2Ms);
+    }
+
+    function sequenceDurationMs() {
+      if (state.sequenceMode === "custom") return Math.max(900, state.teMs + 300);
+      if (state.sequenceMode === "chemical") return Math.max(state.trMs, state.teMs + 30);
+      return Math.max(state.trMs, state.teMs + 60);
+    }
+
+    function sequenceVisualDuration(ms) {
+      return clamp(ms / 520, 4.5, 8.5);
+    }
+
+    function sequenceEvents() {
+      if (state.sequenceMode === "custom") {
+        return [
+          { label: "RF", at: 0 },
+          { label: "free", at: Math.min(state.teMs, sequenceDurationMs()) }
+        ];
+      }
+      if (state.sequenceMode === "chemical") {
+        return [
+          { label: "90°", at: 0 },
+          { label: "TE", at: state.teMs },
+          { label: "TR", at: state.trMs }
+        ];
+      }
+      return [
+        { label: "90°", at: 0 },
+        { label: "180°", at: state.teMs / 2 },
+        { label: "TE", at: state.teMs },
+        { label: "TR", at: state.trMs }
+      ];
+    }
+
+    function sequenceState(base) {
+      const t = clamp(state.sequenceElapsedMs, 0, state.sequenceDurationMs || sequenceDurationMs());
+      const priorMz = 1 - Math.exp(-state.trMs / state.t1Ms);
+      const rfWindowMs = 4;
+      let mxyRatio = 0;
+      let mzRatio = priorMz;
+      let phaseRad = 0;
+      let event = "시퀀스 대기";
+      let rfActive = false;
+      let species = null;
+      let signal = state.sequenceMode === "chemical" ? chemicalSignalAtTE() : spinEchoSignal();
+
+      if (state.sequenceMode === "chemical") {
+        const after = Math.max(0, t - rfWindowMs);
+        const pulseProgress = clamp(t / rfWindowMs, 0, 1);
+        rfActive = t <= rfWindowMs;
+        if (rfActive) {
+          const angle = Math.PI / 2 * pulseProgress;
+          mzRatio = priorMz * Math.cos(angle);
+          mxyRatio = priorMz * Math.sin(angle);
+          event = "90° excitation";
+        } else {
+          const decay = Math.exp(-after / state.t2Ms);
+          const waterWeight = 1 - state.fatFraction;
+          const fatWeight = state.fatFraction;
+          const waterPhase = 2 * Math.PI * state.offResHz * after / 1000;
+          const fatPhase = waterPhase - 2 * Math.PI * chemicalShiftHz() * after / 1000;
+          const waterVec = vectorFromRatios(base.m0Scene, priorMz * waterWeight * decay, 0, waterPhase).mxy;
+          const fatVec = vectorFromRatios(base.m0Scene, priorMz * fatWeight * decay, 0, fatPhase).mxy;
+          const mxy = add(waterVec, fatVec);
+          mxyRatio = length(mxy) / Math.max(0.001, base.m0Scene);
+          phaseRad = Math.atan2(mxy.x, mxy.y);
+          mzRatio = 1 - Math.exp(-after / state.t1Ms);
+          species = [
+            { label: "Water", vector: waterVec, color: colors.water },
+            { label: "Fat", vector: fatVec, color: colors.fat }
+          ];
+          event = Math.abs(after - state.teMs) < 2 ? "TE readout" : "water/fat phase drift";
+        }
+      } else {
+        const after = Math.max(0, t - rfWindowMs);
+        const pulseProgress = clamp(t / rfWindowMs, 0, 1);
+        rfActive = t <= rfWindowMs || Math.abs(after - state.teMs / 2) < 2.5;
+        if (t <= rfWindowMs) {
+          const angle = Math.PI / 2 * pulseProgress;
+          mzRatio = priorMz * Math.cos(angle);
+          mxyRatio = priorMz * Math.sin(angle);
+          event = "90° excitation";
+        } else {
+          const decay = Math.exp(-after / state.t2Ms);
+          mxyRatio = priorMz * decay;
+          mzRatio = 1 - Math.exp(-after / state.t1Ms);
+          if (after <= state.teMs / 2) {
+            phaseRad = 2 * Math.PI * state.offResHz * after / 1000;
+            event = "dephasing";
+          } else if (after <= state.teMs) {
+            phaseRad = 2 * Math.PI * state.offResHz * (state.teMs - after) / 1000;
+            event = Math.abs(after - state.teMs / 2) < 2.5 ? "180° refocusing" : "rephasing";
+          } else {
+            phaseRad = 2 * Math.PI * state.offResHz * (after - state.teMs) / 1000;
+            event = Math.abs(after - state.teMs) < 3 ? "spin echo at TE" : "T1 recovery + T2 decay";
+          }
+        }
+      }
+
+      return { mxyRatio, mzRatio, phaseRad, event, rfActive, species, signal, elapsedMs: t };
+    }
+
+    function physics() {
+      const b1T = state.b1MicroT * 1e-6;
+      const targetRad = state.targetDeg * Math.PI / 180;
+      const f0MHz = PROTON_GAMMA_MHZ_T * state.b0;
+      const nutationHz = PROTON_GAMMA_MHZ_T * state.b1MicroT;
+      const durationS = b1T > 0 ? targetRad / (PROTON_GAMMA_RAD_T_S * b1T) : 0;
+      const unclampedVisualDuration = targetRad === 0 ? MIN_VISUAL_SECONDS : durationS * state.timeScale;
+      const visualDuration = clamp(unclampedVisualDuration, MIN_VISUAL_SECONDS, MAX_VISUAL_SECONDS);
+      const m0RelativeTo15 = state.b0 / 1.5;
+      const m0Scene = MAX_VECTOR_LENGTH * state.b0 / 3;
+      const angleRad = state.currentDeg * Math.PI / 180;
+      let mzRatio = Math.cos(angleRad);
+      let mxyRatio = Math.sin(angleRad);
+      let phaseRad = state.phaseRad;
+      let event = state.activeEvent;
+      let rfActive = state.rfActive || state.running;
+      let species = null;
+      let signal = Math.abs(mxyRatio);
+      let elapsedMs = state.freeMs;
+      let durationMs = state.sequenceDurationMs;
+
+      if (state.mode === "free") {
+        const initialMz = Math.cos(targetRad);
+        const initialMxy = Math.sin(targetRad);
+        mzRatio = 1 - (1 - initialMz) * Math.exp(-state.freeMs / state.t1Ms);
+        mxyRatio = initialMxy * Math.exp(-state.freeMs / state.t2Ms);
+        phaseRad = 2 * Math.PI * state.offResHz * state.freeMs / 1000;
+        event = "free precession + T1/T2 relaxation";
+        signal = Math.abs(mxyRatio);
+      } else if (state.mode === "sequence" || state.mode === "sequence_done") {
+        const seq = sequenceState({ m0Scene });
+        mzRatio = seq.mzRatio;
+        mxyRatio = seq.mxyRatio;
+        phaseRad = seq.phaseRad;
+        event = seq.event;
+        rfActive = seq.rfActive;
+        species = seq.species;
+        signal = seq.signal;
+        elapsedMs = seq.elapsedMs;
+        durationMs = state.sequenceDurationMs;
+      }
+
+      const vectors = vectorFromRatios(m0Scene, mxyRatio, mzRatio, phaseRad);
+      return {
+        b1T,
+        targetRad,
+        f0MHz,
+        nutationHz,
+        durationS,
+        unclampedVisualDuration,
+        visualDuration,
+        m0RelativeTo15,
+        m0Scene,
+        angleRad,
+        mzRatio,
+        mxyRatio,
+        mxyMagnitudeRatio: length(vectors.mxy) / Math.max(0.001, m0Scene),
+        phaseRad,
+        event,
+        rfActive,
+        species,
+        signal,
+        elapsedMs,
+        durationMs,
+        m: vectors.m,
+        mz: vectors.mz,
+        mxy: vectors.mxy
+      };
+    }
+
+    function drawPlane() {
+      for (const r of [0.35, 0.7, 1.05, 1.4]) {
+        ellipsePath(circleXY(r, 0), colors.plane, 1, r === 1.4 ? 0.55 : 0.36);
+      }
+      for (let i = -1.2; i <= 1.201; i += 0.3) {
+        line3(v(-1.35, i, 0), v(1.35, i, 0), colors.plane, 1, 0.23);
+        line3(v(i, -1.35, 0), v(i, 1.35, 0), colors.plane, 1, 0.23);
+      }
+    }
+
+    function drawAxes() {
+      arrow3(v(-1.32, 0, 0), v(1.46, 0, 0), colors.axis, 2.5, 0.9);
+      arrow3(v(0, -1.32, 0), v(0, 1.46, 0), colors.axis, 2.5, 0.9);
+      arrow3(v(0, 0, -1.22), v(0, 0, 1.52), colors.b0, 3, 0.92);
+      label3("x'", v(1.58, 0, 0), colors.axis, 1);
+      label3("y'", v(0, 1.58, 0), colors.axis, 1);
+      label3("z", v(0, 0, 1.64), colors.b0, 1);
+      label3("B0", v(0.18, 0.18, 1.38), colors.b0, 1);
+    }
+
+    function drawRFField(p) {
+      const b1Visual = clamp(0.38 + state.b1MicroT / 30 * 0.55, 0.38, 0.93);
+      const base = v(-0.08, -0.12, -0.08);
+      arrow3(base, add(base, v(b1Visual, 0, 0)), colors.b1, 6, p.rfActive ? 1 : 0.82);
+      label3("B1 RF", add(base, v(b1Visual + 0.18, 0, 0)), colors.b1, p.rfActive ? 1 : 0.86);
+
+      const rippleCount = p.rfActive ? 3 : 2;
+      for (let i = 0; i < rippleCount; i += 1) {
+        const offset = -0.42 + i * 0.3;
+        const phase = ((state.elapsed + state.sequenceElapsedMs / 1000) * 8 + i * 0.55) % 1;
+        const amp = 0.05 + phase * 0.13;
+        const alpha = p.rfActive ? 0.36 * (1 - phase) : 0.16;
+        ellipsePath([
+          v(offset, -amp, -0.08),
+          v(offset + 0.1, 0, -0.08 + amp),
+          v(offset + 0.2, amp, -0.08),
+          v(offset + 0.3, 0, -0.08 - amp),
+          v(offset + 0.4, -amp, -0.08)
+        ], colors.b1, 1.4, alpha);
+      }
+
+      const targetArc = arcYZ(p.m0Scene, 0, state.targetDeg, 140);
+      ellipsePath(targetArc, colors.arc, 3, 0.22, true);
+      const currentArc = arcYZ(p.m0Scene, 0, state.currentDeg, 140);
+      ellipsePath(currentArc, colors.arc, 4, 0.9);
+      label3("flip arc", v(0, p.m0Scene * 0.78, p.m0Scene * 0.78), colors.arc, 0.82);
+    }
+
+    function drawVectors(p) {
+      if (p.species) {
+        for (const item of p.species) {
+          if (length(item.vector) > 0.01) {
+            arrow3(v(0, 0, 0), item.vector, item.color, 4, 0.82);
+            label3(item.label, add(item.vector, v(0.03, 0.04, 0.06)), item.color, 0.9);
+          }
+        }
+      }
+      line3(p.m, p.mz, colors.guide, 1.4, 0.54, true);
+      line3(p.m, p.mxy, colors.guide, 1.4, 0.54, true);
+      if (length(p.mz) > 0.01) {
+        arrow3(v(0, 0, 0), p.mz, colors.mz, 6, 0.96);
+        label3("Mz", add(p.mz, v(0.02, 0.02, Math.sign(p.mz.z || 1) * 0.12)), colors.mz, 1);
+      }
+      if (length(p.mxy) > 0.01) {
+        arrow3(v(0, 0, 0), p.mxy, colors.mxy, 6, 0.96);
+        label3("Mxy", add(p.mxy, v(0, Math.sign(p.mxy.y || 1) * 0.18, 0.04)), colors.mxy, 1);
+      }
+      arrow3(v(0, 0, 0), p.m, colors.m, 7, 1);
+      label3("M", add(p.m, v(0.05, Math.sign(p.m.y || 1) * 0.08, Math.sign(p.m.z || 1) * 0.08)), colors.m, 1);
+    }
+
+    function drawAngleBadge(p) {
+      const center = project(v(0, 0, 0));
+      ctx.save();
+      const x = center.x + 18;
+      const y = center.y + 18;
+      roundRect(x, y, 118, 42, 8);
+      ctx.fillStyle = "rgba(255,255,255,0.86)";
+      ctx.fill();
+      ctx.strokeStyle = rgba(colors.arc, 0.45);
+      ctx.stroke();
+      ctx.font = "800 11px Malgun Gothic, Segoe UI, sans-serif";
+      ctx.fillStyle = "#617088";
+      ctx.fillText("현재 flip", x + 12, y + 15);
+      ctx.fillStyle = colors.arc;
+      ctx.font = "850 16px Malgun Gothic, Segoe UI, sans-serif";
+      ctx.fillText(`${state.currentDeg.toFixed(0)}°`, x + 12, y + 33);
+      ctx.restore();
+    }
+
+    function drawScene() {
+      const dpr = window.devicePixelRatio || 1;
+      ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+      labelQueue = [];
+      const p = physics();
+      drawPlane();
+      drawAxes();
+      drawRFField(p);
+      drawVectors(p);
+      drawAngleBadge(p);
+      drawLabels();
+    }
+
+    function formatDuration(seconds) {
+      if (seconds < 1e-6) return `${(seconds * 1e9).toFixed(1)} ns`;
+      if (seconds < 1e-3) return `${(seconds * 1e6).toFixed(2)} us`;
+      if (seconds < 1) return `${(seconds * 1e3).toFixed(2)} ms`;
+      return `${seconds.toFixed(2)} s`;
+    }
+
+    function formatMs(ms) {
+      if (ms < 10) return `${ms.toFixed(1)} ms`;
+      if (ms < 1000) return `${ms.toFixed(0)} ms`;
+      return `${(ms / 1000).toFixed(2)} s`;
+    }
+
+    function sequenceName() {
+      const names = {
+        custom: "자유 RF",
+        t1w: "T1W SE",
+        t2w: "T2W SE",
+        chemical: "chemical shift"
+      };
+      return names[state.sequenceMode] || "sequence";
+    }
+
+    function renderSequenceTimeline(p) {
+      const total = Math.max(1, state.sequenceDurationMs || sequenceDurationMs());
+      controls.sequenceTimeline.innerHTML = "";
+      for (const item of sequenceEvents()) {
+        const left = clamp(item.at / total * 100, 0, 100);
+        const node = document.createElement("div");
+        node.className = "timeline-event";
+        node.style.left = `${left}%`;
+        node.innerHTML = `<span>${item.label}</span>`;
+        controls.sequenceTimeline.appendChild(node);
+      }
+      const progress = state.mode === "sequence" || state.mode === "sequence_done"
+        ? clamp(state.sequenceElapsedMs / total * 100, 0, 100)
+        : state.mode === "free"
+          ? 100
+          : 0;
+      controls.sequenceProgress.style.width = `${progress}%`;
+    }
+
+    function updateUI() {
+      const p = physics();
+      controls.b0Output.textContent = `${state.b0.toFixed(1)} T`;
+      controls.b1Output.textContent = `${state.b1MicroT.toFixed(1).replace(".0", "")} uT`;
+      controls.flipOutput.textContent = `${state.targetDeg.toFixed(0)}°`;
+      controls.timeScaleOutput.textContent = `실제의 1/${state.timeScale.toLocaleString("ko-KR")}`;
+      controls.trOutput.textContent = `${formatMs(state.trMs)}`;
+      controls.teOutput.textContent = `${formatMs(state.teMs)}`;
+      controls.t1Output.textContent = `${formatMs(state.t1Ms)}`;
+      controls.t2Output.textContent = `${formatMs(state.t2Ms)}`;
+      controls.offResOutput.textContent = `${state.offResHz.toFixed(0)} Hz`;
+      controls.fatOutput.textContent = `${Math.round(state.fatFraction * 100)}%`;
+      controls.f0Metric.textContent = `${p.f0MHz.toFixed(2)} MHz`;
+      controls.flipMetric.textContent = `${state.currentDeg.toFixed(0)}° / ${state.targetDeg.toFixed(0)}°`;
+      controls.mzMetric.textContent = p.mzRatio.toFixed(3);
+      controls.mxyMetric.textContent = p.mxyRatio.toFixed(3);
+      controls.pulseMetric.textContent = formatDuration(p.durationS);
+      controls.m0Output.textContent = `${p.m0RelativeTo15.toFixed(2)}x @ 1.5 T`;
+      controls.nutationOutput.textContent = `${p.nutationHz.toFixed(1)} Hz`;
+      controls.durationOutput.textContent = formatDuration(p.durationS);
+      controls.timeScaleStatus.textContent = `실제의 1/${state.timeScale.toLocaleString("ko-KR")}`;
+      controls.sequenceTimeOutput.textContent = state.mode === "sequence" || state.mode === "sequence_done"
+        ? `${formatMs(p.elapsedMs)} / ${formatMs(p.durationMs)}`
+        : state.mode === "free"
+          ? `${formatMs(state.freeMs)} after RF`
+          : "-";
+      controls.signalOutput.textContent = p.signal === null || Number.isNaN(p.signal) ? "-" : `${p.signal.toFixed(3)} S/S0`;
+      controls.eventOutput.textContent = p.event;
+      controls.visualScaleOutput.textContent = `${(p.m0Scene / MAX_VECTOR_LENGTH).toFixed(2)} of 3.0 T`;
+      const fillProgress = state.mode === "sequence" || state.mode === "sequence_done"
+        ? clamp(state.sequenceElapsedMs / Math.max(1, state.sequenceDurationMs) * 100, 0, 100)
+        : state.completed || state.mode === "free"
+          ? 100
+          : state.running && state.targetDeg > 0
+            ? clamp(state.currentDeg / state.targetDeg * 100, 0, 100)
+            : 0;
+      controls.pulseFill.style.width = `${fillProgress}%`;
+      renderSequenceTimeline(p);
+
+      if (state.running) {
+        controls.pulseState.textContent = `RF pulse 주입 중: ${state.currentDeg.toFixed(0)}°`;
+        controls.start.disabled = true;
+        controls.runSequence.disabled = true;
+      } else if (state.mode === "sequence") {
+        controls.start.disabled = true;
+        controls.runSequence.disabled = true;
+        controls.pulseState.textContent = `${sequenceName()} 진행 중: ${p.event}`;
+      } else if (state.mode === "sequence_done") {
+        controls.start.disabled = false;
+        controls.runSequence.disabled = false;
+        controls.pulseState.textContent = `${sequenceName()} 완료: ${p.event}`;
+      } else {
+        controls.start.disabled = false;
+        controls.runSequence.disabled = false;
+        controls.pulseState.textContent = state.completed
+          ? `RF pulse 후 ${p.event}`
+          : "평형 상태";
+      }
+    }
+
+    function syncFromControls() {
+      state.b0 = Number(controls.b0.value);
+      state.b1MicroT = Number(controls.b1.value);
+      state.targetDeg = Number(controls.flip.value);
+      state.timeScale = Number(controls.timeScale.value);
+      state.sequenceMode = controls.sequenceMode.value;
+      state.trMs = Number(controls.tr.value);
+      state.teMs = Math.min(Number(controls.te.value), Math.max(1, state.trMs - 1));
+      if (Number(controls.te.value) !== state.teMs) controls.te.value = String(state.teMs);
+      state.t1Ms = Number(controls.t1.value);
+      state.t2Ms = Number(controls.t2.value);
+      state.offResHz = Number(controls.offRes.value);
+      state.fatFraction = Number(controls.fat.value) / 100;
+      state.currentDeg = 0;
+      state.phaseRad = 0;
+      state.freeMs = 0;
+      state.elapsed = 0;
+      state.running = false;
+      state.mode = "idle";
+      state.rfActive = false;
+      state.completed = false;
+      state.sequenceElapsedMs = 0;
+      state.sequenceDurationMs = sequenceDurationMs();
+      state.sequenceVisualDuration = sequenceVisualDuration(state.sequenceDurationMs);
+      state.activeEvent = "평형 상태";
+      const p = physics();
+      state.visualDuration = p.visualDuration;
+      updateUI();
+      drawScene();
+    }
+
+    function startPulse() {
+      state.currentDeg = 0;
+      state.phaseRad = 0;
+      state.freeMs = 0;
+      state.elapsed = 0;
+      state.running = true;
+      state.mode = "rf";
+      state.rfActive = true;
+      state.completed = false;
+      state.sequenceElapsedMs = 0;
+      state.visualDuration = physics().visualDuration;
+      updateUI();
+    }
+
+    function resetPulse() {
+      state.currentDeg = 0;
+      state.phaseRad = 0;
+      state.freeMs = 0;
+      state.elapsed = 0;
+      state.running = false;
+      state.mode = "idle";
+      state.rfActive = false;
+      state.completed = false;
+      state.sequenceElapsedMs = 0;
+      state.activeEvent = "평형 상태";
+      updateUI();
+      drawScene();
+    }
+
+    function applyPresetForMode() {
+      const mode = controls.sequenceMode.value;
+      const presets = {
+        custom: { flip: 90, tr: 1000, te: 40, t1: 900, t2: 80, offRes: 30, fat: 40 },
+        t1w: { flip: 90, tr: 500, te: 15, t1: 900, t2: 80, offRes: 35, fat: 40 },
+        t2w: { flip: 90, tr: 3000, te: 100, t1: 900, t2: 80, offRes: 35, fat: 40 },
+        chemical: { flip: 90, tr: 120, te: state.b0 >= 2.2 ? 2.3 : 4.6, t1: 900, t2: 70, offRes: 0, fat: 40 }
+      };
+      const preset = presets[mode] || presets.custom;
+      controls.flip.value = String(preset.flip);
+      controls.tr.value = String(preset.tr);
+      controls.te.value = String(preset.te);
+      controls.t1.value = String(preset.t1);
+      controls.t2.value = String(preset.t2);
+      controls.offRes.value = String(preset.offRes);
+      controls.fat.value = String(preset.fat);
+      syncFromControls();
+    }
+
+    function runSequence() {
+      state.sequenceMode = controls.sequenceMode.value;
+      if (state.sequenceMode === "custom") {
+        startPulse();
+        return;
+      }
+      state.currentDeg = 0;
+      state.phaseRad = 0;
+      state.freeMs = 0;
+      state.elapsed = 0;
+      state.running = false;
+      state.mode = "sequence";
+      state.rfActive = true;
+      state.completed = false;
+      state.sequenceElapsedMs = 0;
+      state.sequenceDurationMs = sequenceDurationMs();
+      state.sequenceVisualDuration = sequenceVisualDuration(state.sequenceDurationMs);
+      state.activeEvent = "시퀀스 시작";
+      updateUI();
+    }
+
+    function tick(now) {
+      if (!tick.last) tick.last = now;
+      const rawDt = Math.min(0.05, (now - tick.last) / 1000);
+      tick.last = now;
+
+      if (state.running) {
+        state.elapsed += rawDt;
+        const progress = state.visualDuration > 0 ? clamp(state.elapsed / state.visualDuration, 0, 1) : 1;
+        state.currentDeg = state.targetDeg * progress;
+        if (progress >= 1) {
+          state.currentDeg = state.targetDeg;
+          state.running = false;
+          state.mode = "free";
+          state.rfActive = false;
+          state.freeMs = 0;
+          state.completed = true;
+        }
+        updateUI();
+      } else if (state.mode === "free") {
+        state.freeMs = Math.min(5000, state.freeMs + rawDt * POST_RF_MS_PER_SECOND);
+        updateUI();
+      } else if (state.mode === "sequence") {
+        const physicalStep = rawDt * state.sequenceDurationMs / Math.max(0.1, state.sequenceVisualDuration);
+        state.sequenceElapsedMs = Math.min(state.sequenceDurationMs, state.sequenceElapsedMs + physicalStep);
+        state.currentDeg = state.sequenceElapsedMs <= 4 ? 90 * clamp(state.sequenceElapsedMs / 4, 0, 1) : 90;
+        state.rfActive = physics().rfActive;
+        if (state.sequenceElapsedMs >= state.sequenceDurationMs) {
+          state.mode = "sequence_done";
+          state.completed = true;
+          state.rfActive = false;
+          state.activeEvent = "시퀀스 완료";
+        }
+        updateUI();
+      }
+
+      drawScene();
+      requestAnimationFrame(tick);
+    }
+
+    controls.b0.addEventListener("input", syncFromControls);
+    controls.b1.addEventListener("input", syncFromControls);
+    controls.flip.addEventListener("input", syncFromControls);
+    controls.timeScale.addEventListener("input", syncFromControls);
+    controls.sequenceMode.addEventListener("change", applyPresetForMode);
+    controls.tr.addEventListener("input", syncFromControls);
+    controls.te.addEventListener("input", syncFromControls);
+    controls.t1.addEventListener("input", syncFromControls);
+    controls.t2.addEventListener("input", syncFromControls);
+    controls.offRes.addEventListener("input", syncFromControls);
+    controls.fat.addEventListener("input", syncFromControls);
+    controls.start.addEventListener("click", startPulse);
+    controls.runSequence.addEventListener("click", runSequence);
+    controls.applyPreset.addEventListener("click", applyPresetForMode);
+    controls.reset.addEventListener("click", resetPulse);
+    window.addEventListener("resize", resize);
+
+    syncFromControls();
+    resize();
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>
