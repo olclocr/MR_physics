@@ -1,0 +1,1544 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>양성자 순자화와 RF 라모어 공명</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --ink: #172033;
+      --muted: #66758a;
+      --line: #d8e1ec;
+      --panel: rgba(255, 255, 255, 0.93);
+      --panel-solid: #ffffff;
+      --axis: #48618a;
+      --x: #48618a;
+      --y: #48618a;
+      --z: #48618a;
+      --rf: #e27722;
+      --eff: #9b6a00;
+      --mag: #b93636;
+      --trace: #b93636;
+      --blue-spoke: #2f68d8;
+      --red-spoke: #d9433f;
+      font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      overflow: hidden;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      height: 100vh;
+      min-height: 640px;
+    }
+
+    .stage {
+      position: relative;
+      min-width: 0;
+      min-height: 640px;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.90), rgba(237,243,250,0.58)),
+        radial-gradient(circle at 48% 52%, rgba(255,255,255,0.96), rgba(233,240,248,0.76) 58%, rgba(223,232,243,0.92));
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .title {
+      position: absolute;
+      left: 28px;
+      top: 22px;
+      z-index: 2;
+      margin: 0;
+      max-width: min(760px, calc(100% - 56px));
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.12;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      position: absolute;
+      left: 29px;
+      top: 72px;
+      z-index: 2;
+      margin: 0;
+      max-width: min(760px, calc(100% - 58px));
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.48;
+      font-weight: 750;
+    }
+
+    .readout {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 20px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(112px, 1fr));
+      gap: 8px;
+      max-width: 980px;
+    }
+
+    .metric {
+      min-width: 0;
+      min-height: 56px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.86);
+      padding: 8px 10px;
+      box-shadow: 0 8px 20px rgba(28, 38, 56, 0.055);
+    }
+
+    .metric b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.24;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sidebar {
+      height: 100vh;
+      min-height: 640px;
+      border-left: 1px solid var(--line);
+      background: rgba(248, 250, 253, 0.97);
+      padding: 18px;
+      overflow: auto;
+    }
+
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 18px rgba(28, 38, 56, 0.045);
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .control-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 4px 12px;
+      margin: 12px 0;
+    }
+
+    .control-row label {
+      min-width: 0;
+      font-size: 13px;
+      line-height: 1.25;
+      font-weight: 850;
+    }
+
+    .control-row output {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.25;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    input[type="range"] {
+      grid-column: 1 / -1;
+      width: 100%;
+      accent-color: var(--z);
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: #b8c5d6;
+      background: #f9fbfe;
+    }
+
+    button.primary {
+      border-color: #a85512;
+      background: var(--rf);
+      color: #fff;
+    }
+
+    button.primary:hover {
+      background: #cc671d;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .preset-grid button {
+      min-height: 34px;
+      padding: 6px 7px;
+      font-size: 12px;
+    }
+
+    .data-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .data-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: baseline;
+      gap: 12px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.76);
+      padding-bottom: 7px;
+      font-size: 13px;
+    }
+
+    .data-line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .data-line span {
+      min-width: 0;
+      color: var(--muted);
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .data-line b {
+      font-size: 13px;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .switch-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 30px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.72);
+      padding: 0 0 7px;
+      margin: 0 0 7px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .switch-row:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .switch-row input {
+      flex: 0 0 18px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--rf);
+    }
+
+    .formula-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .formula-row {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 8px;
+      align-items: start;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.78);
+    }
+
+    .formula-row:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .formula-row b {
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    .formula-row code {
+      display: block;
+      margin-bottom: 4px;
+      color: #36506d;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.35;
+      white-space: normal;
+    }
+
+    .formula-row span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      min-width: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
+    .swatch {
+      flex: 0 0 11px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+    }
+
+    .pulse-bar {
+      height: 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #edf2f8;
+      margin-bottom: 10px;
+    }
+
+    .pulse-fill {
+      width: 0;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #e27722, #d9433f);
+    }
+
+    .status {
+      min-height: 34px;
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 750;
+    }
+
+    @media (max-width: 1100px) {
+      .readout {
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        overflow: auto;
+      }
+
+      .app {
+        display: block;
+        height: auto;
+        min-height: 0;
+      }
+
+      .stage {
+        height: 66vh;
+        min-height: 500px;
+      }
+
+      .sidebar {
+        height: auto;
+        min-height: 0;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .title {
+        left: 18px;
+        top: 16px;
+        max-width: calc(100% - 36px);
+      }
+
+      .subtitle {
+        left: 19px;
+        top: 66px;
+        max-width: calc(100% - 38px);
+      }
+
+      .readout {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .metric {
+        min-height: 52px;
+      }
+
+      .legend,
+      .button-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="stage" aria-label="양성자 순자화 RF 라모어 공명 시각화">
+      <canvas id="scene"></canvas>
+      <h1 class="title">양성자 순자화와 RF 라모어 공명</h1>
+      <p class="subtitle">라모어와 함께 도는 x'y' 관찰계에서 B1이 멈춰 보일 때와 미끄러질 때, 순자화 M의 flip 차이를 관찰합니다.</p>
+      <div class="readout" aria-live="polite">
+        <div class="metric"><b>라모어 f0</b><span id="f0Metric">-</span></div>
+        <div class="metric"><b>RF offset</b><span id="rfMetric">-</span></div>
+        <div class="metric"><b>B1 nutation</b><span id="nutationMetric">-</span></div>
+        <div class="metric"><b>RF 누적 flip</b><span id="rfFlipMetric">-</span></div>
+        <div class="metric"><b>Mz / Mx'y'</b><span id="magMetric">-</span></div>
+        <div class="metric"><b>pulse 시간</b><span id="pulseMetric">-</span></div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="section">
+        <h2>자기장과 RF</h2>
+        <div class="control-row">
+          <label for="b0Control">B0 정자기장</label>
+          <output id="b0Output" for="b0Control">1.50 T</output>
+          <input id="b0Control" type="range" min="0.05" max="7" value="1.5" step="0.05" />
+        </div>
+        <div class="control-row">
+          <label for="detuneControl">RF offset Δf</label>
+          <output id="detuneOutput" for="detuneControl">0 Hz</output>
+          <input id="detuneControl" type="range" min="-2000" max="2000" value="0" step="100" list="detuneTicks" />
+          <datalist id="detuneTicks"></datalist>
+        </div>
+        <div class="control-row">
+          <label for="b1Control">B1 RF 세기</label>
+          <output id="b1Output" for="b1Control">8.0 uT</output>
+          <input id="b1Control" type="range" min="0.2" max="80" value="8" step="0.1" />
+        </div>
+        <div class="control-row">
+          <label for="flipControl">일치 가정 flip</label>
+          <output id="flipOutput" for="flipControl">360°</output>
+          <input id="flipControl" type="range" min="0" max="360" value="360" step="1" />
+        </div>
+        <div class="control-row">
+          <label for="timeScaleControl">시간 배속</label>
+          <output id="timeScaleOutput" for="timeScaleControl">1.10 ms/s</output>
+          <input id="timeScaleControl" type="range" min="0.05" max="8" value="1.1" step="0.05" />
+        </div>
+        <div class="preset-grid" aria-label="빠른 설정">
+          <button type="button" data-detune="0">공명</button>
+          <button type="button" data-detune="-250">느림</button>
+          <button type="button" data-detune="250">빠름</button>
+          <button type="button" data-flip="360">360°</button>
+        </div>
+        <div class="button-grid">
+          <button id="startPulse" class="primary" type="button">RF pulse 실행</button>
+          <button id="resetPulse" type="button">초기화</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>현재 상태</h2>
+        <div class="pulse-bar" aria-hidden="true">
+          <div id="pulseFill" class="pulse-fill"></div>
+        </div>
+        <p class="status" id="pulseState">평형 상태</p>
+        <div class="data-grid">
+          <div class="data-line"><span>라모어 주파수 f0</span><b id="f0Output">-</b></div>
+          <div class="data-line"><span>RF 주파수 fRF</span><b id="rfOutput">-</b></div>
+          <div class="data-line"><span>Δf / f1</span><b id="detuneRatioOutput">-</b></div>
+          <div class="data-line"><span>유효장 기울기</span><b id="tiltOutput">-</b></div>
+          <div class="data-line"><span>z축에서 기울기</span><b id="actualFlipOutput">-</b></div>
+          <div class="data-line"><span>경과 pulse 시간</span><b id="elapsedOutput">-</b></div>
+          <div class="data-line"><span>공명 기준 pulse</span><b id="durationOutput">-</b></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>표시 요소</h2>
+        <label class="switch-row">
+          <span>순자화 M 궤적</span>
+          <input id="showTrace" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>유효장 B_eff</span>
+          <input id="showEffective" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>M에 수직한 바퀴 모형</span>
+          <input id="showWheel" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>Mx'y', Mz 성분</span>
+          <input id="showComponents" type="checkbox" checked />
+        </label>
+      </section>
+
+      <section class="section">
+        <h2>공명 직관</h2>
+        <div class="formula-list">
+          <div class="formula-row">
+            <b>그림의 M</b>
+            <div>
+              <code>M = Σμ / V</code>
+              <span>붉은 화살표는 개별 스핀 하나가 아니라 많은 양성자 자기모멘트가 만든 순자화(블로흐) 벡터입니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>라모어</b>
+            <div>
+              <code>f0 = γB0</code>
+              <span>x', y'는 f0와 함께 돌고, z축은 B0 방향 그대로입니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>맞을 때</b>
+            <div>
+              <code>Δf = fRF - f0 = 0</code>
+              <span>B1이 +x'에 고정되어 순자화 M을 x'축 둘레로 회전시킵니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>어긋날 때</b>
+            <div>
+              <code>B_eff = B1 x' + (Δω/γ) z</code>
+              <span>M은 순수한 x' flip 대신 B_eff라는 기울어진 축 둘레로 회전합니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>flip</b>
+            <div>
+              <code>θ = 2π f1 t, &nbsp; f1 = γB1</code>
+              <span>pulse 시간은 Δf=0이라고 가정했을 때의 목표 flip에 맞춥니다.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>범례</h2>
+        <div class="legend">
+          <div class="legend-item"><i class="swatch" style="background:#48618a; opacity:0.45"></i><span>x' 축</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#48618a; opacity:0.45"></i><span>y' 축</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#48618a; opacity:0.45"></i><span>z축, B0</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#e27722"></i><span>B1 RF</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#9b6a00"></i><span>B_eff</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#b93636"></i><span>순자화 M</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#314154"></i><span>M에 수직한 바퀴</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#d9433f"></i><span>초기 +y' 바퀴살</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#2f68d8"></i><span>초기 -y' 바퀴살</span></div>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const detuneTicks = document.getElementById("detuneTicks");
+
+    const controls = {
+      b0: document.getElementById("b0Control"),
+      detune: document.getElementById("detuneControl"),
+      b1: document.getElementById("b1Control"),
+      flip: document.getElementById("flipControl"),
+      timeScale: document.getElementById("timeScaleControl"),
+      start: document.getElementById("startPulse"),
+      reset: document.getElementById("resetPulse"),
+      showTrace: document.getElementById("showTrace"),
+      showEffective: document.getElementById("showEffective"),
+      showWheel: document.getElementById("showWheel"),
+      showComponents: document.getElementById("showComponents"),
+      b0Output: document.getElementById("b0Output"),
+      detuneOutput: document.getElementById("detuneOutput"),
+      b1Output: document.getElementById("b1Output"),
+      flipOutput: document.getElementById("flipOutput"),
+      timeScaleOutput: document.getElementById("timeScaleOutput"),
+      f0Metric: document.getElementById("f0Metric"),
+      rfMetric: document.getElementById("rfMetric"),
+      nutationMetric: document.getElementById("nutationMetric"),
+      rfFlipMetric: document.getElementById("rfFlipMetric"),
+      magMetric: document.getElementById("magMetric"),
+      pulseMetric: document.getElementById("pulseMetric"),
+      f0Output: document.getElementById("f0Output"),
+      rfOutput: document.getElementById("rfOutput"),
+      detuneRatioOutput: document.getElementById("detuneRatioOutput"),
+      tiltOutput: document.getElementById("tiltOutput"),
+      actualFlipOutput: document.getElementById("actualFlipOutput"),
+      elapsedOutput: document.getElementById("elapsedOutput"),
+      durationOutput: document.getElementById("durationOutput"),
+      pulseFill: document.getElementById("pulseFill"),
+      pulseState: document.getElementById("pulseState")
+    };
+
+    for (let hz = -2000; hz <= 2000; hz += 100) {
+      const option = document.createElement("option");
+      option.value = String(hz);
+      detuneTicks.appendChild(option);
+    }
+
+    const colors = {
+      ink: "#172033",
+      muted: "#66758a",
+      grid: "rgba(55, 75, 104, 0.54)",
+      gridSoft: "rgba(55, 75, 104, 0.36)",
+      labelBg: "rgba(255,255,255,0.91)",
+      axis: "#48618a",
+      x: "#48618a",
+      y: "#48618a",
+      z: "#48618a",
+      rf: "#e27722",
+      eff: "#9b6a00",
+      mag: "#b93636",
+      trace: "#b93636",
+      mz: "#249667",
+      mxy: "#078ca4",
+      wheelFill: "#ffffff",
+      wheelEdge: "#3f5e78",
+      spokeRed: "#d9433f",
+      spokeBlue: "#2f68d8"
+    };
+
+    const PROTON_GAMMA_MHZ_T = 42.57747892;
+    const HZ_PER_MICRO_T = PROTON_GAMMA_MHZ_T;
+    const TWO_PI = Math.PI * 2;
+    const MAX_TRACE = 260;
+    const EPS = 1e-8;
+    const CAMERA_RIGHT = { x: 0.8221921916437787, y: 0.5692099788303083, z: 0 };
+    const CAMERA_UP = { x: -0.24394713378441785, y: 0.352368082133048, z: 0.9035079029052513 };
+    const VIEW_DIR = { x: 0.5142857142857142, y: -0.7428571428571428, z: 0.4285714285714285 };
+    const OCCLUDED_ALPHA = 0.08;
+    const WHEEL_RADIUS = 0.17;
+    const WHEEL_OCCLUSION_RADIUS = WHEEL_RADIUS + 0.001;
+    const WHEEL_SPOKE_COUNT = 18;
+    const WHEEL_RIM_SEGMENTS = 96;
+    const WHEEL_SPOKES = Array.from({ length: WHEEL_SPOKE_COUNT }, (_, i) => {
+      const angle = TWO_PI * (i + 0.5) / WHEEL_SPOKE_COUNT;
+      return {
+        angle,
+        color: Math.sin(angle) >= 0 ? colors.spokeRed : colors.spokeBlue
+      };
+    });
+
+    const state = {
+      b0: 1.5,
+      detuneHz: 0,
+      b1MicroT: 8,
+      flipDeg: 360,
+      timeScaleMsPerSec: 1.1,
+      pulseTime: 0,
+      running: false,
+      completed: false,
+      rfWavePhase: 0,
+      trace: []
+    };
+
+    const camera = {
+      origin: { x: 0, y: 0 },
+      scale: 1
+    };
+
+    let labelQueue = [];
+
+    function v(x, y, z) {
+      return { x, y, z };
+    }
+
+    function add(a, b) {
+      return v(a.x + b.x, a.y + b.y, a.z + b.z);
+    }
+
+    function sub(a, b) {
+      return v(a.x - b.x, a.y - b.y, a.z - b.z);
+    }
+
+    function mul(a, s) {
+      return v(a.x * s, a.y * s, a.z * s);
+    }
+
+    function lerp(a, b, t) {
+      return v(
+        a.x + (b.x - a.x) * t,
+        a.y + (b.y - a.y) * t,
+        a.z + (b.z - a.z) * t
+      );
+    }
+
+    function dot(a, b) {
+      return a.x * b.x + a.y * b.y + a.z * b.z;
+    }
+
+    function cross(a, b) {
+      return v(
+        a.y * b.z - a.z * b.y,
+        a.z * b.x - a.x * b.z,
+        a.x * b.y - a.y * b.x
+      );
+    }
+
+    function length(a) {
+      return Math.hypot(a.x, a.y, a.z);
+    }
+
+    function normalize(a) {
+      const n = length(a) || 1;
+      return mul(a, 1 / n);
+    }
+
+    function clamp(n, min, max) {
+      return Math.max(min, Math.min(max, n));
+    }
+
+    function rgba(hex, alpha) {
+      const clean = hex.replace("#", "");
+      const n = parseInt(clean, 16);
+      const r = (n >> 16) & 255;
+      const g = (n >> 8) & 255;
+      const b = n & 255;
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function rotateAroundAxis(point, axis, angle) {
+      const k = normalize(axis);
+      const c = Math.cos(angle);
+      const s = Math.sin(angle);
+      return add(
+        add(mul(point, c), mul(cross(k, point), s)),
+        mul(k, dot(k, point) * (1 - c))
+      );
+    }
+
+    function rotateZ(point, angle) {
+      const c = Math.cos(angle);
+      const s = Math.sin(angle);
+      return v(point.x * c - point.y * s, point.x * s + point.y * c, point.z);
+    }
+
+    function updateCamera() {
+      const w = canvas.clientWidth || 1;
+      const h = canvas.clientHeight || 1;
+      const mobile = w < 560;
+      camera.origin = {
+        x: w * (mobile ? 0.50 : 0.48),
+        y: h * (mobile ? 0.55 : 0.56)
+      };
+      camera.scale = Math.min(w, h) * (mobile ? 0.25 : 0.30);
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.round(rect.width * dpr));
+      canvas.height = Math.max(1, Math.round(rect.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      updateCamera();
+    }
+
+    function project(p) {
+      return {
+        x: camera.origin.x + dot(p, CAMERA_RIGHT) * camera.scale,
+        y: camera.origin.y - dot(p, CAMERA_UP) * camera.scale
+      };
+    }
+
+    function cameraDepth(p) {
+      return dot(p, VIEW_DIR);
+    }
+
+    function pointBehindWheel(point, wheel) {
+      if (!wheel || !controls.showWheel.checked) return false;
+      const planeDistance = dot(point, wheel.m);
+      const rayPlane = dot(VIEW_DIR, wheel.m);
+      if (Math.abs(rayPlane) < 1e-5) {
+        if (Math.abs(planeDistance) > 0.003) return false;
+        const radialOnPlane = Math.hypot(dot(point, wheel.bodyU), dot(point, wheel.bodyW));
+        return radialOnPlane <= WHEEL_OCCLUSION_RADIUS;
+      }
+
+      const t = -planeDistance / rayPlane;
+      if (t < -0.001) return false;
+      const hit = add(point, mul(VIEW_DIR, t));
+      const radial = Math.hypot(dot(hit, wheel.bodyU), dot(hit, wheel.bodyW));
+      return radial <= WHEEL_OCCLUSION_RADIUS;
+    }
+
+    function zLayerIncludesPoint(point, zLayer) {
+      if (zLayer === "below") return point.z < 0;
+      if (zLayer === "above") return point.z >= 0;
+      return true;
+    }
+
+    function zIntervalsForSegment(a, b, zLayer) {
+      if (zLayer !== "below" && zLayer !== "above") return [[0, 1]];
+      const z0 = a.z;
+      const z1 = b.z;
+      if (zLayer === "below") {
+        if (z0 >= 0 && z1 >= 0) return [];
+        if (z0 < 0 && z1 < 0) return [[0, 1]];
+      } else {
+        if (z0 < 0 && z1 < 0) return [];
+        if (z0 >= 0 && z1 >= 0) return [[0, 1]];
+      }
+
+      const cut = clamp(z0 / (z0 - z1), 0, 1);
+      if (zLayer === "below") return z0 < 0 ? [[0, cut]] : [[cut, 1]];
+      return z0 >= 0 ? [[0, cut]] : [[cut, 1]];
+    }
+
+    function clipPolygonByZ(points, zLayer) {
+      if (zLayer !== "below" && zLayer !== "above") return points;
+      const inside = p => zLayer === "below" ? p.z < 0 : p.z >= 0;
+      const output = [];
+      for (let i = 0; i < points.length; i += 1) {
+        const current = points[i];
+        const previous = points[(i + points.length - 1) % points.length];
+        const currentInside = inside(current);
+        const previousInside = inside(previous);
+
+        if (currentInside !== previousInside) {
+          const cut = previous.z / (previous.z - current.z);
+          output.push(lerp(previous, current, clamp(cut, 0, 1)));
+        }
+        if (currentInside) output.push(current);
+      }
+      return output;
+    }
+
+    function intersectLinearInterval(start, end, value0, slope, minValue) {
+      if (Math.abs(slope) < EPS) {
+        return value0 >= minValue ? [start, end] : null;
+      }
+      const cut = (minValue - value0) / slope;
+      if (slope > 0) start = Math.max(start, cut);
+      else end = Math.min(end, cut);
+      return start <= end ? [start, end] : null;
+    }
+
+    function diskIntervalForLine(u0, u1, w0, w1, radius) {
+      const a = u1 * u1 + w1 * w1;
+      const b = 2 * (u0 * u1 + w0 * w1);
+      const c = u0 * u0 + w0 * w0 - radius * radius;
+      if (Math.abs(a) < EPS) return c <= 0 ? [0, 1] : null;
+      const disc = b * b - 4 * a * c;
+      if (disc < 0) return c <= 0 ? [0, 1] : null;
+      const root = Math.sqrt(Math.max(0, disc));
+      const t0 = (-b - root) / (2 * a);
+      const t1 = (-b + root) / (2 * a);
+      const start = Math.max(0, Math.min(t0, t1));
+      const end = Math.min(1, Math.max(t0, t1));
+      return start <= end ? [start, end] : null;
+    }
+
+    function occlusionIntervalForSegment(a, b, wheel) {
+      if (!wheel || !controls.showWheel.checked) return null;
+      const radius = WHEEL_OCCLUSION_RADIUS;
+      const d = sub(b, a);
+      const rayPlane = dot(VIEW_DIR, wheel.m);
+      const plane0 = dot(a, wheel.m);
+      const planeSlope = dot(d, wheel.m);
+
+      if (Math.abs(rayPlane) < 1e-5) {
+        if (Math.abs(plane0) > 0.003 || Math.abs(planeSlope) > 0.003) return null;
+        const u0 = dot(a, wheel.bodyU);
+        const u1 = dot(d, wheel.bodyU);
+        const w0 = dot(a, wheel.bodyW);
+        const w1 = dot(d, wheel.bodyW);
+        return diskIntervalForLine(u0, u1, w0, w1, radius);
+      }
+
+      const s0 = -plane0 / rayPlane;
+      const sSlope = -planeSlope / rayPlane;
+      const frontInterval = intersectLinearInterval(0, 1, s0, sSlope, -0.001);
+      if (!frontInterval) return null;
+
+      const hit0 = add(a, mul(VIEW_DIR, s0));
+      const hitSlope = add(d, mul(VIEW_DIR, sSlope));
+      const u0 = dot(hit0, wheel.bodyU);
+      const u1 = dot(hitSlope, wheel.bodyU);
+      const w0 = dot(hit0, wheel.bodyW);
+      const w1 = dot(hitSlope, wheel.bodyW);
+      const diskInterval = diskIntervalForLine(u0, u1, w0, w1, radius);
+      if (!diskInterval) return null;
+
+      const start = Math.max(frontInterval[0], diskInterval[0]);
+      const end = Math.min(frontInterval[1], diskInterval[1]);
+      return start <= end ? [start, end] : null;
+    }
+
+    function line3OccludedByWheel(a, b, color, width, alpha, wheel, dashed = false, zLayer = "all") {
+      const zIntervals = zIntervalsForSegment(a, b, zLayer);
+      if (zIntervals.length === 0) return;
+      for (const [zStart, zEnd] of zIntervals) {
+        const startPoint = lerp(a, b, zStart);
+        const endPoint = lerp(a, b, zEnd);
+        line3OccludedSegment(startPoint, endPoint, color, width, alpha, wheel, dashed);
+      }
+    }
+
+    function line3OccludedSegment(a, b, color, width, alpha, wheel, dashed = false) {
+      if (!wheel || !controls.showWheel.checked) {
+        line3(a, b, color, width, alpha, dashed);
+        return;
+      }
+      const interval = occlusionIntervalForSegment(a, b, wheel);
+      if (!interval) {
+        line3(a, b, color, width, alpha, dashed);
+        return;
+      }
+      const start = clamp(interval[0], 0, 1);
+      const end = clamp(interval[1], 0, 1);
+      const hiddenAlpha = alpha * OCCLUDED_ALPHA;
+      const minSpan = 0.0005;
+      if (start > minSpan) line3(a, lerp(a, b, start), color, width, alpha, dashed);
+      if (end - start > minSpan) line3(lerp(a, b, start), lerp(a, b, end), color, width, hiddenAlpha, dashed);
+      if (end < 1 - minSpan) line3(lerp(a, b, end), b, color, width, alpha, dashed);
+    }
+
+    function line3(a, b, color, width = 2, alpha = 1, dashed = false) {
+      const p0 = project(a);
+      const p1 = project(b);
+      ctx.save();
+      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      if (dashed) ctx.setLineDash([7, 6]);
+      ctx.beginPath();
+      ctx.moveTo(p0.x, p0.y);
+      ctx.lineTo(p1.x, p1.y);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function arrowGeometry(a, b, width) {
+      const p0 = project(a);
+      const p1 = project(b);
+      const dx = p1.x - p0.x;
+      const dy = p1.y - p0.y;
+      const dist = Math.hypot(dx, dy);
+      if (dist < 0.5) return null;
+      const ux = dx / dist;
+      const uy = dy / dist;
+      const head = Math.min(clamp(width * 3.1, 9, 18), Math.max(4, dist * 0.55));
+      const wing = head * 0.54;
+      const base = {
+        x: p1.x - ux * head,
+        y: p1.y - uy * head
+      };
+      const shaftEnd = lerp(a, b, clamp(1 - head / dist, 0, 1));
+      return { p0, p1, ux, uy, head, wing, base, shaftEnd };
+    }
+
+    function paintArrowHead(geometry, color, alpha) {
+      const { p1, ux, uy, wing, base } = geometry;
+      const px = -uy;
+      const py = ux;
+      const paint = color.startsWith("#") ? rgba(color, alpha) : color;
+
+      ctx.save();
+      ctx.fillStyle = paint;
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(base.x + px * wing, base.y + py * wing);
+      ctx.lineTo(base.x - px * wing, base.y - py * wing);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function arrow3(a, b, color, width = 4, alpha = 1) {
+      const geometry = arrowGeometry(a, b, width);
+      if (!geometry) return;
+      const paint = color.startsWith("#") ? rgba(color, alpha) : color;
+
+      ctx.save();
+      ctx.strokeStyle = paint;
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(geometry.p0.x, geometry.p0.y);
+      ctx.lineTo(geometry.base.x, geometry.base.y);
+      ctx.stroke();
+      ctx.restore();
+      paintArrowHead(geometry, color, alpha);
+    }
+
+    function arrow3OccludedByWheel(a, b, color, width = 4, alpha = 1, wheel = null, zLayer = "all") {
+      const geometry = arrowGeometry(a, b, width);
+      if (!geometry) return;
+      line3OccludedByWheel(a, geometry.shaftEnd, color, width, alpha, wheel, false, zLayer);
+      if (zLayerIncludesPoint(b, zLayer)) {
+        const headAlpha = pointBehindWheel(b, wheel) ? alpha * OCCLUDED_ALPHA : alpha;
+        paintArrowHead(geometry, color, headAlpha);
+      }
+    }
+
+    function axisArrow3(a, b, color, width, alpha, wheel, zLayer = "all") {
+      arrow3OccludedByWheel(a, b, color, width, alpha, wheel, zLayer);
+    }
+
+    function path3(points, color, width = 1.2, alpha = 1, dashed = false) {
+      if (points.length < 2) return;
+      ctx.save();
+      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      if (dashed) ctx.setLineDash([7, 6]);
+      const first = project(points[0]);
+      ctx.beginPath();
+      ctx.moveTo(first.x, first.y);
+      for (let i = 1; i < points.length; i += 1) {
+        const p = project(points[i]);
+        ctx.lineTo(p.x, p.y);
+      }
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function path3OccludedByWheel(points, color, width = 1.2, alpha = 1, wheel = null, dashed = false, zLayer = "all") {
+      if (points.length < 2) return;
+      for (let i = 1; i < points.length; i += 1) {
+        line3OccludedByWheel(points[i - 1], points[i], color, width, alpha, wheel, dashed, zLayer);
+      }
+    }
+
+    function roundRect(x, y, w, h, r) {
+      const radius = Math.min(r, w / 2, h / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.arcTo(x + w, y, x + w, y + h, radius);
+      ctx.arcTo(x + w, y + h, x, y + h, radius);
+      ctx.arcTo(x, y + h, x, y, radius);
+      ctx.arcTo(x, y, x + w, y, radius);
+      ctx.closePath();
+    }
+
+    function label3(text, position, color = colors.axis, alpha = 1, align = "center") {
+      labelQueue.push({ text, position, color, alpha, align });
+    }
+
+    function drawLabels() {
+      ctx.save();
+      ctx.font = "800 12px Malgun Gothic, Segoe UI, sans-serif";
+      ctx.textBaseline = "middle";
+      for (const label of labelQueue) {
+        const p = project(label.position);
+        const textWidth = ctx.measureText(label.text).width;
+        const w = textWidth + 14;
+        const h = 24;
+        const x = label.align === "left" ? p.x : label.align === "right" ? p.x - w : p.x - w / 2;
+        const y = p.y - h / 2;
+        ctx.fillStyle = `rgba(255,255,255,${0.82 * label.alpha})`;
+        ctx.strokeStyle = `rgba(196, 207, 221, ${0.88 * label.alpha})`;
+        ctx.lineWidth = 1;
+        roundRect(x, y, w, h, 8);
+        ctx.fill();
+        ctx.stroke();
+        ctx.fillStyle = label.color.startsWith("#") ? rgba(label.color, label.alpha) : label.color;
+        ctx.textAlign = "center";
+        ctx.fillText(label.text, x + w / 2, y + h / 2 + 0.5);
+      }
+      ctx.restore();
+      labelQueue = [];
+    }
+
+    function circleXY(radius, z = 0, steps = 160) {
+      const points = [];
+      for (let i = 0; i <= steps; i += 1) {
+        const a = TWO_PI * i / steps;
+        points.push(v(radius * Math.cos(a), radius * Math.sin(a), z));
+      }
+      return points;
+    }
+
+    function physicsAt(timeS) {
+      const f1Hz = HZ_PER_MICRO_T * state.b1MicroT;
+      const detuneHz = state.detuneHz;
+      const effHz = Math.hypot(f1Hz, detuneHz);
+      const axisRf = effHz > EPS ? normalize(v(f1Hz, 0, detuneHz)) : v(1, 0, 0);
+      const phase = TWO_PI * detuneHz * timeS;
+      const angle = TWO_PI * effHz * timeS;
+      const mRf = rotateAroundAxis(v(0, 0, 1), axisRf, -angle);
+      const bodyURf = rotateAroundAxis(v(1, 0, 0), axisRf, -angle);
+      const bodyWRf = rotateAroundAxis(v(0, 1, 0), axisRf, -angle);
+      const m = normalize(rotateZ(mRf, phase));
+      const bodyU = normalize(rotateZ(bodyURf, phase));
+      const bodyW = normalize(rotateZ(bodyWRf, phase));
+      const b1Dir = v(Math.cos(phase), Math.sin(phase), 0);
+      const effDir = normalize(add(mul(b1Dir, f1Hz), v(0, 0, detuneHz)));
+      const plannedFlipDeg = Math.min(state.flipDeg, 360 * f1Hz * timeS);
+      const pulseDurationS = f1Hz > EPS ? state.flipDeg / 360 / f1Hz : 0;
+      const actualTiltDeg = Math.acos(clamp(m.z, -1, 1)) * 180 / Math.PI;
+      const mxy = Math.hypot(m.x, m.y);
+      return {
+        f0MHz: PROTON_GAMMA_MHZ_T * state.b0,
+        fRfMHz: PROTON_GAMMA_MHZ_T * state.b0 + detuneHz / 1e6,
+        f1Hz,
+        detuneHz,
+        effHz,
+        axisRf,
+        phase,
+        b1Dir,
+        effDir,
+        m,
+        bodyU,
+        bodyW,
+        mxy,
+        plannedFlipDeg,
+        pulseDurationS,
+        actualTiltDeg,
+        axisTiltDeg: Math.atan2(detuneHz, Math.max(EPS, f1Hz)) * 180 / Math.PI
+      };
+    }
+
+    function currentPhysics() {
+      return physicsAt(state.pulseTime);
+    }
+
+    function formatFrequencyMHz(mhz) {
+      if (mhz < 0.1) return `${(mhz * 1000).toFixed(1)} kHz`;
+      if (mhz < 10) return `${mhz.toFixed(4)} MHz`;
+      return `${mhz.toFixed(3)} MHz`;
+    }
+
+    function formatHz(hz) {
+      const abs = Math.abs(hz);
+      if (abs >= 1000) return `${(hz / 1000).toFixed(2)} kHz`;
+      if (abs >= 10) return `${hz.toFixed(0)} Hz`;
+      return `${hz.toFixed(1)} Hz`;
+    }
+
+    function formatMs(seconds) {
+      const ms = seconds * 1000;
+      if (ms < 0.01) return `${(ms * 1000).toFixed(1)} us`;
+      if (ms < 10) return `${ms.toFixed(3)} ms`;
+      if (ms < 1000) return `${ms.toFixed(2)} ms`;
+      return `${(ms / 1000).toFixed(2)} s`;
+    }
+
+    function drawPlane() {
+      for (const r of [0.35, 0.7, 1.05, 1.4]) {
+        path3(circleXY(r), colors.gridSoft, 0.65, 1);
+      }
+      for (let i = 0; i < 16; i += 1) {
+        const a = TWO_PI * i / 16;
+        line3(v(0, 0, 0), v(1.45 * Math.cos(a), 1.45 * Math.sin(a), 0), colors.grid, 0.55, 1);
+      }
+    }
+
+    function drawAxes(wheel) {
+      axisArrow3(v(0, 0, 0), v(1.55, 0, 0), colors.x, 2, 0.42, wheel);
+      axisArrow3(v(0, 0, 0), v(0, 1.55, 0), colors.y, 2, 0.42, wheel);
+      axisArrow3(v(0, 0, 0), v(0, 0, 1.52), colors.z, 2, 0.42, wheel);
+      line3OccludedByWheel(v(0, 0, 0), v(-0.55, 0, 0), colors.x, 1, 0.16, wheel);
+      line3OccludedByWheel(v(0, 0, 0), v(0, -0.55, 0), colors.y, 1, 0.16, wheel);
+      label3("x'", v(1.68, 0, 0), colors.x, 0.56);
+      label3("y'", v(0, 1.68, 0), colors.y, 0.56);
+      label3("z / B0", v(0, 0, 1.68), colors.z, 0.56);
+    }
+
+    function drawTrace(wheel, zLayer = "all") {
+      if (!controls.showTrace.checked || state.trace.length < 2) return;
+      path3OccludedByWheel(state.trace, colors.mag, 1.8, 0.36, wheel, false, zLayer);
+    }
+
+    function drawComponents(p, zLayer = "all") {
+      if (!controls.showComponents.checked) return;
+      const tip = p.m;
+      const xyTip = v(tip.x, tip.y, 0);
+      line3OccludedByWheel(tip, xyTip, colors.axis, 1.4, 0.38, p, true, zLayer);
+      arrow3OccludedByWheel(v(0, 0, 0), xyTip, colors.mxy, 3.2, 0.82, p, zLayer);
+      arrow3OccludedByWheel(xyTip, tip, colors.mz, 3, 0.74, p, zLayer);
+      if (zLayer === "above" || zLayer === "all") {
+        if (p.mxy > 0.08) label3("Mx'y'", mul(normalize(xyTip), p.mxy + 0.12), colors.mxy);
+        label3("Mz", add(xyTip, v(0, 0, tip.z * 0.5)), colors.mz, 0.95, "left");
+      }
+    }
+
+    function fieldVisual(p) {
+      const maxLength = 0.98;
+      const reference = Math.max(1, p.effHz, p.f1Hz, Math.abs(p.detuneHz));
+      const scale = maxLength / reference;
+      const b1Tip = mul(p.b1Dir, p.f1Hz * scale);
+      const detuneTip = v(0, 0, p.detuneHz * scale);
+      return {
+        b1Tip,
+        effTip: add(b1Tip, detuneTip),
+        b1Length: length(b1Tip)
+      };
+    }
+
+    function drawRF(p, zLayer = "all") {
+      const visual = fieldVisual(p);
+      const b1Tip = visual.b1Tip;
+      const rfAlpha = 0.96;
+      arrow3OccludedByWheel(v(0, 0, 0), b1Tip, colors.rf, 5, rfAlpha, p, zLayer);
+      if (zLayer === "above" || zLayer === "all") {
+        label3("B1", add(b1Tip, mul(p.b1Dir, 0.12)), colors.rf, rfAlpha);
+      }
+
+      if (state.running) {
+        const side = normalize(cross(v(0, 0, 1), p.b1Dir));
+        for (let i = 0; i < 3; i += 1) {
+          const along = visual.b1Length * (0.22 + i * 0.18);
+          const wave = Math.sin(state.rfWavePhase * 1.7 + i * 1.2) * 0.045;
+          const center = mul(p.b1Dir, along);
+          line3OccludedByWheel(
+            add(center, mul(side, -0.10 - wave)),
+            add(center, mul(side, 0.10 + wave)),
+            colors.rf,
+            1.4,
+            0.33,
+            p,
+            false,
+            zLayer
+          );
+        }
+      }
+    }
+
+    function drawEffectiveField(p, zLayer = "all") {
+      if (!controls.showEffective.checked) return;
+      const visual = fieldVisual(p);
+      if (Math.abs(p.detuneHz) < 1) {
+        if (zLayer === "above" || zLayer === "all") {
+          label3("B_eff = B1", add(visual.b1Tip, v(0, 0, 0.16)), colors.eff, 0.92);
+        }
+        return;
+      }
+      const tip = visual.effTip;
+      const foot = visual.b1Tip;
+      line3OccludedByWheel(foot, tip, colors.eff, 1, 0.34, p, false, zLayer);
+      arrow3OccludedByWheel(v(0, 0, 0), tip, colors.eff, 4, 0.75, p, zLayer);
+      if (zLayer === "above" || zLayer === "all") {
+        label3("B_eff", add(tip, mul(p.effDir, 0.12)), colors.eff, 0.95);
+      }
+    }
+
+    function rimColorForSegment(index) {
+      const angle = TWO_PI * (index + 0.5) / WHEEL_RIM_SEGMENTS;
+      return Math.sin(angle) >= 0 ? colors.spokeRed : colors.spokeBlue;
+    }
+
+    function drawWheel(p, zLayer = "all") {
+      if (!controls.showWheel.checked) return;
+      const center = v(0, 0, 0);
+      const radius = WHEEL_RADIUS;
+      const u = p.bodyU;
+      const w = p.bodyW;
+      const rim = [];
+      for (let i = 0; i <= WHEEL_RIM_SEGMENTS; i += 1) {
+        const a = TWO_PI * i / WHEEL_RIM_SEGMENTS;
+        rim.push(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
+      }
+
+      const clippedFill = clipPolygonByZ(rim.slice(0, -1), zLayer);
+      if (clippedFill.length >= 3) {
+        ctx.save();
+        const first = project(clippedFill[0]);
+        ctx.beginPath();
+        ctx.moveTo(first.x, first.y);
+        for (let i = 1; i < clippedFill.length; i += 1) {
+          const p = project(clippedFill[i]);
+          ctx.lineTo(p.x, p.y);
+        }
+        ctx.closePath();
+        ctx.fillStyle = colors.wheelFill;
+        ctx.fill();
+        ctx.restore();
+      }
+
+      for (let i = 0; i < rim.length - 1; i += 1) {
+        for (const [start, end] of zIntervalsForSegment(rim[i], rim[i + 1], zLayer)) {
+          line3(lerp(rim[i], rim[i + 1], start), lerp(rim[i], rim[i + 1], end), rimColorForSegment(i), 1.05, 0.96);
+        }
+      }
+
+      for (const spoke of WHEEL_SPOKES) {
+        const a = spoke.angle;
+        const end = add(center, add(mul(u, radius * 0.92 * Math.cos(a)), mul(w, radius * 0.92 * Math.sin(a))));
+        for (const [start, finish] of zIntervalsForSegment(center, end, zLayer)) {
+          line3(lerp(center, end, start), lerp(center, end, finish), spoke.color, 0.85, 0.98);
+        }
+      }
+
+      if (zLayer === "above" || zLayer === "all") {
+        const c = project(center);
+        ctx.save();
+        ctx.fillStyle = colors.wheelEdge;
+        ctx.beginPath();
+        ctx.arc(c.x, c.y, 3.5, 0, TWO_PI);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    function drawMagnetizationVector(p, zLayer = "all") {
+      drawComponents(p, zLayer);
+      arrow3OccludedByWheel(v(0, 0, 0), p.m, colors.mag, 6, 0.96, p, zLayer);
+      if (zLayer === "above" || zLayer === "all") label3("M", mul(p.m, 1.14), colors.mag);
+    }
+
+    function drawScene() {
+      const w = canvas.clientWidth || 1;
+      const h = canvas.clientHeight || 1;
+      ctx.clearRect(0, 0, w, h);
+      labelQueue = [];
+
+      const p = currentPhysics();
+      drawWheel(p, "below");
+      drawTrace(p, "below");
+      drawRF(p, "below");
+      drawEffectiveField(p, "below");
+      drawMagnetizationVector(p, "below");
+
+      drawPlane();
+      drawAxes(p);
+
+      drawWheel(p, "above");
+      drawTrace(p, "above");
+      drawRF(p, "above");
+      drawEffectiveField(p, "above");
+      drawMagnetizationVector(p, "above");
+
+      const origin = project(v(0, 0, 0));
+      ctx.save();
+      ctx.fillStyle = colors.ink;
+      ctx.beginPath();
+      ctx.arc(origin.x, origin.y, 4.5, 0, TWO_PI);
+      ctx.fill();
+      ctx.restore();
+      drawLabels();
+    }
+
+    function updateUI() {
+      const p = currentPhysics();
+      const pulseDuration = p.pulseDurationS;
+      const durationText = formatMs(pulseDuration);
+      const elapsedText = formatMs(state.pulseTime);
+      const detuneText = Math.abs(p.detuneHz) < 0.5
+        ? "0 Hz"
+        : `${p.detuneHz > 0 ? "+" : ""}${formatHz(p.detuneHz)}`;
+      const progress = pulseDuration > EPS ? clamp(state.pulseTime / pulseDuration, 0, 1) : 1;
+      const ratio = p.detuneHz / Math.max(1, p.f1Hz);
+
+      controls.b0Output.textContent = `${state.b0.toFixed(2)} T`;
+      controls.detuneOutput.textContent = detuneText;
+      controls.b1Output.textContent = `${state.b1MicroT.toFixed(1)} uT`;
+      controls.flipOutput.textContent = `${state.flipDeg.toFixed(0)}°`;
+      controls.timeScaleOutput.textContent = `${state.timeScaleMsPerSec.toFixed(2)} ms/s`;
+
+      controls.f0Metric.textContent = formatFrequencyMHz(p.f0MHz);
+      controls.rfMetric.textContent = `${detuneText}`;
+      controls.nutationMetric.textContent = `${p.f1Hz.toFixed(1)} Hz`;
+      controls.rfFlipMetric.textContent = `${p.plannedFlipDeg.toFixed(0)}° / ${state.flipDeg.toFixed(0)}°`;
+      controls.magMetric.textContent = `${p.m.z.toFixed(3)} / ${p.mxy.toFixed(3)}`;
+      controls.pulseMetric.textContent = durationText;
+
+      controls.f0Output.textContent = formatFrequencyMHz(p.f0MHz);
+      controls.rfOutput.textContent = formatFrequencyMHz(p.fRfMHz);
+      controls.detuneRatioOutput.textContent = `${ratio.toFixed(2)}`;
+      controls.tiltOutput.textContent = `${p.axisTiltDeg.toFixed(1)}°`;
+      controls.actualFlipOutput.textContent = `${p.actualTiltDeg.toFixed(1)}°`;
+      controls.elapsedOutput.textContent = elapsedText;
+      controls.durationOutput.textContent = durationText;
+      controls.pulseFill.style.width = `${progress * 100}%`;
+
+      if (state.running) {
+        controls.start.textContent = "일시정지";
+        controls.pulseState.textContent = `RF pulse 진행 중, B1은 x'y' 평면에서 ${detuneText} 만큼 드리프트합니다.`;
+      } else if (state.completed) {
+        controls.start.textContent = "다시 실행";
+        controls.pulseState.textContent = Math.abs(state.detuneHz) < 1
+          ? "공명 조건에서 목표 pulse가 끝났습니다."
+          : "주파수 offset 때문에 같은 시간의 pulse라도 최종 M 방향이 달라졌습니다.";
+      } else if (state.pulseTime > 0) {
+        controls.start.textContent = "계속";
+        controls.pulseState.textContent = "pulse가 일시정지되었습니다.";
+      } else {
+        controls.start.textContent = "RF pulse 실행";
+        controls.pulseState.textContent = "평형 상태";
+      }
+    }
+
+    function resetPulse(keepCompleted = false) {
+      state.pulseTime = 0;
+      state.running = false;
+      state.completed = keepCompleted ? state.completed : false;
+      state.trace = [v(0, 0, 1)];
+      updateUI();
+      drawScene();
+    }
+
+    function syncFromControls() {
+      state.b0 = Number(controls.b0.value);
+      state.detuneHz = Number(controls.detune.value);
+      state.b1MicroT = Number(controls.b1.value);
+      state.flipDeg = Number(controls.flip.value);
+      state.timeScaleMsPerSec = Number(controls.timeScale.value);
+      resetPulse();
+    }
+
+    function startOrPause() {
+      if (state.running) {
+        state.running = false;
+        updateUI();
+        return;
+      }
+      if (state.completed) {
+        state.pulseTime = 0;
+        state.trace = [v(0, 0, 1)];
+        state.completed = false;
+      }
+      state.running = true;
+      updateUI();
+    }
+
+    function addTracePoint(point) {
+      const last = state.trace[state.trace.length - 1];
+      if (!last || length(sub(point, last)) > 0.006) {
+        state.trace.push(point);
+        if (state.trace.length > MAX_TRACE) state.trace.shift();
+      }
+    }
+
+    function tick(now) {
+      if (!tick.last) tick.last = now;
+      const rawDt = Math.min(0.05, (now - tick.last) / 1000);
+      tick.last = now;
+
+      const waveRate = state.running ? 7.0 : 3.2;
+      state.rfWavePhase += rawDt * waveRate;
+
+      if (state.running) {
+        const duration = physicsAt(0).pulseDurationS;
+        state.pulseTime += rawDt * state.timeScaleMsPerSec / 1000;
+        if (state.pulseTime >= duration) {
+          state.pulseTime = duration;
+          state.running = false;
+          state.completed = true;
+        }
+        addTracePoint(currentPhysics().m);
+        updateUI();
+      }
+
+      drawScene();
+      requestAnimationFrame(tick);
+    }
+
+    for (const control of [controls.b0, controls.detune, controls.b1, controls.flip, controls.timeScale]) {
+      control.addEventListener("input", syncFromControls);
+    }
+
+    for (const toggle of [controls.showTrace, controls.showEffective, controls.showWheel, controls.showComponents]) {
+      toggle.addEventListener("change", () => {
+        updateUI();
+        drawScene();
+      });
+    }
+
+    document.querySelectorAll("[data-detune]").forEach(button => {
+      button.addEventListener("click", () => {
+        controls.detune.value = button.dataset.detune;
+        syncFromControls();
+      });
+    });
+
+    document.querySelectorAll("[data-flip]").forEach(button => {
+      button.addEventListener("click", () => {
+        controls.flip.value = button.dataset.flip;
+        syncFromControls();
+      });
+    });
+
+    controls.start.addEventListener("click", startOrPause);
+    controls.reset.addEventListener("click", () => resetPulse());
+    window.addEventListener("resize", () => {
+      resize();
+      drawScene();
+    });
+
+    syncFromControls();
+    resize();
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>

@@ -429,7 +429,7 @@
         <div class="metric"><b>r 축 길이</b><span id="distanceMetric">0.40 m</span></div>
         <div class="metric"><b>g 중력</b><span id="gravityMetric">9.81 m/s²</span></div>
         <div class="metric"><b>W 무게</b><span id="weightMetric">14.7 N</span></div>
-        <div class="metric"><b>ω spin 각속도</b><span id="spinMetric">7.0 rad/s</span></div>
+        <div class="metric"><b>ω spin 각속도</b><span id="spinMetric">7 rad/s</span></div>
         <div class="metric"><b>θ 각도</b><span id="thetaMetric">90°</span></div>
         <div class="metric"><b>Fθ 접선 성분</b><span id="tangentMetric">-14.7 N</span></div>
         <div class="metric"><b>τ 토크</b><span id="torqueMetric">5.9 N·m</span></div>
@@ -448,8 +448,8 @@
 
         <div class="row">
           <label for="spinSpeed">ω spin 각속도</label>
-          <output id="spinOutput">7.0 rad/s</output>
-          <input id="spinSpeed" type="range" min="-15" max="15" step="0.1" value="7" />
+          <output id="spinOutput">7 rad/s</output>
+          <input id="spinSpeed" type="range" min="-15" max="15" step="1" value="7" />
         </div>
 
         <div class="row">
@@ -518,7 +518,7 @@
           </div>
           <div class="formula-row">
             <b>L_pend</b>
-            <div><code>L_pend,x = -Iₚ θ˙, &nbsp; Iₚ ≈ mr²</code><span id="pendulumLFormula">L_pend = 0.00 kg·m²/s</span></div>
+            <div><code>L_pend,y = -Iₚ θ˙, &nbsp; Iₚ ≈ mr²</code><span id="pendulumLFormula">L_pend = 0.00 kg·m²/s</span></div>
           </div>
         </div>
       </section>
@@ -534,6 +534,8 @@
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
     let labelQueue = [];
+    let renderQueue = null;
+    const LAYER_EPSILON = 0.0001;
 
     const colors = {
       ink: "#152033",
@@ -744,19 +746,74 @@
       return { x: projected.x / dpr, y: projected.y / dpr, depth: projected.depth };
     }
 
-    function line3(a, b, color, width = 2, alpha = 1) {
+    function paintStyle(color, alpha) {
+      return color.startsWith("#") ? rgba(color, alpha) : color;
+    }
+
+    function paintAlpha(color, alpha) {
+      return color.startsWith("#") ? 1 : alpha;
+    }
+
+    function layerForZ(z) {
+      return z < -LAYER_EPSILON ? "below" : "above";
+    }
+
+    function pointAtPlane(a, b) {
+      const t = -a.z / (b.z - a.z);
+      return v(
+        a.x + (b.x - a.x) * t,
+        a.y + (b.y - a.y) * t,
+        0
+      );
+    }
+
+    function crossesPlane(a, b) {
+      return (a.z < -LAYER_EPSILON && b.z > LAYER_EPSILON)
+        || (a.z > LAYER_EPSILON && b.z < -LAYER_EPSILON);
+    }
+
+    function queueDraw(layer, draw) {
+      if (renderQueue) renderQueue[layer].push(draw);
+      else draw();
+    }
+
+    function drawLineNow(a, b, color, width = 2, alpha = 1, dashed = false) {
       const p0 = screenProject(a);
       const p1 = screenProject(b);
-      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.save();
+      ctx.globalAlpha = paintAlpha(color, alpha);
+      ctx.strokeStyle = paintStyle(color, alpha);
       ctx.lineWidth = width;
       ctx.lineCap = "round";
+      if (dashed) ctx.setLineDash([8, 7]);
       ctx.beginPath();
       ctx.moveTo(p0.x, p0.y);
       ctx.lineTo(p1.x, p1.y);
       ctx.stroke();
+      ctx.restore();
     }
 
-    function arrow3(a, b, color, width = 5, alpha = 1) {
+    function queueLineSegment(a, b, color, width = 2, alpha = 1, dashed = false) {
+      queueDraw(layerForZ((a.z + b.z) / 2), () => drawLineNow(a, b, color, width, alpha, dashed));
+    }
+
+    function line3(a, b, color, width = 2, alpha = 1, dashed = false) {
+      if (!renderQueue) {
+        drawLineNow(a, b, color, width, alpha, dashed);
+        return;
+      }
+
+      if (crossesPlane(a, b)) {
+        const mid = pointAtPlane(a, b);
+        queueLineSegment(a, mid, color, width, alpha, dashed);
+        queueLineSegment(mid, b, color, width, alpha, dashed);
+        return;
+      }
+
+      queueLineSegment(a, b, color, width, alpha, dashed);
+    }
+
+    function drawArrowNow(a, b, color, width = 5, alpha = 1) {
       const p0 = screenProject(a);
       const p1 = screenProject(b);
       const dx = p1.x - p0.x;
@@ -765,7 +822,7 @@
       if (distance < 0.5) return;
       const ux = dx / distance;
       const uy = dy / distance;
-      const paint = color.startsWith("#") ? rgba(color, alpha) : color;
+      const paint = paintStyle(color, alpha);
       const head = Math.min(12 + width * 1.5, distance * 0.45);
       const headWidth = head * 0.72;
       const base = {
@@ -774,6 +831,8 @@
       };
       const px = -uy;
       const py = ux;
+      ctx.save();
+      ctx.globalAlpha = paintAlpha(color, alpha);
       ctx.strokeStyle = paint;
       ctx.fillStyle = paint;
       ctx.lineWidth = width;
@@ -788,6 +847,37 @@
       ctx.lineTo(base.x - px * headWidth * 0.5, base.y - py * headWidth * 0.5);
       ctx.closePath();
       ctx.fill();
+      ctx.restore();
+    }
+
+    function arrow3(a, b, color, width = 5, alpha = 1) {
+      if (!renderQueue) {
+        drawArrowNow(a, b, color, width, alpha);
+        return;
+      }
+
+      if (crossesPlane(a, b)) {
+        const mid = pointAtPlane(a, b);
+        queueLineSegment(a, mid, color, width, alpha);
+        queueDraw(layerForZ((mid.z + b.z) / 2), () => drawArrowNow(mid, b, color, width, alpha));
+        return;
+      }
+
+      queueDraw(layerForZ((a.z + b.z) / 2), () => drawArrowNow(a, b, color, width, alpha));
+    }
+
+    function point3(p, radius, color, alpha = 1) {
+      const draw = () => {
+        const projected = screenProject(p);
+        ctx.save();
+        ctx.globalAlpha = paintAlpha(color, alpha);
+        ctx.fillStyle = paintStyle(color, alpha);
+        ctx.beginPath();
+        ctx.arc(projected.x, projected.y, radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      };
+      queueDraw(layerForZ(p.z), draw);
     }
 
     function label3(text, p, color, alpha = 1) {
@@ -830,9 +920,10 @@
       ctx.closePath();
     }
 
-    function ellipse3(points, color, width = 1, dashed = false, alpha = 1) {
+    function drawPolylineNow(points, color, width = 1, dashed = false, alpha = 1) {
       ctx.save();
-      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.globalAlpha = paintAlpha(color, alpha);
+      ctx.strokeStyle = paintStyle(color, alpha);
       ctx.lineWidth = width;
       if (dashed) ctx.setLineDash([8, 7]);
       ctx.beginPath();
@@ -843,6 +934,17 @@
       });
       ctx.stroke();
       ctx.restore();
+    }
+
+    function ellipse3(points, color, width = 1, dashed = false, alpha = 1) {
+      if (!renderQueue) {
+        drawPolylineNow(points, color, width, dashed, alpha);
+        return;
+      }
+
+      for (let i = 1; i < points.length; i++) {
+        line3(points[i - 1], points[i], color, width, alpha, dashed);
+      }
     }
 
     function circleXY(radius, z, steps = 160) {
@@ -894,32 +996,21 @@
         rim.push(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
       }
 
-      const projected = rim.map(screenProject);
-      ctx.save();
-      ctx.globalAlpha = alpha;
-      ctx.strokeStyle = colors.wheelEdge;
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      projected.forEach((p, i) => i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y));
-      ctx.closePath();
-      ctx.stroke();
-      ctx.strokeStyle = "rgba(56, 86, 110, 0.30)";
-      ctx.lineWidth = 4;
-      ctx.stroke();
-      ctx.lineWidth = 1;
-      const c = screenProject(center);
+      for (let i = 0; i < rim.length; i++) {
+        const next = rim[(i + 1) % rim.length];
+        line3(rim[i], next, "rgba(56, 86, 110, 0.30)", 4, alpha);
+      }
+      for (let i = 0; i < rim.length; i++) {
+        const next = rim[(i + 1) % rim.length];
+        line3(rim[i], next, colors.wheelEdge, 2, alpha);
+      }
       for (let i = 0; i < 12; i++) {
         const localAngle = Math.PI * 2 * i / 12;
         const a = spin + localAngle;
         const radial = add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)));
-        const outer = screenProject(add(center, radial));
-        ctx.strokeStyle = Math.sin(localAngle) >= 0 ? colors.spokeRed : colors.spokeBlue;
-        ctx.beginPath();
-        ctx.moveTo(c.x, c.y);
-        ctx.lineTo(outer.x, outer.y);
-        ctx.stroke();
+        const outer = add(center, radial);
+        line3(center, outer, Math.sin(localAngle) >= 0 ? colors.spokeRed : colors.spokeBlue, 1, alpha);
       }
-      ctx.restore();
     }
 
     function shouldShow(key) {
@@ -1080,8 +1171,8 @@
     }
 
     function pendulumAxes() {
-      const xAxis = v(0, 1, 0);
-      const yAxis = v(1, 0, 0);
+      const xAxis = v(1, 0, 0);
+      const yAxis = v(0, 1, 0);
       return { xAxis, yAxis };
     }
 
@@ -1092,11 +1183,11 @@
       label3("y", mul(yAxis, scale + 0.13), colors.grid, 1);
     }
 
-    function drawPendulumArc(yAxis, scale) {
+    function drawPendulumArc(swingAxis, scale) {
       const points = [];
       for (let i = 0; i <= 80; i++) {
         const theta = -PENDULUM_MAX_ANGLE + 2 * PENDULUM_MAX_ANGLE * i / 80;
-        const axis = normalize(add(mul(yAxis, Math.sin(theta)), v(0, 0, -Math.cos(theta))));
+        const axis = normalize(add(mul(swingAxis, Math.sin(theta)), v(0, 0, -Math.cos(theta))));
         points.push(mul(axis, scale));
       }
       ellipse3(points, colors.r, 2, true, 0.58);
@@ -1106,15 +1197,15 @@
       const dpr = window.devicePixelRatio || 1;
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
       labelQueue = [];
-      drawPlane();
+      renderQueue = { below: [], above: [] };
       const pendulumMode = isPendulumMode();
       const physicalScale = metersToScene(state.distance);
 
       const { xAxis, yAxis } = pendulumAxes();
-      const horizontalAxis = pendulumMode ? yAxis : normalize(v(Math.cos(state.phase), Math.sin(state.phase), 0));
+      const horizontalAxis = pendulumMode ? xAxis : normalize(v(Math.cos(state.phase), Math.sin(state.phase), 0));
       const theta = pendulumTheta();
       const axis = pendulumMode
-        ? normalize(add(mul(yAxis, Math.sin(theta)), v(0, 0, -Math.cos(theta))))
+        ? normalize(add(mul(xAxis, Math.sin(theta)), v(0, 0, -Math.cos(theta))))
         : normalize(add(mul(horizontalAxis, Math.cos(state.droop)), v(0, 0, -Math.sin(state.droop))));
       const tauDir = normalize(cross(axis, v(0, 0, -1)));
       const pivot = v(0, 0, 0);
@@ -1129,7 +1220,7 @@
 
       if (pendulumMode) {
         drawPendulumAxes(xAxis, yAxis, metersToScene(MAX_DISTANCE_M));
-        drawPendulumArc(yAxis, physicalScale);
+        drawPendulumArc(xAxis, physicalScale);
       }
 
       if (shouldShow("mg")) {
@@ -1146,21 +1237,17 @@
 
       line3(pivot, center, colors.axis, 2, 0.95);
 
-      const p = screenProject(pivot);
-      ctx.fillStyle = colors.pivot;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
-      ctx.fill();
+      point3(pivot, 8, colors.pivot);
 
       if (shouldShow("L")) {
         const a = labelAlpha("L");
         if (pendulumMode) {
           const lPend = pendulumAngularMomentum();
           const lPendMax = maxPendulumAngularMomentum();
-          const xAxisLength = metersToScene(MAX_DISTANCE_M);
-          const pendulumLMag = Math.min(xAxisLength, Math.abs(lPend) / Math.max(0.001, lPendMax) * xAxisLength);
+          const axisLength = metersToScene(MAX_DISTANCE_M);
+          const pendulumLMag = Math.min(axisLength, Math.abs(lPend) / Math.max(0.001, lPendMax) * axisLength);
           if (pendulumLMag > 0.03) {
-            const pendulumLDir = mul(xAxis, Math.sign(lPend));
+            const pendulumLDir = mul(yAxis, Math.sign(lPend));
             arrow3(pivot, mul(pendulumLDir, pendulumLMag), colors.L, 6, a);
             label3("L_pend", mul(pendulumLDir, pendulumLMag + 0.06), colors.L, a);
           }
@@ -1196,9 +1283,14 @@
         }
       }
       const wheelBasis = pendulumMode
-        ? { u: xAxis, w: normalize(cross(axis, xAxis)) }
+        ? { u: yAxis, w: normalize(cross(axis, yAxis)) }
         : null;
       drawWheel(center, axis, state.wheelSpin, 1, wheelBasis);
+      const layers = renderQueue;
+      renderQueue = null;
+      for (const draw of layers.below) draw();
+      drawPlane();
+      for (const draw of layers.above) draw();
       flushLabels();
       drawZAxisTop();
     }
@@ -1222,7 +1314,7 @@
       controls.distanceMetric.textContent = `${state.distance.toFixed(2)} m`;
       controls.gravityMetric.textContent = `${g.toFixed(2)} m/s²`;
       controls.weightMetric.textContent = `${weight.toFixed(1)} N`;
-      controls.spinMetric.textContent = `${state.spinSpeed.toFixed(1)} rad/s`;
+      controls.spinMetric.textContent = `${state.spinSpeed.toFixed(0)} rad/s`;
       controls.angularMetricLabel.textContent = pendulumMode ? "L_pend 진자 각운동량" : "L 각운동량";
       controls.angularMetric.textContent = pendulumMode
         ? `${lPend.toFixed(3)} kg·m²/s`
@@ -1234,7 +1326,7 @@
       controls.massOutput.textContent = `${state.mass.toFixed(1)} kg`;
       controls.distanceOutput.textContent = `${state.distance.toFixed(2)} m`;
       controls.timeScaleOutput.textContent = `${state.timeScale.toFixed(2)}x`;
-      controls.spinOutput.textContent = `${state.spinSpeed.toFixed(1)} rad/s`;
+      controls.spinOutput.textContent = `${state.spinSpeed.toFixed(0)} rad/s`;
       controls.gravityOutput.textContent = `${state.gravityScale.toFixed(2)}x`;
       controls.angularFormula.textContent = `R = ${WHEEL_RADIUS_M.toFixed(2)} m 근사, L = ${angularMomentum.toFixed(2)} kg·m²/s`;
       controls.weightFormula.textContent = `W = ${state.mass.toFixed(1)} × ${g.toFixed(2)} = ${weight.toFixed(1)} N`;
