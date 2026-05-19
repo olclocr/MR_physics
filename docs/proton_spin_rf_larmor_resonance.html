@@ -18,11 +18,11 @@
       --y: #48618a;
       --z: #48618a;
       --rf: #e27722;
-      --eff: #9b6a00;
-      --mag: #b93636;
+      --eff: #e27722;
+      --mag: #078ca4;
       --trace: #b93636;
-      --blue-spoke: #2f68d8;
-      --red-spoke: #d9433f;
+      --blue-spoke: #7fa2ed;
+      --red-spoke: #f08a86;
       font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
     }
 
@@ -228,17 +228,44 @@
       margin-top: 10px;
     }
 
-    .preset-grid {
+    .mode-block {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 6px;
-      margin-top: 8px;
+      gap: 7px;
+      margin: 12px 0;
     }
 
-    .preset-grid button {
-      min-height: 34px;
-      padding: 6px 7px;
+    .mode-heading {
+      color: var(--muted);
       font-size: 12px;
+      line-height: 1.25;
+      font-weight: 850;
+    }
+
+    .segmented {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .segmented button {
+      min-height: 36px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      font-size: 12px;
+    }
+
+    .segmented button + button {
+      border-left: 1px solid var(--line);
+    }
+
+    .segmented button.active {
+      background: #2f68d8;
+      color: #fff;
     }
 
     .data-grid {
@@ -388,12 +415,56 @@
     }
 
     .status {
-      min-height: 34px;
+      height: 44px;
+      overflow: hidden;
       margin: 0 0 10px;
       color: var(--muted);
       font-size: 12px;
       line-height: 1.45;
       font-weight: 750;
+    }
+
+    .log-status {
+      min-height: 32px;
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 750;
+    }
+
+    .log-actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .log-actions button {
+      min-height: 34px;
+      padding: 6px 7px;
+      font-size: 12px;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+    }
+
+    .verification-log {
+      display: block;
+      width: 100%;
+      min-height: 176px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: #243246;
+      padding: 9px 10px;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 11px;
+      line-height: 1.45;
+      resize: vertical;
+      white-space: pre;
     }
 
     @media (max-width: 1100px) {
@@ -462,7 +533,7 @@
     <section class="stage" aria-label="양성자 순자화 RF 라모어 공명 시각화">
       <canvas id="scene"></canvas>
       <h1 class="title">양성자 순자화와 RF 라모어 공명</h1>
-      <p class="subtitle">라모어와 함께 도는 x'y' 관찰계에서 B1이 멈춰 보일 때와 미끄러질 때, 순자화 M의 flip 차이를 관찰합니다.</p>
+      <p class="subtitle" id="subtitle">라모어와 함께 도는 x'y' 관찰계에서 B1이 멈춰 보일 때와 미끄러질 때, 순자화 M의 flip 차이를 관찰합니다.</p>
       <div class="readout" aria-live="polite">
         <div class="metric"><b>라모어 f0</b><span id="f0Metric">-</span></div>
         <div class="metric"><b>RF offset</b><span id="rfMetric">-</span></div>
@@ -478,35 +549,35 @@
         <h2>자기장과 RF</h2>
         <div class="control-row">
           <label for="b0Control">B0 정자기장</label>
-          <output id="b0Output" for="b0Control">1.50 T</output>
-          <input id="b0Control" type="range" min="0.05" max="7" value="1.5" step="0.05" />
+          <output id="b0Output" for="b0Control">1.5 T</output>
+          <input id="b0Control" type="range" min="0.5" max="3" value="1.5" step="0.5" />
         </div>
         <div class="control-row">
-          <label for="detuneControl">RF offset Δf</label>
+          <label for="detuneControl">Δf RF offset</label>
           <output id="detuneOutput" for="detuneControl">0 Hz</output>
-          <input id="detuneControl" type="range" min="-2000" max="2000" value="0" step="100" list="detuneTicks" />
-          <datalist id="detuneTicks"></datalist>
+          <input id="detuneControl" type="range" min="-2000" max="2000" value="0" step="100" />
         </div>
         <div class="control-row">
           <label for="b1Control">B1 RF 세기</label>
-          <output id="b1Output" for="b1Control">8.0 uT</output>
-          <input id="b1Control" type="range" min="0.2" max="80" value="8" step="0.1" />
+          <output id="b1Output" for="b1Control">8 uT</output>
+          <input id="b1Control" type="range" min="3" max="30" value="8" step="1" />
         </div>
         <div class="control-row">
-          <label for="flipControl">일치 가정 flip</label>
-          <output id="flipOutput" for="flipControl">360°</output>
-          <input id="flipControl" type="range" min="0" max="360" value="360" step="1" />
+          <label for="flipControl">flip (RF 라모어 주파수 공명 기준)</label>
+          <output id="flipOutput" for="flipControl">180°</output>
+          <input id="flipControl" type="range" min="0" max="360" value="180" step="1" />
         </div>
         <div class="control-row">
           <label for="timeScaleControl">시간 배속</label>
-          <output id="timeScaleOutput" for="timeScaleControl">1.10 ms/s</output>
-          <input id="timeScaleControl" type="range" min="0.05" max="8" value="1.1" step="0.05" />
+          <output id="timeScaleOutput" for="timeScaleControl">1.0 ms/s</output>
+          <input id="timeScaleControl" type="range" min="0.1" max="3" value="1" step="0.1" />
         </div>
-        <div class="preset-grid" aria-label="빠른 설정">
-          <button type="button" data-detune="0">공명</button>
-          <button type="button" data-detune="-250">느림</button>
-          <button type="button" data-detune="250">빠름</button>
-          <button type="button" data-flip="360">360°</button>
+        <div class="mode-block">
+          <div class="mode-heading">회전좌표계 기준</div>
+          <div class="segmented" role="group" aria-label="회전좌표계 기준">
+            <button type="button" class="active" data-frame-mode="larmor">라모어 f0</button>
+            <button type="button" data-frame-mode="rf">RF fRF</button>
+          </div>
         </div>
         <div class="button-grid">
           <button id="startPulse" class="primary" type="button">RF pulse 실행</button>
@@ -521,6 +592,7 @@
         </div>
         <p class="status" id="pulseState">평형 상태</p>
         <div class="data-grid">
+          <div class="data-line"><span>좌표계 기준</span><b id="frameOutput">-</b></div>
           <div class="data-line"><span>라모어 주파수 f0</span><b id="f0Output">-</b></div>
           <div class="data-line"><span>RF 주파수 fRF</span><b id="rfOutput">-</b></div>
           <div class="data-line"><span>Δf / f1</span><b id="detuneRatioOutput">-</b></div>
@@ -529,6 +601,17 @@
           <div class="data-line"><span>경과 pulse 시간</span><b id="elapsedOutput">-</b></div>
           <div class="data-line"><span>공명 기준 pulse</span><b id="durationOutput">-</b></div>
         </div>
+      </section>
+
+      <section class="section">
+        <h2>검산 로그</h2>
+        <p class="log-status" id="logStatus">RF pulse 실행 시 조건, 초기상태, 진행 벡터가 JSON으로 기록됩니다.</p>
+        <div class="log-actions">
+          <button id="copyLog" type="button" disabled>복사</button>
+          <button id="downloadLog" type="button" disabled>JSON 저장</button>
+          <button id="clearLog" type="button" disabled>지우기</button>
+        </div>
+        <textarea id="verificationLog" class="verification-log" readonly spellcheck="false" aria-label="검산 로그 JSON"></textarea>
       </section>
 
       <section class="section">
@@ -548,6 +631,10 @@
         <label class="switch-row">
           <span>Mx'y', Mz 성분</span>
           <input id="showComponents" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>0.1 ms × dM/dt</span>
+          <input id="showTorque" type="checkbox" />
         </label>
       </section>
 
@@ -579,7 +666,7 @@
             <b>어긋날 때</b>
             <div>
               <code>B_eff = B1 x' + (Δω/γ) z</code>
-              <span>M은 순수한 x' flip 대신 B_eff라는 기울어진 축 둘레로 회전합니다.</span>
+              <span>RF fRF 기준 좌표계에서는 B1이 고정되고, detuning이 z방향 유효장 성분으로 나타납니다.</span>
             </div>
           </div>
           <div class="formula-row">
@@ -587,6 +674,13 @@
             <div>
               <code>θ = 2π f1 t, &nbsp; f1 = γB1</code>
               <span>pulse 시간은 Δf=0이라고 가정했을 때의 목표 flip에 맞춥니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>변화율</b>
+            <div>
+              <code>ΔM ≈ 0.1 ms · dM/dt</code>
+              <span>붉은 접선 화살표는 토크 자체가 아니라 0.1 ms 동안 M이 향해 움직일 예상 변화량입니다.</span>
             </div>
           </div>
         </div>
@@ -599,11 +693,14 @@
           <div class="legend-item"><i class="swatch" style="background:#48618a; opacity:0.45"></i><span>y' 축</span></div>
           <div class="legend-item"><i class="swatch" style="background:#48618a; opacity:0.45"></i><span>z축, B0</span></div>
           <div class="legend-item"><i class="swatch" style="background:#e27722"></i><span>B1 RF</span></div>
-          <div class="legend-item"><i class="swatch" style="background:#9b6a00"></i><span>B_eff</span></div>
-          <div class="legend-item"><i class="swatch" style="background:#b93636"></i><span>순자화 M</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#e27722"></i><span>B_eff</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#078ca4"></i><span>순자화 M</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#249667"></i><span>Mx'y' 성분</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#2f68d8"></i><span>Mz 성분</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#b93636"></i><span>dM/dt</span></div>
           <div class="legend-item"><i class="swatch" style="background:#314154"></i><span>M에 수직한 바퀴</span></div>
-          <div class="legend-item"><i class="swatch" style="background:#d9433f"></i><span>초기 +y' 바퀴살</span></div>
-          <div class="legend-item"><i class="swatch" style="background:#2f68d8"></i><span>초기 -y' 바퀴살</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#f08a86"></i><span>초기 +y' 바퀴살</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#7fa2ed"></i><span>초기 -y' 바퀴살</span></div>
         </div>
       </section>
     </aside>
@@ -612,9 +709,9 @@
   <script>
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
-    const detuneTicks = document.getElementById("detuneTicks");
 
     const controls = {
+      subtitle: document.getElementById("subtitle"),
       b0: document.getElementById("b0Control"),
       detune: document.getElementById("detuneControl"),
       b1: document.getElementById("b1Control"),
@@ -626,6 +723,8 @@
       showEffective: document.getElementById("showEffective"),
       showWheel: document.getElementById("showWheel"),
       showComponents: document.getElementById("showComponents"),
+      showTorque: document.getElementById("showTorque"),
+      frameModeButtons: document.querySelectorAll("[data-frame-mode]"),
       b0Output: document.getElementById("b0Output"),
       detuneOutput: document.getElementById("detuneOutput"),
       b1Output: document.getElementById("b1Output"),
@@ -637,6 +736,7 @@
       rfFlipMetric: document.getElementById("rfFlipMetric"),
       magMetric: document.getElementById("magMetric"),
       pulseMetric: document.getElementById("pulseMetric"),
+      frameOutput: document.getElementById("frameOutput"),
       f0Output: document.getElementById("f0Output"),
       rfOutput: document.getElementById("rfOutput"),
       detuneRatioOutput: document.getElementById("detuneRatioOutput"),
@@ -645,14 +745,13 @@
       elapsedOutput: document.getElementById("elapsedOutput"),
       durationOutput: document.getElementById("durationOutput"),
       pulseFill: document.getElementById("pulseFill"),
-      pulseState: document.getElementById("pulseState")
+      pulseState: document.getElementById("pulseState"),
+      logStatus: document.getElementById("logStatus"),
+      logPreview: document.getElementById("verificationLog"),
+      copyLog: document.getElementById("copyLog"),
+      downloadLog: document.getElementById("downloadLog"),
+      clearLog: document.getElementById("clearLog")
     };
-
-    for (let hz = -2000; hz <= 2000; hz += 100) {
-      const option = document.createElement("option");
-      option.value = String(hz);
-      detuneTicks.appendChild(option);
-    }
 
     const colors = {
       ink: "#172033",
@@ -665,21 +764,41 @@
       y: "#48618a",
       z: "#48618a",
       rf: "#e27722",
-      eff: "#9b6a00",
-      mag: "#b93636",
+      eff: "#e27722",
+      mag: "#078ca4",
       trace: "#b93636",
-      mz: "#249667",
-      mxy: "#078ca4",
+      mz: "#2f68d8",
+      mxy: "#249667",
+      dmdt: "#b93636",
       wheelFill: "#ffffff",
       wheelEdge: "#3f5e78",
-      spokeRed: "#d9433f",
-      spokeBlue: "#2f68d8"
+      spokeRed: "#f08a86",
+      spokeBlue: "#7fa2ed"
     };
 
     const PROTON_GAMMA_MHZ_T = 42.57747892;
     const HZ_PER_MICRO_T = PROTON_GAMMA_MHZ_T;
     const TWO_PI = Math.PI * 2;
+    const DEFAULT_B0_T = 1.5;
+    const DEFAULT_DETUNE_HZ = 0;
+    const DEFAULT_B1_MICRO_T = 8;
+    const DEFAULT_FLIP_DEG = 180;
+    const DEFAULT_TIME_SCALE_MS_PER_SEC = 1;
+    const DEFAULT_FRAME_MODE = "larmor";
+    const B0_MIN_T = 0.5;
+    const B0_MAX_T = 3;
+    const B0_STEP_T = 0.5;
+    const B1_MIN_MICRO_T = 3;
+    const B1_MAX_MICRO_T = 30;
+    const MAX_F1_HZ = HZ_PER_MICRO_T * B1_MAX_MICRO_T;
+    const FIELD_VISUAL_MAX_LENGTH = 1.31;
+    const DMDT_DISPLAY_SECONDS = 0.0001;
+    const TIME_SCALE_MIN_MS_PER_SEC = 0.1;
+    const TIME_SCALE_MAX_MS_PER_SEC = 3;
+    const TIME_SCALE_STEP_MS_PER_SEC = 0.1;
     const MAX_TRACE = 260;
+    const LOG_SAMPLE_COUNT = 16;
+    const TRACE_DMDT_WIDTH = 2.2;
     const EPS = 1e-8;
     const CAMERA_RIGHT = { x: 0.8221921916437787, y: 0.5692099788303083, z: 0 };
     const CAMERA_UP = { x: -0.24394713378441785, y: 0.352368082133048, z: 0.9035079029052513 };
@@ -687,27 +806,22 @@
     const OCCLUDED_ALPHA = 0.08;
     const WHEEL_RADIUS = 0.17;
     const WHEEL_OCCLUSION_RADIUS = WHEEL_RADIUS + 0.001;
-    const WHEEL_SPOKE_COUNT = 18;
     const WHEEL_RIM_SEGMENTS = 96;
-    const WHEEL_SPOKES = Array.from({ length: WHEEL_SPOKE_COUNT }, (_, i) => {
-      const angle = TWO_PI * (i + 0.5) / WHEEL_SPOKE_COUNT;
-      return {
-        angle,
-        color: Math.sin(angle) >= 0 ? colors.spokeRed : colors.spokeBlue
-      };
-    });
 
     const state = {
-      b0: 1.5,
-      detuneHz: 0,
-      b1MicroT: 8,
-      flipDeg: 360,
-      timeScaleMsPerSec: 1.1,
+      b0: DEFAULT_B0_T,
+      detuneHz: DEFAULT_DETUNE_HZ,
+      b1MicroT: DEFAULT_B1_MICRO_T,
+      flipDeg: DEFAULT_FLIP_DEG,
+      timeScaleMsPerSec: DEFAULT_TIME_SCALE_MS_PER_SEC,
+      frameMode: DEFAULT_FRAME_MODE,
       pulseTime: 0,
       running: false,
       completed: false,
       rfWavePhase: 0,
-      trace: []
+      trace: [],
+      verificationLog: null,
+      nextLogSampleIndex: 1
     };
 
     const camera = {
@@ -764,6 +878,10 @@
 
     function clamp(n, min, max) {
       return Math.max(min, Math.min(max, n));
+    }
+
+    function quantize(value, step, min, max) {
+      return clamp(Math.round(value / step) * step, min, max);
     }
 
     function rgba(hex, alpha) {
@@ -827,21 +945,19 @@
       const planeDistance = dot(point, wheel.m);
       const rayPlane = dot(VIEW_DIR, wheel.m);
       if (Math.abs(rayPlane) < 1e-5) {
-        if (Math.abs(planeDistance) > 0.003) return false;
-        const radialOnPlane = Math.hypot(dot(point, wheel.bodyU), dot(point, wheel.bodyW));
-        return radialOnPlane <= WHEEL_OCCLUSION_RADIUS;
+        return false;
       }
 
       const t = -planeDistance / rayPlane;
-      if (t < -0.001) return false;
+      if (t <= 0.001) return false;
       const hit = add(point, mul(VIEW_DIR, t));
       const radial = Math.hypot(dot(hit, wheel.bodyU), dot(hit, wheel.bodyW));
       return radial <= WHEEL_OCCLUSION_RADIUS;
     }
 
     function zLayerIncludesPoint(point, zLayer) {
-      if (zLayer === "below") return point.z < 0;
-      if (zLayer === "above") return point.z >= 0;
+      if (zLayer === "below") return point.z <= 0;
+      if (zLayer === "above") return point.z > 0;
       return true;
     }
 
@@ -850,21 +966,21 @@
       const z0 = a.z;
       const z1 = b.z;
       if (zLayer === "below") {
-        if (z0 >= 0 && z1 >= 0) return [];
-        if (z0 < 0 && z1 < 0) return [[0, 1]];
+        if (z0 > 0 && z1 > 0) return [];
+        if (z0 <= 0 && z1 <= 0) return [[0, 1]];
       } else {
-        if (z0 < 0 && z1 < 0) return [];
-        if (z0 >= 0 && z1 >= 0) return [[0, 1]];
+        if (z0 <= 0 && z1 <= 0) return [];
+        if (z0 > 0 && z1 > 0) return [[0, 1]];
       }
 
       const cut = clamp(z0 / (z0 - z1), 0, 1);
-      if (zLayer === "below") return z0 < 0 ? [[0, cut]] : [[cut, 1]];
-      return z0 >= 0 ? [[0, cut]] : [[cut, 1]];
+      if (zLayer === "below") return z0 <= 0 ? [[0, cut]] : [[cut, 1]];
+      return z0 > 0 ? [[0, cut]] : [[cut, 1]];
     }
 
     function clipPolygonByZ(points, zLayer) {
       if (zLayer !== "below" && zLayer !== "above") return points;
-      const inside = p => zLayer === "below" ? p.z < 0 : p.z >= 0;
+      const inside = p => zLayer === "below" ? p.z <= 0 : p.z > 0;
       const output = [];
       for (let i = 0; i < points.length; i += 1) {
         const current = points[i];
@@ -915,17 +1031,12 @@
       const planeSlope = dot(d, wheel.m);
 
       if (Math.abs(rayPlane) < 1e-5) {
-        if (Math.abs(plane0) > 0.003 || Math.abs(planeSlope) > 0.003) return null;
-        const u0 = dot(a, wheel.bodyU);
-        const u1 = dot(d, wheel.bodyU);
-        const w0 = dot(a, wheel.bodyW);
-        const w1 = dot(d, wheel.bodyW);
-        return diskIntervalForLine(u0, u1, w0, w1, radius);
+        return null;
       }
 
       const s0 = -plane0 / rayPlane;
       const sSlope = -planeSlope / rayPlane;
-      const frontInterval = intersectLinearInterval(0, 1, s0, sSlope, -0.001);
+      const frontInterval = intersectLinearInterval(0, 1, s0, sSlope, 0.001);
       if (!frontInterval) return null;
 
       const hit0 = add(a, mul(VIEW_DIR, s0));
@@ -1139,16 +1250,27 @@
       const mRf = rotateAroundAxis(v(0, 0, 1), axisRf, -angle);
       const bodyURf = rotateAroundAxis(v(1, 0, 0), axisRf, -angle);
       const bodyWRf = rotateAroundAxis(v(0, 1, 0), axisRf, -angle);
-      const m = normalize(rotateZ(mRf, phase));
-      const bodyU = normalize(rotateZ(bodyURf, phase));
-      const bodyW = normalize(rotateZ(bodyWRf, phase));
-      const b1Dir = v(Math.cos(phase), Math.sin(phase), 0);
+      const inRfFrame = state.frameMode === "rf";
+      const m = inRfFrame ? normalize(mRf) : normalize(rotateZ(mRf, phase));
+      const bodyU = inRfFrame ? normalize(bodyURf) : normalize(rotateZ(bodyURf, phase));
+      const bodyW = inRfFrame ? normalize(bodyWRf) : normalize(rotateZ(bodyWRf, phase));
+      const b1Dir = inRfFrame ? v(1, 0, 0) : v(Math.cos(phase), Math.sin(phase), 0);
       const effDir = normalize(add(mul(b1Dir, f1Hz), v(0, 0, detuneHz)));
+      const mMagnitude = state.b0 / DEFAULT_B0_T;
+      const mVisual = mul(m, mMagnitude);
+      const dmdtFieldDir = inRfFrame ? axisRf : b1Dir;
+      const dmdtStrengthHz = inRfFrame ? effHz : f1Hz;
+      const dmdtRaw = cross(m, dmdtFieldDir);
+      const dmdtRawLength = length(dmdtRaw);
+      const dmdtDir = dmdtRawLength > EPS ? mul(dmdtRaw, 1 / dmdtRawLength) : v(0, 0, 0);
+      const dmdtRatePerSecond = mMagnitude * TWO_PI * dmdtStrengthHz * dmdtRawLength;
       const plannedFlipDeg = Math.min(state.flipDeg, 360 * f1Hz * timeS);
       const pulseDurationS = f1Hz > EPS ? state.flipDeg / 360 / f1Hz : 0;
       const actualTiltDeg = Math.acos(clamp(m.z, -1, 1)) * 180 / Math.PI;
       const mxy = Math.hypot(m.x, m.y);
       return {
+        frameMode: state.frameMode,
+        frameFrequencyMHz: inRfFrame ? PROTON_GAMMA_MHZ_T * state.b0 + detuneHz / 1e6 : PROTON_GAMMA_MHZ_T * state.b0,
         f0MHz: PROTON_GAMMA_MHZ_T * state.b0,
         fRfMHz: PROTON_GAMMA_MHZ_T * state.b0 + detuneHz / 1e6,
         f1Hz,
@@ -1158,10 +1280,17 @@
         phase,
         b1Dir,
         effDir,
+        dmdtFieldDir,
+        dmdtDir,
+        dmdtRatePerSecond,
+        dmdtDisplayLength: dmdtRatePerSecond * DMDT_DISPLAY_SECONDS,
         m,
+        mVisual,
+        mMagnitude,
         bodyU,
         bodyW,
         mxy,
+        mxyVisual: mxy * mMagnitude,
         plannedFlipDeg,
         pulseDurationS,
         actualTiltDeg,
@@ -1171,6 +1300,15 @@
 
     function currentPhysics() {
       return physicsAt(state.pulseTime);
+    }
+
+    function frameModeText(mode = state.frameMode) {
+      return mode === "rf" ? "RF fRF 기준" : "라모어 f0 기준";
+    }
+
+    function frameAxisLabel(axis) {
+      const suffix = state.frameMode === "rf" ? "RF" : "0";
+      return `${axis}_${suffix}`;
     }
 
     function formatFrequencyMHz(mhz) {
@@ -1194,6 +1332,297 @@
       return `${(ms / 1000).toFixed(2)} s`;
     }
 
+    function roundForLog(value) {
+      if (!Number.isFinite(value)) return null;
+      if (Math.abs(value) < 1e-14) return 0;
+      return Number(value.toPrecision(12));
+    }
+
+    function vectorForLog(point) {
+      return {
+        x: roundForLog(point.x),
+        y: roundForLog(point.y),
+        z: roundForLog(point.z),
+        norm: roundForLog(length(point))
+      };
+    }
+
+    function vectorDistanceFromLog(logVector, point) {
+      if (!logVector) return null;
+      return roundForLog(Math.hypot(
+        logVector.x - point.x,
+        logVector.y - point.y,
+        logVector.z - point.z
+      ));
+    }
+
+    function verificationSnapshot(timeS, label, p = physicsAt(timeS)) {
+      const pulseDuration = p.pulseDurationS;
+      const progress = pulseDuration > EPS ? clamp(timeS / pulseDuration, 0, 1) : 1;
+      return {
+        label,
+        coordinateFrame: p.frameMode,
+        frameFrequency_MHz: roundForLog(p.frameFrequencyMHz),
+        pulseTime_s: roundForLog(timeS),
+        progress: roundForLog(progress),
+        progress_percent: roundForLog(progress * 100),
+        rfPhase_rad: roundForLog(p.phase),
+        rfPhase_deg: roundForLog(p.phase * 180 / Math.PI),
+        effectiveNutationAngle_rad: roundForLog(-TWO_PI * p.effHz * timeS),
+        effectiveNutationAngle_deg: roundForLog(-360 * p.effHz * timeS),
+        resonantFlipAngle_deg: roundForLog(360 * p.f1Hz * timeS),
+        m: vectorForLog(p.m),
+        mVisual: vectorForLog(p.mVisual),
+        mMagnitude_scale: roundForLog(p.mMagnitude),
+        mxy: roundForLog(p.mxy),
+        mxyVisual: roundForLog(p.mxyVisual),
+        mz: roundForLog(p.m.z),
+        mzVisual: roundForLog(p.mVisual.z),
+        b1Dir_xyFrame: vectorForLog(p.b1Dir),
+        b1Dir_currentFrame: vectorForLog(p.b1Dir),
+        effectiveFieldDir_xyFrame: vectorForLog(p.effDir),
+        effectiveFieldDir_currentFrame: vectorForLog(p.effDir),
+        effectiveAxis_rfFrame: vectorForLog(p.axisRf),
+        dmdtFieldDir_currentFrame: vectorForLog(p.dmdtFieldDir),
+        dmdtDir_currentFrame: vectorForLog(p.dmdtDir),
+        dMdt_per_s: roundForLog(p.dmdtRatePerSecond),
+        dM_for_0_1ms: roundForLog(p.dmdtDisplayLength),
+        wheelBodyU: vectorForLog(p.bodyU),
+        wheelBodyW: vectorForLog(p.bodyW),
+        f1_Hz: roundForLog(p.f1Hz),
+        detune_Hz: roundForLog(p.detuneHz),
+        effectiveNutation_Hz: roundForLog(p.effHz),
+        plannedFlip_deg: roundForLog(p.plannedFlipDeg),
+        actualTiltFromZ_deg: roundForLog(p.actualTiltDeg)
+      };
+    }
+
+    function appendVerificationSample(timeS, label) {
+      if (!state.verificationLog) return null;
+      const sample = verificationSnapshot(timeS, label);
+      state.verificationLog.samples.push(sample);
+      return sample;
+    }
+
+    function buildVerificationChecks(log, status) {
+      const startPhysics = physicsAt(0);
+      const duration = startPhysics.pulseDurationS;
+      const durationPhysics = physicsAt(duration);
+      const current = currentPhysics();
+      const plannedFlipFromDuration = 360 * startPhysics.f1Hz * duration;
+      const resonantAngle = TWO_PI * startPhysics.f1Hz * duration;
+      const expectedResonantM = v(0, Math.sin(resonantAngle), Math.cos(resonantAngle));
+      const durationSample = log.samples.find(sample => Math.abs(sample.progress - 1) < 1e-10);
+      const resonanceApplies = Math.abs(startPhysics.detuneHz) < 0.5;
+
+      return {
+        status,
+        currentPulseTime_s: roundForLog(state.pulseTime),
+        targetPulseDuration_s: roundForLog(duration),
+        currentMinusTargetDuration_s: roundForLog(state.pulseTime - duration),
+        sampleCount: log.samples.length,
+        formulaChecks: {
+          pulseDuration_s: roundForLog(duration),
+          plannedFlipFromDuration_deg: roundForLog(plannedFlipFromDuration),
+          plannedFlipMinusRequested_deg: roundForLog(plannedFlipFromDuration - state.flipDeg),
+          fRfMinusF0PlusDetune_MHz: roundForLog(durationPhysics.fRfMHz - (durationPhysics.f0MHz + state.detuneHz / 1e6)),
+          effectiveNutationMinusHypot_Hz: roundForLog(durationPhysics.effHz - Math.hypot(durationPhysics.f1Hz, state.detuneHz))
+        },
+        vectorNormChecks: {
+          currentM_normMinus1: roundForLog(length(current.m) - 1),
+          targetDurationM_normMinus1: roundForLog(length(durationPhysics.m) - 1),
+          b1Dir_normMinus1: roundForLog(length(current.b1Dir) - 1),
+          effectiveFieldDir_normMinus1: roundForLog(length(current.effDir) - 1),
+          effectiveAxisRf_normMinus1: roundForLog(length(current.axisRf) - 1)
+        },
+        targetDurationState: verificationSnapshot(duration, "analytic_target_duration", durationPhysics),
+        storedDurationSampleError_norm: vectorDistanceFromLog(durationSample ? durationSample.m : null, durationPhysics.m),
+        resonanceClosedFormCheck: {
+          applies: resonanceApplies,
+          expectedFinalM_ifDetune0: vectorForLog(expectedResonantM),
+          finalMinusExpected_norm: resonanceApplies ? roundForLog(length(sub(durationPhysics.m, expectedResonantM))) : null
+        }
+      };
+    }
+
+    function stringifyVerificationLog() {
+      return state.verificationLog ? JSON.stringify(state.verificationLog, null, 2) : "";
+    }
+
+    function updateLogUI() {
+      const log = state.verificationLog;
+      window.mrVerificationLog = log;
+      if (!log) {
+        controls.logStatus.textContent = "RF pulse 실행 시 조건, 초기상태, 진행 벡터가 JSON으로 기록됩니다.";
+        controls.logPreview.value = "";
+        controls.copyLog.disabled = true;
+        controls.downloadLog.disabled = true;
+        controls.clearLog.disabled = true;
+        return;
+      }
+
+      const statusText = {
+        running: "기록 중",
+        paused: "일시정지됨",
+        completed: "완료",
+        interrupted: "중단됨"
+      }[log.status] || log.status;
+      controls.logStatus.textContent = `${statusText}: ${log.conditions.coordinateFrameLabel}, 샘플 ${log.samples.length}개, B0 ${log.conditions.b0_T} T, Δf ${log.conditions.detune_Hz} Hz, B1 ${log.conditions.b1_microT} uT`;
+      controls.logPreview.value = stringifyVerificationLog();
+      controls.copyLog.disabled = false;
+      controls.downloadLog.disabled = false;
+      controls.clearLog.disabled = false;
+    }
+
+    function recordVerificationEvent(type, extra = {}) {
+      if (!state.verificationLog) return;
+      state.verificationLog.events.push({
+        type,
+        at: new Date().toISOString(),
+        pulseTime_s: roundForLog(state.pulseTime),
+        ...extra
+      });
+    }
+
+    function beginVerificationLog() {
+      const p0 = physicsAt(0);
+      const initialState = verificationSnapshot(0, "initial", p0);
+      state.verificationLog = {
+        schemaVersion: 1,
+        source: "docs/proton_spin_rf_larmor_resonance.html",
+        title: "Proton spin RF Larmor resonance verification log",
+        createdAt: new Date().toISOString(),
+        status: "running",
+        model: state.frameMode === "rf"
+          ? "RF frame: m(t) = R_axis(f1,0,Δf)(-2π sqrt(f1^2 + Δf^2)t) * m0, m0=(0,0,1)"
+          : "Larmor frame: m(t) = Rz(2πΔf t) * R_axis(f1,0,Δf)(-2π sqrt(f1^2 + Δf^2)t) * m0, m0=(0,0,1)",
+        constants: {
+          gamma_MHz_per_T: PROTON_GAMMA_MHZ_T,
+          hz_per_microT: HZ_PER_MICRO_T,
+          twoPi: TWO_PI
+        },
+        conditions: {
+          coordinateFrame: state.frameMode,
+          coordinateFrameLabel: frameModeText(),
+          b0_T: roundForLog(state.b0),
+          detune_Hz: roundForLog(state.detuneHz),
+          b1_microT: roundForLog(state.b1MicroT),
+          requestedFlip_deg: roundForLog(state.flipDeg),
+          playback_msPerSecond: roundForLog(state.timeScaleMsPerSec)
+        },
+        derivedAtStart: {
+          frameFrequency_MHz: roundForLog(p0.frameFrequencyMHz),
+          f0_MHz: roundForLog(p0.f0MHz),
+          fRf_MHz: roundForLog(p0.fRfMHz),
+          f1_Hz: roundForLog(p0.f1Hz),
+          effectiveNutation_Hz: roundForLog(p0.effHz),
+          detuneOverF1: roundForLog(p0.detuneHz / Math.max(1, p0.f1Hz)),
+          effectiveAxisTilt_deg: roundForLog(p0.axisTiltDeg),
+          targetPulseDuration_s: roundForLog(p0.pulseDurationS),
+          targetPulseDuration_ms: roundForLog(p0.pulseDurationS * 1000),
+          sampleSchedule: `initial + ${LOG_SAMPLE_COUNT} fixed-progress samples during RF pulse`
+        },
+        initialState,
+        samples: [initialState],
+        events: []
+      };
+      state.nextLogSampleIndex = 1;
+      recordVerificationEvent("started");
+      updateLogUI();
+    }
+
+    function recordScheduledVerificationSamples() {
+      const log = state.verificationLog;
+      if (!log || (log.status !== "running" && log.status !== "paused")) return;
+      const duration = physicsAt(0).pulseDurationS;
+      if (duration <= EPS) return;
+      const progress = clamp(state.pulseTime / duration, 0, 1);
+      let changed = false;
+
+      while (state.nextLogSampleIndex <= LOG_SAMPLE_COUNT) {
+        const sampleProgress = state.nextLogSampleIndex / LOG_SAMPLE_COUNT;
+        if (progress + 1e-9 < sampleProgress) break;
+        const percent = roundForLog(sampleProgress * 100);
+        appendVerificationSample(duration * sampleProgress, `progress_${percent}pct`);
+        state.nextLogSampleIndex += 1;
+        changed = true;
+      }
+
+      if (changed) updateLogUI();
+    }
+
+    function finishVerificationLog(status, reason = "") {
+      const log = state.verificationLog;
+      if (!log || log.status === "completed" || log.status === "interrupted") return;
+      recordScheduledVerificationSamples();
+      log.status = status;
+      if (reason) log.reason = reason;
+      log.finishedAt = new Date().toISOString();
+      log.finalState = verificationSnapshot(state.pulseTime, status === "completed" ? "final" : "last_state");
+      log.checks = buildVerificationChecks(log, status);
+      recordVerificationEvent(status, reason ? { reason } : {});
+      updateLogUI();
+      console.info("MR 검산 로그", log);
+    }
+
+    function pauseVerificationLog() {
+      if (!state.verificationLog || state.verificationLog.status !== "running") return;
+      recordScheduledVerificationSamples();
+      state.verificationLog.status = "paused";
+      recordVerificationEvent("paused");
+      updateLogUI();
+    }
+
+    function resumeVerificationLog() {
+      if (!state.verificationLog || state.verificationLog.status !== "paused") return;
+      state.verificationLog.status = "running";
+      recordVerificationEvent("resumed");
+      updateLogUI();
+    }
+
+    function interruptVerificationLog(reason) {
+      const log = state.verificationLog;
+      if (!log || log.status === "completed" || log.status === "interrupted") return;
+      finishVerificationLog("interrupted", reason);
+    }
+
+    async function copyVerificationLog() {
+      const text = stringifyVerificationLog();
+      if (!text) return;
+      try {
+        if (!navigator.clipboard) throw new Error("Clipboard API unavailable");
+        await navigator.clipboard.writeText(text);
+      } catch (error) {
+        controls.logPreview.focus();
+        controls.logPreview.select();
+        document.execCommand("copy");
+        controls.logPreview.setSelectionRange(0, 0);
+      }
+      controls.logStatus.textContent = "검산 로그 JSON을 클립보드에 복사했습니다.";
+    }
+
+    function downloadVerificationLog() {
+      const text = stringifyVerificationLog();
+      if (!text) return;
+      const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+      const blob = new Blob([text], { type: "application/json;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `rf_larmor_verification_${stamp}.json`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      controls.logStatus.textContent = "검산 로그 JSON 저장을 시작했습니다.";
+    }
+
+    function clearVerificationLog() {
+      state.verificationLog = null;
+      state.nextLogSampleIndex = 1;
+      updateLogUI();
+    }
+
     function drawPlane() {
       for (const r of [0.35, 0.7, 1.05, 1.4]) {
         path3(circleXY(r), colors.gridSoft, 0.65, 1);
@@ -1205,38 +1634,36 @@
     }
 
     function drawAxes(wheel) {
-      axisArrow3(v(0, 0, 0), v(1.55, 0, 0), colors.x, 2, 0.42, wheel);
-      axisArrow3(v(0, 0, 0), v(0, 1.55, 0), colors.y, 2, 0.42, wheel);
-      axisArrow3(v(0, 0, 0), v(0, 0, 1.52), colors.z, 2, 0.42, wheel);
-      line3OccludedByWheel(v(0, 0, 0), v(-0.55, 0, 0), colors.x, 1, 0.16, wheel);
-      line3OccludedByWheel(v(0, 0, 0), v(0, -0.55, 0), colors.y, 1, 0.16, wheel);
-      label3("x'", v(1.68, 0, 0), colors.x, 0.56);
-      label3("y'", v(0, 1.68, 0), colors.y, 0.56);
-      label3("z / B0", v(0, 0, 1.68), colors.z, 0.56);
+      const axisAlpha = 0.42;
+      const zAxisAlpha = 0.58;
+      axisArrow3(v(0, 0, 0), v(1.55, 0, 0), colors.x, 2, axisAlpha, wheel);
+      axisArrow3(v(0, 0, 0), v(0, 1.55, 0), colors.y, 2, axisAlpha, wheel);
+      axisArrow3(v(0, 0, 0), v(0, 0, 1.52), colors.z, 2, zAxisAlpha, wheel);
+      label3(frameAxisLabel("x"), v(1.68, 0, 0), colors.x, 0.56);
+      label3(frameAxisLabel("y"), v(0, 1.68, 0), colors.y, 0.56);
+      label3("z / B0", v(0, 0, 1.68), colors.z, 0.66);
     }
 
     function drawTrace(wheel, zLayer = "all") {
       if (!controls.showTrace.checked || state.trace.length < 2) return;
-      path3OccludedByWheel(state.trace, colors.mag, 1.8, 0.36, wheel, false, zLayer);
+      path3OccludedByWheel(state.trace, colors.trace, TRACE_DMDT_WIDTH, 0.44, wheel, false, zLayer);
     }
 
     function drawComponents(p, zLayer = "all") {
       if (!controls.showComponents.checked) return;
-      const tip = p.m;
+      const tip = p.mVisual;
       const xyTip = v(tip.x, tip.y, 0);
       line3OccludedByWheel(tip, xyTip, colors.axis, 1.4, 0.38, p, true, zLayer);
       arrow3OccludedByWheel(v(0, 0, 0), xyTip, colors.mxy, 3.2, 0.82, p, zLayer);
       arrow3OccludedByWheel(xyTip, tip, colors.mz, 3, 0.74, p, zLayer);
       if (zLayer === "above" || zLayer === "all") {
-        if (p.mxy > 0.08) label3("Mx'y'", mul(normalize(xyTip), p.mxy + 0.12), colors.mxy);
+        if (p.mxyVisual > 0.08) label3("Mx'y'", mul(xyTip, 0.52), colors.mxy);
         label3("Mz", add(xyTip, v(0, 0, tip.z * 0.5)), colors.mz, 0.95, "left");
       }
     }
 
     function fieldVisual(p) {
-      const maxLength = 0.98;
-      const reference = Math.max(1, p.effHz, p.f1Hz, Math.abs(p.detuneHz));
-      const scale = maxLength / reference;
+      const scale = FIELD_VISUAL_MAX_LENGTH / MAX_F1_HZ;
       const b1Tip = mul(p.b1Dir, p.f1Hz * scale);
       const detuneTip = v(0, 0, p.detuneHz * scale);
       return {
@@ -1246,13 +1673,20 @@
       };
     }
 
+    function drawB1Track(p) {
+      if (state.frameMode !== "larmor" || Math.abs(p.detuneHz) < 1) return;
+      const visual = fieldVisual(p);
+      if (visual.b1Length < 0.02) return;
+      path3(circleXY(visual.b1Length), colors.rf, 0.75, 0.34, true);
+    }
+
     function drawRF(p, zLayer = "all") {
       const visual = fieldVisual(p);
       const b1Tip = visual.b1Tip;
       const rfAlpha = 0.96;
       arrow3OccludedByWheel(v(0, 0, 0), b1Tip, colors.rf, 5, rfAlpha, p, zLayer);
       if (zLayer === "above" || zLayer === "all") {
-        label3("B1", add(b1Tip, mul(p.b1Dir, 0.12)), colors.rf, rfAlpha);
+        label3("B1", add(b1Tip, mul(p.b1Dir, 0.06)), colors.rf, rfAlpha);
       }
 
       if (state.running) {
@@ -1276,6 +1710,7 @@
     }
 
     function drawEffectiveField(p, zLayer = "all") {
+      if (state.frameMode !== "rf") return;
       if (!controls.showEffective.checked) return;
       const visual = fieldVisual(p);
       if (Math.abs(p.detuneHz) < 1) {
@@ -1293,11 +1728,6 @@
       }
     }
 
-    function rimColorForSegment(index) {
-      const angle = TWO_PI * (index + 0.5) / WHEEL_RIM_SEGMENTS;
-      return Math.sin(angle) >= 0 ? colors.spokeRed : colors.spokeBlue;
-    }
-
     function drawWheel(p, zLayer = "all") {
       if (!controls.showWheel.checked) return;
       const center = v(0, 0, 0);
@@ -1310,33 +1740,39 @@
         rim.push(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
       }
 
-      const clippedFill = clipPolygonByZ(rim.slice(0, -1), zLayer);
-      if (clippedFill.length >= 3) {
+      function paintPolygon(points, color, alpha) {
+        const clipped = clipPolygonByZ(points, zLayer);
+        if (clipped.length < 3) return;
         ctx.save();
-        const first = project(clippedFill[0]);
+        const first = project(clipped[0]);
         ctx.beginPath();
         ctx.moveTo(first.x, first.y);
-        for (let i = 1; i < clippedFill.length; i += 1) {
-          const p = project(clippedFill[i]);
-          ctx.lineTo(p.x, p.y);
+        for (let i = 1; i < clipped.length; i += 1) {
+          const point = project(clipped[i]);
+          ctx.lineTo(point.x, point.y);
         }
         ctx.closePath();
-        ctx.fillStyle = colors.wheelFill;
+        ctx.fillStyle = rgba(color, alpha);
         ctx.fill();
         ctx.restore();
       }
 
-      for (let i = 0; i < rim.length - 1; i += 1) {
-        for (const [start, end] of zIntervalsForSegment(rim[i], rim[i + 1], zLayer)) {
-          line3(lerp(rim[i], rim[i + 1], start), lerp(rim[i], rim[i + 1], end), rimColorForSegment(i), 1.05, 0.96);
+      function halfDisk(startAngle, endAngle) {
+        const points = [center];
+        const steps = Math.ceil(WHEEL_RIM_SEGMENTS / 2);
+        for (let i = 0; i <= steps; i += 1) {
+          const a = startAngle + (endAngle - startAngle) * i / steps;
+          points.push(add(center, add(mul(u, radius * Math.cos(a)), mul(w, radius * Math.sin(a)))));
         }
+        return points;
       }
 
-      for (const spoke of WHEEL_SPOKES) {
-        const a = spoke.angle;
-        const end = add(center, add(mul(u, radius * 0.92 * Math.cos(a)), mul(w, radius * 0.92 * Math.sin(a))));
-        for (const [start, finish] of zIntervalsForSegment(center, end, zLayer)) {
-          line3(lerp(center, end, start), lerp(center, end, finish), spoke.color, 0.85, 0.98);
+      paintPolygon(halfDisk(0, Math.PI), colors.spokeRed, 1);
+      paintPolygon(halfDisk(Math.PI, TWO_PI), colors.spokeBlue, 1);
+
+      for (let i = 0; i < rim.length - 1; i += 1) {
+        for (const [start, end] of zIntervalsForSegment(rim[i], rim[i + 1], zLayer)) {
+          line3(lerp(rim[i], rim[i + 1], start), lerp(rim[i], rim[i + 1], end), colors.wheelEdge, 1.05, 0.86);
         }
       }
 
@@ -1353,8 +1789,19 @@
 
     function drawMagnetizationVector(p, zLayer = "all") {
       drawComponents(p, zLayer);
-      arrow3OccludedByWheel(v(0, 0, 0), p.m, colors.mag, 6, 0.96, p, zLayer);
-      if (zLayer === "above" || zLayer === "all") label3("M", mul(p.m, 1.14), colors.mag);
+      arrow3OccludedByWheel(v(0, 0, 0), p.mVisual, colors.mag, 6, 0.96, p, zLayer);
+      if (zLayer === "above" || zLayer === "all") label3("M", add(p.mVisual, mul(p.m, 0.06)), colors.mag);
+    }
+
+    function drawDmdtVector(p, zLayer = "all") {
+      if (!controls.showTorque.checked || p.dmdtDisplayLength <= EPS) return;
+      const tangentLength = p.dmdtDisplayLength;
+      const start = p.mVisual;
+      const tip = add(start, mul(p.dmdtDir, tangentLength));
+      arrow3OccludedByWheel(start, tip, colors.dmdt, TRACE_DMDT_WIDTH, 0.9, p, zLayer);
+      if (zLayer === "above" || zLayer === "all") {
+        label3("dM/dt", add(tip, mul(p.dmdtDir, 0.08)), colors.dmdt, 0.92);
+      }
     }
 
     function drawScene() {
@@ -1369,8 +1816,10 @@
       drawRF(p, "below");
       drawEffectiveField(p, "below");
       drawMagnetizationVector(p, "below");
+      drawDmdtVector(p, "below");
 
       drawPlane();
+      drawB1Track(p);
       drawAxes(p);
 
       drawWheel(p, "above");
@@ -1378,6 +1827,7 @@
       drawRF(p, "above");
       drawEffectiveField(p, "above");
       drawMagnetizationVector(p, "above");
+      drawDmdtVector(p, "above");
 
       const origin = project(v(0, 0, 0));
       ctx.save();
@@ -1399,24 +1849,34 @@
         : `${p.detuneHz > 0 ? "+" : ""}${formatHz(p.detuneHz)}`;
       const progress = pulseDuration > EPS ? clamp(state.pulseTime / pulseDuration, 0, 1) : 1;
       const ratio = p.detuneHz / Math.max(1, p.f1Hz);
+      const inRfFrame = state.frameMode === "rf";
 
-      controls.b0Output.textContent = `${state.b0.toFixed(2)} T`;
+      controls.subtitle.textContent = inRfFrame
+        ? "RF와 함께 도는 좌표계에서는 B1이 +x_RF에 고정되고, detuning은 z방향 B_eff 성분으로 보입니다."
+        : "라모어와 함께 도는 좌표계에서는 RF가 공명에서 벗어날수록 B1이 x_0y_0 평면에서 미끄러집니다.";
+      controls.frameModeButtons.forEach(button => {
+        button.classList.toggle("active", button.dataset.frameMode === state.frameMode);
+      });
+      controls.showEffective.disabled = !inRfFrame;
+
+      controls.b0Output.textContent = `${state.b0.toFixed(1)} T`;
       controls.detuneOutput.textContent = detuneText;
-      controls.b1Output.textContent = `${state.b1MicroT.toFixed(1)} uT`;
+      controls.b1Output.textContent = `${state.b1MicroT.toFixed(0)} uT`;
       controls.flipOutput.textContent = `${state.flipDeg.toFixed(0)}°`;
-      controls.timeScaleOutput.textContent = `${state.timeScaleMsPerSec.toFixed(2)} ms/s`;
+      controls.timeScaleOutput.textContent = `${state.timeScaleMsPerSec.toFixed(1)} ms/s`;
 
       controls.f0Metric.textContent = formatFrequencyMHz(p.f0MHz);
       controls.rfMetric.textContent = `${detuneText}`;
       controls.nutationMetric.textContent = `${p.f1Hz.toFixed(1)} Hz`;
       controls.rfFlipMetric.textContent = `${p.plannedFlipDeg.toFixed(0)}° / ${state.flipDeg.toFixed(0)}°`;
-      controls.magMetric.textContent = `${p.m.z.toFixed(3)} / ${p.mxy.toFixed(3)}`;
+      controls.magMetric.textContent = `${p.mVisual.z.toFixed(3)} / ${p.mxyVisual.toFixed(3)}`;
       controls.pulseMetric.textContent = durationText;
 
+      controls.frameOutput.textContent = `${frameModeText()} (${formatFrequencyMHz(p.frameFrequencyMHz)})`;
       controls.f0Output.textContent = formatFrequencyMHz(p.f0MHz);
       controls.rfOutput.textContent = formatFrequencyMHz(p.fRfMHz);
       controls.detuneRatioOutput.textContent = `${ratio.toFixed(2)}`;
-      controls.tiltOutput.textContent = `${p.axisTiltDeg.toFixed(1)}°`;
+      controls.tiltOutput.textContent = inRfFrame ? `${p.axisTiltDeg.toFixed(1)}°` : "RF 기준 전용";
       controls.actualFlipOutput.textContent = `${p.actualTiltDeg.toFixed(1)}°`;
       controls.elapsedOutput.textContent = elapsedText;
       controls.durationOutput.textContent = durationText;
@@ -1424,12 +1884,16 @@
 
       if (state.running) {
         controls.start.textContent = "일시정지";
-        controls.pulseState.textContent = `RF pulse 진행 중, B1은 x'y' 평면에서 ${detuneText} 만큼 드리프트합니다.`;
+        controls.pulseState.textContent = inRfFrame
+          ? "RF pulse 진행 중, B1은 +x_RF에 고정되고 B_eff가 회전축입니다."
+          : `RF pulse 진행 중, B1은 x_0y_0 평면에서 ${detuneText} 만큼 드리프트합니다.`;
       } else if (state.completed) {
-        controls.start.textContent = "다시 실행";
+        controls.start.textContent = "처음으로";
         controls.pulseState.textContent = Math.abs(state.detuneHz) < 1
           ? "공명 조건에서 목표 pulse가 끝났습니다."
-          : "주파수 offset 때문에 같은 시간의 pulse라도 최종 M 방향이 달라졌습니다.";
+          : inRfFrame
+            ? "RF 기준에서는 detuning이 z방향 유효장 성분으로 남아 최종 M 방향이 달라집니다."
+            : "라모어 기준에서는 RF가 드리프트하여 같은 시간의 pulse라도 최종 M 방향이 달라집니다.";
       } else if (state.pulseTime > 0) {
         controls.start.textContent = "계속";
         controls.pulseState.textContent = "pulse가 일시정지되었습니다.";
@@ -1443,30 +1907,61 @@
       state.pulseTime = 0;
       state.running = false;
       state.completed = keepCompleted ? state.completed : false;
-      state.trace = [v(0, 0, 1)];
+      state.trace = [physicsAt(0).mVisual];
       updateUI();
+      updateLogUI();
       drawScene();
     }
 
     function syncFromControls() {
-      state.b0 = Number(controls.b0.value);
+      interruptVerificationLog("parameter_changed");
+      state.b0 = quantize(Number(controls.b0.value), B0_STEP_T, B0_MIN_T, B0_MAX_T);
+      controls.b0.value = String(state.b0);
       state.detuneHz = Number(controls.detune.value);
-      state.b1MicroT = Number(controls.b1.value);
+      state.b1MicroT = clamp(Math.round(Number(controls.b1.value)), B1_MIN_MICRO_T, B1_MAX_MICRO_T);
+      controls.b1.value = String(state.b1MicroT);
       state.flipDeg = Number(controls.flip.value);
-      state.timeScaleMsPerSec = Number(controls.timeScale.value);
+      state.timeScaleMsPerSec = quantize(
+        Number(controls.timeScale.value),
+        TIME_SCALE_STEP_MS_PER_SEC,
+        TIME_SCALE_MIN_MS_PER_SEC,
+        TIME_SCALE_MAX_MS_PER_SEC
+      );
+      controls.timeScale.value = String(state.timeScaleMsPerSec);
       resetPulse();
+    }
+
+    function restoreDefaultSettings() {
+      interruptVerificationLog("settings_reset");
+      state.frameMode = DEFAULT_FRAME_MODE;
+      controls.b0.value = String(DEFAULT_B0_T);
+      controls.detune.value = String(DEFAULT_DETUNE_HZ);
+      controls.b1.value = String(DEFAULT_B1_MICRO_T);
+      controls.flip.value = String(DEFAULT_FLIP_DEG);
+      controls.timeScale.value = String(DEFAULT_TIME_SCALE_MS_PER_SEC);
+      syncFromControls();
     }
 
     function startOrPause() {
       if (state.running) {
         state.running = false;
+        pauseVerificationLog();
         updateUI();
         return;
       }
       if (state.completed) {
-        state.pulseTime = 0;
-        state.trace = [v(0, 0, 1)];
-        state.completed = false;
+        resetPulse();
+        return;
+      }
+      if (
+        state.pulseTime <= EPS ||
+        !state.verificationLog ||
+        state.verificationLog.status === "completed" ||
+        state.verificationLog.status === "interrupted"
+      ) {
+        beginVerificationLog();
+      } else {
+        resumeVerificationLog();
       }
       state.running = true;
       updateUI();
@@ -1496,7 +1991,9 @@
           state.running = false;
           state.completed = true;
         }
-        addTracePoint(currentPhysics().m);
+        addTracePoint(currentPhysics().mVisual);
+        recordScheduledVerificationSamples();
+        if (state.completed) finishVerificationLog("completed");
         updateUI();
       }
 
@@ -1508,29 +2005,28 @@
       control.addEventListener("input", syncFromControls);
     }
 
-    for (const toggle of [controls.showTrace, controls.showEffective, controls.showWheel, controls.showComponents]) {
+    for (const toggle of [controls.showTrace, controls.showEffective, controls.showWheel, controls.showComponents, controls.showTorque]) {
       toggle.addEventListener("change", () => {
         updateUI();
         drawScene();
       });
     }
 
-    document.querySelectorAll("[data-detune]").forEach(button => {
+    controls.frameModeButtons.forEach(button => {
       button.addEventListener("click", () => {
-        controls.detune.value = button.dataset.detune;
-        syncFromControls();
-      });
-    });
-
-    document.querySelectorAll("[data-flip]").forEach(button => {
-      button.addEventListener("click", () => {
-        controls.flip.value = button.dataset.flip;
-        syncFromControls();
+        const nextMode = button.dataset.frameMode;
+        if (!nextMode || nextMode === state.frameMode) return;
+        interruptVerificationLog("frame_mode_changed");
+        state.frameMode = nextMode;
+        resetPulse();
       });
     });
 
     controls.start.addEventListener("click", startOrPause);
-    controls.reset.addEventListener("click", () => resetPulse());
+    controls.reset.addEventListener("click", restoreDefaultSettings);
+    controls.copyLog.addEventListener("click", copyVerificationLog);
+    controls.downloadLog.addEventListener("click", downloadVerificationLog);
+    controls.clearLog.addEventListener("click", clearVerificationLog);
     window.addEventListener("resize", () => {
       resize();
       drawScene();
