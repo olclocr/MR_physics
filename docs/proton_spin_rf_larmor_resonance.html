@@ -96,13 +96,13 @@
     .readout {
       position: absolute;
       left: 24px;
-      right: 24px;
+      right: auto;
       bottom: 20px;
       z-index: 2;
       display: grid;
-      grid-template-columns: repeat(6, minmax(112px, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 8px;
-      max-width: 980px;
+      width: min(calc(100% - 48px), 808px);
     }
 
     .metric {
@@ -223,9 +223,9 @@
 
     .button-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 8px;
-      margin-top: 10px;
+      margin: 0 0 14px;
     }
 
     .mode-block {
@@ -467,9 +467,10 @@
       white-space: pre;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
       .readout {
         grid-template-columns: repeat(3, minmax(120px, 1fr));
+        width: min(calc(100% - 48px), 400px);
       }
     }
 
@@ -512,17 +513,17 @@
 
       .readout {
         left: 14px;
-        right: 14px;
+        right: auto;
         bottom: 14px;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: min(calc(100% - 28px), 286px);
       }
 
       .metric {
         min-height: 52px;
       }
 
-      .legend,
-      .button-grid {
+      .legend {
         grid-template-columns: 1fr;
       }
     }
@@ -547,6 +548,10 @@
     <aside class="sidebar">
       <section class="section">
         <h2>자기장과 RF</h2>
+        <div class="button-grid">
+          <button id="startPulse" class="primary" type="button">RF pulse 실행</button>
+          <button id="resetPulse" type="button">초기화</button>
+        </div>
         <div class="control-row">
           <label for="b0Control">B0 정자기장</label>
           <output id="b0Output" for="b0Control">1.5 T</output>
@@ -563,7 +568,7 @@
           <input id="b1Control" type="range" min="3" max="30" value="8" step="1" />
         </div>
         <div class="control-row">
-          <label for="flipControl">flip (RF 라모어 주파수 공명 기준)</label>
+          <label for="flipControl">flip (RF offset 0 Hz 기준)</label>
           <output id="flipOutput" for="flipControl">180°</output>
           <input id="flipControl" type="range" min="0" max="360" value="180" step="1" />
         </div>
@@ -578,10 +583,6 @@
             <button type="button" class="active" data-frame-mode="larmor">라모어 f0</button>
             <button type="button" data-frame-mode="rf">RF fRF</button>
           </div>
-        </div>
-        <div class="button-grid">
-          <button id="startPulse" class="primary" type="button">RF pulse 실행</button>
-          <button id="resetPulse" type="button">초기화</button>
         </div>
       </section>
 
