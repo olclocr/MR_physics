@@ -1,0 +1,1923 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frequency / Phase Encoding Visualization</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --ink: #162033;
+      --muted: #627189;
+      --line: #d8e0eb;
+      --panel: rgba(255, 255, 255, 0.93);
+      --blue: #2563eb;
+      --teal: #0891b2;
+      --green: #219461;
+      --orange: #e8761d;
+      --red: #d73f3f;
+      --violet: #7c3aed;
+      font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      overflow: hidden;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      height: 100vh;
+      min-height: 640px;
+    }
+
+    .stage {
+      position: relative;
+      min-width: 0;
+      min-height: 640px;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.9), rgba(238,244,251,0.58)),
+        radial-gradient(circle at 44% 48%, rgba(255,255,255,0.98), rgba(232,239,248,0.74) 58%, rgba(223,232,243,0.92));
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .title {
+      position: absolute;
+      left: 28px;
+      top: 22px;
+      z-index: 2;
+      margin: 0;
+      max-width: min(780px, calc(100% - 56px));
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.12;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      position: absolute;
+      left: 29px;
+      top: 72px;
+      z-index: 2;
+      margin: 0;
+      max-width: min(980px, calc(100% - 58px));
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.48;
+      font-weight: 750;
+    }
+
+    .readout {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 20px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(104px, 1fr));
+      gap: 8px;
+      max-width: 920px;
+    }
+
+    .metric {
+      min-width: 0;
+      min-height: 56px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.86);
+      padding: 8px 10px;
+      box-shadow: 0 8px 20px rgba(28, 38, 56, 0.055);
+    }
+
+    .metric b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.24;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sidebar {
+      height: 100vh;
+      min-height: 640px;
+      border-left: 1px solid var(--line);
+      background: rgba(248, 250, 253, 0.97);
+      padding: 18px;
+      overflow: auto;
+    }
+
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 18px rgba(28, 38, 56, 0.045);
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .segmented {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      margin-bottom: 12px;
+    }
+
+    .segmented button {
+      min-height: 38px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 7px 6px;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 850;
+    }
+
+    .segmented button + button {
+      border-left: 1px solid var(--line);
+    }
+
+    .segmented button.active {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: #b8c5d6;
+      background: #f9fbfe;
+    }
+
+    button.primary {
+      border-color: #1f7a55;
+      background: var(--green);
+      color: #fff;
+    }
+
+    button.primary:hover {
+      background: #1d8256;
+    }
+
+    .control-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 4px 12px;
+      margin: 12px 0;
+    }
+
+    .control-row label {
+      min-width: 0;
+      font-size: 13px;
+      line-height: 1.25;
+      font-weight: 850;
+    }
+
+    .control-row output {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.25;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .control-row.inline-select {
+      grid-template-columns: minmax(0, 1fr) minmax(160px, 1.25fr);
+      align-items: center;
+    }
+
+    .control-row.inline-select select {
+      grid-column: auto;
+    }
+
+    input[type="range"] {
+      grid-column: 1 / -1;
+      width: 100%;
+      accent-color: var(--blue);
+    }
+
+    select {
+      grid-column: 1 / -1;
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 7px 9px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .data-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .data-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: baseline;
+      gap: 12px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.76);
+      padding-bottom: 7px;
+      font-size: 13px;
+    }
+
+    .data-line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .data-line span {
+      min-width: 0;
+      color: var(--muted);
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .data-line b {
+      font-size: 13px;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .switch-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 30px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.72);
+      padding: 0 0 7px;
+      margin: 0 0 7px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .switch-row:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .switch-row input {
+      flex: 0 0 18px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--green);
+    }
+
+    .formula-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .formula-row {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 8px;
+      align-items: start;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(216, 224, 235, 0.78);
+    }
+
+    .formula-row:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .formula-row b {
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    .formula-row code {
+      display: block;
+      margin-bottom: 4px;
+      color: #36506d;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.35;
+      white-space: normal;
+    }
+
+    .formula-row span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      min-width: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
+    .swatch {
+      flex: 0 0 11px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+    }
+
+    .note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .note b {
+      color: var(--ink);
+      font-weight: 850;
+    }
+
+    @media (max-width: 1120px) {
+      .readout {
+        grid-template-columns: repeat(3, minmax(118px, 1fr));
+        max-width: 520px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        overflow: auto;
+      }
+
+      .app {
+        display: block;
+        height: auto;
+        min-height: 0;
+      }
+
+      .stage {
+        height: 68vh;
+        min-height: 860px;
+      }
+
+      .sidebar {
+        height: auto;
+        min-height: 0;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .stage {
+        min-height: 940px;
+      }
+
+      .title {
+        left: 18px;
+        top: 16px;
+      }
+
+      .subtitle {
+        left: 19px;
+        top: 66px;
+        max-width: calc(100% - 38px);
+      }
+
+      .readout {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: none;
+      }
+
+      .metric {
+        min-height: 52px;
+      }
+
+      .segmented {
+        grid-template-columns: 1fr;
+      }
+
+      .segmented button + button {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .legend {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="stage" aria-label="frequency encoding과 phase encoding 시각화">
+      <canvas id="scene"></canvas>
+      <h1 class="title">Frequency / Phase Encoding</h1>
+      <div class="readout" aria-live="polite">
+        <div class="metric"><b>현재 단계</b><span id="modeMetric">-</span></div>
+        <div class="metric"><b>Gy phase</b><span id="gyMetric">-</span></div>
+        <div class="metric"><b>Gx readout</b><span id="gxMetric">-</span></div>
+        <div class="metric"><b>readout time</b><span id="timeMetric">-</span></div>
+        <div class="metric"><b>|signal|</b><span id="signalMetric">-</span></div>
+        <div class="metric"><b>k-space</b><span id="kspaceMetric">-</span></div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="section">
+        <h2>Encoding 모드</h2>
+        <div class="segmented" role="group" aria-label="encoding mode">
+          <button type="button" class="active" data-mode="sequence">PE + FE</button>
+          <button type="button" data-mode="phase">Phase only</button>
+          <button type="button" data-mode="frequency">Frequency only</button>
+        </div>
+        <div class="button-grid">
+          <button id="playPause" class="primary" type="button">재생</button>
+          <button id="reset" type="button">초기 설정</button>
+        </div>
+        <p class="note">PE + FE는 같은 과정을 여러 TR 반복합니다. 매 TR마다 다른 Gy phase encoding을 걸어 ky line 하나를 읽고, 선택한 샘플링 방식만큼 line이 모이면 Fourier transform으로 이미지를 만듭니다.</p>
+      </section>
+
+      <section class="section">
+        <h2>Gradient 설정</h2>
+        <div class="control-row inline-select">
+          <label for="fillOrder">k-space 채우기 방식</label>
+          <select id="fillOrder">
+            <option value="linear">순차: -ky → +ky</option>
+            <option value="centric">중심 우선: ky 0부터</option>
+            <option value="reverse">역순: +ky → -ky</option>
+            <option value="interleaved">인터리브</option>
+          </select>
+        </div>
+        <div class="control-row inline-select">
+          <label for="samplingPattern">k-space 샘플링</label>
+          <select id="samplingPattern">
+            <option value="full">전체 5 ky lines</option>
+            <option value="center3">중심 3 lines만</option>
+            <option value="alternate">한 줄 건너뛰기</option>
+            <option value="partialFourier">partial Fourier 4 lines</option>
+          </select>
+        </div>
+        <div class="control-row">
+          <label for="phaseDegrees">Gy 단위 위상 기울기</label>
+          <output id="phaseDegreesOutput" for="phaseDegrees">42 deg/row</output>
+          <input id="phaseDegrees" type="range" min="0" max="90" value="42" step="3" />
+        </div>
+        <div class="control-row">
+          <label for="frequencyHz">Gx 주파수 기울기</label>
+          <output id="frequencyHzOutput" for="frequencyHz">24 Hz/col</output>
+          <input id="frequencyHz" type="range" min="4" max="60" value="24" step="2" />
+        </div>
+        <div class="control-row">
+          <label for="readoutMs">readout window</label>
+          <output id="readoutMsOutput" for="readoutMs">72 ms</output>
+          <input id="readoutMs" type="range" min="24" max="160" value="72" step="4" />
+        </div>
+        <div class="control-row">
+          <label for="t2starMs">T2* 감쇠</label>
+          <output id="t2starMsOutput" for="t2starMs">180 ms</output>
+          <input id="t2starMs" type="range" min="50" max="600" value="180" step="10" />
+        </div>
+        <div class="control-row">
+          <label for="speed">재생 속도</label>
+          <output id="speedOutput" for="speed">1.0x</output>
+          <input id="speed" type="range" min="0.1" max="2.6" value="1" step="0.1" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="control-row inline-select">
+          <label for="objectPattern">proton density 패턴</label>
+          <select id="objectPattern">
+            <option value="center">중앙 강조</option>
+            <option value="uniform">균일 5x5</option>
+            <option value="diagonal">대각선 구조</option>
+            <option value="bars">두 개의 밝은 열</option>
+            <option value="spot">비대칭 밝은 점</option>
+          </select>
+        </div>
+        <label class="switch-row">
+          <span>phase 색상 표시</span>
+          <input id="showPhase" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>frequency label 표시</span>
+          <input id="showFrequency" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>k-space 표시</span>
+          <input id="showKspace" type="checkbox" checked />
+        </label>
+        <label class="switch-row">
+          <span>readout signal 표시</span>
+          <input id="showSignal" type="checkbox" checked />
+        </label>
+      </section>
+
+      <section class="section">
+        <h2>현재 값</h2>
+        <div class="control-row">
+          <label for="timeScrub">획득 시점</label>
+          <output id="timeScrubOutput" for="timeScrub">0/25</output>
+          <input id="timeScrub" type="range" min="0" max="12400" value="0" step="1" />
+        </div>
+        <div class="data-grid">
+          <div class="data-line"><span>스핀 개수</span><b id="spinCountOutput">25</b></div>
+          <div class="data-line"><span>phase range</span><b id="phaseRangeOutput">-</b></div>
+          <div class="data-line"><span>frequency range</span><b id="frequencyRangeOutput">-</b></div>
+          <div class="data-line"><span>현재 signal phase</span><b id="signalPhaseOutput">-</b></div>
+          <div class="data-line"><span>현재 K(kx, ky)</span><b id="currentKOutput">-</b></div>
+          <div class="data-line"><span>k-space 채움</span><b id="samplingOutput">-</b></div>
+          <div class="data-line"><span>Fourier 재구성</span><b id="iftOutput">-</b></div>
+          <div class="data-line"><span>현재 kx 위치</span><b id="kxOutput">-</b></div>
+          <div class="data-line"><span>현재 ky line</span><b id="kyOutput">-</b></div>
+        </div>
+        <p class="note"><b>signal phase</b>는 수신 복소 신호 S = real + i imag의 각도 atan2(imag, real)입니다. 중심 대칭 패턴에서는 imaginary가 상쇄되어 0 또는 ±180 deg가 자주 보이고, 비대칭 패턴에서는 다른 각도도 나타납니다.</p>
+      </section>
+
+      <section class="section">
+        <h2>핵심 식</h2>
+        <div class="formula-list">
+          <div class="formula-row">
+            <b>Phase</b>
+            <div>
+              <code>phi_y = 2pi ky y</code>
+              <span>Gy pulse 면적을 바꾸면 행마다 누적되는 위상 차이가 달라지고, 그 값이 ky 위치가 됩니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>Frequency</b>
+            <div>
+              <code>f_x = gamma Gx x</code>
+              <span>Readout 동안 Gx가 켜지면 열마다 다른 주파수로 회전하므로 시간 신호가 x 방향 정보를 담습니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>Signal</b>
+            <div>
+              <code>S(t) = sum rho(x,y) exp(i phi(x,y,t))</code>
+              <span>수신 코일은 25개 스핀의 transverse magnetization을 하나의 복소 신호로 합산합니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>K-space</b>
+            <div>
+              <code>K(kx,ky) = sum rho(x,y) exp(-i2pi(kx x + ky y)/N)</code>
+              <span>한 TR에서 ky line 하나를 선택하고, readout 동안 그 line의 kx 샘플들이 채워집니다. 원의 크기는 |K|, 색상은 K의 phase를 나타냅니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>Fourier</b>
+            <div>
+              <code>rho(x,y) = IFFT{K(kx,ky)}</code>
+              <span>채워진 k-space 샘플을 inverse Fourier transform하면 zero-filled 재구성 이미지가 만들어집니다.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>해석 가이드</h2>
+        <div class="formula-list">
+          <div class="formula-row">
+            <b>Readout</b>
+            <div>
+              <code>time during Gx readout → kx</code>
+              <span>Gx가 켜진 동안 시간축을 따라 kx 위치가 이동합니다. real/imag는 복소 수신 신호의 두 축이고, |S|는 그 크기입니다. 빨간 선은 지금 채우는 kx sample입니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>IFFT (Inverse Fast Fourier Transform)</b>
+            <div>
+              <code>image = inverse Fourier sum of all K samples</code>
+              <span>k-space의 각 점은 이미지 전체에 걸친 공간 주파수 성분입니다. IFFT는 채워진 모든 복소 성분을 다시 더해서 proton density 이미지를 복원합니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>K color</b>
+            <div>
+              <code>circle size/number = |K|, color = phase(K)</code>
+              <span>원의 크기와 숫자는 정규화된 k-space 크기이고, 색상은 그 복소값의 phase입니다. 숫자는 line이 지나간 뒤에도 남아 획득된 sample을 표시합니다.</span>
+            </div>
+          </div>
+          <div class="formula-row">
+            <b>Under</b>
+            <div>
+              <code>missing K samples = 0 in this demo</code>
+              <span>덜 채우는 방식은 일부 ky line을 측정하지 않아 시간을 줄입니다. 이 화면에서는 빠진 line을 0으로 둔 zero-filled IFFT를 보여주므로 흐림이나 aliasing 같은 손실도 같이 보입니다.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>범례</h2>
+        <div class="legend">
+          <div class="legend-item"><i class="swatch" style="background:#e8761d"></i><span>Gy phase encoding</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#2563eb"></i><span>Gx frequency encoding</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#d73f3f"></i><span>현재 k-space 위치</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#219461"></i><span>합성 MR signal</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#0891b2"></i><span>real signal</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#7c3aed"></i><span>imaginary signal</span></div>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const TWO_PI = Math.PI * 2;
+    const GRID_SIZE = 5;
+    const HALF = 2;
+    const CYCLE_SECONDS = 6.2;
+    const TIME_EPSILON = 1e-6;
+    const SCRUB_TICKS_PER_SECOND = 400;
+    const KSPACE_INDEXES = Array.from({ length: GRID_SIZE }, (_, index) => index - HALF);
+
+    const controls = {
+      modeButtons: Array.from(document.querySelectorAll("[data-mode]")),
+      playPause: document.getElementById("playPause"),
+      reset: document.getElementById("reset"),
+      fillOrder: document.getElementById("fillOrder"),
+      samplingPattern: document.getElementById("samplingPattern"),
+      phaseDegrees: document.getElementById("phaseDegrees"),
+      phaseDegreesOutput: document.getElementById("phaseDegreesOutput"),
+      frequencyHz: document.getElementById("frequencyHz"),
+      frequencyHzOutput: document.getElementById("frequencyHzOutput"),
+      readoutMs: document.getElementById("readoutMs"),
+      readoutMsOutput: document.getElementById("readoutMsOutput"),
+      t2starMs: document.getElementById("t2starMs"),
+      t2starMsOutput: document.getElementById("t2starMsOutput"),
+      speed: document.getElementById("speed"),
+      speedOutput: document.getElementById("speedOutput"),
+      objectPattern: document.getElementById("objectPattern"),
+      showPhase: document.getElementById("showPhase"),
+      showFrequency: document.getElementById("showFrequency"),
+      showKspace: document.getElementById("showKspace"),
+      showSignal: document.getElementById("showSignal"),
+      timeScrub: document.getElementById("timeScrub"),
+      timeScrubOutput: document.getElementById("timeScrubOutput"),
+      modeMetric: document.getElementById("modeMetric"),
+      gyMetric: document.getElementById("gyMetric"),
+      gxMetric: document.getElementById("gxMetric"),
+      timeMetric: document.getElementById("timeMetric"),
+      signalMetric: document.getElementById("signalMetric"),
+      kspaceMetric: document.getElementById("kspaceMetric"),
+      spinCountOutput: document.getElementById("spinCountOutput"),
+      phaseRangeOutput: document.getElementById("phaseRangeOutput"),
+      frequencyRangeOutput: document.getElementById("frequencyRangeOutput"),
+      signalPhaseOutput: document.getElementById("signalPhaseOutput"),
+      currentKOutput: document.getElementById("currentKOutput"),
+      samplingOutput: document.getElementById("samplingOutput"),
+      iftOutput: document.getElementById("iftOutput"),
+      kxOutput: document.getElementById("kxOutput"),
+      kyOutput: document.getElementById("kyOutput")
+    };
+
+    const colors = {
+      ink: "#162033",
+      muted: "#627189",
+      line: "#d8e0eb",
+      grid: "rgba(74, 91, 116, 0.24)",
+      panel: "rgba(255,255,255,0.66)",
+      spin: "#1f2937",
+      phase: "#e8761d",
+      frequency: "#2563eb",
+      signal: "#219461",
+      real: "#0891b2",
+      imaginary: "#7c3aed",
+      kspace: "#d73f3f",
+      density: "#f8fafc",
+      shadow: "rgba(28, 38, 56, 0.10)"
+    };
+
+    const patternNames = {
+      center: "중앙 강조",
+      uniform: "균일 5x5",
+      diagonal: "대각선 구조",
+      bars: "두 개의 밝은 열",
+      spot: "비대칭 밝은 점"
+    };
+
+    const fillOrderNames = {
+      linear: "순차",
+      centric: "중심 우선",
+      reverse: "역순",
+      interleaved: "인터리브"
+    };
+
+    const fillOrders = {
+      linear: [-2, -1, 0, 1, 2],
+      centric: [0, -1, 1, -2, 2],
+      reverse: [2, 1, 0, -1, -2],
+      interleaved: [-2, 0, 2, -1, 1]
+    };
+
+    const samplingPatternNames = {
+      full: "전체",
+      center3: "중심 3줄",
+      alternate: "한 줄 건너뛰기",
+      partialFourier: "partial Fourier"
+    };
+
+    const samplingPatterns = {
+      full: [-2, -1, 0, 1, 2],
+      center3: [-1, 0, 1],
+      alternate: [-2, 0, 2],
+      partialFourier: [-2, -1, 0, 1]
+    };
+
+    const modeNames = {
+      sequence: "PE + FE sequence",
+      phase: "Phase encoding",
+      frequency: "Frequency readout"
+    };
+
+    const defaults = {
+      mode: "sequence",
+      running: false,
+      elapsed: 0,
+      fillOrder: "linear",
+      samplingPattern: "full",
+      phaseDegPerRow: 42,
+      frequencyHzPerCol: 24,
+      readoutMs: 72,
+      t2starMs: 180,
+      speed: 1,
+      objectPattern: "center",
+      showPhase: true,
+      showFrequency: true,
+      showKspace: true,
+      showSignal: true
+    };
+
+    const state = {
+      ...defaults
+    };
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function degToRad(deg) {
+      return deg * Math.PI / 180;
+    }
+
+    function radToDeg(rad) {
+      return rad * 180 / Math.PI;
+    }
+
+    function wrapAngle(rad) {
+      let a = rad % TWO_PI;
+      if (a < 0) a += TWO_PI;
+      return a;
+    }
+
+    function signedAngleDeg(rad) {
+      let deg = radToDeg(rad) % 360;
+      if (deg > 180) deg -= 360;
+      if (deg < -180) deg += 360;
+      return deg;
+    }
+
+    function phaseColor(rad, alpha = 1) {
+      const hue = Math.round((wrapAngle(rad) / TWO_PI) * 300 + 20) % 360;
+      return `hsla(${hue}, 72%, 43%, ${alpha})`;
+    }
+
+    function rgba(hex, alpha) {
+      const clean = hex.replace("#", "");
+      const r = parseInt(clean.slice(0, 2), 16);
+      const g = parseInt(clean.slice(2, 4), 16);
+      const b = parseInt(clean.slice(4, 6), 16);
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function roundRect(x, y, w, h, r) {
+      const rr = Math.min(r, w / 2, h / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + rr, y);
+      ctx.lineTo(x + w - rr, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + rr);
+      ctx.lineTo(x + w, y + h - rr);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - rr, y + h);
+      ctx.lineTo(x + rr, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - rr);
+      ctx.lineTo(x, y + rr);
+      ctx.quadraticCurveTo(x, y, x + rr, y);
+      ctx.closePath();
+    }
+
+    function drawPanel(rect, title) {
+      ctx.save();
+      roundRect(rect.x, rect.y, rect.w, rect.h, 8);
+      ctx.fillStyle = colors.panel;
+      ctx.fill();
+      ctx.strokeStyle = "rgba(216,224,235,0.86)";
+      ctx.lineWidth = 1;
+      ctx.stroke();
+      ctx.shadowColor = colors.shadow;
+      ctx.shadowBlur = 12;
+      ctx.restore();
+      if (title) {
+        ctx.save();
+        ctx.fillStyle = colors.muted;
+        ctx.font = "850 12px Malgun Gothic, Segoe UI, sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(title, rect.x + rect.w / 2, rect.y + 20);
+        ctx.restore();
+      }
+    }
+
+    function line(x1, y1, x2, y2, color, width = 1, alpha = 1) {
+      ctx.save();
+      ctx.strokeStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.lineWidth = width;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function arrow(x1, y1, x2, y2, color, width = 3, alpha = 1) {
+      const angle = Math.atan2(y2 - y1, x2 - x1);
+      const size = Math.max(7, width * 2.4);
+      const shaftEndX = x2 - Math.cos(angle) * size * 0.62;
+      const shaftEndY = y2 - Math.sin(angle) * size * 0.62;
+      line(x1, y1, shaftEndX, shaftEndY, color, width, alpha);
+      ctx.save();
+      ctx.fillStyle = color.startsWith("#") ? rgba(color, alpha) : color;
+      ctx.beginPath();
+      ctx.moveTo(x2, y2);
+      ctx.lineTo(x2 - Math.cos(angle - 0.55) * size, y2 - Math.sin(angle - 0.55) * size);
+      ctx.lineTo(x2 - Math.cos(angle + 0.55) * size, y2 - Math.sin(angle + 0.55) * size);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function label(text, x, y, color = colors.ink, size = 12, align = "center") {
+      ctx.save();
+      ctx.font = `850 ${size}px Malgun Gothic, Segoe UI, sans-serif`;
+      ctx.textAlign = align;
+      ctx.textBaseline = "middle";
+      ctx.fillStyle = color;
+      ctx.fillText(text, x, y);
+      ctx.restore();
+    }
+
+    function labelBox(text, x, y, color = colors.ink, size = 10, align = "center", bg = "rgba(255,255,255,0.74)") {
+      ctx.save();
+      ctx.font = `850 ${size}px Malgun Gothic, Segoe UI, sans-serif`;
+      const width = ctx.measureText(text).width;
+      const height = size + 6;
+      const left = align === "left" ? x - 3 : align === "right" ? x - width - 5 : x - width / 2 - 4;
+      roundRect(left, y - height / 2, width + 8, height, 4);
+      ctx.fillStyle = bg;
+      ctx.fill();
+      ctx.fillStyle = color;
+      ctx.textAlign = align;
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, x, y);
+      ctx.restore();
+    }
+
+    function densityFor(x, y) {
+      if (state.objectPattern === "uniform") return 1;
+      if (state.objectPattern === "diagonal") {
+        return Math.abs(x - y) <= 0.1 ? 1 : Math.abs(x - y) <= 1.1 ? 0.62 : 0.28;
+      }
+      if (state.objectPattern === "bars") {
+        return x === -1 || x === 1 ? 1 : x === 0 ? 0.56 : 0.26;
+      }
+      if (state.objectPattern === "spot") {
+        const dx = x - 1;
+        const dy = y - 1;
+        return 0.18 + 0.92 * Math.exp(-(dx * dx + dy * dy) / 0.85);
+      }
+      const r2 = x * x + y * y;
+      return 0.25 + 0.75 * Math.exp(-r2 / 3.1);
+    }
+
+    function spinCells() {
+      const cells = [];
+      for (let row = 0; row < GRID_SIZE; row += 1) {
+        for (let col = 0; col < GRID_SIZE; col += 1) {
+          const x = col - HALF;
+          const y = HALF - row;
+          cells.push({ row, col, x, y, density: densityFor(x, y) });
+        }
+      }
+      return cells;
+    }
+
+    function acquisitionOrder() {
+      const selected = new Set(samplingPatterns[state.samplingPattern] || samplingPatterns.full);
+      return (fillOrders[state.fillOrder] || fillOrders.linear).filter(ky => selected.has(ky));
+    }
+
+    function acquisitionDuration() {
+      return CYCLE_SECONDS * acquisitionOrder().length;
+    }
+
+    function scrubMaxTicks() {
+      return Math.max(1, Math.round(acquisitionDuration() * SCRUB_TICKS_PER_SECOND));
+    }
+
+    function isSequenceComplete(frame = currentFrame()) {
+      return state.mode === "sequence" && frame.stage === "complete";
+    }
+
+    function totalKspaceSampleCount() {
+      return GRID_SIZE * GRID_SIZE;
+    }
+
+    function targetSampleCount(frame = null) {
+      const order = frame?.order || acquisitionOrder();
+      return order.length * GRID_SIZE;
+    }
+
+    function rawKspaceValue(kx, ky, cells = spinCells()) {
+      let real = 0;
+      let imaginary = 0;
+      let totalDensity = 0;
+      for (const cell of cells) {
+        const angle = -TWO_PI * (kx * cell.x + ky * cell.y) / GRID_SIZE;
+        real += cell.density * Math.cos(angle);
+        imaginary += cell.density * Math.sin(angle);
+        totalDensity += cell.density;
+      }
+      return {
+        kx,
+        ky,
+        real,
+        imaginary,
+        magnitude: Math.hypot(real, imaginary),
+        phase: Math.atan2(imaginary, real),
+        totalDensity
+      };
+    }
+
+    function kspaceMatrix() {
+      const cells = spinCells();
+      const samples = [];
+      let maxMagnitude = 0;
+      let totalDensity = 0;
+      for (const cell of cells) totalDensity += cell.density;
+
+      for (const ky of KSPACE_INDEXES) {
+        for (const kx of KSPACE_INDEXES) {
+          const sample = rawKspaceValue(kx, ky, cells);
+          sample.normalizedMagnitude = totalDensity > 0 ? sample.magnitude / totalDensity : 0;
+          samples.push(sample);
+          maxMagnitude = Math.max(maxMagnitude, sample.magnitude);
+        }
+      }
+
+      return { samples, maxMagnitude, totalDensity };
+    }
+
+    function currentLineSampleCount(frame) {
+      if (frame.stage === "complete") return 0;
+      if (frame.stage === "rewind") return GRID_SIZE;
+      if (!frame.readoutActive) return 0;
+      const lead = 1e-6;
+      return KSPACE_INDEXES.filter((_, index) => {
+        const sampleProgress = index / (GRID_SIZE - 1);
+        return sampleProgress <= frame.readoutProgress + lead;
+      }).length;
+    }
+
+    function totalAcquiredSampleCount(frame) {
+      if (frame.stage === "complete") return targetSampleCount(frame);
+      return (frame.completedLines || 0) * GRID_SIZE + currentLineSampleCount(frame);
+    }
+
+    function nearestKxIndex(frame) {
+      const index = Math.round(clamp(frame.readoutProgress, 0, 1) * (GRID_SIZE - 1));
+      return KSPACE_INDEXES[clamp(index, 0, GRID_SIZE - 1)];
+    }
+
+    function acquiredKspaceSamples(frame, matrix = kspaceMatrix()) {
+      const order = frame.order || acquisitionOrder();
+      const completedCount = frame.stage === "complete" ? order.length : frame.completedLines || 0;
+      const completedKys = new Set(order.slice(0, completedCount));
+      const currentCount = currentLineSampleCount(frame);
+      if (completedKys.size === 0 && currentCount <= 0) return [];
+      return matrix.samples.filter(sample => {
+        const kxOrder = sample.kx + HALF;
+        return completedKys.has(sample.ky) || (sample.ky === frame.ky && kxOrder < currentCount);
+      });
+    }
+
+    function reconstructedImage(frame) {
+      const matrix = kspaceMatrix();
+      const samples = acquiredKspaceSamples(frame, matrix);
+      const pixels = [];
+      let maxValue = 0;
+
+      for (let row = 0; row < GRID_SIZE; row += 1) {
+        const y = HALF - row;
+        for (let col = 0; col < GRID_SIZE; col += 1) {
+          const x = col - HALF;
+          let real = 0;
+          let imaginary = 0;
+          for (const sample of samples) {
+            const angle = TWO_PI * (sample.kx * x + sample.ky * y) / GRID_SIZE;
+            real += sample.real * Math.cos(angle) - sample.imaginary * Math.sin(angle);
+            imaginary += sample.real * Math.sin(angle) + sample.imaginary * Math.cos(angle);
+          }
+          const value = real / (GRID_SIZE * GRID_SIZE);
+          const pixel = { row, col, x, y, value, residual: imaginary / (GRID_SIZE * GRID_SIZE) };
+          pixels.push(pixel);
+          maxValue = Math.max(maxValue, Math.abs(value));
+        }
+      }
+
+      return { pixels, maxValue, sampleCount: samples.length };
+    }
+
+    function currentFrame() {
+      const order = acquisitionOrder();
+      const lineCount = order.length;
+      if (state.mode === "phase") {
+        const progress = (state.elapsed * state.speed * 0.32) % 1;
+        return {
+          stage: "phase",
+          ky: order[0],
+          lineIndex: 0,
+          completedLines: 0,
+          order,
+          phaseProgress: progress,
+          readoutProgress: 0,
+          readoutActive: false,
+          trProgress: 0.15,
+          label: `Gy phase encode ky ${formatSigned(order[0])}`
+        };
+      }
+
+      if (state.mode === "frequency") {
+        const progress = (state.elapsed * state.speed * 0.28) % 1;
+        return {
+          stage: "readout",
+          ky: 0,
+          lineIndex: 0,
+          completedLines: 0,
+          order,
+          phaseProgress: 1,
+          readoutProgress: progress,
+          readoutActive: true,
+          trProgress: progress,
+          label: "Gx frequency readout"
+        };
+      }
+
+      const tAll = clamp(state.elapsed * state.speed, 0, acquisitionDuration());
+      if (tAll >= acquisitionDuration()) {
+        return {
+          stage: "complete",
+          ky: order[lineCount - 1],
+          lineIndex: lineCount - 1,
+          completedLines: lineCount,
+          order,
+          phaseProgress: 1,
+          readoutProgress: 1,
+          readoutActive: false,
+          trProgress: 1,
+          label: lineCount === GRID_SIZE ? "k-space complete → Fourier transform" : "undersampled k-space → zero-filled Fourier"
+        };
+      }
+
+      const lineIndex = Math.floor(tAll / CYCLE_SECONDS);
+      const ky = order[lineIndex];
+      const t = tAll - lineIndex * CYCLE_SECONDS;
+      const common = {
+        ky,
+        lineIndex,
+        completedLines: lineIndex,
+        order,
+        trProgress: t / CYCLE_SECONDS
+      };
+
+      if (t < 0.85 - TIME_EPSILON) {
+        return {
+          ...common,
+          stage: "excitation",
+          phaseProgress: 0,
+          readoutProgress: 0,
+          readoutActive: false,
+          label: `TR ${lineIndex + 1}/${lineCount}: 90 deg excitation`
+        };
+      }
+      if (t < 2.2 - TIME_EPSILON) {
+        return {
+          ...common,
+          stage: "phase",
+          phaseProgress: (t - 0.85) / 1.35,
+          readoutProgress: 0,
+          readoutActive: false,
+          label: `TR ${lineIndex + 1}/${lineCount}: Gy phase encode ky ${formatSigned(ky)}`
+        };
+      }
+      if (t <= 5.55 + TIME_EPSILON) {
+        return {
+          ...common,
+          stage: "readout",
+          phaseProgress: 1,
+          readoutProgress: clamp((t - 2.2) / 3.35, 0, 1),
+          readoutActive: true,
+          label: `TR ${lineIndex + 1}/${lineCount}: Gx readout ky ${formatSigned(ky)}`
+        };
+      }
+      return {
+        ...common,
+        stage: "rewind",
+        phaseProgress: 0,
+        readoutProgress: 1,
+        readoutActive: false,
+        label: `TR ${lineIndex + 1}/${lineCount}: line stored`
+      };
+    }
+
+    function phaseAt(cell, frame, readoutProgress = frame.readoutProgress) {
+      const phaseSlope = degToRad(state.phaseDegPerRow) * (frame.ky || 0);
+      const phaseEncode = cell.y * phaseSlope * frame.phaseProgress;
+      const readoutSeconds = readoutProgress * state.readoutMs / 1000;
+      const readout = TWO_PI * (cell.x * state.frequencyHzPerCol) * readoutSeconds;
+      return phaseEncode + readout;
+    }
+
+    function decayAt(frame, readoutProgress = frame.readoutProgress) {
+      if (!frame.readoutActive && frame.stage !== "readout") return 1;
+      const ms = readoutProgress * state.readoutMs;
+      return Math.exp(-ms / Math.max(1, state.t2starMs));
+    }
+
+    function signalAt(frame, readoutProgress = frame.readoutProgress) {
+      const cells = spinCells();
+      const decay = decayAt(frame, readoutProgress);
+      let sx = 0;
+      let sy = 0;
+      let norm = 0;
+      for (const cell of cells) {
+        const phase = phaseAt(cell, frame, readoutProgress);
+        const amp = cell.density * decay;
+        sx += amp * Math.cos(phase);
+        sy += amp * Math.sin(phase);
+        norm += cell.density;
+      }
+      const real = norm > 0 ? sx / norm : 0;
+      const imaginary = norm > 0 ? sy / norm : 0;
+      return {
+        real,
+        imaginary,
+        magnitude: Math.hypot(real, imaginary),
+        phase: Math.atan2(imaginary, real)
+      };
+    }
+
+    function signalTrace(sourceFrame, samples = 128) {
+      const traceFrame = {
+        stage: "readout",
+        ky: sourceFrame.ky || 0,
+        lineIndex: sourceFrame.lineIndex || 0,
+        completedLines: sourceFrame.completedLines || 0,
+        order: sourceFrame.order || acquisitionOrder(),
+        phaseProgress: 1,
+        readoutProgress: 0,
+        readoutActive: true,
+        label: "readout"
+      };
+      const values = [];
+      for (let i = 0; i < samples; i += 1) {
+        const p = i / (samples - 1);
+        values.push({ p, ...signalAt(traceFrame, p) });
+      }
+      return values;
+    }
+
+    function layout(width, height) {
+      const top = width < 560 ? 132 : 110;
+      const bottom = width < 560 ? 220 : width < 1120 ? 150 : 112;
+      const availableH = Math.max(320, height - top - bottom);
+
+      if (width >= 760) {
+        const spinSize = Math.min(Math.max(360, width * 0.46), availableH, 620);
+        const spinX = Math.max(28, Math.min(72, width * 0.065));
+        const spinY = top + Math.max(8, (availableH - spinSize) / 2);
+        const rightX = spinX + spinSize + 28;
+        const rightW = Math.max(220, width - rightX - 24);
+        const panelGap = 14;
+        const kspaceH = Math.max(260, spinSize * 0.67);
+        const signalH = spinSize - panelGap - kspaceH;
+        return {
+          spin: { x: spinX, y: spinY, w: spinSize, h: spinSize },
+          kspace: { x: rightX, y: spinY, w: rightW, h: kspaceH },
+          signal: { x: rightX, y: spinY + kspaceH + panelGap, w: rightW, h: signalH }
+        };
+      }
+
+      const spinSize = Math.min(width - 34, availableH * 0.44, 360);
+      const spinX = (width - spinSize) / 2;
+      const spinY = top + 8;
+      const panelW = width - 34;
+      const panelGap = 10;
+      const remainingH = Math.max(220, availableH - spinSize - panelGap * 2);
+      const kspaceH = Math.max(150, remainingH * 0.68);
+      const signalH = Math.max(100, remainingH - panelGap - kspaceH);
+      const panelX = 17;
+      const kY = spinY + spinSize + panelGap;
+      return {
+        spin: { x: spinX, y: spinY, w: spinSize, h: spinSize },
+        kspace: { x: panelX, y: kY, w: panelW, h: kspaceH },
+        signal: { x: panelX, y: kY + kspaceH + panelGap, w: panelW, h: signalH }
+      };
+    }
+
+    function drawSpinGrid(rect, frame) {
+      drawPanel(rect, "5x5 spin array");
+      const pad = Math.min(18, rect.w * 0.03);
+      const leftSpace = state.showPhase ? Math.min(34, rect.w * 0.09) : 18;
+      const rightSpace = 14;
+      const topSpace = 44;
+      const bottomSpace = 30;
+      const gridSize = Math.min(rect.w - pad * 2 - leftSpace - rightSpace, rect.h - topSpace - bottomSpace);
+      const groupW = leftSpace + gridSize + rightSpace;
+      const grid = {
+        x: rect.x + (rect.w - groupW) / 2 + leftSpace,
+        y: rect.y + topSpace + (rect.h - topSpace - bottomSpace - gridSize) / 2,
+        w: gridSize,
+        h: gridSize
+      };
+      const cellSize = grid.w / GRID_SIZE;
+
+      ctx.save();
+      ctx.strokeStyle = colors.grid;
+      ctx.lineWidth = 1;
+      for (let i = 0; i <= GRID_SIZE; i += 1) {
+        const p = grid.x + i * cellSize;
+        line(p, grid.y, p, grid.y + grid.h, colors.grid, 1, 1);
+        const q = grid.y + i * cellSize;
+        line(grid.x, q, grid.x + grid.w, q, colors.grid, 1, 1);
+      }
+      ctx.restore();
+
+      if (state.showFrequency) {
+        for (let col = 0; col < GRID_SIZE; col += 1) {
+          const xIndex = col - HALF;
+          const x = grid.x + (col + 0.5) * cellSize;
+          const f = xIndex * state.frequencyHzPerCol;
+          label(`${f > 0 ? "+" : ""}${f.toFixed(0)} Hz`, x, grid.y - 12, colors.muted, 10, "center");
+        }
+      }
+
+      for (const cell of spinCells()) {
+        const cx = grid.x + (cell.col + 0.5) * cellSize;
+        const cy = grid.y + (cell.row + 0.5) * cellSize;
+        const radius = cellSize * 0.29;
+        const phase = phaseAt(cell, frame);
+        const density = cell.density;
+        const decay = decayAt(frame);
+        const arrowLength = radius * (0.34 + 0.62 * density) * decay;
+        const fillAlpha = 0.38 + density * 0.5;
+        const spinColor = state.showPhase ? phaseColor(phase, 0.96) : colors.spin;
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius, 0, TWO_PI);
+        ctx.fillStyle = rgba(colors.density, fillAlpha);
+        ctx.fill();
+        ctx.strokeStyle = rgba(colors.line, 0.92);
+        ctx.lineWidth = 1.2;
+        ctx.stroke();
+        ctx.restore();
+
+        if (frame.readoutActive && Math.abs(cell.x) > 0 && state.showFrequency) {
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(cx, cy, radius * 0.82, -0.7, 0.7, cell.x < 0);
+          ctx.strokeStyle = rgba(colors.frequency, 0.22 + 0.12 * Math.abs(cell.x));
+          ctx.lineWidth = 2;
+          ctx.stroke();
+          ctx.restore();
+        }
+
+        const x2 = cx + Math.cos(phase) * arrowLength;
+        const y2 = cy - Math.sin(phase) * arrowLength;
+        arrow(cx, cy, x2, y2, spinColor, Math.max(2.5, cellSize * 0.035), 1);
+
+        ctx.save();
+        ctx.fillStyle = rgba(colors.ink, 0.62);
+        ctx.beginPath();
+        ctx.arc(cx, cy, Math.max(2, radius * 0.08), 0, TWO_PI);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      if (state.showPhase) {
+        for (let row = 0; row < GRID_SIZE; row += 1) {
+          const yIndex = HALF - row;
+          const phase = yIndex * degToRad(state.phaseDegPerRow) * (frame.ky || 0) * frame.phaseProgress;
+          const x = grid.x + (HALF + 1) * cellSize - 5;
+          const y = grid.y + (row + 1) * cellSize - 9;
+          labelBox(`${signedAngleDeg(phase).toFixed(0)} deg`, x, y, colors.muted, 12, "right", "rgba(255,255,255,0.58)");
+        }
+      }
+
+      const gxY = grid.y + grid.h + 8;
+      arrow(grid.x, gxY, grid.x + grid.w, gxY, colors.frequency, 4, 0.9);
+      label("Gx frequency encoding", grid.x + grid.w / 2, gxY + 10, colors.frequency, 12);
+
+      const gyX = grid.x - 10;
+      arrow(gyX, grid.y + grid.h, gyX, grid.y, colors.phase, 4, 0.9);
+      ctx.save();
+      ctx.translate(gyX - 8, grid.y + grid.h / 2);
+      ctx.rotate(-Math.PI / 2);
+      label("Gy phase encoding", 0, 0, colors.phase, 12);
+      ctx.restore();
+    }
+
+    function drawKspace(rect, frame) {
+      if (!state.showKspace) return;
+      drawPanel(rect, "k-space sampling");
+      const padX = 50;
+      const padY = 34;
+      const inlineGap = 38;
+      const maxInlineFourierH = rect.h - padY - 106 - inlineGap - 8;
+      const inlineFourierH = rect.w >= 320 && maxInlineFourierH >= 94
+        ? Math.min(165, Math.max(96, Math.min(rect.h * 0.4, maxInlineFourierH)))
+        : 0;
+      const padBottom = inlineFourierH > 0 ? inlineFourierH + inlineGap + 8 : 38;
+      const plot = {
+        x: rect.x + padX,
+        y: rect.y + padY,
+        w: rect.w - padX * 2,
+        h: Math.max(84, rect.h - padY - padBottom)
+      };
+      const rowGap = plot.h / (GRID_SIZE - 1);
+      const colGap = plot.w / (GRID_SIZE - 1);
+      const matrix = kspaceMatrix();
+      const maxMagnitude = Math.max(1e-9, matrix.maxMagnitude);
+      const totalCount = totalAcquiredSampleCount(frame);
+      const targetCount = targetSampleCount(frame);
+      const filledSamples = acquiredKspaceSamples(frame, matrix);
+      const filledKeys = new Set(filledSamples.map(sample => `${sample.kx},${sample.ky}`));
+      const plannedKys = new Set(frame.order || acquisitionOrder());
+
+      ctx.save();
+      ctx.strokeStyle = colors.grid;
+      ctx.lineWidth = 1;
+      for (let r = 0; r < GRID_SIZE; r += 1) {
+        const y = plot.y + r * rowGap;
+        line(plot.x, y, plot.x + plot.w, y, colors.grid, 1, 1);
+        const ky = HALF - r;
+        label(`${ky > 0 ? "+" : ""}${ky}`, plot.x - 16, y, colors.muted, 9, "right");
+      }
+      for (let c = 0; c < GRID_SIZE; c += 1) {
+        const x = plot.x + c * colGap;
+        line(x, plot.y, x, plot.y + plot.h, colors.grid, 1, 0.65);
+        if (plot.h > 86) {
+          const kx = c - HALF;
+          label(`${kx > 0 ? "+" : ""}${kx}`, x, plot.y + plot.h + 12, colors.muted, 9, "center");
+        }
+      }
+      ctx.restore();
+
+      const row = clamp(HALF - (frame.ky || 0), 0, GRID_SIZE - 1);
+      const y = plot.y + row * rowGap;
+      line(plot.x, y, plot.x + plot.w, y, colors.phase, 4, 0.72);
+      const dotX = plot.x + clamp(frame.readoutProgress, 0, 1) * plot.w;
+      const activeX = frame.readoutActive ? dotX : plot.x + plot.w / 2;
+      const activeY = frame.stage === "phase" ? y : y;
+
+      if (frame.readoutActive) {
+        line(plot.x, y, activeX, y, colors.frequency, 5, 0.8);
+      }
+
+      for (const sample of matrix.samples) {
+        const sx = plot.x + (sample.kx + HALF) * colGap;
+        const sy = plot.y + (HALF - sample.ky) * rowGap;
+        const isSelectedLine = sample.ky === frame.ky;
+        const isPlannedLine = plannedKys.has(sample.ky);
+        const isFilled = filledKeys.has(`${sample.kx},${sample.ky}`);
+        const magnitudeScale = sample.magnitude / maxMagnitude;
+        const radius = 3.2 + magnitudeScale * 9.5;
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(sx, sy, isFilled ? radius : 4.2, 0, TWO_PI);
+        if (isFilled) {
+          ctx.fillStyle = phaseColor(sample.phase, 0.34 + magnitudeScale * 0.58);
+          ctx.fill();
+          ctx.strokeStyle = rgba(colors.ink, 0.34);
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        } else {
+          ctx.fillStyle = isSelectedLine ? rgba(colors.phase, 0.12) : isPlannedLine ? "rgba(255,255,255,0.58)" : "rgba(226,232,240,0.30)";
+          ctx.fill();
+          ctx.strokeStyle = isSelectedLine ? rgba(colors.phase, 0.62) : isPlannedLine ? rgba(colors.line, 0.92) : rgba(colors.line, 0.36);
+          ctx.lineWidth = 1.2;
+          ctx.stroke();
+        }
+        ctx.restore();
+
+        if (isFilled && rect.w > 300 && plot.h > 92) {
+          labelBox(sample.normalizedMagnitude.toFixed(2), sx, sy, colors.ink, 8, "center", "rgba(255,255,255,0.68)");
+        }
+      }
+
+      ctx.save();
+      ctx.fillStyle = colors.kspace;
+      ctx.beginPath();
+      ctx.arc(activeX, activeY, 6, 0, TWO_PI);
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,0.92)";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.restore();
+
+      const status = targetCount === totalKspaceSampleCount()
+        ? `filled ${totalCount}/${totalKspaceSampleCount()} samples`
+        : `filled ${totalCount}/${totalKspaceSampleCount()} (${targetCount} target)`;
+      label(status, rect.x + rect.w - 30, rect.y + 20, colors.muted, 10, "right");
+      const kxLabelY = plot.y + plot.h + 26;
+      label("kx readout", plot.x + plot.w / 2, kxLabelY, colors.frequency, 11);
+      ctx.save();
+      ctx.translate(plot.x - 38, plot.y + plot.h / 2);
+      ctx.rotate(-Math.PI / 2);
+      label("ky phase encode", 0, 0, colors.phase, 11);
+      ctx.restore();
+
+      if (inlineFourierH > 0) {
+        const fourierY = kxLabelY + 24;
+        const fourierRect = {
+          x: rect.x + 16,
+          y: fourierY,
+          w: rect.w - 32,
+          h: rect.y + rect.h - fourierY - 12
+        };
+        line(rect.x + 16, fourierY - 10, rect.x + rect.w - 16, fourierY - 10, colors.line, 1, 0.85);
+        drawFourierContent(fourierRect, frame, true);
+      }
+    }
+
+    function drawSignal(rect, frame) {
+      if (!state.showSignal) return;
+      drawPanel(rect, "readout signal");
+      const padX = 30;
+      const padTop = 28;
+      const padBottom = 10;
+      const plot = {
+        x: rect.x + padX,
+        y: rect.y + padTop,
+        w: rect.w - padX - 18,
+        h: rect.h - padTop - padBottom
+      };
+      const midY = plot.y + plot.h / 2;
+
+      line(plot.x, midY, plot.x + plot.w, midY, colors.grid, 1, 1);
+      line(plot.x, plot.y, plot.x, plot.y + plot.h, colors.grid, 1, 1);
+      label("real", plot.x + 28, plot.y - 10, colors.real, 10, "left");
+      label("imag", plot.x + 78, plot.y - 10, colors.imaginary, 10, "left");
+      label("|S|", plot.x + 132, plot.y - 10, colors.signal, 10, "left");
+
+      const samples = signalTrace(frame);
+      function drawTrace(key, color, scale, offset = 0) {
+        ctx.save();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 2;
+        ctx.lineJoin = "round";
+        ctx.beginPath();
+        samples.forEach((sample, index) => {
+          const x = plot.x + sample.p * plot.w;
+          const y = midY - (sample[key] * scale + offset) * plot.h * 0.42;
+          if (index === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      drawTrace("real", colors.real, 1);
+      drawTrace("imaginary", colors.imaginary, 1);
+      drawTrace("magnitude", colors.signal, 1, -0.42);
+
+      const x = plot.x + frame.readoutProgress * plot.w;
+      if (frame.readoutActive) {
+        line(x, plot.y, x, plot.y + plot.h, colors.kspace, 2, 0.8);
+        const s = signalAt(frame);
+        ctx.save();
+        ctx.fillStyle = colors.kspace;
+        ctx.beginPath();
+        ctx.arc(x, midY - s.real * plot.h * 0.42, 4.5, 0, TWO_PI);
+        ctx.fill();
+        ctx.restore();
+      }
+
+    }
+
+    function drawFourierContent(rect, frame, compact = false) {
+      const matrix = kspaceMatrix();
+      const filledSamples = acquiredKspaceSamples(frame, matrix);
+      const filledKeys = new Set(filledSamples.map(sample => `${sample.kx},${sample.ky}`));
+      const sampleMap = new Map(matrix.samples.map(sample => [`${sample.kx},${sample.ky}`, sample]));
+      const reconstruction = reconstructedImage(frame);
+      const maxMagnitude = Math.max(1e-9, matrix.maxMagnitude);
+      const maxRecon = Math.max(1e-9, reconstruction.maxValue);
+
+      const minCell = compact ? 5 : 10;
+      const topSpace = compact ? 24 : 38;
+      const bottomSpace = compact ? 4 : 10;
+      const sideSpace = compact ? 84 : 118;
+      const cell = Math.max(minCell, Math.min((rect.h - topSpace - bottomSpace) / GRID_SIZE, (rect.w - sideSpace) / (GRID_SIZE * 2)));
+      const gridSize = cell * GRID_SIZE;
+      const gridY = rect.y + topSpace;
+      const leftX = rect.x + (compact ? 10 : 22);
+      const rightX = rect.x + rect.w - (compact ? 10 : 22) - gridSize;
+      const arrowY = gridY + gridSize / 2;
+
+      if (rect.w > 330) {
+        label("filled K", leftX + gridSize / 2, rect.y + topSpace - 10, colors.muted, 10, "center");
+        label("zero-filled image", rightX + gridSize / 2, rect.y + topSpace - 10, colors.muted, 10, "center");
+        arrow(leftX + gridSize + 14, arrowY, rightX - 14, arrowY, colors.frequency, 2.4, 0.82);
+        label("IFFT (Inverse Fast Fourier Transform)", (leftX + gridSize + rightX) / 2, arrowY - 15, colors.frequency, compact ? 8 : 10, "center");
+      }
+
+      for (let row = 0; row < GRID_SIZE; row += 1) {
+        const ky = HALF - row;
+        for (let col = 0; col < GRID_SIZE; col += 1) {
+          const kx = col - HALF;
+          const x = leftX + col * cell;
+          const y = gridY + row * cell;
+          const sample = sampleMap.get(`${kx},${ky}`);
+          const isFilled = filledKeys.has(`${kx},${ky}`);
+          const strength = sample ? sample.magnitude / maxMagnitude : 0;
+
+          ctx.save();
+          ctx.fillStyle = isFilled ? phaseColor(sample.phase, 0.18 + strength * 0.68) : "rgba(255,255,255,0.62)";
+          ctx.fillRect(x, y, cell, cell);
+          ctx.strokeStyle = isFilled ? rgba(colors.ink, 0.34) : rgba(colors.line, 0.82);
+          ctx.lineWidth = 1;
+          ctx.strokeRect(x, y, cell, cell);
+          ctx.restore();
+        }
+      }
+
+      for (const pixel of reconstruction.pixels) {
+        const x = rightX + pixel.col * cell;
+        const y = gridY + pixel.row * cell;
+        const intensity = clamp(Math.abs(pixel.value) / maxRecon, 0, 1);
+        ctx.save();
+        ctx.fillStyle = rgba(colors.real, 0.1 + intensity * 0.82);
+        ctx.fillRect(x, y, cell, cell);
+        ctx.strokeStyle = rgba(colors.line, 0.82);
+        ctx.lineWidth = 1;
+        ctx.strokeRect(x, y, cell, cell);
+        ctx.restore();
+      }
+
+    }
+
+    function drawFourier(rect, frame) {
+      drawPanel(rect, "Fourier transform");
+      drawFourierContent(rect, frame);
+    }
+
+    function drawSequenceStatus(rect, frame) {
+      const x = rect.x;
+      const y = rect.y + rect.h + 10;
+      const w = rect.w;
+      const h = 10;
+      const steps = [
+        { start: 0, end: 0.85 / CYCLE_SECONDS, color: colors.signal, label: "RF" },
+        { start: 0.85 / CYCLE_SECONDS, end: 2.2 / CYCLE_SECONDS, color: colors.phase, label: "Gy" },
+        { start: 2.2 / CYCLE_SECONDS, end: 5.55 / CYCLE_SECONDS, color: colors.frequency, label: "Gx readout" },
+        { start: 5.55 / CYCLE_SECONDS, end: 1, color: colors.muted, label: "reset" }
+      ];
+      const cycleP = state.mode === "sequence" ? frame.trProgress : 0;
+
+      ctx.save();
+      roundRect(x, y, w, h, 999);
+      ctx.fillStyle = "rgba(255,255,255,0.72)";
+      ctx.fill();
+      ctx.clip();
+      for (const step of steps) {
+        ctx.fillStyle = rgba(step.color, 0.68);
+        ctx.fillRect(x + step.start * w, y, (step.end - step.start) * w, h);
+      }
+      ctx.restore();
+
+      if (state.mode === "sequence") {
+        line(x + cycleP * w, y - 4, x + cycleP * w, y + h + 4, colors.kspace, 2, 0.92);
+      }
+
+      label(frame.label, x, y + 24, colors.muted, 12, "left");
+    }
+
+    function drawScene() {
+      const width = canvas.clientWidth || 1;
+      const height = canvas.clientHeight || 1;
+      ctx.clearRect(0, 0, width, height);
+      const frame = currentFrame();
+      const rects = layout(width, height);
+
+      drawSpinGrid(rects.spin, frame);
+      drawSequenceStatus(rects.spin, frame);
+      drawKspace(rects.kspace, frame);
+      drawSignal(rects.signal, frame);
+    }
+
+    function formatSigned(value, suffix = "") {
+      return `${value > 0 ? "+" : ""}${value.toFixed(0)}${suffix}`;
+    }
+
+    function updateUI() {
+      const frame = currentFrame();
+      const signal = signalAt(frame);
+      const kx = -HALF + (GRID_SIZE - 1) * frame.readoutProgress;
+      const matrix = kspaceMatrix();
+      const currentLineCount = currentLineSampleCount(frame);
+      const totalFilledCount = totalAcquiredSampleCount(frame);
+      const targetTotal = targetSampleCount(frame);
+      const fullTotal = totalKspaceSampleCount();
+      const lineTotal = (frame.order || acquisitionOrder()).length;
+      const currentKxIndex = nearestKxIndex(frame);
+      const currentSample = matrix.samples.find(sample => sample.kx === currentKxIndex && sample.ky === frame.ky);
+      const readoutTime = frame.readoutProgress * state.readoutMs;
+      const phaseAbs = Math.abs(HALF * (frame.ky || 0) * state.phaseDegPerRow * frame.phaseProgress);
+      const freqMax = HALF * state.frequencyHzPerCol;
+
+      controls.modeButtons.forEach(button => {
+        button.classList.toggle("active", button.dataset.mode === state.mode);
+      });
+      controls.playPause.textContent = isSequenceComplete(frame)
+        ? "다시 시작"
+        : state.running ? "일시정지" : "재생";
+      controls.phaseDegreesOutput.textContent = `${state.phaseDegPerRow.toFixed(0)} deg/row`;
+      controls.frequencyHzOutput.textContent = `${state.frequencyHzPerCol.toFixed(0)} Hz/col`;
+      controls.readoutMsOutput.textContent = `${state.readoutMs.toFixed(0)} ms`;
+      controls.t2starMsOutput.textContent = `${state.t2starMs.toFixed(0)} ms`;
+      controls.speedOutput.textContent = `${state.speed.toFixed(1)}x`;
+      const scrubMax = scrubMaxTicks();
+      const scrubTicks = state.mode === "sequence"
+        ? Math.round(clamp(state.elapsed * state.speed, 0, acquisitionDuration()) * SCRUB_TICKS_PER_SECOND)
+        : 0;
+      controls.timeScrub.max = `${scrubMax}`;
+      controls.timeScrub.value = `${clamp(scrubTicks, 0, scrubMax)}`;
+      controls.timeScrubOutput.textContent = `${totalFilledCount}/${fullTotal}`;
+
+      controls.modeMetric.textContent = modeNames[state.mode];
+      controls.gyMetric.textContent = `TR ${frame.lineIndex + 1}/${lineTotal}, ky ${formatSigned(frame.ky || 0)}`;
+      controls.gxMetric.textContent = `${state.frequencyHzPerCol.toFixed(0)} Hz/col`;
+      controls.timeMetric.textContent = frame.readoutActive ? `${readoutTime.toFixed(1)} ms` : "-";
+      controls.signalMetric.textContent = `${signal.magnitude.toFixed(3)}`;
+      controls.kspaceMetric.textContent = frame.stage === "complete"
+        ? targetTotal === fullTotal ? "k-space full" : "undersampled"
+        : `kx ${kx.toFixed(2)}, ky ${formatSigned(frame.ky || 0)}`;
+
+      controls.spinCountOutput.textContent = `${fullTotal}`;
+      controls.phaseRangeOutput.textContent = `${(-phaseAbs).toFixed(0)} to ${phaseAbs.toFixed(0)} deg`;
+      controls.frequencyRangeOutput.textContent = `${(-freqMax).toFixed(0)} to ${freqMax.toFixed(0)} Hz`;
+      controls.signalPhaseOutput.textContent = `${signedAngleDeg(signal.phase).toFixed(1)} deg`;
+      controls.currentKOutput.textContent = frame.readoutActive && currentSample
+        ? `kx ${formatSigned(currentKxIndex)} |K| ${currentSample.normalizedMagnitude.toFixed(2)}, ∠ ${signedAngleDeg(currentSample.phase).toFixed(0)} deg`
+        : frame.stage === "complete" ? targetTotal === fullTotal ? "획득 완료" : "덜 채움 완료" : "readout 전";
+      controls.samplingOutput.textContent = targetTotal === fullTotal
+        ? `${totalFilledCount}/${fullTotal} samples`
+        : `${totalFilledCount}/${fullTotal} samples (${targetTotal} target)`;
+      controls.iftOutput.textContent = totalFilledCount === targetTotal
+        ? targetTotal === fullTotal ? "full image" : "zero-filled image"
+        : totalFilledCount > 0 ? `partial ${totalFilledCount}/${fullTotal}` : "대기";
+      controls.kxOutput.textContent = frame.stage === "complete" ? "all" : `${kx.toFixed(2)}`;
+      controls.kyOutput.textContent = frame.stage === "complete"
+        ? targetTotal === fullTotal ? "all" : `${lineTotal}/${GRID_SIZE} lines`
+        : `${formatSigned(frame.ky || 0)} (${currentLineCount}/${GRID_SIZE})`;
+    }
+
+    function resetTimeline(running = false) {
+      state.elapsed = 0;
+      state.running = running;
+    }
+
+    function syncFromControls(options = {}) {
+      state.fillOrder = controls.fillOrder.value;
+      state.samplingPattern = controls.samplingPattern.value;
+      state.phaseDegPerRow = Number(controls.phaseDegrees.value);
+      state.frequencyHzPerCol = Number(controls.frequencyHz.value);
+      state.readoutMs = Number(controls.readoutMs.value);
+      state.t2starMs = Number(controls.t2starMs.value);
+      state.speed = Number(controls.speed.value);
+      state.objectPattern = controls.objectPattern.value;
+      state.showPhase = controls.showPhase.checked;
+      state.showFrequency = controls.showFrequency.checked;
+      state.showKspace = controls.showKspace.checked;
+      state.showSignal = controls.showSignal.checked;
+      if (options.resetTimeline) {
+        resetTimeline(false);
+      }
+      updateUI();
+      drawScene();
+    }
+
+    function setMode(mode) {
+      state.mode = mode;
+      resetTimeline(false);
+      updateUI();
+      drawScene();
+    }
+
+    function applyDefaultSettings() {
+      controls.fillOrder.value = defaults.fillOrder;
+      controls.samplingPattern.value = defaults.samplingPattern;
+      controls.phaseDegrees.value = String(defaults.phaseDegPerRow);
+      controls.frequencyHz.value = String(defaults.frequencyHzPerCol);
+      controls.readoutMs.value = String(defaults.readoutMs);
+      controls.t2starMs.value = String(defaults.t2starMs);
+      controls.speed.value = String(defaults.speed);
+      controls.objectPattern.value = defaults.objectPattern;
+      controls.showPhase.checked = defaults.showPhase;
+      controls.showFrequency.checked = defaults.showFrequency;
+      controls.showKspace.checked = defaults.showKspace;
+      controls.showSignal.checked = defaults.showSignal;
+      state.mode = defaults.mode;
+      resetTimeline(false);
+      syncFromControls();
+    }
+
+    function scrubTimeline() {
+      state.mode = "sequence";
+      state.running = false;
+      const max = scrubMaxTicks();
+      controls.timeScrub.max = `${max}`;
+      const ticks = clamp(Number(controls.timeScrub.value), 0, max);
+      const acquisitionTime = ticks / SCRUB_TICKS_PER_SECOND;
+      state.elapsed = acquisitionTime / Math.max(0.01, state.speed);
+      updateUI();
+      drawScene();
+    }
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      const width = Math.max(1, canvas.clientWidth);
+      const height = Math.max(1, canvas.clientHeight);
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      drawScene();
+    }
+
+    function tick(now) {
+      if (!tick.last) tick.last = now;
+      const dt = Math.min(0.05, (now - tick.last) / 1000);
+      tick.last = now;
+      if (state.running) {
+        state.elapsed += dt;
+        if (state.mode === "sequence" && state.elapsed * state.speed >= acquisitionDuration()) {
+          state.elapsed = acquisitionDuration() / Math.max(0.01, state.speed);
+          state.running = false;
+        }
+      }
+      updateUI();
+      drawScene();
+      requestAnimationFrame(tick);
+    }
+
+    controls.modeButtons.forEach(button => {
+      button.addEventListener("click", () => setMode(button.dataset.mode));
+    });
+    controls.playPause.addEventListener("click", () => {
+      if (isSequenceComplete()) {
+        resetTimeline(true);
+      } else {
+        state.running = !state.running;
+      }
+      updateUI();
+    });
+    controls.reset.addEventListener("click", () => {
+      applyDefaultSettings();
+    });
+    controls.timeScrub.addEventListener("input", scrubTimeline);
+    controls.timeScrub.addEventListener("change", scrubTimeline);
+
+    for (const control of [
+      controls.fillOrder,
+      controls.samplingPattern,
+      controls.phaseDegrees,
+      controls.frequencyHz,
+      controls.readoutMs,
+      controls.t2starMs,
+      controls.speed,
+      controls.objectPattern,
+      controls.showPhase,
+      controls.showFrequency,
+      controls.showKspace,
+      controls.showSignal
+    ]) {
+      control.addEventListener("input", () => {
+        syncFromControls({ resetTimeline: control === controls.fillOrder || control === controls.samplingPattern || control === controls.objectPattern });
+      });
+      control.addEventListener("change", () => {
+        syncFromControls({ resetTimeline: control === controls.fillOrder || control === controls.samplingPattern || control === controls.objectPattern });
+      });
+    }
+
+    window.addEventListener("resize", resize);
+    syncFromControls();
+    resize();
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>
