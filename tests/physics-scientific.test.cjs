@@ -18,7 +18,7 @@ function loadPage(filename, width = 1400) {
   }});
   function element(attrs='') {
     return { value: attrs.match(/value="([^"]*)"/)?.[1] || '', checked: /\bchecked\b/.test(attrs),
-      clientWidth:width,clientHeight:1000,width,height:1000,style:{},dataset:{},textContent:'',innerHTML:'',
+      clientWidth:width,clientHeight:1000,offsetTop:width<520?780:900,width,height:1000,style:{},dataset:{},textContent:'',innerHTML:'',
       classList:{toggle(){},add(){},remove(){}}, addEventListener(){},appendChild(){},setAttribute(){},
       querySelector(){return element();},getContext(){return ctx;},getBoundingClientRect(){return {width,height:1000};} };
   }

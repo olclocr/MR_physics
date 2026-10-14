@@ -413,7 +413,7 @@
       <canvas id="scene"></canvas>
       <h1 class="title">양성자 스핀 MR 시뮬레이션</h1>
       <p class="subtitle">RF 좌표계의 Bloch 순자화 모델: 공명에서는 x'축, detuning이 있으면 B_eff 둘레로 회전</p>
-      <div class="readout" aria-live="polite">
+      <div class="readout" id="stageReadout" aria-live="polite">
         <div class="metric"><b>라모어 주파수</b><span id="f0Metric">-</span></div>
         <div class="metric"><b>현재 z축 기울기</b><span id="flipMetric">-</span></div>
         <div class="metric"><b>Mz / M0</b><span id="mzMetric">-</span></div>
@@ -556,6 +556,7 @@
   <script>
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
+    const stageReadout = document.getElementById("stageReadout");
 
     const controls = {
       b0: document.getElementById("b0Control"),
@@ -822,6 +823,7 @@
       const center = project(v(0, 0, 0));
       const placed = [{ x: center.x + 18, y: center.y + 18, w: 118, h: 42 }];
       const mobile = canvas.clientWidth < 520;
+      const maxLabelY = stageReadout.offsetTop - 34;
       const intersects = (a, b) => a.x < b.x + b.w + 4 && a.x + a.w + 4 > b.x && a.y < b.y + b.h + 4 && a.y + a.h + 4 > b.y;
       for (const label of labelQueue) {
         const p = project(label.position);
@@ -838,7 +840,7 @@
           const column = Math.floor(attempt / 15);
           const shiftX = column === 0 ? 0 : Math.ceil(column / 2) * 44 * (column % 2 ? 1 : -1);
           box = { x: clamp(baseX + shiftX, 6, canvas.clientWidth - width - 6),
-            y: clamp(p.y - 13 + shiftY, mobile ? 132 : 100, canvas.clientHeight - (mobile ? 200 : 96)), w: width, h: 26 };
+            y: clamp(p.y - 13 + shiftY, mobile ? 132 : 100, maxLabelY), w: width, h: 26 };
           if (!placed.some(other => intersects(box, other))) break;
         }
         const { x, y } = box;
