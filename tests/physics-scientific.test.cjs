@@ -126,6 +126,15 @@ test('Mxy magnitude and current direction remain meaningful after 270 degrees an
   page.run('state.b1MicroT=30;state.targetDeg=90;state.timeScale=1000;');
   near(page.run('physics().effectiveScale'),2810.11360872,1e-7);
 });
+test('sequence observation control reaches exact TE and stays paused without advancing physical time',()=>{
+  const page=loadPage('proton_spin_mr_simulation.html');
+  page.run('controls.sequenceMode.value="chemical";applyPresetForMode();controls.sequenceScrub.value="2.3";scrubSequence();');
+  near(page.run('state.sequenceElapsedMs'),2.3);
+  assert.match(page.run('physics().event'),/TE water\/fat readout/);
+  near(page.run('physics().signal'),page.run('physics().teSignal'));
+  page.run('tick(1000);tick(1100);');near(page.run('state.sequenceElapsedMs'),2.3);
+  assert.equal(page.run('state.sequencePaused'),true);
+});
 test('every stored ADC value equals the displayed complex signal at that time',()=>{
   const page=loadPage('frequency_phase_encoding_visualization.html');
   for(const phase of [0,42,72,144]) for(const t2 of [50,180,600]) {

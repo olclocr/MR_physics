@@ -35,7 +35,7 @@ Water/fat은 동일한 T1/T2와 3.5 ppm 단일 fat peak의 위상 간섭 모델�
 
 **수치 및 실행 시험**
 
-`node --test tests/physics-scientific.test.cjs`의 11개 시험을 통과했습니다.
+`node --test tests/physics-scientific.test.cjs`의 12개 시험을 통과했습니다.
 
 [수정 후 수치 결과 JSON](corrected-results.json)은 `node scripts/collect-validation-results.cjs`로 재현할 수 있습니다. 원본 감사 수치와 구분해 보존합니다.
 
@@ -44,6 +44,7 @@ Water/fat은 동일한 T1/T2와 3.5 ppm 단일 fat peak의 위상 간섭 모델�
 - 유한 RF detuning 및 이완: 독립 Bloch 적분과 비교, pulse 후 자유 세차의 자화 연속성 확인.
 - 180° pulse에서 Mz·횡성분 반전, 각 Δf 유지, TE에서 합성 자화 재형성 및 정상상태 확인.
 - Chemical TE=2.3 ms: 같은 시점의 현재 신호와 TE 예측값, 동일 M0 정규화 확인.
+- 시퀀스 관찰 시점 slider로 정확한 TE를 지정하고, 일시정지 중 물리 시간이 유지되는지 확인.
 - 270° 후 비음수 Mxy, 이완 중 실제 기울기 변화, 유효 재생 배율 확인.
 - Gradient와 T2* 여러 조건에서 모든 ADC 샘플과 화면 복소 신호의 일치 확인.
 - Gy=0에서 y 정보 상실 및 영상 재구성 보류 확인.
@@ -51,4 +52,20 @@ Water/fat은 동일한 T1/T2와 3.5 ppm 단일 fat peak의 위상 간섭 모델�
 - 얇은 고리 물리진자의 관성·에너지 보존 및 DPR에 독립적인 카메라 좌표 확인.
 - 게시할 보고서 3개와 시뮬레이션의 로컬 링크·스크립트·이미지 파일 존재 확인.
 
-자동 시험의 canvas 검산은 실제 브라우저의 글자 배치나 가독성을 증명하지 않습니다. 게시 후 브라우저 화면 점검 결과는 아래에 기록합니다.
+자동 시험의 canvas 검산은 실제 브라우저의 글자 배치나 가독성을 증명하지 않습니다.
+
+**게시 후 브라우저 점검**
+
+2026-10-14에 GitHub Pages 배포 성공을 확인하고 실제 Chrome 페이지를 점검했습니다. GitHub의 Markdown Preview와 웹 보고서에서 표·문헌 링크·보고서 탐색이 렌더링되는 것을 확인했습니다.
+
+- 공간 부호화: Gy=0, 비대칭 밝은 점, 획득 완료 시 실제 ky=0이며 “Gy=0: y 정보 없음 / 영상 재구성 보류” 표시 확인.
+- RF 공명: Δf=fRF−f0=+1000 Hz, B1=8 µT, 180°에서 유효축 z=−0.946594, 최종 M=(−0.595044,−0.101043,+0.797316)인 완료 로그 확인.
+- MR: 현재 z축 기울기, 현재 |S|/M0, TE 예측 |S|/M0, 순간 pulse 및 isochromat 가정이 표시되는 것을 확인. TE를 정밀하게 관찰할 slider와 일시정지 기능을 추가했습니다.
+- 자전거 바퀴: 동일한 반지름 축척, L_spin 지표, 정상 세차의 적용 범위, 고리의 물리진자 식 확인.
+- RF 공명·공간 부호화·바퀴 페이지에서 console error 없음 확인.
+
+![Gy=0: y 정보 없음, 영상 재구성 보류](encoding-zero-phase-fixed.jpg)
+
+![양의 RF offset의 음의 유효장 z성분과 최종 자화](rf-offset-fixed.jpg)
+
+![동일 반지름 축척과 정상 세차 적용 범위](wheel-scale-fixed.jpg)

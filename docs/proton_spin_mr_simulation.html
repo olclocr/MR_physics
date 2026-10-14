@@ -472,6 +472,12 @@
           <button id="applyPreset" type="button">Preset 적용</button>
         </div>
         <div class="control-row">
+          <label for="sequenceScrub">시퀀스 관찰 시점</label>
+          <output id="sequenceScrubOutput" for="sequenceScrub">0 ms</output>
+          <input id="sequenceScrub" type="range" min="0" max="500" value="0" step="0.1" />
+        </div>
+        <button id="pauseSequence" type="button" disabled>시퀀스 일시정지</button>
+        <div class="control-row">
           <label for="trControl">TR</label>
           <output id="trOutput" for="trControl">500 ms</output>
           <input id="trControl" type="range" min="100" max="5000" value="500" step="10" />
@@ -568,6 +574,9 @@
       reset: document.getElementById("resetPulse"),
       runSequence: document.getElementById("runSequence"),
       applyPreset: document.getElementById("applyPreset"),
+      sequenceScrub: document.getElementById("sequenceScrub"),
+      sequenceScrubOutput: document.getElementById("sequenceScrubOutput"),
+      pauseSequence: document.getElementById("pauseSequence"),
       b0Output: document.getElementById("b0Output"),
       b1Output: document.getElementById("b1Output"),
       flipOutput: document.getElementById("flipOutput"),
@@ -645,6 +654,7 @@
       visualDuration: 1,
       completed: false,
       sequenceElapsedMs: 0,
+      sequencePaused: false,
       sequenceDurationMs: 0,
       sequenceVisualDuration: 6,
       activeEvent: "평형 상태"
@@ -1169,6 +1179,12 @@
           : "-";
       controls.signalOutput.textContent = p.signal === null || Number.isNaN(p.signal) ? "-" : p.signal.toFixed(3);
       controls.teSignalOutput.textContent = p.teSignal === null ? "-" : p.teSignal.toFixed(3);
+      controls.sequenceScrub.max = String(state.trMs);
+      controls.sequenceScrub.value = String(state.sequenceElapsedMs);
+      controls.sequenceScrub.disabled = state.sequenceMode === "custom" || state.running;
+      controls.sequenceScrubOutput.textContent = `${state.sequenceElapsedMs.toFixed(1)} ms (TE ${state.teMs.toFixed(1)})`;
+      controls.pauseSequence.disabled = state.mode !== "sequence";
+      controls.pauseSequence.textContent = state.sequencePaused ? "시퀀스 계속" : "시퀀스 일시정지";
       controls.eventOutput.textContent = p.event;
       controls.visualScaleOutput.textContent = `${(p.m0Scene / MAX_VECTOR_LENGTH).toFixed(2)} of 3.0 T`;
       const fillProgress = state.mode === "sequence" || state.mode === "sequence_done"
@@ -1188,7 +1204,7 @@
       } else if (state.mode === "sequence") {
         controls.start.disabled = true;
         controls.runSequence.disabled = true;
-        controls.pulseState.textContent = `${sequenceName()} 진행 중: ${p.event}`;
+        controls.pulseState.textContent = `${sequenceName()} ${state.sequencePaused ? "관찰 중" : "진행 중"}: ${p.event}`;
       } else if (state.mode === "sequence_done") {
         controls.start.disabled = false;
         controls.runSequence.disabled = false;
@@ -1227,6 +1243,7 @@
       state.rfActive = false;
       state.completed = false;
       state.sequenceElapsedMs = 0;
+      state.sequencePaused = false;
       state.sequenceDurationMs = sequenceDurationMs();
       state.sequenceVisualDuration = sequenceVisualDuration(state.sequenceDurationMs);
       state.activeEvent = "평형 상태";
@@ -1299,6 +1316,7 @@
       state.rfActive = true;
       state.completed = false;
       state.sequenceElapsedMs = 0;
+      state.sequencePaused = false;
       state.sequenceDurationMs = sequenceDurationMs();
       state.sequenceVisualDuration = sequenceVisualDuration(state.sequenceDurationMs);
       state.activeEvent = "시퀀스 시작";
@@ -1326,7 +1344,7 @@
       } else if (state.mode === "free") {
         state.freeMs = Math.min(5000, state.freeMs + rawDt * POST_RF_MS_PER_SECOND);
         updateUI();
-      } else if (state.mode === "sequence") {
+      } else if (state.mode === "sequence" && !state.sequencePaused) {
         const physicalStep = rawDt * state.sequenceDurationMs / Math.max(0.1, state.sequenceVisualDuration);
         state.sequenceElapsedMs = Math.min(state.sequenceDurationMs, state.sequenceElapsedMs + physicalStep);
         state.currentDeg = state.sequenceMode !== "chemical" && state.sequenceElapsedMs >= state.teMs / 2 ? 270 : 90;
@@ -1358,6 +1376,20 @@
     controls.fat.addEventListener("input", syncFromControls);
     controls.start.addEventListener("click", startPulse);
     controls.runSequence.addEventListener("click", runSequence);
+    function scrubSequence() {
+      if (state.sequenceMode === "custom" || state.running) return;
+      state.sequenceDurationMs = sequenceDurationMs();
+      state.sequenceElapsedMs = clamp(Number(controls.sequenceScrub.value), 0, state.sequenceDurationMs);
+      state.sequencePaused = true;
+      state.mode = "sequence";
+      updateUI();
+      drawScene();
+    }
+    controls.sequenceScrub.addEventListener("input", scrubSequence);
+    controls.pauseSequence.addEventListener("click", () => {
+      state.sequencePaused = !state.sequencePaused;
+      updateUI();
+    });
     controls.applyPreset.addEventListener("click", applyPresetForMode);
     controls.reset.addEventListener("click", resetPulse);
     window.addEventListener("resize", resize);
