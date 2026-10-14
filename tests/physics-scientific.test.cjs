@@ -179,6 +179,8 @@ test('physical-pendulum hoop inertia, energy conservation, and logical-pixel cam
   const energy=()=>page.run('.5*pendulumInertia()*state.pendulumVelocity**2 + state.mass*currentGravity()*state.distance*(1-Math.cos(state.pendulumAngle))');
   const initial=energy();page.run('for(let i=0;i<2000;i++) advancePendulum(.002);');near(energy(),initial,1e-8);
   near(page.run('camera.origin.x'),1400*.42);
+  near(page.run('screenProject(v(0,0,.18)).x'),1400*.42);
+  near(page.run('screenProject(v(0,0,.18)).y'),1000*.57);
   assert.match(page.html,/metersToScene\(WHEEL_RADIUS_M\)/);
 });
 test('published report pages and simulation assets have resolvable local links',()=>{

@@ -426,7 +426,7 @@
       }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1440px) {
       body {
         overflow: auto;
       }
@@ -439,7 +439,7 @@
 
       .stage {
         height: 68vh;
-        min-height: 860px;
+        min-height: 1180px;
       }
 
       .sidebar {
@@ -452,7 +452,7 @@
 
     @media (max-width: 560px) {
       .stage {
-        min-height: 940px;
+        min-height: 1180px;
       }
 
       .title {
@@ -1271,7 +1271,7 @@
       const bottom = width < 560 ? 220 : width < 1120 ? 150 : 112;
       const availableH = Math.max(320, height - top - bottom);
 
-      if (width >= 760) {
+      if (width >= 1000) {
         const spinSize = Math.min(Math.max(360, width * 0.46), availableH, 620);
         const spinX = Math.max(28, Math.min(72, width * 0.065));
         const spinY = top + Math.max(8, (availableH - spinSize) / 2);
@@ -1287,16 +1287,17 @@
         };
       }
 
-      const spinSize = Math.min(width - 34, availableH * 0.44, 360);
+      const spinSize = Math.min(width - 34, availableH * 0.34, 360);
       const spinX = (width - spinSize) / 2;
       const spinY = top + 8;
       const panelW = width - 34;
-      const panelGap = 10;
-      const remainingH = Math.max(220, availableH - spinSize - panelGap * 2);
-      const kspaceH = Math.max(150, remainingH * 0.68);
-      const signalH = Math.max(100, remainingH - panelGap - kspaceH);
+      const statusGap = 52;
+      const panelGap = 16;
+      const remainingH = Math.max(300, availableH - spinSize - statusGap - panelGap);
+      const kspaceH = Math.max(300, remainingH * 0.70);
+      const signalH = Math.max(110, remainingH - kspaceH);
       const panelX = 17;
-      const kY = spinY + spinSize + panelGap;
+      const kY = spinY + spinSize + statusGap;
       return {
         spin: { x: spinX, y: spinY, w: spinSize, h: spinSize },
         kspace: { x: panelX, y: kY, w: panelW, h: kspaceH },
@@ -1411,7 +1412,7 @@
       if (!state.showKspace) return;
       drawPanel(rect, "ADC samples (nominal grid)");
       const padX = 50;
-      const padY = 34;
+      const padY = rect.w < 420 ? 54 : 34;
       const inlineGap = 38;
       const maxInlineFourierH = rect.h - padY - 106 - inlineGap - 8;
       const inlineFourierH = rect.w >= 320 && maxInlineFourierH >= 94
@@ -1509,7 +1510,7 @@
       const status = targetCount === totalKspaceSampleCount()
         ? `filled ${totalCount}/${totalKspaceSampleCount()} samples`
         : `filled ${totalCount}/${totalKspaceSampleCount()} (${targetCount} target)`;
-      label(status, rect.x + rect.w - 30, rect.y + 20, colors.muted, 10, "right");
+      label(status, rect.x + rect.w - 30, rect.y + (rect.w < 420 ? 38 : 20), colors.muted, 10, "right");
       const kxLabelY = plot.y + plot.h + 26;
       label("nominal kx index", plot.x + plot.w / 2, kxLabelY, colors.frequency, 11);
       ctx.save();
@@ -1535,7 +1536,7 @@
       if (!state.showSignal) return;
       drawPanel(rect, "readout signal");
       const padX = 30;
-      const padTop = 28;
+      const padTop = 48;
       const padBottom = 10;
       const plot = {
         x: rect.x + padX,
@@ -1611,11 +1612,11 @@
       const rightX = rect.x + rect.w - (compact ? 10 : 22) - gridSize;
       const arrowY = gridY + gridSize / 2;
 
-      if (rect.w > 330) {
+      if (rect.w > 240) {
         label("filled K", leftX + gridSize / 2, rect.y + topSpace - 10, colors.muted, 10, "center");
         label("zero-filled image", rightX + gridSize / 2, rect.y + topSpace - 10, colors.muted, 10, "center");
         arrow(leftX + gridSize + 14, arrowY, rightX - 14, arrowY, colors.frequency, 2.4, 0.82);
-        label("IFFT (Inverse Fast Fourier Transform)", (leftX + gridSize + rightX) / 2, arrowY - 15, colors.frequency, compact ? 8 : 10, "center");
+        label(rect.w < 420 ? "IFFT" : "IFFT (Inverse Fast Fourier Transform)", (leftX + gridSize + rightX) / 2, arrowY - 15, colors.frequency, compact ? 8 : 10, "center");
       }
 
       for (let row = 0; row < GRID_SIZE; row += 1) {

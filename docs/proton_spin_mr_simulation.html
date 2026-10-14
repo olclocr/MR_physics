@@ -819,6 +819,10 @@
     }
 
     function drawLabels() {
+      const center = project(v(0, 0, 0));
+      const placed = [{ x: center.x + 18, y: center.y + 18, w: 118, h: 42 }];
+      const mobile = canvas.clientWidth < 520;
+      const intersects = (a, b) => a.x < b.x + b.w + 4 && a.x + a.w + 4 > b.x && a.y < b.y + b.h + 4 && a.y + a.h + 4 > b.y;
       for (const label of labelQueue) {
         const p = project(label.position);
         ctx.save();
@@ -826,8 +830,27 @@
         ctx.textAlign = label.align;
         ctx.textBaseline = "middle";
         const width = ctx.measureText(label.text).width + 14;
-        const x = label.align === "left" ? p.x : label.align === "right" ? p.x - width : p.x - width / 2;
-        const y = p.y - 13;
+        const baseX = label.align === "left" ? p.x : label.align === "right" ? p.x - width : p.x - width / 2;
+        let box;
+        for (let attempt = 0; attempt < 60; attempt++) {
+          const row = attempt % 15;
+          const shiftY = row === 0 ? 0 : Math.ceil(row / 2) * 32 * (row % 2 ? -1 : 1);
+          const column = Math.floor(attempt / 15);
+          const shiftX = column === 0 ? 0 : Math.ceil(column / 2) * 44 * (column % 2 ? 1 : -1);
+          box = { x: clamp(baseX + shiftX, 6, canvas.clientWidth - width - 6),
+            y: clamp(p.y - 13 + shiftY, mobile ? 132 : 100, canvas.clientHeight - (mobile ? 200 : 96)), w: width, h: 26 };
+          if (!placed.some(other => intersects(box, other))) break;
+        }
+        const { x, y } = box;
+        if (Math.abs(x - baseX) + Math.abs(y - (p.y - 13)) > 4) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(clamp(p.x, x, x + width), clamp(p.y, y, y + 26));
+          ctx.strokeStyle = rgba(label.color, 0.45);
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+        placed.push(box);
         roundRect(x, y, width, 26, 7);
         ctx.fillStyle = "rgba(255,255,255,0.82)";
         ctx.fill();
@@ -835,7 +858,7 @@
         ctx.lineWidth = 1;
         ctx.stroke();
         ctx.fillStyle = rgba(label.color, label.alpha);
-        ctx.fillText(label.text, label.align === "left" ? p.x + 7 : label.align === "right" ? p.x - 7 : p.x, p.y);
+        ctx.fillText(label.text, label.align === "left" ? x + 7 : label.align === "right" ? x + width - 7 : x + width / 2, y + 13);
         ctx.restore();
       }
       labelQueue = [];

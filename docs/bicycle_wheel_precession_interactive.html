@@ -417,6 +417,12 @@
         grid-template-columns: repeat(5, 140px);
       }
     }
+    @media (max-width: 520px) {
+      .stage { min-height: 800px; }
+      .title { left: 18px; top: 18px; font-size: 26px; }
+      .readout { left: 14px; right: 14px; bottom: 14px; width: auto; max-width: none; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
+      .metric { width: auto; min-width: 0; }
+    }
   </style>
 </head>
 <body>
@@ -719,7 +725,8 @@
       camera.forward = normalize(sub(camera.target, camera.eye));
       camera.right = normalize(cross(camera.forward, v(0, 0, 1)));
       camera.up = normalize(cross(camera.right, camera.forward));
-      camera.origin = { x: canvas.clientWidth * 0.42, y: canvas.clientHeight * 0.57 };
+      const mobile = canvas.clientWidth < 520;
+      camera.origin = { x: canvas.clientWidth * (mobile ? 0.5 : 0.42), y: canvas.clientHeight * (mobile ? 0.36 : 0.57) };
       camera.scale = Math.min(canvas.clientWidth, canvas.clientHeight) * 0.26;
     }
 
@@ -742,9 +749,7 @@
     }
 
     function screenProject(p) {
-      const dpr = window.devicePixelRatio || 1;
-      const projected = project(p);
-      return { x: projected.x / dpr, y: projected.y / dpr, depth: projected.depth };
+      return project(p);
     }
 
     function paintStyle(color, alpha) {
@@ -886,12 +891,39 @@
     }
 
     function flushLabels() {
-      for (const label of labelQueue) drawLabelNow(label);
+      const placed = [];
+      const mobile = canvas.clientWidth < 520;
+      for (const label of labelQueue) {
+        if (label.alpha <= 0) continue;
+        const anchor = screenProject(label.p);
+        ctx.save();
+        ctx.font = "800 14px 'Malgun Gothic', 'Segoe UI', sans-serif";
+        const width = ctx.measureText(label.text).width + 8;
+        let box;
+        for (let attempt = 0; attempt < 60; attempt++) {
+          const row = attempt % 15;
+          const shiftY = row === 0 ? 0 : Math.ceil(row / 2) * 26 * (row % 2 ? -1 : 1);
+          const column = Math.floor(attempt / 15);
+          const shiftX = column === 0 ? 0 : Math.ceil(column / 2) * 36 * (column % 2 ? 1 : -1);
+          box = { x: Math.max(6, Math.min(canvas.clientWidth - width - 6, anchor.x - width / 2 + shiftX)),
+            y: Math.max(80, Math.min(canvas.clientHeight - (mobile ? 330 : 120), anchor.y - 10 + shiftY)), w: width, h: 20 };
+          if (!placed.some(b => box.x < b.x + b.w + 4 && box.x + box.w + 4 > b.x && box.y < b.y + b.h + 4 && box.y + box.h + 4 > b.y)) break;
+        }
+        const labelPoint = { x: box.x + width / 2, y: box.y + 10 };
+        if (Math.hypot(labelPoint.x - anchor.x, labelPoint.y - anchor.y) > 3) {
+          ctx.beginPath(); ctx.moveTo(anchor.x, anchor.y);
+          ctx.lineTo(Math.max(box.x, Math.min(box.x + width, anchor.x)), Math.max(box.y, Math.min(box.y + 20, anchor.y)));
+          ctx.strokeStyle = label.color; ctx.globalAlpha = label.alpha * 0.45; ctx.lineWidth = 1; ctx.stroke();
+        }
+        ctx.restore();
+        placed.push(box);
+        drawLabelNow({ ...label, labelPoint });
+      }
       labelQueue = [];
     }
 
-    function drawLabelNow({ text, p, color, alpha = 1 }) {
-      const point = screenProject(p);
+    function drawLabelNow({ text, p, color, alpha = 1, labelPoint = null }) {
+      const point = labelPoint || screenProject(p);
       ctx.save();
       ctx.globalAlpha = alpha;
       ctx.font = "800 14px 'Malgun Gothic', 'Segoe UI', sans-serif";
