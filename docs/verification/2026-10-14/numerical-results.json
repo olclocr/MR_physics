@@ -1,0 +1,320 @@
+{
+  "reviewedCommit": "0006c3b01c92ccf85b07e8fc63adc66197a53149",
+  "basics": {
+    "f0_1_5T_MHz": 63.86621837999999,
+    "f0_3T_MHz": 127.73243675999998,
+    "t90_10uT_ms": 0.58716487293607
+  },
+  "resonantRotations": [
+    {
+      "deg": 90,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 6.123233995736766e-17
+      },
+      "passed": true
+    },
+    {
+      "deg": 180,
+      "m": {
+        "x": 0,
+        "y": 1.2246467991473532e-16,
+        "z": -1
+      },
+      "passed": true
+    },
+    {
+      "deg": 360,
+      "m": {
+        "x": 0,
+        "y": -2.4492935982947064e-16,
+        "z": 1
+      },
+      "passed": true
+    }
+  ],
+  "rfOffset": {
+    "definition": "delta=fRF-f0, dM/dt=gamma M cross B, gamma>0",
+    "deltaHz": 1000,
+    "implementationAxis": {
+      "x": 0.32242861447197907,
+      "y": 0,
+      "z": 0.9465937822369634
+    },
+    "expectedAxisZ": -0.9465937822369634,
+    "implementationM": {
+      "x": 0.595043695837014,
+      "y": -0.10104301664617246,
+      "z": 0.7973163166721652
+    },
+    "expectedM": [
+      -0.595043695837014,
+      -0.1010430166461725,
+      0.7973163166721648
+    ],
+    "larmor": {
+      "implementationM": {
+        "x": -0.5627569865770996,
+        "y": 0.21815422349107488,
+        "z": 0.7973163166721652
+      },
+      "referenceRk4": [
+        0.562756986577098,
+        0.21815422349107888,
+        0.7973163166721616
+      ],
+      "maxAnalyticVsRk4Error": 3.969047313034935e-15
+    }
+  },
+  "mrOffResonance": {
+    "b1_uT": 1,
+    "deltaHz": 120,
+    "pulseDurationMs": 5.871648729360702,
+    "implementation": {
+      "mz": 6.123233995736766e-17,
+      "mxy": 1
+    },
+    "expected": {
+      "mz": 0.8865233595932589,
+      "mxy": 0.4626838368643116,
+      "tiltDeg": 27.560426646534626
+    }
+  },
+  "mxyMagnitude": {
+    "flipDeg": 270,
+    "reported": -1,
+    "actualMagnitude": 1
+  },
+  "spinEcho": {
+    "valuesNearRefocusing": [
+      {
+        "afterMs": 7.499,
+        "phaseRad": 1.6491162316488899,
+        "mz": 0.008297605470186764,
+        "mxy": 0.3881067782257706
+      },
+      {
+        "afterMs": 7.5,
+        "phaseRad": 1.6493361431346414,
+        "mz": 0.008298707361124036,
+        "mxy": 0.38810192692136347
+      },
+      {
+        "afterMs": 7.501,
+        "phaseRad": 1.6491162316488899,
+        "mz": 0.008299809250837065,
+        "mxy": 0.38809707567759727
+      }
+    ],
+    "phaseSlopeBefore": 0.21991148575151165,
+    "phaseSlopeAfter": -0.21991148575151165,
+    "amplitudes": [
+      {
+        "afterMs": 0,
+        "mxyRatio": 0.42624657926256726,
+        "mzRatio": 2.610007544707058e-17,
+        "phaseRad": 0,
+        "event": "90° excitation",
+        "rfActive": true,
+        "species": null,
+        "signal": 0.3533708257334583,
+        "elapsedMs": 4
+      },
+      {
+        "afterMs": 7.5,
+        "mxyRatio": 0.38810192692136347,
+        "mzRatio": 0.008298707361124036,
+        "phaseRad": 1.6493361431346414,
+        "event": "dephasing",
+        "rfActive": true,
+        "species": null,
+        "signal": 0.3533708257334583,
+        "elapsedMs": 11.5
+      },
+      {
+        "afterMs": 15,
+        "mxyRatio": 0.3533708257334583,
+        "mzRatio": 0.01652854617838251,
+        "phaseRad": 0,
+        "event": "rephasing",
+        "rfActive": false,
+        "species": null,
+        "signal": 0.3533708257334583,
+        "elapsedMs": 19
+      },
+      {
+        "afterMs": 20,
+        "mxyRatio": 0.33196116971119505,
+        "mzRatio": 0.021977127515399486,
+        "phaseRad": 1.0995574287564276,
+        "event": "T1 recovery + T2 decay",
+        "rfActive": false,
+        "species": null,
+        "signal": 0.3533708257334583,
+        "elapsedMs": 24
+      }
+    ],
+    "timelineTE_ms": 15,
+    "implementedEchoAtSequenceTime_ms": 19,
+    "referenceEnsemble": [
+      {
+        "tMs": 0,
+        "netTransverse": 0.42624657926256726,
+        "sum": [
+          0,
+          0.42624657926256726,
+          0
+        ]
+      },
+      {
+        "tMs": 7.5,
+        "netTransverse": 0.09594407277469219,
+        "sum": [
+          0,
+          0.09594407277469219,
+          1.1749760162068746e-17
+        ]
+      },
+      {
+        "tMs": 15,
+        "netTransverse": 0.3533708257334583,
+        "sum": [
+          0,
+          -0.3533708257334583,
+          1.0698278371293944e-17
+        ]
+      },
+      {
+        "tMs": 20,
+        "netTransverse": 0,
+        "sum": [
+          0,
+          0,
+          1.0050102451608409e-17
+        ]
+      }
+    ]
+  },
+  "chemical": {
+    "atTimelineTE": {
+      "tMs": 2.3,
+      "event": "90° excitation",
+      "rfActive": true,
+      "mxy": 0.0980285059812224,
+      "signalEstimate": 0.9640219399778162
+    },
+    "priorMz": 0.12482668095705252,
+    "atImplementedTE": {
+      "tMs": 6.3,
+      "event": "TE readout",
+      "mxy": 0.12033565913720967,
+      "signalEstimate": 0.9640219399778162,
+      "ratio": 8.011107820322941
+    }
+  },
+  "playbackScale": {
+    "requestedScale": 1000,
+    "pulseDurationMs": 0.19572162431202336,
+    "actualVisualSeconds": 0.55,
+    "effectiveScale": 2810.11360872,
+    "sequenceRFPulseFixedMs": 4
+  },
+  "fourierIdentity": [
+    {
+      "pattern": "center",
+      "maxError": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "pattern": "uniform",
+      "maxError": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "pattern": "diagonal",
+      "maxError": 4.996003610813204e-16,
+      "passed": true
+    },
+    {
+      "pattern": "bars",
+      "maxError": 3.3306690738754696e-16,
+      "passed": true
+    },
+    {
+      "pattern": "spot",
+      "maxError": 4.440892098500626e-16,
+      "passed": true
+    }
+  ],
+  "encodingStart": {
+    "displayKx": -2,
+    "actualUnprephasedKx": 0,
+    "ky": 0,
+    "signal": {
+      "real": 1,
+      "imaginary": 0,
+      "magnitude": 1,
+      "phase": 0
+    },
+    "displayedK": {
+      "re": -0.000317395484350817,
+      "im": 0,
+      "mag": 0.000317395484350817
+    }
+  },
+  "encodingControls": {
+    "parameters": {
+      "phaseDegPerRow": 0,
+      "frequencyHzPerCol": 60,
+      "readoutMs": 160,
+      "t2starMs": 50
+    },
+    "maxReconChange": 0,
+    "maxKChange": 0,
+    "fullImageStillReconstructed": true
+  },
+  "partialFourier": {
+    "maxDiscardedImaginary": 0.08865966962057793,
+    "maxDifferenceAbsRealVsMagnitude": 0.023848803558398468,
+    "example": {
+      "row": 4,
+      "col": 3,
+      "x": 1,
+      "y": -2,
+      "value": 0.15287499786326017,
+      "residual": 0.08865966962057793
+    }
+  },
+  "phaseOnlyCentric": {
+    "ky": 0,
+    "maxPhase": 0
+  },
+  "wheel": {
+    "spinRates": [
+      {
+        "omega": 7,
+        "precession": 4.576093294460642,
+        "precessionToSpin": 0.6537276134943774,
+        "pendulumMode": false
+      },
+      {
+        "omega": 1,
+        "precession": 32.032653061224494,
+        "precessionToSpin": 32.032653061224494,
+        "pendulumMode": false
+      },
+      {
+        "omega": 15,
+        "precession": 2.135510204081633,
+        "precessionToSpin": 0.14236734693877554,
+        "pendulumMode": false
+      }
+    ],
+    "pointMassPivotInertia": 0.24000000000000005,
+    "thinHoopPivotInertia": 0.33187500000000003,
+    "pendulumPeriodRatioHoopVsPoint": 1.1759304826391737,
+    "drawnRadiusMeters": 0.14,
+    "modelRadiusMeters": 0.35
+  }
+}

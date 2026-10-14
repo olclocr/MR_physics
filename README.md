@@ -30,6 +30,12 @@ This repository contains the following interactive simulations located in the [d
 
 No installation or build steps are required. Simply clone the repository and open any of the `.html` files in the `docs` folder with a modern web browser, or access the live link above.
 
+## Scientific Validation
+
+The [2026-10-14 validation record](docs/verification/2026-10-14/README.md) contains the original audit, corrections, numerical checks, and source references. Read the [rendered reports on GitHub Pages](https://olclocr.github.io/MR_physics/verification/2026-10-14/).
+
+Run the scientific regression checks with `node --test tests/physics-scientific.test.cjs`. Educational assumptions and remaining scope limits are documented in the correction report.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -65,6 +71,12 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 ## 사용 방법
 
 별도의 빌드나 추가 프로그램 설치가 필요하지 않습니다. 저장소를 클론한 후 `docs` 폴더 안의 `.html` 파일을 브라우저로 직접 열어 실행하거나 위의 라이브 링크를 이용해 주세요.
+
+## 과학 검증 기록
+
+[2026-10-14 검증 폴더](docs/verification/2026-10-14/README.md)에 수정 전 보고서, 수정 내역, 수치 검산과 문헌 근거를 보존했습니다. [웹에서 렌더링된 보고서](https://olclocr.github.io/MR_physics/verification/2026-10-14/)도 읽을 수 있습니다.
+
+과학 회귀 시험은 `node --test tests/physics-scientific.test.cjs`로 실행합니다. 각 교육용 모델의 가정과 구현 범위는 수정 후 보고서에 명시했습니다.
 
 ## 라이선스
 

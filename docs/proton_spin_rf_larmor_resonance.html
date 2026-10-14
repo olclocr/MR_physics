@@ -652,7 +652,7 @@
           <div class="formula-row">
             <b>라모어</b>
             <div>
-              <code>f0 = γB0</code>
+              <code>f0 = γ̄B0, γ̄ = γ/(2π)</code>
               <span>x', y'는 f0와 함께 돌고, z축은 B0 방향 그대로입니다.</span>
             </div>
           </div>
@@ -666,14 +666,14 @@
           <div class="formula-row">
             <b>어긋날 때</b>
             <div>
-              <code>B_eff = B1 x' + (Δω/γ) z</code>
+              <code>B_eff = B1 x' − (Δω/γ) z</code>
               <span>RF fRF 기준 좌표계에서는 B1이 고정되고, detuning이 z방향 유효장 성분으로 나타납니다.</span>
             </div>
           </div>
           <div class="formula-row">
             <b>flip</b>
             <div>
-              <code>θ = 2π f1 t, &nbsp; f1 = γB1</code>
+              <code>θ = 2π f1 t, &nbsp; f1 = γ̄B1</code>
               <span>pulse 시간은 Δf=0이라고 가정했을 때의 목표 flip에 맞춥니다.</span>
             </div>
           </div>
@@ -1245,8 +1245,8 @@
       const f1Hz = HZ_PER_MICRO_T * state.b1MicroT;
       const detuneHz = state.detuneHz;
       const effHz = Math.hypot(f1Hz, detuneHz);
-      const axisRf = effHz > EPS ? normalize(v(f1Hz, 0, detuneHz)) : v(1, 0, 0);
-      const phase = TWO_PI * detuneHz * timeS;
+       const axisRf = effHz > EPS ? normalize(v(f1Hz, 0, -detuneHz)) : v(1, 0, 0);
+       const phase = -TWO_PI * detuneHz * timeS;
       const angle = TWO_PI * effHz * timeS;
       const mRf = rotateAroundAxis(v(0, 0, 1), axisRf, -angle);
       const bodyURf = rotateAroundAxis(v(1, 0, 0), axisRf, -angle);
@@ -1256,7 +1256,7 @@
       const bodyU = inRfFrame ? normalize(bodyURf) : normalize(rotateZ(bodyURf, phase));
       const bodyW = inRfFrame ? normalize(bodyWRf) : normalize(rotateZ(bodyWRf, phase));
       const b1Dir = inRfFrame ? v(1, 0, 0) : v(Math.cos(phase), Math.sin(phase), 0);
-      const effDir = normalize(add(mul(b1Dir, f1Hz), v(0, 0, detuneHz)));
+       const effDir = normalize(add(mul(b1Dir, f1Hz), v(0, 0, -detuneHz)));
       const mMagnitude = state.b0 / DEFAULT_B0_T;
       const mVisual = mul(m, mMagnitude);
       const dmdtFieldDir = inRfFrame ? axisRf : b1Dir;
@@ -1295,7 +1295,7 @@
         plannedFlipDeg,
         pulseDurationS,
         actualTiltDeg,
-        axisTiltDeg: Math.atan2(detuneHz, Math.max(EPS, f1Hz)) * 180 / Math.PI
+        axisTiltDeg: Math.atan2(-detuneHz, Math.max(EPS, f1Hz)) * 180 / Math.PI
       };
     }
 
@@ -1495,8 +1495,8 @@
         createdAt: new Date().toISOString(),
         status: "running",
         model: state.frameMode === "rf"
-          ? "RF frame: m(t) = R_axis(f1,0,Δf)(-2π sqrt(f1^2 + Δf^2)t) * m0, m0=(0,0,1)"
-          : "Larmor frame: m(t) = Rz(2πΔf t) * R_axis(f1,0,Δf)(-2π sqrt(f1^2 + Δf^2)t) * m0, m0=(0,0,1)",
+          ? "RF frame: Δf=fRF-f0; m(t) = R_axis(f1,0,-Δf)(-2π sqrt(f1^2 + Δf^2)t) * m0, m0=(0,0,1)"
+          : "Larmor frame: Δf=fRF-f0; m(t) = Rz(-2πΔf t) * R_axis(f1,0,-Δf)(-2π sqrt(f1^2 + Δf^2)t) * m0, m0=(0,0,1)",
         constants: {
           gamma_MHz_per_T: PROTON_GAMMA_MHZ_T,
           hz_per_microT: HZ_PER_MICRO_T,
@@ -1666,7 +1666,7 @@
     function fieldVisual(p) {
       const scale = FIELD_VISUAL_MAX_LENGTH / MAX_F1_HZ;
       const b1Tip = mul(p.b1Dir, p.f1Hz * scale);
-      const detuneTip = v(0, 0, p.detuneHz * scale);
+       const detuneTip = v(0, 0, -p.detuneHz * scale);
       return {
         b1Tip,
         effTip: add(b1Tip, detuneTip),

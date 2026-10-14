@@ -412,10 +412,10 @@
     <section class="stage" aria-label="양성자 스핀 MR 시뮬레이션 장면">
       <canvas id="scene"></canvas>
       <h1 class="title">양성자 스핀 MR 시뮬레이션</h1>
-      <p class="subtitle">회전좌표계에서 RF B1 pulse가 순자화 M을 x'축 둘레로 flip시키는 Bloch vector 모델</p>
+      <p class="subtitle">RF 좌표계의 Bloch 순자화 모델: 공명에서는 x'축, detuning이 있으면 B_eff 둘레로 회전</p>
       <div class="readout" aria-live="polite">
         <div class="metric"><b>라모어 주파수</b><span id="f0Metric">-</span></div>
-        <div class="metric"><b>현재 flip</b><span id="flipMetric">-</span></div>
+        <div class="metric"><b>현재 z축 기울기</b><span id="flipMetric">-</span></div>
         <div class="metric"><b>Mz / M0</b><span id="mzMetric">-</span></div>
         <div class="metric"><b>Mxy / M0</b><span id="mxyMetric">-</span></div>
         <div class="metric"><b>RF pulse 시간</b><span id="pulseMetric">-</span></div>
@@ -436,7 +436,7 @@
           <input id="b1Control" type="range" min="1" max="30" value="10" step="0.5" />
         </div>
         <div class="control-row">
-          <label for="flipControl">목표 RF pulse angle</label>
+          <label for="flipControl">자유 RF: 공명 기준 pulse angle</label>
           <output id="flipOutput" for="flipControl">90°</output>
           <input id="flipControl" type="range" min="0" max="360" value="90" step="1" />
         </div>
@@ -501,7 +501,13 @@
           <output id="fatOutput" for="fatControl">40%</output>
           <input id="fatControl" type="range" min="0" max="100" value="40" step="5" />
         </div>
-        <p class="note">시퀀스 시간축은 TR/TE를 한 화면에서 보기 위해 압축 재생합니다. RF pulse 자체는 위의 1/N 재생 속도를 따릅니다.</p>
+        <div class="control-row">
+          <label for="spreadControl">SE: B0 분포 σf</label>
+          <output id="spreadOutput" for="spreadControl">35 Hz</output>
+          <input id="spreadControl" type="range" min="0" max="100" value="35" step="5" />
+        </div>
+        <p class="note">Δf = fspin − fRF입니다. 자유 RF는 detuning과 RF 중 이완을 포함합니다. 시퀀스는 이상적인 순간 90°/180° pulse를 사용하며, TE는 excitation 중심에서 readout/echo 중심까지입니다. 위 RF 속도·B1·목표각은 자유 RF에 적용됩니다.</p>
+        <p class="note">SE는 9개 isochromat의 합으로 B0 불균일 재위상화를 보여 줍니다. TR 전 남은 횡자화는 spoiling하고 T1 정상상태에서 시작합니다. Water/fat은 동일 T1/T2와 3.5 ppm 단일 fat peak의 위상 간섭 모델입니다.</p>
       </section>
 
       <section class="section">
@@ -516,7 +522,8 @@
           <div class="data-line"><span>실제 pulse duration</span><b id="durationOutput">-</b></div>
           <div class="data-line"><span>화면 시간 배율</span><b id="timeScaleOutput">-</b></div>
           <div class="data-line"><span>시퀀스 시간</span><b id="sequenceTimeOutput">-</b></div>
-          <div class="data-line"><span>signal estimate</span><b id="signalOutput">-</b></div>
+          <div class="data-line"><span>현재 |S| / M0</span><b id="signalOutput">-</b></div>
+          <div class="data-line"><span>TE 예측 |S| / M0</span><b id="teSignalOutput">-</b></div>
           <div class="data-line"><span>이벤트</span><b id="eventOutput">-</b></div>
           <div class="data-line"><span>표시 벡터 길이</span><b id="visualScaleOutput">-</b></div>
         </div>
@@ -539,6 +546,7 @@
     </aside>
   </main>
 
+  <script src="assets/mr-physics-models.js"></script>
   <script>
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
@@ -554,6 +562,7 @@
       t1: document.getElementById("t1Control"),
       t2: document.getElementById("t2Control"),
       offRes: document.getElementById("offResControl"),
+      spread: document.getElementById("spreadControl"),
       fat: document.getElementById("fatControl"),
       start: document.getElementById("startPulse"),
       reset: document.getElementById("resetPulse"),
@@ -568,6 +577,7 @@
       t1Output: document.getElementById("t1Output"),
       t2Output: document.getElementById("t2Output"),
       offResOutput: document.getElementById("offResOutput"),
+      spreadOutput: document.getElementById("spreadOutput"),
       fatOutput: document.getElementById("fatOutput"),
       f0Metric: document.getElementById("f0Metric"),
       flipMetric: document.getElementById("flipMetric"),
@@ -584,6 +594,7 @@
       timeScaleStatus: document.getElementById("timeScaleOutput"),
       sequenceTimeOutput: document.getElementById("sequenceTimeOutput"),
       signalOutput: document.getElementById("signalOutput"),
+      teSignalOutput: document.getElementById("teSignalOutput"),
       eventOutput: document.getElementById("eventOutput"),
       visualScaleOutput: document.getElementById("visualScaleOutput")
     };
@@ -622,6 +633,7 @@
       t1Ms: Number(controls.t1.value),
       t2Ms: Number(controls.t2.value),
       offResHz: Number(controls.offRes.value),
+      spreadHz: Number(controls.spread.value),
       fatFraction: Number(controls.fat.value) / 100,
       currentDeg: 0,
       phaseRad: 0,
@@ -867,22 +879,15 @@
     }
 
     function spinEchoSignal() {
-      return (1 - Math.exp(-state.trMs / state.t1Ms)) * Math.exp(-state.teMs / state.t2Ms);
+      return MRPhysics.spinEcho(state, state.teMs).echoSignal;
     }
 
     function chemicalSignalAtTE() {
-      const fat = state.fatFraction;
-      const water = 1 - fat;
-      const phase = -2 * Math.PI * chemicalShiftHz() * state.teMs / 1000;
-      const re = water + fat * Math.cos(phase);
-      const im = fat * Math.sin(phase);
-      return Math.hypot(re, im) * Math.exp(-state.teMs / state.t2Ms);
+      return MRPhysics.chemical(state, state.teMs).signal;
     }
 
     function sequenceDurationMs() {
-      if (state.sequenceMode === "custom") return Math.max(900, state.teMs + 300);
-      if (state.sequenceMode === "chemical") return Math.max(state.trMs, state.teMs + 30);
-      return Math.max(state.trMs, state.teMs + 60);
+      return state.sequenceMode === "custom" ? Math.max(900, state.teMs + 300) : state.trMs;
     }
 
     function sequenceVisualDuration(ms) {
@@ -913,70 +918,30 @@
 
     function sequenceState(base) {
       const t = clamp(state.sequenceElapsedMs, 0, state.sequenceDurationMs || sequenceDurationMs());
-      const priorMz = 1 - Math.exp(-state.trMs / state.t1Ms);
-      const rfWindowMs = 4;
-      let mxyRatio = 0;
-      let mzRatio = priorMz;
-      let phaseRad = 0;
-      let event = "시퀀스 대기";
-      let rfActive = false;
-      let species = null;
-      let signal = state.sequenceMode === "chemical" ? chemicalSignalAtTE() : spinEchoSignal();
-
-      if (state.sequenceMode === "chemical") {
-        const after = Math.max(0, t - rfWindowMs);
-        const pulseProgress = clamp(t / rfWindowMs, 0, 1);
-        rfActive = t <= rfWindowMs;
-        if (rfActive) {
-          const angle = Math.PI / 2 * pulseProgress;
-          mzRatio = priorMz * Math.cos(angle);
-          mxyRatio = priorMz * Math.sin(angle);
-          event = "90° excitation";
-        } else {
-          const decay = Math.exp(-after / state.t2Ms);
-          const waterWeight = 1 - state.fatFraction;
-          const fatWeight = state.fatFraction;
-          const waterPhase = 2 * Math.PI * state.offResHz * after / 1000;
-          const fatPhase = waterPhase - 2 * Math.PI * chemicalShiftHz() * after / 1000;
-          const waterVec = vectorFromRatios(base.m0Scene, priorMz * waterWeight * decay, 0, waterPhase).mxy;
-          const fatVec = vectorFromRatios(base.m0Scene, priorMz * fatWeight * decay, 0, fatPhase).mxy;
-          const mxy = add(waterVec, fatVec);
-          mxyRatio = length(mxy) / Math.max(0.001, base.m0Scene);
-          phaseRad = Math.atan2(mxy.x, mxy.y);
-          mzRatio = 1 - Math.exp(-after / state.t1Ms);
-          species = [
-            { label: "Water", vector: waterVec, color: colors.water },
-            { label: "Fat", vector: fatVec, color: colors.fat }
-          ];
-          event = Math.abs(after - state.teMs) < 2 ? "TE readout" : "water/fat phase drift";
-        }
-      } else {
-        const after = Math.max(0, t - rfWindowMs);
-        const pulseProgress = clamp(t / rfWindowMs, 0, 1);
-        rfActive = t <= rfWindowMs || Math.abs(after - state.teMs / 2) < 2.5;
-        if (t <= rfWindowMs) {
-          const angle = Math.PI / 2 * pulseProgress;
-          mzRatio = priorMz * Math.cos(angle);
-          mxyRatio = priorMz * Math.sin(angle);
-          event = "90° excitation";
-        } else {
-          const decay = Math.exp(-after / state.t2Ms);
-          mxyRatio = priorMz * decay;
-          mzRatio = 1 - Math.exp(-after / state.t1Ms);
-          if (after <= state.teMs / 2) {
-            phaseRad = 2 * Math.PI * state.offResHz * after / 1000;
-            event = "dephasing";
-          } else if (after <= state.teMs) {
-            phaseRad = 2 * Math.PI * state.offResHz * (state.teMs - after) / 1000;
-            event = Math.abs(after - state.teMs / 2) < 2.5 ? "180° refocusing" : "rephasing";
-          } else {
-            phaseRad = 2 * Math.PI * state.offResHz * (after - state.teMs) / 1000;
-            event = Math.abs(after - state.teMs) < 3 ? "spin echo at TE" : "T1 recovery + T2 decay";
-          }
-        }
-      }
-
-      return { mxyRatio, mzRatio, phaseRad, event, rfActive, species, signal, elapsedMs: t };
+      const chemical = state.sequenceMode === "chemical";
+      const result = chemical ? MRPhysics.chemical(state, t) : MRPhysics.spinEcho(state, t);
+      const m = result.m;
+      const near = Math.min(1, state.teMs / 8);
+      const refocusing = !chemical && Math.abs(t - state.teMs / 2) < near;
+      const readout = Math.abs(t - state.teMs) < near;
+      const event = t < near ? "순간 90° excitation (t=0)"
+        : refocusing ? "순간 180° 회전: 각 Δf 유지"
+        : readout ? (chemical ? "TE water/fat readout" : "spin echo at TE")
+        : chemical ? "water/fat phase drift + relaxation"
+        : t < state.teMs / 2 ? "isochromat dephasing"
+        : t < state.teMs ? "isochromat rephasing" : "post-echo dephasing + relaxation";
+      const species = chemical ? result.species.map(item => ({
+        label: item.label, vector: mul(v(item.m.x, item.m.y, 0), base.m0Scene),
+        color: item.label === "Water" ? colors.water : colors.fat
+      })) : null;
+      const members = chemical ? null : result.members.map(item => mul(item.m, base.m0Scene));
+      return {
+        mxyRatio: Math.hypot(m.x, m.y), mzRatio: m.z,
+        phaseRad: Math.atan2(m.x, m.y), event,
+        rfActive: t < near || refocusing, species, members,
+        signal: Math.hypot(m.x, m.y),
+        teSignal: chemical ? chemicalSignalAtTE() : result.echoSignal, elapsedMs: t
+      };
     }
 
     function physics() {
@@ -984,69 +949,39 @@
       const targetRad = state.targetDeg * Math.PI / 180;
       const f0MHz = PROTON_GAMMA_MHZ_T * state.b0;
       const nutationHz = PROTON_GAMMA_MHZ_T * state.b1MicroT;
-      const durationS = b1T > 0 ? targetRad / (PROTON_GAMMA_RAD_T_S * b1T) : 0;
-      const unclampedVisualDuration = targetRad === 0 ? MIN_VISUAL_SECONDS : durationS * state.timeScale;
+      const durationS = MRPhysics.pulseDurationMs(state.targetDeg, state.b1MicroT) / 1000;
+      const unclampedVisualDuration = durationS * state.timeScale;
       const visualDuration = clamp(unclampedVisualDuration, MIN_VISUAL_SECONDS, MAX_VISUAL_SECONDS);
+      const effectiveScale = durationS > 0 ? visualDuration / durationS : 0;
       const m0RelativeTo15 = state.b0 / 1.5;
       const m0Scene = MAX_VECTOR_LENGTH * state.b0 / 3;
-      const angleRad = state.currentDeg * Math.PI / 180;
-      let mzRatio = Math.cos(angleRad);
-      let mxyRatio = Math.sin(angleRad);
-      let phaseRad = state.phaseRad;
-      let event = state.activeEvent;
-      let rfActive = state.rfActive || state.running;
-      let species = null;
-      let signal = Math.abs(mxyRatio);
-      let elapsedMs = state.freeMs;
-      let durationMs = state.sequenceDurationMs;
-
-      if (state.mode === "free") {
-        const initialMz = Math.cos(targetRad);
-        const initialMxy = Math.sin(targetRad);
-        mzRatio = 1 - (1 - initialMz) * Math.exp(-state.freeMs / state.t1Ms);
-        mxyRatio = initialMxy * Math.exp(-state.freeMs / state.t2Ms);
-        phaseRad = 2 * Math.PI * state.offResHz * state.freeMs / 1000;
+      const pulseOptions = { b1MicroT: state.b1MicroT, offResHz: state.offResHz,
+        t1Ms: state.t1Ms, t2Ms: state.t2Ms, durationMs: durationS * 1000 };
+      const sequence = state.mode === "sequence" || state.mode === "sequence_done";
+      let modelM = v(0, 0, 1), species = null, members = null, teSignal = null;
+      let event = state.activeEvent, rfActive = state.mode === "rf", elapsedMs = state.freeMs;
+      if (state.mode === "rf") {
+        const fraction = state.targetDeg > 0 ? clamp(state.currentDeg / state.targetDeg, 0, 1) : 0;
+        modelM = MRPhysics.hardPulse(modelM, { ...pulseOptions, durationMs: pulseOptions.durationMs * fraction });
+      } else if (state.mode === "free") {
+        const endM = MRPhysics.hardPulse(modelM, pulseOptions);
+        modelM = MRPhysics.free(endM, state.freeMs, state.offResHz, state.t1Ms, state.t2Ms);
         event = "free precession + T1/T2 relaxation";
-        signal = Math.abs(mxyRatio);
-      } else if (state.mode === "sequence" || state.mode === "sequence_done") {
+      } else if (sequence) {
         const seq = sequenceState({ m0Scene });
-        mzRatio = seq.mzRatio;
-        mxyRatio = seq.mxyRatio;
-        phaseRad = seq.phaseRad;
-        event = seq.event;
-        rfActive = seq.rfActive;
-        species = seq.species;
-        signal = seq.signal;
-        elapsedMs = seq.elapsedMs;
-        durationMs = state.sequenceDurationMs;
+        modelM = vectorFromRatios(1, seq.mxyRatio, seq.mzRatio, seq.phaseRad).m;
+        ({ event, rfActive, species, members, teSignal, elapsedMs } = seq);
       }
-
+      const mzRatio = modelM.z, mxyRatio = Math.hypot(modelM.x, modelM.y);
+      const phaseRad = Math.atan2(modelM.x, modelM.y);
       const vectors = vectorFromRatios(m0Scene, mxyRatio, mzRatio, phaseRad);
-      return {
-        b1T,
-        targetRad,
-        f0MHz,
-        nutationHz,
-        durationS,
-        unclampedVisualDuration,
-        visualDuration,
-        m0RelativeTo15,
-        m0Scene,
-        angleRad,
-        mzRatio,
-        mxyRatio,
-        mxyMagnitudeRatio: length(vectors.mxy) / Math.max(0.001, m0Scene),
-        phaseRad,
-        event,
-        rfActive,
-        species,
-        signal,
-        elapsedMs,
-        durationMs,
-        m: vectors.m,
-        mz: vectors.mz,
-        mxy: vectors.mxy
-      };
+      const actualTiltDeg = length(modelM) > 1e-10 ? Math.atan2(mxyRatio, mzRatio) * 180 / Math.PI : null;
+      return { b1T, targetRad, f0MHz, nutationHz, durationS, unclampedVisualDuration,
+        visualDuration, effectiveScale, m0RelativeTo15, m0Scene,
+        angleRad: state.currentDeg * Math.PI / 180, actualTiltDeg,
+        mzRatio, mxyRatio, mxyMagnitudeRatio: mxyRatio, phaseRad, event, rfActive,
+        species, members, signal: mxyRatio, teSignal, elapsedMs,
+        durationMs: state.sequenceDurationMs, m: vectors.m, mz: vectors.mz, mxy: vectors.mxy };
     }
 
     function drawPlane() {
@@ -1070,6 +1005,10 @@
     }
 
     function drawRFField(p) {
+      if (!p.rfActive) {
+        label3("B1 OFF", v(0.85, -0.12, -0.08), colors.b1, 0.5);
+        return;
+      }
       const b1Visual = clamp(0.38 + state.b1MicroT / 30 * 0.55, 0.38, 0.93);
       const base = v(-0.08, -0.12, -0.08);
       arrow3(base, add(base, v(b1Visual, 0, 0)), colors.b1, 6, p.rfActive ? 1 : 0.82);
@@ -1092,12 +1031,17 @@
 
       const targetArc = arcYZ(p.m0Scene, 0, state.targetDeg, 140);
       ellipsePath(targetArc, colors.arc, 3, 0.22, true);
-      const currentArc = arcYZ(p.m0Scene, 0, state.currentDeg, 140);
-      ellipsePath(currentArc, colors.arc, 4, 0.9);
-      label3("flip arc", v(0, p.m0Scene * 0.78, p.m0Scene * 0.78), colors.arc, 0.82);
+      if (state.offResHz === 0 && state.mode === "rf") {
+        const currentArc = arcYZ(p.m0Scene, 0, state.currentDeg, 140);
+        ellipsePath(currentArc, colors.arc, 4, 0.9);
+      }
+      label3("공명 기준 RF arc", v(0, p.m0Scene * 0.78, p.m0Scene * 0.78), colors.arc, 0.7);
     }
 
     function drawVectors(p) {
+      if (p.members && state.spreadHz > 0) {
+        for (const member of p.members) arrow3(v(0, 0, 0), member, colors.guide, 2, 0.32);
+      }
       if (p.species) {
         for (const item of p.species) {
           if (length(item.vector) > 0.01) {
@@ -1132,10 +1076,10 @@
       ctx.stroke();
       ctx.font = "800 11px Malgun Gothic, Segoe UI, sans-serif";
       ctx.fillStyle = "#617088";
-      ctx.fillText("현재 flip", x + 12, y + 15);
+      ctx.fillText("현재 z축 기울기", x + 12, y + 15);
       ctx.fillStyle = colors.arc;
       ctx.font = "850 16px Malgun Gothic, Segoe UI, sans-serif";
-      ctx.fillText(`${state.currentDeg.toFixed(0)}°`, x + 12, y + 33);
+      ctx.fillText(p.actualTiltDeg === null ? "정의 안 됨" : `${p.actualTiltDeg.toFixed(1)}°`, x + 12, y + 33);
       ctx.restore();
     }
 
@@ -1205,22 +1149,26 @@
       controls.t1Output.textContent = `${formatMs(state.t1Ms)}`;
       controls.t2Output.textContent = `${formatMs(state.t2Ms)}`;
       controls.offResOutput.textContent = `${state.offResHz.toFixed(0)} Hz`;
+      controls.spreadOutput.textContent = `${state.spreadHz.toFixed(0)} Hz (9 groups)`;
       controls.fatOutput.textContent = `${Math.round(state.fatFraction * 100)}%`;
       controls.f0Metric.textContent = `${p.f0MHz.toFixed(2)} MHz`;
-      controls.flipMetric.textContent = `${state.currentDeg.toFixed(0)}° / ${state.targetDeg.toFixed(0)}°`;
+      controls.flipMetric.textContent = p.actualTiltDeg === null ? "정의 안 됨" : `${p.actualTiltDeg.toFixed(1)}°`;
       controls.mzMetric.textContent = p.mzRatio.toFixed(3);
       controls.mxyMetric.textContent = p.mxyRatio.toFixed(3);
-      controls.pulseMetric.textContent = formatDuration(p.durationS);
+      controls.pulseMetric.textContent = state.mode.startsWith("sequence") ? "이상적 순간 pulse" : formatDuration(p.durationS);
       controls.m0Output.textContent = `${p.m0RelativeTo15.toFixed(2)}x @ 1.5 T`;
       controls.nutationOutput.textContent = `${p.nutationHz.toFixed(1)} Hz`;
-      controls.durationOutput.textContent = formatDuration(p.durationS);
-      controls.timeScaleStatus.textContent = `실제의 1/${state.timeScale.toLocaleString("ko-KR")}`;
+      controls.durationOutput.textContent = state.mode.startsWith("sequence") ? "이상적 순간 pulse" : formatDuration(p.durationS);
+      controls.timeScaleStatus.textContent = state.mode === "sequence" || state.mode === "sequence_done"
+        ? "시퀀스 압축 재생; RF 순간 pulse"
+        : p.effectiveScale > 0 ? `유효 1/${Math.round(p.effectiveScale).toLocaleString("ko-KR")}` : "pulse 없음";
       controls.sequenceTimeOutput.textContent = state.mode === "sequence" || state.mode === "sequence_done"
         ? `${formatMs(p.elapsedMs)} / ${formatMs(p.durationMs)}`
         : state.mode === "free"
           ? `${formatMs(state.freeMs)} after RF`
           : "-";
-      controls.signalOutput.textContent = p.signal === null || Number.isNaN(p.signal) ? "-" : `${p.signal.toFixed(3)} S/S0`;
+      controls.signalOutput.textContent = p.signal === null || Number.isNaN(p.signal) ? "-" : p.signal.toFixed(3);
+      controls.teSignalOutput.textContent = p.teSignal === null ? "-" : p.teSignal.toFixed(3);
       controls.eventOutput.textContent = p.event;
       controls.visualScaleOutput.textContent = `${(p.m0Scene / MAX_VECTOR_LENGTH).toFixed(2)} of 3.0 T`;
       const fillProgress = state.mode === "sequence" || state.mode === "sequence_done"
@@ -1265,7 +1213,10 @@
       if (Number(controls.te.value) !== state.teMs) controls.te.value = String(state.teMs);
       state.t1Ms = Number(controls.t1.value);
       state.t2Ms = Number(controls.t2.value);
+      state.t2Ms = Math.min(state.t2Ms, 2 * state.t1Ms);
+      controls.t2.value = String(state.t2Ms);
       state.offResHz = Number(controls.offRes.value);
+      state.spreadHz = Number(controls.spread.value);
       state.fatFraction = Number(controls.fat.value) / 100;
       state.currentDeg = 0;
       state.phaseRad = 0;
@@ -1378,7 +1329,7 @@
       } else if (state.mode === "sequence") {
         const physicalStep = rawDt * state.sequenceDurationMs / Math.max(0.1, state.sequenceVisualDuration);
         state.sequenceElapsedMs = Math.min(state.sequenceDurationMs, state.sequenceElapsedMs + physicalStep);
-        state.currentDeg = state.sequenceElapsedMs <= 4 ? 90 * clamp(state.sequenceElapsedMs / 4, 0, 1) : 90;
+        state.currentDeg = state.sequenceMode !== "chemical" && state.sequenceElapsedMs >= state.teMs / 2 ? 270 : 90;
         state.rfActive = physics().rfActive;
         if (state.sequenceElapsedMs >= state.sequenceDurationMs) {
           state.mode = "sequence_done";
@@ -1403,6 +1354,7 @@
     controls.t1.addEventListener("input", syncFromControls);
     controls.t2.addEventListener("input", syncFromControls);
     controls.offRes.addEventListener("input", syncFromControls);
+    controls.spread.addEventListener("input", syncFromControls);
     controls.fat.addEventListener("input", syncFromControls);
     controls.start.addEventListener("click", startPulse);
     controls.runSequence.addEventListener("click", runSequence);

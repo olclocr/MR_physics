@@ -545,24 +545,33 @@
         </div>
         <div class="control-row">
           <label for="phaseDegrees">Gy 단위 위상 기울기</label>
-          <output id="phaseDegreesOutput" for="phaseDegrees">42 deg/row</output>
-          <input id="phaseDegrees" type="range" min="0" max="90" value="42" step="3" />
+          <output id="phaseDegreesOutput" for="phaseDegrees">72 deg/row</output>
+          <input id="phaseDegrees" type="range" min="0" max="144" value="72" step="3" />
         </div>
         <div class="control-row">
           <label for="frequencyHz">Gx 주파수 기울기</label>
-          <output id="frequencyHzOutput" for="frequencyHz">24 Hz/col</output>
-          <input id="frequencyHz" type="range" min="4" max="60" value="24" step="2" />
+          <output id="frequencyHzOutput" for="frequencyHz">25 Hz/col</output>
+          <input id="frequencyHz" type="range" min="4" max="60" value="25" step="1" />
         </div>
         <div class="control-row">
           <label for="readoutMs">readout window</label>
-          <output id="readoutMsOutput" for="readoutMs">72 ms</output>
-          <input id="readoutMs" type="range" min="24" max="160" value="72" step="4" />
+          <output id="readoutMsOutput" for="readoutMs">32 ms</output>
+          <input id="readoutMs" type="range" min="8" max="160" value="32" step="1" />
         </div>
         <div class="control-row">
           <label for="t2starMs">T2* 감쇠</label>
           <output id="t2starMsOutput" for="t2starMs">180 ms</output>
           <input id="t2starMs" type="range" min="50" max="600" value="180" step="10" />
         </div>
+        <label class="switch-row"><span>이상적 비교: T2* 감쇠 끄기</span><input id="ignoreDecay" type="checkbox" /></label>
+        <div class="control-row">
+          <label for="phaseKy">Phase only: ky 단계</label>
+          <output id="phaseKyOutput" for="phaseKy">+1</output>
+          <input id="phaseKy" type="range" min="-2" max="2" value="1" step="1" />
+        </div>
+        <button id="matchGrid" type="button">5×5 Fourier 격자 맞추기</button>
+        <p class="note">B0와 함께 도는 좌표계입니다. 8 ms 준비 구간에 Gy와 음의 Gx prephasing을 적용하고, 실제 gradient 면적에서 k 위치를 계산합니다. 감쇠는 excitation 직후부터 누적됩니다. 매 TR의 초기 자화는 동일하다고 가정합니다.</p>
+        <p class="note">원과 숫자는 ADC 저장 격자의 명목 인덱스입니다. 실제 k 좌표는 현재 값에 표시합니다. 고정 FOV의 5×5 IFFT는 72°/row 및 Gx×readout=0.8 cycle/col에서만 적용합니다. 다른 격자는 재구성을 보류합니다.</p>
         <div class="control-row">
           <label for="speed">재생 속도</label>
           <output id="speedOutput" for="speed">1.0x</output>
@@ -626,14 +635,14 @@
           <div class="formula-row">
             <b>Phase</b>
             <div>
-              <code>phi_y = 2pi ky y</code>
+              <code>φ = −2π(kx x + ky y)/N</code>
               <span>Gy pulse 면적을 바꾸면 행마다 누적되는 위상 차이가 달라지고, 그 값이 ky 위치가 됩니다.</span>
             </div>
           </div>
           <div class="formula-row">
             <b>Frequency</b>
             <div>
-              <code>f_x = gamma Gx x</code>
+              <code>f_x = γ̄ Gx x, γ̄ = γ/(2π)</code>
               <span>Readout 동안 Gx가 켜지면 열마다 다른 주파수로 회전하므로 시간 신호가 x 방향 정보를 담습니다.</span>
             </div>
           </div>
@@ -641,13 +650,13 @@
             <b>Signal</b>
             <div>
               <code>S(t) = sum rho(x,y) exp(i phi(x,y,t))</code>
-              <span>수신 코일은 25개 스핀의 transverse magnetization을 하나의 복소 신호로 합산합니다.</span>
+              <span>수신 코일은 25개 voxel/isochromat의 횡자화를 복소 신호로 합산합니다. 각 화살표는 많은 양성자의 순자화입니다.</span>
             </div>
           </div>
           <div class="formula-row">
             <b>K-space</b>
             <div>
-              <code>K(kx,ky) = sum rho(x,y) exp(-i2pi(kx x + ky y)/N)</code>
+              <code>K at ADC = S(tADC), including T2* decay</code>
               <span>한 TR에서 ky line 하나를 선택하고, readout 동안 그 line의 kx 샘플들이 채워집니다. 원의 크기는 |K|, 색상은 K의 phase를 나타냅니다.</span>
             </div>
           </div>
@@ -709,6 +718,7 @@
     </aside>
   </main>
 
+  <script src="assets/mr-physics-models.js"></script>
   <script>
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
@@ -734,6 +744,10 @@
       readoutMsOutput: document.getElementById("readoutMsOutput"),
       t2starMs: document.getElementById("t2starMs"),
       t2starMsOutput: document.getElementById("t2starMsOutput"),
+      ignoreDecay: document.getElementById("ignoreDecay"),
+      phaseKy: document.getElementById("phaseKy"),
+      phaseKyOutput: document.getElementById("phaseKyOutput"),
+      matchGrid: document.getElementById("matchGrid"),
       speed: document.getElementById("speed"),
       speedOutput: document.getElementById("speedOutput"),
       objectPattern: document.getElementById("objectPattern"),
@@ -825,10 +839,12 @@
       elapsed: 0,
       fillOrder: "linear",
       samplingPattern: "full",
-      phaseDegPerRow: 42,
-      frequencyHzPerCol: 24,
-      readoutMs: 72,
+      phaseDegPerRow: 72,
+      frequencyHzPerCol: 25,
+      readoutMs: 32,
       t2starMs: 180,
+      ignoreDecay: false,
+      phaseKy: 1,
       speed: 1,
       objectPattern: "center",
       showPhase: true,
@@ -1031,24 +1047,10 @@
     }
 
     function rawKspaceValue(kx, ky, cells = spinCells()) {
-      let real = 0;
-      let imaginary = 0;
-      let totalDensity = 0;
-      for (const cell of cells) {
-        const angle = -TWO_PI * (kx * cell.x + ky * cell.y) / GRID_SIZE;
-        real += cell.density * Math.cos(angle);
-        imaginary += cell.density * Math.sin(angle);
-        totalDensity += cell.density;
-      }
-      return {
-        kx,
-        ky,
-        real,
-        imaginary,
-        magnitude: Math.hypot(real, imaginary),
-        phase: Math.atan2(imaginary, real),
-        totalDensity
-      };
+      const progress = (kx + HALF) / (GRID_SIZE - 1);
+      const sample = MRPhysics.encodingSignal(cells, state,
+        { stage: "readout", ky, phaseProgress: 1, readoutProgress: progress }, progress);
+      return { ...sample, actualKx: sample.kx, actualKy: sample.ky, kx, ky };
     }
 
     function kspaceMatrix() {
@@ -1087,7 +1089,7 @@
     }
 
     function nearestKxIndex(frame) {
-      const index = Math.round(clamp(frame.readoutProgress, 0, 1) * (GRID_SIZE - 1));
+      const index = Math.max(0, currentLineSampleCount(frame) - 1);
       return KSPACE_INDEXES[clamp(index, 0, GRID_SIZE - 1)];
     }
 
@@ -1104,30 +1106,24 @@
     }
 
     function reconstructedImage(frame) {
-      const matrix = kspaceMatrix();
-      const samples = acquiredKspaceSamples(frame, matrix);
-      const pixels = [];
+      const samples = acquiredKspaceSamples(frame, kspaceMatrix());
+      const validGrid = MRPhysics.cartesianGridMatches(state);
+      const reason = state.phaseDegPerRow === 0 ? "Gy=0: y 위치 정보 없음"
+        : "k 격자 불일치: 격자 맞추기 필요";
+      if (!validGrid) return { pixels: [], maxValue: 0, sampleCount: samples.length, validGrid, reason };
+      const pixels = [], n = GRID_SIZE;
       let maxValue = 0;
-
-      for (let row = 0; row < GRID_SIZE; row += 1) {
+      for (let row = 0; row < n; row++) {
         const y = HALF - row;
-        for (let col = 0; col < GRID_SIZE; col += 1) {
+        for (let col = 0; col < n; col++) {
           const x = col - HALF;
-          let real = 0;
-          let imaginary = 0;
-          for (const sample of samples) {
-            const angle = TWO_PI * (sample.kx * x + sample.ky * y) / GRID_SIZE;
-            real += sample.real * Math.cos(angle) - sample.imaginary * Math.sin(angle);
-            imaginary += sample.real * Math.sin(angle) + sample.imaginary * Math.cos(angle);
-          }
-          const value = real / (GRID_SIZE * GRID_SIZE);
-          const pixel = { row, col, x, y, value, residual: imaginary / (GRID_SIZE * GRID_SIZE) };
-          pixels.push(pixel);
-          maxValue = Math.max(maxValue, Math.abs(value));
+          const value = MRPhysics.inverseFourier(samples, x, y, n);
+          pixels.push({ row, col, x, y, value: value.real, residual: value.imaginary,
+            magnitude: value.magnitude, phase: value.phase });
+          maxValue = Math.max(maxValue, value.magnitude);
         }
       }
-
-      return { pixels, maxValue, sampleCount: samples.length };
+      return { pixels, maxValue, sampleCount: samples.length, validGrid, reason: "" };
     }
 
     function currentFrame() {
@@ -1137,7 +1133,8 @@
         const progress = (state.elapsed * state.speed * 0.32) % 1;
         return {
           stage: "phase",
-          ky: order[0],
+          phaseOnly: true,
+          ky: state.phaseKy,
           lineIndex: 0,
           completedLines: 0,
           order,
@@ -1145,7 +1142,7 @@
           readoutProgress: 0,
           readoutActive: false,
           trProgress: 0.15,
-          label: `Gy phase encode ky ${formatSigned(order[0])}`
+          label: `Gy phase encode nominal ky ${formatSigned(state.phaseKy)}`
         };
       }
 
@@ -1177,7 +1174,7 @@
           readoutProgress: 1,
           readoutActive: false,
           trProgress: 1,
-          label: lineCount === GRID_SIZE ? "k-space complete → Fourier transform" : "undersampled k-space → zero-filled Fourier"
+          label: MRPhysics.cartesianGridMatches(state) ? "ADC 획득 완료 → complex inverse Fourier" : "ADC 획득 완료 → k 격자 불일치, 재구성 보류"
         };
       }
 
@@ -1233,40 +1230,20 @@
     }
 
     function phaseAt(cell, frame, readoutProgress = frame.readoutProgress) {
-      const phaseSlope = degToRad(state.phaseDegPerRow) * (frame.ky || 0);
-      const phaseEncode = cell.y * phaseSlope * frame.phaseProgress;
-      const readoutSeconds = readoutProgress * state.readoutMs / 1000;
-      const readout = TWO_PI * (cell.x * state.frequencyHzPerCol) * readoutSeconds;
-      return phaseEncode + readout;
+      const k = MRPhysics.encodingTrajectory(state, frame, readoutProgress);
+      return -TWO_PI * (k.kx * cell.x + k.ky * cell.y) / GRID_SIZE;
     }
 
     function decayAt(frame, readoutProgress = frame.readoutProgress) {
-      if (!frame.readoutActive && frame.stage !== "readout") return 1;
-      const ms = readoutProgress * state.readoutMs;
-      return Math.exp(-ms / Math.max(1, state.t2starMs));
+      const k = MRPhysics.encodingTrajectory(state, frame, readoutProgress);
+      return state.ignoreDecay ? 1 : Math.exp(-k.timeMs / state.t2starMs);
     }
 
     function signalAt(frame, readoutProgress = frame.readoutProgress) {
-      const cells = spinCells();
-      const decay = decayAt(frame, readoutProgress);
-      let sx = 0;
-      let sy = 0;
-      let norm = 0;
-      for (const cell of cells) {
-        const phase = phaseAt(cell, frame, readoutProgress);
-        const amp = cell.density * decay;
-        sx += amp * Math.cos(phase);
-        sy += amp * Math.sin(phase);
-        norm += cell.density;
-      }
-      const real = norm > 0 ? sx / norm : 0;
-      const imaginary = norm > 0 ? sy / norm : 0;
-      return {
-        real,
-        imaginary,
-        magnitude: Math.hypot(real, imaginary),
-        phase: Math.atan2(imaginary, real)
-      };
+      const sample = MRPhysics.encodingSignal(spinCells(), state, frame, readoutProgress);
+      const norm = sample.totalDensity || 1;
+      return { real: sample.real / norm, imaginary: sample.imaginary / norm,
+        magnitude: sample.magnitude / norm, phase: sample.phase };
     }
 
     function signalTrace(sourceFrame, samples = 128) {
@@ -1371,7 +1348,7 @@
         const phase = phaseAt(cell, frame);
         const density = cell.density;
         const decay = decayAt(frame);
-        const arrowLength = radius * (0.34 + 0.62 * density) * decay;
+        const arrowLength = radius * 0.8 * density * decay;
         const fillAlpha = 0.38 + density * 0.5;
         const spinColor = state.showPhase ? phaseColor(phase, 0.96) : colors.spin;
 
@@ -1432,7 +1409,7 @@
 
     function drawKspace(rect, frame) {
       if (!state.showKspace) return;
-      drawPanel(rect, "k-space sampling");
+      drawPanel(rect, "ADC samples (nominal grid)");
       const padX = 50;
       const padY = 34;
       const inlineGap = 38;
@@ -1534,11 +1511,11 @@
         : `filled ${totalCount}/${totalKspaceSampleCount()} (${targetCount} target)`;
       label(status, rect.x + rect.w - 30, rect.y + 20, colors.muted, 10, "right");
       const kxLabelY = plot.y + plot.h + 26;
-      label("kx readout", plot.x + plot.w / 2, kxLabelY, colors.frequency, 11);
+      label("nominal kx index", plot.x + plot.w / 2, kxLabelY, colors.frequency, 11);
       ctx.save();
       ctx.translate(plot.x - 38, plot.y + plot.h / 2);
       ctx.rotate(-Math.PI / 2);
-      label("ky phase encode", 0, 0, colors.phase, 11);
+      label("nominal ky index", 0, 0, colors.phase, 11);
       ctx.restore();
 
       if (inlineFourierH > 0) {
@@ -1615,6 +1592,11 @@
       const filledKeys = new Set(filledSamples.map(sample => `${sample.kx},${sample.ky}`));
       const sampleMap = new Map(matrix.samples.map(sample => [`${sample.kx},${sample.ky}`, sample]));
       const reconstruction = reconstructedImage(frame);
+      if (!reconstruction.validGrid) {
+        label("영상 재구성 보류", rect.x + rect.w / 2, rect.y + rect.h / 2 - 12, colors.kspace, compact ? 11 : 14);
+        label(reconstruction.reason, rect.x + rect.w / 2, rect.y + rect.h / 2 + 12, colors.muted, compact ? 9 : 11);
+        return;
+      }
       const maxMagnitude = Math.max(1e-9, matrix.maxMagnitude);
       const maxRecon = Math.max(1e-9, reconstruction.maxValue);
 
@@ -1659,7 +1641,7 @@
       for (const pixel of reconstruction.pixels) {
         const x = rightX + pixel.col * cell;
         const y = gridY + pixel.row * cell;
-        const intensity = clamp(Math.abs(pixel.value) / maxRecon, 0, 1);
+        const intensity = clamp(pixel.magnitude / maxRecon, 0, 1);
         ctx.save();
         ctx.fillStyle = rgba(colors.real, 0.1 + intensity * 0.82);
         ctx.fillRect(x, y, cell, cell);
@@ -1727,7 +1709,8 @@
     function updateUI() {
       const frame = currentFrame();
       const signal = signalAt(frame);
-      const kx = -HALF + (GRID_SIZE - 1) * frame.readoutProgress;
+      const trajectory = MRPhysics.encodingTrajectory(state, frame);
+      const kx = trajectory.kx;
       const matrix = kspaceMatrix();
       const currentLineCount = currentLineSampleCount(frame);
       const totalFilledCount = totalAcquiredSampleCount(frame);
@@ -1760,31 +1743,34 @@
       controls.timeScrubOutput.textContent = `${totalFilledCount}/${fullTotal}`;
 
       controls.modeMetric.textContent = modeNames[state.mode];
-      controls.gyMetric.textContent = `TR ${frame.lineIndex + 1}/${lineTotal}, ky ${formatSigned(frame.ky || 0)}`;
+      controls.gyMetric.textContent = `TR ${frame.lineIndex + 1}/${lineTotal}, 실제 ky ${trajectory.ky.toFixed(2)}`;
       controls.gxMetric.textContent = `${state.frequencyHzPerCol.toFixed(0)} Hz/col`;
       controls.timeMetric.textContent = frame.readoutActive ? `${readoutTime.toFixed(1)} ms` : "-";
       controls.signalMetric.textContent = `${signal.magnitude.toFixed(3)}`;
-      controls.kspaceMetric.textContent = frame.stage === "complete"
-        ? targetTotal === fullTotal ? "k-space full" : "undersampled"
-        : `kx ${kx.toFixed(2)}, ky ${formatSigned(frame.ky || 0)}`;
+      controls.kspaceMetric.textContent = `실제 kx ${kx.toFixed(2)}, ky ${trajectory.ky.toFixed(2)}`;
 
       controls.spinCountOutput.textContent = `${fullTotal}`;
       controls.phaseRangeOutput.textContent = `${(-phaseAbs).toFixed(0)} to ${phaseAbs.toFixed(0)} deg`;
       controls.frequencyRangeOutput.textContent = `${(-freqMax).toFixed(0)} to ${freqMax.toFixed(0)} Hz`;
       controls.signalPhaseOutput.textContent = `${signedAngleDeg(signal.phase).toFixed(1)} deg`;
       controls.currentKOutput.textContent = frame.readoutActive && currentSample
-        ? `kx ${formatSigned(currentKxIndex)} |K| ${currentSample.normalizedMagnitude.toFixed(2)}, ∠ ${signedAngleDeg(currentSample.phase).toFixed(0)} deg`
+        ? `ADC kx ${currentSample.actualKx.toFixed(2)}, ky ${currentSample.actualKy.toFixed(2)} |K| ${currentSample.normalizedMagnitude.toFixed(2)}`
         : frame.stage === "complete" ? targetTotal === fullTotal ? "획득 완료" : "덜 채움 완료" : "readout 전";
       controls.samplingOutput.textContent = targetTotal === fullTotal
         ? `${totalFilledCount}/${fullTotal} samples`
         : `${totalFilledCount}/${fullTotal} samples (${targetTotal} target)`;
-      controls.iftOutput.textContent = totalFilledCount === targetTotal
+      controls.iftOutput.textContent = !MRPhysics.cartesianGridMatches(state)
+        ? state.phaseDegPerRow === 0 ? "Gy=0: y 정보 없음" : "격자 불일치: 재구성 보류"
+        : totalFilledCount === targetTotal
         ? targetTotal === fullTotal ? "full image" : "zero-filled image"
         : totalFilledCount > 0 ? `partial ${totalFilledCount}/${fullTotal}` : "대기";
       controls.kxOutput.textContent = frame.stage === "complete" ? "all" : `${kx.toFixed(2)}`;
       controls.kyOutput.textContent = frame.stage === "complete"
-        ? targetTotal === fullTotal ? "all" : `${lineTotal}/${GRID_SIZE} lines`
-        : `${formatSigned(frame.ky || 0)} (${currentLineCount}/${GRID_SIZE})`;
+        ? `${lineTotal} ADC lines; 실제 ky ${trajectory.ky.toFixed(2)}`
+        : `${trajectory.ky.toFixed(2)} (${currentLineCount}/${GRID_SIZE})`;
+      controls.phaseKyOutput.textContent = formatSigned(state.phaseKy);
+      controls.phaseKy.disabled = state.mode !== "phase";
+      controls.t2starMs.disabled = state.ignoreDecay;
     }
 
     function resetTimeline(running = false) {
@@ -1799,6 +1785,8 @@
       state.frequencyHzPerCol = Number(controls.frequencyHz.value);
       state.readoutMs = Number(controls.readoutMs.value);
       state.t2starMs = Number(controls.t2starMs.value);
+      state.ignoreDecay = controls.ignoreDecay.checked;
+      state.phaseKy = Number(controls.phaseKy.value);
       state.speed = Number(controls.speed.value);
       state.objectPattern = controls.objectPattern.value;
       state.showPhase = controls.showPhase.checked;
@@ -1826,6 +1814,8 @@
       controls.frequencyHz.value = String(defaults.frequencyHzPerCol);
       controls.readoutMs.value = String(defaults.readoutMs);
       controls.t2starMs.value = String(defaults.t2starMs);
+      controls.ignoreDecay.checked = defaults.ignoreDecay;
+      controls.phaseKy.value = String(defaults.phaseKy);
       controls.speed.value = String(defaults.speed);
       controls.objectPattern.value = defaults.objectPattern;
       controls.showPhase.checked = defaults.showPhase;
@@ -1891,6 +1881,12 @@
     });
     controls.timeScrub.addEventListener("input", scrubTimeline);
     controls.timeScrub.addEventListener("change", scrubTimeline);
+    controls.matchGrid.addEventListener("click", () => {
+      controls.phaseDegrees.value = "72";
+      controls.frequencyHz.value = "25";
+      controls.readoutMs.value = "32";
+      syncFromControls({ resetTimeline: true });
+    });
 
     for (const control of [
       controls.fillOrder,
@@ -1899,6 +1895,8 @@
       controls.frequencyHz,
       controls.readoutMs,
       controls.t2starMs,
+      controls.ignoreDecay,
+      controls.phaseKy,
       controls.speed,
       controls.objectPattern,
       controls.showPhase,
@@ -1907,10 +1905,10 @@
       controls.showSignal
     ]) {
       control.addEventListener("input", () => {
-        syncFromControls({ resetTimeline: control === controls.fillOrder || control === controls.samplingPattern || control === controls.objectPattern });
+        syncFromControls({ resetTimeline: ![controls.speed, controls.showPhase, controls.showFrequency, controls.showKspace, controls.showSignal].includes(control) });
       });
       control.addEventListener("change", () => {
-        syncFromControls({ resetTimeline: control === controls.fillOrder || control === controls.samplingPattern || control === controls.objectPattern });
+        syncFromControls({ resetTimeline: ![controls.speed, controls.showPhase, controls.showFrequency, controls.showKspace, controls.showSignal].includes(control) });
       });
     }
 

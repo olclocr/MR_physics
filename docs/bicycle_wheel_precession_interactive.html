@@ -494,7 +494,7 @@
         <div class="formula-list">
           <div class="formula-row">
             <b>각운동량</b>
-            <div><code>L = Iω, &nbsp; I ≈ mR²</code><span id="angularFormula">L = 1.29 kg·m²/s</span></div>
+            <div><code>L_spin = Iω, &nbsp; I = mR² (thin hoop)</code><span id="angularFormula">L_spin = 1.29 kg·m²/s</span></div>
           </div>
           <div class="formula-row">
             <b>무게</b>
@@ -518,7 +518,7 @@
           </div>
           <div class="formula-row">
             <b>L_pend</b>
-            <div><code>L_pend,y = -Iₚ θ˙, &nbsp; Iₚ ≈ mr²</code><span id="pendulumLFormula">L_pend = 0.00 kg·m²/s</span></div>
+            <div><code>L_pend,y = -Iₚ θ˙, &nbsp; Iₚ = m(r²+R²/2)</code><span id="pendulumLFormula">L_pend = 0.00 kg·m²/s</span></div>
           </div>
         </div>
       </section>
@@ -526,6 +526,7 @@
       <section class="section">
         <p class="hint">바퀴는 표시된 방향으로 회전하고, 축의 한쪽은 검은 고정점에 묶여 있으며, 중력은 아래 방향으로 작용한다.</p>
         <p class="hint">가정: 바퀴 중심이 축+바퀴의 무게중심(CM)이고, r은 고정점에서 그 무게중심까지의 위치벡터다. xy평면 격자 한 칸은 20 cm다.</p>
+        <p class="hint">회전 중 화면은 초기 세차 속도를 지정한 수평 정상 세차의 도식입니다. L 화살표는 spin 성분이며 총각운동량은 세차 성분도 포함합니다. 저속 바퀴를 놓을 때의 nutation·축 처짐·진자로의 전이는 이 도식으로 예측하지 않습니다. ω=0은 질량 없는 축과 얇은 고리의 물리진자입니다.</p>
       </section>
     </aside>
   </main>
@@ -718,8 +719,8 @@
       camera.forward = normalize(sub(camera.target, camera.eye));
       camera.right = normalize(cross(camera.forward, v(0, 0, 1)));
       camera.up = normalize(cross(camera.right, camera.forward));
-      camera.origin = { x: canvas.width * 0.42, y: canvas.height * 0.57 };
-      camera.scale = Math.min(canvas.width, canvas.height) * 0.26;
+      camera.origin = { x: canvas.clientWidth * 0.42, y: canvas.clientHeight * 0.57 };
+      camera.scale = Math.min(canvas.clientWidth, canvas.clientHeight) * 0.26;
     }
 
     function project(p) {
@@ -989,7 +990,7 @@
 
     function drawWheel(center, axis, spin, alpha = 1, basisOverride = null) {
       const { u, w } = basisOverride || basisFromAxis(axis);
-      const radius = 0.28;
+      const radius = metersToScene(WHEEL_RADIUS_M);
       const rim = [];
       for (let i = 0; i < 84; i++) {
         const a = Math.PI * 2 * i / 84;
@@ -1075,7 +1076,7 @@
     }
 
     function pendulumOmega() {
-      return Math.sqrt(currentGravity() / Math.max(0.2, state.distance));
+      return Math.sqrt(state.mass * currentGravity() * state.distance / pendulumInertia());
     }
 
     function pendulumTheta() {
@@ -1087,7 +1088,7 @@
     }
 
     function pendulumInertia() {
-      return state.mass * state.distance * state.distance;
+      return state.mass * (state.distance * state.distance + WHEEL_RADIUS_M * WHEEL_RADIUS_M / 2);
     }
 
     function pendulumAngularMomentum() {
@@ -1097,7 +1098,7 @@
     function maxPendulumAngularMomentum() {
       const g = currentGravity();
       const thetaDotMax = Math.sqrt(
-        2 * g * Math.max(0, 1 - Math.cos(PENDULUM_MAX_ANGLE)) / Math.max(0.2, state.distance)
+        2 * state.mass * g * state.distance * Math.max(0, 1 - Math.cos(PENDULUM_MAX_ANGLE)) / pendulumInertia()
       );
       return pendulumInertia() * thetaDotMax;
     }
@@ -1151,7 +1152,7 @@
 
     function advancePendulum(dt) {
       if (!state.pendulumInitialized) resetPendulum();
-      const omega2 = currentGravity() / Math.max(0.2, state.distance);
+      const omega2 = state.mass * currentGravity() * state.distance / pendulumInertia();
       const acceleration = theta => -omega2 * Math.sin(theta);
 
       const theta0 = state.pendulumAngle;
@@ -1315,7 +1316,7 @@
       controls.gravityMetric.textContent = `${g.toFixed(2)} m/s²`;
       controls.weightMetric.textContent = `${weight.toFixed(1)} N`;
       controls.spinMetric.textContent = `${state.spinSpeed.toFixed(0)} rad/s`;
-      controls.angularMetricLabel.textContent = pendulumMode ? "L_pend 진자 각운동량" : "L 각운동량";
+      controls.angularMetricLabel.textContent = pendulumMode ? "L_pend 진자 각운동량" : "L_spin spin 각운동량";
       controls.angularMetric.textContent = pendulumMode
         ? `${lPend.toFixed(3)} kg·m²/s`
         : `${angularMomentum.toFixed(2)} kg·m²/s`;
@@ -1332,12 +1333,12 @@
       controls.weightFormula.textContent = `W = ${state.mass.toFixed(1)} × ${g.toFixed(2)} = ${weight.toFixed(1)} N`;
       controls.torqueFormula.textContent = `|τ| = rW sinθ ≈ ${state.distance.toFixed(2)} × ${weight.toFixed(1)} × ${leverFactor.toFixed(2)} = ${torque.toFixed(1)} N·m`;
       controls.precessionFormula.textContent = angularMomentum > 0.01
-        ? `Ω ≈ τ / L = ${torque.toFixed(2)} / ${angularMomentum.toFixed(2)} = ${precession.toFixed(2)} rad/s. 화면 Ω = Ω × ${state.timeScale.toFixed(2)} = ${visualPrecession.toFixed(2)} rad/s.`
+        ? `정상 세차 Ω = ${precession.toFixed(2)} rad/s; Ω/|ω| = ${(precession / spinAngularSpeed()).toFixed(2)}. ${precession / spinAngularSpeed() > 0.1 ? "spin 지배 근사 밖: 총 L·nutation 생략" : "spin 지배 근사"}. 화면 ${visualPrecession.toFixed(2)} rad/s.`
         : `L이 거의 0이면 세차 근사가 깨지고 축이 아래로 처진다.`;
       controls.tangentFormula.textContent = `θ ≈ ${thetaDeg.toFixed(0)}°, Fθ ≈ ${weight.toFixed(1)} × ${signedTangentFactor.toFixed(2)} = ${tangentForce.toFixed(1)} N`;
       controls.pendulumFormula.textContent = isPendulumMode()
         ? `진자 모드: θ가 +90°와 -90° 사이를 대칭 왕복한다.`
-        : `빠른 스핀 모드에서는 축 처짐을 0으로 되돌려 세차 근사를 표시한다.`;
+        : `수평 정상 세차를 지정한 도식: 축 처짐과 nutation은 계산하지 않습니다.`;
       controls.pendulumLFormula.textContent = `θ˙ = ${thetaDotDisplay.toFixed(2)} rad/s, L_pend = ${lPend.toFixed(3)} kg·m²/s, 최대 |L_pend| ≈ ${lPendMax.toFixed(3)}`;
     }
 
