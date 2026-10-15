@@ -1,5 +1,5 @@
 {
-  "baseCommit": "f13d4606b4e49386161245188a2ad74ff096c594",
+  "baseCommit": "312417d5c433f353bad9740bb6672d6f0d031a87",
   "uncommitted": true,
   "files": [
     {
@@ -21,6 +21,18 @@
     {
       "path": "docs/verification/2026-10-15/G01-numerical.json",
       "sha256": "77754D03F06A9FF35A6E4AE07EE859FA50165CF32B1C212F7980C6D3085FFB5B"
+    },
+    {
+      "path": "docs/fov_matrix_resolution.html",
+      "sha256": "10C8447918EAB4F3F3A3E4E9C32DC310AFA205041D02C9CFE451796CF54F337B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-browser-smoke.js",
+      "sha256": "6AE206F9E6D2AE1132A09CC4041BFF6F5AB2C9C9498BCD12A119BBAF1F83DD8E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-browser-smoke.json",
+      "sha256": "A86965C8726ED2D726B7CACD2AB2573623CB2F396443A9ECD95664BD49B33DA6"
     }
   ]
 }

@@ -57,7 +57,7 @@
 
 | ID | 챕터와 중심 질문 | 선행 | 상태 / 구현할 사항 |
 |---|---|---|---|
-| G01 | FOV·matrix: 촬영 범위와 pixel 크기를 어떻게 정하나? | B04, B05 | 계산 자산 구현 / 교육 HTML·통합 물리 검증 대기. FOV/N, k-space 간격·범위, 획득/재구성 matrix, interpolation |
+| G01 | FOV·matrix: 촬영 범위와 pixel 크기를 어떻게 정하나? | B04, B05 | [교육 HTML 초안](fov_matrix_resolution.html) / 통합 물리 검증 대기. FOV/N, k-space 간격·범위, 획득/재구성 matrix, interpolation |
 | G02 | Slice selection·두께·partial volume: 얇게 찍으면 무엇이 달라지나? | B02, B04 | 계획. RF bandwidth/gradient와 slice 두께, 경계 혼합, gap·cross-talk |
 | G03 | 2D와 3D: slice와 slab·partition은 어떻게 다른가? | G01, G02 | 계획. 두 획득 방식, isotropic voxel, MPR, 움직임 민감도 |
 | Q01 | SNR·CNR·NEX: 더 잘 보이는 영상은 무엇인가? | C01, G01 | 계획. 복소 잡음과 magnitude, averaging의 제곱근 관계, 병변 대비. AI와 기존 SNR 측정 구별 |
@@ -251,7 +251,7 @@ W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을
 
 ## 현재 작업의 재개 메모
 
-W09 진행 중 (2026-10-15). `docs/assets/fov-resolution-model.js`의 FOV/N/M·주파수 표본·점/경계 모형과 독립 Dirichlet/convolution 검산을 구현했다. 전체 56/56, 수치 162조건 최대 1.286e−12. **교육 HTML·실제 브라우저·통합 물리 검토는 미시행이며 완료 아님.** [상세 재개 기록](verification/2026-10-15/G01-physics.md). 다음 요청 첫 행동: `fov_matrix_resolution.html`에 계산 자산을 연결하여 세 관찰·곡선/띠 영상·확인 문제를 구현한다. 사용량 한도 근접으로 현재 작업 단위를 보관하며 W00–W08의 완료 기록은 보존한다. GitHub push 사용자 승인됨.
+W09 진행 중 (2026-10-15). `fov-resolution-model.js`와 `fov_matrix_resolution.html` 초안에 FOV/N/M·점/경계 곡선·격자·띠 영상·문제를 연결했다. 전체 56/56, 독립 수치 162조건 최대 1.286e−12, 실제 14개 기본 상태 확인. **표시 전체와 독립 수치 대조·통합 내용 판정이 남아 완료 아님.** [재개 기록](verification/2026-10-15/G01-physics.md). 다음 요청 첫 행동: HTML `render()`의 곡선·띠 좌표와 k/격자/정규화를 독립 기준으로 검토하고 모든 N/M·키보드/초기화·정답을 실제 두 화면에서 보강한다. 사용량 한도 전 W00–W08 완료와 W09 초안을 보관·푸시한다.
 
 ## 작업 기록
 
@@ -286,4 +286,4 @@ MRIQuestions는 주제 선택과 질문 발굴의 참고 자료이며 원문·�
 
 | 2026-10-15 | W08 B05 통합 물리 재검토 | 1,432개 독립 FFT 조건, 78개 실제 상태·canvas 색, 부호 표시 범위·복소수 안내·예측 문제를 검토·수정. [판정](verification/2026-10-15/B05-physics.md). 다음 W09 |
 
-| 2026-10-15 | W09 G01 계산 기반 구현·중간 기록 | FOV/N/M·점/경계 Fourier 모형과 독립 convolution 검산. [화면·통합 검증이 남은 정확한 재개 위치](verification/2026-10-15/G01-physics.md). W09 진행 중 유지 |
+| 2026-10-15 | W09 G01 계산·화면 초안·중간 기록 | FOV/N/M·점/경계 Fourier 모형·독립 convolution 검산과 초안 화면 기본 연결. [화면·통합 검증이 남은 정확한 재개 위치](verification/2026-10-15/G01-physics.md). W09 진행 중 유지 |

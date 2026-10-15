@@ -155,3 +155,5 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 [C03 T2/T2* physical review · 물리 검증](docs/verification/2026-10-15/C03-physics.md): continuous Gaussian envelopes checked by independent frequency integration and desktop/mobile controls.
 
 [B05 k-space physical review · 물리 검증](docs/verification/2026-10-15/B05-physics.md): independent FFT checks, complex-number guidance, prediction feedback, and real canvas verification.
+
+G01 draft / 초안: [FOV and matrix](docs/fov_matrix_resolution.html). Calculation checks and a 14-state real-browser smoke check are recorded; full display/reference comparison and integrated physical review are pending. [Resume record](docs/verification/2026-10-15/G01-physics.md).
