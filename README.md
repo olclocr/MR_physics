@@ -30,9 +30,12 @@ This repository contains the following interactive simulations located in the [d
 - [Learning roadmap, implementation status, and future chapters](docs/learning-roadmap.md)
 - [Chapter authoring and verification workflow](docs/chapter-authoring.md)
 - [Per-chapter physical consistency review plan and progress](docs/physics-validation-plan.md)
+- [Execution, acceptance, and resume procedure for development requests](docs/development-workflow.md)
 - [Instructions for future contributors and agents](AGENTS.md)
 
 Update the roadmap and physical review plan in the same change whenever a chapter is added, revised, split, or verified. Each implementation includes a subsequent review of its explanations, model, equations, visualizations, and quiz answers, followed by corrections and revalidation. Track physical review separately from test and browser results. Run all regression checks with `node --test tests/*.test.cjs`.
+
+A request such as “개발 진행해” selects or resumes the first eligible work item in the roadmap, carries it through implementation and verification, and records the next step. The roadmap defines task dependencies and acceptance criteria; the execution procedure defines completion and blocker handling. Commit, push, and publication follow the user's authorization for those actions.
 
 ## Conceptual Documentation
 
@@ -48,6 +51,10 @@ No installation or build steps are required. Simply clone the repository and ope
 The [2026-10-14 validation record](docs/verification/2026-10-14/README.md) contains the original audit, corrections, numerical checks, and source references. Read the [rendered reports on GitHub Pages](https://olclocr.github.io/MR_physics/verification/2026-10-14/).
 
 Run the scientific regression checks with `node --test tests/physics-scientific.test.cjs`. Educational assumptions and remaining scope limits are documented in the correction report.
+
+The [2026-10-15 C01 physical consistency review](docs/verification/2026-10-15/C01-physics.md) records independent calculations, browser checks, and the reviewed version and scope. External expert review is still pending. These are local development records.
+
+The [B02 RF resonance review](docs/verification/2026-10-15/B02-physics.md) covers resonance, both rotating frames, RF OFF, normalization, guided observations, and desktop/mobile verification.
 
 ## License
 
@@ -85,9 +92,12 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 - [전체 학습 챕터 · 구현 현황 · 앞으로 할 일](docs/learning-roadmap.md)
 - [챕터 작성 형식과 검증·갱신 지침](docs/chapter-authoring.md)
 - [각 챕터의 물리적 정합성 검증 계획과 진행 상태](docs/physics-validation-plan.md)
+- [“개발 진행해” 실행·완료·중단 후 재개 절차](docs/development-workflow.md)
 - [후속 기여자와 에이전트 지침](AGENTS.md)
 
 챕터 추가·수정·분리·검증 작업에서는 같은 변경으로 로드맵과 물리 검증 계획을 갱신합니다. 구현 이후 설명·모형·수식·시각화·정답의 물리 검토와 수정·재검증을 개발 과정에 포함하고, 물리 검증 상태를 시험·브라우저 확인과 구분합니다. 전체 회귀 시험은 `node --test tests/*.test.cjs`로 실행합니다.
+
+“개발 진행해”라고 요청하면 로드맵의 선행 조건을 충족한 첫 작업을 선택하거나 미완료 작업을 재개하여 구현·검증·기록까지 진행합니다. 작업별 순서·인수 기준은 로드맵, 완료·차단·재개 방법은 실행 절차에서 관리합니다. 커밋·푸시·게시에는 해당 행동에 대한 사용자 승인을 따릅니다.
 
 ## 물리 개념 이론 문서
 
@@ -103,6 +113,10 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 [2026-10-14 검증 폴더](docs/verification/2026-10-14/README.md)에 수정 전 보고서, 수정 내역, 수치 검산과 문헌 근거를 보존했습니다. [웹에서 렌더링된 보고서](https://olclocr.github.io/MR_physics/verification/2026-10-14/)도 읽을 수 있습니다.
 
 과학 회귀 시험은 `node --test tests/physics-scientific.test.cjs`로 실행합니다. 각 교육용 모델의 가정과 구현 범위는 수정 후 보고서에 명시했습니다.
+
+[2026-10-15 C01 통합 물리 검증](docs/verification/2026-10-15/C01-physics.md)에 독립 검산·실제 화면·대상 버전·판정 범위를 기록했습니다. C01은 이 범위에서 대상 버전 통과이며 외부 전문가 검토는 미시행입니다. 로컬 개발 기록과 GitHub 게시 상태는 구별합니다.
+
+[B02 RF 공명 검증](docs/verification/2026-10-15/B02-physics.md)에는 두 회전좌표계·RF OFF·정규화·관찰/정답·실제 데스크톱/모바일 검증을 기록했습니다.
 
 ## 라이선스
 

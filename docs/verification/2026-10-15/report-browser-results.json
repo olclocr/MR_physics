@@ -1,0 +1,380 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "report": "index",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "tables": 0,
+      "images": [],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "README.md"
+        }
+      ]
+    },
+    {
+      "report": "original-review",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "tables": 1,
+      "images": [
+        {
+          "src": "encoding-zero-phase-audit.png",
+          "loaded": true
+        },
+        {
+          "src": "rf-offset-audit.png",
+          "loaded": true
+        }
+      ],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "original-review.md"
+        }
+      ]
+    },
+    {
+      "report": "fix-validation",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "tables": 1,
+      "images": [
+        {
+          "src": "encoding-zero-phase-fixed.jpg",
+          "loaded": true
+        },
+        {
+          "src": "rf-offset-fixed.jpg",
+          "loaded": true
+        },
+        {
+          "src": "wheel-scale-fixed.jpg",
+          "loaded": true
+        }
+      ],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "fix-validation.md"
+        }
+      ]
+    },
+    {
+      "report": "contrast-chapter",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "tables": 0,
+      "images": [
+        {
+          "src": "contrast-desktop.jpg",
+          "loaded": true
+        },
+        {
+          "src": "contrast-mobile.jpg",
+          "loaded": true
+        }
+      ],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "contrast-chapter.md"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "clicked": "http://127.0.0.1:8766/docs/verification/2026-10-14/fix-validation.html",
+      "keyboardDestination": "http://127.0.0.1:8766/docs/verification/2026-10-14/contrast-chapter.html"
+    },
+    {
+      "report": "index",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "tables": 0,
+      "images": [],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "README.md"
+        }
+      ]
+    },
+    {
+      "report": "original-review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "tables": 1,
+      "images": [
+        {
+          "src": "encoding-zero-phase-audit.png",
+          "loaded": true
+        },
+        {
+          "src": "rf-offset-audit.png",
+          "loaded": true
+        }
+      ],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "original-review.md"
+        }
+      ]
+    },
+    {
+      "report": "fix-validation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "tables": 1,
+      "images": [
+        {
+          "src": "encoding-zero-phase-fixed.jpg",
+          "loaded": true
+        },
+        {
+          "src": "rf-offset-fixed.jpg",
+          "loaded": true
+        },
+        {
+          "src": "wheel-scale-fixed.jpg",
+          "loaded": true
+        }
+      ],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "fix-validation.md"
+        }
+      ]
+    },
+    {
+      "report": "contrast-chapter",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "tables": 0,
+      "images": [
+        {
+          "src": "contrast-desktop.jpg",
+          "loaded": true
+        },
+        {
+          "src": "contrast-mobile.jpg",
+          "loaded": true
+        }
+      ],
+      "nav": [
+        {
+          "label": "시뮬레이션 홈",
+          "href": "../../index.html"
+        },
+        {
+          "label": "검증 기록",
+          "href": "index.html"
+        },
+        {
+          "label": "수정 전 보고서",
+          "href": "original-review.html"
+        },
+        {
+          "label": "수정 후 검산",
+          "href": "fix-validation.html"
+        },
+        {
+          "label": "C01 구현 검증",
+          "href": "contrast-chapter.html"
+        },
+        {
+          "label": "Markdown 원문",
+          "href": "contrast-chapter.md"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "clicked": "http://127.0.0.1:8766/docs/verification/2026-10-14/fix-validation.html",
+      "keyboardDestination": "http://127.0.0.1:8766/docs/verification/2026-10-14/contrast-chapter.html"
+    }
+  ],
+  "errors": []
+}

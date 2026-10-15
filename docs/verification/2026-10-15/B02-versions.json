@@ -1,0 +1,34 @@
+{
+  "baseCommit": "e14d801e1b5ddda098a6cd3d6cfe0a9296774500",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/proton_spin_rf_larmor_resonance.html",
+      "sha256": "97BE8207D20DD79EE64ACCEF49ECEF3EBF362451F585567FB7E92A559313F389"
+    },
+    {
+      "path": "docs/b_eff.md",
+      "sha256": "DC739AFD8323BD1C9CCF195EE4FC624001719E8F6702E082739B9411BE970745"
+    },
+    {
+      "path": "tests/rf-resonance.test.cjs",
+      "sha256": "2C6A4CFAB06F5CC2B1B8EF912E3801C534C839F8872CAF45E772EE57A352C852"
+    },
+    {
+      "path": "tests/helpers/rf-reference.cjs",
+      "sha256": "91952E69117746DAE124D5F5E28559D72D517BB0776C4B5AA1A7C93AC2766511"
+    },
+    {
+      "path": "tests/helpers/rf-page-harness.cjs",
+      "sha256": "9691C22018024AD6208E57F420385B6E3BA9042E9A770BD75337ADD63C127ED5"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B02-numerical.cjs",
+      "sha256": "3E16F42E5D305E1E6CE033E48B3FE5E554442141DE79B9CE2C8045C1E22E9405"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B02-browser-check.js",
+      "sha256": "9BFBD1349B5F7DBB291000321B4E120FCCD704A952184EA4DE77364C77CD13D5"
+    }
+  ]
+}

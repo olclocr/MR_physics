@@ -111,16 +111,16 @@
       </div>
       <div class="grid charts">
         <section class="panel">
-          <h2>③ TR을 늘리면: 회복 차이가 줄어듭니다</h2>
+          <h2>③ TR을 늘리면: 회복이 진행됩니다</h2>
           <p class="sub">TE는 현재 값으로 고정 · 세로축: 회복계수 0–1</p>
           <canvas class="plot" id="recoveryPlot" width="460" height="270" role="img" aria-label="TR에 따른 세 조직의 SE 회복계수 곡선"></canvas>
-          <p class="caption">T1이 짧은 조직은 빨리 회복합니다. 충분히 기다리면 조직 간 회복 차이는 작아집니다.</p>
+          <p class="caption">T1이 짧은 조직은 빨리 회복합니다. 조직 간 회복 차이는 처음 커질 수도 있지만, 충분히 긴 TR에서는 모두 1에 가까워져 차이가 작아집니다.</p>
         </section>
         <section class="panel">
           <h2>④ TE를 늘리면: 감쇠 차이가 드러납니다</h2>
           <p class="sub">세로축: T2 성분의 잔존 비율 0–1</p>
           <canvas class="plot" id="decayPlot" width="460" height="270" role="img" aria-label="TE에 따른 세 조직의 T2 지수 감쇠 곡선"></canvas>
-          <p class="caption">T2가 긴 조직은 느리게 감소합니다. TE를 늘린다고 그 조직의 절대 신호가 증가하는 것은 아닙니다.</p>
+          <p class="caption">T2가 긴 조직은 느리게 감소합니다. 이 곡선은 T2 성분만 보여줍니다. 전체 신호에는 PD와 회복계수도 곱해지며, 이 SE 모형에서는 TE를 바꾸면 회복계수도 달라집니다.</p>
         </section>
       </div>
       <div class="legend" aria-label="곡선 범례"><span style="--color:#2563eb">백질 WM</span><span style="--color:#b45309">회백질 GM</span><span style="--color:#087f75">뇌척수액 CSF</span><span>점과 점선: 현재 TR·TE</span></div>
@@ -137,7 +137,7 @@
           <summary>선행 수학·물리 · 이 정도만 알면 시작할 수 있습니다</summary>
           <p><strong>종자화</strong>는 B0 방향, <strong>횡자화</strong>는 그에 수직인 성분입니다. <a href="proton_spin_mr_simulation.html">자화와 이완 시뮬레이션</a>에서 먼저 확인할 수 있습니다. 이상적인 SE는 90° 여기 뒤 TE/2에서 180° pulse를 가하고 TE에서 echo를 읽습니다.</p>
           <p><strong>지수함수</strong> e<sup>−t/T</sup>는 시간이 지날수록 감소합니다. t = T이면 약 37%가 남습니다. 회복 1 − e<sup>−t/T</sup>는 같은 시간에 약 63%에 도달합니다. 곡선을 읽는 데 미적분은 필요하지 않습니다.</p>
-          <p>시간은 모두 <strong>ms</strong>, PD와 신호는 <strong>무차원 상대값</strong>입니다. 예를 들어 1,000 ms = 1초입니다. <a href="mr_physics.md">스핀·신호 개념 안내</a>에서 기초를 더 볼 수 있습니다.</p>
+          <p>시간은 모두 <strong>ms</strong>, PD와 신호는 <strong>무차원 상대값</strong>입니다. 신호 1은 PD=1인 조직이 완전히 회복한 뒤 TE=0에서 내는 기준 신호입니다. 예를 들어 1,000 ms = 1초입니다. <a href="mr_physics.md">스핀·신호 개념 안내</a>에서 기초를 더 볼 수 있습니다.</p>
         </details>
         <details>
           <summary>쉽게 생기는 오개념 · 화면에서 확인해 보세요</summary>
@@ -172,12 +172,15 @@
         <details>
           <summary>모형의 가정 · 예시 조직값 · 계산식과 근거</summary>
           <p>이 영상은 세 구획의 <strong>합성 모형</strong>입니다. 값은 대비를 관찰하기 위한 예시이며 특정 자기장 세기·환자군의 임상 정상값 표가 아닙니다. 질병 진단, 지방억제, T2*, noise, flow, coil sensitivity, partial volume은 포함하지 않습니다.</p>
-          <table aria-label="예시 조직값"><thead><tr><th scope="col">조직</th><th scope="col">상대 PD</th><th scope="col">T1 (ms)</th><th scope="col">T2 (ms)</th></tr></thead><tbody><tr><td>백질</td><td>0.70</td><td>800</td><td>70</td></tr><tr><td>회백질</td><td>0.85</td><td>1,300</td><td>100</td></tr><tr><td>CSF</td><td>1.00</td><td>4,000</td><td>2,000</td></tr></tbody></table>
-          <p>계산은 반복되는 이상적 90°/180° SE의 정상상태입니다. 다음 여기 전 잔여 횡자화는 spoiled되고, 180° pulse가 회복 중인 종자화도 반전하는 영향을 포함합니다.</p>
+          <table aria-label="예시 조직값"><thead><tr><th scope="col">조직</th><th scope="col">상대 PD</th><th scope="col">T1 (ms)</th><th scope="col">T2 (ms)</th></tr></thead><tbody id="tissueParameters"></tbody></table>
+          <p>계산은 반복되는 이상적·순간 90°/180° SE의 정상상태입니다. 한 주기에서 <strong>0: 90° 여기 → TE/2: 180° → TE: echo → TR: 다음 90°</strong> 순서이며 pulse 중심을 기준으로 합니다. 다음 여기 직전 잔여 횡자화는 spoiled됩니다.</p>
+          <p>90° 직후 종자화는 0입니다. TE/2까지 회복한 종자화도 180°에서 반전된 뒤 다시 회복합니다. <strong>A는 다음 90° 직전 Mz를 그 조직의 평형자화 M0로 나눈 값</strong>입니다. 처음 완전평형에서 한 번만 여기하는 경우의 A=1과 구별합니다.</p>
           <p class="formula"><code>A = 1 − 2 exp[−(TR − TE/2)/T1] + exp(−TR/T1)<br>S = PD × |A| × exp(−TE/T2)</code></p>
-          <p>기초 설명에서 흔히 쓰는 <code>S ≈ PD × [1 − exp(−TR/T1)] × exp(−TE/T2)</code>는 위 식의 근사입니다. 이 페이지의 영상·표·회복 곡선은 모두 위의 SE 식을 사용합니다. 오른쪽 감쇠 곡선은 T2 성분만 따로 보여줍니다.</p>
+          <p>기초 설명에서 흔히 쓰는 <code>S ≈ PD × [1 − exp(−TR/T1)] × exp(−TE/T2)</code>는 180°가 회복 자화에 미치는 차이를 무시할 수 있을 때의 근사입니다. 짧은 TR·긴 TE에서는 차이가 커집니다. 영상·표·회복 곡선은 모두 위의 SE 식을 사용하고, 감쇠 곡선은 T2 성분만 보여줍니다.</p>
+          <p id="approximationNote" class="note" aria-live="polite"></p>
           <p>대표 조건은 교육용 예시이며 실제 검사 프로토콜을 권장하는 수치가 아닙니다. PDW 예시의 TR은 긴 T1의 영향을 줄이기 위해 10초로 설정했습니다.</p>
-          <p>개념 참고: <a href="https://www.mriquestions.com/image-contrast-trte.html" target="_blank" rel="noopener noreferrer">MRIQuestions · SE 영상 대비와 TR/TE</a>. 정상상태 계산은 <a href="verification/2026-10-14/fix-validation.html">프로젝트의 SE 검산 기록</a>과 같은 모형을 사용합니다.</p>
+          <p>근거: <a href="https://larsonlab.github.io/MRI-education-resources/Basic%20Contrast%20Mechanisms.html" target="_blank" rel="noopener noreferrer">P. E. Z. Larson · Principles of MRI: Basic Contrast Mechanisms</a> (2026)와 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3712835/" target="_blank" rel="noopener noreferrer">Cheung 등 · NMR Biomed. 25:189–194</a> (2012), Theory 식 (1). 후자는 일반 SE의 TE 의존 회복을 뒷받침하며, 논문이 제안한 FRESS 시퀀스를 이 페이지에서 구현한 것은 아닙니다.</p>
+          <p>개념 참고: <a href="https://www.mriquestions.com/image-contrast-trte.html" target="_blank" rel="noopener noreferrer">MRIQuestions · SE 영상 대비와 TR/TE</a>. <a href="verification/2026-10-15/C01-physics.html">C01 물리 검증 기록</a>에서 근거·독립 계산·적용 범위를 확인할 수 있습니다.</p>
         </details>
       </section>
       <footer class="footer">기본 학습은 SE 영상 대비에 집중합니다. T2*·IR·mapping은 독립 챕터로 확장합니다. <a href="index.html">전체 챕터로 돌아가기</a></footer>
@@ -252,10 +255,11 @@
         ctx.strokeStyle="#e3e9f2";ctx.beginPath();ctx.moveTo(box.l,y(v));ctx.lineTo(box.r,y(v));ctx.stroke();
         ctx.fillStyle="#596b82";ctx.textAlign="right";ctx.fillText(v.toFixed(1),box.l-7,y(v)+4);
       }
+      const ticks=kind==="recovery"?[200,6000,12000]:[0,90,180];
+      ticks.forEach((t,i)=>{ctx.textAlign=i===0?"left":i===ticks.length-1?"right":"center";ctx.fillText(t.toLocaleString("en-US"),x(t),box.b+17);});
       ctx.textAlign="center";
-      for(const t of kind==="recovery"?[200,6000,12000]:[0,90,180]) ctx.fillText(t.toLocaleString("en-US"),x(t),box.b+17);
       ctx.fillText(kind==="recovery"?"TR (ms)":"TE (ms)",(box.l+box.r)/2,h-3);
-      const value=(tissue,t)=>kind==="recovery"?model.signal(tissue,t,state.te).recovery:Math.exp(-t/tissue.t2);
+      const value=(tissue,t)=>kind==="recovery"?model.signal(tissue,t,state.te).recovery:model.signal(tissue,state.tr,t).decay;
       for(const tissue of model.tissues) {
         ctx.strokeStyle=tissue.color;ctx.lineWidth=2.4;ctx.beginPath();
         for(let i=0;i<=180;i++) { const t=min+(max-min)*i/180; if(!i)ctx.moveTo(x(t),y(value(tissue,t)));else ctx.lineTo(x(t),y(value(tissue,t))); }
@@ -272,6 +276,9 @@
       presetButtons.forEach(button=>{const active=button.dataset.preset===currentPreset;button.classList.toggle("active",active);button.setAttribute("aria-pressed",String(active));});
       el("conditionLabel").textContent=`${currentPreset?model.presets[currentPreset].label:"직접 조절한 SE 조건"} · TR ${state.tr.toLocaleString("en-US")} / TE ${state.te} ms${state.equalPD?" · PD 모두 1":""}`;
       el("signalTable").innerHTML=rows.map(r=>`<tr><th scope="row">${r.name}</th><td>${r.pd.toFixed(2)}</td><td>${r.recovery.toFixed(3)}</td><td>${r.decay.toFixed(3)}</td><td><strong>${r.signal.toFixed(3)}</strong></td></tr>`).join("");
+      el("tissueParameters").innerHTML=model.tissues.map(r=>`<tr><th scope="row">${r.name}</th><td>${r.pd.toFixed(2)}</td><td>${r.t1.toLocaleString("en-US")}</td><td>${r.t2.toLocaleString("en-US")}</td></tr>`).join("");
+      const csf=rows[2];
+      el("approximationNote").textContent=`현재 CSF 회복계수는 SE 식 ${csf.recovery.toFixed(4)}, 단순 회복 근사 ${csf.approxRecovery.toFixed(4)}입니다. TR ${state.tr.toLocaleString("en-US")} / TE ${state.te} ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.`;
       el("signalBars").innerHTML=rows.map(r=>`<div class="signal-row" style="--color:${r.color}"><div class="signal-label"><span>${r.name}</span><strong>${r.signal.toFixed(3)}</strong></div><div class="track"><div class="bar" style="width:${r.signal*100}%"></div></div></div>`).join("");
       const delta=Math.abs(rows[0].signal-rows[2].signal);
       el("difference").textContent=`백질–CSF 상대 신호 차이 |ΔS| = ${delta.toFixed(3)} (CNR 아님)`;

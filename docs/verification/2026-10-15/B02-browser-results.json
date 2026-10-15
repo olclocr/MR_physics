@@ -1,0 +1,2694 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "label": "1920 resonance 90",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 90,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 6.123233995736766E-17,
+          "z": -1
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": 1,
+          "z": 6.123233995736766E-17
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 1,
+          "z": 6.123233995736766E-17
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 6.123233995736766E-17,
+          "z": -1
+        },
+        "mxy": 1,
+        "mxyVisual": 1,
+        "plannedFlipDeg": 90,
+        "pulseDurationS": 0.0007339560911700876,
+        "actualTiltDeg": 90,
+        "axisTiltDeg": 0
+      },
+      "metric": "0.000 / 1.000",
+      "tilt": "90.0°",
+      "summary": "RF ON 설정 · 누적 90° / 실제 기울기 90.0°. Mz/M0=0.000, Mxy/M0=1.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, 라모어 f0 기준, 실제 기울기 90.0도, Mz/M0 0.000, Mxy/M0 1.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 90,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00073395609117,
+          "plannedFlipFromDuration_deg": 90,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 resonance 180",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": 1.2246467991473532E-16,
+          "z": -1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 1.2246467991473532E-16,
+          "z": -1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "mxy": 1.2246467991473532E-16,
+        "mxyVisual": 1.2246467991473532E-16,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 180,
+        "axisTiltDeg": 0
+      },
+      "metric": "-1.000 / 0.000",
+      "tilt": "180.0°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 180.0°. Mz/M0=-1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, 라모어 f0 기준, 실제 기울기 180.0도, Mz/M0 -1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": -1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 resonance 360",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 360,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 1,
+          "z": 2.4492935982947064E-16
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": -2.4492935982947064E-16,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": -2.4492935982947064E-16,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 1,
+          "z": 2.4492935982947064E-16
+        },
+        "mxy": 2.4492935982947064E-16,
+        "mxyVisual": 2.4492935982947064E-16,
+        "plannedFlipDeg": 360,
+        "pulseDurationS": 0.0029358243646803502,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": 0
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF ON 설정 · 누적 360° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, 라모어 f0 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 360,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00293582436468,
+          "plannedFlipFromDuration_deg": 360,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 positive offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86721837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 1000,
+        "effHz": 1056.4193625240475,
+        "axisRf": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "phase": -9.22316425630971,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "dmdtFieldDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "dmdtDir": {
+          "x": 0.2966445501506355,
+          "y": -0.9496274636155844,
+          "z": 0.10104301664617255
+        },
+        "dmdtRatePerSecond": 2140.1775197351385,
+        "dmdtDisplayLength": 0.21401775197351386,
+        "m": {
+          "x": -0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mVisual": {
+          "x": -0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": -0.7469437802877495,
+          "y": -0.29664455015063546,
+          "z": -0.5950436958370143
+        },
+        "bodyW": {
+          "x": 0.29664455015063546,
+          "y": -0.9496274636155844,
+          "z": 0.1010430166461725
+        },
+        "mxy": 0.6035616713877145,
+        "mxyVisual": 0.6035616713877145,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 37.125411720537635,
+        "axisTiltDeg": -71.19013905271989
+      },
+      "metric": "0.797 / 0.604",
+      "tilt": "37.1°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 37.1°. Mz/M0=0.797, Mxy/M0=0.604. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 1000 Hz, RF fRF 기준, 실제 기울기 37.1도, Mz/M0 0.797, Mxy/M0 0.604.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": -0.595043695837,
+          "y": -0.101043016646,
+          "z": 0.797316316672,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 negative offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": -1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.865218379999995,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.865218379999995,
+        "f1Hz": 340.61983136,
+        "detuneHz": -1000,
+        "effHz": 1056.4193625240475,
+        "axisRf": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": 0.9465937822369634
+        },
+        "phase": 9.22316425630971,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": 0.9465937822369634
+        },
+        "dmdtFieldDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": 0.9465937822369634
+        },
+        "dmdtDir": {
+          "x": -0.2966445501506355,
+          "y": -0.9496274636155844,
+          "z": 0.10104301664617255
+        },
+        "dmdtRatePerSecond": 2140.1775197351385,
+        "dmdtDisplayLength": 0.21401775197351386,
+        "m": {
+          "x": 0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mVisual": {
+          "x": 0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": -0.7469437802877495,
+          "y": 0.29664455015063546,
+          "z": 0.5950436958370143
+        },
+        "bodyW": {
+          "x": -0.29664455015063546,
+          "y": -0.9496274636155844,
+          "z": 0.1010430166461725
+        },
+        "mxy": 0.6035616713877145,
+        "mxyVisual": 0.6035616713877145,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 37.125411720537635,
+        "axisTiltDeg": 71.19013905271989
+      },
+      "metric": "0.797 / 0.604",
+      "tilt": "37.1°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 37.1°. Mz/M0=0.797, Mxy/M0=0.604. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset -1000 Hz, RF fRF 기준, 실제 기울기 37.1도, Mz/M0 0.797, Mxy/M0 0.604.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": -1000,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0.595043695837,
+          "y": -0.101043016646,
+          "z": 0.797316316672,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.865218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 larmor offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 1000,
+        "effHz": 1056.4193625240475,
+        "axisRf": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "phase": -9.22316425630971,
+        "b1Dir": {
+          "x": -0.9797447083282483,
+          "y": -0.20025060924450552,
+          "z": 0
+        },
+        "effDir": {
+          "x": -0.3158977288425303,
+          "y": -0.06456652648587559,
+          "z": -0.9465937822369634
+        },
+        "dmdtFieldDir": {
+          "x": -0.9797447083282483,
+          "y": -0.20025060924450552,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0.19866168890382704,
+          "y": -0.9719707679561914,
+          "z": 0.12572334548734468
+        },
+        "dmdtRatePerSecond": 1720.0464393793084,
+        "dmdtDisplayLength": 0.17200464393793086,
+        "m": {
+          "x": 0.5627569865770996,
+          "y": 0.21815422349107488,
+          "z": 0.7973163166721652
+        },
+        "mVisual": {
+          "x": 0.5627569865770996,
+          "y": 0.21815422349107488,
+          "z": 0.7973163166721652
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 0.6724109642588934,
+          "y": 0.44021187533851464,
+          "z": -0.5950436958370143
+        },
+        "bodyW": {
+          "x": -0.4807994064088341,
+          "y": 0.8709892304638182,
+          "z": 0.10104301664617253
+        },
+        "mxy": 0.6035616713877147,
+        "mxyVisual": 0.6035616713877147,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 37.125411720537635,
+        "axisTiltDeg": -71.19013905271989
+      },
+      "metric": "0.797 / 0.604",
+      "tilt": "37.1°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 37.1°. Mz/M0=0.797, Mxy/M0=0.604. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 1000 Hz, 라모어 f0 기준, 실제 기울기 37.1도, Mz/M0 0.797, Mxy/M0 0.604.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0.562756986577,
+          "y": 0.218154223491,
+          "z": 0.797316316672,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 stronger RF",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 30,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86721837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 1277.3243676,
+        "detuneHz": 1000,
+        "effHz": 1622.2076131200777,
+        "axisRf": {
+          "x": 0.7873988244594997,
+          "y": 0,
+          "z": -0.6164439076183641
+        },
+        "phase": -2.4595104683492557,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.7873988244594997,
+          "y": 0,
+          "z": -0.6164439076183641
+        },
+        "dmdtFieldDir": {
+          "x": 0.7873988244594997,
+          "y": 0,
+          "z": -0.6164439076183641
+        },
+        "dmdtDir": {
+          "x": 0.46240708013906995,
+          "y": -0.6613014115272989,
+          "z": 0.5906438312124
+        },
+        "dmdtRatePerSecond": 8025.665699006775,
+        "dmdtDisplayLength": 0.8025665699006775,
+        "m": {
+          "x": -0.8063744541264676,
+          "y": -0.5906438312123998,
+          "z": -0.030001739665885034
+        },
+        "mVisual": {
+          "x": -0.8063744541264676,
+          "y": -0.5906438312123998,
+          "z": -0.030001739665885034
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 0.3687003281385867,
+          "y": -0.4624070801390698,
+          "z": -0.8063744541264675
+        },
+        "bodyW": {
+          "x": 0.4624070801390699,
+          "y": -0.6613014115272988,
+          "z": 0.5906438312123999
+        },
+        "mxy": 0.9995498464894187,
+        "mxyVisual": 0.9995498464894187,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0003914432486240467,
+        "actualTiltDeg": 91.71923104127768,
+        "axisTiltDeg": -38.05691226594651
+      },
+      "metric": "-0.030 / 1.000",
+      "tilt": "91.7°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 91.7°. Mz/M0=-0.030, Mxy/M0=1.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 1000 Hz, RF fRF 기준, 실제 기울기 91.7도, Mz/M0 -0.030, Mxy/M0 1.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 30,
+          "rfEnabled": true,
+          "appliedB1_microT": 30,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.000391443248624,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": -0.806374454126,
+          "y": -0.590643831212,
+          "z": -0.0300017396659,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 RF OFF resonance",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": false,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 0,
+        "detuneHz": 0,
+        "effHz": 0,
+        "axisRf": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtRatePerSecond": 0,
+        "dmdtDisplayLength": 0,
+        "m": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "mxy": 0,
+        "mxyVisual": 0,
+        "plannedFlipDeg": 0,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": 0
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF OFF 비교 · 누적 0° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF OFF, offset 0 Hz, RF fRF 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": false,
+          "appliedB1_microT": 0,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 0,
+          "plannedFlipMinusRequested_deg": null,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 RF OFF offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": false,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86721837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 0,
+        "detuneHz": 1000,
+        "effHz": 1000,
+        "axisRf": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        "phase": -9.22316425630971,
+        "b1Dir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        "dmdtFieldDir": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtRatePerSecond": 0,
+        "dmdtDisplayLength": 0,
+        "m": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": -0.9797447083282481,
+          "y": 0.20025060924450547,
+          "z": 0
+        },
+        "bodyW": {
+          "x": -0.20025060924450547,
+          "y": -0.9797447083282481,
+          "z": 0
+        },
+        "mxy": 0,
+        "mxyVisual": 0,
+        "plannedFlipDeg": 0,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": -89.99999999942705
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF OFF 비교 · 누적 0° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF OFF, offset 1000 Hz, RF fRF 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 8,
+          "rfEnabled": false,
+          "appliedB1_microT": 0,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 0,
+          "plannedFlipMinusRequested_deg": null,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 B0 upper normalized",
+      "state": {
+        "b0": 3,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 127.73243675999998,
+        "f0MHz": 127.73243675999998,
+        "fRfMHz": 127.73243675999998,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "dmdtRatePerSecond": 4280.355039470281,
+        "dmdtDisplayLength": 0.4280355039470281,
+        "m": {
+          "x": 0,
+          "y": 1.2246467991473532E-16,
+          "z": -1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 2.4492935982947064E-16,
+          "z": -2
+        },
+        "mMagnitude": 2,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "mxy": 1.2246467991473532E-16,
+        "mxyVisual": 2.4492935982947064E-16,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 180,
+        "axisTiltDeg": 0
+      },
+      "metric": "-1.000 / 0.000",
+      "tilt": "180.0°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 180.0°. Mz/M0=-1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, RF fRF 기준, 실제 기울기 180.0도, Mz/M0 -1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 3,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": -1,
+          "norm": 1
+        }
+      },
+      "f0": "127.732437 MHz",
+      "rf": "127.732437 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 zero flip",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 0,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "mxy": 0,
+        "mxyVisual": 0,
+        "plannedFlipDeg": 0,
+        "pulseDurationS": 0,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": 0
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF ON 설정 · 누적 0° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, RF fRF 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 0,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0,
+          "plannedFlipFromDuration_deg": 0,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 1,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "1920 extreme detuning",
+      "state": {
+        "b0": 0.5,
+        "detuneHz": 2000,
+        "b1MicroT": 3,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 21.290739459999998,
+        "f0MHz": 21.28873946,
+        "fRfMHz": 21.290739459999998,
+        "f1Hz": 127.73243675999998,
+        "detuneHz": 2000,
+        "effHz": 2004.0747429675991,
+        "axisRf": {
+          "x": 0.0637363637300553,
+          "y": 0,
+          "z": -0.9979667709590684
+        },
+        "phase": -49.190209366985115,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.0637363637300553,
+          "y": 0,
+          "z": -0.9979667709590684
+        },
+        "dmdtFieldDir": {
+          "x": 0.0637363637300553,
+          "y": 0,
+          "z": -0.9979667709590684
+        },
+        "dmdtDir": {
+          "x": 0.8260494228409554,
+          "y": 0.5611230583446968,
+          "z": 0.05275665283183341
+        },
+        "dmdtRatePerSecond": 267.5221899668926,
+        "dmdtDisplayLength": 0.02675221899668926,
+        "m": {
+          "x": -0.027915546048602555,
+          "y": -0.05275665283183342,
+          "z": 0.9982171396398631
+        },
+        "mVisual": {
+          "x": -0.009305182016200852,
+          "y": -0.017585550943944473,
+          "z": 0.332739046546621
+        },
+        "mMagnitude": 0.3333333333333333,
+        "bodyU": {
+          "x": 0.5629059187048339,
+          "y": -0.8260494228409553,
+          "z": -0.02791554604860255
+        },
+        "bodyW": {
+          "x": 0.8260494228409553,
+          "y": 0.5611230583446969,
+          "z": 0.05275665283183341
+        },
+        "mxy": 0.059687034850210534,
+        "mxyVisual": 0.01989567828340351,
+        "plannedFlipDeg": 179.99999999999997,
+        "pulseDurationS": 0.003914432486240467,
+        "actualTiltDeg": 3.421848990014266,
+        "axisTiltDeg": -86.34569834346689
+      },
+      "metric": "0.998 / 0.060",
+      "tilt": "3.4°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 3.4°. Mz/M0=0.998, Mxy/M0=0.060. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 2000 Hz, RF fRF 기준, 실제 기울기 3.4도, Mz/M0 0.998, Mxy/M0 0.060.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 0.5,
+          "detune_Hz": 2000,
+          "b1_microT": 3,
+          "rfEnabled": true,
+          "appliedB1_microT": 3,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00391443248624,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": -2.84217094304E-14,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": -0.0279155460486,
+          "y": -0.0527566528318,
+          "z": 0.99821713964,
+          "norm": 1
+        }
+      },
+      "f0": "21.288739 MHz",
+      "rf": "21.290739 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 resonance 90",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 90,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 6.123233995736766E-17,
+          "z": -1
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": 1,
+          "z": 6.123233995736766E-17
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 1,
+          "z": 6.123233995736766E-17
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 6.123233995736766E-17,
+          "z": -1
+        },
+        "mxy": 1,
+        "mxyVisual": 1,
+        "plannedFlipDeg": 90,
+        "pulseDurationS": 0.0007339560911700876,
+        "actualTiltDeg": 90,
+        "axisTiltDeg": 0
+      },
+      "metric": "0.000 / 1.000",
+      "tilt": "90.0°",
+      "summary": "RF ON 설정 · 누적 90° / 실제 기울기 90.0°. Mz/M0=0.000, Mxy/M0=1.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, 라모어 f0 기준, 실제 기울기 90.0도, Mz/M0 0.000, Mxy/M0 1.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 90,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00073395609117,
+          "plannedFlipFromDuration_deg": 90,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 resonance 180",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": 1.2246467991473532E-16,
+          "z": -1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 1.2246467991473532E-16,
+          "z": -1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "mxy": 1.2246467991473532E-16,
+        "mxyVisual": 1.2246467991473532E-16,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 180,
+        "axisTiltDeg": 0
+      },
+      "metric": "-1.000 / 0.000",
+      "tilt": "180.0°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 180.0°. Mz/M0=-1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, 라모어 f0 기준, 실제 기울기 180.0도, Mz/M0 -1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": -1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 resonance 360",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 360,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 1,
+          "z": 2.4492935982947064E-16
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": -2.4492935982947064E-16,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": -2.4492935982947064E-16,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 1,
+          "z": 2.4492935982947064E-16
+        },
+        "mxy": 2.4492935982947064E-16,
+        "mxyVisual": 2.4492935982947064E-16,
+        "plannedFlipDeg": 360,
+        "pulseDurationS": 0.0029358243646803502,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": 0
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF ON 설정 · 누적 360° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, 라모어 f0 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 360,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00293582436468,
+          "plannedFlipFromDuration_deg": 360,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 positive offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86721837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 1000,
+        "effHz": 1056.4193625240475,
+        "axisRf": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "phase": -9.22316425630971,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "dmdtFieldDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "dmdtDir": {
+          "x": 0.2966445501506355,
+          "y": -0.9496274636155844,
+          "z": 0.10104301664617255
+        },
+        "dmdtRatePerSecond": 2140.1775197351385,
+        "dmdtDisplayLength": 0.21401775197351386,
+        "m": {
+          "x": -0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mVisual": {
+          "x": -0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": -0.7469437802877495,
+          "y": -0.29664455015063546,
+          "z": -0.5950436958370143
+        },
+        "bodyW": {
+          "x": 0.29664455015063546,
+          "y": -0.9496274636155844,
+          "z": 0.1010430166461725
+        },
+        "mxy": 0.6035616713877145,
+        "mxyVisual": 0.6035616713877145,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 37.125411720537635,
+        "axisTiltDeg": -71.19013905271989
+      },
+      "metric": "0.797 / 0.604",
+      "tilt": "37.1°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 37.1°. Mz/M0=0.797, Mxy/M0=0.604. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 1000 Hz, RF fRF 기준, 실제 기울기 37.1도, Mz/M0 0.797, Mxy/M0 0.604.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": -0.595043695837,
+          "y": -0.101043016646,
+          "z": 0.797316316672,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 negative offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": -1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.865218379999995,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.865218379999995,
+        "f1Hz": 340.61983136,
+        "detuneHz": -1000,
+        "effHz": 1056.4193625240475,
+        "axisRf": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": 0.9465937822369634
+        },
+        "phase": 9.22316425630971,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": 0.9465937822369634
+        },
+        "dmdtFieldDir": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": 0.9465937822369634
+        },
+        "dmdtDir": {
+          "x": -0.2966445501506355,
+          "y": -0.9496274636155844,
+          "z": 0.10104301664617255
+        },
+        "dmdtRatePerSecond": 2140.1775197351385,
+        "dmdtDisplayLength": 0.21401775197351386,
+        "m": {
+          "x": 0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mVisual": {
+          "x": 0.595043695837014,
+          "y": -0.10104301664617246,
+          "z": 0.7973163166721652
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": -0.7469437802877495,
+          "y": 0.29664455015063546,
+          "z": 0.5950436958370143
+        },
+        "bodyW": {
+          "x": -0.29664455015063546,
+          "y": -0.9496274636155844,
+          "z": 0.1010430166461725
+        },
+        "mxy": 0.6035616713877145,
+        "mxyVisual": 0.6035616713877145,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 37.125411720537635,
+        "axisTiltDeg": 71.19013905271989
+      },
+      "metric": "0.797 / 0.604",
+      "tilt": "37.1°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 37.1°. Mz/M0=0.797, Mxy/M0=0.604. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset -1000 Hz, RF fRF 기준, 실제 기울기 37.1도, Mz/M0 0.797, Mxy/M0 0.604.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": -1000,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0.595043695837,
+          "y": -0.101043016646,
+          "z": 0.797316316672,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.865218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 larmor offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "larmor"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "larmor",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 1000,
+        "effHz": 1056.4193625240475,
+        "axisRf": {
+          "x": 0.32242861447197907,
+          "y": 0,
+          "z": -0.9465937822369634
+        },
+        "phase": -9.22316425630971,
+        "b1Dir": {
+          "x": -0.9797447083282483,
+          "y": -0.20025060924450552,
+          "z": 0
+        },
+        "effDir": {
+          "x": -0.3158977288425303,
+          "y": -0.06456652648587559,
+          "z": -0.9465937822369634
+        },
+        "dmdtFieldDir": {
+          "x": -0.9797447083282483,
+          "y": -0.20025060924450552,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0.19866168890382704,
+          "y": -0.9719707679561914,
+          "z": 0.12572334548734468
+        },
+        "dmdtRatePerSecond": 1720.0464393793084,
+        "dmdtDisplayLength": 0.17200464393793086,
+        "m": {
+          "x": 0.5627569865770996,
+          "y": 0.21815422349107488,
+          "z": 0.7973163166721652
+        },
+        "mVisual": {
+          "x": 0.5627569865770996,
+          "y": 0.21815422349107488,
+          "z": 0.7973163166721652
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 0.6724109642588934,
+          "y": 0.44021187533851464,
+          "z": -0.5950436958370143
+        },
+        "bodyW": {
+          "x": -0.4807994064088341,
+          "y": 0.8709892304638182,
+          "z": 0.10104301664617253
+        },
+        "mxy": 0.6035616713877147,
+        "mxyVisual": 0.6035616713877147,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 37.125411720537635,
+        "axisTiltDeg": -71.19013905271989
+      },
+      "metric": "0.797 / 0.604",
+      "tilt": "37.1°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 37.1°. Mz/M0=0.797, Mxy/M0=0.604. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 1000 Hz, 라모어 f0 기준, 실제 기울기 37.1도, Mz/M0 0.797, Mxy/M0 0.604.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "larmor",
+          "coordinateFrameLabel": "라모어 f0 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0.562756986577,
+          "y": 0.218154223491,
+          "z": 0.797316316672,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 stronger RF",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 30,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86721837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 1277.3243676,
+        "detuneHz": 1000,
+        "effHz": 1622.2076131200777,
+        "axisRf": {
+          "x": 0.7873988244594997,
+          "y": 0,
+          "z": -0.6164439076183641
+        },
+        "phase": -2.4595104683492557,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.7873988244594997,
+          "y": 0,
+          "z": -0.6164439076183641
+        },
+        "dmdtFieldDir": {
+          "x": 0.7873988244594997,
+          "y": 0,
+          "z": -0.6164439076183641
+        },
+        "dmdtDir": {
+          "x": 0.46240708013906995,
+          "y": -0.6613014115272989,
+          "z": 0.5906438312124
+        },
+        "dmdtRatePerSecond": 8025.665699006775,
+        "dmdtDisplayLength": 0.8025665699006775,
+        "m": {
+          "x": -0.8063744541264676,
+          "y": -0.5906438312123998,
+          "z": -0.030001739665885034
+        },
+        "mVisual": {
+          "x": -0.8063744541264676,
+          "y": -0.5906438312123998,
+          "z": -0.030001739665885034
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 0.3687003281385867,
+          "y": -0.4624070801390698,
+          "z": -0.8063744541264675
+        },
+        "bodyW": {
+          "x": 0.4624070801390699,
+          "y": -0.6613014115272988,
+          "z": 0.5906438312123999
+        },
+        "mxy": 0.9995498464894187,
+        "mxyVisual": 0.9995498464894187,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0003914432486240467,
+        "actualTiltDeg": 91.71923104127768,
+        "axisTiltDeg": -38.05691226594651
+      },
+      "metric": "-0.030 / 1.000",
+      "tilt": "91.7°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 91.7°. Mz/M0=-0.030, Mxy/M0=1.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 1000 Hz, RF fRF 기준, 실제 기울기 91.7도, Mz/M0 -0.030, Mxy/M0 1.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 30,
+          "rfEnabled": true,
+          "appliedB1_microT": 30,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.000391443248624,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": -0.806374454126,
+          "y": -0.590643831212,
+          "z": -0.0300017396659,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 RF OFF resonance",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": false,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 0,
+        "detuneHz": 0,
+        "effHz": 0,
+        "axisRf": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtRatePerSecond": 0,
+        "dmdtDisplayLength": 0,
+        "m": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "mxy": 0,
+        "mxyVisual": 0,
+        "plannedFlipDeg": 0,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": 0
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF OFF 비교 · 누적 0° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF OFF, offset 0 Hz, RF fRF 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": false,
+          "appliedB1_microT": 0,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 0,
+          "plannedFlipMinusRequested_deg": null,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 RF OFF offset",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 1000,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": false,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86721837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86721837999999,
+        "f1Hz": 0,
+        "detuneHz": 1000,
+        "effHz": 1000,
+        "axisRf": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        "phase": -9.22316425630971,
+        "b1Dir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        "dmdtFieldDir": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtRatePerSecond": 0,
+        "dmdtDisplayLength": 0,
+        "m": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": -0.9797447083282481,
+          "y": 0.20025060924450547,
+          "z": 0
+        },
+        "bodyW": {
+          "x": -0.20025060924450547,
+          "y": -0.9797447083282481,
+          "z": 0
+        },
+        "mxy": 0,
+        "mxyVisual": 0,
+        "plannedFlipDeg": 0,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": -89.99999999942705
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF OFF 비교 · 누적 0° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF OFF, offset 1000 Hz, RF fRF 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 1000,
+          "b1_microT": 8,
+          "rfEnabled": false,
+          "appliedB1_microT": 0,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 0,
+          "plannedFlipMinusRequested_deg": null,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.867218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 B0 upper normalized",
+      "state": {
+        "b0": 3,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 127.73243675999998,
+        "f0MHz": 127.73243675999998,
+        "fRfMHz": 127.73243675999998,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "dmdtRatePerSecond": 4280.355039470281,
+        "dmdtDisplayLength": 0.4280355039470281,
+        "m": {
+          "x": 0,
+          "y": 1.2246467991473532E-16,
+          "z": -1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 2.4492935982947064E-16,
+          "z": -2
+        },
+        "mMagnitude": 2,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": -1,
+          "z": -1.2246467991473532E-16
+        },
+        "mxy": 1.2246467991473532E-16,
+        "mxyVisual": 2.4492935982947064E-16,
+        "plannedFlipDeg": 180,
+        "pulseDurationS": 0.0014679121823401751,
+        "actualTiltDeg": 180,
+        "axisTiltDeg": 0
+      },
+      "metric": "-1.000 / 0.000",
+      "tilt": "180.0°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 180.0°. Mz/M0=-1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, RF fRF 기준, 실제 기울기 180.0도, Mz/M0 -1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 3,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00146791218234,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": -1,
+          "norm": 1
+        }
+      },
+      "f0": "127.732437 MHz",
+      "rf": "127.732437 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 zero flip",
+      "state": {
+        "b0": 1.5,
+        "detuneHz": 0,
+        "b1MicroT": 8,
+        "flipDeg": 0,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 63.86621837999999,
+        "f0MHz": 63.86621837999999,
+        "fRfMHz": 63.86621837999999,
+        "f1Hz": 340.61983136,
+        "detuneHz": 0,
+        "effHz": 340.61983136,
+        "axisRf": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "phase": 0,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtFieldDir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "dmdtDir": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "dmdtRatePerSecond": 2140.1775197351403,
+        "dmdtDisplayLength": 0.21401775197351405,
+        "m": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mVisual": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "mMagnitude": 1,
+        "bodyU": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "bodyW": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "mxy": 0,
+        "mxyVisual": 0,
+        "plannedFlipDeg": 0,
+        "pulseDurationS": 0,
+        "actualTiltDeg": 0,
+        "axisTiltDeg": 0
+      },
+      "metric": "1.000 / 0.000",
+      "tilt": "0.0°",
+      "summary": "RF ON 설정 · 누적 0° / 실제 기울기 0.0°. Mz/M0=1.000, Mxy/M0=0.000. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 0 Hz, RF fRF 기준, 실제 기울기 0.0도, Mz/M0 1.000, Mxy/M0 0.000.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 1.5,
+          "detune_Hz": 0,
+          "b1_microT": 8,
+          "rfEnabled": true,
+          "appliedB1_microT": 8,
+          "requestedFlip_deg": 0,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0,
+          "plannedFlipFromDuration_deg": 0,
+          "plannedFlipMinusRequested_deg": 0,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 1,
+        "lastM": {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "norm": 1
+        }
+      },
+      "f0": "63.866218 MHz",
+      "rf": "63.866218 MHz",
+      "nonblank": true
+    },
+    {
+      "label": "390 extreme detuning",
+      "state": {
+        "b0": 0.5,
+        "detuneHz": 2000,
+        "b1MicroT": 3,
+        "flipDeg": 180,
+        "rfEnabled": true,
+        "frameMode": "rf"
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "physics": {
+        "frameMode": "rf",
+        "frameFrequencyMHz": 21.290739459999998,
+        "f0MHz": 21.28873946,
+        "fRfMHz": 21.290739459999998,
+        "f1Hz": 127.73243675999998,
+        "detuneHz": 2000,
+        "effHz": 2004.0747429675991,
+        "axisRf": {
+          "x": 0.0637363637300553,
+          "y": 0,
+          "z": -0.9979667709590684
+        },
+        "phase": -49.190209366985115,
+        "b1Dir": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "effDir": {
+          "x": 0.0637363637300553,
+          "y": 0,
+          "z": -0.9979667709590684
+        },
+        "dmdtFieldDir": {
+          "x": 0.0637363637300553,
+          "y": 0,
+          "z": -0.9979667709590684
+        },
+        "dmdtDir": {
+          "x": 0.8260494228409554,
+          "y": 0.5611230583446968,
+          "z": 0.05275665283183341
+        },
+        "dmdtRatePerSecond": 267.5221899668926,
+        "dmdtDisplayLength": 0.02675221899668926,
+        "m": {
+          "x": -0.027915546048602555,
+          "y": -0.05275665283183342,
+          "z": 0.9982171396398631
+        },
+        "mVisual": {
+          "x": -0.009305182016200852,
+          "y": -0.017585550943944473,
+          "z": 0.332739046546621
+        },
+        "mMagnitude": 0.3333333333333333,
+        "bodyU": {
+          "x": 0.5629059187048339,
+          "y": -0.8260494228409553,
+          "z": -0.02791554604860255
+        },
+        "bodyW": {
+          "x": 0.8260494228409553,
+          "y": 0.5611230583446969,
+          "z": 0.05275665283183341
+        },
+        "mxy": 0.059687034850210534,
+        "mxyVisual": 0.01989567828340351,
+        "plannedFlipDeg": 179.99999999999997,
+        "pulseDurationS": 0.003914432486240467,
+        "actualTiltDeg": 3.421848990014266,
+        "axisTiltDeg": -86.34569834346689
+      },
+      "metric": "0.998 / 0.060",
+      "tilt": "3.4°",
+      "summary": "RF ON 설정 · 누적 180° / 실제 기울기 3.4°. Mz/M0=0.998, Mxy/M0=0.060. 기준 시간 끝점에서 관찰 정지.",
+      "canvasLabel": "RF 공명 도식. RF ON, offset 2000 Hz, RF fRF 기준, 실제 기울기 3.4도, Mz/M0 0.998, Mxy/M0 0.060.",
+      "log": {
+        "status": "completed",
+        "conditions": {
+          "coordinateFrame": "rf",
+          "coordinateFrameLabel": "RF fRF 기준",
+          "b0_T": 0.5,
+          "detune_Hz": 2000,
+          "b1_microT": 3,
+          "rfEnabled": true,
+          "appliedB1_microT": 3,
+          "requestedFlip_deg": 180,
+          "playback_msPerSecond": 3
+        },
+        "formulaChecks": {
+          "pulseDuration_s": 0.00391443248624,
+          "plannedFlipFromDuration_deg": 180,
+          "plannedFlipMinusRequested_deg": -2.84217094304E-14,
+          "fRfMinusF0PlusDetune_MHz": 0,
+          "effectiveNutationMinusHypot_Hz": 0
+        },
+        "sampleCount": 17,
+        "lastM": {
+          "x": -0.0279155460486,
+          "y": -0.0527566528318,
+          "z": 0.99821713964,
+          "norm": 1
+        }
+      },
+      "f0": "21.288739 MHz",
+      "rf": "21.290739 MHz",
+      "nonblank": true
+    }
+  ],
+  "errors": []
+}

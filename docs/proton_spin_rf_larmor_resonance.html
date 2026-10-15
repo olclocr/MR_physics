@@ -78,6 +78,7 @@
       line-height: 1.12;
       font-weight: 850;
       letter-spacing: 0;
+      word-break: keep-all;
     }
 
     .subtitle {
@@ -467,6 +468,16 @@
       white-space: pre;
     }
 
+    .lesson { font-size:13px; line-height:1.7; }
+    .lesson p { margin:8px 0; }
+    .lesson a { color:#1b5fc3; }
+    .lesson details { margin:10px 0; }
+    .lesson summary { cursor:pointer; font-weight:700; }
+    .lesson ol,.lesson ul { padding-left:20px; }
+    .lesson .answers { display:grid; gap:6px; }
+    .lesson .answers button { text-align:left; white-space:normal; }
+    :focus-visible { outline:3px solid #2563eb; outline-offset:3px; }
+
     @media (max-width: 1200px) {
       .readout {
         grid-template-columns: repeat(3, minmax(120px, 1fr));
@@ -507,16 +518,21 @@
 
       .subtitle {
         left: 19px;
-        top: 66px;
+        top: 84px;
         max-width: calc(100% - 38px);
       }
 
+      .stage { height:auto; min-height:0; padding-top:138px; }
+      #scene { position:relative; height:420px; }
+
       .readout {
-        left: 14px;
+        position:relative;
+        left: auto;
         right: auto;
-        bottom: 14px;
+        bottom: auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: min(calc(100% - 28px), 286px);
+        width: auto;
+        margin:0 14px 14px;
       }
 
       .metric {
@@ -532,20 +548,26 @@
 <body>
   <main class="app">
     <section class="stage" aria-label="양성자 순자화 RF 라모어 공명 시각화">
-      <canvas id="scene"></canvas>
+      <canvas id="scene" role="img" aria-label="RF와 순자화의 회전좌표계 도식"></canvas>
       <h1 class="title">양성자 순자화와 RF 라모어 공명</h1>
       <p class="subtitle" id="subtitle">라모어와 함께 도는 x'y' 관찰계에서 B1이 멈춰 보일 때와 미끄러질 때, 순자화 M의 flip 차이를 관찰합니다.</p>
-      <div class="readout" aria-live="polite">
+      <div class="readout" id="rfReadout" aria-live="polite">
         <div class="metric"><b>라모어 f0</b><span id="f0Metric">-</span></div>
         <div class="metric"><b>RF offset</b><span id="rfMetric">-</span></div>
         <div class="metric"><b>B1 nutation</b><span id="nutationMetric">-</span></div>
         <div class="metric"><b>RF 누적 flip</b><span id="rfFlipMetric">-</span></div>
-        <div class="metric"><b>Mz / Mx'y'</b><span id="magMetric">-</span></div>
+        <div class="metric"><b>Mz/M0 · Mxy/M0</b><span id="magMetric">-</span></div>
         <div class="metric"><b>pulse 시간</b><span id="pulseMetric">-</span></div>
       </div>
     </section>
 
     <aside class="sidebar">
+      <section class="section lesson">
+        <p><a href="index.html">전체 챕터</a> · B02 · 약 10분</p>
+        <h2>주파수가 같아야 잘 눕힐 수 있을까요?</h2>
+        <p>목표 flip과 실제 자화 기울기를 구별하고, 공명·비공명·RF OFF의 결과를 예상해 봅니다.</p>
+        <details><summary>선행 기호와 단위</summary><p>M은 많은 핵의 순자화이며 B0는 +z 방향입니다. f0=γ̄B0, f1=γ̄B1은 Hz, ω=2πf는 rad/s입니다. γ̄≈42.57748 MHz/T이며 1 µT당 약 42.58 Hz입니다. t는 계산에서 초, 화면은 ms를 사용합니다.</p><p>RF계는 fRF, 라머계는 f0를 따라 돕니다. 여기서는 Δf=fRF−f0를 사용하므로 RF계 유효장의 z성분은 −Δf/γ̄입니다. <a href="b_eff.md">유효장 기호 안내</a></p></details>
+      </section>
       <section class="section">
         <h2>자기장과 RF</h2>
         <div class="button-grid">
@@ -572,6 +594,7 @@
           <output id="flipOutput" for="flipControl">180°</output>
           <input id="flipControl" type="range" min="0" max="360" value="180" step="1" />
         </div>
+        <label class="switch-row"><span>RF OFF로 비교 · 시간은 같은 기준</span><input id="rfOffControl" type="checkbox" /></label>
         <div class="control-row">
           <label for="timeScaleControl">시간 배속</label>
           <output id="timeScaleOutput" for="timeScaleControl">1.0 ms/s</output>
@@ -602,6 +625,14 @@
           <div class="data-line"><span>경과 pulse 시간</span><b id="elapsedOutput">-</b></div>
           <div class="data-line"><span>공명 기준 pulse</span><b id="durationOutput">-</b></div>
         </div>
+      </section>
+
+      <section class="section lesson">
+        <h2>세 번의 예측과 관찰</h2>
+        <ol><li>offset=0, 목표 90°로 실행하세요. Mz와 Mxy는 어떻게 되나요? 180°·360°도 비교하세요.</li><li>목표 180°·B1=8 µT에서 offset을 +1000 / −1000 Hz로 바꾸세요. 실제 기울기와 유효축 z의 부호를 예상하고 두 프레임을 비교하세요.</li><li>비공명에서 B1을 높이면 공명 기준 pulse 시간이 어떻게 바뀌나요? 마지막으로 RF OFF를 켜고 실행해 순자화가 +z에 남는지 보세요.</li></ol>
+        <p id="learningReadout" aria-live="polite"></p>
+        <details><summary>흔한 오개념과 확인</summary><p>“목표 180°면 언제나 반전된다”는 설명은 비공명에서 틀립니다. “빠른 유효 회전=더 큰 실제 기울기”도 성립하지 않습니다. 회전축 방향과 pulse 시간에 따라 결과가 달라집니다. 360° 공명 pulse 후 실제 z축 기울기는 0°지만 RF 누적각은 360°입니다.</p><p>질문: offset이 +1000 Hz인 RF계에서 유효장 z성분은 어느 쪽일까요?</p><div class="answers"><button id="quizNegative" type="button">−z 쪽 · offset과 반대 부호</button><button id="quizPositive" type="button">+z 쪽 · offset과 같은 부호</button></div><p id="rfQuizFeedback" aria-live="polite">답을 고르면 설명이 나타납니다.</p></details>
+        <details><summary>가정·정규화·다음 학습</summary><p>회전하는 일정 B1의 사각 pulse, 이완·확산·불균일 분포 없는 단일 순자화 모형입니다. B1은 회전 성분의 진폭입니다. 바퀴는 방향을 보여주는 고전적 도식이며 핵의 실제 회전 구체가 아닙니다.</p><p>Mz/M0·Mxy/M0는 현재 B0의 평형자화로 나눈 값입니다. 도식의 화살표 길이는 고정 온도에서 M0가 B0에 비례하는 교육용 척도를 유지합니다. pulse 실행 전 필드는 설정 미리보기이고, 일시정지는 물리 시간을 멈춘 관찰입니다. 종료 화면은 pulse 끝점의 RF 중 상태를 고정합니다. pulse 후 RF OFF·이완은 <a href="proton_spin_mr_simulation.html">B03 자화와 이완</a>에서 봅니다.</p><p>RF OFF 비교는 처음 +z에서 같은 기준 시간 동안 RF를 가하지 않는 조건이며, 이미 기울어진 자화의 pulse 후 진화를 뜻하지 않습니다. RF계의 detuning z 유효장은 좌표계 효과여서 RF OFF에서도 표시될 수 있습니다. playback은 물리 ms/화면 초이며 실제 MR 속도와 구별합니다.</p><p>근거: <a href="https://larsonlab.github.io/MRI-education-resources/Bloch%20Equation.html">Larson · Bloch Equation (2026)</a>, <a href="https://web.stanford.edu/class/rad229/Notes.html">Stanford RAD229 · RF와 회전좌표계</a>. <a href="verification/2026-10-15/B02-physics.html">검증 기록</a>. pulse shape·slice selection은 G02에서 다룹니다.</p></details>
       </section>
 
       <section class="section">
@@ -640,13 +671,13 @@
       </section>
 
       <section class="section">
-        <h2>공명 직관</h2>
+        <details><summary>심화 수식 · 공명 직관</summary>
         <div class="formula-list">
           <div class="formula-row">
             <b>그림의 M</b>
             <div>
               <code>M = Σμ / V</code>
-              <span>붉은 화살표는 개별 스핀 하나가 아니라 많은 양성자 자기모멘트가 만든 순자화(블로흐) 벡터입니다.</span>
+              <span>청록 화살표는 개별 스핀 하나가 아니라 많은 양성자 자기모멘트가 만든 순자화(블로흐) 벡터입니다.</span>
             </div>
           </div>
           <div class="formula-row">
@@ -685,6 +716,7 @@
             </div>
           </div>
         </div>
+        </details>
       </section>
 
       <section class="section">
@@ -813,6 +845,7 @@
       b0: DEFAULT_B0_T,
       detuneHz: DEFAULT_DETUNE_HZ,
       b1MicroT: DEFAULT_B1_MICRO_T,
+      rfEnabled: true,
       flipDeg: DEFAULT_FLIP_DEG,
       timeScaleMsPerSec: DEFAULT_TIME_SCALE_MS_PER_SEC,
       frameMode: DEFAULT_FRAME_MODE,
@@ -916,9 +949,10 @@
       const mobile = w < 560;
       camera.origin = {
         x: w * (mobile ? 0.50 : 0.48),
-        y: h * (mobile ? 0.55 : 0.56)
+        y: mobile ? h * 0.46 : (120 + h - 90) / 2
       };
-      camera.scale = Math.min(w, h) * (mobile ? 0.25 : 0.30);
+      // A fixed field of view fits the entire allowed B0/B1/offset range.
+      camera.scale = mobile ? Math.min(w * .23, (h - 60) / 4.5) : Math.min(w * .26, Math.max(60, (h - 210) / 4.5));
     }
 
     function resize() {
@@ -1211,13 +1245,26 @@
       ctx.save();
       ctx.font = "800 12px Malgun Gothic, Segoe UI, sans-serif";
       ctx.textBaseline = "middle";
+      const placed=[];
+      const canvasRect=canvas.getBoundingClientRect();
+      const readoutRect=document.getElementById("rfReadout").getBoundingClientRect();
+      const limitY=Number.isFinite(readoutRect.top)&&Number.isFinite(canvasRect.top)?Math.min(canvas.clientHeight,readoutRect.top-canvasRect.top-4):canvas.clientHeight;
       for (const label of labelQueue) {
         const p = project(label.position);
         const textWidth = ctx.measureText(label.text).width;
         const w = textWidth + 14;
         const h = 24;
-        const x = label.align === "left" ? p.x : label.align === "right" ? p.x - w : p.x - w / 2;
-        const y = p.y - h / 2;
+        const desiredX = label.align === "left" ? p.x : label.align === "right" ? p.x - w : p.x - w / 2;
+        let x=clamp(desiredX,4,canvas.clientWidth-w-4),y=clamp(p.y-h/2,4,Math.max(4,limitY-h-4));
+        const candidates=[0,-28,28,-56,56,-84,84];
+        for(const dy of candidates) {
+          const nextY=clamp(y+dy,4,Math.max(4,limitY-h-4));
+          if(!placed.some(r=>x<r.x+r.w+3&&x+w+3>r.x&&nextY<r.y+r.h+3&&nextY+h+3>r.y)){y=nextY;break;}
+        }
+        placed.push({x,y,w,h});
+        if(Math.abs(x+w/2-p.x)>8||Math.abs(y+h/2-p.y)>8) {
+          ctx.strokeStyle=rgba(colors.axis,.35);ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(x+w/2,y+h/2);ctx.stroke();
+        }
         ctx.fillStyle = `rgba(255,255,255,${0.82 * label.alpha})`;
         ctx.strokeStyle = `rgba(196, 207, 221, ${0.88 * label.alpha})`;
         ctx.lineWidth = 1;
@@ -1242,10 +1289,11 @@
     }
 
     function physicsAt(timeS) {
-      const f1Hz = HZ_PER_MICRO_T * state.b1MicroT;
+      const nominalF1Hz = HZ_PER_MICRO_T * state.b1MicroT;
+      const f1Hz = state.rfEnabled ? nominalF1Hz : 0;
       const detuneHz = state.detuneHz;
       const effHz = Math.hypot(f1Hz, detuneHz);
-       const axisRf = effHz > EPS ? normalize(v(f1Hz, 0, -detuneHz)) : v(1, 0, 0);
+      const axisRf = effHz > EPS ? normalize(v(f1Hz, 0, -detuneHz)) : v(0, 0, 0);
        const phase = -TWO_PI * detuneHz * timeS;
       const angle = TWO_PI * effHz * timeS;
       const mRf = rotateAroundAxis(v(0, 0, 1), axisRf, -angle);
@@ -1255,7 +1303,7 @@
       const m = inRfFrame ? normalize(mRf) : normalize(rotateZ(mRf, phase));
       const bodyU = inRfFrame ? normalize(bodyURf) : normalize(rotateZ(bodyURf, phase));
       const bodyW = inRfFrame ? normalize(bodyWRf) : normalize(rotateZ(bodyWRf, phase));
-      const b1Dir = inRfFrame ? v(1, 0, 0) : v(Math.cos(phase), Math.sin(phase), 0);
+      const b1Dir = !state.rfEnabled ? v(0, 0, 0) : inRfFrame ? v(1, 0, 0) : v(Math.cos(phase), Math.sin(phase), 0);
        const effDir = normalize(add(mul(b1Dir, f1Hz), v(0, 0, -detuneHz)));
       const mMagnitude = state.b0 / DEFAULT_B0_T;
       const mVisual = mul(m, mMagnitude);
@@ -1266,7 +1314,7 @@
       const dmdtDir = dmdtRawLength > EPS ? mul(dmdtRaw, 1 / dmdtRawLength) : v(0, 0, 0);
       const dmdtRatePerSecond = mMagnitude * TWO_PI * dmdtStrengthHz * dmdtRawLength;
       const plannedFlipDeg = Math.min(state.flipDeg, 360 * f1Hz * timeS);
-      const pulseDurationS = f1Hz > EPS ? state.flipDeg / 360 / f1Hz : 0;
+      const pulseDurationS = nominalF1Hz > EPS ? state.flipDeg / 360 / nominalF1Hz : 0;
       const actualTiltDeg = Math.acos(clamp(m.z, -1, 1)) * 180 / Math.PI;
       const mxy = Math.hypot(m.x, m.y);
       return {
@@ -1315,7 +1363,7 @@
     function formatFrequencyMHz(mhz) {
       if (mhz < 0.1) return `${(mhz * 1000).toFixed(1)} kHz`;
       if (mhz < 10) return `${mhz.toFixed(4)} MHz`;
-      return `${mhz.toFixed(3)} MHz`;
+      return `${mhz.toFixed(6)} MHz`;
     }
 
     function formatHz(hz) {
@@ -1425,16 +1473,16 @@
         formulaChecks: {
           pulseDuration_s: roundForLog(duration),
           plannedFlipFromDuration_deg: roundForLog(plannedFlipFromDuration),
-          plannedFlipMinusRequested_deg: roundForLog(plannedFlipFromDuration - state.flipDeg),
+          plannedFlipMinusRequested_deg: state.rfEnabled ? roundForLog(plannedFlipFromDuration - state.flipDeg) : null,
           fRfMinusF0PlusDetune_MHz: roundForLog(durationPhysics.fRfMHz - (durationPhysics.f0MHz + state.detuneHz / 1e6)),
           effectiveNutationMinusHypot_Hz: roundForLog(durationPhysics.effHz - Math.hypot(durationPhysics.f1Hz, state.detuneHz))
         },
         vectorNormChecks: {
           currentM_normMinus1: roundForLog(length(current.m) - 1),
           targetDurationM_normMinus1: roundForLog(length(durationPhysics.m) - 1),
-          b1Dir_normMinus1: roundForLog(length(current.b1Dir) - 1),
-          effectiveFieldDir_normMinus1: roundForLog(length(current.effDir) - 1),
-          effectiveAxisRf_normMinus1: roundForLog(length(current.axisRf) - 1)
+          b1Dir_normMinus1: state.rfEnabled ? roundForLog(length(current.b1Dir) - 1) : null,
+          effectiveFieldDir_normMinus1: current.effHz > EPS ? roundForLog(length(current.effDir) - 1) : null,
+          effectiveAxisRf_normMinus1: current.effHz > EPS ? roundForLog(length(current.axisRf) - 1) : null
         },
         targetDurationState: verificationSnapshot(duration, "analytic_target_duration", durationPhysics),
         storedDurationSampleError_norm: vectorDistanceFromLog(durationSample ? durationSample.m : null, durationPhysics.m),
@@ -1468,7 +1516,7 @@
         completed: "완료",
         interrupted: "중단됨"
       }[log.status] || log.status;
-      controls.logStatus.textContent = `${statusText}: ${log.conditions.coordinateFrameLabel}, 샘플 ${log.samples.length}개, B0 ${log.conditions.b0_T} T, Δf ${log.conditions.detune_Hz} Hz, B1 ${log.conditions.b1_microT} uT`;
+      controls.logStatus.textContent = `${statusText}: ${log.conditions.coordinateFrameLabel}, 샘플 ${log.samples.length}개, B0 ${log.conditions.b0_T} T, Δf ${log.conditions.detune_Hz} Hz, 적용 B1 ${log.conditions.appliedB1_microT} uT${log.conditions.rfEnabled?"":" (RF OFF)"}`;
       controls.logPreview.value = stringifyVerificationLog();
       controls.copyLog.disabled = false;
       controls.downloadLog.disabled = false;
@@ -1508,6 +1556,8 @@
           b0_T: roundForLog(state.b0),
           detune_Hz: roundForLog(state.detuneHz),
           b1_microT: roundForLog(state.b1MicroT),
+          rfEnabled: state.rfEnabled,
+          appliedB1_microT: state.rfEnabled ? roundForLog(state.b1MicroT) : 0,
           requestedFlip_deg: roundForLog(state.flipDeg),
           playback_msPerSecond: roundForLog(state.timeScaleMsPerSec)
         },
@@ -1517,7 +1567,7 @@
           fRf_MHz: roundForLog(p0.fRfMHz),
           f1_Hz: roundForLog(p0.f1Hz),
           effectiveNutation_Hz: roundForLog(p0.effHz),
-          detuneOverF1: roundForLog(p0.detuneHz / Math.max(1, p0.f1Hz)),
+          detuneOverF1: p0.f1Hz > EPS ? roundForLog(p0.detuneHz / p0.f1Hz) : null,
           effectiveAxisTilt_deg: roundForLog(p0.axisTiltDeg),
           targetPulseDuration_s: roundForLog(p0.pulseDurationS),
           targetPulseDuration_ms: roundForLog(p0.pulseDurationS * 1000),
@@ -1682,6 +1732,7 @@
     }
 
     function drawRF(p, zLayer = "all") {
+      if (!state.rfEnabled) return;
       const visual = fieldVisual(p);
       const b1Tip = visual.b1Tip;
       const rfAlpha = 0.96;
@@ -1711,6 +1762,7 @@
     }
 
     function drawEffectiveField(p, zLayer = "all") {
+      if (p.effHz <= EPS) return;
       if (state.frameMode !== "rf") return;
       if (!controls.showEffective.checked) return;
       const visual = fieldVisual(p);
@@ -1870,14 +1922,16 @@
       controls.rfMetric.textContent = `${detuneText}`;
       controls.nutationMetric.textContent = `${p.f1Hz.toFixed(1)} Hz`;
       controls.rfFlipMetric.textContent = `${p.plannedFlipDeg.toFixed(0)}° / ${state.flipDeg.toFixed(0)}°`;
-      controls.magMetric.textContent = `${p.mVisual.z.toFixed(3)} / ${p.mxyVisual.toFixed(3)}`;
+      controls.magMetric.textContent = `${p.m.z.toFixed(3)} / ${p.mxy.toFixed(3)}`;
+      document.getElementById("learningReadout").textContent = `${state.rfEnabled?"RF ON 설정":"RF OFF 비교"} · 누적 ${p.plannedFlipDeg.toFixed(0)}° / 실제 기울기 ${p.actualTiltDeg.toFixed(1)}°. Mz/M0=${p.m.z.toFixed(3)}, Mxy/M0=${p.mxy.toFixed(3)}. ${state.running?"물리 시간 진행 중":state.completed?"기준 시간 끝점에서 관찰 정지":"관찰 준비 또는 일시정지"}.`;
+      canvas.setAttribute("aria-label", `RF 공명 도식. ${state.rfEnabled?"RF ON":"RF OFF"}, offset ${state.detuneHz} Hz, ${frameModeText()}, 실제 기울기 ${p.actualTiltDeg.toFixed(1)}도, Mz/M0 ${p.m.z.toFixed(3)}, Mxy/M0 ${p.mxy.toFixed(3)}.`);
       controls.pulseMetric.textContent = durationText;
 
       controls.frameOutput.textContent = `${frameModeText()} (${formatFrequencyMHz(p.frameFrequencyMHz)})`;
       controls.f0Output.textContent = formatFrequencyMHz(p.f0MHz);
       controls.rfOutput.textContent = formatFrequencyMHz(p.fRfMHz);
-      controls.detuneRatioOutput.textContent = `${ratio.toFixed(2)}`;
-      controls.tiltOutput.textContent = inRfFrame ? `${p.axisTiltDeg.toFixed(1)}°` : "RF 기준 전용";
+      controls.detuneRatioOutput.textContent = state.rfEnabled ? `${ratio.toFixed(2)}` : "RF OFF · 비율 미정의";
+      controls.tiltOutput.textContent = inRfFrame ? p.effHz > EPS ? `${p.axisTiltDeg.toFixed(1)}°` : "유효장 없음" : "RF 기준 전용";
       controls.actualFlipOutput.textContent = `${p.actualTiltDeg.toFixed(1)}°`;
       controls.elapsedOutput.textContent = elapsedText;
       controls.durationOutput.textContent = durationText;
@@ -1902,6 +1956,10 @@
         controls.start.textContent = "RF pulse 실행";
         controls.pulseState.textContent = "평형 상태";
       }
+      if (!state.rfEnabled) {
+        if (!state.running && !state.completed && state.pulseTime <= EPS) controls.start.textContent = "RF OFF 비교 실행";
+        controls.pulseState.textContent = state.running ? "RF OFF: 기준 시간 동안 RF를 가하지 않습니다." : state.completed ? "RF OFF 비교 완료: 초기 +z 자화가 유지됩니다." : "RF OFF 비교: 같은 기준 시간의 자화 변화를 관찰합니다.";
+      }
     }
 
     function resetPulse(keepCompleted = false) {
@@ -1920,6 +1978,7 @@
       controls.b0.value = String(state.b0);
       state.detuneHz = Number(controls.detune.value);
       state.b1MicroT = clamp(Math.round(Number(controls.b1.value)), B1_MIN_MICRO_T, B1_MAX_MICRO_T);
+      state.rfEnabled = !document.getElementById("rfOffControl").checked;
       controls.b1.value = String(state.b1MicroT);
       state.flipDeg = Number(controls.flip.value);
       state.timeScaleMsPerSec = quantize(
@@ -1939,6 +1998,8 @@
       controls.detune.value = String(DEFAULT_DETUNE_HZ);
       controls.b1.value = String(DEFAULT_B1_MICRO_T);
       controls.flip.value = String(DEFAULT_FLIP_DEG);
+      document.getElementById("rfOffControl").checked = false;
+      document.getElementById("rfQuizFeedback").textContent = "답을 고르면 설명이 나타납니다.";
       controls.timeScale.value = String(DEFAULT_TIME_SCALE_MS_PER_SEC);
       syncFromControls();
     }
@@ -2024,6 +2085,9 @@
     });
 
     controls.start.addEventListener("click", startOrPause);
+    document.getElementById("rfOffControl").addEventListener("change", syncFromControls);
+    document.getElementById("quizNegative").addEventListener("click", () => {document.getElementById("rfQuizFeedback").textContent="맞습니다. Δf=fRF−f0이므로 RF계에서 B_eff,z=−Δf/γ̄입니다. offset +1000 Hz에서 RF 프레임을 선택해 −z 성분을 확인하세요.";});
+    document.getElementById("quizPositive").addEventListener("click", () => {document.getElementById("rfQuizFeedback").textContent="다시 확인하세요. 이 페이지의 offset은 fRF−f0입니다. 따라서 유효장 z성분은 반대 부호입니다. 문헌이 반대 정의를 쓰면 변환식도 함께 바뀝니다.";});
     controls.reset.addEventListener("click", restoreDefaultSettings);
     controls.copyLog.addEventListener("click", copyVerificationLog);
     controls.downloadLog.addEventListener("click", downloadVerificationLog);

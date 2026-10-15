@@ -1,0 +1,1911 @@
+{
+  "browser": "155.0.8059.40",
+  "tolerances": {
+    "table": 0.0005,
+    "bar": 1E-08,
+    "gray": 1
+  },
+  "results": [
+    {
+      "label": "1920 default T1W",
+      "state": {
+        "tr": 500,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          0.455,
+          0.807,
+          0.257
+        ],
+        [
+          0.85,
+          0.311,
+          0.861,
+          0.228
+        ],
+        [
+          1,
+          0.114,
+          0.993,
+          0.113
+        ]
+      ],
+      "bars": [
+        0.25687221223104284,
+        0.22782849612144715,
+        0.11333740343829043
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.1142, 단순 회복 근사 0.1175입니다. TR 500 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 백질 WM → 회백질 GM → 뇌척수액 CSF. CSF 회복 11%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 500, TE 15 ms. 백질 WM 신호 0.257, 회백질 GM 신호 0.228, 뇌척수액 CSF 신호 0.113. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          66,
+          66,
+          66,
+          255
+        ],
+        [
+          58,
+          58,
+          58,
+          255
+        ],
+        [
+          29,
+          29,
+          29,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ],
+      "markers": [
+        {
+          "id": "recoveryPlot",
+          "tissue": 0,
+          "value": 0.4546552278756342,
+          "pixel": [
+            37,
+            99,
+            235,
+            255
+          ]
+        },
+        {
+          "id": "recoveryPlot",
+          "tissue": 1,
+          "value": 0.31141052736845287,
+          "pixel": [
+            180,
+            83,
+            9,
+            255
+          ]
+        },
+        {
+          "id": "recoveryPlot",
+          "tissue": 2,
+          "value": 0.11419062956254983,
+          "pixel": [
+            8,
+            127,
+            117,
+            255
+          ]
+        },
+        {
+          "id": "decayPlot",
+          "tissue": 0,
+          "value": 0.8071177470091635,
+          "pixel": [
+            37,
+            99,
+            235,
+            255
+          ]
+        },
+        {
+          "id": "decayPlot",
+          "tissue": 1,
+          "value": 0.8607079764257332,
+          "pixel": [
+            180,
+            83,
+            9,
+            255
+          ]
+        },
+        {
+          "id": "decayPlot",
+          "tissue": 2,
+          "value": 0.9925280548191386,
+          "pixel": [
+            8,
+            127,
+            117,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "label": "1920 short TR",
+      "state": {
+        "tr": 200,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          0.207,
+          0.807,
+          0.117
+        ],
+        [
+          0.85,
+          0.133,
+          0.861,
+          0.097
+        ],
+        [
+          1,
+          0.045,
+          0.993,
+          0.045
+        ]
+      ],
+      "bars": [
+        0.11668471161874557,
+        0.09706480223548059,
+        0.044862386089786946
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.0452, 단순 회복 근사 0.0488입니다. TR 200 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 백질 WM → 회백질 GM → 뇌척수액 CSF. CSF 회복 5%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 200, TE 15 ms. 백질 WM 신호 0.117, 회백질 GM 신호 0.097, 뇌척수액 CSF 신호 0.045. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          30,
+          30,
+          30,
+          255
+        ],
+        [
+          25,
+          25,
+          25,
+          255
+        ],
+        [
+          11,
+          11,
+          11,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 long TR",
+      "state": {
+        "tr": 12000,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          1,
+          0.807,
+          0.565
+        ],
+        [
+          0.85,
+          1,
+          0.861,
+          0.732
+        ],
+        [
+          1,
+          0.95,
+          0.993,
+          0.943
+        ]
+      ],
+      "bars": [
+        0.5649822468185487,
+        0.731529269723273,
+        0.9429275123804197
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9500, 단순 회복 근사 0.9502입니다. TR 12,000 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 95%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 12000, TE 15 ms. 백질 WM 신호 0.565, 회백질 GM 신호 0.732, 뇌척수액 CSF 신호 0.943. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          144,
+          144,
+          144,
+          255
+        ],
+        [
+          187,
+          187,
+          187,
+          255
+        ],
+        [
+          240,
+          240,
+          240,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 T2W",
+      "state": {
+        "tr": 6000,
+        "te": 100,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          0.999,
+          0.24,
+          0.168
+        ],
+        [
+          0.85,
+          0.989,
+          0.368,
+          0.309
+        ],
+        [
+          1,
+          0.771,
+          0.951,
+          0.734
+        ]
+      ],
+      "bars": [
+        0.1676509744516964,
+        0.30935959735772456,
+        0.7336419489672159
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.7713, 단순 회복 근사 0.7769입니다. TR 6,000 / TE 100 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 77%, T2 잔존 95%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 6000, TE 100 ms. 백질 WM 신호 0.168, 회백질 GM 신호 0.309, 뇌척수액 CSF 신호 0.734. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          43,
+          43,
+          43,
+          255
+        ],
+        [
+          79,
+          79,
+          79,
+          255
+        ],
+        [
+          187,
+          187,
+          187,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 longer TE",
+      "state": {
+        "tr": 6000,
+        "te": 180,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          0.999,
+          0.076,
+          0.053
+        ],
+        [
+          0.85,
+          0.989,
+          0.165,
+          0.139
+        ],
+        [
+          1,
+          0.767,
+          0.914,
+          0.701
+        ]
+      ],
+      "bars": [
+        0.05346176527534907,
+        0.13891390373662474,
+        0.7007249050129797
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.7667, 단순 회복 근사 0.7769입니다. TR 6,000 / TE 180 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 77%, T2 잔존 91%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 6000, TE 180 ms. 백질 WM 신호 0.053, 회백질 GM 신호 0.139, 뇌척수액 CSF 신호 0.701. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          14,
+          14,
+          14,
+          255
+        ],
+        [
+          35,
+          35,
+          35,
+          255
+        ],
+        [
+          179,
+          179,
+          179,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 PDW",
+      "state": {
+        "tr": 10000,
+        "te": 10,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          1,
+          0.867,
+          0.607
+        ],
+        [
+          0.85,
+          1,
+          0.905,
+          0.769
+        ],
+        [
+          1,
+          0.918,
+          0.995,
+          0.913
+        ]
+      ],
+      "bars": [
+        0.6068122400819738,
+        0.7687581363092966,
+        0.913132564541113
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9177, 단순 회복 근사 0.9179입니다. TR 10,000 / TE 10 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 92%, T2 잔존 100%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 10000, TE 10 ms. 백질 WM 신호 0.607, 회백질 GM 신호 0.769, 뇌척수액 CSF 신호 0.913. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          155,
+          155,
+          155,
+          255
+        ],
+        [
+          196,
+          196,
+          196,
+          255
+        ],
+        [
+          233,
+          233,
+          233,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 PDW equal PD",
+      "state": {
+        "tr": 10000,
+        "te": 10,
+        "equalPD": true
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          1,
+          1,
+          0.867,
+          0.867
+        ],
+        [
+          1,
+          1,
+          0.905,
+          0.904
+        ],
+        [
+          1,
+          0.918,
+          0.995,
+          0.913
+        ]
+      ],
+      "bars": [
+        0.8668746286885338,
+        0.9044213368344667,
+        0.913132564541113
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9177, 단순 회복 근사 0.9179입니다. TR 10,000 / TE 10 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 92%, T2 잔존 100%. 밀도 차이를 숨겼습니다. 남은 차이는 T1·T2와 촬영 시간에서 옵니다.",
+      "phantomLabel": "합성 영상. TR 10000, TE 10 ms. 백질 WM 신호 0.867, 회백질 GM 신호 0.904, 뇌척수액 CSF 신호 0.913. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          221,
+          221,
+          221,
+          255
+        ],
+        [
+          231,
+          231,
+          231,
+          255
+        ],
+        [
+          233,
+          233,
+          233,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 boundary",
+      "state": {
+        "tr": 200,
+        "te": 180,
+        "equalPD": true
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          1,
+          0.036,
+          0.076,
+          0.003
+        ],
+        [
+          1,
+          0.02,
+          0.165,
+          0.003
+        ],
+        [
+          1,
+          0.005,
+          0.914,
+          0.005
+        ]
+      ],
+      "bars": [
+        0.002730870436027586,
+        0.0032518699098010497,
+        0.005008397177137869
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.0055, 단순 회복 근사 0.0488입니다. TR 200 / TE 180 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 1%, T2 잔존 91%. 밀도 차이를 숨겼습니다. 남은 차이는 T1·T2와 촬영 시간에서 옵니다.",
+      "phantomLabel": "합성 영상. TR 200, TE 180 ms. 백질 WM 신호 0.003, 회백질 GM 신호 0.003, 뇌척수액 CSF 신호 0.005. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          1,
+          1,
+          1,
+          255
+        ],
+        [
+          1,
+          1,
+          1,
+          255
+        ],
+        [
+          1,
+          1,
+          1,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 upper boundary",
+      "state": {
+        "tr": 12000,
+        "te": 180,
+        "equalPD": true
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          1,
+          1,
+          0.076,
+          0.076
+        ],
+        [
+          1,
+          1,
+          0.165,
+          0.165
+        ],
+        [
+          1,
+          0.948,
+          0.914,
+          0.866
+        ]
+      ],
+      "bars": [
+        0.07642625804421406,
+        0.16528037067527848,
+        0.8663584338125543
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9479, 단순 회복 근사 0.9502입니다. TR 12,000 / TE 180 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 95%, T2 잔존 91%. 밀도 차이를 숨겼습니다. 남은 차이는 T1·T2와 촬영 시간에서 옵니다.",
+      "phantomLabel": "합성 영상. TR 12000, TE 180 ms. 백질 WM 신호 0.076, 회백질 GM 신호 0.165, 뇌척수액 CSF 신호 0.866. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          19,
+          19,
+          19,
+          255
+        ],
+        [
+          42,
+          42,
+          42,
+          255
+        ],
+        [
+          221,
+          221,
+          221,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "1920 reset",
+      "state": {
+        "tr": 500,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          0.455,
+          0.807,
+          0.257
+        ],
+        [
+          0.85,
+          0.311,
+          0.861,
+          0.228
+        ],
+        [
+          1,
+          0.114,
+          0.993,
+          0.113
+        ]
+      ],
+      "bars": [
+        0.25687221223104284,
+        0.22782849612144715,
+        0.11333740343829043
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.1142, 단순 회복 근사 0.1175입니다. TR 500 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 백질 WM → 회백질 GM → 뇌척수액 CSF. CSF 회복 11%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 500, TE 15 ms. 백질 WM 신호 0.257, 회백질 GM 신호 0.228, 뇌척수액 CSF 신호 0.113. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          66,
+          66,
+          66,
+          255
+        ],
+        [
+          58,
+          58,
+          58,
+          255
+        ],
+        [
+          29,
+          29,
+          29,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 default T1W",
+      "state": {
+        "tr": 500,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          0.455,
+          0.807,
+          0.257
+        ],
+        [
+          0.85,
+          0.311,
+          0.861,
+          0.228
+        ],
+        [
+          1,
+          0.114,
+          0.993,
+          0.113
+        ]
+      ],
+      "bars": [
+        0.25687221223104284,
+        0.22782849612144715,
+        0.11333740343829043
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.1142, 단순 회복 근사 0.1175입니다. TR 500 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 백질 WM → 회백질 GM → 뇌척수액 CSF. CSF 회복 11%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 500, TE 15 ms. 백질 WM 신호 0.257, 회백질 GM 신호 0.228, 뇌척수액 CSF 신호 0.113. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          66,
+          66,
+          66,
+          255
+        ],
+        [
+          58,
+          58,
+          58,
+          255
+        ],
+        [
+          29,
+          29,
+          29,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ],
+      "markers": [
+        {
+          "id": "recoveryPlot",
+          "tissue": 0,
+          "value": 0.4546552278756342,
+          "pixel": [
+            37,
+            99,
+            235,
+            255
+          ]
+        },
+        {
+          "id": "recoveryPlot",
+          "tissue": 1,
+          "value": 0.31141052736845287,
+          "pixel": [
+            180,
+            83,
+            9,
+            255
+          ]
+        },
+        {
+          "id": "recoveryPlot",
+          "tissue": 2,
+          "value": 0.11419062956254983,
+          "pixel": [
+            8,
+            127,
+            117,
+            255
+          ]
+        },
+        {
+          "id": "decayPlot",
+          "tissue": 0,
+          "value": 0.8071177470091635,
+          "pixel": [
+            37,
+            99,
+            235,
+            255
+          ]
+        },
+        {
+          "id": "decayPlot",
+          "tissue": 1,
+          "value": 0.8607079764257332,
+          "pixel": [
+            180,
+            83,
+            9,
+            255
+          ]
+        },
+        {
+          "id": "decayPlot",
+          "tissue": 2,
+          "value": 0.9925280548191386,
+          "pixel": [
+            8,
+            127,
+            117,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "label": "390 short TR",
+      "state": {
+        "tr": 200,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          0.207,
+          0.807,
+          0.117
+        ],
+        [
+          0.85,
+          0.133,
+          0.861,
+          0.097
+        ],
+        [
+          1,
+          0.045,
+          0.993,
+          0.045
+        ]
+      ],
+      "bars": [
+        0.11668471161874557,
+        0.09706480223548059,
+        0.044862386089786946
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.0452, 단순 회복 근사 0.0488입니다. TR 200 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 백질 WM → 회백질 GM → 뇌척수액 CSF. CSF 회복 5%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 200, TE 15 ms. 백질 WM 신호 0.117, 회백질 GM 신호 0.097, 뇌척수액 CSF 신호 0.045. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          30,
+          30,
+          30,
+          255
+        ],
+        [
+          25,
+          25,
+          25,
+          255
+        ],
+        [
+          11,
+          11,
+          11,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 long TR",
+      "state": {
+        "tr": 12000,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          1,
+          0.807,
+          0.565
+        ],
+        [
+          0.85,
+          1,
+          0.861,
+          0.732
+        ],
+        [
+          1,
+          0.95,
+          0.993,
+          0.943
+        ]
+      ],
+      "bars": [
+        0.5649822468185487,
+        0.731529269723273,
+        0.9429275123804197
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9500, 단순 회복 근사 0.9502입니다. TR 12,000 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 95%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 12000, TE 15 ms. 백질 WM 신호 0.565, 회백질 GM 신호 0.732, 뇌척수액 CSF 신호 0.943. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          144,
+          144,
+          144,
+          255
+        ],
+        [
+          187,
+          187,
+          187,
+          255
+        ],
+        [
+          240,
+          240,
+          240,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 T2W",
+      "state": {
+        "tr": 6000,
+        "te": 100,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          0.999,
+          0.24,
+          0.168
+        ],
+        [
+          0.85,
+          0.989,
+          0.368,
+          0.309
+        ],
+        [
+          1,
+          0.771,
+          0.951,
+          0.734
+        ]
+      ],
+      "bars": [
+        0.1676509744516964,
+        0.30935959735772456,
+        0.7336419489672159
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.7713, 단순 회복 근사 0.7769입니다. TR 6,000 / TE 100 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 77%, T2 잔존 95%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 6000, TE 100 ms. 백질 WM 신호 0.168, 회백질 GM 신호 0.309, 뇌척수액 CSF 신호 0.734. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          43,
+          43,
+          43,
+          255
+        ],
+        [
+          79,
+          79,
+          79,
+          255
+        ],
+        [
+          187,
+          187,
+          187,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 longer TE",
+      "state": {
+        "tr": 6000,
+        "te": 180,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          0.999,
+          0.076,
+          0.053
+        ],
+        [
+          0.85,
+          0.989,
+          0.165,
+          0.139
+        ],
+        [
+          1,
+          0.767,
+          0.914,
+          0.701
+        ]
+      ],
+      "bars": [
+        0.05346176527534907,
+        0.13891390373662474,
+        0.7007249050129797
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.7667, 단순 회복 근사 0.7769입니다. TR 6,000 / TE 180 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 77%, T2 잔존 91%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 6000, TE 180 ms. 백질 WM 신호 0.053, 회백질 GM 신호 0.139, 뇌척수액 CSF 신호 0.701. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          14,
+          14,
+          14,
+          255
+        ],
+        [
+          35,
+          35,
+          35,
+          255
+        ],
+        [
+          179,
+          179,
+          179,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 PDW",
+      "state": {
+        "tr": 10000,
+        "te": 10,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          1,
+          0.867,
+          0.607
+        ],
+        [
+          0.85,
+          1,
+          0.905,
+          0.769
+        ],
+        [
+          1,
+          0.918,
+          0.995,
+          0.913
+        ]
+      ],
+      "bars": [
+        0.6068122400819738,
+        0.7687581363092966,
+        0.913132564541113
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9177, 단순 회복 근사 0.9179입니다. TR 10,000 / TE 10 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 92%, T2 잔존 100%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 10000, TE 10 ms. 백질 WM 신호 0.607, 회백질 GM 신호 0.769, 뇌척수액 CSF 신호 0.913. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          155,
+          155,
+          155,
+          255
+        ],
+        [
+          196,
+          196,
+          196,
+          255
+        ],
+        [
+          233,
+          233,
+          233,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 PDW equal PD",
+      "state": {
+        "tr": 10000,
+        "te": 10,
+        "equalPD": true
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          1,
+          1,
+          0.867,
+          0.867
+        ],
+        [
+          1,
+          1,
+          0.905,
+          0.904
+        ],
+        [
+          1,
+          0.918,
+          0.995,
+          0.913
+        ]
+      ],
+      "bars": [
+        0.8668746286885338,
+        0.9044213368344667,
+        0.913132564541113
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9177, 단순 회복 근사 0.9179입니다. TR 10,000 / TE 10 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 92%, T2 잔존 100%. 밀도 차이를 숨겼습니다. 남은 차이는 T1·T2와 촬영 시간에서 옵니다.",
+      "phantomLabel": "합성 영상. TR 10000, TE 10 ms. 백질 WM 신호 0.867, 회백질 GM 신호 0.904, 뇌척수액 CSF 신호 0.913. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          221,
+          221,
+          221,
+          255
+        ],
+        [
+          231,
+          231,
+          231,
+          255
+        ],
+        [
+          233,
+          233,
+          233,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 boundary",
+      "state": {
+        "tr": 200,
+        "te": 180,
+        "equalPD": true
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          1,
+          0.036,
+          0.076,
+          0.003
+        ],
+        [
+          1,
+          0.02,
+          0.165,
+          0.003
+        ],
+        [
+          1,
+          0.005,
+          0.914,
+          0.005
+        ]
+      ],
+      "bars": [
+        0.002730870436027586,
+        0.0032518699098010497,
+        0.005008397177137869
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.0055, 단순 회복 근사 0.0488입니다. TR 200 / TE 180 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 1%, T2 잔존 91%. 밀도 차이를 숨겼습니다. 남은 차이는 T1·T2와 촬영 시간에서 옵니다.",
+      "phantomLabel": "합성 영상. TR 200, TE 180 ms. 백질 WM 신호 0.003, 회백질 GM 신호 0.003, 뇌척수액 CSF 신호 0.005. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          1,
+          1,
+          1,
+          255
+        ],
+        [
+          1,
+          1,
+          1,
+          255
+        ],
+        [
+          1,
+          1,
+          1,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 upper boundary",
+      "state": {
+        "tr": 12000,
+        "te": 180,
+        "equalPD": true
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          1,
+          1,
+          0.076,
+          0.076
+        ],
+        [
+          1,
+          1,
+          0.165,
+          0.165
+        ],
+        [
+          1,
+          0.948,
+          0.914,
+          0.866
+        ]
+      ],
+      "bars": [
+        0.07642625804421406,
+        0.16528037067527848,
+        0.8663584338125543
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.9479, 단순 회복 근사 0.9502입니다. TR 12,000 / TE 180 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 95%, T2 잔존 91%. 밀도 차이를 숨겼습니다. 남은 차이는 T1·T2와 촬영 시간에서 옵니다.",
+      "phantomLabel": "합성 영상. TR 12000, TE 180 ms. 백질 WM 신호 0.076, 회백질 GM 신호 0.165, 뇌척수액 CSF 신호 0.866. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          19,
+          19,
+          19,
+          255
+        ],
+        [
+          42,
+          42,
+          42,
+          255
+        ],
+        [
+          221,
+          221,
+          221,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "390 reset",
+      "state": {
+        "tr": 500,
+        "te": 15,
+        "equalPD": false
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "controlsParent": "mobileControls",
+      "rows": [
+        [
+          0.7,
+          0.455,
+          0.807,
+          0.257
+        ],
+        [
+          0.85,
+          0.311,
+          0.861,
+          0.228
+        ],
+        [
+          1,
+          0.114,
+          0.993,
+          0.113
+        ]
+      ],
+      "bars": [
+        0.25687221223104284,
+        0.22782849612144715,
+        0.11333740343829043
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.1142, 단순 회복 근사 0.1175입니다. TR 500 / TE 15 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 백질 WM → 회백질 GM → 뇌척수액 CSF. CSF 회복 11%, T2 잔존 99%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 500, TE 15 ms. 백질 WM 신호 0.257, 회백질 GM 신호 0.228, 뇌척수액 CSF 신호 0.113. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          66,
+          66,
+          66,
+          255
+        ],
+        [
+          58,
+          58,
+          58,
+          255
+        ],
+        [
+          29,
+          29,
+          29,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 332,
+          "height": 195,
+          "nonblank": true
+        }
+      ]
+    },
+    {
+      "label": "resize mobile to desktop",
+      "state": {
+        "tr": 6000,
+        "te": 100,
+        "equalPD": false
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "controlsParent": "desktopControls",
+      "rows": [
+        [
+          0.7,
+          0.999,
+          0.24,
+          0.168
+        ],
+        [
+          0.85,
+          0.989,
+          0.368,
+          0.309
+        ],
+        [
+          1,
+          0.771,
+          0.951,
+          0.734
+        ]
+      ],
+      "bars": [
+        0.1676509744516964,
+        0.30935959735772456,
+        0.7336419489672159
+      ],
+      "parameters": [
+        "백질 WM0.7080070",
+        "회백질 GM0.851,300100",
+        "뇌척수액 CSF1.004,0002,000"
+      ],
+      "approx": "현재 CSF 회복계수는 SE 식 0.7713, 단순 회복 근사 0.7769입니다. TR 6,000 / TE 100 ms. TR 200 / TE 180 ms에서 차이를 비교해 보세요.",
+      "summary": "밝기 순서: 뇌척수액 CSF → 회백질 GM → 백질 WM. CSF 회복 77%, T2 잔존 95%. 현재 밝기는 PD·T1 회복·T2 감쇠가 함께 만든 결과입니다.",
+      "phantomLabel": "합성 영상. TR 6000, TE 100 ms. 백질 WM 신호 0.168, 회백질 GM 신호 0.309, 뇌척수액 CSF 신호 0.734. 고정 표시 창 0–1.",
+      "pixels": [
+        [
+          43,
+          43,
+          43,
+          255
+        ],
+        [
+          79,
+          79,
+          79,
+          255
+        ],
+        [
+          187,
+          187,
+          187,
+          255
+        ]
+      ],
+      "canvases": [
+        {
+          "id": "phantom",
+          "width": 290,
+          "height": 290,
+          "nonblank": true
+        },
+        {
+          "id": "recoveryPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        },
+        {
+          "id": "decayPlot",
+          "width": 591,
+          "height": 348,
+          "nonblank": true
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,6008 @@
+{
+  "date": "2026-10-15",
+  "tolerance": 1e-8,
+  "cases": 240,
+  "maxError": 1.4074638726555588e-14,
+  "rows": [
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": -0.008924801028189055,
+        "y": -0.029439679487043142,
+        "z": 0.9995267145996186
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 1.7628538741513178,
+      "reference": {
+        "x": -0.008924801028188637,
+        "y": -0.029439679487043284,
+        "z": 0.9995267145996236
+      },
+      "error": 5.015482781592962e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0.007410574986065171,
+        "y": -0.029856828030929514,
+        "z": 0.9995267145996186
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 1.7628538741513178,
+      "reference": {
+        "x": 0.007410574986065602,
+        "y": -0.02985682803092942,
+        "z": 0.9995267145996236
+      },
+      "error": 5.015441756754148e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": -0.033137465185988806,
+        "y": -0.049643232471885096,
+        "z": 0.9982171396398631
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 3.421848990014266,
+      "reference": {
+        "x": -0.033137465185989125,
+        "y": -0.049643232471886574,
+        "z": 0.9982171396398711
+      },
+      "error": 8.135358191753616e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0.027915546048602555,
+        "y": -0.05275665283183342,
+        "z": 0.9982171396398631
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 3.421848990014266,
+      "reference": {
+        "x": 0.027915546048603704,
+        "y": -0.052756652831834394,
+        "z": 0.9982171396398711
+      },
+      "error": 8.133893997473351e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": -0.09727877185319936,
+        "y": -0.04048347780916472,
+        "z": 0.9944334711639626
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 6.048274970777301,
+      "reference": {
+        "x": -0.09727877185320746,
+        "y": -0.04048347780916328,
+        "z": 0.9944334711639564
+      },
+      "error": 1.0315148325244726e-14
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0.08715920524551325,
+        "y": -0.059205948770055535,
+        "z": 0.9944334711639626
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": 0.9979667709590684
+      },
+      "actualTilt": 6.048274970777301,
+      "reference": {
+        "x": 0.08715920524551649,
+        "y": -0.05920594877006309,
+        "z": 0.9944334711639564
+      },
+      "error": 1.0305817996178412e-14
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": -0.32624144701919977,
+        "y": 0.05489868485678346,
+        "z": 0.9436909730668267
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 19.31905609626969,
+      "reference": {
+        "x": -0.326241447019201,
+        "y": 0.05489868485678274,
+        "z": 0.9436909730668259
+      },
+      "error": 1.6174619737278591e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0.33062682644370456,
+        "y": 0.011543352543790093,
+        "z": 0.9436909730668267
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 19.31905609626969,
+      "reference": {
+        "x": 0.3306268264437056,
+        "y": 0.011543352543791047,
+        "z": 0.9436909730668259
+      },
+      "error": 1.6207071270635802e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": -0.007598244940637081,
+        "y": -0.02179888998210287,
+        "z": 0.9997335020240994
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 1.3228001424545022,
+      "reference": {
+        "x": -0.0075982449406365666,
+        "y": -0.021798889982104802,
+        "z": 0.999733502024101
+      },
+      "error": 2.6023790884392916e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0.0015647825015730782,
+        "y": -0.02303207299294861,
+        "z": 0.9997335020240994
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 1.3228001424545022,
+      "reference": {
+        "x": 0.0015647825015743097,
+        "y": -0.02303207299295018,
+        "z": 0.999733502024101
+      },
+      "error": 2.5999787051626287e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": -0.028625268098812932,
+        "y": -0.03607456099379762,
+        "z": 0.998939047227295
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 2.639514553641711,
+      "reference": {
+        "x": -0.028625268098813068,
+        "y": -0.036074560993796884,
+        "z": 0.9989390472272965
+      },
+      "error": 1.7248735070003118e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0.006229541999765176,
+        "y": -0.04562863937372342,
+        "z": 0.998939047227295
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": 0.9858053229846598
+      },
+      "actualTilt": 2.639514553641711,
+      "reference": {
+        "x": 0.006229541999764554,
+        "y": -0.04562863937372301,
+        "z": 0.9989390472272965
+      },
+      "error": 1.723440789077005e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": -0.7706651143791079,
+        "y": 0.47233337983840024,
+        "z": 0.42775747774816353
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 64.67467199260602,
+      "reference": {
+        "x": -0.7706651143791104,
+        "y": 0.47233337983840457,
+        "z": 0.4277574777481657
+      },
+      "error": 5.473129267888829e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0.8960018876443091,
+        "y": 0.11918119637075486,
+        "z": 0.4277574777481634
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 64.67467199260604,
+      "reference": {
+        "x": 0.8960018876443141,
+        "y": 0.11918119637075314,
+        "z": 0.4277574777481657
+      },
+      "error": 5.75337667289152e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": -0.21837514625504825,
+        "y": -0.09122441231729764,
+        "z": 0.9715916848632711
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 13.689698927868777,
+      "reference": {
+        "x": -0.21837514625504625,
+        "y": -0.0912244123173008,
+        "z": 0.9715916848632764
+      },
+      "error": 6.511862647779083e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0.04448097266022731,
+        "y": -0.2324457807226239,
+        "z": 0.9715916848632711
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 13.689698927868777,
+      "reference": {
+        "x": 0.044480972660230815,
+        "y": -0.2324457807226226,
+        "z": 0.9715916848632764
+      },
+      "error": 6.5099732248681985e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": -0.3233502270973785,
+        "y": 0.3160559776105834,
+        "z": 0.8919379180484999
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 26.88221593830316,
+      "reference": {
+        "x": -0.3233502270973815,
+        "y": 0.3160559776105843,
+        "z": 0.891937918048497
+      },
+      "error": 4.255211271505921e-15
+    },
+    {
+      "detuneHz": -2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0.16920068964869298,
+        "y": -0.4193064237162538,
+        "z": 0.8919379180484999
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": 0.8427829339922785
+      },
+      "actualTilt": 26.88221593830316,
+      "reference": {
+        "x": 0.16920068964869536,
+        "y": -0.4193064237162557,
+        "z": 0.891937918048497
+      },
+      "error": 4.194307390262517e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": -0.003932581797983464,
+        "y": -0.021009018569549735,
+        "z": 0.9997715518753002
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 1.224728141507818,
+      "reference": {
+        "x": -0.003932581797984457,
+        "y": -0.021009018569547528,
+        "z": 0.9997715518753018
+      },
+      "error": 2.8759582060016564e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0.0017884895214896367,
+        "y": -0.02129895222974685,
+        "z": 0.9997715518753002
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 1.224728141507818,
+      "reference": {
+        "x": 0.0017884895214880926,
+        "y": -0.021298952229744983,
+        "z": 0.9997715518753018
+      },
+      "error": 2.878237443509393e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": -0.015403305114448759,
+        "y": -0.03970511905810974,
+        "z": 0.9990927092678301
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 2.440864713183961,
+      "reference": {
+        "x": -0.015403305114447841,
+        "y": -0.03970511905811099,
+        "z": 0.9990927092678441
+      },
+      "error": 1.4074406823514436e-14
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0.007103056632942897,
+        "y": -0.04199172387907739,
+        "z": 0.9990927092678301
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 2.440864713183961,
+      "reference": {
+        "x": 0.007103056632944324,
+        "y": -0.041991723879078,
+        "z": 0.9990927092678441
+      },
+      "error": 1.4074638726555588e-14
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": -0.05657837272423999,
+        "y": -0.06196507291131229,
+        "z": 0.9964733902513266
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 4.813312369051213,
+      "reference": {
+        "x": -0.056578372724239684,
+        "y": -0.0619650729113099,
+        "z": 0.9964733902513233
+      },
+      "error": 4.11307874708789e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0.02760935153299862,
+        "y": -0.07923702561905374,
+        "z": 0.9964733902513266
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": 0.9919406984040162
+      },
+      "actualTilt": 4.813312369051213,
+      "reference": {
+        "x": 0.027609351532996654,
+        "y": -0.07923702561905233,
+        "z": 0.9964733902513233
+      },
+      "error": 4.119086921652708e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": -0.34256673308116914,
+        "y": -0.22343138995169598,
+        "z": 0.9125384635018671
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 24.14146018669033,
+      "reference": {
+        "x": -0.34256673308116914,
+        "y": -0.22343138995169354,
+        "z": 0.9125384635018655
+      },
+      "error": 2.8951074449790722e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0.2567717098235987,
+        "y": -0.31834233407436946,
+        "z": 0.9125384635018671
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 24.14146018669033,
+      "reference": {
+        "x": 0.25677170982359626,
+        "y": -0.3183423340743697,
+        "z": 0.9125384635018655
+      },
+      "error": 2.9036099814798757e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": -0.5627569865770996,
+        "y": 0.21815422349107488,
+        "z": 0.7973163166721652
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 37.125411720537635,
+      "reference": {
+        "x": -0.5627569865770979,
+        "y": 0.2181542234910786,
+        "z": 0.7973163166721615
+      },
+      "error": 5.479881357555634e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0.595043695837014,
+        "y": -0.10104301664617246,
+        "z": 0.7973163166721652
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 37.125411720537635,
+      "reference": {
+        "x": 0.5950436958370132,
+        "y": -0.10104301664617642,
+        "z": 0.7973163166721615
+      },
+      "error": 5.447044973583974e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0.1304418457390097,
+        "y": 0.15299260947307008,
+        "z": 0.9795806175740827
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 11.598470332806317,
+      "reference": {
+        "x": 0.1304418457390107,
+        "y": 0.15299260947306814,
+        "z": 0.9795806175740858
+      },
+      "error": 3.799575089812902e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0.05994772043773406,
+        "y": 0.19190644722754424,
+        "z": 0.9795806175740827
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": 0.9465937822369634
+      },
+      "actualTilt": 11.598470332806317,
+      "reference": {
+        "x": 0.05994772043773574,
+        "y": 0.19190644722754283,
+        "z": 0.9795806175740858
+      },
+      "error": 3.806184130421862e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": -0.447149087757926,
+        "y": 0.8857015825072612,
+        "z": 0.12486152354263416
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 82.82724098609357,
+      "reference": {
+        "x": -0.4471490877579277,
+        "y": 0.8857015825072526,
+        "z": 0.1248615235426378
+      },
+      "error": 9.447869108454131e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0.6851340964407403,
+        "y": 0.7176356107614383,
+        "z": 0.12486152354263416
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 82.82724098609357,
+      "reference": {
+        "x": 0.6851340964407316,
+        "y": 0.717635610761437,
+        "z": 0.1248615235426378
+      },
+      "error": 9.486115134741486e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": -0.2536094643729427,
+        "y": 0.9668413185199984,
+        "z": -0.030001739665885027
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 91.71923104127768,
+      "reference": {
+        "x": -0.25360946437294135,
+        "y": 0.9668413185200048,
+        "z": -0.030001739665883733
+      },
+      "error": 6.5951996443293345e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0.8063744541264676,
+        "y": -0.5906438312123998,
+        "z": -0.030001739665885034
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 91.71923104127768,
+      "reference": {
+        "x": 0.8063744541264704,
+        "y": -0.5906438312124054,
+        "z": -0.030001739665883733
+      },
+      "error": 6.34123889732352e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0.8766376539220643,
+        "y": -0.3743439447612921,
+        "z": 0.3022797293014762
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 72.40541947501498,
+      "reference": {
+        "x": 0.876637653922061,
+        "y": -0.3743439447612873,
+        "z": 0.30227972930147595
+      },
+      "error": 5.80854638767337e-15
+    },
+    {
+      "detuneHz": -1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0.546235778786159,
+        "y": 0.7811871985813033,
+        "z": 0.3022797293014762
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": 0.6164439076183641
+      },
+      "actualTilt": 72.40541947501498,
+      "reference": {
+        "x": 0.5462357787861537,
+        "y": 0.7811871985813011,
+        "z": 0.30227972930147595
+      },
+      "error": 5.735674758739812e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 2.83276944882399e-16
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 89.99999999999999,
+      "reference": {
+        "x": 0,
+        "y": 1.0000000000000002,
+        "z": 2.7767366314254693e-15
+      },
+      "error": 2.5033267894926904e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 2.83276944882399e-16
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 89.99999999999999,
+      "reference": {
+        "x": 0,
+        "y": 1.0000000000000002,
+        "z": 2.7767366314254693e-15
+      },
+      "error": 2.5033267894926904e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 5.66553889764798e-16,
+        "z": -1
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 180,
+      "reference": {
+        "x": 0,
+        "y": 1.1232334506949826e-14,
+        "z": -0.9999999999999988
+      },
+      "error": 1.073547000940589e-14
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 5.66553889764798e-16,
+        "z": -1
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 180,
+      "reference": {
+        "x": 0,
+        "y": 1.1232334506949826e-14,
+        "z": -0.9999999999999988
+      },
+      "error": 1.073547000940589e-14
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": -1.133107779529596e-15,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 4.083322222014907e-15,
+        "z": 0.9999999999999971
+      },
+      "error": 5.961835730075973e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": -1.133107779529596e-15,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 4.083322222014907e-15,
+        "z": 0.9999999999999971
+      },
+      "error": 5.961835730075973e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 6.123233995736766e-17
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 90,
+      "reference": {
+        "x": 0,
+        "y": 1.0000000000000002,
+        "z": 2.9262345584840643e-15
+      },
+      "error": 2.873593833292939e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 6.123233995736766e-17
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 90,
+      "reference": {
+        "x": 0,
+        "y": 1.0000000000000002,
+        "z": 2.9262345584840643e-15
+      },
+      "error": 2.873593833292939e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 1.2246467991473532e-16,
+        "z": -1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 180,
+      "reference": {
+        "x": 0,
+        "y": 1.1497855618991526e-14,
+        "z": -0.9999999999999988
+      },
+      "error": 1.1440758679640255e-14
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 1.2246467991473532e-16,
+        "z": -1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 180,
+      "reference": {
+        "x": 0,
+        "y": 1.1497855618991526e-14,
+        "z": -0.9999999999999988
+      },
+      "error": 1.1440758679640255e-14
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": -2.4492935982947064e-16,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 2.915961742899764e-15,
+        "z": 0.9999999999999973
+      },
+      "error": 4.134123935043789e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": -2.4492935982947064e-16,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 2.915961742899764e-15,
+        "z": 0.9999999999999973
+      },
+      "error": 4.134123935043789e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 6.123233995736766e-17
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 90,
+      "reference": {
+        "x": 0,
+        "y": 1.0000000000000002,
+        "z": 2.665172227876711e-15
+      },
+      "error": 2.6133898956094776e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 1,
+        "z": 6.123233995736766e-17
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 90,
+      "reference": {
+        "x": 0,
+        "y": 1.0000000000000002,
+        "z": 2.665172227876711e-15
+      },
+      "error": 2.6133898956094776e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 1.2246467991473532e-16,
+        "z": -1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 180,
+      "reference": {
+        "x": 0,
+        "y": 1.0937079150327711e-14,
+        "z": -0.9999999999999987
+      },
+      "error": 1.0896367430497789e-14
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 1.2246467991473532e-16,
+        "z": -1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 180,
+      "reference": {
+        "x": 0,
+        "y": 1.0937079150327711e-14,
+        "z": -0.9999999999999987
+      },
+      "error": 1.0896367430497789e-14
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": -2.4492935982947064e-16,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 4.742571352994718e-15,
+        "z": 0.9999999999999961
+      },
+      "error": 6.322535418992741e-15
+    },
+    {
+      "detuneHz": 0,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": -2.4492935982947064e-16,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 4.742571352994718e-15,
+        "z": 0.9999999999999961
+      },
+      "error": 6.322535418992741e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0.003932581797983464,
+        "y": -0.021009018569549735,
+        "z": 0.9997715518753002
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 1.224728141507818,
+      "reference": {
+        "x": 0.003932581797984457,
+        "y": -0.021009018569547528,
+        "z": 0.9997715518753018
+      },
+      "error": 2.8759582060016564e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": -0.0017884895214896367,
+        "y": -0.02129895222974685,
+        "z": 0.9997715518753002
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 1.224728141507818,
+      "reference": {
+        "x": -0.0017884895214880926,
+        "y": -0.021298952229744983,
+        "z": 0.9997715518753018
+      },
+      "error": 2.878237443509393e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0.015403305114448759,
+        "y": -0.03970511905810974,
+        "z": 0.9990927092678301
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 2.440864713183961,
+      "reference": {
+        "x": 0.015403305114447841,
+        "y": -0.03970511905811099,
+        "z": 0.9990927092678441
+      },
+      "error": 1.4074406823514436e-14
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": -0.007103056632942897,
+        "y": -0.04199172387907739,
+        "z": 0.9990927092678301
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 2.440864713183961,
+      "reference": {
+        "x": -0.007103056632944324,
+        "y": -0.041991723879078,
+        "z": 0.9990927092678441
+      },
+      "error": 1.4074638726555588e-14
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0.05657837272423999,
+        "y": -0.06196507291131229,
+        "z": 0.9964733902513266
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 4.813312369051213,
+      "reference": {
+        "x": 0.056578372724239684,
+        "y": -0.0619650729113099,
+        "z": 0.9964733902513233
+      },
+      "error": 4.11307874708789e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": -0.02760935153299862,
+        "y": -0.07923702561905374,
+        "z": 0.9964733902513266
+      },
+      "axisRf": {
+        "x": 0.12670300252856123,
+        "y": 0,
+        "z": -0.9919406984040162
+      },
+      "actualTilt": 4.813312369051213,
+      "reference": {
+        "x": -0.027609351532996654,
+        "y": -0.07923702561905233,
+        "z": 0.9964733902513233
+      },
+      "error": 4.119086921652708e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0.34256673308116914,
+        "y": -0.22343138995169598,
+        "z": 0.9125384635018671
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 24.14146018669033,
+      "reference": {
+        "x": 0.34256673308116914,
+        "y": -0.22343138995169354,
+        "z": 0.9125384635018655
+      },
+      "error": 2.8951074449790722e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": -0.2567717098235987,
+        "y": -0.31834233407436946,
+        "z": 0.9125384635018671
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 24.14146018669033,
+      "reference": {
+        "x": -0.25677170982359626,
+        "y": -0.3183423340743697,
+        "z": 0.9125384635018655
+      },
+      "error": 2.9036099814798757e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0.5627569865770996,
+        "y": 0.21815422349107488,
+        "z": 0.7973163166721652
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 37.125411720537635,
+      "reference": {
+        "x": 0.5627569865770979,
+        "y": 0.2181542234910786,
+        "z": 0.7973163166721615
+      },
+      "error": 5.479881357555634e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": -0.595043695837014,
+        "y": -0.10104301664617246,
+        "z": 0.7973163166721652
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 37.125411720537635,
+      "reference": {
+        "x": -0.5950436958370132,
+        "y": -0.10104301664617642,
+        "z": 0.7973163166721615
+      },
+      "error": 5.447044973583974e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": -0.1304418457390097,
+        "y": 0.15299260947307008,
+        "z": 0.9795806175740827
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 11.598470332806317,
+      "reference": {
+        "x": -0.1304418457390107,
+        "y": 0.15299260947306814,
+        "z": 0.9795806175740858
+      },
+      "error": 3.799575089812902e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": -0.05994772043773406,
+        "y": 0.19190644722754424,
+        "z": 0.9795806175740827
+      },
+      "axisRf": {
+        "x": 0.32242861447197907,
+        "y": 0,
+        "z": -0.9465937822369634
+      },
+      "actualTilt": 11.598470332806317,
+      "reference": {
+        "x": -0.05994772043773574,
+        "y": 0.19190644722754283,
+        "z": 0.9795806175740858
+      },
+      "error": 3.806184130421862e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0.447149087757926,
+        "y": 0.8857015825072612,
+        "z": 0.12486152354263416
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 82.82724098609357,
+      "reference": {
+        "x": 0.4471490877579277,
+        "y": 0.8857015825072526,
+        "z": 0.1248615235426378
+      },
+      "error": 9.447869108454131e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": -0.6851340964407403,
+        "y": 0.7176356107614383,
+        "z": 0.12486152354263416
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 82.82724098609357,
+      "reference": {
+        "x": -0.6851340964407316,
+        "y": 0.717635610761437,
+        "z": 0.1248615235426378
+      },
+      "error": 9.486115134741486e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0.2536094643729427,
+        "y": 0.9668413185199984,
+        "z": -0.030001739665885027
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 91.71923104127768,
+      "reference": {
+        "x": 0.25360946437294135,
+        "y": 0.9668413185200048,
+        "z": -0.030001739665883733
+      },
+      "error": 6.5951996443293345e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": -0.8063744541264676,
+        "y": -0.5906438312123998,
+        "z": -0.030001739665885034
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 91.71923104127768,
+      "reference": {
+        "x": -0.8063744541264704,
+        "y": -0.5906438312124054,
+        "z": -0.030001739665883733
+      },
+      "error": 6.34123889732352e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": -0.8766376539220643,
+        "y": -0.3743439447612921,
+        "z": 0.3022797293014762
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 72.40541947501498,
+      "reference": {
+        "x": -0.876637653922061,
+        "y": -0.3743439447612873,
+        "z": 0.30227972930147595
+      },
+      "error": 5.80854638767337e-15
+    },
+    {
+      "detuneHz": 1000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": -0.546235778786159,
+        "y": 0.7811871985813033,
+        "z": 0.3022797293014762
+      },
+      "axisRf": {
+        "x": 0.7873988244594997,
+        "y": 0,
+        "z": -0.6164439076183641
+      },
+      "actualTilt": 72.40541947501498,
+      "reference": {
+        "x": -0.5462357787861537,
+        "y": 0.7811871985813011,
+        "z": 0.30227972930147595
+      },
+      "error": 5.735674758739812e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": 0.008924801028189055,
+        "y": -0.029439679487043142,
+        "z": 0.9995267145996186
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 1.7628538741513178,
+      "reference": {
+        "x": 0.008924801028188637,
+        "y": -0.029439679487043284,
+        "z": 0.9995267145996236
+      },
+      "error": 5.015482781592962e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0019572162431202335,
+      "m": {
+        "x": -0.007410574986065171,
+        "y": -0.029856828030929514,
+        "z": 0.9995267145996186
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 1.7628538741513178,
+      "reference": {
+        "x": -0.007410574986065602,
+        "y": -0.02985682803092942,
+        "z": 0.9995267145996236
+      },
+      "error": 5.015441756754148e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": 0.033137465185988806,
+        "y": -0.049643232471885096,
+        "z": 0.9982171396398631
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 3.421848990014266,
+      "reference": {
+        "x": 0.033137465185989125,
+        "y": -0.049643232471886574,
+        "z": 0.9982171396398711
+      },
+      "error": 8.135358191753616e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.003914432486240467,
+      "m": {
+        "x": -0.027915546048602555,
+        "y": -0.05275665283183342,
+        "z": 0.9982171396398631
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 3.421848990014266,
+      "reference": {
+        "x": -0.027915546048603704,
+        "y": -0.052756652831834394,
+        "z": 0.9982171396398711
+      },
+      "error": 8.133893997473351e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": 0.09727877185319936,
+        "y": -0.04048347780916472,
+        "z": 0.9944334711639626
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 6.048274970777301,
+      "reference": {
+        "x": 0.09727877185320746,
+        "y": -0.04048347780916328,
+        "z": 0.9944334711639564
+      },
+      "error": 1.0315148325244726e-14
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 3,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.007828864972480934,
+      "m": {
+        "x": -0.08715920524551325,
+        "y": -0.059205948770055535,
+        "z": 0.9944334711639626
+      },
+      "axisRf": {
+        "x": 0.0637363637300553,
+        "y": 0,
+        "z": -0.9979667709590684
+      },
+      "actualTilt": 6.048274970777301,
+      "reference": {
+        "x": -0.08715920524551649,
+        "y": -0.05920594877006309,
+        "z": 0.9944334711639564
+      },
+      "error": 1.0305817996178412e-14
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": 0.32624144701919977,
+        "y": 0.05489868485678346,
+        "z": 0.9436909730668267
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 19.31905609626969,
+      "reference": {
+        "x": 0.326241447019201,
+        "y": 0.05489868485678274,
+        "z": 0.9436909730668259
+      },
+      "error": 1.6174619737278591e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007339560911700876,
+      "m": {
+        "x": -0.33062682644370456,
+        "y": 0.011543352543790093,
+        "z": 0.9436909730668267
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 19.31905609626969,
+      "reference": {
+        "x": -0.3306268264437056,
+        "y": 0.011543352543791047,
+        "z": 0.9436909730668259
+      },
+      "error": 1.6207071270635802e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": 0.007598244940637081,
+        "y": -0.02179888998210287,
+        "z": 0.9997335020240994
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 1.3228001424545022,
+      "reference": {
+        "x": 0.0075982449406365666,
+        "y": -0.021798889982104802,
+        "z": 0.999733502024101
+      },
+      "error": 2.6023790884392916e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0014679121823401751,
+      "m": {
+        "x": -0.0015647825015730782,
+        "y": -0.02303207299294861,
+        "z": 0.9997335020240994
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 1.3228001424545022,
+      "reference": {
+        "x": -0.0015647825015743097,
+        "y": -0.02303207299295018,
+        "z": 0.999733502024101
+      },
+      "error": 2.5999787051626287e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": 0.028625268098812932,
+        "y": -0.03607456099379762,
+        "z": 0.998939047227295
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 2.639514553641711,
+      "reference": {
+        "x": 0.028625268098813068,
+        "y": -0.036074560993796884,
+        "z": 0.9989390472272965
+      },
+      "error": 1.7248735070003118e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 8,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0029358243646803502,
+      "m": {
+        "x": -0.006229541999765176,
+        "y": -0.04562863937372342,
+        "z": 0.998939047227295
+      },
+      "axisRf": {
+        "x": 0.16789242143441258,
+        "y": 0,
+        "z": -0.9858053229846598
+      },
+      "actualTilt": 2.639514553641711,
+      "reference": {
+        "x": -0.006229541999764554,
+        "y": -0.04562863937372301,
+        "z": 0.9989390472272965
+      },
+      "error": 1.723440789077005e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 0,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": 0.7706651143791079,
+        "y": 0.47233337983840024,
+        "z": 0.42775747774816353
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 64.67467199260602,
+      "reference": {
+        "x": 0.7706651143791104,
+        "y": 0.47233337983840457,
+        "z": 0.4277574777481657
+      },
+      "error": 5.473129267888829e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 90,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.00019572162431202335,
+      "m": {
+        "x": -0.8960018876443091,
+        "y": 0.11918119637075486,
+        "z": 0.4277574777481634
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 64.67467199260604,
+      "reference": {
+        "x": -0.8960018876443141,
+        "y": 0.11918119637075314,
+        "z": 0.4277574777481657
+      },
+      "error": 5.75337667289152e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": 0.21837514625504825,
+        "y": -0.09122441231729764,
+        "z": 0.9715916848632711
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 13.689698927868777,
+      "reference": {
+        "x": 0.21837514625504625,
+        "y": -0.0912244123173008,
+        "z": 0.9715916848632764
+      },
+      "error": 6.511862647779083e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 180,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0003914432486240467,
+      "m": {
+        "x": -0.04448097266022731,
+        "y": -0.2324457807226239,
+        "z": 0.9715916848632711
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 13.689698927868777,
+      "reference": {
+        "x": -0.044480972660230815,
+        "y": -0.2324457807226226,
+        "z": 0.9715916848632764
+      },
+      "error": 6.5099732248681985e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": false,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "axisRf": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "actualTilt": 0,
+      "reference": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "error": 0
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "larmor",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": 0.3233502270973785,
+        "y": 0.3160559776105834,
+        "z": 0.8919379180484999
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 26.88221593830316,
+      "reference": {
+        "x": 0.3233502270973815,
+        "y": 0.3160559776105843,
+        "z": 0.891937918048497
+      },
+      "error": 4.255211271505921e-15
+    },
+    {
+      "detuneHz": 2000,
+      "b1MicroT": 30,
+      "flipDeg": 360,
+      "rfEnabled": true,
+      "frameMode": "rf",
+      "durationS": 0.0007828864972480934,
+      "m": {
+        "x": -0.16920068964869298,
+        "y": -0.4193064237162538,
+        "z": 0.8919379180484999
+      },
+      "axisRf": {
+        "x": 0.5382535890928798,
+        "y": 0,
+        "z": -0.8427829339922785
+      },
+      "actualTilt": 26.88221593830316,
+      "reference": {
+        "x": -0.16920068964869536,
+        "y": -0.4193064237162557,
+        "z": 0.891937918048497
+      },
+      "error": 4.194307390262517e-15
+    }
+  ]
+}

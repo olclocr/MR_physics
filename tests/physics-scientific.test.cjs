@@ -184,9 +184,9 @@ test('physical-pendulum hoop inertia, energy conservation, and logical-pixel cam
   assert.match(page.html,/metersToScene\(WHEEL_RADIUS_M\)/);
 });
 test('published report pages and simulation assets have resolvable local links',()=>{
-  const report=path.join(docs,'verification/2026-10-14');
+  const catalog=require('../scripts/validation-reports.json');
   const files=[...['index.html','proton_spin_mr_simulation.html','frequency_phase_encoding_visualization.html'].map(f=>path.join(docs,f)),
-    ...['index.html','original-review.html','fix-validation.html',...['B00','B02','B03','B04'].map(id=>`${id}-physics.html`)].map(f=>path.join(report,f))];
+    ...Object.entries(catalog.dates).flatMap(([date,reports])=>reports.map(report=>path.join(docs,'verification',date,report.target)))];
   for(const file of files) {
     const html=fs.readFileSync(file,'utf8');
     for(const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {

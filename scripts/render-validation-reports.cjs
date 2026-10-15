@@ -2,21 +2,22 @@
 // Source Markdown remains the canonical, GitHub-renderable document.
 const fs = require('node:fs');
 const path = require('node:path');
-const folder = path.resolve(__dirname, '../docs/verification/2026-10-14');
+const catalog = require('./validation-reports.json');
 const escape = text => text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-function inline(text) {
+function renderInline(text, resolveLink) {
   const tokens=[];
   text=text.replace(/`([^`]+)`/g,(_,code)=>{tokens.push(`<code>${escape(code)}</code>`);return `@@TOKEN${tokens.length-1}@@`;});
   text=escape(text);
   text=text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,(_,alt,url)=>`<img src="${url}" alt="${alt}" loading="lazy">`);
   text=text.replace(/\[([^\]]+)\]\(([^)]+)\)/g,(_,label,url)=>{
-    if (!/^[a-z]+:/i.test(url)) url=url.replace(/\.md(?=$|#)/,'.html');
+    url=resolveLink(url);
     return `<a href="${url}">${label}</a>`;
   });
   text=text.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
   return text.replace(/@@TOKEN(\d+)@@/g,(_,i)=>tokens[Number(i)]);
 }
-function render(markdown) {
+function render(markdown, resolveLink) {
+  const inline = text => renderInline(text, resolveLink);
   const lines=markdown.replace(/\r/g,'').split('\n'),out=[];
   for(let i=0;i<lines.length;) {
     const line=lines[i];
@@ -48,16 +49,67 @@ function render(markdown) {
   return out.join('\n');
 }
 const css=`body{margin:0;background:#f7f9fc;color:#172033;font:16px/1.85 system-ui,"Malgun Gothic",sans-serif}main{max-width:960px;margin:auto;padding:36px 24px 72px}nav{display:flex;gap:18px;flex-wrap:wrap;border-bottom:1px solid #d8e0eb;padding-bottom:20px;margin-bottom:28px}a{color:#1b5fc3}h1{font-size:32px;line-height:1.3}h2{margin-top:40px}p,li{overflow-wrap:anywhere}p:has(>strong:first-child){margin-top:28px}code{background:#eaf0f7;border-radius:4px;padding:2px 5px;font-size:.92em}pre{background:#172033;color:#e7edf5;padding:20px;overflow:auto;line-height:1.55;border-radius:8px}pre code{background:none;padding:0}img{display:block;max-width:100%;height:auto;border:1px solid #d8e0eb;border-radius:8px;margin:20px auto}.table{overflow:auto}table{width:100%;border-collapse:collapse;background:white}th,td{border:1px solid #d8e0eb;text-align:left;padding:10px 14px}th{background:#eaf0f7}blockquote{margin:20px 0;padding:12px 20px;background:#e8f0ff;border-left:4px solid #2563eb}footer{margin-top:50px;color:#627189;font-size:14px}@media(max-width:600px){main{padding:24px 16px}h1{font-size:26px}}`;
-const requested = new Set(process.argv.slice(2));
-const documents = [['README.md','index.html'],['original-review.md','original-review.html'],['fix-validation.md','fix-validation.html'],
-  ...['B00','B02','B03','B04'].map(id => [`${id}-physics.md`, `${id}-physics.html`])];
-let rendered = 0;
-for(const [source,target] of documents) {
-  if (requested.size && !requested.has(source)) continue;
-  const markdown=fs.readFileSync(path.join(folder,source),'utf8');
-  const title=markdown.match(/^# (.+)/m)?.[1]||'검증 보고서';
-  const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}</style></head><body><main><nav><a href="../../index.html">시뮬레이션 홈</a><a href="index.html">검증 기록</a><a href="original-review.html">수정 전 보고서</a><a href="fix-validation.html">수정 후 검산</a><a href="${source}">Markdown 원문</a></nav>${render(markdown)}<footer>2026-10-14 · MR Physics 과학 검증 기록</footer></main></body></html>\n`;
-  fs.writeFileSync(path.join(folder,target),html);
-  rendered++;
+// Only registered Markdown reports have HTML counterparts. Keep other Markdown links intact.
+function buildReports({baseDir = path.resolve(__dirname, '../docs/verification'), reports = catalog,
+  date = reports.defaultDate, sources = []} = {}) {
+  if (!Object.hasOwn(reports.dates, date)) throw new Error(`Unregistered report date: ${date}`);
+  const documents = reports.dates[date];
+  for (const source of sources) {
+    if (!documents.some(doc => doc.source === source)) throw new Error(`Unregistered report source: ${source} (${date})`);
+  }
+  const folder = path.join(baseDir, date);
+  const targets = new Map(Object.entries(reports.dates).flatMap(([day, docs]) =>
+    docs.map(doc => [path.resolve(baseDir, day, doc.source), path.resolve(baseDir, day, doc.target)])));
+  const resolveLink = url => {
+    if (/^(?:[a-z]+:|\/\/|#)/i.test(url)) return url;
+    const [, file, suffix] = url.match(/^([^?#]*)(.*)$/);
+    const target = targets.get(path.resolve(folder, file));
+    return target ? path.relative(folder, target).split(path.sep).join('/') + suffix : url;
+  };
+  // Read every registered input before rendering or writing anything, including on partial runs.
+  const inputs = documents.map(doc => ({...doc, markdown: fs.readFileSync(path.join(folder, doc.source), 'utf8')}));
+  const selected = inputs.filter(doc => !sources.length || sources.includes(doc.source));
+  const output = selected.map(({source, target, markdown}) => {
+    const title=markdown.match(/^# (.+)/m)?.[1]||'검증 보고서';
+    const nav=documents.map(doc => `<a href="${escape(doc.target)}">${escape(doc.label)}</a>`).join('');
+    const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}</style></head><body><main><nav><a href="../../index.html">시뮬레이션 홈</a>${nav}<a href="${escape(source)}">Markdown 원문</a></nav>${render(markdown, resolveLink)}<footer>${escape(date)} · MR Physics 과학 검증 기록</footer></main></body></html>\n`;
+    return {source: path.join(folder, source), target: path.join(folder, target), html};
+  });
+  const generated = new Set(output.map(doc => path.resolve(doc.target)));
+  for (const doc of output) {
+    for (const [, url] of doc.html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
+      if (/^(?:[a-z]+:|\/\/)/i.test(url)) continue;
+      const local = path.resolve(folder, url.split(/[?#]/)[0]);
+      if (!generated.has(local) && !fs.existsSync(local)) throw new Error(`Missing report link: ${doc.source} -> ${url}`);
+    }
+  }
+  return output;
 }
-console.log(`Rendered ${rendered} verification documents.`);
+function renderReports(options) {
+  const output = buildReports(options);
+  for (const doc of output) fs.writeFileSync(doc.target, doc.html);
+  return output;
+}
+function parseArgs(args) {
+  let date = catalog.defaultDate;
+  const sources = [];
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--date') {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(args[i + 1] || '')) throw new Error('--date requires YYYY-MM-DD');
+      date = args[++i];
+    } else if (args[i].startsWith('-')) throw new Error(`Unknown option: ${args[i]}`);
+    else sources.push(args[i]);
+  }
+  return {date, sources};
+}
+if (require.main === module) {
+  try {
+    const options = parseArgs(process.argv.slice(2));
+    const output = renderReports(options);
+    console.log(`Rendered ${output.length} verification documents (${options.date}).`);
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  }
+}
+module.exports = {buildReports, renderReports, parseArgs};

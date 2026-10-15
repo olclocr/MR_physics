@@ -1,0 +1,58 @@
+{
+  "baseCommit": "e14d801e1b5ddda098a6cd3d6cfe0a9296774500",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "scripts/render-validation-reports.cjs",
+      "sha256": "1F924892D211B4C24BD9BBAA309266574750C0C36ED3A8B7383C8EA038B2BFBA"
+    },
+    {
+      "path": "scripts/validation-reports.json",
+      "sha256": "F88811B45CD2E00FE4384D4507F04AAADC173A3EA5A7C42ABBB62EA970C8F4DB"
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "32DE530117A94CE26D2125CAD636DD7889891CEA56399BEED5E57A1D34531A00"
+    },
+    {
+      "path": "tests/physics-scientific.test.cjs",
+      "sha256": "79B21A9F8B6353EE3B1F7221CB53184816CAF86DCD23AEB7C98B61C7F7234EE6"
+    },
+    {
+      "path": "tests/validation-reports.test.cjs",
+      "sha256": "6D1FC06F6D30D9D6A1C5CEC90864084FC52CC5D77FA0ADAE5E9A5E70E77C5D4C"
+    },
+    {
+      "path": "docs/verification/2026-10-14/README.md",
+      "sha256": "D784619B85935ABA0830993990B4F8F3F5175094A0D87C0298EC1D7EF10414C8"
+    },
+    {
+      "path": "docs/verification/2026-10-14/fix-validation.md",
+      "sha256": "F94AAD6CE26F0F2D05D0FCF51A54C9F478DCC83ACCC040ADF4BC6FF17F7803D6"
+    },
+    {
+      "path": "docs/verification/2026-10-14/original-review.md",
+      "sha256": "FEAF82F4342994474D8896E648AF21E942CCA9229BC3522D857376799F284EF2"
+    },
+    {
+      "path": "docs/verification/2026-10-14/contrast-chapter.md",
+      "sha256": "E907DA6200BBD41F0219EECAD5AE0FFE1BED7FB86FE769104771311A67B30BBC"
+    },
+    {
+      "path": "docs/verification/2026-10-14/index.html",
+      "sha256": "71BEA46554E585A8BA7970EDBFAAB179F9038ADCF8C5A64B666E39A052AF9328"
+    },
+    {
+      "path": "docs/verification/2026-10-14/fix-validation.html",
+      "sha256": "3F165D5FDC7C584F99398CB694C4632927621AEA5F853363FF3B61BC34905DD7"
+    },
+    {
+      "path": "docs/verification/2026-10-14/original-review.html",
+      "sha256": "64A01BDC849A7E1B068DF7F0ADF7AF710699EAFD7CFE49DA7AADCCB2240C75DA"
+    },
+    {
+      "path": "docs/verification/2026-10-14/contrast-chapter.html",
+      "sha256": "8B61901FDD323C571BC63D495F5730A19BA24E08CFC94ED7FE36241E008FD174"
+    }
+  ]
+}

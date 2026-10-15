@@ -1,0 +1,38 @@
+{
+  "baseCommit": "e14d801e1b5ddda098a6cd3d6cfe0a9296774500",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/contrast_weighting.html",
+      "sha256": "96A9CF46B0878F9B860FE01D1F178BF2D33640E89791B7EA6486F8E9E92EE439"
+    },
+    {
+      "path": "docs/assets/contrast-model.js",
+      "sha256": "1031A64A105C40C6913AF360A74AF85D08AC016FE8FFCDC3DCBD110DD1DDC04A"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "124D0CA1D1E528DC6BF61A2C80A1D454C574703DA50EBEF67F4A5221D1416856"
+    },
+    {
+      "path": "tests/contrast_weighting.test.cjs",
+      "sha256": "1C829C6986B03B8D364CA850AD589DE7C79A305F0AF5FD724A28D0D12A83C901"
+    },
+    {
+      "path": "tests/helpers/contrast-reference.cjs",
+      "sha256": "D4CE6094752352167E611401116D2CE444AE1E476D74794975B3F76EF6F881E0"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C01-numerical.cjs",
+      "sha256": "28D9560B0ACC0810E947F083CBB36A2B5EC739C41F480AB2136D043E4CDCD2D0"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C01-browser-check.js",
+      "sha256": "3AB11202CBF33E11292F0B059C1AB18F8FBC83E6C6B7F89A7F41AB45C50347E2"
+    },
+    {
+      "path": "scripts/validation-reports.json",
+      "sha256": "A49ED4367636CA0D321DA7BBEF268AD7B63F519D5C8FAF534C797B3B3A33678C"
+    }
+  ]
+}

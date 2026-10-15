@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const model = require('../docs/assets/contrast-model.js');
+const {relaxRK4, repeatedEcho} = require('./helpers/contrast-reference.cjs');
 const htmlPath = path.join(__dirname, '../docs/contrast_weighting.html');
 const html = fs.readFileSync(htmlPath, 'utf8');
 const near = (a,b,eps=1e-12) => assert.ok(Math.abs(a-b)<eps, `${a} != ${b}`);
@@ -12,7 +13,7 @@ const near = (a,b,eps=1e-12) => assert.ok(Math.abs(a-b)<eps, `${a} != ${b}`);
 test('SE recovery agrees with independent chronological relaxation and inversion', () => {
   // Start immediately after an ideal 90. Recover to TE/2, invert z,
   // recover to the following excitation. This does not reuse the SE formula.
-  for(const tissue of model.tissues) for(const tr of [200,500,6000,12000]) for(const te of [5,15,100,180]) {
+  for(const tissue of model.tissues) for(const tr of [200,500,6000,10000,12000]) for(const te of [5,10,15,100,180]) {
     const zBeforeRefocus=1-Math.exp(-(te/2)/tissue.t1);
     const zAfterRefocus=-zBeforeRefocus;
     const zAtNext90=1+(zAfterRefocus-1)*Math.exp(-(tr-te/2)/tissue.t1);
@@ -21,6 +22,27 @@ test('SE recovery agrees with independent chronological relaxation and inversion
     near(actual.signal,tissue.pd*zAtNext90*Math.exp(-te/tissue.t2));
     assert.ok(actual.signal>=0&&actual.signal<=1);
   }
+});
+
+test('repeated Bloch integration distinguishes steady-state echo, first shot, and recovery without refocusing', () => {
+  for(const tissue of model.tissues) for(const [tr,te] of [[500,15],[6000,100],[10000,10],[200,180],[12000,5],[200,200]]) {
+    const reference=repeatedEcho(tissue,tr,te), actual=model.signal(tissue,tr,te);
+    near(actual.recovery,reference.second.recovery,1e-8);
+    near(actual.signal,tissue.pd*reference.second.echo,1e-8);
+    near(model.signal(tissue,tr,te,true).signal,reference.second.echo,1e-8);
+    near(reference.first.echo,Math.exp(-te/tissue.t2),1e-8);
+    near(reference.first.before180Z,-reference.first.after180Z);
+    near(actual.approxRecovery,relaxRK4([0,0,0],tr,tissue.t1,tissue.t2)[2],1e-8);
+  }
+});
+
+test('recovery gaps can first grow with TR and the simple recovery approximation fails near long TE/short TR', () => {
+  const [wm,,csf]=model.tissues;
+  const gap=tr=>model.signal(wm,tr,15).recovery-model.signal(csf,tr,15).recovery;
+  assert.ok(gap(500)>gap(200));
+  assert.ok(gap(12000)<gap(6000));
+  const boundary=model.signal(csf,200,180);
+  assert.ok(boundary.approxRecovery>8*boundary.recovery);
 });
 
 test('contrast examples, monotonic signal loss and PD isolation support the lesson', () => {

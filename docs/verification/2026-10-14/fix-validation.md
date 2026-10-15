@@ -2,7 +2,9 @@
 
 수정 전 보고서는 원본 커밋 `0006c3b`의 감사 기록으로 보존했습니다. 아래는 그 결과에 따라 바꾼 구현과 검산입니다. 교육용 모델의 가정까지 모두 제거한 실제 장비 모델이라는 의미는 아닙니다.
 
-대상 구현 버전: [6e5e90a](https://github.com/olclocr/MR_physics/commit/6e5e90aed34548388805825f993c712ece2c74bd). 챕터별 수행 범위와 남은 검토는 [B00](B00-physics.md), [B02](B02-physics.md), [B03](B03-physics.md), [B04](B04-physics.md)에 구분해 기록했습니다.
+대상 구현 버전: [6e5e90a](https://github.com/olclocr/MR_physics/commit/6e5e90aed34548388805825f993c712ece2c74bd).
+
+> 2026-10-15 기록 정정(W00): 기존 B00/B02/B03/B04 개별 보고서 링크는 파일이 없는 잘못된 참조여서 제거했습니다. 이 문서의 당시 검산 기록을 보존하며, 챕터 전체의 통합 물리 재검토는 [물리 검증 계획](../../physics-validation-plan.md)의 재검토 대기 상태입니다. 아래 시험·브라우저 결과는 2026-10-14의 기록이며 이번 정정에서 새로 시행한 물리 검토가 아닙니다. 당시 원문에 연결된 MR 데스크톱·모바일 5개 화면은 현재 저장소에 보존되어 있지 않습니다. 아래에 원래 파일명을 남기고 존재하는 화면만 연결했습니다.
 
 | 원본 보고서 항목 | 수정 상태 |
 |---|---|
@@ -78,6 +80,4 @@ Water/fat은 동일한 T1/T2와 3.5 ppm 단일 fat peak의 위상 간섭 모델�
 
 ![동일 반지름 축척과 정상 세차 적용 범위](wheel-scale-fixed.jpg)
 
-![MR chemical preset: 정확한 TE 2.3 ms에서 자화 표시](mr-te-desktop.jpg)
-
-모바일 화면: [MR](mr-mobile.jpg), [RF 공명](rf-mobile.jpg), [공간 부호화](encoding-mobile.jpg), [바퀴](wheel-mobile.jpg).
+현재 보존되지 않은 화면: MR chemical preset의 정확한 TE 2.3 ms 데스크톱(`mr-te-desktop.jpg`), 모바일 MR(`mr-mobile.jpg`), RF 공명(`rf-mobile.jpg`), 공간 부호화(`encoding-mobile.jpg`), 바퀴(`wheel-mobile.jpg`). 당시 확인 서술은 위에 보존하지만 이 파일들을 현재 화면 근거로 열어 확인할 수는 없습니다.

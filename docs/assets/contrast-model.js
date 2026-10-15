@@ -1,5 +1,5 @@
 /* Educational ideal spin echo: ms, relative visible proton density, fixed M0 scale.
- * Shares the validated steady-state longitudinal factor with the spin page. */
+ * Shares the ideal steady-state longitudinal factor with the spin page. */
 (function (root, factory) {
   if (typeof module === "object" && module.exports) module.exports = factory(require("./mr-physics-models.js"));
   else root.MRContrast = factory(root.MRPhysics);
@@ -21,8 +21,9 @@
     }
     const pd = equalPD ? 1 : tissue.pd;
     const recovery = physics.spinEchoInitialMz(tr, te, tissue.t1);
+    const approxRecovery = 1 - Math.exp(-tr / tissue.t1);
     const decay = Math.exp(-te / tissue.t2);
-    return { pd, recovery, decay, signal: pd * Math.abs(recovery) * decay };
+    return { pd, recovery, approxRecovery, decay, signal: pd * Math.abs(recovery) * decay };
   }
   function signals(tr, te, equalPD = false) {
     return tissues.map(tissue => ({ ...tissue, ...signal(tissue, tr, te, equalPD) }));
