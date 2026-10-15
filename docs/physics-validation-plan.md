@@ -60,7 +60,7 @@
 | ID | 내용·모형 정합성 검토 | 독립 검산·확인할 비교 |
 |---|---|---|
 | C02 | **대상 버전 통과** — [W06 통합 검증](verification/2026-10-15/C02-physics.md). SE/GRE 재위상화의 차이, RF·gradient·echo 시간 기준 | isochromat 위상의 시간 순서 계산, TE에서 합성 신호, off-resonance 비교 |
-| C03 | T2와 T2*의 정의, 정적 불균일과 불가역 감쇠, SE가 회복시키는 범위 | 동일 ensemble의 FID/GRE/SE 비교, 불균일 0과 T2 감쇠만 있는 경우 |
+| C03 | **대상 버전 통과** — [W07 통합 검증](verification/2026-10-15/C03-physics.md). T2와 T2*의 정의, 정적 불균일과 불가역 감쇠, SE가 회복시키는 범위 | 동일 ensemble의 FID/GRE/SE 비교, 불균일 0과 T2 감쇠만 있는 경우 |
 | C04 | inversion 후 자화 부호, TI null, STIR/FLAIR 조건과 magnitude 표시 | 독립 IR 자화 계산, 긴/유한 TR, null 전후 부호·표시 확인 |
 | C05 | echo train·effective TE·k-space ordering, echo마다 달라지는 신호 | pulse·echo 순서 계산과 단순 참조 phantom, ordering 변경의 대비/blur 비교 |
 | C06 | spoiling·GRE 정상상태·flip angle, 이상적 모형의 적용 범위 | 반복 pulse 계산과 정상상태 해 대조, flip angle 극한과 최적점 확인 |
@@ -192,3 +192,5 @@
 | 2026-10-15 | W05 B04의 gradient→k/위상→ADC→복소 역변환·단위·표시·정답을 통합 대조. 부호·속도·0 위상·고정 창·명목 표식·실제 resize 오류를 수정·재검증하고 대상 버전 통과 |
 
 | 2026-10-15 | W06 C02 시간 순서 Bloch/독립 위상·단위·실제/유효 면적·도식·정답·실제 화면을 검토·수정·재검증. 대상 버전 통과. 외부 전문가 검토 미시행 |
+
+| 2026-10-15 | W07 C03 연속 Gaussian Fourier envelope·T2 손실·refocusing·단일 지수의 조건을 독립 주파수 적분과 실제 화면·정답으로 검토. 대상 버전 통과. 외부 전문가 검토 미시행 |

@@ -2,18 +2,63 @@
   "defaultDate": "2026-10-14",
   "dates": {
     "2026-10-14": [
-      { "source": "README.md", "target": "index.html", "label": "검증 기록" },
-      { "source": "original-review.md", "target": "original-review.html", "label": "수정 전 보고서" },
-      { "source": "fix-validation.md", "target": "fix-validation.html", "label": "수정 후 검산" },
-      { "source": "contrast-chapter.md", "target": "contrast-chapter.html", "label": "C01 구현 검증" }
+      {
+        "source": "README.md",
+        "target": "index.html",
+        "label": "검증 기록"
+      },
+      {
+        "source": "original-review.md",
+        "target": "original-review.html",
+        "label": "수정 전 보고서"
+      },
+      {
+        "source": "fix-validation.md",
+        "target": "fix-validation.html",
+        "label": "수정 후 검산"
+      },
+      {
+        "source": "contrast-chapter.md",
+        "target": "contrast-chapter.html",
+        "label": "C01 구현 검증"
+      }
     ],
     "2026-10-15": [
-      { "source": "C01-physics.md", "target": "C01-physics.html", "label": "C01 통합 물리 검증" },
-      { "source": "B02-physics.md", "target": "B02-physics.html", "label": "B02 RF 공명 검증" },
-      { "source": "B03-physics.md", "target": "B03-physics.html", "label": "B03 자화·이완·SE 검증" },
-      { "source": "B01-physics.md", "target": "B01-physics.html", "label": "B01 스핀·열평형 검증" },
-      { "source": "B04-physics.md", "target": "B04-physics.html", "label": "B04 공간 부호화 검증" },
-      { "source": "C02-physics.md", "target": "C02-physics.html", "label": "C02 SE/GRE 재위상화 검증" }
+      {
+        "source": "C01-physics.md",
+        "target": "C01-physics.html",
+        "label": "C01 통합 물리 검증"
+      },
+      {
+        "source": "B02-physics.md",
+        "target": "B02-physics.html",
+        "label": "B02 RF 공명 검증"
+      },
+      {
+        "source": "B03-physics.md",
+        "target": "B03-physics.html",
+        "label": "B03 자화·이완·SE 검증"
+      },
+      {
+        "source": "B01-physics.md",
+        "target": "B01-physics.html",
+        "label": "B01 스핀·열평형 검증"
+      },
+      {
+        "source": "B04-physics.md",
+        "target": "B04-physics.html",
+        "label": "B04 공간 부호화 검증"
+      },
+      {
+        "source": "C02-physics.md",
+        "target": "C02-physics.html",
+        "label": "C02 SE/GRE 재위상화 검증"
+      },
+      {
+        "source": "C03-physics.md",
+        "target": "C03-physics.html",
+        "label": "C03 T2/T2*·탈위상 검증"
+      }
     ]
   }
 }

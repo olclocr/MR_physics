@@ -30,6 +30,9 @@ This repository contains the following interactive simulations located in the [d
 8. **SE and GRE Rephasing** ([spin_gradient_echo.html](docs/spin_gradient_echo.html))
    - Compare RF refocusing and gradient reversal with linked timing, phasors, complex signals, gradient areas, and static off-resonance examples.
 
+9. **T2 and Static Dephasing** ([t2_t2star_dephasing.html](docs/t2_t2star_dephasing.html))
+   - Separate irreversible T2 loss from continuous Gaussian static dephasing, compare FID/GRE and SE envelopes, and inspect when a single exponential T2* model applies.
+
 ## Curriculum and Development
 
 - [Learning roadmap, implementation status, and future chapters](docs/learning-roadmap.md)
@@ -103,6 +106,9 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 8. **C02 SE와 GRE 재위상화** ([spin_gradient_echo.html](docs/spin_gradient_echo.html))
    - RF 반전과 gradient reversal을 시간도식·벡터·신호로 비교하고 면적 불균형과 정적 주파수 분포의 영향을 관찰합니다.
 
+9. **C03 T2와 T2*·정적 탈위상** ([t2_t2star_dephasing.html](docs/t2_t2star_dephasing.html))
+   - 같은 T2에서 주파수 분포만 바꿔 보고, 180°가 되돌리는 정적 위상과 남는 T2 감쇠를 인자·곡선·신호로 구분합니다.
+
 ## 학습 구성과 개발 방향
 
 - [전체 학습 챕터 · 구현 현황 · 앞으로 할 일](docs/learning-roadmap.md)
@@ -145,3 +151,5 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 본 프로젝트는 [MIT 라이선스](LICENSE) 하에 배포됩니다.
 
 [C02 SE/GRE physical review · 물리 검증](docs/verification/2026-10-15/C02-physics.md): independent time-ordered/analytic comparisons and desktop/mobile controls.
+
+[C03 T2/T2* physical review · 물리 검증](docs/verification/2026-10-15/C03-physics.md): continuous Gaussian envelopes checked by independent frequency integration and desktop/mobile controls.

@@ -1,0 +1,1254 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "label": "1920 default",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 beforeRF",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "t2": 0.779774892741951,
+        "fidCoherence": 0.4576308575307041,
+        "seCoherence": 0.4576308575307041,
+        "fid": 0.35684905284641183,
+        "se": 0.35684905284641183,
+        "seTimeMs": 19.9,
+        "afterRF": false
+      },
+      "values": [
+        "0.7798",
+        "0.3568",
+        "0.3568",
+        "0.7798",
+        "0.4576",
+        "0.4576"
+      ],
+      "bars": [
+        77.9775,
+        45.7631,
+        45.7631
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 3.3306690738754696e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 afterRF",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "t2": 0.7788007830714049,
+        "fidCoherence": 0.4540407387272451,
+        "seCoherence": 0.4540407387272451,
+        "fid": 0.35360728286709764,
+        "se": 0.35360728286709764,
+        "seTimeMs": -20,
+        "afterRF": true
+      },
+      "values": [
+        "0.7788",
+        "0.3536",
+        "0.3536",
+        "0.7788",
+        "0.4540",
+        "0.4540"
+      ],
+      "bars": [
+        77.8801,
+        45.4041,
+        45.4041
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 5.551115123125783e-17,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 atTE",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 zero",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 0,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 1,
+        "seCoherence": 1,
+        "fid": 0.6065306597126334,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "1.0000",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        100,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 4.3298697960381105e-15
+    },
+    {
+      "label": "1920 shortT2",
+      "state": {
+        "t2Ms": 40,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.36787944117144233,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.015634529076572853,
+        "se": 0.36787944117144233,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.3679",
+        "0.0156",
+        "0.3679",
+        "0.3679",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        36.7879,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 3.885780586188048e-16,
+      "curveError": 5.329070518200751e-15
+    },
+    {
+      "label": "1920 echo",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 t2Ms Home",
+      "state": {
+        "t2Ms": 20,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.1353352832366127,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.005751621819668287,
+        "se": 0.1353352832366127,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.1353",
+        "0.0058",
+        "0.1353",
+        "0.1353",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        13.5335,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "label": "1920 t2Ms End",
+      "state": {
+        "t2Ms": 200,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.8187307530779818,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.034795284357618424,
+        "se": 0.8187307530779818,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.8187",
+        "0.0348",
+        "0.8187",
+        "0.8187",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        81.8731,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 sigmaHz Home",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 0,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 1,
+        "seCoherence": 1,
+        "fid": 0.6065306597126334,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "1.0000",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        100,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 4.3298697960381105e-15
+    },
+    {
+      "label": "1920 sigmaHz End",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 20,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.000003262249292775847,
+        "seCoherence": 1,
+        "fid": 0.0000019786542156944063,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0000",
+        "0.6065",
+        "0.6065",
+        "0.0000",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        0.0003262,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "label": "1920 teMs Home",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 20,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 0.4540407387272451,
+        "fid": 0.025776980645925294,
+        "se": 0.2753896287966474,
+        "seTimeMs": 20,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.2754",
+        "0.6065",
+        "0.0425",
+        "0.4540"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        45.4041
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 10 ms: 180°x → 20 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 1.4432899320127035e-15
+    },
+    {
+      "label": "1920 teMs End",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 80,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 0.04249905628536256,
+        "fid": 0.025776980645925294,
+        "se": 0.025776980645925294,
+        "seTimeMs": -40,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.0258",
+        "0.6065",
+        "0.0425",
+        "0.0425"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        4.24991
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 40 ms: 180°x → 80 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 1.0408340855860843e-17
+    },
+    {
+      "label": "1920 time Home",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "t2": 1,
+        "fidCoherence": 1,
+        "seCoherence": 1,
+        "fid": 1,
+        "se": 1,
+        "seTimeMs": 0,
+        "afterRF": false
+      },
+      "values": [
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000"
+      ],
+      "bars": [
+        100,
+        100,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 0,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 time End",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 120
+      },
+      "result": {
+        "timeMs": 120,
+        "t2": 0.22313016014842982,
+        "fidCoherence": 4.522864507828038e-13,
+        "seCoherence": 0.000003262249292775847,
+        "fid": 1.0091874819613194e-13,
+        "se": 7.279062071411767e-7,
+        "seTimeMs": 80,
+        "afterRF": true
+      },
+      "values": [
+        "0.2231",
+        "0.0000",
+        "0.0000",
+        "0.2231",
+        "0.0000",
+        "0.0000"
+      ],
+      "bars": [
+        22.313,
+        4.52286e-11,
+        0.0003262
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.32459933802707e-16,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "1920 combined extreme",
+      "state": {
+        "t2Ms": 20,
+        "sigmaHz": 20,
+        "teMs": 80,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "t2": 0.01831563888873418,
+        "fidCoherence": 1.132579202929825e-22,
+        "seCoherence": 1,
+        "fid": 2.074391169375306e-24,
+        "se": 0.01831563888873418,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.0183",
+        "0.0000",
+        "0.0183",
+        "0.0183",
+        "0.0000",
+        "1.0000"
+      ],
+      "bars": [
+        1.83156,
+        1.13258e-20,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 40 ms: 180°x → 80 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 7.979727989493313e-17,
+      "curveError": 4.773959005888173e-15
+    },
+    {
+      "label": "1920 reset",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 680 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 default",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 beforeRF",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "t2": 0.779774892741951,
+        "fidCoherence": 0.4576308575307041,
+        "seCoherence": 0.4576308575307041,
+        "fid": 0.35684905284641183,
+        "se": 0.35684905284641183,
+        "seTimeMs": 19.9,
+        "afterRF": false
+      },
+      "values": [
+        "0.7798",
+        "0.3568",
+        "0.3568",
+        "0.7798",
+        "0.4576",
+        "0.4576"
+      ],
+      "bars": [
+        77.9775,
+        45.7631,
+        45.7631
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 3.3306690738754696e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 afterRF",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "t2": 0.7788007830714049,
+        "fidCoherence": 0.4540407387272451,
+        "seCoherence": 0.4540407387272451,
+        "fid": 0.35360728286709764,
+        "se": 0.35360728286709764,
+        "seTimeMs": -20,
+        "afterRF": true
+      },
+      "values": [
+        "0.7788",
+        "0.3536",
+        "0.3536",
+        "0.7788",
+        "0.4540",
+        "0.4540"
+      ],
+      "bars": [
+        77.8801,
+        45.4041,
+        45.4041
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 5.551115123125783e-17,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 atTE",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 zero",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 0,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 1,
+        "seCoherence": 1,
+        "fid": 0.6065306597126334,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "1.0000",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        100,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 4.3298697960381105e-15
+    },
+    {
+      "label": "390 shortT2",
+      "state": {
+        "t2Ms": 40,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.36787944117144233,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.015634529076572853,
+        "se": 0.36787944117144233,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.3679",
+        "0.0156",
+        "0.3679",
+        "0.3679",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        36.7879,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 3.885780586188048e-16,
+      "curveError": 5.329070518200751e-15
+    },
+    {
+      "label": "390 echo",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 t2Ms Home",
+      "state": {
+        "t2Ms": 20,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.1353352832366127,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.005751621819668287,
+        "se": 0.1353352832366127,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.1353",
+        "0.0058",
+        "0.1353",
+        "0.1353",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        13.5335,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "label": "390 t2Ms End",
+      "state": {
+        "t2Ms": 200,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.8187307530779818,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.034795284357618424,
+        "se": 0.8187307530779818,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.8187",
+        "0.0348",
+        "0.8187",
+        "0.8187",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        81.8731,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 sigmaHz Home",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 0,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 1,
+        "seCoherence": 1,
+        "fid": 0.6065306597126334,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "0.6065",
+        "1.0000",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        100,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 4.3298697960381105e-15
+    },
+    {
+      "label": "390 sigmaHz End",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 20,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.000003262249292775847,
+        "seCoherence": 1,
+        "fid": 0.0000019786542156944063,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0000",
+        "0.6065",
+        "0.6065",
+        "0.0000",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        0.0003262,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "label": "390 teMs Home",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 20,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 0.4540407387272451,
+        "fid": 0.025776980645925294,
+        "se": 0.2753896287966474,
+        "seTimeMs": 20,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.2754",
+        "0.6065",
+        "0.0425",
+        "0.4540"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        45.4041
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 10 ms: 180°x → 20 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 1.4432899320127035e-15
+    },
+    {
+      "label": "390 teMs End",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 80,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 0.04249905628536256,
+        "fid": 0.025776980645925294,
+        "se": 0.025776980645925294,
+        "seTimeMs": -40,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.0258",
+        "0.6065",
+        "0.0425",
+        "0.0425"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        4.24991
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 40 ms: 180°x → 80 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 1.0408340855860843e-17
+    },
+    {
+      "label": "390 time Home",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "t2": 1,
+        "fidCoherence": 1,
+        "seCoherence": 1,
+        "fid": 1,
+        "se": 1,
+        "seTimeMs": 0,
+        "afterRF": false
+      },
+      "values": [
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000"
+      ],
+      "bars": [
+        100,
+        100,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 0,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 time End",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 120
+      },
+      "result": {
+        "timeMs": 120,
+        "t2": 0.22313016014842982,
+        "fidCoherence": 4.522864507828038e-13,
+        "seCoherence": 0.000003262249292775847,
+        "fid": 1.0091874819613194e-13,
+        "se": 7.279062071411767e-7,
+        "seTimeMs": 80,
+        "afterRF": true
+      },
+      "values": [
+        "0.2231",
+        "0.0000",
+        "0.0000",
+        "0.2231",
+        "0.0000",
+        "0.0000"
+      ],
+      "bars": [
+        22.313,
+        4.52286e-11,
+        0.0003262
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.32459933802707e-16,
+      "curveError": 6.106226635438361e-15
+    },
+    {
+      "label": "390 combined extreme",
+      "state": {
+        "t2Ms": 20,
+        "sigmaHz": 20,
+        "teMs": 80,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "t2": 0.01831563888873418,
+        "fidCoherence": 1.132579202929825e-22,
+        "seCoherence": 1,
+        "fid": 2.074391169375306e-24,
+        "se": 0.01831563888873418,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.0183",
+        "0.0000",
+        "0.0183",
+        "0.0183",
+        "0.0000",
+        "1.0000"
+      ],
+      "bars": [
+        1.83156,
+        1.13258e-20,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 40 ms: 180°x → 80 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 7.979727989493313e-17,
+      "curveError": 4.773959005888173e-15
+    },
+    {
+      "label": "390 reset",
+      "state": {
+        "t2Ms": 80,
+        "sigmaHz": 10,
+        "teMs": 40,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "t2": 0.6065306597126334,
+        "fidCoherence": 0.04249905628536256,
+        "seCoherence": 1,
+        "fid": 0.025776980645925294,
+        "se": 0.6065306597126334,
+        "seTimeMs": 0,
+        "afterRF": true
+      },
+      "values": [
+        "0.6065",
+        "0.0258",
+        "0.6065",
+        "0.6065",
+        "0.0425",
+        "1.0000"
+      ],
+      "bars": [
+        60.6531,
+        4.24991,
+        100
+      ],
+      "overflow": false,
+      "view": "0 0 360 320",
+      "sequence": "t=0: 90° → 20 ms: 180°x → 40 ms: 정적 위상 refocus. FID/GRE 비교에는 180°가 없습니다.",
+      "error": 2.55351295663786e-15,
+      "curveError": 6.106226635438361e-15
+    }
+  ],
+  "errors": []
+}

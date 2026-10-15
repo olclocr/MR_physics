@@ -1,0 +1,46 @@
+{
+  "baseCommit": "84f44eb2cd78afb5199b7a0fa7ddee336daa2d7a",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/t2_t2star_dephasing.html",
+      "sha256": "922958A9999D1128613F4B41FEEDA92FC0CA40F33070B956D7CD0854BC948DC3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/dephasing-reference.cjs",
+      "sha256": "00C554D7CE72C12A9FC4FDFC83843EA490AC3AC3A25D6A2E1C16BC24634A4261"
+    },
+    {
+      "path": "tests/helpers/dephasing-page-harness.cjs",
+      "sha256": "AEEB0E44162D3B80E0D24DAAB6D9C899091BD1C24009A1D2CA094AAF37AEDBA4"
+    },
+    {
+      "path": "tests/dephasing.test.cjs",
+      "sha256": "6196C14130A0CF9A0E376B7B421AF9EAB182A190C886F324DEC7790AC690782A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C03-numerical.cjs",
+      "sha256": "E8935A0E061984A401BAE949975F4D24C3CF08D1E165FCA52E9C5A47BAAE6619"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C03-numerical.json",
+      "sha256": "5F24CFF440E747822B00DA1DADF83E97557BD49DD84242491163C532C23DB751"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C03-browser-check.js",
+      "sha256": "C22D61EF2FB058FAEAFB498CD46FF612141C97D1D302EFE3DFA73D46CDCB0B9A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C03-browser-check.json",
+      "sha256": "B6FA61D9E25DA41EC30B7C15E5AB8116B58BA09414AEF7C459C2382EF54C4375"
+    }
+  ]
+}
