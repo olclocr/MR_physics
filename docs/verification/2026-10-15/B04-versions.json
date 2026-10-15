@@ -1,0 +1,42 @@
+{
+  "baseCommit": "fea4b4459f8e8a0c5f41a2540a7bb5ea975d1689",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/frequency_phase_encoding_visualization.html",
+      "sha256": "64F97299E90F02C8991045F2FF196E14A950CC63D80A15997266B1E9D53BB57D"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/spatial-encoding.test.cjs",
+      "sha256": "82A42417D3844628B4AB56E7A020531CAE5B0D1D2760E47EE3E6E926EAE39D7A"
+    },
+    {
+      "path": "tests/helpers/encoding-reference.cjs",
+      "sha256": "4C76B69C9B344D6A6A9AC2AA5A034D534C772B8C068E514F105AD07471DA9039"
+    },
+    {
+      "path": "tests/helpers/encoding-page-harness.cjs",
+      "sha256": "375DF146F426AF843D58911ADE202C0D19C8DFB4ADBF4274C5633751E7A301B3"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-numerical.cjs",
+      "sha256": "353547FAC2D2421F816EC03DE9DDC7FC7879C25A727DF3AF68FB1DABE9005B10"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-numerical.json",
+      "sha256": "C3CF5B991FD99D245FAC3F84908EBC2F71C8DF5958567199BC1AED61CB522CA1"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-browser-check.js",
+      "sha256": "D9F4393305CBAD128CC9546B7419AEBC8E6229E0ECB0D4AE7F05FF63D563EC52"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-browser-check.json",
+      "sha256": "450BD76031BB2F91BAF4AF27DE6001EC0896D589AEE3A8B647117564C4F2E4CB"
+    }
+  ]
+}

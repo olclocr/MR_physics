@@ -62,6 +62,8 @@ The [B03 relaxation and spin-echo review](docs/verification/2026-10-15/B03-physi
 
 The [B01 spin ensemble review](docs/verification/2026-10-15/B01-physics.md) covers quantum and ensemble boundaries, thermal polarization, magnification, independent 60-digit reference values, and real desktop/mobile checks.
 
+The [B04 spatial encoding review](docs/verification/2026-10-15/B04-physics.md) covers gradient areas, signed phase and k, ADC, complex reconstruction, missing spatial information, fixed display scales, and real resize recovery.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -129,6 +131,8 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 [B03 자화·이완·SE 검증](docs/verification/2026-10-15/B03-physics.md)은 세 단계 관찰, 유한 RF 정확도 개선, 정확한 시간 조작과 별도 water/fat 모형의 독립 검산·실제 화면을 기록합니다.
 
 [B01 스핀·열평형 검증](docs/verification/2026-10-15/B01-physics.md)은 두 준위·편극·양자/ensemble 경계·확대와 위상 도식을 60자리 독립 계산·실제 데스크톱/모바일로 대조한 기록입니다.
+
+[B04 공간 부호화 검증](docs/verification/2026-10-15/B04-physics.md)은 gradient 면적·위상/k·ADC·복소 역변환·정보 소실·고정 표시 창·실제 resize 복구를 독립 수치와 실제 화면으로 대조한 기록입니다.
 
 ## 라이선스
 

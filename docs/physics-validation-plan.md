@@ -41,7 +41,7 @@
 | B01 | [열평형 학습](spin_ensemble_equilibrium.html), [W04 통합 검증](verification/2026-10-15/B01-physics.md) | 대상 버전 통과 | 두 준위·편극·단위·정규화·확대·위상 도식·양자적 한계·정답을 근거·고정밀 Boltzmann·실제 화면으로 대조. 개념 문서 VI/VII와 대조하며 전체 심화 문서 통과로 확대하지 않음. 외부 전문가 검토 미시행 |
 | B02 | [기존 RF 검산](verification/2026-10-14/fix-validation.md), [W02 통합 검증](verification/2026-10-15/B02-physics.md) | 대상 버전 통과 | 프레임·부호·단위·정규화, RF ON/OFF와 0/90/180/360°, 독립 Bloch·실제 화면 대조. 범위·버전·한계는 기록 참조. 외부 전문가 검토 미시행 |
 | B03 | [기존 SE·RF 검산](verification/2026-10-14/fix-validation.md), [W03 통합 검증](verification/2026-10-15/B03-physics.md) | 대상 버전 통과 | 유한 RF/ideal pulse·RF→free 연속성·T1/T2·180° 전후·TE/TR·chemical·정규화·확인 문제를 독립 수치와 실제 화면으로 대조. 범위·버전·한계는 기록 참조. 외부 전문가 검토 미시행 |
-| B04 | [기존 부호화 검산](verification/2026-10-14/fix-validation.md), physics 시험 | 재검토 대기 | gradient 적분과 k 좌표·부호·FOV, 표시 신호와 ADC 값, phase encoding 0의 정보 손실, 격자 불일치 시 재구성 제한을 확인 |
+| B04 | [기존 부호화 검산](verification/2026-10-14/fix-validation.md), [W05 통합 검증](verification/2026-10-15/B04-physics.md) | 대상 버전 통과 | gradient 면적·위상/k·단위·ADC·정규화·고정 표시 창·복소 역변환·Gy=0/격자 제한·정답을 독립 수치와 실제 화면으로 대조. 범위·버전은 기록 참조. 외부 전문가 검토 미시행 |
 | B05 | `tests/kspace_inverse_fourier.test.cjs`의 독립 성질·조작 시험 | 재검토 대기 | DFT 정규화·복소수·위상·conjugate symmetry·Parseval을 확인. 단일 성분, 중심/외곽 누락, aliasing, zero filling의 설명과 재구성 결과 대조 |
 | C01 | [기존 구현 검증](verification/2026-10-14/contrast-chapter.md), [W01 통합 물리 검증](verification/2026-10-15/C01-physics.md) | 대상 버전 통과 | 이상적 SE 식·근사·180°의 종자화 반전·PD/TR/TE·예시값·고정 창·표/곡선/영상·퀴즈·map 구분을 근거·독립 계산·실제 화면으로 대조. 버전·오차·한계는 기록 참조. 외부 전문가 검토 미시행 |
 
@@ -189,3 +189,4 @@
 | 2026-10-15 | W02 B02 RF OFF·정규화·좌표/단위·관찰/정답·모바일 표시를 보강하고 240개 독립 비교·실제 화면을 거쳐 대상 버전 통과. b_eff 고급 절 전체는 별도 범위 |
 | 2026-10-15 | W03 B03 유한 RF의 오차 수정·독립 재검산, 자유 이완/SE/chemical의 시간·부호·정규화·내용·실제 조작 확인을 거쳐 대상 버전 통과. 공통 hardPulse 외의 계산은 유지하고 전체 회귀 확인 |
 | 2026-10-15 | W04 B01을 독립 챕터로 구현하고 60자리 Boltzmann·고온 급수·단위근 및 실제 데스크톱/모바일로 검증. 실제 편극과 확대·위상 도식의 구별을 확인하고 대상 버전 통과 |
+| 2026-10-15 | W05 B04의 gradient→k/위상→ADC→복소 역변환·단위·표시·정답을 통합 대조. 부호·속도·0 위상·고정 창·명목 표식·실제 resize 오류를 수정·재검증하고 대상 버전 통과 |

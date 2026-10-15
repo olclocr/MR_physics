@@ -419,6 +419,18 @@
       font-weight: 850;
     }
 
+    .lesson { font-size:13px; line-height:1.7; }
+    .lesson li { margin:12px 0; }
+    .lesson ol { padding-left:22px; }
+    .lesson button { width:100%; margin-top:7px; }
+    .lesson summary { cursor:pointer; font-weight:800; }
+    .lesson details { margin-top:12px; }
+    .readout { max-width:1100px; }
+    .metric span { white-space:normal; overflow:visible; text-overflow:clip; font-size:13px; line-height:1.4; }
+    .metric { min-height:64px; }
+    .data-line b { white-space:normal; text-align:right; overflow-wrap:anywhere; }
+    button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible { outline:3px solid #7c3aed; outline-offset:3px; }
+
     @media (max-width: 1120px) {
       .readout {
         grid-template-columns: repeat(3, minmax(118px, 1fr));
@@ -496,7 +508,7 @@
 <body>
   <main class="app">
     <section class="stage" aria-label="frequency encoding과 phase encoding 시각화">
-      <canvas id="scene"></canvas>
+      <canvas id="scene" role="img" aria-label="5×5 순자화의 위치별 위상, 명목 ADC 격자, 복소 신호와 재구성. 실제 k 좌표와 수치는 현재 값에서 확인합니다."></canvas>
       <h1 class="title">Frequency / Phase Encoding</h1>
       <div class="readout" aria-live="polite">
         <div class="metric"><b>현재 단계</b><span id="modeMetric">-</span></div>
@@ -509,6 +521,26 @@
     </section>
 
     <aside class="sidebar">
+      <section class="section lesson" id="learningPath">
+        <p><a href="index.html">학습 목록</a> · B04 · 선행: <a href="proton_spin_mr_simulation.html">자화와 이완</a></p>
+        <h2>하나로 합친 신호에 위치 정보를 어떻게 담을까?</h2>
+        <p>Gradient는 위치에 따라 공명 주파수를 바꿉니다. 준비 구간에서 누적한 위상과 readout 중 계속 변하는 위상을 합쳐, 어느 공간 주파수를 읽는지 정합니다.</p>
+        <ol>
+          <li><b>x 위치 → 주파수.</b> 같은 열의 주파수는 같은가요? +x와 −x의 횡자화가 반대 방향으로 위상을 쌓는지 봅니다.
+            <button id="observeFrequency" type="button">① 주파수 부호화 관찰</button></li>
+          <li><b>Gy를 꺼도 남는 위상.</b> +ky=1의 readout 중심에서 x 위상은 상쇄되어 있습니다. y=+1과 −1의 위상 차이를 읽으세요.
+            <button id="observePhase" type="button">② Gy 종료 후 위상 관찰</button></li>
+          <li><b>Gy=0의 정보 소실.</b> 25개 명목 ADC 칸을 모두 채우면 y 정보도 생길까요? 먼저 예상한 뒤 격자를 맞춘 완전 획득과 비교하세요.
+            <button id="observeNoPhase" type="button">③ Gy=0 완전 획득</button>
+            <button id="observeFull" type="button">같은 물체 · 격자 맞춘 완전 획득</button></li>
+        </ol>
+        <p class="note">예제 버튼은 대표 설정·감쇠 OFF·비대칭 물체를 적용하고 해당 시점에 멈춥니다. 매개변수 변경은 획득을 초기화하며, 속도와 표시 옵션은 관찰 시점을 보존합니다.</p>
+        <details><summary>선행 기호·단위·그림의 기준</summary>
+          <p>화살표 하나는 한 voxel의 순자화입니다. x,y=−2…+2는 voxel 간격=1인 좌표이며 FOV=5 간격입니다. 화면 k는 물리 k[cycles/m]에 FOV[m]를 곱한 무차원 수치이며 눈금 1은 1 cycle/FOV에 해당합니다.</p>
+          <p>Hz/col과 deg/row는 gradient의 효과입니다. 길이[m]를 정하지 않아 Gx·Gy의 T/m 자체를 입력하지 않습니다. +gradient에서 φ=−2π(kx x+ky y)/5로 감소하며 역변환은 반대 부호를 씁니다.</p>
+          <p>신호 real·imag·|S|와 K 숫자·원 크기·진하기는 각 물체의 초기 합 Σρ로 정규화합니다. 0에 가까운 신호의 위상은 정의하지 않으며 K는 중립 회색입니다. 최소 원 크기는 ADC 저장 여부를 보여 줍니다. 붉은 표식은 명목 ADC 위치이며 준비 중에는 표시하지 않습니다. 영상은 복소 재구성의 magnitude이며 표시 창은 0~1.2(ρ의 교육용 상대 단위)로 고정합니다.</p>
+        </details>
+      </section>
       <section class="section">
         <h2>Encoding 모드</h2>
         <div class="segmented" role="group" aria-label="encoding mode">
@@ -540,7 +572,7 @@
             <option value="full">전체 5 ky lines</option>
             <option value="center3">중심 3 lines만</option>
             <option value="alternate">한 줄 건너뛰기</option>
-            <option value="partialFourier">partial Fourier 4 lines</option>
+            <option value="partialFourier">한쪽 4 lines (zero fill만)</option>
           </select>
         </div>
         <div class="control-row">
@@ -572,6 +604,8 @@
         <button id="matchGrid" type="button">5×5 Fourier 격자 맞추기</button>
         <p class="note">B0와 함께 도는 좌표계입니다. 8 ms 준비 구간에 Gy와 음의 Gx prephasing을 적용하고, 실제 gradient 면적에서 k 위치를 계산합니다. 감쇠는 excitation 직후부터 누적됩니다. 매 TR의 초기 자화는 동일하다고 가정합니다.</p>
         <p class="note">원과 숫자는 ADC 저장 격자의 명목 인덱스입니다. 실제 k 좌표는 현재 값에 표시합니다. 고정 FOV의 5×5 IFFT는 72°/row 및 Gx×readout=0.8 cycle/col에서만 적용합니다. 다른 격자는 재구성을 보류합니다.</p>
+        <p class="note">기본 32 ms window에서 ADC 5개는 0/8/16/24/32 ms에 놓입니다. 준비는 8 ms이며 excitation 이후 시간으로 T2*를 계산합니다. 화면 주기 6.2초는 재생용이며 실제 TR·RF 지속 시간·T1 회복을 계산하지 않습니다. 마지막 ADC 뒤에는 그 상태를 보존해 표시합니다.</p>
+        <p class="note">격자 위 Hz 숫자는 readout용 Gx의 설정값입니다. 준비 구간의 음의 Gx prephasing 주파수 자체를 표시하지 않습니다. 방향 화살표는 공간 부호화 축을 나타냅니다.</p>
         <div class="control-row">
           <label for="speed">재생 속도</label>
           <output id="speedOutput" for="speed">1.0x</output>
@@ -611,15 +645,17 @@
       <section class="section">
         <h2>현재 값</h2>
         <div class="control-row">
-          <label for="timeScrub">획득 시점</label>
+          <label for="timeScrub">획득 시점 (PE + FE)</label>
           <output id="timeScrubOutput" for="timeScrub">0/25</output>
           <input id="timeScrub" type="range" min="0" max="12400" value="0" step="1" />
         </div>
         <div class="data-grid">
-          <div class="data-line"><span>스핀 개수</span><b id="spinCountOutput">25</b></div>
+          <div class="data-line"><span>voxel 표본 수</span><b id="spinCountOutput">25</b></div>
           <div class="data-line"><span>phase range</span><b id="phaseRangeOutput">-</b></div>
           <div class="data-line"><span>frequency range</span><b id="frequencyRangeOutput">-</b></div>
           <div class="data-line"><span>현재 signal phase</span><b id="signalPhaseOutput">-</b></div>
+          <div class="data-line"><span>90° 이후 물리 시간</span><b id="physicalTimeOutput">-</b></div>
+          <div class="data-line"><span>현재 y=+1의 PE 위상</span><b id="signedPhaseOutput">-</b></div>
           <div class="data-line"><span>현재 K(kx, ky)</span><b id="currentKOutput">-</b></div>
           <div class="data-line"><span>k-space 채움</span><b id="samplingOutput">-</b></div>
           <div class="data-line"><span>Fourier 재구성</span><b id="iftOutput">-</b></div>
@@ -630,7 +666,7 @@
       </section>
 
       <section class="section">
-        <h2>핵심 식</h2>
+        <details><summary><b>핵심 식 · 선택해서 펼치기</b></summary>
         <div class="formula-list">
           <div class="formula-row">
             <b>Phase</b>
@@ -649,7 +685,7 @@
           <div class="formula-row">
             <b>Signal</b>
             <div>
-              <code>S(t) = sum rho(x,y) exp(i phi(x,y,t))</code>
+              <code>S(t) = exp(−t/T2*) sum rho(x,y) exp(i phi(x,y,t))</code>
               <span>수신 코일은 25개 voxel/isochromat의 횡자화를 복소 신호로 합산합니다. 각 화살표는 많은 양성자의 순자화입니다.</span>
             </div>
           </div>
@@ -663,13 +699,15 @@
           <div class="formula-row">
             <b>Fourier</b>
             <div>
-              <code>rho(x,y) = IFFT{K(kx,ky)}</code>
-              <span>채워진 k-space 샘플을 inverse Fourier transform하면 zero-filled 재구성 이미지가 만들어집니다.</span>
+              <code>complex image = (1/25) sum K exp(+i 2π(kx x+ky y)/5)</code>
+              <span>맞는 격자의 25개를 감쇠 없이 모두 얻으면 ρ를 복원합니다. 감쇠·누락이 있으면 그 데이터의 복소 재구성이며 화면은 magnitude입니다. 빠진 데이터는 0입니다.</span>
             </div>
           </div>
         </div>
+        <p class="note">물리 k=γ̄∫Gdt [cycles/m]. 이 화면은 k×FOV를 표시합니다. 기본 Δkx=1, Δky=1이며 kx는 준비 후 −2에서 readout 끝 +2로 갑니다.</p>
+        <p class="note">물리 주파수 식의 x는 m 단위이고 화면의 x 인덱스와 구별합니다. 감쇠 OFF에서는 exp(−t/T2*)를 1로 둡니다.</p>
+        </details>
       </section>
-
       <section class="section">
         <h2>해석 가이드</h2>
         <div class="formula-list">
@@ -684,7 +722,7 @@
             <b>IFFT (Inverse Fast Fourier Transform)</b>
             <div>
               <code>image = inverse Fourier sum of all K samples</code>
-              <span>k-space의 각 점은 이미지 전체에 걸친 공간 주파수 성분입니다. IFFT는 채워진 모든 복소 성분을 다시 더해서 proton density 이미지를 복원합니다.</span>
+              <span>k-space의 각 점은 이미지 전체에 걸친 공간 주파수 성분입니다. 감쇠 OFF·올바른 완전 격자에서 초기 density를 복원하며 다른 경우에는 감쇠·누락이 반영된 복소 재구성을 보여 줍니다.</span>
             </div>
           </div>
           <div class="formula-row">
@@ -709,7 +747,7 @@
         <div class="legend">
           <div class="legend-item"><i class="swatch" style="background:#e8761d"></i><span>Gy phase encoding</span></div>
           <div class="legend-item"><i class="swatch" style="background:#2563eb"></i><span>Gx frequency encoding</span></div>
-          <div class="legend-item"><i class="swatch" style="background:#d73f3f"></i><span>현재 k-space 위치</span></div>
+          <div class="legend-item"><i class="swatch" style="background:#d73f3f"></i><span>현재 명목 ADC 위치</span></div>
           <div class="legend-item"><i class="swatch" style="background:#219461"></i><span>합성 MR signal</span></div>
           <div class="legend-item"><i class="swatch" style="background:#0891b2"></i><span>real signal</span></div>
           <div class="legend-item"><i class="swatch" style="background:#7c3aed"></i><span>imaginary signal</span></div>
@@ -719,6 +757,24 @@
         <h2>다음 소주제</h2>
         <p class="note">모인 k-space 신호가 어떻게 영상으로 돌아올까요? 한 점의 공간 무늬부터 차례로 더해 보는 과정을 살펴봅니다.</p>
         <p class="note"><a href="kspace_inverse_fourier.html">K-space / 푸리에 역변환 →</a></p>
+      </section>
+      <section class="section lesson">
+        <h2>예측을 확인하기</h2>
+        <p><b>1.</b> Gy=0으로 25개 명목 ADC 칸을 채우면 y 위치를 구별할 수 있을까요?</p>
+        <button id="quizYWrong" type="button">25개를 채웠으니 2D 위치를 모두 안다</button>
+        <button id="quizYCorrect" type="button">실제 ky가 모두 0이어서 y별 정보를 구별하지 못한다</button>
+        <p id="quizYFeedback" role="status">답을 선택해 이유를 확인하세요.</p>
+        <p><b>2.</b> Gy를 72→75°/row로 바꾸면 이 화면의 고정 IFFT는?</p>
+        <button id="quizGridCorrect" type="button">실제 k 격자가 바뀌어 재구성을 보류한다</button>
+        <button id="quizGridWrong" type="button">명목 칸이 같으니 동일 영상을 정확히 복원한다</button>
+        <p id="quizGridFeedback" role="status">답을 선택해 이유를 확인하세요.</p>
+        <p>학습 후: ① Gy가 꺼진 뒤 무엇이 남는가? ② readout 시간은 왜 x 위치 정보로 바뀌는가? ③ 신호가 거의 0일 때 위상 숫자를 해석할 수 있는가?</p>
+        <details><summary>모형의 범위와 출처</summary>
+          <p>5×5 점 표본 모형입니다. RF는 이상적 순간 90°, 매 반복의 시작 자화는 같습니다. 균일 코일·동일 T2*의 단일 지수 감쇠를 쓰며 finite voxel profile·잡음·T1 정상상태·gradient ramp·실제 TR·slice selection은 제외합니다. 일반 역변환을 직접 합산합니다.</p>
+          <p>한쪽 4줄 모드도 빠진 줄을 0으로 둘 뿐이며 실제 partial Fourier 위상 추정 복원은 수행하지 않습니다. 임의 k 격자는 정보를 모두 잃었다는 뜻이 아니라 이 화면의 고정 5×5 역변환 대상 밖입니다.</p>
+          <p><a href="https://larsonlab.github.io/MRI-education-resources/Spatial%20Encoding.html">Larson · Spatial Encoding</a>의 위치와 주파수/위상, <a href="https://larsonlab.github.io/MRI-education-resources/K-space.html">K-space</a>의 gradient 적분·Fourier 부호, <a href="https://larsonlab.github.io/MRI-education-resources/MRI%20Signal%20Equation.html">MRI Signal Equation</a>의 복소 합을 기준으로 대조합니다.</p>
+          <p><a href="verification/2026-10-15/B04-physics.html">B04 물리 검증 기록</a> · 독립 수치·실제 화면·대상 버전·적용 범위</p>
+        </details>
       </section>
     </aside>
   </main>
@@ -772,6 +828,8 @@
       phaseRangeOutput: document.getElementById("phaseRangeOutput"),
       frequencyRangeOutput: document.getElementById("frequencyRangeOutput"),
       signalPhaseOutput: document.getElementById("signalPhaseOutput"),
+      physicalTimeOutput: document.getElementById("physicalTimeOutput"),
+      signedPhaseOutput: document.getElementById("signedPhaseOutput"),
       currentKOutput: document.getElementById("currentKOutput"),
       samplingOutput: document.getElementById("samplingOutput"),
       iftOutput: document.getElementById("iftOutput"),
@@ -822,7 +880,7 @@
       full: "전체",
       center3: "중심 3줄",
       alternate: "한 줄 건너뛰기",
-      partialFourier: "partial Fourier"
+      partialFourier: "한쪽 4줄 · zero fill"
     };
 
     const samplingPatterns = {
@@ -1273,7 +1331,7 @@
 
     function layout(width, height) {
       const top = width < 560 ? 132 : 110;
-      const bottom = width < 560 ? 220 : width < 1120 ? 150 : 112;
+      const bottom = width < 560 ? 260 : width < 1120 ? 150 : 112;
       const availableH = Math.max(320, height - top - bottom);
 
       if (width >= 1000) {
@@ -1393,7 +1451,7 @@
       if (state.showPhase) {
         for (let row = 0; row < GRID_SIZE; row += 1) {
           const yIndex = HALF - row;
-          const phase = yIndex * degToRad(state.phaseDegPerRow) * (frame.ky || 0) * frame.phaseProgress;
+          const phase = phaseAt({ x: 0, y: yIndex }, frame);
           const x = grid.x + (HALF + 1) * cellSize - 5;
           const y = grid.y + (row + 1) * cellSize - 9;
           labelBox(`${signedAngleDeg(phase).toFixed(0)} deg`, x, y, colors.muted, 12, "right", "rgba(255,255,255,0.58)");
@@ -1402,14 +1460,14 @@
 
       const gxY = grid.y + grid.h + 8;
       arrow(grid.x, gxY, grid.x + grid.w, gxY, colors.frequency, 4, 0.9);
-      label("Gx frequency encoding", grid.x + grid.w / 2, gxY + 10, colors.frequency, 12);
+      label("Gx direction (frequency)", grid.x + grid.w / 2, gxY + 10, colors.frequency, 12);
 
       const gyX = grid.x - 10;
       arrow(gyX, grid.y + grid.h, gyX, grid.y, colors.phase, 4, 0.9);
       ctx.save();
       ctx.translate(gyX - 8, grid.y + grid.h / 2);
       ctx.rotate(-Math.PI / 2);
-      label("Gy phase encoding", 0, 0, colors.phase, 12);
+      label("Gy direction (phase)", 0, 0, colors.phase, 12);
       ctx.restore();
     }
 
@@ -1433,7 +1491,7 @@
       const rowGap = plot.h / (GRID_SIZE - 1);
       const colGap = plot.w / (GRID_SIZE - 1);
       const matrix = kspaceMatrix();
-      const maxMagnitude = Math.max(1e-9, matrix.maxMagnitude);
+      const maxMagnitude = Math.max(1e-9, matrix.totalDensity);
       const totalCount = totalAcquiredSampleCount(frame);
       const targetCount = targetSampleCount(frame);
       const filledSamples = acquiredKspaceSamples(frame, matrix);
@@ -1463,7 +1521,8 @@
       const y = plot.y + row * rowGap;
       line(plot.x, y, plot.x + plot.w, y, colors.phase, 4, 0.72);
       const dotX = plot.x + clamp(frame.readoutProgress, 0, 1) * plot.w;
-      const activeX = frame.readoutActive ? dotX : plot.x + plot.w / 2;
+      const showAdcMarker = frame.readoutActive || ["rewind", "complete"].includes(frame.stage);
+      const activeX = showAdcMarker ? dotX : plot.x + plot.w / 2;
       const activeY = frame.stage === "phase" ? y : y;
 
       if (frame.readoutActive) {
@@ -1483,7 +1542,7 @@
         ctx.beginPath();
         ctx.arc(sx, sy, isFilled ? radius : 4.2, 0, TWO_PI);
         if (isFilled) {
-          ctx.fillStyle = phaseColor(sample.phase, 0.34 + magnitudeScale * 0.58);
+          ctx.fillStyle = sampleColor(sample, 0.34 + magnitudeScale * 0.58);
           ctx.fill();
           ctx.strokeStyle = rgba(colors.ink, 0.34);
           ctx.lineWidth = 1;
@@ -1502,15 +1561,17 @@
         }
       }
 
-      ctx.save();
-      ctx.fillStyle = colors.kspace;
-      ctx.beginPath();
-      ctx.arc(activeX, activeY, 6, 0, TWO_PI);
-      ctx.fill();
-      ctx.strokeStyle = "rgba(255,255,255,0.92)";
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      ctx.restore();
+      if (showAdcMarker) {
+        ctx.save();
+        ctx.fillStyle = colors.kspace;
+        ctx.beginPath();
+        ctx.arc(activeX, activeY, 6, 0, TWO_PI);
+        ctx.fill();
+        ctx.strokeStyle = "rgba(255,255,255,0.92)";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.restore();
+      }
 
       const status = targetCount === totalKspaceSampleCount()
         ? `filled ${totalCount}/${totalKspaceSampleCount()} samples`
@@ -1603,8 +1664,8 @@
         label(reconstruction.reason, rect.x + rect.w / 2, rect.y + rect.h / 2 + 12, colors.muted, compact ? 9 : 11);
         return;
       }
-      const maxMagnitude = Math.max(1e-9, matrix.maxMagnitude);
-      const maxRecon = Math.max(1e-9, reconstruction.maxValue);
+      const maxMagnitude = Math.max(1e-9, matrix.totalDensity);
+      const maxRecon = 1.2;
 
       const minCell = compact ? 5 : 10;
       const topSpace = compact ? 24 : 38;
@@ -1635,7 +1696,7 @@
           const strength = sample ? sample.magnitude / maxMagnitude : 0;
 
           ctx.save();
-          ctx.fillStyle = isFilled ? phaseColor(sample.phase, 0.18 + strength * 0.68) : "rgba(255,255,255,0.62)";
+          ctx.fillStyle = isFilled ? sampleColor(sample, 0.18 + strength * 0.68) : "rgba(255,255,255,0.62)";
           ctx.fillRect(x, y, cell, cell);
           ctx.strokeStyle = isFilled ? rgba(colors.ink, 0.34) : rgba(colors.line, 0.82);
           ctx.lineWidth = 1;
@@ -1696,6 +1757,15 @@
     }
 
     function drawScene() {
+      // Responsive layout can briefly report a collapsed canvas during resize.
+      // Keep the animation alive and resize the backing store when layout settles.
+      if (canvas.clientWidth < 180 || canvas.clientHeight < 240) return;
+      const pixelRatio = window.devicePixelRatio || 1;
+      if (canvas.width !== Math.round(canvas.clientWidth * pixelRatio) || canvas.height !== Math.round(canvas.clientHeight * pixelRatio)) {
+        canvas.width = Math.round(canvas.clientWidth * pixelRatio);
+        canvas.height = Math.round(canvas.clientHeight * pixelRatio);
+        ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+      }
       const width = canvas.clientWidth || 1;
       const height = canvas.clientHeight || 1;
       ctx.clearRect(0, 0, width, height);
@@ -1726,7 +1796,7 @@
       const currentKxIndex = nearestKxIndex(frame);
       const currentSample = matrix.samples.find(sample => sample.kx === currentKxIndex && sample.ky === frame.ky);
       const readoutTime = frame.readoutProgress * state.readoutMs;
-      const phaseAbs = Math.abs(HALF * (frame.ky || 0) * state.phaseDegPerRow * frame.phaseProgress);
+      const phaseAbs = Math.abs(HALF * trajectory.ky * 360 / GRID_SIZE);
       const freqMax = HALF * state.frequencyHzPerCol;
 
       controls.modeButtons.forEach(button => {
@@ -1745,6 +1815,7 @@
         ? Math.round(clamp(state.elapsed * state.speed, 0, acquisitionDuration()) * SCRUB_TICKS_PER_SECOND)
         : 0;
       controls.timeScrub.max = `${scrubMax}`;
+      controls.timeScrub.disabled = state.mode !== "sequence";
       controls.timeScrub.value = `${clamp(scrubTicks, 0, scrubMax)}`;
       controls.timeScrubOutput.textContent = `${totalFilledCount}/${fullTotal}`;
 
@@ -1758,7 +1829,9 @@
       controls.spinCountOutput.textContent = `${fullTotal}`;
       controls.phaseRangeOutput.textContent = `${(-phaseAbs).toFixed(0)} to ${phaseAbs.toFixed(0)} deg`;
       controls.frequencyRangeOutput.textContent = `${(-freqMax).toFixed(0)} to ${freqMax.toFixed(0)} Hz`;
-      controls.signalPhaseOutput.textContent = `${signedAngleDeg(signal.phase).toFixed(1)} deg`;
+      controls.signalPhaseOutput.textContent = signal.magnitude < 1e-10 ? "정의 안 됨 (|S|≈0)" : `${signedAngleDeg(signal.phase).toFixed(1)} deg`;
+      controls.physicalTimeOutput.textContent = `${trajectory.timeMs.toFixed(2)} ms${["rewind","complete"].includes(frame.stage) ? " (마지막 ADC)" : ""}`;
+      controls.signedPhaseOutput.textContent = `${signedAngleDeg(phaseAt({x:0,y:1},frame)).toFixed(1)} deg (mod 360)`;
       controls.currentKOutput.textContent = frame.readoutActive && currentSample
         ? `ADC kx ${currentSample.actualKx.toFixed(2)}, ky ${currentSample.actualKy.toFixed(2)} |K| ${currentSample.normalizedMagnitude.toFixed(2)}`
         : frame.stage === "complete" ? targetTotal === fullTotal ? "획득 완료" : "덜 채움 완료" : "readout 전";
@@ -1785,6 +1858,7 @@
     }
 
     function syncFromControls(options = {}) {
+      const observedTime = state.elapsed * state.speed;
       state.fillOrder = controls.fillOrder.value;
       state.samplingPattern = controls.samplingPattern.value;
       state.phaseDegPerRow = Number(controls.phaseDegrees.value);
@@ -1794,6 +1868,7 @@
       state.ignoreDecay = controls.ignoreDecay.checked;
       state.phaseKy = Number(controls.phaseKy.value);
       state.speed = Number(controls.speed.value);
+      state.elapsed = observedTime / Math.max(0.01, state.speed);
       state.objectPattern = controls.objectPattern.value;
       state.showPhase = controls.showPhase.checked;
       state.showFrequency = controls.showFrequency.checked;
@@ -1830,6 +1905,7 @@
       controls.showSignal.checked = defaults.showSignal;
       state.mode = defaults.mode;
       resetTimeline(false);
+      for (const id of ["quizYFeedback", "quizGridFeedback"]) document.getElementById(id).textContent = "답을 선택해 이유를 확인하세요.";
       syncFromControls();
     }
 
@@ -1918,6 +1994,39 @@
       });
     }
 
+    function sampleColor(sample, alpha) {
+      return sample.magnitude / Math.max(1e-12, sample.totalDensity) < 1e-10
+        ? rgba(colors.muted, alpha) : phaseColor(sample.phase, alpha);
+    }
+    function observeEncoding(example) {
+      applyDefaultSettings();
+      controls.objectPattern.value = "spot";
+      controls.ignoreDecay.checked = true;
+      if (example === "phase") controls.fillOrder.value = "centric";
+      if (example === "none") controls.phaseDegrees.value = "0";
+      state.mode = example === "frequency" ? "frequency" : "sequence";
+      syncFromControls({ resetTimeline: true });
+      state.elapsed = example === "frequency" ? .75 / .28 / state.speed
+        : example === "phase" ? (2 * CYCLE_SECONDS + 2.2 + 3.35 / 2) / state.speed
+        : acquisitionDuration() / state.speed;
+      updateUI();
+      drawScene();
+    }
+    for (const [id, example] of [["observeFrequency","frequency"],["observePhase","phase"],["observeNoPhase","none"],["observeFull","full"]]) {
+      document.getElementById(id).addEventListener("click", () => observeEncoding(example));
+    }
+    document.getElementById("quizYWrong").addEventListener("click", () => {
+      document.getElementById("quizYFeedback").textContent = "칸 수와 독립적인 위치 정보는 다릅니다. Gy=0이면 모든 명목 행에서 같은 실제 ky=0을 반복해 읽으므로 y 정보를 만들지 못합니다.";
+    });
+    document.getElementById("quizYCorrect").addEventListener("click", () => {
+      document.getElementById("quizYFeedback").textContent = "맞습니다. 같은 x의 y별 기여가 구별되지 않습니다. 이 화면은 중복된 ky=0 자료를 잘못된 2D 영상으로 표시하지 않고 재구성을 보류합니다.";
+    });
+    document.getElementById("quizGridCorrect").addEventListener("click", () => {
+      document.getElementById("quizGridFeedback").textContent = "맞습니다. 75°에서는 실제 Δky=75/72입니다. 명목 ADC 칸과 실제 k 좌표를 구별해야 합니다. 다른 격자를 처리하는 재구성은 이 화면의 범위 밖입니다.";
+    });
+    document.getElementById("quizGridWrong").addEventListener("click", () => {
+      document.getElementById("quizGridFeedback").textContent = "실제 ky는 gradient 면적에 따라 달라집니다. 명목 칸이 같아도 75°/row를 72°의 격자로 간주하면 정확한 고정 FOV 영상을 복원하지 못합니다.";
+    });
     window.addEventListener("resize", resize);
     syncFromControls();
     resize();
