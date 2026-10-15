@@ -56,6 +56,8 @@ The [2026-10-15 C01 physical consistency review](docs/verification/2026-10-15/C0
 
 The [B02 RF resonance review](docs/verification/2026-10-15/B02-physics.md) covers resonance, both rotating frames, RF OFF, normalization, guided observations, and desktop/mobile verification.
 
+The [B03 relaxation and spin-echo review](docs/verification/2026-10-15/B03-physics.md) covers the guided RF → free relaxation → SE path, finite-pulse accuracy, exact observation clocks, and the separate water/fat model.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -117,6 +119,8 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 [2026-10-15 C01 통합 물리 검증](docs/verification/2026-10-15/C01-physics.md)에 독립 검산·실제 화면·대상 버전·판정 범위를 기록했습니다. C01은 이 범위에서 대상 버전 통과이며 외부 전문가 검토는 미시행입니다. 로컬 개발 기록과 GitHub 게시 상태는 구별합니다.
 
 [B02 RF 공명 검증](docs/verification/2026-10-15/B02-physics.md)에는 두 회전좌표계·RF OFF·정규화·관찰/정답·실제 데스크톱/모바일 검증을 기록했습니다.
+
+[B03 자화·이완·SE 검증](docs/verification/2026-10-15/B03-physics.md)은 세 단계 관찰, 유한 RF 정확도 개선, 정확한 시간 조작과 별도 water/fat 모형의 독립 검산·실제 화면을 기록합니다.
 
 ## 라이선스
 

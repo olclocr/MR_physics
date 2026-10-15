@@ -42,7 +42,7 @@
     if (t1Ms === Infinity && t2Ms === Infinity) return rotate(m, axis, -TAU * rate * durationMs / 1000);
     // Exact rotations with symmetric relaxation splitting. Small fixed steps
     // resolve finite-pulse relaxation without a frame-rate dependent integrator.
-    const stepMs = Math.min(0.025, rate > 0 ? 1000 / (40 * rate) : 0.025);
+    const stepMs = Math.min(0.01, rate > 0 ? 1000 / (160 * rate) : 0.01);
     const count = Math.max(1, Math.ceil(durationMs / stepMs)), dt = durationMs / count;
     let result = { ...m };
     for (let i = 0; i < count; i++) {

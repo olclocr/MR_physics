@@ -1,0 +1,42 @@
+{
+  "baseCommit": "46e99bf19c1e0a659ceb97fa9bc85c739a355f37",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/proton_spin_mr_simulation.html",
+      "sha256": "AD10710409842D5353CF351364EE08BD5114B6C29B9C049D3E911056CAF5F724"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/spin-reference.cjs",
+      "sha256": "23C6AD44B72C84A84D1F14CC2D0E48BDC571A0334DC9621017B13BB261103716"
+    },
+    {
+      "path": "tests/helpers/spin-page-harness.cjs",
+      "sha256": "414B8B14AED36FD84D4C134115E6A3A8C0CBBCC1B90844D166A65EEE497DDDFD"
+    },
+    {
+      "path": "tests/spin-relaxation.test.cjs",
+      "sha256": "62D290CA1AFADD2C95180AD0097405574A7755B3DA89DAF1C5AF1EEA17C85A04"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B03-numerical.cjs",
+      "sha256": "2E1E4C7809139ADA8CF2E4F7F88A342F7723D7A2AD686E5FA5789729EABC3684"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B03-numerical.json",
+      "sha256": "31847A158F40684C3DCE916DD8AD343D91C927CF411D7AC8AD43061B64C2434D"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B03-browser-check.js",
+      "sha256": "2B7BB98C26B319D3A8E6F909F0424687091381CE028845DDCA3FF4C1601A4E06"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B03-browser-check.json",
+      "sha256": "8A1C46324127276E72E204FD47B80E0CA7C917BA721E68FB488E341811895DC8"
+    }
+  ]
+}

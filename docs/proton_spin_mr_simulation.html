@@ -150,6 +150,23 @@
       letter-spacing: 0;
     }
 
+    .lesson { font-size: 13px; line-height: 1.65; }
+    .lesson ol { padding-left: 22px; }
+    .lesson li { margin: 12px 0; }
+    .lesson button { width: 100%; margin-top: 6px; }
+    .lesson summary { cursor: pointer; font-weight: 800; }
+    .lesson details { margin-top: 14px; }
+    .lesson code { overflow-wrap: anywhere; }
+    a { color: #1d4ed8; }
+    button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid #7c3aed; outline-offset: 3px;
+    }
+    .data-line b { white-space: normal; text-align: right; overflow-wrap: anywhere; }
+    .timeline-event:first-child span { transform: none; }
+    .timeline-event:last-child span { transform: translateX(-100%); }
+    .event-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 8px 0 12px; }
+    .event-list button { font-size: 12px; min-width: 0; }
+
     .control-row {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -377,8 +394,11 @@
 
     @media (max-width: 520px) {
       .stage {
-        min-height: 660px;
+        min-height: 0;
+        padding-top: 130px;
       }
+
+      canvas { position: relative; height: 380px; }
 
       .title {
         left: 18px;
@@ -392,9 +412,11 @@
       }
 
       .readout {
-        left: 14px;
-        right: 14px;
-        bottom: 16px;
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        padding: 0 14px 16px;
       }
 
       .control-row {
@@ -410,7 +432,7 @@
 <body>
   <main class="app">
     <section class="stage" aria-label="양성자 스핀 MR 시뮬레이션 장면">
-      <canvas id="scene"></canvas>
+      <canvas id="scene" role="img" aria-label="RF 회전좌표계의 순자화와 z 및 횡방향 성분. 수치는 현재 상태에서 확인합니다."></canvas>
       <h1 class="title">양성자 스핀 MR 시뮬레이션</h1>
       <p class="subtitle">RF 좌표계의 Bloch 순자화 모델: 공명에서는 x'축, detuning이 있으면 B_eff 둘레로 회전</p>
       <div class="readout" id="stageReadout" aria-live="polite">
@@ -423,6 +445,25 @@
     </section>
 
     <aside class="sidebar">
+      <section class="section lesson" id="learningPath">
+        <p><a href="index.html">학습 목록</a> · B03 · 선행: <a href="proton_spin_rf_larmor_resonance.html">RF와 공명</a></p>
+        <h2>RF가 꺼진 뒤 자화와 신호는 어떻게 달라질까?</h2>
+        <p>빨간 화살표는 많은 핵의 합인 <b>순자화</b>입니다. RF가 기울인 자화에서 횡성분은 T2로 줄고, 종성분은 T1으로 회복합니다. SE는 정적인 주파수 차이로 벌어진 위상만 다시 모읍니다.</p>
+        <ol>
+          <li><b>RF 끝을 먼저 확인.</b> 공명 90° hard pulse의 종료 상태를 멈춰 봅니다. 유한 RF 중에도 이완이 있어 Mxy/M0가 정확히 1은 아닙니다. B1 또는 detuning을 바꾸고 RF를 다시 실행해 실제 기울기를 비교하세요.
+            <button id="observeRF" type="button">① RF 종료 직후 관찰</button></li>
+          <li><b>자유 이완을 비교.</b> 같은 pulse의 종료 후 80 ms (=T2)에서 Mxy가 종료값의 약 37%인지 확인하세요. 아래 관찰 시점을 900 ms (=T1)로 바꾸어 Mz가 남은 간격의 약 63%를 회복했는지 봅니다.
+            <button id="observeFree" type="button">② T2 시점 관찰</button></li>
+          <li><b>SE의 TE에서 비교.</b> 180° 전후와 TE를 관찰 시점으로 오가세요. 회색 벡터의 방향은 다시 모여도 T2로 잃은 크기는 돌아오지 않습니다. σf를 0으로 바꾼 뒤 같은 TE의 신호와 비교하세요.
+            <button id="observeEcho" type="button">③ TE의 echo 관찰</button></li>
+        </ol>
+        <p class="note">관찰 버튼은 대표 설정을 적용하고 해당 시점에서 멈춥니다. 매개변수 변경은 시간을 초기화합니다. ↺ 시간 초기화는 현재 설정을 유지합니다.</p>
+        <details><summary>먼저 알아둘 벡터·시간·부호</summary>
+          <p>x′, y′, z는 오른손 좌표계이며 화면은 RF와 함께 회전합니다. Δf = fspin − fRF입니다. 앞 B02의 δ = fRF − fspin과는 Δf = −δ로 변환합니다. Δf &gt; 0이면 +z에서 내려다본 횡자화는 시계 방향으로 돕니다.</p>
+          <p>M0는 해당 B0에서의 평형 자화입니다. 숫자는 M0=1로 정규화하며 |S|/M0=Mxy/M0입니다. 그림의 최대 길이는 3 T 기준이어서 B0를 바꾸어도 숫자와 길이의 기준은 다릅니다. 수신 코일·잡음·영상 밝기는 계산하지 않습니다.</p>
+          <p>RF 시간은 유한 pulse 시작에서, 자유 이완은 RF 종료에서, 시퀀스 t는 순간 90° 중심에서 잽니다. TE/2에 순간 180°, TE에 echo, TR에 다음 90°가 옵니다. TR 끝 화면은 다음 pulse 직전입니다.</p>
+        </details>
+      </section>
       <section class="section">
         <h2>자기장과 flip</h2>
         <div class="control-row">
@@ -447,7 +488,7 @@
         </div>
         <div class="button-grid">
           <button id="startPulse" class="primary" type="button">▶ RF 펄스 시작</button>
-          <button id="resetPulse" type="button">↺ 초기화</button>
+          <button id="resetPulse" type="button">↺ 시간 초기화</button>
         </div>
         <p class="note">기본 B1=10 uT는 90° hard pulse가 약 0.59 ms가 되는 값입니다. 실제 장비에서는 pulse shape, duration, transmit gain 보정에 따라 달라집니다.</p>
       </section>
@@ -463,20 +504,24 @@
             <option value="chemical">Chemical shift water/fat</option>
           </select>
         </div>
+        <div id="sequenceDiagram">
         <div class="timeline" aria-hidden="true">
           <div id="sequenceProgress" class="timeline-progress"></div>
           <div id="sequenceTimeline"></div>
+        </div>
+        <div id="sequenceEventList" class="event-list" aria-label="시퀀스의 정확한 관찰 시점"></div>
         </div>
         <div class="button-grid">
           <button id="runSequence" class="primary" type="button">▶ 시퀀스 실행</button>
           <button id="applyPreset" type="button">Preset 적용</button>
         </div>
         <div class="control-row">
-          <label for="sequenceScrub">시퀀스 관찰 시점</label>
+          <label id="observationLabel" for="sequenceScrub">RF 후 관찰 시점</label>
           <output id="sequenceScrubOutput" for="sequenceScrub">0 ms</output>
           <input id="sequenceScrub" type="range" min="0" max="500" value="0" step="0.1" />
         </div>
-        <button id="pauseSequence" type="button" disabled>시퀀스 일시정지</button>
+        <button id="pauseSequence" type="button" disabled>일시정지</button>
+        <p class="note" id="modeGuide"></p>
         <div class="control-row">
           <label for="trControl">TR</label>
           <output id="trOutput" for="trControl">500 ms</output>
@@ -503,17 +548,22 @@
           <input id="offResControl" type="range" min="-120" max="120" value="0" step="1" />
         </div>
         <div class="control-row">
-          <label for="fatControl">fat fraction</label>
+          <label for="fatControl">모형의 지방 신호 비율</label>
           <output id="fatOutput" for="fatControl">40%</output>
           <input id="fatControl" type="range" min="0" max="100" value="40" step="5" />
         </div>
         <div class="control-row">
-          <label for="spreadControl">SE: B0 분포 σf</label>
+          <label for="spreadControl">SE: 주파수 분포 폭 σf</label>
           <output id="spreadOutput" for="spreadControl">35 Hz</output>
           <input id="spreadControl" type="range" min="0" max="100" value="35" step="5" />
         </div>
         <p class="note">Δf = fspin − fRF입니다. 자유 RF는 detuning과 RF 중 이완을 포함합니다. 시퀀스는 이상적인 순간 90°/180° pulse를 사용하며, TE는 excitation 중심에서 readout/echo 중심까지입니다. 위 RF 속도·B1·목표각은 자유 RF에 적용됩니다.</p>
-        <p class="note">SE는 9개 isochromat의 합으로 B0 불균일 재위상화를 보여 줍니다. TR 전 남은 횡자화는 spoiling하고 T1 정상상태에서 시작합니다. Water/fat은 동일 T1/T2와 3.5 ppm 단일 fat peak의 위상 간섭 모델입니다.</p>
+        <p class="note">SE는 정적인 9개 주파수 묶음(isochromat)의 가중 합입니다. 회색은 각 묶음의 정규화 자화, 빨간색은 가중 평균입니다. σf는 ±2σf에서 자른 이산 Gaussian의 폭 매개변수이며 실제 표준편차와 같지 않습니다. σf=0이면 한 묶음입니다. TR 전 남은 횡자화는 spoiling하고 T1 정상상태에서 시작합니다. T1W/T2W는 대표 설정의 이름이며 조직 대비는 <a href="contrast_weighting.html">C01</a>에서 비교합니다.</p>
+        <details class="lesson"><summary>별도 실험: water/fat 위상 간섭</summary>
+          <p>이 모드에는 180° pulse가 없습니다. 지방의 주파수를 물보다 3.5 ppm 낮게 둔 단일 peak 모형입니다. 같은 T1/T2, 이상적 90° 반복과 spoiling을 가정하며 정적 주파수 분포는 적용하지 않습니다. 지방 비율은 모형의 평형 신호 비율이며 임상 PDFF 측정값이 아닙니다.</p>
+          <p id="chemicalGuide"></p>
+          <p>TE에서 두 횡벡터를 더한 길이를 읽습니다. OP라도 비율이 다르면 완전히 상쇄하지 않습니다. 실제 지방의 여러 peak·T2*·Dixon 분리는 후속 F01/F02에서 다룹니다.</p>
+        </details>
       </section>
 
       <section class="section">
@@ -549,6 +599,25 @@
         </div>
         <p class="note">M0 크기는 B0에 선형 비례하도록 두고, 3.0 T를 화면 최대 길이로 정규화했습니다. B1 화살표와 pulse 진행 시간에는 보기 위한 배율이 적용됩니다.</p>
       </section>
+      <section class="section lesson">
+        <h2>관찰을 마친 뒤</h2>
+        <p>① RF가 꺼진 뒤에도 횡자화가 회전하는 조건은? ② T1과 T2가 서로 다른 성분에 작용한다는 근거는? ③ 같은 TE에서 σf를 바꾸어도 이상적 SE 신호가 같은 이유는?</p>
+        <p><b>확인 문제.</b> 이상적 180° pulse가 되돌릴 수 있는 것은?</p>
+        <button id="quizWrong" type="button">T2로 잃은 모든 횡자화 크기</button>
+        <button id="quizCorrect" type="button">정적인 주파수 차이로 벌어진 위상</button>
+        <p id="quizFeedback" role="status">답을 선택하면 이유를 확인할 수 있습니다.</p>
+        <details><summary>수식과 모형의 범위</summary>
+          <p>m=M/M0, f1=γ̄B1입니다. γ̄=42.57747892 MHz/T, 시간은 ms입니다. RF 중에는 <code>dm/dt = (2π/1000) m × (f1,0,Δf) + (−mx/T2,−my/T2,(1−mz)/T1)</code>을 회전·이완 분할법으로 풉니다. RF 종료 후에는 종자화의 남은 간격과 횡자화가 각각 지수적으로 줄어듭니다.</p>
+          <p>자유 이완: <code>mz(t)=1+[mz(0)−1]exp(−t/T1)</code>, <code>mx(t)+i my(t)=[mx(0)+i my(0)]exp(−t/T2)exp(−i2πΔf t/1000)</code>.</p>
+          <p>이상적 SE 정상상태: <code>A=1−2exp[−(TR−TE/2)/T1]+exp(−TR/T1)</code>, <code>|S(TE)|/M0=|A|exp(−TE/T2)</code>. 180°는 (mx,my,mz)→(mx,−my,−mz)이며 회복 중인 mz도 뒤집습니다. SE에서 T2를 되돌리거나 Δf 자체를 바꾸지 않습니다.</p>
+          <p>Water/fat: <code>|S(t)|/M0=(1−exp(−TR/T1)) exp(−t/T2) |(1−F)+F exp(i2πΔfWF t/1000)|</code>, <code>ΔfWF=γ̄ B0 × 3.5 Hz</code> (γ̄를 MHz/T로 입력할 때). RF 실험은 평형에서 한 번, 시퀀스는 반복 정상상태에서 시작하므로 초기 횡자화가 서로 다릅니다.</p>
+          <p>TR &gt; TE, T2 ≤ 2T1로 제한합니다. 확산·교환·자화율 변화·pulse shape·slice·RF 불완전성은 시퀀스 모형에 포함하지 않습니다. 유한 pulse에는 실제 지속 시간과 이완이 있고, 순간 pulse 시퀀스에는 지속 시간이 없습니다.</p>
+        </details>
+        <details><summary>출처와 다음 학습</summary>
+          <p><a href="https://larsonlab.github.io/MRI-education-resources/Bloch%20Equation.html">Larson, Principles of MRI: Bloch Equation</a>의 운동·이완 방정식과 <a href="https://larsonlab.github.io/MRI-education-resources/Basic%20Contrast%20Mechanisms.html">Basic Contrast Mechanisms</a>를 기준으로 합니다. 단일 지방 peak는 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2949297/">Brodsky 등, Frequency Response of Multipoint Chemical Shift Based Spectral Decomposition (2010)</a>의 단순 신호 모형과 대조했습니다. 실제 지방에는 여러 peak가 있습니다.</p>
+          <p>다음: <a href="contrast_weighting.html">T1W·T2W·PDW 대비</a> · <a href="frequency_phase_encoding_visualization.html">공간 부호화</a> · <a href="b_eff.md">유효장 심화</a> · <a href="verification/2026-10-15/B03-physics.html">검증 기록</a>.</p>
+        </details>
+      </section>
     </aside>
   </main>
 
@@ -578,6 +647,11 @@
       sequenceScrub: document.getElementById("sequenceScrub"),
       sequenceScrubOutput: document.getElementById("sequenceScrubOutput"),
       pauseSequence: document.getElementById("pauseSequence"),
+      observationLabel: document.getElementById("observationLabel"),
+      modeGuide: document.getElementById("modeGuide"),
+      chemicalGuide: document.getElementById("chemicalGuide"),
+      sequenceDiagram: document.getElementById("sequenceDiagram"),
+      sequenceEventList: document.getElementById("sequenceEventList"),
       b0Output: document.getElementById("b0Output"),
       b1Output: document.getElementById("b1Output"),
       flipOutput: document.getElementById("flipOutput"),
@@ -729,9 +803,10 @@
       const mobile = canvas.clientWidth < 520;
       camera.origin = {
         x: canvas.clientWidth * (mobile ? 0.49 : 0.46),
-        y: canvas.clientHeight * (mobile ? 0.46 : 0.55)
+        y: mobile ? canvas.clientHeight * 0.48 : (120 + stageReadout.offsetTop - 40) / 2
       };
-      camera.scale = Math.min(canvas.clientWidth, canvas.clientHeight) * (mobile ? 0.24 : 0.29);
+      camera.scale = mobile ? Math.min(canvas.clientWidth * 0.24, (canvas.clientHeight - 40) / 3.7)
+        : Math.min(canvas.clientWidth * 0.24, Math.max(60, stageReadout.offsetTop - 160) / 3.7);
     }
 
     function resize() {
@@ -823,7 +898,7 @@
       const center = project(v(0, 0, 0));
       const placed = [{ x: center.x + 18, y: center.y + 18, w: 118, h: 42 }];
       const mobile = canvas.clientWidth < 520;
-      const maxLabelY = stageReadout.offsetTop - 34;
+      const maxLabelY = mobile ? canvas.clientHeight - 30 : stageReadout.offsetTop - 34;
       const intersects = (a, b) => a.x < b.x + b.w + 4 && a.x + a.w + 4 > b.x && a.y < b.y + b.h + 4 && a.y + a.h + 4 > b.y;
       for (const label of labelQueue) {
         const p = project(label.position);
@@ -840,7 +915,7 @@
           const column = Math.floor(attempt / 15);
           const shiftX = column === 0 ? 0 : Math.ceil(column / 2) * 44 * (column % 2 ? 1 : -1);
           box = { x: clamp(baseX + shiftX, 6, canvas.clientWidth - width - 6),
-            y: clamp(p.y - 13 + shiftY, mobile ? 132 : 100, maxLabelY), w: width, h: 26 };
+            y: clamp(p.y - 13 + shiftY, mobile ? 6 : 100, maxLabelY), w: width, h: 26 };
           if (!placed.some(other => intersects(box, other))) break;
         }
         const { x, y } = box;
@@ -956,10 +1031,10 @@
       const chemical = state.sequenceMode === "chemical";
       const result = chemical ? MRPhysics.chemical(state, t) : MRPhysics.spinEcho(state, t);
       const m = result.m;
-      const near = Math.min(1, state.teMs / 8);
-      const refocusing = !chemical && Math.abs(t - state.teMs / 2) < near;
-      const readout = Math.abs(t - state.teMs) < near;
-      const event = t < near ? "순간 90° excitation (t=0)"
+      const atPulse = 1e-9;
+      const refocusing = !chemical && Math.abs(t - state.teMs / 2) < atPulse;
+      const readout = Math.abs(t - state.teMs) < atPulse;
+      const event = t < atPulse ? "순간 90° excitation 직후 (t=0)"
         : refocusing ? "순간 180° 회전: 각 Δf 유지"
         : readout ? (chemical ? "TE water/fat readout" : "spin echo at TE")
         : chemical ? "water/fat phase drift + relaxation"
@@ -973,7 +1048,8 @@
       return {
         mxyRatio: Math.hypot(m.x, m.y), mzRatio: m.z,
         phaseRad: Math.atan2(m.x, m.y), event,
-        rfActive: t < near || refocusing, species, members,
+        // Values are right limits of zero-duration pulses; never draw finite B1 here.
+        rfActive: false, species, members,
         signal: Math.hypot(m.x, m.y),
         teSignal: chemical ? chemicalSignalAtTE() : result.echoSignal, elapsedMs: t
       };
@@ -1041,7 +1117,7 @@
 
     function drawRFField(p) {
       if (!p.rfActive) {
-        label3("B1 OFF", v(0.85, -0.12, -0.08), colors.b1, 0.5);
+        label3(state.mode.startsWith("sequence") ? "순간 RF: t=0" + (state.sequenceMode === "chemical" ? "" : ", TE/2") : "B1 OFF", v(0.85, -0.12, -0.08), colors.b1, 0.7);
         return;
       }
       const b1Visual = clamp(0.38 + state.b1MicroT / 30 * 0.55, 0.38, 0.93);
@@ -1154,17 +1230,35 @@
       return names[state.sequenceMode] || "sequence";
     }
 
+    let timelineKey = "";
     function renderSequenceTimeline(p) {
       const total = Math.max(1, state.sequenceDurationMs || sequenceDurationMs());
-      controls.sequenceTimeline.innerHTML = "";
-      for (const item of sequenceEvents()) {
-        const left = clamp(item.at / total * 100, 0, 100);
-        const node = document.createElement("div");
-        node.className = "timeline-event";
-        node.style.left = `${left}%`;
-        node.innerHTML = `<span>${item.label}</span>`;
-        controls.sequenceTimeline.appendChild(node);
+      const key = JSON.stringify([state.sequenceMode, total, state.teMs]);
+      if (key !== timelineKey) {
+        timelineKey = key;
+        controls.sequenceTimeline.innerHTML = "";
+        controls.sequenceEventList.innerHTML = "";
+        for (const item of sequenceEvents()) {
+          const node = document.createElement("div");
+          node.className = "timeline-event";
+          node.style.left = `${clamp(item.at / total * 100, 0, 100)}%`;
+          controls.sequenceTimeline.appendChild(node);
+          const button = document.createElement("button");
+          button.type = "button";
+          button.textContent = `${item.label}: ${item.at.toFixed(2)} ms`;
+          button.addEventListener("click", () => {
+            // Event times may lie between slider ticks (for example TE/2=7.55 ms).
+            state.sequenceDurationMs = sequenceDurationMs();
+            state.sequenceElapsedMs = item.at;
+            state.sequencePaused = true;
+            state.mode = "sequence";
+            updateUI();
+            drawScene();
+          });
+          controls.sequenceEventList.appendChild(button);
+        }
       }
+      controls.sequenceDiagram.hidden = state.sequenceMode === "custom";
       const progress = state.mode === "sequence" || state.mode === "sequence_done"
         ? clamp(state.sequenceElapsedMs / total * 100, 0, 100)
         : state.mode === "free"
@@ -1180,36 +1274,50 @@
       controls.flipOutput.textContent = `${state.targetDeg.toFixed(0)}°`;
       controls.timeScaleOutput.textContent = `실제의 1/${state.timeScale.toLocaleString("ko-KR")}`;
       controls.trOutput.textContent = `${formatMs(state.trMs)}`;
-      controls.teOutput.textContent = `${formatMs(state.teMs)}`;
+      controls.teOutput.textContent = `${state.teMs.toFixed(1)} ms`;
       controls.t1Output.textContent = `${formatMs(state.t1Ms)}`;
       controls.t2Output.textContent = `${formatMs(state.t2Ms)}`;
       controls.offResOutput.textContent = `${state.offResHz.toFixed(0)} Hz`;
-      controls.spreadOutput.textContent = `${state.spreadHz.toFixed(0)} Hz (9 groups)`;
+      controls.spreadOutput.textContent = `${state.spreadHz.toFixed(0)} Hz (${state.spreadHz > 0 ? 9 : 1} groups)`;
       controls.fatOutput.textContent = `${Math.round(state.fatFraction * 100)}%`;
       controls.f0Metric.textContent = `${p.f0MHz.toFixed(2)} MHz`;
       controls.flipMetric.textContent = p.actualTiltDeg === null ? "정의 안 됨" : `${p.actualTiltDeg.toFixed(1)}°`;
       controls.mzMetric.textContent = p.mzRatio.toFixed(3);
       controls.mxyMetric.textContent = p.mxyRatio.toFixed(3);
-      controls.pulseMetric.textContent = state.mode.startsWith("sequence") ? "이상적 순간 pulse" : formatDuration(p.durationS);
+      controls.pulseMetric.textContent = state.sequenceMode !== "custom" ? "이상적 순간 pulse" : formatDuration(p.durationS);
       controls.m0Output.textContent = `${p.m0RelativeTo15.toFixed(2)}x @ 1.5 T`;
-      controls.nutationOutput.textContent = `${p.nutationHz.toFixed(1)} Hz`;
-      controls.durationOutput.textContent = state.mode.startsWith("sequence") ? "이상적 순간 pulse" : formatDuration(p.durationS);
+      controls.nutationOutput.textContent = state.sequenceMode !== "custom" ? "순간 pulse: 미적용" : `${p.nutationHz.toFixed(1)} Hz`;
+      controls.durationOutput.textContent = state.sequenceMode !== "custom" ? "이상적 순간 pulse" : formatDuration(p.durationS);
       controls.timeScaleStatus.textContent = state.mode === "sequence" || state.mode === "sequence_done"
         ? "시퀀스 압축 재생; RF 순간 pulse"
-        : p.effectiveScale > 0 ? `유효 1/${Math.round(p.effectiveScale).toLocaleString("ko-KR")}` : "pulse 없음";
+        : state.mode === "free" ? "재생 1초 = RF 후 180 ms"
+        : p.effectiveScale > 0 ? `RF 유효 1/${Math.round(p.effectiveScale).toLocaleString("ko-KR")}` : "pulse 없음";
       controls.sequenceTimeOutput.textContent = state.mode === "sequence" || state.mode === "sequence_done"
-        ? `${formatMs(p.elapsedMs)} / ${formatMs(p.durationMs)}`
+        ? `${p.elapsedMs.toFixed(2)} / ${p.durationMs.toFixed(1)} ms`
         : state.mode === "free"
           ? `${formatMs(state.freeMs)} after RF`
-          : "-";
+          : state.mode === "rf" ? `${formatDuration(state.targetDeg > 0 ? p.durationS * state.currentDeg / state.targetDeg : 0)} / ${formatDuration(p.durationS)}` : "-";
       controls.signalOutput.textContent = p.signal === null || Number.isNaN(p.signal) ? "-" : p.signal.toFixed(3);
       controls.teSignalOutput.textContent = p.teSignal === null ? "-" : p.teSignal.toFixed(3);
-      controls.sequenceScrub.max = String(state.trMs);
-      controls.sequenceScrub.value = String(state.sequenceElapsedMs);
-      controls.sequenceScrub.disabled = state.sequenceMode === "custom" || state.running;
-      controls.sequenceScrubOutput.textContent = `${state.sequenceElapsedMs.toFixed(1)} ms (TE ${state.teMs.toFixed(1)})`;
-      controls.pauseSequence.disabled = state.mode !== "sequence";
-      controls.pauseSequence.textContent = state.sequencePaused ? "시퀀스 계속" : "시퀀스 일시정지";
+      const custom = state.sequenceMode === "custom";
+      controls.sequenceScrub.max = String(custom ? 5000 : state.trMs);
+      controls.sequenceScrub.value = String(custom ? state.freeMs : state.sequenceElapsedMs);
+      controls.sequenceScrub.disabled = custom ? state.mode !== "free" : state.running;
+      controls.observationLabel.textContent = custom ? "RF 종료 후 관찰 시점" : "90° 중심 후 관찰 시점";
+      controls.sequenceScrubOutput.textContent = custom ? `${state.freeMs.toFixed(1)} ms after RF`
+        : `${state.sequenceElapsedMs.toFixed(2)} ms (TE ${state.teMs.toFixed(1)})`;
+      controls.pauseSequence.disabled = !["rf", "free", "sequence"].includes(state.mode);
+      controls.pauseSequence.textContent = state.sequencePaused ? "관찰 계속 재생" : "일시정지";
+      controls.modeGuide.textContent = custom ? "한 번의 유한 RF → RF OFF. RF 종료 후 관찰 시점은 0–5000 ms입니다. TR·TE·σf·지방 비율은 적용하지 않습니다."
+        : state.sequenceMode === "chemical" ? "이상적 90°만 있는 water/fat 실험. t=0은 90° 직후, TR 끝은 다음 excitation 직전입니다. B1·RF 목표각·σf는 적용하지 않습니다."
+        : "이상적 SE: 90° → TE/2의 180° → TE의 echo → TR. pulse 시점의 자화는 회전 직후 값입니다. B1·RF 목표각·지방 비율은 적용하지 않습니다.";
+      const shift = chemicalShiftHz();
+      controls.chemicalGuide.textContent = `현재 B0의 주파수 차이는 ${shift.toFixed(2)} Hz입니다. IP 주기 ${ (1000 / shift).toFixed(3)} ms, 첫 OP ${(500 / shift).toFixed(3)} ms입니다. TE 슬라이더는 0.1 ms 간격이므로 정확한 IP/OP 근방을 비교하세요.`;
+      for (const control of [controls.b1, controls.flip, controls.timeScale]) control.disabled = !custom;
+      controls.tr.disabled = custom;
+      controls.te.disabled = custom;
+      controls.spread.disabled = custom || state.sequenceMode === "chemical";
+      controls.fat.disabled = state.sequenceMode !== "chemical";
       controls.eventOutput.textContent = p.event;
       controls.visualScaleOutput.textContent = `${(p.m0Scene / MAX_VECTOR_LENGTH).toFixed(2)} of 3.0 T`;
       const fillProgress = state.mode === "sequence" || state.mode === "sequence_done"
@@ -1241,6 +1349,9 @@
           ? `RF pulse 후 ${p.event}`
           : "평형 상태";
       }
+      if (!custom) controls.start.disabled = true;
+      if (state.sequencePaused && state.mode === "free") controls.pulseState.textContent = "RF OFF: 이완 시점 관찰 중";
+      if (state.sequencePaused && state.mode === "rf") controls.pulseState.textContent += " (일시정지)";
     }
 
     function syncFromControls() {
@@ -1288,6 +1399,7 @@
       state.rfActive = true;
       state.completed = false;
       state.sequenceElapsedMs = 0;
+      state.sequencePaused = false;
       state.visualDuration = physics().visualDuration;
       updateUI();
     }
@@ -1302,6 +1414,7 @@
       state.rfActive = false;
       state.completed = false;
       state.sequenceElapsedMs = 0;
+      state.sequencePaused = false;
       state.activeEvent = "평형 상태";
       updateUI();
       drawScene();
@@ -1353,7 +1466,7 @@
       const rawDt = Math.min(0.05, (now - tick.last) / 1000);
       tick.last = now;
 
-      if (state.running) {
+      if (state.running && !state.sequencePaused) {
         state.elapsed += rawDt;
         const progress = state.visualDuration > 0 ? clamp(state.elapsed / state.visualDuration, 0, 1) : 1;
         state.currentDeg = state.targetDeg * progress;
@@ -1366,8 +1479,9 @@
           state.completed = true;
         }
         updateUI();
-      } else if (state.mode === "free") {
+      } else if (state.mode === "free" && !state.sequencePaused) {
         state.freeMs = Math.min(5000, state.freeMs + rawDt * POST_RF_MS_PER_SECOND);
+        if (state.freeMs === 5000) state.sequencePaused = true;
         updateUI();
       } else if (state.mode === "sequence" && !state.sequencePaused) {
         const physicalStep = rawDt * state.sequenceDurationMs / Math.max(0.1, state.sequenceVisualDuration);
@@ -1402,11 +1516,16 @@
     controls.start.addEventListener("click", startPulse);
     controls.runSequence.addEventListener("click", runSequence);
     function scrubSequence() {
-      if (state.sequenceMode === "custom" || state.running) return;
-      state.sequenceDurationMs = sequenceDurationMs();
-      state.sequenceElapsedMs = clamp(Number(controls.sequenceScrub.value), 0, state.sequenceDurationMs);
+      if (state.running) return;
+      if (state.sequenceMode === "custom") {
+        if (state.mode !== "free") return;
+        state.freeMs = clamp(Number(controls.sequenceScrub.value), 0, 5000);
+      } else {
+        state.sequenceDurationMs = sequenceDurationMs();
+        state.sequenceElapsedMs = clamp(Number(controls.sequenceScrub.value), 0, state.sequenceDurationMs);
+        state.mode = "sequence";
+      }
       state.sequencePaused = true;
-      state.mode = "sequence";
       updateUI();
       drawScene();
     }
@@ -1417,6 +1536,36 @@
     });
     controls.applyPreset.addEventListener("click", applyPresetForMode);
     controls.reset.addEventListener("click", resetPulse);
+    function observeStep(step) {
+      controls.sequenceMode.value = step === "echo" ? "t2w" : "custom";
+      controls.b0.value = "3";
+      controls.b1.value = "10";
+      applyPresetForMode();
+      controls.offRes.value = step === "echo" ? "35" : "0";
+      controls.spread.value = "35";
+      syncFromControls();
+      if (step === "echo") {
+        controls.sequenceScrub.value = String(state.teMs);
+        scrubSequence();
+      } else {
+        state.mode = "free";
+        state.currentDeg = state.targetDeg;
+        state.completed = true;
+        state.freeMs = step === "free" ? state.t2Ms : 0;
+        state.sequencePaused = true;
+        updateUI();
+        drawScene();
+      }
+    }
+    document.getElementById("observeRF").addEventListener("click", () => observeStep("rf"));
+    document.getElementById("observeFree").addEventListener("click", () => observeStep("free"));
+    document.getElementById("observeEcho").addEventListener("click", () => observeStep("echo"));
+    document.getElementById("quizWrong").addEventListener("click", () => {
+      document.getElementById("quizFeedback").textContent = "T2로 잃은 횡자화 크기는 회복하지 못합니다. 180° 후 위상이 모여도 신호에는 exp(−TE/T2)의 감쇠가 남습니다.";
+    });
+    document.getElementById("quizCorrect").addEventListener("click", () => {
+      document.getElementById("quizFeedback").textContent = "맞습니다. 정적 Δf는 그대로이며, 횡자화의 위상을 뒤집어 TE에서 다시 모이게 합니다. 종자화도 함께 반전합니다.";
+    });
     window.addEventListener("resize", resize);
 
     syncFromControls();
