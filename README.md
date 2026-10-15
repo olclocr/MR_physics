@@ -24,6 +24,8 @@ This repository contains the following interactive simulations located in the [d
    - Continues spatial encoding with three guided steps: inspect a complex k-space component, add spatial patterns to reconstruct an image, and compare missing-frequency effects with zero-filled reconstruction.
 6. **T1W / T2W / PDW Contrast Lab** ([contrast_weighting.html](docs/contrast_weighting.html))
    - Adjust TR and TE to connect ideal spin-echo recovery and decay with a synthetic image, signal table, and guided questions. Uses a fixed display scale and separates weighting from quantitative mapping.
+7. **Spin Ensemble and Thermal Equilibrium** ([spin_ensemble_equilibrium.html](docs/spin_ensemble_equilibrium.html))
+   - Start here before RF: compare real spin-1/2 occupations, magnified population differences, and a separate phasor-sum teaching diagram. Explore B0 and temperature with a fixed polarization scale.
 
 ## Curriculum and Development
 
@@ -58,6 +60,8 @@ The [B02 RF resonance review](docs/verification/2026-10-15/B02-physics.md) cover
 
 The [B03 relaxation and spin-echo review](docs/verification/2026-10-15/B03-physics.md) covers the guided RF → free relaxation → SE path, finite-pulse accuracy, exact observation clocks, and the separate water/fat model.
 
+The [B01 spin ensemble review](docs/verification/2026-10-15/B01-physics.md) covers quantum and ensemble boundaries, thermal polarization, magnification, independent 60-digit reference values, and real desktop/mobile checks.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -88,6 +92,8 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
    - 공간 부호화 다음 단계로, k-space 한 성분의 무늬 관찰 → 성분 합성으로 영상 복원 → 빠진 공간 주파수의 영향 비교를 안내합니다. 복소수와 역변환 식은 선택해서 펼쳐 볼 수 있습니다.
 6. **T1W / T2W / PDW 영상 대비 실험실** ([contrast_weighting.html](docs/contrast_weighting.html))
    - TR·TE를 조절하며 이상적인 SE의 회복·감쇠·신호 표·합성 영상을 함께 관찰합니다. 고정 표시 창, 선행 지식, 흔한 오개념, 확인 문제와 후속 질문을 제공합니다.
+7. **B01 스핀·순자화와 열평형** ([spin_ensemble_equilibrium.html](docs/spin_ensemble_equilibrium.html))
+   - RF 앞에서 학습하는 기초 챕터입니다. 실제 두 준위의 작은 차이와 확대 막대, 별도 위상 합 도식을 구분하고 B0·온도를 바꾸며 편극을 비교합니다.
 
 ## 학습 구성과 개발 방향
 
@@ -121,6 +127,8 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 [B02 RF 공명 검증](docs/verification/2026-10-15/B02-physics.md)에는 두 회전좌표계·RF OFF·정규화·관찰/정답·실제 데스크톱/모바일 검증을 기록했습니다.
 
 [B03 자화·이완·SE 검증](docs/verification/2026-10-15/B03-physics.md)은 세 단계 관찰, 유한 RF 정확도 개선, 정확한 시간 조작과 별도 water/fat 모형의 독립 검산·실제 화면을 기록합니다.
+
+[B01 스핀·열평형 검증](docs/verification/2026-10-15/B01-physics.md)은 두 준위·편극·양자/ensemble 경계·확대와 위상 도식을 60자리 독립 계산·실제 데스크톱/모바일로 대조한 기록입니다.
 
 ## 라이선스
 

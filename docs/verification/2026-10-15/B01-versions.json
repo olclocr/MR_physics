@@ -1,0 +1,50 @@
+{
+  "baseCommit": "d78db6c9d82b902698275b63286503324ed7c1f6",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/spin_ensemble_equilibrium.html",
+      "sha256": "C8AB1C8A28BB48880CC6586A9CC1B6BF54D7F682C5EF8F2775F0E8ED3BB56532"
+    },
+    {
+      "path": "docs/assets/spin-ensemble-model.js",
+      "sha256": "D38D9EC8F9F2D5F57C51510599D6E58E155F4FABEBD0986DE26C95A985A1AAC6"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/spin-ensemble.test.cjs",
+      "sha256": "20C8A82CC9E905F6122A6838ED97F7BEF6FE3D3905A78E1F3265E8796D6BE8E5"
+    },
+    {
+      "path": "tests/helpers/ensemble-page-harness.cjs",
+      "sha256": "7EFEE6F8AEC3A56AC9964FFA8F8919696CE161CB5179B88C81D6379EDD774449"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-reference.py",
+      "sha256": "9775C8F980F276A521A2A96A8D65262D39AE2CB0EDCD6D3B4D8BCF63FA43CC92"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-reference.json",
+      "sha256": "E9CAD509CADCFC51A18818D190E2EADC2F23BB21530AA073EE7EF8F3FC3D16BB"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-numerical.cjs",
+      "sha256": "91919DDF36F0A1ACB19BD4B89BD126C40540E1197D64BD55DC4CC04FBAFA73CB"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-numerical.json",
+      "sha256": "A466D222AE6D2E29B56DB196B7883514E5B8379C835563D10594CA8A8DB838A0"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-browser-check.js",
+      "sha256": "90B2BAA49D604D313716588D2A550C001532583274A9B68FD3E8684CD4F60A46"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-browser-check.json",
+      "sha256": "4B114E656CB534E5C279FC536713A3CE775E0656F1732F7EF1A72F529853A053"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>스핀과 열평형 — 많은 핵에서 순자화는 어떻게 생기나?</title>
+  <style>
+    :root { color-scheme:light; font-family:"Malgun Gothic","Segoe UI",system-ui,sans-serif; color:#162033; background:#f5f7fb; --muted:#53647c; --line:#d7e0ec; --blue:#2563eb; --orange:#c75b12; }
+    * { box-sizing:border-box; }
+    body { margin:0; }
+    main { max-width:1220px; margin:auto; padding:32px 24px 64px; }
+    nav { display:flex; flex-wrap:wrap; gap:10px 22px; margin-bottom:24px; }
+    a { color:#1d4ed8; }
+    h1 { font-size:clamp(27px,4vw,42px); line-height:1.3; max-width:850px; margin:10px 0 18px; word-break:keep-all; }
+    h2 { font-size:22px; margin:0 0 15px; line-height:1.4; }
+    h3 { font-size:16px; margin:20px 0 8px; }
+    p,li { font-size:15px; line-height:1.8; }
+    p { margin:10px 0; }
+    header p { max-width:900px; }
+    .eyebrow { color:#1d4ed8; font-weight:800; font-size:13px; }
+    .grid { display:grid; grid-template-columns:1.1fr 1fr; gap:20px; margin-top:24px; align-items:start; }
+    .card { border:1px solid var(--line); border-radius:12px; background:white; padding:24px; min-width:0; }
+    .full { grid-column:1/-1; }
+    .muted,.note { color:var(--muted); }
+    .note { font-size:13px; line-height:1.75; }
+    .control { display:grid; grid-template-columns:1fr auto; gap:8px 16px; margin:22px 0; }
+    label,output { font-size:14px; font-weight:800; }
+    output { font-variant-numeric:tabular-nums; }
+    input[type=range] { grid-column:1/-1; width:100%; accent-color:var(--blue); }
+    button,select { font:inherit; font-size:14px; min-height:44px; padding:10px 14px; border:1px solid #b4c6df; border-radius:8px; background:white; color:#162033; cursor:pointer; }
+    button:hover { background:#eef4fc; }
+    button.primary { color:white; background:#1d4ed8; border-color:#1d4ed8; }
+    input:focus-visible,select:focus-visible,button:focus-visible,summary:focus-visible { outline:3px solid #7c3aed; outline-offset:3px; }
+    input[type=checkbox] { width:18px; height:18px; vertical-align:middle; margin-right:8px; }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; }
+    .metrics { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:18px 0; }
+    .metric { border:1px solid var(--line); padding:14px; border-radius:8px; min-width:0; background:#f8fafe; }
+    .metric span { display:block; font-size:12px; color:var(--muted); font-weight:750; }
+    .metric b { display:block; font-size:21px; margin-top:7px; font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+    .population-bar { display:flex; height:50px; border:1px solid #a7b8cf; border-radius:7px; overflow:hidden; margin:14px 0; }
+    .population-bar div { min-width:0; }
+    #lowerBar { background:#2563eb; }
+    #upperBar { background:#f3a365; }
+    .population-legend { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; font-size:13px; font-weight:800; }
+    .lower { color:#1d4ed8; } .upper { color:#a3470b; }
+    #scaleNotice { padding:10px 12px; background:#eef4ff; border-left:4px solid #2563eb; font-weight:800; font-size:13px; }
+    .table-wrap { overflow-x:auto; }
+    table { border-collapse:collapse; width:100%; font-size:13px; margin-top:16px; }
+    th,td { border-bottom:1px solid var(--line); padding:10px 6px; text-align:right; font-variant-numeric:tabular-nums; }
+    th:first-child,td:first-child { text-align:left; }
+    svg { display:block; width:100%; height:auto; overflow:visible; }
+    .formula { font-family:Consolas,monospace; overflow-wrap:anywhere; font-size:13px; }
+    details { margin-top:16px; border-top:1px solid var(--line); padding-top:14px; }
+    summary { cursor:pointer; font-weight:800; line-height:1.6; }
+    .task-list { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; padding-left:24px; margin:0; }
+    .task-list li { padding-right:8px; }
+    .quiz { display:grid; gap:10px; }
+    .quiz button { text-align:left; }
+    .feedback { min-height:58px; }
+    @media(max-width:800px) { .grid { grid-template-columns:1fr; } .task-list { grid-template-columns:1fr; gap:4px; } }
+    @media(max-width:480px) { main { padding:22px 14px 44px; } .card { padding:18px; } .metric { padding:11px; } .metric b { font-size:19px; } h2 { font-size:20px; } th,td { padding:10px 3px; font-size:12px; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="학습 경로"><a href="index.html">학습 목록</a><a href="mr_physics.md">스핀 개념 문서</a><a href="proton_spin_rf_larmor_resonance.html">다음: RF와 공명 →</a></nav>
+  <header>
+    <span class="eyebrow">B01 · 스핀·순자화와 열평형 · 약 10분</span>
+    <h1>많은 핵에서 순자화는 어떻게 생기나?</h1>
+    <p>양성자마다 자기모멘트가 있어도 모든 기여를 더하면 대부분 상쇄됩니다. 열평형에서는 낮은 에너지 준위가 <b>아주 조금 더 점유</b>되어 B0 방향으로 작은 순자화 M0가 남습니다. 개별 핵의 양자 상태, ensemble의 평균, 그림의 확대 배율을 나누어 봅니다.</p>
+    <details><summary>선행 지식: 스핀·벡터 합·population</summary>
+      <p>스핀은 핵의 고유한 각운동량이며, 핵이 작은 공처럼 실제로 자전한다는 뜻이 아닙니다. 양성자의 spin은 1/2입니다. B0 방향으로 측정한 성분은 두 값으로 구분되며, 양의 γ를 가진 양성자에서는 자기모멘트가 B0와 같은 방향인 준위의 에너지가 더 낮습니다.</p>
+      <p>Population은 각 에너지 준위의 점유 수입니다. 순자화는 단위 부피에서 많은 자기모멘트의 평균을 합친 벡터입니다. 반대 방향의 같은 기여는 상쇄되므로, 총수와 두 준위의 <b>차이</b>를 구별해야 합니다. 수식은 뒤에서 펼쳐 볼 수 있습니다.</p>
+    </details>
+  </header>
+  <div class="grid">
+    <section class="card full" aria-labelledby="tasksHeading">
+      <h2 id="tasksHeading">먼저 예상하고, 세 번 관찰하기</h2>
+      <ol class="task-list">
+        <li><b>횡방향 합.</b> 위상이 고르게 분산한 도식과 일치한 도식 중 평균 벡터가 긴 쪽을 예상하세요. R=0과 R=1을 비교합니다. 이 그림이 실제 개별 핵의 궤적은 아니라는 설명도 확인하세요.</li>
+        <li><b>작은 population 차이.</b> 실제 막대에서 차이를 찾은 다음 확대를 켜세요. 막대가 바뀌어도 실제 P와 준위 점유율 숫자는 같은지 확인합니다.</li>
+        <li><b>한 조건만 바꾸기.</b> 310 K에서 B0를 1.5→3 T로 바꾸면 실제 P가 얼마나 변할까요? B0를 고정한 채 온도만 올리면 증가할까요, 감소할까요?</li>
+      </ol>
+    </section>
+    <section class="card" aria-labelledby="thermalHeading">
+      <h2 id="thermalHeading">두 준위의 작은 차이 → M0</h2>
+      <div class="control"><label for="b0Control">B0 정자기장</label><output id="b0Output" for="b0Control"></output><input id="b0Control" type="range" min="0" max="7" step="0.1" value="3"></div>
+      <div class="control"><label for="temperatureControl">열평형 온도 T</label><output id="temperatureOutput" for="temperatureControl"></output><input id="temperatureControl" type="range" min="250" max="400" step="1" value="310"></div>
+      <p class="note">0 T는 두 준위가 축퇴하는 대칭 조건입니다. 온도 범위는 열평형을 비교하는 가상 조건입니다. 같은 양성자 밀도를 유지합니다.</p>
+      <div class="actions"><button id="compareField" type="button">1.5 T와 비교</button><button id="reset" class="primary" type="button">기본값으로 초기화</button></div>
+      <div class="metrics" aria-live="polite">
+        <div class="metric"><span>실제 편극 P · 두 준위 차이 / 총수</span><b id="polarizationOutput"></b></div>
+        <div class="metric"><span>상대 M0 · 3 T / 310 K = 1</span><b id="magnetizationOutput"></b></div>
+      </div>
+      <h3>실제 점유율과 표시 배율</h3>
+      <label><input id="magnifyControl" type="checkbox">population의 차이만 10,000배 확대</label>
+      <p id="scaleNotice" role="status"></p>
+      <div class="population-bar" role="img" id="populationGraphic" aria-label=""><div id="lowerBar"></div><div id="upperBar"></div></div>
+      <div class="population-legend"><span class="lower">■ 낮은 에너지 · +z</span><span class="upper">■ 높은 에너지 · −z</span></div>
+      <div class="table-wrap"><table aria-label="실제 에너지 준위 점유율"><thead><tr><th>실제 준위</th><th>점유율</th><th>백만 개당 기대개수</th></tr></thead><tbody>
+        <tr><th scope="row">낮은 에너지</th><td id="lowerPopulation"></td><td id="lowerCount"></td></tr>
+        <tr><th scope="row">높은 에너지</th><td id="upperPopulation"></td><td id="upperCount"></td></tr>
+      </tbody></table></div>
+      <p class="note" id="populationSummary"></p>
+      <p class="note">기대개수는 통계적 평균입니다. 위 막대의 면적이나 점유 수를 16개 위상 화살표의 개수로 읽지 마세요.</p>
+    </section>
+    <div>
+      <section class="card" aria-labelledby="phaseHeading">
+        <h2 id="phaseHeading">횡방향 기여의 합은 위상에 달려 있다</h2>
+        <label for="phaseControl">벡터 합 도식의 위상</label>
+        <select id="phaseControl"><option value="distributed">고르게 분산</option><option value="aligned">모두 같은 위상</option></select>
+        <svg id="phaseGraphic" viewBox="0 0 480 240" role="img" aria-labelledby="phaseTitle phaseDescription"></svg>
+        <p id="phaseReadout" role="status"></p>
+        <p class="note"><b>벡터 합의 보조 도식.</b> 16개 단위 벡터는 위상의 기하를 표현합니다. 분산 조건은 대칭인 대표 위상을 사용하며, 실제 무작위 표본에는 잔여합이 있을 수 있습니다. 개별 핵에 숨은 고전적 방향·원뿔 궤적을 부여하지 않습니다. R은 단위 위상 벡터의 평균 길이이며 실제 Mxy/M0나 열평형 편극 P가 아닙니다.</p>
+        <p>열평형 ensemble에는 횡방향 coherence가 없어 평균 횡자화가 0입니다. RF가 어떻게 횡자화를 만드는지는 <a href="proton_spin_rf_larmor_resonance.html">B02</a>에서 다룹니다. 위상 선택은 왼쪽의 열평형 계산을 바꾸지 않습니다.</p>
+      </section>
+      <section class="card" style="margin-top:20px" aria-labelledby="curveHeading">
+        <h2 id="curveHeading">실제 편극 P · 같은 온도에서 B0 비교</h2>
+        <svg id="polarizationCurve" viewBox="0 0 480 245" role="img" aria-label="B0 0~7 T, 편극 0~30 ppm의 고정 축에서 현재 온도의 곡선과 선택한 점"></svg>
+        <p class="note" id="curveSummary"></p>
+      </section>
+    </div>
+    <section class="card full" aria-labelledby="misconceptionHeading">
+      <h2 id="misconceptionHeading">흔한 오개념</h2>
+      <p><b>“대부분의 핵이 B0를 따라 정렬된다.”</b> 이 범위의 실제 준위 점유율은 거의 50:50입니다. 아주 작은 차이가 M0를 만듭니다. 확대를 껐다 켜도 실제 점유율 숫자를 다시 읽어 보세요.</p>
+      <p><b>“평형 순자화가 z를 가리키니 개별 spin도 고전적 화살표다.”</b> z 성분 고유상태의 횡방향 기대값은 0입니다. 비결맞음을 분산한 위상으로 설명하는 도식은 유용하지만 개별 핵의 실제 궤적을 뜻하지 않습니다.</p>
+      <p><b>“두 배의 M0면 모든 영상의 밝기와 SNR도 두 배다.”</b> 여기서는 핵 밀도와 온도가 같은 열평형만 비교합니다. 실제 신호에는 RF·이완·수신·잡음·촬영 조건도 관여합니다.</p>
+    </section>
+    <section class="card" aria-labelledby="quizHeading">
+      <h2 id="quizHeading">조건을 바꾸어 확인하기</h2>
+      <div class="quiz"><p><b>1.</b> 같은 온도에서 B0=0 T가 되면, 이 모형의 M0는?</p>
+        <button id="zeroWrong" type="button">각 양성자의 스핀이 없어져 0이 된다</button><button id="zeroCorrect" type="button">두 준위 점유율이 같아 평균 순자화가 0이다</button>
+        <p id="zeroFeedback" class="feedback" role="status">답을 선택해 이유를 확인하세요.</p>
+      </div>
+      <div class="quiz"><p><b>2.</b> 310 K, 같은 핵 밀도에서 1.5 T→3 T로 바꾸면?</p>
+        <button id="fieldCorrect" type="button">작은 population 차이와 M0가 약 두 배다</button><button id="fieldWrong" type="button">개별 양성자의 spin 양자수가 두 배다</button>
+        <p id="fieldFeedback" class="feedback" role="status">답을 선택해 이유를 확인하세요.</p>
+      </div>
+    </section>
+    <section class="card" aria-labelledby="nextHeading">
+      <h2 id="nextHeading">학습 후 질문과 다음 단계</h2>
+      <p>① 분산된 위상 도식과 실제 평형 ensemble의 공통점·차이점은? ② 10,000배 확대를 해제해도 변하지 않아야 할 값은? ③ 같은 B0에서 온도가 높아질 때 편극이 줄어드는 이유는?</p>
+      <p>이 챕터는 이미 열평형에 도달한 결과를 비교합니다. 평형까지 걸리는 시간과 RF 후의 변화는 다음 단계입니다.</p>
+      <nav><a href="proton_spin_rf_larmor_resonance.html">B02 · RF·flip angle</a><a href="proton_spin_mr_simulation.html">B03 · 자화와 이완</a><a href="contrast_weighting.html">C01 · 영상 대비</a></nav>
+      <details><summary>선택 수식 · 두 준위에서 M0까지</summary>
+        <p>+z는 양의 proton 자기모멘트가 B0와 같은 방향인 준위입니다. <span class="formula">E±=∓ΔE/2, ΔE=h γ̄ B0, N낮음/N높음=exp(ΔE/kT)</span>입니다.</p>
+        <p class="formula">P=(N낮음−N높음)/(N낮음+N높음)=tanh(ΔE/2kT). p낮음=(1+P)/2, p높음=(1−P)/2.</p>
+        <p>같은 핵 밀도 n에서 <span class="formula">M0=n μ P, μ=h γ̄/2</span>입니다. 숫자는 3 T·310 K를 1로 둔 상대 M0이며 A/m의 절대값이 아닙니다.</p>
+        <p>고온 근사에서는 <span class="formula">P≈h γ̄ B0/(2kT)</span>이어서 M0는 B0/T에 비례합니다. 여기 숫자와 곡선은 tanh의 정확식을 사용합니다.</p>
+        <p id="approximationOutput" class="note"></p>
+        <p class="formula">R=|(1/16) Σ exp(iφj)|. 도식의 위상 분산은 φj=2πj/16, 일치는 φj=0입니다.</p>
+      </details>
+      <details><summary>가정·상수·출처</summary>
+        <p>서로 상호작용하지 않는 spin-1/2 proton의 Zeeman 두 준위, 양의 γ, 열평형 Boltzmann 분포를 사용합니다. 화학적 이동·다른 핵종·분자 상호작용·RF 동역학·이완 시간은 계산하지 않습니다. B0=0에서도 핵의 spin은 남습니다.</p>
+        <p>기존 B02/B03과 같은 교육용 γ̄=42.57747892 MHz/T를 사용합니다. h=6.62607015×10⁻³⁴ J·s, k=1.380649×10⁻²³ J/K는 현재 SI의 정확값입니다. 시간 재생이 없는 정적 평형 비교입니다.</p>
+        <p><a href="https://larsonlab.github.io/MRI-education-resources/Spin%20Physics.html">Larson, Principles of MRI: Spin Physics</a>의 순자화·분수 편극, <a href="https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S1.html">Tong, Statistical Physics §1.2.3·1.3.2</a>의 독립 두 상태와 Boltzmann 가중치, <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">NIST CODATA 상수 표</a>를 기준으로 합니다. 세 자료 모두 2026-10-15에 확인했습니다.</p>
+        <p>개별 spin의 기대값은 <a href="https://farside.ph.utexas.edu/teaching/qm/Quantumhtml/node51.html">Fitzpatrick, Pauli Two-Component Formalism (UT Austin)</a>의 spinor와 Pauli 행렬로 대조했습니다. z 성분 고유상태에서는 x·y 기대값이 0이며, 물리적 회전 구체의 궤적을 계산하는 것이 아닙니다.</p>
+        <p><a href="verification/2026-10-15/B01-physics.html">B01 물리 검증 기록</a> · 수치·실제 화면·대상 버전·적용 범위</p>
+      </details>
+    </section>
+  </div>
+</main>
+<script src="assets/mr-physics-models.js"></script>
+<script src="assets/spin-ensemble-model.js"></script>
+<script>
+  const Model=SpinEnsemble;
+  const defaults={b0:3,temperatureK:310,magnified:false,phase:'distributed'};
+  let state={...defaults};
+  const el=id=>document.getElementById(id);
+  const bounded=(value,fallback,min,max)=>String(value).trim()!==''&&Number.isFinite(Number(value))?Math.max(min,Math.min(max,Number(value))):fallback;
+  const number=(x,digits=3)=>x.toLocaleString('en-US',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+  function currentResults() {
+    const thermal=Model.equilibrium(state.b0,state.temperatureK);
+    return {thermal,display:Model.populationDisplay(thermal.polarization,state.magnified),phase:Model.phaseSum(state.phase)};
+  }
+  function arrow(x,y,dx,dy,color,width=2) {
+    const endX=x+dx,endY=y+dy,angle=Math.atan2(dy,dx),size=8;
+    if(Math.hypot(dx,dy)<1e-9)return `<circle cx="${x}" cy="${y}" r="4" fill="${color}"/>`;
+    return `<path d="M${x},${y} L${endX},${endY} M${endX-size*Math.cos(angle-.45)},${endY-size*Math.sin(angle-.45)} L${endX},${endY} L${endX-size*Math.cos(angle+.45)},${endY-size*Math.sin(angle+.45)}" fill="none" stroke="${color}" stroke-width="${width}"/>`;
+  }
+  function drawPhase(p) {
+    const label=state.phase==='aligned'?'같은 위상':'고르게 분산';
+    let svg=`<title id="phaseTitle">16개 단위 위상 벡터의 평균</title><desc id="phaseDescription">${label}, 평균 길이 R=${p.magnitude.toFixed(4)}. 실제 개별 핵의 궤적이 아닌 벡터 합 도식.</desc><g font-family="Malgun Gothic,system-ui" font-size="18" fill="#53647c"><circle cx="125" cy="118" r="78" fill="#f5f8fd" stroke="#d7e0ec"/><path d="M35 118H215 M125 28V208 M292 118H452" stroke="#d7e0ec"/>`;
+    for(const a of p.vectors)svg+=arrow(125,118,76*a.x,-76*a.y,'#2563eb',1.6);
+    svg+=arrow(320,118,100*p.average.x,-100*p.average.y,'#c63737',4);
+    svg+=`<text x="125" y="230" text-anchor="middle">위상 단위 벡터 × 16</text><text x="370" y="190" text-anchor="middle">평균 길이 R</text><text x="370" y="220" text-anchor="middle" fill="#a12b2b">${p.magnitude.toFixed(4)}</text></g>`;
+    el('phaseGraphic').innerHTML=svg;
+    el('phaseReadout').textContent=state.phase==='aligned'?'같은 위상 → 같은 방향의 기여가 더해져 R=1입니다. 열평형 P는 그대로입니다.':'고르게 분산 → 대칭인 기여가 상쇄되어 R=0입니다. 평형의 횡방향 비결맞음을 이해하는 도식입니다.';
+  }
+  function drawCurve(t) {
+    const x=b=>55+b/7*395,y=p=>200-p/30*165;
+    const points=Array.from({length:71},(_,i)=>{const a=Model.equilibrium(i/10,state.temperatureK);return `${x(a.b0)},${y(a.ppm)}`;}).join(' ');
+    let svg='<g font-family="Malgun Gothic,system-ui" font-size="18" fill="#53647c">';
+    for(const v of [0,10,20,30])svg+=`<path d="M55 ${y(v)}H450" stroke="#d7e0ec"/><text x="45" y="${y(v)+6}" text-anchor="end">${v}</text>`;
+    for(const v of [0,1.5,3,5,7])svg+=`<text x="${x(v)}" y="225" text-anchor="middle">${v}</text>`;
+    svg+=`<text x="8" y="22">ppm</text><text x="448" y="245" text-anchor="end">B0 (T)</text><polyline points="${points}" fill="none" stroke="#2563eb" stroke-width="3"/><circle cx="${x(t.b0)}" cy="${y(t.ppm)}" r="6" fill="#bb3d29"/><text x="260" y="22" text-anchor="middle">T=${state.temperatureK} K · 고정 축</text></g>`;
+    el('polarizationCurve').innerHTML=svg;
+    el('curveSummary').textContent=`현재 점: ${state.b0.toFixed(1)} T, P=${t.ppm.toFixed(4)} ppm. 축은 B0 0–7 T, P 0–30 ppm으로 고정합니다.`;
+  }
+  function render() {
+    const {thermal:t,display:d,phase}=currentResults();
+    el('b0Control').value=String(state.b0);el('temperatureControl').value=String(state.temperatureK);
+    el('phaseControl').value=state.phase;el('magnifyControl').checked=state.magnified;
+    el('b0Output').textContent=state.b0.toFixed(1)+' T';el('temperatureOutput').textContent=state.temperatureK.toFixed(0)+' K';
+    el('polarizationOutput').textContent=t.ppm.toFixed(4)+' ppm';el('magnetizationOutput').textContent=t.relativeM0.toFixed(4);
+    el('compareField').textContent=state.b0===1.5?'3 T와 비교':'1.5 T와 비교';
+    el('scaleNotice').textContent=d.scale===1?'막대: 실제 비율 (차이가 거의 보이지 않음)':'막대: population의 차이 P만 10,000배 확대 · 아래 숫자는 실제 비율';
+    el('lowerBar').style.width=d.lowerPercent+'%';el('upperBar').style.width=d.upperPercent+'%';
+    el('populationGraphic').setAttribute('aria-label',`낮은 에너지 실제 ${(t.lower*100).toFixed(6)}%, 높은 에너지 실제 ${(t.upper*100).toFixed(6)}%. 막대의 차이 배율 ${d.scale}.`);
+    el('lowerPopulation').textContent=(t.lower*100).toFixed(6)+'%';el('upperPopulation').textContent=(t.upper*100).toFixed(6)+'%';
+    el('lowerCount').textContent=number(t.lowerPerMillion,2);el('upperCount').textContent=number(t.upperPerMillion,2);
+    el('populationSummary').textContent=`실제 초과 차이: 백만 개당 평균 ${t.ppm.toFixed(4)}개. 평형 M0는 +z 방향이며, ${state.b0===0?'현재는 0입니다.':'그 크기는 두 준위 점유율의 작은 차이에 비례합니다.'}`;
+    const relativeApprox=t.polarization===0?0:Math.abs(t.approxP/t.polarization-1);
+    el('approximationOutput').textContent=`현재 f0=${(t.frequencyHz/1e6).toFixed(6)} MHz, ΔE=${t.gapJ.toExponential(4)} J, ΔE/(2kT)=${t.x.toExponential(4)}. 고온 근사의 P 상대 오차는 ${t.polarization===0?'0 (두 식 모두 0)':relativeApprox.toExponential(2)}입니다.`;
+    drawPhase(phase);drawCurve(t);
+  }
+  function sync() {
+    state.b0=bounded(el('b0Control').value,defaults.b0,0,7);
+    state.temperatureK=bounded(el('temperatureControl').value,defaults.temperatureK,250,400);
+    state.phase=el('phaseControl').value==='aligned'?'aligned':'distributed';state.magnified=el('magnifyControl').checked;render();
+  }
+  for(const id of ['b0Control','temperatureControl','magnifyControl'])el(id).addEventListener('input',sync);
+  el('phaseControl').addEventListener('change',sync);
+  el('compareField').addEventListener('click',()=>{state.b0=state.b0===1.5?3:1.5;render();});
+  el('reset').addEventListener('click',()=>{state={...defaults};for(const id of ['zeroFeedback','fieldFeedback'])el(id).textContent='답을 선택해 이유를 확인하세요.';render();});
+  el('zeroWrong').addEventListener('click',()=>{el('zeroFeedback').textContent='스핀은 핵의 성질이어서 B0=0에서도 남습니다. 두 준위의 에너지 차이가 0이 되어 population이 같고 평균 순자화가 0입니다.';});
+  el('zeroCorrect').addEventListener('click',()=>{el('zeroFeedback').textContent='맞습니다. 이 열평형 모형에서 population 차이가 0이므로 M0=0입니다. 개별 양성자의 spin이 사라지는 것은 아닙니다.';});
+  el('fieldCorrect').addEventListener('click',()=>{el('fieldFeedback').textContent='맞습니다. 이 범위에서는 P≈hγ̄B0/(2kT)이므로 같은 온도와 밀도에서 M0가 약 두 배입니다. spin-1/2 자체는 그대로입니다.';});
+  el('fieldWrong').addEventListener('click',()=>{el('fieldFeedback').textContent='양성자의 spin 양자수 1/2은 변하지 않습니다. B0가 바꾸는 것은 준위 사이 에너지 차이와 열평형의 작은 population 차이입니다.';});
+  render();
+</script>
+</body>
+</html>

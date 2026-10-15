@@ -10,7 +10,8 @@
     "2026-10-15": [
       { "source": "C01-physics.md", "target": "C01-physics.html", "label": "C01 통합 물리 검증" },
       { "source": "B02-physics.md", "target": "B02-physics.html", "label": "B02 RF 공명 검증" },
-      { "source": "B03-physics.md", "target": "B03-physics.html", "label": "B03 자화·이완·SE 검증" }
+      { "source": "B03-physics.md", "target": "B03-physics.html", "label": "B03 자화·이완·SE 검증" },
+      { "source": "B01-physics.md", "target": "B01-physics.html", "label": "B01 스핀·열평형 검증" }
     ]
   }
 }
