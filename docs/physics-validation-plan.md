@@ -71,7 +71,7 @@
 
 | ID | 내용·모형 정합성 검토 | 독립 검산·확인할 비교 |
 |---|---|---|
-| G01 | FOV·획득 matrix·pixel·k-space 간격/범위의 연결, 재구성 matrix와 구별 | 격자·단위 계산, 점/경계 phantom, zero filling 전후 실제 정보 비교 |
+| G01 | **검토 중 / 통과 아님** — [W09 계산 기반·재개 기록](verification/2026-10-15/G01-physics.md). FOV·획득 matrix·pixel·k-space 간격/범위의 연결, 재구성 matrix와 구별 | 격자·단위 계산, 점/경계 phantom, zero filling 전후 실제 정보 비교 |
 | G02 | RF bandwidth·slice gradient·두께, slice profile·partial volume·cross-talk 가정 | slice 선택 주파수 계산, slab/경계 phantom의 공간 적분, profile 근사 확인 |
 | G03 | 2D slice와 3D partition, voxel·MPR·SNR/시간 비교의 전제 | 같은 3D phantom의 두 획득 모형 비교, voxel 크기를 맞춘 재구성 확인 |
 | Q01 | 복소/크기영상의 잡음 분포, SNR/CNR 정의, NEX·voxel 효과의 전제 | 독립 잡음 표본의 평균/분산, 반복 평균과 알려진 신호, noise floor 비교 |

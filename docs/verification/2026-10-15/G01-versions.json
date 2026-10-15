@@ -1,0 +1,26 @@
+{
+  "baseCommit": "f13d4606b4e49386161245188a2ad74ff096c594",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/assets/fov-resolution-model.js",
+      "sha256": "3540BBFDFD2FE0102626CE481A9023EB2B7C501E2782631E9506076E7A1D1FF0"
+    },
+    {
+      "path": "tests/fov-resolution.test.cjs",
+      "sha256": "A4ABCC92FE10ADBC2A95CB3CA627DA1BFBE1C4CEE6BD54ACF85A80F36D0AA042"
+    },
+    {
+      "path": "tests/helpers/fov-reference.cjs",
+      "sha256": "AC9FDF1785C8EA49F34B38AB148E732A1F4F3DBDDA8281F25A94920B867C4F52"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-numerical.cjs",
+      "sha256": "309EE110AE31AAAC2053D294B68F23379037B2B43C08CB023546862B99F1252E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-numerical.json",
+      "sha256": "77754D03F06A9FF35A6E4AE07EE859FA50165CF32B1C212F7980C6D3085FFB5B"
+    }
+  ]
+}

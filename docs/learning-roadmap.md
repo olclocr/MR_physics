@@ -57,7 +57,7 @@
 
 | ID | 챕터와 중심 질문 | 선행 | 상태 / 구현할 사항 |
 |---|---|---|---|
-| G01 | FOV·matrix: 촬영 범위와 pixel 크기를 어떻게 정하나? | B04, B05 | 계획. FOV/N, k-space 간격·범위, 획득/재구성 matrix, interpolation |
+| G01 | FOV·matrix: 촬영 범위와 pixel 크기를 어떻게 정하나? | B04, B05 | 계산 자산 구현 / 교육 HTML·통합 물리 검증 대기. FOV/N, k-space 간격·범위, 획득/재구성 matrix, interpolation |
 | G02 | Slice selection·두께·partial volume: 얇게 찍으면 무엇이 달라지나? | B02, B04 | 계획. RF bandwidth/gradient와 slice 두께, 경계 혼합, gap·cross-talk |
 | G03 | 2D와 3D: slice와 slab·partition은 어떻게 다른가? | G01, G02 | 계획. 두 획득 방식, isotropic voxel, MPR, 움직임 민감도 |
 | Q01 | SNR·CNR·NEX: 더 잘 보이는 영상은 무엇인가? | C01, G01 | 계획. 복소 잡음과 magnitude, averaging의 제곱근 관계, 병변 대비. AI와 기존 SNR 측정 구별 |
@@ -160,7 +160,7 @@
 | W06 | C02 SE/GRE echo 비교 챕터 | W01, W02, W03, W04, W05 | 완료 — [검증](verification/2026-10-15/C02-physics.md) |
 | W07 | C03 T2/T2*와 dephasing 챕터 | W06 | 완료 — [검증](verification/2026-10-15/C03-physics.md) |
 | W08 | B05 k-space 재검토와 선행 안내 | W05 | 완료 — [검증](verification/2026-10-15/B05-physics.md) |
-| W09 | G01 FOV·matrix·해상도 챕터 | W05, W08 | 미착수 |
+| W09 | G01 FOV·matrix·해상도 챕터 | W05, W08 | 진행 중 |
 | W10 | G02 slice selection·부분 용적 챕터 | W02, W05 | 미착수 |
 | W11 | Q01 SNR·CNR·NEX 챕터 | W01, W09 | 미착수 |
 | W12 | B00 고전적 비유의 검증과 한계 | W00 | 미착수 |
@@ -251,7 +251,7 @@ W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을
 
 ## 현재 작업의 재개 메모
 
-진행 중 항목 없음. 다음 W09 G01. W08의 선행 복소수 안내·확인 문제·독립 FFT·실제 canvas·내용 검토를 완료했다. 사용량 한도 전 GitHub push는 사용자 승인됨. W07까지 로컬 커밋으로 보관했다.
+W09 진행 중 (2026-10-15). `docs/assets/fov-resolution-model.js`의 FOV/N/M·주파수 표본·점/경계 모형과 독립 Dirichlet/convolution 검산을 구현했다. 전체 56/56, 수치 162조건 최대 1.286e−12. **교육 HTML·실제 브라우저·통합 물리 검토는 미시행이며 완료 아님.** [상세 재개 기록](verification/2026-10-15/G01-physics.md). 다음 요청 첫 행동: `fov_matrix_resolution.html`에 계산 자산을 연결하여 세 관찰·곡선/띠 영상·확인 문제를 구현한다. 사용량 한도 근접으로 현재 작업 단위를 보관하며 W00–W08의 완료 기록은 보존한다. GitHub push 사용자 승인됨.
 
 ## 작업 기록
 
@@ -285,3 +285,5 @@ MRIQuestions는 주제 선택과 질문 발굴의 참고 자료이며 원문·�
 | 2026-10-15 | W07 C03 구현·통합 검증 | 연속 Gaussian 정적 탈위상·T2의 인자·FID/GRE/SE를 구현. [독립 적분·34개 실제 상태·내용 판정](verification/2026-10-15/C03-physics.md). 다음 W08 |
 
 | 2026-10-15 | W08 B05 통합 물리 재검토 | 1,432개 독립 FFT 조건, 78개 실제 상태·canvas 색, 부호 표시 범위·복소수 안내·예측 문제를 검토·수정. [판정](verification/2026-10-15/B05-physics.md). 다음 W09 |
+
+| 2026-10-15 | W09 G01 계산 기반 구현·중간 기록 | FOV/N/M·점/경계 Fourier 모형과 독립 convolution 검산. [화면·통합 검증이 남은 정확한 재개 위치](verification/2026-10-15/G01-physics.md). W09 진행 중 유지 |
