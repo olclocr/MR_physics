@@ -153,3 +153,5 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 [C02 SE/GRE physical review · 물리 검증](docs/verification/2026-10-15/C02-physics.md): independent time-ordered/analytic comparisons and desktop/mobile controls.
 
 [C03 T2/T2* physical review · 물리 검증](docs/verification/2026-10-15/C03-physics.md): continuous Gaussian envelopes checked by independent frequency integration and desktop/mobile controls.
+
+[B05 k-space physical review · 물리 검증](docs/verification/2026-10-15/B05-physics.md): independent FFT checks, complex-number guidance, prediction feedback, and real canvas verification.

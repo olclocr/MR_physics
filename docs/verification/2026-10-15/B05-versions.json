@@ -1,0 +1,42 @@
+{
+  "baseCommit": "4200dc1ffc2b0633649dbcc57e6b6957afbceeea",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/kspace_inverse_fourier.html",
+      "sha256": "03B4612BDDF6022C77D6087B27D88FCAA18DEFC23B4970C84122780A988AC033"
+    },
+    {
+      "path": "tests/kspace_inverse_fourier.test.cjs",
+      "sha256": "C24C7D0CF495B2BF5639AC9B17DA0281DEE068504AF8E4487910B2BD305ABF47"
+    },
+    {
+      "path": "tests/kspace-independent.test.cjs",
+      "sha256": "DD0720C939C38B92B63DDC5551266B9C9EEF99167C146781125D7C958FE634EC"
+    },
+    {
+      "path": "tests/helpers/kspace-fft-reference.cjs",
+      "sha256": "FF6BC1FA5C0836677A7C5FD90988AE275DAE0164BA2FF78FA8DA4782311DEA62"
+    },
+    {
+      "path": "tests/helpers/kspace-page-harness.cjs",
+      "sha256": "5EEA9A149C9A54371B731B9574F229C930192368FEF0D71EA53D218875A29E77"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B05-numerical.cjs",
+      "sha256": "0F9B910A448101B515FF6A118D5C6C715E7232676150C98DC5661473416E6FA0"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B05-numerical.json",
+      "sha256": "77715EA3FFB978EF31463318E24E5DFD649EB5F0C1BE293B71DCDF42C1290552"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B05-browser-check.js",
+      "sha256": "5BA7AF3BEC6062CA90E1C72CE74AAA69A6A995EDB5D6FF62E604AA09597E7E19"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B05-browser-check.json",
+      "sha256": "437BD0A0EB456C0DA6910BA2396200CD31AB3EAE77946B8C76AC27A20AF25370"
+    }
+  ]
+}

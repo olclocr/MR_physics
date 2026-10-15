@@ -58,6 +58,11 @@
         "source": "C03-physics.md",
         "target": "C03-physics.html",
         "label": "C03 T2/T2*·탈위상 검증"
+      },
+      {
+        "source": "B05-physics.md",
+        "target": "B05-physics.html",
+        "label": "B05 k-space·역변환 검증"
       }
     ]
   }

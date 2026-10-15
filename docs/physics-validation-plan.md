@@ -42,7 +42,7 @@
 | B02 | [기존 RF 검산](verification/2026-10-14/fix-validation.md), [W02 통합 검증](verification/2026-10-15/B02-physics.md) | 대상 버전 통과 | 프레임·부호·단위·정규화, RF ON/OFF와 0/90/180/360°, 독립 Bloch·실제 화면 대조. 범위·버전·한계는 기록 참조. 외부 전문가 검토 미시행 |
 | B03 | [기존 SE·RF 검산](verification/2026-10-14/fix-validation.md), [W03 통합 검증](verification/2026-10-15/B03-physics.md) | 대상 버전 통과 | 유한 RF/ideal pulse·RF→free 연속성·T1/T2·180° 전후·TE/TR·chemical·정규화·확인 문제를 독립 수치와 실제 화면으로 대조. 범위·버전·한계는 기록 참조. 외부 전문가 검토 미시행 |
 | B04 | [기존 부호화 검산](verification/2026-10-14/fix-validation.md), [W05 통합 검증](verification/2026-10-15/B04-physics.md) | 대상 버전 통과 | gradient 면적·위상/k·단위·ADC·정규화·고정 표시 창·복소 역변환·Gy=0/격자 제한·정답을 독립 수치와 실제 화면으로 대조. 범위·버전은 기록 참조. 외부 전문가 검토 미시행 |
-| B05 | `tests/kspace_inverse_fourier.test.cjs`의 독립 성질·조작 시험 | 재검토 대기 | DFT 정규화·복소수·위상·conjugate symmetry·Parseval을 확인. 단일 성분, 중심/외곽 누락, aliasing, zero filling의 설명과 재구성 결과 대조 |
+| B05 | `tests/kspace_inverse_fourier.test.cjs`의 성질·조작 시험, [W08 통합 검증](verification/2026-10-15/B05-physics.md) | 대상 버전 통과 | DFT 정규화·복소수·위상·conjugate symmetry·Parseval을 확인. 단일 성분, 중심/외곽 누락, aliasing, zero filling의 설명과 재구성 결과 대조 |
 | C01 | [기존 구현 검증](verification/2026-10-14/contrast-chapter.md), [W01 통합 물리 검증](verification/2026-10-15/C01-physics.md) | 대상 버전 통과 | 이상적 SE 식·근사·180°의 종자화 반전·PD/TR/TE·예시값·고정 창·표/곡선/영상·퀴즈·map 구분을 근거·독립 계산·실제 화면으로 대조. 버전·오차·한계는 기록 참조. 외부 전문가 검토 미시행 |
 
 기존 구현의 수치·조작·화면 근거는 보존한다. C01·B02·B03은 로드맵 W01–W03, B04·B05·B00은 W05·W08·W12로 재검토를 배정했다. B01 독립 구현·검토는 W04, 누락된 보고서 참조와 회귀 기반 복구는 W00에 배정했다. **이 배정은 물리 검토를 수행한 결과가 아니며 위 상태를 바꾸지 않는다.** 실제 다음 작업은 로드맵에서 선택하고 문제가 발견되면 새 챕터보다 관련 오류 수정을 우선한다.
@@ -194,3 +194,5 @@
 | 2026-10-15 | W06 C02 시간 순서 Bloch/독립 위상·단위·실제/유효 면적·도식·정답·실제 화면을 검토·수정·재검증. 대상 버전 통과. 외부 전문가 검토 미시행 |
 
 | 2026-10-15 | W07 C03 연속 Gaussian Fourier envelope·T2 손실·refocusing·단일 지수의 조건을 독립 주파수 적분과 실제 화면·정답으로 검토. 대상 버전 통과. 외부 전문가 검토 미시행 |
+
+| 2026-10-15 | W08 B05 DFT/FFT·정규화·대칭·Parseval·복소 성분·누락 마스크·실제 canvas·정답을 검토·수정·재검증. 대상 버전 통과. 외부 전문가 검토 미시행 |

@@ -1,0 +1,32 @@
+async(page)=>{
+ const root='http://127.0.0.1:8766',folder='docs/verification/2026-10-15/';await page.route('**/*',r=>r.continue());
+ const helper=await(await page.request.get(root+'/tests/helpers/kspace-fft-reference.cjs')).text(),results=[],errors=[];page.on('pageerror',e=>errors.push(e.message));const check=(a,m)=>{if(!a)throw Error(m);};
+ const set=async(id,v)=>page.locator('#'+id).evaluate((e,v)=>{e.value=String(v);e.dispatchEvent(new Event('input',{bubbles:true}));},v);
+ async function capture(label){
+  const a=await page.evaluate(()=>{
+   const selection=[...activeCoefficients().keys()].map(s=>[s.kx,s.ky]),r=window.KspaceReference.reference([...original],state,selection),image=inverseSum(activeCoefficients());let kError=0,imageError=0,pixelError=0;
+   samples.forEach((s,i)=>{kError=Math.max(kError,Math.abs(s.real-r.coefficients[i].real),Math.abs(s.imaginary-r.coefficients[i].imaginary));imageError=Math.max(imageError,Math.abs(image.real[i]-r.reconstruction[i].real),Math.abs(image.imaginary[i]-r.reconstruction[i].imaginary));});
+   const canvas=$('reconstruction'),ctx=canvas.getContext('2d'),ratio=canvas.width/360;
+   for(const i of [0,51,85,170,204,255]){const v=r.reconstruction[i],value=state.imageView==='real'?v.real:Math.hypot(v.real,v.imaginary),gray=Math.round(250-Math.max(0,Math.min(1,value))*220),target=state.imageView==='magnitude'?[gray,gray+2,gray+5]:[246,248,251].map((v,i)=>Math.round(v+((value>=0?[8,145,178]:[124,58,237])[i]-v)*Math.min(1,Math.abs(value)))),x=(38+(i%16+.5)*296/16)*ratio,y=(12+(Math.floor(i/16)+.5)*296/16)*ratio,data=ctx.getImageData(Math.floor(x),Math.floor(y),1,1).data;target.forEach((v,k)=>pixelError=Math.max(pixelError,Math.abs(v-data[k])));}
+   return {state:{...state},kError,imageError,pixelError,activeCount:selection.length,referenceCount:r.active.length,count:$('countMetric').textContent,phase:$('phaseOutput').textContent,error:$('errorMetric').textContent,overflow:document.documentElement.scrollWidth>innerWidth,canvases:[...document.querySelectorAll('canvas')].map(c=>({id:c.id,width:c.width,cssWidth:c.getBoundingClientRect().width})),refNRMSE:Math.sqrt(r.reconstruction.reduce((s,v,i)=>s+(v.real-original[i])**2+v.imaginary**2,0)/original.reduce((s,v)=>s+v*v,0))};
+  });
+  check(a.kError<1e-10&&a.imageError<1e-10,label+' FFT mismatch');check(a.pixelError<=1,label+' canvas colors '+a.pixelError);check(!a.overflow,label+' overflow');check(a.activeCount===a.referenceCount&&a.count===a.activeCount+' / 256',label+' count');check(a.error===(a.refNRMSE<1e-10?'0.00%':(100*a.refNRMSE).toFixed(2)+'%'),label+' NRMSE');results.push({label,...a});
+ }
+ for(const [width,height]of [[1920,1080],[390,844]]){
+  await page.setViewportSize({width,height});await page.goto(root+'/docs/kspace_inverse_fourier.html?qa='+Date.now());await page.addScriptTag({content:'(()=>{const module={exports:{}};'+helper+';window.KspaceReference=module.exports;})();'});await capture(width+' default');await page.screenshot({path:folder+'B05-page-'+width+'.png'});
+  await page.locator('details.learning summary').click();await page.screenshot({path:folder+'B05-prerequisites-'+width+'.png'});await page.locator('details.learning summary').click();
+  for(const k of ['0,0','4,0','2,2','-1,0']){await page.locator('[data-k="'+k+'"]').click();await capture(width+' component '+k);}
+  await page.locator('#component').screenshot({path:folder+'B05-component-'+width+'.png'});
+  for(const id of ['gain','phaseOffset'])for(const edge of ['Home','End']){await page.locator('#'+id).focus();await page.keyboard.press(edge);await capture(width+' '+id+' '+edge);}
+  await page.locator('#includePair').uncheck();await page.locator('#includeDC').uncheck();await page.locator('#normalizeComponent').uncheck();await page.locator('#componentView').selectOption('imaginary');await page.locator('#imageView').selectOption('magnitude');await capture(width+' single complex');
+  await set('kx',-8);await set('ky',-8);await capture(width+' self conjugate');check(await page.locator('#phaseOffset').isDisabled(),'self conjugate phase');
+  await page.locator('#reset').click();await page.locator('#kspace').focus();await page.keyboard.press('Home');await page.keyboard.press('ArrowUp');await page.keyboard.press('ArrowRight');await capture(width+' keyboard k');
+  await page.locator('[data-mode="sum"]').click();for(const progress of [0,1,65,130]){await set('progress',progress);await capture(width+' center '+progress);}await page.locator('#order').selectOption('outer');await set('progress',65);await capture(width+' outer middle');await page.locator('#complete').click();await capture(width+' outer complete');await page.locator('.panels').screenshot({path:folder+'B05-complete-'+width+'.png'});
+  await set('progress',0);await page.locator('#playPause').click();await page.waitForFunction(()=>state.progress>0);await page.locator('#playPause').click();await capture(width+' paused');check(await page.evaluate(()=>!state.running),'animation paused');
+  await page.locator('[data-mode="mask"]').click();for(const pattern of ['phantom','bars','spot','uniform']){await page.locator('#pattern').selectOption(pattern);for(const mask of ['full','low','high','alternate']){await page.locator('#mask').selectOption(mask);await capture(width+' '+pattern+' '+mask);}}
+  await page.locator('#pattern').selectOption('spot');await page.locator('#mask').selectOption('low');for(const cutoff of [0,7]){await set('cutoff',cutoff);await capture(width+' cutoff '+cutoff);}await set('cutoff',2);await page.locator('#reconstruction').screenshot({path:folder+'B05-low-'+width+'.png'});await page.locator('#mask').selectOption('alternate');await capture(width+' spot fold');await page.locator('.panels').screenshot({path:folder+'B05-fold-'+width+'.png'});
+  for(const id of ['quizPointWrong','quizPointCorrect','quizMissingWrong','quizMissingCorrect']){await page.locator('#'+id).focus();await page.keyboard.press('Enter');}check((await page.locator('#quizMissingFeedback').textContent()).includes('맞습니다'),'feedback');await page.locator('#quizPointCorrect').scrollIntoViewIfNeeded();await page.screenshot({path:folder+'B05-quiz-'+width+'.png'});
+  await page.locator('#reset').focus();await page.keyboard.press('Enter');await capture(width+' reset');check((await page.locator('#quizMissingFeedback').textContent()).includes('답을 선택'),'reset feedback');
+ }
+ check(errors.length===0,errors.join('\n'));return {browser:page.context().browser().version(),results,errors};
+}

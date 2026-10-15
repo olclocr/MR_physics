@@ -1,0 +1,4218 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "label": "1920 default",
+      "state": {
+        "mode": "component",
+        "kx": 1,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 6.106226635438361e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-12.3°",
+      "error": "60.22%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.6021813897031919
+    },
+    {
+      "label": "1920 component 0,0",
+      "state": {
+        "mode": "component",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.440892098500626e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7858088432750753
+    },
+    {
+      "label": "1920 component 4,0",
+      "state": {
+        "mode": "component",
+        "kx": 4,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.996003610813204e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "13.7°",
+      "error": "78.36%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.783646732100474
+    },
+    {
+      "label": "1920 component 2,2",
+      "state": {
+        "mode": "component",
+        "kx": 2,
+        "ky": 2,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.996003610813204e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-91.8°",
+      "error": "78.46%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7845937493091785
+    },
+    {
+      "label": "1920 component -1,0",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 6.106226635438361e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "12.3°",
+      "error": "60.22%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.6021813897031918
+    },
+    {
+      "label": "1920 gain Home",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 0,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.440892098500626e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7858088432750753
+    },
+    {
+      "label": "1920 gain End",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "12.3°",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.785808843275076
+    },
+    {
+      "label": "1920 phaseOffset Home",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": -180,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-167.7°",
+      "error": "162.99%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1.6298712939017215
+    },
+    {
+      "label": "1920 phaseOffset End",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": 180,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-167.7°",
+      "error": "162.99%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1.629871293901721
+    },
+    {
+      "label": "1920 single complex",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": 180,
+        "includeDC": false,
+        "includePair": false,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "imaginary",
+        "normalizeComponent": false,
+        "imageView": "magnitude",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.6653345369377348e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "-167.7°",
+      "error": "142.11%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1.4210884730578108
+    },
+    {
+      "label": "1920 self conjugate",
+      "state": {
+        "mode": "component",
+        "kx": -8,
+        "ky": -8,
+        "gain": 2,
+        "phaseOffset": 180,
+        "includeDC": false,
+        "includePair": false,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "imaginary",
+        "normalizeComponent": false,
+        "imageView": "magnitude",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.7221724264893015e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "100.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.999999999999998
+    },
+    {
+      "label": "1920 keyboard k",
+      "state": {
+        "mode": "component",
+        "kx": 1,
+        "ky": 1,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.996003610813204e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-42.5°",
+      "error": "76.12%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7611791688311957
+    },
+    {
+      "label": "1920 center 0",
+      "state": {
+        "mode": "sum",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 0,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 0,
+      "referenceCount": 0,
+      "count": "0 / 256",
+      "phase": "0.0°",
+      "error": "100.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1
+    },
+    {
+      "label": "1920 center 1",
+      "state": {
+        "mode": "sum",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.440892098500626e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7858088432750753
+    },
+    {
+      "label": "1920 center 65",
+      "state": {
+        "mode": "sum",
+        "kx": 2,
+        "ky": 6,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 65,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.3877787807814457e-15,
+      "pixelError": 0,
+      "activeCount": 129,
+      "referenceCount": 129,
+      "count": "129 / 256",
+      "phase": "-75.9°",
+      "error": "19.19%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.19187620533705566
+    },
+    {
+      "label": "1920 center 130",
+      "state": {
+        "mode": "sum",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 130,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.7208456881689926e-15,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "0.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 2.283248533244333e-16
+    },
+    {
+      "label": "1920 outer middle",
+      "state": {
+        "mode": "sum",
+        "kx": 4,
+        "ky": 5,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 65,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 9.159339953157541e-16,
+      "pixelError": 0,
+      "activeCount": 127,
+      "referenceCount": 127,
+      "count": "127 / 256",
+      "phase": "73.8°",
+      "error": "98.14%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.9814191366717139
+    },
+    {
+      "label": "1920 outer complete",
+      "state": {
+        "mode": "sum",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 130,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.1657341758564144e-15,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "0.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 2.283248533244333e-16
+    },
+    {
+      "label": "1920 paused",
+      "state": {
+        "mode": "sum",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.610862132446508e-17,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "99.91%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.9991188656725327
+    },
+    {
+      "label": "1920 phantom full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.4432899320127035e-15,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "0.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 2.283248533244333e-16
+    },
+    {
+      "label": "1920 phantom low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "0.0°",
+      "error": "31.43%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.31433201246767867
+    },
+    {
+      "label": "1920 phantom high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 9.992007221626409e-16,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "0.0°",
+      "error": "94.93%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.9493131126967641
+    },
+    {
+      "label": "1920 phantom alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.1657341758564144e-15,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "0.0°",
+      "error": "50.24%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.5024062018145433
+    },
+    {
+      "label": "1920 bars full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 9.992007221626409e-16,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1.502245003970502e-16
+    },
+    {
+      "label": "1920 bars low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 1.3877787807814457e-16,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "87.79%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.8779179870409802
+    },
+    {
+      "label": "1920 bars high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 6.661338147750939e-16,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "47.88%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.4788110358271974
+    },
+    {
+      "label": "1920 bars alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 6.954168065149587e-16,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "47.67%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.4767312946227962
+    },
+    {
+      "label": "1920 spot full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 2.975050761300224e-16,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "180.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1.1714910054515007e-16
+    },
+    {
+      "label": "1920 spot low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 4.163336342344337e-17,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "180.0°",
+      "error": "94.99%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.9499177595981664
+    },
+    {
+      "label": "1920 spot high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 2.8536201179818477e-16,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "180.0°",
+      "error": "31.25%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.31249999999999983
+    },
+    {
+      "label": "1920 spot alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 1.6653345369377348e-16,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "180.0°",
+      "error": "70.71%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7071067811865476
+    },
+    {
+      "label": "1920 uniform full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0
+    },
+    {
+      "label": "1920 uniform low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0
+    },
+    {
+      "label": "1920 uniform high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "100.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 1
+    },
+    {
+      "label": "1920 uniform alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0
+    },
+    {
+      "label": "1920 cutoff 0",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 0,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "180.0°",
+      "error": "99.80%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.998044963916957
+    },
+    {
+      "label": "1920 cutoff 7",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 7,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 2.463307335887066e-16,
+      "pixelError": 0,
+      "activeCount": 225,
+      "referenceCount": 225,
+      "count": "225 / 256",
+      "phase": "180.0°",
+      "error": "34.80%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.34798527267687634
+    },
+    {
+      "label": "1920 spot fold",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 1.6653345369377348e-16,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "180.0°",
+      "error": "70.71%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.7071067811865476
+    },
+    {
+      "label": "1920 reset",
+      "state": {
+        "mode": "component",
+        "kx": 1,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 6.106226635438361e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-12.3°",
+      "error": "60.22%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 330
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 330
+        }
+      ],
+      "refNRMSE": 0.6021813897031919
+    },
+    {
+      "label": "390 default",
+      "state": {
+        "mode": "component",
+        "kx": 1,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 6.106226635438361e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-12.3°",
+      "error": "60.22%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.6021813897031919
+    },
+    {
+      "label": "390 component 0,0",
+      "state": {
+        "mode": "component",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.440892098500626e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7858088432750753
+    },
+    {
+      "label": "390 component 4,0",
+      "state": {
+        "mode": "component",
+        "kx": 4,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.996003610813204e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "13.7°",
+      "error": "78.36%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.783646732100474
+    },
+    {
+      "label": "390 component 2,2",
+      "state": {
+        "mode": "component",
+        "kx": 2,
+        "ky": 2,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.996003610813204e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-91.8°",
+      "error": "78.46%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7845937493091785
+    },
+    {
+      "label": "390 component -1,0",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 6.106226635438361e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "12.3°",
+      "error": "60.22%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.6021813897031918
+    },
+    {
+      "label": "390 gain Home",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 0,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.440892098500626e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7858088432750753
+    },
+    {
+      "label": "390 gain End",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "12.3°",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.785808843275076
+    },
+    {
+      "label": "390 phaseOffset Home",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": -180,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-167.7°",
+      "error": "162.99%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1.6298712939017215
+    },
+    {
+      "label": "390 phaseOffset End",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": 180,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-167.7°",
+      "error": "162.99%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1.629871293901721
+    },
+    {
+      "label": "390 single complex",
+      "state": {
+        "mode": "component",
+        "kx": -1,
+        "ky": 0,
+        "gain": 2,
+        "phaseOffset": 180,
+        "includeDC": false,
+        "includePair": false,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "imaginary",
+        "normalizeComponent": false,
+        "imageView": "magnitude",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.6653345369377348e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "-167.7°",
+      "error": "142.11%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1.4210884730578108
+    },
+    {
+      "label": "390 self conjugate",
+      "state": {
+        "mode": "component",
+        "kx": -8,
+        "ky": -8,
+        "gain": 2,
+        "phaseOffset": 180,
+        "includeDC": false,
+        "includePair": false,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "imaginary",
+        "normalizeComponent": false,
+        "imageView": "magnitude",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.7221724264893015e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "100.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.999999999999998
+    },
+    {
+      "label": "390 keyboard k",
+      "state": {
+        "mode": "component",
+        "kx": 1,
+        "ky": 1,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.996003610813204e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-42.5°",
+      "error": "76.12%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7611791688311957
+    },
+    {
+      "label": "390 center 0",
+      "state": {
+        "mode": "sum",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 0,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 0,
+      "referenceCount": 0,
+      "count": "0 / 256",
+      "phase": "0.0°",
+      "error": "100.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1
+    },
+    {
+      "label": "390 center 1",
+      "state": {
+        "mode": "sum",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 4.440892098500626e-16,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "78.58%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7858088432750753
+    },
+    {
+      "label": "390 center 65",
+      "state": {
+        "mode": "sum",
+        "kx": 2,
+        "ky": 6,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 65,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.3877787807814457e-15,
+      "pixelError": 0,
+      "activeCount": 129,
+      "referenceCount": 129,
+      "count": "129 / 256",
+      "phase": "-75.9°",
+      "error": "19.19%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.19187620533705566
+    },
+    {
+      "label": "390 center 130",
+      "state": {
+        "mode": "sum",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 130,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.7208456881689926e-15,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "0.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 2.283248533244333e-16
+    },
+    {
+      "label": "390 outer middle",
+      "state": {
+        "mode": "sum",
+        "kx": 4,
+        "ky": 5,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 65,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 9.159339953157541e-16,
+      "pixelError": 0,
+      "activeCount": 127,
+      "referenceCount": 127,
+      "count": "127 / 256",
+      "phase": "73.8°",
+      "error": "98.14%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.9814191366717139
+    },
+    {
+      "label": "390 outer complete",
+      "state": {
+        "mode": "sum",
+        "kx": 0,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 130,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.1657341758564144e-15,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "0.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 2.283248533244333e-16
+    },
+    {
+      "label": "390 paused",
+      "state": {
+        "mode": "sum",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.610862132446508e-17,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "0.0°",
+      "error": "99.91%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.9991188656725327
+    },
+    {
+      "label": "390 phantom full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.4432899320127035e-15,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "0.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 2.283248533244333e-16
+    },
+    {
+      "label": "390 phantom low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 8.881784197001252e-16,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "0.0°",
+      "error": "31.43%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.31433201246767867
+    },
+    {
+      "label": "390 phantom high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 9.992007221626409e-16,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "0.0°",
+      "error": "94.93%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.9493131126967641
+    },
+    {
+      "label": "390 phantom alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 1.1657341758564144e-15,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "0.0°",
+      "error": "50.24%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.5024062018145433
+    },
+    {
+      "label": "390 bars full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 9.992007221626409e-16,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1.502245003970502e-16
+    },
+    {
+      "label": "390 bars low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 1.3877787807814457e-16,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "87.79%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.8779179870409802
+    },
+    {
+      "label": "390 bars high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 6.661338147750939e-16,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "47.88%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.4788110358271974
+    },
+    {
+      "label": "390 bars alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "bars",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 8.43769498715119e-15,
+      "imageError": 6.954168065149587e-16,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "47.67%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.4767312946227962
+    },
+    {
+      "label": "390 spot full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 2.975050761300224e-16,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "180.0°",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1.1714910054515007e-16
+    },
+    {
+      "label": "390 spot low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 4.163336342344337e-17,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "180.0°",
+      "error": "94.99%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.9499177595981664
+    },
+    {
+      "label": "390 spot high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 2.8536201179818477e-16,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "180.0°",
+      "error": "31.25%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.31249999999999983
+    },
+    {
+      "label": "390 spot alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 1.6653345369377348e-16,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "180.0°",
+      "error": "70.71%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7071067811865476
+    },
+    {
+      "label": "390 uniform full",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 256,
+      "referenceCount": 256,
+      "count": "256 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0
+    },
+    {
+      "label": "390 uniform low",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 25,
+      "referenceCount": 25,
+      "count": "25 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0
+    },
+    {
+      "label": "390 uniform high",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "high",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 231,
+      "referenceCount": 231,
+      "count": "231 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "100.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 1
+    },
+    {
+      "label": "390 uniform alternate",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "uniform",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 0,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "진폭 0 · 위상 없음",
+      "error": "0.00%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0
+    },
+    {
+      "label": "390 cutoff 0",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 0,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 0,
+      "pixelError": 0,
+      "activeCount": 1,
+      "referenceCount": 1,
+      "count": "1 / 256",
+      "phase": "180.0°",
+      "error": "99.80%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.998044963916957
+    },
+    {
+      "label": "390 cutoff 7",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "low",
+        "cutoff": 7,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 2.463307335887066e-16,
+      "pixelError": 0,
+      "activeCount": 225,
+      "referenceCount": 225,
+      "count": "225 / 256",
+      "phase": "180.0°",
+      "error": "34.80%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.34798527267687634
+    },
+    {
+      "label": "390 spot fold",
+      "state": {
+        "mode": "mask",
+        "kx": -8,
+        "ky": -8,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "outer",
+        "progress": 1,
+        "speed": 1,
+        "mask": "alternate",
+        "cutoff": 2,
+        "pattern": "spot",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1102230246251565e-15,
+      "imageError": 1.6653345369377348e-16,
+      "pixelError": 0,
+      "activeCount": 128,
+      "referenceCount": 128,
+      "count": "128 / 256",
+      "phase": "180.0°",
+      "error": "70.71%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.7071067811865476
+    },
+    {
+      "label": "390 reset",
+      "state": {
+        "mode": "component",
+        "kx": 1,
+        "ky": 0,
+        "gain": 1,
+        "phaseOffset": 0,
+        "includeDC": true,
+        "includePair": true,
+        "order": "center",
+        "progress": 1,
+        "speed": 1,
+        "mask": "full",
+        "cutoff": 2,
+        "pattern": "phantom",
+        "componentView": "real",
+        "normalizeComponent": true,
+        "imageView": "real",
+        "running": false
+      },
+      "kError": 1.1368683772161603e-13,
+      "imageError": 6.106226635438361e-16,
+      "pixelError": 0,
+      "activeCount": 3,
+      "referenceCount": 3,
+      "count": "3 / 256",
+      "phase": "-12.3°",
+      "error": "60.22%",
+      "overflow": false,
+      "canvases": [
+        {
+          "id": "original",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "kspace",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "component",
+          "width": 360,
+          "cssWidth": 310
+        },
+        {
+          "id": "reconstruction",
+          "width": 360,
+          "cssWidth": 310
+        }
+      ],
+      "refNRMSE": 0.6021813897031919
+    }
+  ],
+  "errors": []
+}

@@ -93,6 +93,8 @@
     details p { margin: 10px 0; }
     code { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.8 Consolas, monospace; padding: 8px; background: #f1f5fa; border-radius: 6px; }
     .step-link { display: block; margin-top: 12px; width: 100%; }
+    .learning { margin:18px 0;padding:18px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:14px;line-height:1.8; }
+    .learning h2 {font-size:18px;margin:0 0 10px}.learning ol{padding-left:22px}.learning li{margin:10px 0}.quiz-options{display:flex;flex-wrap:wrap;gap:8px}.quiz-feedback{min-height:40px;color:#34506d}
     @media (min-width: 1101px) {
       .sidebar { height: 100vh; position: sticky; top: 0; overflow-y: auto; }
     }
@@ -123,13 +125,15 @@
       </nav>
       <h1>K-space / Inverse Fourier Transform</h1>
       <p class="subtitle">위치 정보를 담은 복소 신호를 모았습니다. 이제 그 신호들이 어떻게 다시 영상이 되는지 살펴봅니다.</p>
+      <details class="learning"><summary>선행 안내: 복소수·크기·위상, 한 점과 한 무늬</summary><p>중심 질문은 “k-space 한 점은 영상의 한 점인가?”입니다. <a href="frequency_phase_encoding_visualization.html">공간 부호화</a>에서 여러 위치의 신호를 합해 한 복소 신호를 받았습니다. 여기서는 거꾸로 그 성분을 영상 전체의 무늬로 펼칩니다.</p><p>복소수 K=a+ib는 두 숫자(실수부 a, 허수부 b)로 방향과 크기를 함께 담습니다. 크기는 √(a²+b²), 위상은 atan2(b,a)입니다. 예를 들어 1과 −1은 크기가 같아도 위상이 180° 달라 합이 0입니다. 먼저 크기만 더하면 이 상쇄를 잃습니다.</p><p>kx·ky는 한 화면 안의 위상 회전 횟수를 나타내는 무차원 공간 주파수 인덱스입니다. N=16, 영상 좌표 x·y는 −8…7이며 y는 위로 증가합니다. 물리 길이를 지정한 k의 cycles/m와 구별하세요. 신호·영상은 예시 proton density의 1에 대한 임의 단위입니다.</p></details>
+      <section class="learning"><h2>예상한 뒤 세 단계로 확인하기</h2><ol><li><b>한 성분:</b> 중심 (0,0)과 촘촘한 (4,0)을 비교하세요. k-space의 한 점이 어느 범위에 기여하나요?</li><li><b>합치기:</b> 중심부터와 바깥부터 모두 더하세요. 중간 영상과 최종 영상의 차이를 예상하세요.</li><li><b>덜 채우기:</b> 비대칭 한 점에서 중심만과 ky 한 줄 건너뛰기를 비교하세요. 흐림과 y 방향 겹침은 어떻게 다른가요?</li></ol></section>
       <div class="flow" aria-label="영상 재구성 흐름">
         <span>앞 챕터: 공간 부호화</span><span>→</span><b>k-space 신호</b><span>→</span><b>공간 무늬를 더하기</b><span>→</span><b>영상 재구성</b>
       </div>
       <div class="panels">
         <section class="panel">
           <h2>① 원본 · 위치마다 얼마나 밝은가</h2>
-          <p class="panel-sub">재구성 결과를 비교하기 위한 16 × 16 proton density 예시입니다.</p>
+          <p class="panel-sub">16 × 16 proton density 교육용 합성 모형입니다. 실제 임상 영상이 아닙니다.</p>
           <div class="plot"><canvas id="original" width="360" height="360" role="img" aria-label="원본 proton density 영상. 가로 x, 세로 y."></canvas></div>
           <p class="caption">밝은 위치에 더 많은 신호가 있다고 가정합니다. 이 원본으로부터 k-space 신호를 계산했습니다.</p>
         </section>
@@ -160,6 +164,7 @@
         <div class="metric"><b>원본과의 오차 · NRMSE</b><span id="errorMetric"></span></div>
       </div>
       <p class="takeaway" id="takeaway" aria-live="polite"></p>
+      <section class="learning"><h2>관찰 후 예측 확인</h2><p><b>1.</b> 하나의 복소 k-space 성분은 어디에 기여하나요?</p><div class="quiz-options"><button id="quizPointWrong" type="button">영상의 한 픽셀에만</button><button id="quizPointCorrect" type="button">영상 전체에 펼쳐지는 무늬로</button></div><p id="quizPointFeedback" class="quiz-feedback" role="status">답을 선택해 이유를 확인하세요.</p><p><b>2.</b> ky 한 줄 건너뛰기 후 빠진 곳을 0으로 두면 원래 한 점의 위치를 완전히 알 수 있나요?</p><div class="quiz-options"><button id="quizMissingCorrect" type="button">아니요. 반 FOV 떨어진 y 위치가 겹칩니다</button><button id="quizMissingWrong" type="button">네. 0도 측정값이므로 정보가 보충됩니다</button></div><p id="quizMissingFeedback" class="quiz-feedback" role="status">답을 선택해 이유를 확인하세요.</p><p><b>흔한 오개념:</b> “중심은 영상 가운데, 바깥은 영상 가장자리다.” 각 성분은 전체에 퍼집니다. 중심에 가까운 성분은 완만한 변화, 바깥 성분은 촘촘한 변화를 나타냅니다. 중심만 남기면 경계가 흐려지고, 바깥만 남기면 평균 밝기를 잃으며 경계 변화가 강조됩니다.</p><p>다음 질문: k-space 간격과 최대 범위는 FOV·pixel 크기를 어떻게 정할까요? 후속 G01에서 다룹니다. Zero filling은 새 측정 정보를 더하지 않으며, 실제 partial Fourier·병렬 재구성과 구별합니다.</p></section>
     </section>
 
     <aside class="sidebar" aria-label="학습 단계와 조작">
@@ -253,7 +258,7 @@
           <summary>이 예시의 가정 · 오차 · 더 읽기</summary>
           <p>균일한 수신 감도, 위상 없는 실수 proton density, 균일한 Cartesian 격자를 가정합니다. T1/T2 대비, T2* 감쇠, 잡음과 움직임은 포함하지 않습니다. 앞 챕터의 획득 원리에서 재구성 원리로 초점을 옮긴 예시입니다.</p>
           <p>NRMSE는 복소 재구성과 원본의 차이 크기를 원본 크기로 나눈 값입니다. 표시를 실수부나 크기로 바꾸어도 같은 복소 오차를 보고합니다. 원본이 0인 위치의 작은 계산 오차는 색에 거의 나타나지 않습니다.</p>
-          <p>기초 읽기: <a href="https://mriquestions.com/uploads/3/4/5/7/34572113/fourier_transform_and_ph_enc.pdf" target="_blank" rel="noopener noreferrer">Gallagher 등, An Introduction to the Fourier Transform: Relationship to MRI (AJR, 2008)</a>.</p>
+          <p>기초 읽기: <a href="https://larsonlab.github.io/MRI-education-resources/Image%20Reconstruction.html">Larson · Image Reconstruction</a>, <a href="https://numpy.org/doc/stable/reference/routines.fft.html">NumPy · DFT 부호·정규화·Hermitian 대칭</a>. <a href="verification/2026-10-15/B05-physics.html">B05 물리 검증 기록</a>.</p>
         </details>
       </section>
     </aside>
@@ -429,7 +434,7 @@
       ctx.lineWidth = 1;
       ctx.strokeRect(left, top, size, size);
       ctx.fillStyle = "#627189";
-      ctx.font = '12px "Malgun Gothic", "Segoe UI", sans-serif';
+      ctx.font = '14px "Malgun Gothic", "Segoe UI", sans-serif';
       ctx.textAlign = "center";
       ctx.fillText("−8", left + cell / 2, top + size + 17);
       ctx.fillText("0", left + (HALF + .5) * cell, top + size + 17);
@@ -571,7 +576,7 @@
           ? "중심 성분은 공간 전체에 같은 값을 더합니다. 위상이 없는 이 원본에서는 실수부가 평균 밝기, 허수부가 0입니다."
           : "한 점의 성분이 영상 전체에 펼쳐집니다. 색은 밝기 자체보다, 합에 더해질 값의 양수·음수를 보여줍니다.";
       $("reconstructionTitle").textContent = state.mode === "component" ? "④ 선택한 성분을 더한 영상" : state.mode === "sum" ? "④ 지금까지 합친 영상" : "④ 남은 성분으로 재구성한 영상";
-      $("reconstructionSubtitle").textContent = `${active.size}개 복소 성분의 합 → ${state.imageView === "real" ? "실수부" : "크기"} · 밝기 범위 고정 (0~1)`;
+      $("reconstructionSubtitle").textContent = `${active.size}개 복소 성분의 합 → ${state.imageView === "real" ? "실수부" : "크기"} · 밝기 범위 고정 (${state.imageView === "real" ? "−1~+1" : "0~1"})`;
       $("reconstructionCaption").textContent = state.imageView === "real"
         ? "양수는 청록, 음수는 보라입니다. 성분을 더하며 생기는 상쇄를 보기 위해 부호를 유지합니다."
         : "실수부와 허수부를 모두 합친 뒤 크기를 표시합니다. 음수의 실수부도 크기 영상에서는 양수로 보입니다.";
@@ -668,7 +673,13 @@
         stop(); state.progress = clamp(state.progress + delta, 0, groups.length); selectLastGroup(); render();
       });
     }
-    $("reset").addEventListener("click", () => { stop(); Object.assign(state, defaults); computeKspace(); buildGroups(); render(); });
+    $("reset").addEventListener("click", () => { stop(); Object.assign(state, defaults); computeKspace(); buildGroups(); for(const id of ["quizPointFeedback","quizMissingFeedback"])$(id).textContent="답을 선택해 이유를 확인하세요."; render(); });
+    for(const [id,feedback,text]of [
+      ["quizPointCorrect","quizPointFeedback","맞습니다. 한 점은 영상 전체에 걸친 복소 무늬의 계수입니다. (4,0)을 선택해 여러 x 위치의 값이 바뀌는지 보세요."],
+      ["quizPointWrong","quizPointFeedback","한 k-space 점에는 여러 위치의 신호가 합쳐져 있습니다. 역변환하면 전체에 펼쳐진 무늬가 되며 한 픽셀에만 놓이지 않습니다."],
+      ["quizMissingCorrect","quizMissingFeedback","맞습니다. 이 격줄 마스크의 zero-filled 영상은 원본과 y 방향 반 FOV 이동한 복사본이 각각 절반 세기로 겹칩니다. 0을 넣어도 누락된 위상 정보를 얻지 못합니다."],
+      ["quizMissingWrong","quizMissingFeedback","측정하지 않은 곳의 0은 계산을 위한 대체값입니다. 실제 신호가 0이었다는 측정과 다릅니다. 비대칭 한 점과 격줄 마스크에서 두 위치가 겹치는지 확인하세요."]
+    ])$(id).addEventListener("click",()=>{$(feedback).textContent=text;});
     $("kspace").addEventListener("click", event => {
       const rect = $("kspace").getBoundingClientRect();
       const x = (event.clientX - rect.left) * 360 / rect.width;
