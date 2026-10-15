@@ -17,3 +17,7 @@ node scripts/render-validation-reports.cjs
 ```
 
 범위: RF 라머 공명, 양성자 MR, Frequency/Phase Encoding, 자전거 바퀴. 별도로 작업 중인 K-space/Inverse Fourier 페이지는 이번 변경에 포함하지 않았습니다.
+
+## 새 교육 챕터 검증
+
+- [C01 T1W·T2W·PDW 대비 실험실: 수치·조작·브라우저 점검](contrast-chapter.md)

@@ -20,6 +20,19 @@ This repository contains the following interactive simulations located in the [d
    - Demonstrates the dynamics of proton spins in static $B_0$ and RF $B_1$ magnetic fields with parameters for relaxation and coordinates.
 4. **Frequency / Phase Encoding Visualization** ([frequency_phase_encoding_visualization.html](docs/frequency_phase_encoding_visualization.html))
    - Visualizes spatial encoding concepts in MRI, showing how frequency and phase encoding gradients map spins to spatial locations.
+5. **K-space / Inverse Fourier Transform** ([kspace_inverse_fourier.html](docs/kspace_inverse_fourier.html))
+   - Continues spatial encoding with three guided steps: inspect a complex k-space component, add spatial patterns to reconstruct an image, and compare missing-frequency effects with zero-filled reconstruction.
+6. **T1W / T2W / PDW Contrast Lab** ([contrast_weighting.html](docs/contrast_weighting.html))
+   - Adjust TR and TE to connect ideal spin-echo recovery and decay with a synthetic image, signal table, and guided questions. Uses a fixed display scale and separates weighting from quantitative mapping.
+
+## Curriculum and Development
+
+- [Learning roadmap, implementation status, and future chapters](docs/learning-roadmap.md)
+- [Chapter authoring and verification workflow](docs/chapter-authoring.md)
+- [Per-chapter physical consistency review plan and progress](docs/physics-validation-plan.md)
+- [Instructions for future contributors and agents](AGENTS.md)
+
+Update the roadmap and physical review plan in the same change whenever a chapter is added, revised, split, or verified. Each implementation includes a subsequent review of its explanations, model, equations, visualizations, and quiz answers, followed by corrections and revalidation. Track physical review separately from test and browser results. Run all regression checks with `node --test tests/*.test.cjs`.
 
 ## Conceptual Documentation
 
@@ -62,6 +75,19 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
    - 정자기장 $B_0$와 RF 자기장 $B_1$ 환경에서 다양한 이완 및 좌표 매개변수에 따른 양성자 스핀의 동역학을 상세히 시뮬레이션합니다.
 4. **주파수 및 위상 부호화 시뮬레이션** ([frequency_phase_encoding_visualization.html](docs/frequency_phase_encoding_visualization.html))
    - MRI의 공간 부호화(Spatial Encoding) 개념을 주파수 및 위상 부호화 경사자장(Gradient) 작동 방식을 통해 인터랙티브하게 시각화합니다.
+5. **K-space / 푸리에 역변환** ([kspace_inverse_fourier.html](docs/kspace_inverse_fourier.html))
+   - 공간 부호화 다음 단계로, k-space 한 성분의 무늬 관찰 → 성분 합성으로 영상 복원 → 빠진 공간 주파수의 영향 비교를 안내합니다. 복소수와 역변환 식은 선택해서 펼쳐 볼 수 있습니다.
+6. **T1W / T2W / PDW 영상 대비 실험실** ([contrast_weighting.html](docs/contrast_weighting.html))
+   - TR·TE를 조절하며 이상적인 SE의 회복·감쇠·신호 표·합성 영상을 함께 관찰합니다. 고정 표시 창, 선행 지식, 흔한 오개념, 확인 문제와 후속 질문을 제공합니다.
+
+## 학습 구성과 개발 방향
+
+- [전체 학습 챕터 · 구현 현황 · 앞으로 할 일](docs/learning-roadmap.md)
+- [챕터 작성 형식과 검증·갱신 지침](docs/chapter-authoring.md)
+- [각 챕터의 물리적 정합성 검증 계획과 진행 상태](docs/physics-validation-plan.md)
+- [후속 기여자와 에이전트 지침](AGENTS.md)
+
+챕터 추가·수정·분리·검증 작업에서는 같은 변경으로 로드맵과 물리 검증 계획을 갱신합니다. 구현 이후 설명·모형·수식·시각화·정답의 물리 검토와 수정·재검증을 개발 과정에 포함하고, 물리 검증 상태를 시험·브라우저 확인과 구분합니다. 전체 회귀 시험은 `node --test tests/*.test.cjs`로 실행합니다.
 
 ## 물리 개념 이론 문서
 

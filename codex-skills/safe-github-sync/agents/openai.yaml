@@ -1,0 +1,4 @@
+interface:
+  display_name: "Safe GitHub Sync"
+  short_description: "Pull, push, and compare with origin carefully"
+  default_prompt: "Use $safe-github-sync to protect local work, compare with origin, then pull or push with clear verification."

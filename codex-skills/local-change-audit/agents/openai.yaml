@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Change Audit"
+  short_description: "Review current diffs and push readiness"
+  default_prompt: "Use $local-change-audit to inspect the current Git state, find risky or missing changes, and propose a clean staging plan."

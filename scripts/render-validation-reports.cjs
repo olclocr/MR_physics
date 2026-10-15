@@ -48,10 +48,16 @@ function render(markdown) {
   return out.join('\n');
 }
 const css=`body{margin:0;background:#f7f9fc;color:#172033;font:16px/1.85 system-ui,"Malgun Gothic",sans-serif}main{max-width:960px;margin:auto;padding:36px 24px 72px}nav{display:flex;gap:18px;flex-wrap:wrap;border-bottom:1px solid #d8e0eb;padding-bottom:20px;margin-bottom:28px}a{color:#1b5fc3}h1{font-size:32px;line-height:1.3}h2{margin-top:40px}p,li{overflow-wrap:anywhere}p:has(>strong:first-child){margin-top:28px}code{background:#eaf0f7;border-radius:4px;padding:2px 5px;font-size:.92em}pre{background:#172033;color:#e7edf5;padding:20px;overflow:auto;line-height:1.55;border-radius:8px}pre code{background:none;padding:0}img{display:block;max-width:100%;height:auto;border:1px solid #d8e0eb;border-radius:8px;margin:20px auto}.table{overflow:auto}table{width:100%;border-collapse:collapse;background:white}th,td{border:1px solid #d8e0eb;text-align:left;padding:10px 14px}th{background:#eaf0f7}blockquote{margin:20px 0;padding:12px 20px;background:#e8f0ff;border-left:4px solid #2563eb}footer{margin-top:50px;color:#627189;font-size:14px}@media(max-width:600px){main{padding:24px 16px}h1{font-size:26px}}`;
-for(const [source,target] of [['README.md','index.html'],['original-review.md','original-review.html'],['fix-validation.md','fix-validation.html']]) {
+const requested = new Set(process.argv.slice(2));
+const documents = [['README.md','index.html'],['original-review.md','original-review.html'],['fix-validation.md','fix-validation.html'],
+  ...['B00','B02','B03','B04'].map(id => [`${id}-physics.md`, `${id}-physics.html`])];
+let rendered = 0;
+for(const [source,target] of documents) {
+  if (requested.size && !requested.has(source)) continue;
   const markdown=fs.readFileSync(path.join(folder,source),'utf8');
   const title=markdown.match(/^# (.+)/m)?.[1]||'검증 보고서';
   const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}</style></head><body><main><nav><a href="../../index.html">시뮬레이션 홈</a><a href="index.html">검증 기록</a><a href="original-review.html">수정 전 보고서</a><a href="fix-validation.html">수정 후 검산</a><a href="${source}">Markdown 원문</a></nav>${render(markdown)}<footer>2026-10-14 · MR Physics 과학 검증 기록</footer></main></body></html>\n`;
   fs.writeFileSync(path.join(folder,target),html);
+  rendered++;
 }
-console.log('Rendered 3 verification documents.');
+console.log(`Rendered ${rendered} verification documents.`);

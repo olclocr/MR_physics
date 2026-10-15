@@ -1,0 +1,4 @@
+interface:
+  display_name: "Browser HTML Visual QA"
+  short_description: "Fix and verify local HTML visualizations"
+  default_prompt: "Use $browser-html-visual-qa to edit a local HTML visualization, run it in a browser, and verify the layout with screenshots."

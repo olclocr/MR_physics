@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K-space / Inverse Fourier Transform</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --ink: #162033;
+      --muted: #627189;
+      --line: #d8e0eb;
+      --blue: #2563eb;
+      --teal: #0891b2;
+      --green: #219461;
+      --violet: #7c3aed;
+      --red: #d73f3f;
+      font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); }
+    button, input, select { font: inherit; }
+    a { color: #1f66d1; text-underline-offset: 3px; }
+    button, select {
+      min-height: 40px; border: 1px solid var(--line); border-radius: 8px;
+      background: #fff; color: var(--ink); padding: 8px 10px;
+      font-size: 13px; font-weight: 750;
+    }
+    button { cursor: pointer; }
+    button:hover { border-color: #aabbd2; background: #f4f8fd; }
+    button:disabled { cursor: default; opacity: .45; }
+    :focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+    button.primary { background: var(--green); border-color: #1f7a55; color: #fff; }
+    [hidden] { display: none !important; }
+    .app { display: grid; grid-template-columns: minmax(0, 1fr) 390px; min-height: 100vh; }
+    .stage {
+      min-width: 0; padding: 22px 24px;
+      background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(238,244,251,.58));
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 14px; font-size: 12px; }
+    h1 { margin: 0 0 8px; font-size: clamp(25px, 2.7vw, 38px); line-height: 1.2; font-weight: 850; }
+    .subtitle { margin: 0 0 16px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .flow { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-bottom: 18px; font-size: 12px; color: var(--muted); }
+    .flow b { color: var(--ink); }
+    .panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .panel, .section {
+      min-width: 0; border: 1px solid var(--line); border-radius: 8px;
+      background: rgba(255,255,255,.93); box-shadow: 0 8px 18px rgba(28,38,56,.045);
+    }
+    .panel { padding: 14px; }
+    .panel h2 { margin: 0 0 4px; font-size: 15px; line-height: 1.4; }
+    .panel-sub { min-height: 32px; margin: 0 0 8px; font-size: 12px; line-height: 1.45; color: var(--muted); }
+    .plot { width: min(100%, 310px); margin: 0 auto; }
+    canvas { display: block; width: 100%; height: auto; aspect-ratio: 1; }
+    #kspace { cursor: crosshair; touch-action: manipulation; }
+    .caption { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 11px; margin-top: 7px; color: var(--muted); }
+    .swatch { display: inline-block; vertical-align: middle; width: 10px; height: 10px; margin-right: 4px; border-radius: 3px; }
+    .phase-key { width: 70px; height: 8px; border-radius: 3px; background: linear-gradient(90deg, #c52222, #ad790b, #169840, #139494, #494dc4, #b728a0, #c52222); }
+    .readout { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 14px 0; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,.86); padding: 9px 12px; }
+    .metric b { display: block; color: var(--muted); font-size: 11px; margin-bottom: 4px; }
+    .metric span { font-size: 14px; font-weight: 850; font-variant-numeric: tabular-nums; }
+    .takeaway { padding: 12px 14px; margin: 0; border-left: 3px solid var(--blue); background: #edf3fc; font-size: 13px; line-height: 1.7; }
+    .sidebar { padding: 18px; border-left: 1px solid var(--line); background: rgba(248,250,253,.97); }
+    .section { padding: 14px; margin-bottom: 14px; }
+    .section h2 { margin: 0 0 12px; font-size: 16px; }
+    .segmented { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 12px; }
+    .segmented button { border-radius: 0; font-size: 12px; padding: 8px 3px; }
+    .segmented button:first-child { border-radius: 8px 0 0 8px; }
+    .segmented button:last-child { border-radius: 0 8px 8px 0; }
+    .segmented button + button { border-left: 0; }
+    .segmented button.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .note { margin: 10px 0 0; font-size: 12px; line-height: 1.7; color: var(--muted); }
+    .guide { margin: 0; font-size: 13px; line-height: 1.75; }
+    .button-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+    .presets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 12px 0; }
+    .presets button { font-size: 12px; }
+    .control-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px 10px; margin: 12px 0; }
+    .control-row label { font-size: 13px; font-weight: 750; }
+    output { color: var(--blue); font-size: 12px; font-weight: 750; font-variant-numeric: tabular-nums; }
+    input[type="range"] { width: 100%; grid-column: 1 / -1; accent-color: var(--blue); cursor: pointer; margin: 4px 0; }
+    .control-row select { max-width: 195px; min-width: 0; width: 100%; }
+    .switch-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 12px 0; font-size: 12px; line-height: 1.5; }
+    input[type="checkbox"] { width: 17px; height: 17px; flex-shrink: 0; accent-color: var(--blue); }
+    .data-line { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; padding: 6px 0; border-bottom: 1px solid #edf0f5; }
+    .data-line span { color: var(--muted); }
+    .data-line b { text-align: right; font-variant-numeric: tabular-nums; }
+    details { font-size: 12px; line-height: 1.75; }
+    details + details { margin-top: 14px; }
+    summary { cursor: pointer; font-weight: 750; }
+    details p { margin: 10px 0; }
+    code { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.8 Consolas, monospace; padding: 8px; background: #f1f5fa; border-radius: 6px; }
+    .step-link { display: block; margin-top: 12px; width: 100%; }
+    @media (min-width: 1101px) {
+      .sidebar { height: 100vh; position: sticky; top: 0; overflow-y: auto; }
+    }
+    @media (min-width: 1650px) { .plot { width: min(100%, 330px); } }
+    @media (max-width: 1100px) {
+      .app { grid-template-columns: 1fr; }
+      .sidebar { border-left: 0; border-top: 1px solid var(--line); }
+      .sidebar > .section { max-width: 760px; margin-left: auto; margin-right: auto; }
+    }
+    @media (max-width: 580px) {
+      .stage { padding: 18px 14px; }
+      .panels { grid-template-columns: 1fr; }
+      .panel-sub { min-height: 0; }
+      .readout { grid-template-columns: 1fr; }
+      .metric { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+      .metric b { margin-bottom: 0; }
+      .sidebar { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="stage" aria-label="k-space 푸리에 역변환 시각화">
+      <nav class="nav" aria-label="챕터 이동">
+        <a href="frequency_phase_encoding_visualization.html">← 이전: 주파수 / 위상 부호화</a>
+        <a href="index.html">전체 시뮬레이션</a>
+        <a href="contrast_weighting.html">다음 학습: T1W / T2W / PDW 영상 대비 →</a>
+      </nav>
+      <h1>K-space / Inverse Fourier Transform</h1>
+      <p class="subtitle">위치 정보를 담은 복소 신호를 모았습니다. 이제 그 신호들이 어떻게 다시 영상이 되는지 살펴봅니다.</p>
+      <div class="flow" aria-label="영상 재구성 흐름">
+        <span>앞 챕터: 공간 부호화</span><span>→</span><b>k-space 신호</b><span>→</span><b>공간 무늬를 더하기</b><span>→</span><b>영상 재구성</b>
+      </div>
+      <div class="panels">
+        <section class="panel">
+          <h2>① 원본 · 위치마다 얼마나 밝은가</h2>
+          <p class="panel-sub">재구성 결과를 비교하기 위한 16 × 16 proton density 예시입니다.</p>
+          <div class="plot"><canvas id="original" width="360" height="360" role="img" aria-label="원본 proton density 영상. 가로 x, 세로 y."></canvas></div>
+          <p class="caption">밝은 위치에 더 많은 신호가 있다고 가정합니다. 이 원본으로부터 k-space 신호를 계산했습니다.</p>
+        </section>
+        <section class="panel">
+          <h2>② K-space · 어떤 무늬가 얼마나 필요한가</h2>
+          <p class="panel-sub">점을 누르거나 kx / ky 슬라이더로 관찰할 성분을 고르세요.</p>
+          <div class="plot"><canvas id="kspace" width="360" height="360" tabindex="0" role="img" aria-label="k-space 선택. 화살표 키로 kx, ky 이동. Home 키로 중심 선택."></canvas></div>
+          <div class="legend"><span>원의 크기: |K| (로그 표시)</span><span class="phase-key" aria-hidden="true"></span><span>색: 위상 −180° → +180°</span></div>
+          <p class="caption">빨간 테두리는 관찰할 점, 진한 배경은 재구성에 사용한 점입니다. 빈 배경의 점은 합에서 제외합니다.</p>
+        </section>
+        <section class="panel">
+          <h2>③ 선택한 한 점이 만드는 공간 무늬</h2>
+          <p class="panel-sub" id="componentSubtitle">한 성분의 실수부를 봅니다.</p>
+          <div class="plot"><canvas id="component" width="360" height="360" role="img" aria-label="선택한 복소 성분의 공간 무늬"></canvas></div>
+          <div class="legend"><span><i class="swatch" style="background:#0891b2"></i>양수</span><span><i class="swatch" style="background:#f6f8fb;border:1px solid #d8e0eb"></i>0</span><span><i class="swatch" style="background:#7c3aed"></i>음수</span></div>
+          <p class="caption" id="componentCaption"></p>
+        </section>
+        <section class="panel">
+          <h2 id="reconstructionTitle">④ 선택한 성분을 더한 영상</h2>
+          <p class="panel-sub" id="reconstructionSubtitle"></p>
+          <div class="plot"><canvas id="reconstruction" width="360" height="360" role="img" aria-label="선택한 k-space 성분을 역변환한 영상"></canvas></div>
+          <p class="caption" id="reconstructionCaption"></p>
+        </section>
+      </div>
+      <div class="readout">
+        <div class="metric"><b>관찰하는 점</b><span id="selectedMetric"></span></div>
+        <div class="metric"><b>더한 k-space 성분</b><span id="countMetric"></span></div>
+        <div class="metric"><b>원본과의 오차 · NRMSE</b><span id="errorMetric"></span></div>
+      </div>
+      <p class="takeaway" id="takeaway" aria-live="polite"></p>
+    </section>
+
+    <aside class="sidebar" aria-label="학습 단계와 조작">
+      <section class="section">
+        <h2>학습 단계</h2>
+        <div class="segmented" role="group" aria-label="학습 단계 선택">
+          <button type="button" data-mode="component" aria-pressed="true" class="active">1. 한 성분</button>
+          <button type="button" data-mode="sum" aria-pressed="false">2. 합치기</button>
+          <button type="button" data-mode="mask" aria-pressed="false">3. 덜 채우기</button>
+        </div>
+        <p class="guide" id="guide"></p>
+        <button type="button" class="step-link" id="nextStage">다음 단계 →</button>
+      </section>
+
+      <section class="section">
+        <h2>관찰할 성분</h2>
+        <div class="control-row"><label for="kx">kx · x 방향 변화</label><output id="kxOutput" for="kx"></output><input id="kx" type="range" min="-8" max="7" step="1" value="1" /></div>
+        <div class="control-row"><label for="ky">ky · y 방향 변화</label><output id="kyOutput" for="ky"></output><input id="ky" type="range" min="-8" max="7" step="1" value="0" /></div>
+        <div class="presets" role="group" aria-label="성분 비교 예시">
+          <button type="button" data-k="0,0">중심 (0,0)</button>
+          <button type="button" data-k="1,0">가로 변화</button>
+          <button type="button" data-k="4,0">촘촘하게</button>
+          <button type="button" data-k="0,2">세로 변화</button>
+          <button type="button" data-k="2,2">대각선</button>
+          <button type="button" data-k="-1,0">반대쪽 짝</button>
+        </div>
+        <div class="control-row"><label for="componentView">무늬 표시</label><select id="componentView"><option value="real">실수부 · real</option><option value="imaginary">허수부 · imaginary</option></select></div>
+        <label class="switch-row"><span>한 성분 무늬의 밝기 확대</span><input id="normalizeComponent" type="checkbox" checked /></label>
+        <div class="data-line"><span>|K| / 256 · 한 성분의 진폭</span><b id="amplitudeOutput"></b></div>
+        <div class="data-line"><span>선택한 K의 위상</span><b id="phaseOutput"></b></div>
+        <p class="note">|kx|, |ky|는 화면 폭·높이를 가로지르는 위상 회전 횟수입니다. kx만 바꾸면 x 방향으로 값이 바뀌어 세로 줄무늬가 생깁니다.</p>
+      </section>
+
+      <section class="section" id="componentControls">
+        <h2>한 성분을 바꿔 보기</h2>
+        <div class="control-row"><label for="gain">진폭 배율</label><output id="gainOutput" for="gain"></output><input id="gain" type="range" min="0" max="2" step="0.1" value="1" /></div>
+        <div class="control-row"><label for="phaseOffset">위상 추가</label><output id="phaseOffsetOutput" for="phaseOffset"></output><input id="phaseOffset" type="range" min="-180" max="180" step="5" value="0" /></div>
+        <label class="switch-row"><span>평균 밝기 · 중심 성분도 더하기</span><input id="includeDC" type="checkbox" checked /></label>
+        <label class="switch-row"><span>반대쪽 짝 성분도 더하기</span><input id="includePair" type="checkbox" checked /></label>
+        <p class="note">한 성분의 실수부에는 양수와 음수가 있습니다. 여러 성분을 더할 때 서로 보강되거나 상쇄되어 위치별 밝기가 만들어집니다.</p>
+      </section>
+
+      <section class="section" id="sumControls" hidden>
+        <h2>무늬를 차례로 합치기</h2>
+        <div class="control-row"><label for="order">합성 순서</label><select id="order"><option value="center">중심부터</option><option value="outer">바깥부터</option></select></div>
+        <div class="control-row"><label for="progress">합성 진행</label><output id="progressOutput" for="progress"></output><input id="progress" type="range" min="0" max="130" step="1" value="1" /></div>
+        <div class="button-grid"><button type="button" id="playPause" class="primary">재생</button><button type="button" id="complete">모두 더하기</button><button type="button" id="previous">한 단계 이전</button><button type="button" id="next">한 단계 다음</button></div>
+        <div class="control-row"><label for="speed">재생 속도</label><output id="speedOutput" for="speed"></output><input id="speed" type="range" min="0.3" max="2" step="0.1" value="1" /></div>
+        <p class="note">실수 영상 예시이므로 반대쪽 짝을 함께 더합니다. 이 순서는 계산을 이해하기 위한 합성 순서입니다. 실제 MR 획득을 다시 재생하는 과정은 아닙니다.</p>
+      </section>
+
+      <section class="section" id="maskControls" hidden>
+        <h2>어떤 성분이 빠졌는가</h2>
+        <div class="control-row"><label for="mask">사용할 k-space</label><select id="mask"><option value="full">전체</option><option value="low">중심만</option><option value="high">바깥만</option><option value="alternate">ky 한 줄 건너뛰기</option></select></div>
+        <div class="control-row" id="cutoffRow" hidden><label for="cutoff">중심 범위 · |kx|, |ky| ≤</label><output id="cutoffOutput" for="cutoff"></output><input id="cutoff" type="range" min="0" max="7" step="1" value="2" /></div>
+        <p class="guide" id="maskGuide"></p>
+        <p class="note">사용하지 않는 성분은 0으로 두고 역변환합니다. 추가 신호를 추정하거나 보간하지 않는 zero-filled 재구성입니다.</p>
+      </section>
+
+      <section class="section">
+        <h2>원본과 영상 표시</h2>
+        <div class="control-row"><label for="pattern">원본 패턴</label><select id="pattern"><option value="phantom">비대칭 단면</option><option value="bars">두 개의 밝은 열</option><option value="spot">비대칭 한 점</option><option value="uniform">균일한 밝기</option></select></div>
+        <div class="control-row"><label for="imageView">재구성 표시</label><select id="imageView"><option value="real">실수부 · 부호 유지</option><option value="magnitude">크기 · |영상|</option></select></div>
+        <p class="note" id="viewNote"></p>
+        <button type="button" id="reset" class="step-link">초기 설정</button>
+      </section>
+
+      <section class="section">
+        <h2>직관에서 식으로</h2>
+        <details>
+          <summary>k-space 한 점을 어떻게 무늬로 바꾸나?</summary>
+          <p>선택한 K는 크기와 위상을 가진 복소수입니다. 위치마다 회전하는 복소 무늬에 K를 곱하면, 그 성분이 각 위치에 더할 값이 정해집니다.</p>
+          <code>c(x,y) = K(kx,ky) / N² × exp(+i 2π(kx x + ky y)/N)</code>
+          <p>실수부는 |K|/N² × cos(2π(kx x + ky y)/N + phase(K))입니다. 진폭은 무늬의 세기, 위상은 시작 위치를 정합니다. 허수부는 같은 각도의 sin입니다.</p>
+          <p>중심 (0,0)은 위치에 따라 회전하지 않아 일정한 값을 더합니다. K(0,0)/N²는 이 원본 영상의 평균 밝기입니다.</p>
+        </details>
+        <details>
+          <summary>역변환 · IFFT · 부호와 정규화</summary>
+          <code>K(kx,ky) = Σx,y ρ(x,y) exp(−i 2π(kx x + ky y)/N)<br />ρ(x,y) = (1/N²) Σkx,ky K(kx,ky) exp(+i 2π(kx x + ky y)/N)</code>
+          <p>앞 챕터와 같은 부호 convention을 씁니다. 여기서는 N = 16, x와 y는 픽셀 위치 인덱스, kx와 ky는 공간 주파수 인덱스입니다. 물리 좌표를 쓰면 k의 단위는 cycles/m입니다.</p>
+          <p>IFFT는 Inverse Fast Fourier Transform, 즉 같은 역변환을 빠르게 계산하는 알고리즘입니다. 이 작은 예시는 원리를 보여주기 위해 이산 푸리에 역변환의 합을 직접 계산합니다.</p>
+          <p>빠진 성분도 분모는 그대로 N²입니다. 재구성 영상의 밝기를 매번 최대값으로 다시 맞추지 않습니다.</p>
+        </details>
+        <details>
+          <summary>반대쪽 짝 · 실수부와 크기는 왜 다른가?</summary>
+          <p>이 예시의 원본은 실수이므로 K(−kx,−ky) = conjugate(K(kx,ky))입니다. 짝은 크기가 같고 위상 부호가 반대여서, 함께 더하면 허수부가 상쇄됩니다. 실제 MRI 영상에는 코일·자기장 등에 의한 위상이 있을 수 있어 이 대칭을 항상 가정할 수는 없습니다.</p>
+          <p>16개 점을 주기적으로 다루므로 +8과 −8은 같은 인덱스입니다. 중심과 일부 끝점은 자신의 짝입니다. 해당 점에는 실수 진폭만 적용하며 위상 조절은 비활성화합니다.</p>
+          <p>크기는 복소 합을 모두 계산한 뒤 |ρ| = √(real² + imaginary²)로 구합니다. 각 성분의 크기를 먼저 더하면 위상에 의한 상쇄를 잃어 원본을 복원하지 못합니다.</p>
+        </details>
+        <details>
+          <summary>이 예시의 가정 · 오차 · 더 읽기</summary>
+          <p>균일한 수신 감도, 위상 없는 실수 proton density, 균일한 Cartesian 격자를 가정합니다. T1/T2 대비, T2* 감쇠, 잡음과 움직임은 포함하지 않습니다. 앞 챕터의 획득 원리에서 재구성 원리로 초점을 옮긴 예시입니다.</p>
+          <p>NRMSE는 복소 재구성과 원본의 차이 크기를 원본 크기로 나눈 값입니다. 표시를 실수부나 크기로 바꾸어도 같은 복소 오차를 보고합니다. 원본이 0인 위치의 작은 계산 오차는 색에 거의 나타나지 않습니다.</p>
+          <p>기초 읽기: <a href="https://mriquestions.com/uploads/3/4/5/7/34572113/fourier_transform_and_ph_enc.pdf" target="_blank" rel="noopener noreferrer">Gallagher 등, An Introduction to the Fourier Transform: Relationship to MRI (AJR, 2008)</a>.</p>
+        </details>
+      </section>
+    </aside>
+  </main>
+  <script>
+    "use strict";
+    const N = 16;
+    const HALF = N / 2;
+    const TOTAL = N * N;
+    const TWO_PI = 2 * Math.PI;
+    const EPSILON = 1e-10;
+    const PLOT = { left: 38, top: 12, size: 296 };
+    const $ = id => document.getElementById(id);
+    const controls = Object.fromEntries([
+      "kx", "ky", "gain", "phaseOffset", "includeDC", "includePair", "order", "progress", "speed",
+      "mask", "cutoff", "pattern", "componentView", "normalizeComponent", "imageView", "playPause"
+    ].map(id => [id, $(id)]));
+    const defaults = {
+      mode: "component", kx: 1, ky: 0, gain: 1, phaseOffset: 0, includeDC: true, includePair: true,
+      order: "center", progress: 1, speed: 1, mask: "full", cutoff: 2, pattern: "phantom",
+      componentView: "real", normalizeComponent: true, imageView: "real", running: false
+    };
+    const state = { ...defaults };
+    const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+    const signed = v => v > 0 ? `+${v}` : `${v}`;
+    const wrapIndex = v => ((v + HALF) % N + N) % N - HALF;
+    const key = (kx, ky) => `${kx},${ky}`;
+    const samples = [];
+    const sampleMap = new Map();
+    const pixels = [];
+    let original = new Float64Array(TOTAL);
+    let groups = [];
+    let animationId = null;
+    let lastTime = null;
+    let animationRemainder = 0;
+
+    for (let row = 0; row < N; row++) {
+      for (let col = 0; col < N; col++) pixels.push({ x: col - HALF, y: HALF - 1 - row });
+    }
+    for (let row = 0; row < N; row++) {
+      for (let col = 0; col < N; col++) {
+        const kx = col - HALF;
+        const ky = HALF - 1 - row;
+        const cos = new Float64Array(TOTAL);
+        const sin = new Float64Array(TOTAL);
+        pixels.forEach((p, i) => {
+          const angle = TWO_PI * (kx * p.x + ky * p.y) / N;
+          cos[i] = Math.cos(angle);
+          sin[i] = Math.sin(angle);
+        });
+        const sample = { kx, ky, row, col, cos, sin, real: 0, imaginary: 0, magnitude: 0, phase: 0 };
+        samples.push(sample);
+        sampleMap.set(key(kx, ky), sample);
+      }
+    }
+
+    function partner(sample) {
+      return sampleMap.get(key(wrapIndex(-sample.kx), wrapIndex(-sample.ky)));
+    }
+
+    function density(x, y, pattern) {
+      if (pattern === "uniform") return 1;
+      if (pattern === "spot") return x === 3 && y === 2 ? 1 : 0;
+      if (pattern === "bars") return Math.abs(y) <= 5 && (x === -3 || x === 2) ? 1 : 0;
+      if ((x / 5.5) ** 2 + (y / 6.5) ** 2 > 1) return 0;
+      if (((x + 2) / 1.5) ** 2 + ((y + 1) / 2.5) ** 2 <= 1) return .12;
+      if (((x - 1) / 2.5) ** 2 + ((y - 1) / 3.5) ** 2 <= 1) return .85;
+      return x === 3 && y === -3 ? 1 : .45;
+    }
+
+    function computeKspace() {
+      original = Float64Array.from(pixels, p => density(p.x, p.y, state.pattern));
+      for (const sample of samples) {
+        let real = 0;
+        let imaginary = 0;
+        for (let i = 0; i < TOTAL; i++) {
+          real += original[i] * sample.cos[i];
+          imaginary -= original[i] * sample.sin[i];
+        }
+        sample.real = Math.abs(real) < EPSILON ? 0 : real;
+        sample.imaginary = Math.abs(imaginary) < EPSILON ? 0 : imaginary;
+        sample.magnitude = Math.hypot(sample.real, sample.imaginary);
+        sample.phase = Math.atan2(sample.imaginary, sample.real);
+      }
+    }
+
+    function buildGroups() {
+      const seen = new Set();
+      groups = [];
+      for (const sample of samples) {
+        if (seen.has(sample)) continue;
+        const pair = partner(sample);
+        const group = sample === pair ? [sample] : [sample, pair];
+        group.forEach(s => seen.add(s));
+        groups.push(group);
+      }
+      const radius = group => group[0].kx ** 2 + group[0].ky ** 2;
+      groups.sort((a, b) => (state.order === "center" ? 1 : -1) * (radius(a) - radius(b)) || a[0].ky - b[0].ky || a[0].kx - b[0].kx);
+      controls.progress.max = groups.length;
+      state.progress = clamp(state.progress, 0, groups.length);
+    }
+
+    function effectiveCoefficient(sample) {
+      if (state.mode !== "component" || sample !== sampleMap.get(key(state.kx, state.ky))) return sample;
+      // Self-conjugate bins must stay real in this real-object teaching example.
+      const angle = partner(sample) === sample ? 0 : state.phaseOffset * Math.PI / 180;
+      return {
+        real: state.gain * (sample.real * Math.cos(angle) - sample.imaginary * Math.sin(angle)),
+        imaginary: state.gain * (sample.real * Math.sin(angle) + sample.imaginary * Math.cos(angle))
+      };
+    }
+
+    function activeCoefficients() {
+      const active = new Map();
+      const add = (s, value = s) => active.set(s, { real: value.real, imaginary: value.imaginary });
+      if (state.mode === "component") {
+        const sample = sampleMap.get(key(state.kx, state.ky));
+        if (state.includeDC) add(sampleMap.get(key(0, 0)));
+        const coefficient = effectiveCoefficient(sample);
+        add(sample, coefficient);
+        if (state.includePair && partner(sample) !== sample) {
+          add(partner(sample), { real: coefficient.real, imaginary: -coefficient.imaginary });
+        }
+      } else if (state.mode === "sum") {
+        groups.slice(0, state.progress).forEach(group => group.forEach(s => add(s)));
+      } else {
+        for (const s of samples) {
+          const center = Math.abs(s.kx) <= state.cutoff && Math.abs(s.ky) <= state.cutoff;
+          if (state.mask === "full" || (state.mask === "low" && center) ||
+              (state.mask === "high" && !center) || (state.mask === "alternate" && s.ky % 2 === 0)) add(s);
+        }
+      }
+      return active;
+    }
+
+    function inverseSum(active) {
+      const real = new Float64Array(TOTAL);
+      const imaginary = new Float64Array(TOTAL);
+      for (const [s, value] of active) {
+        for (let i = 0; i < TOTAL; i++) {
+          real[i] += (value.real * s.cos[i] - value.imaginary * s.sin[i]) / TOTAL;
+          imaginary[i] += (value.real * s.sin[i] + value.imaginary * s.cos[i]) / TOTAL;
+        }
+      }
+      return { real, imaginary };
+    }
+
+    function nrmse(reconstruction) {
+      let error = 0;
+      let energy = 0;
+      for (let i = 0; i < TOTAL; i++) {
+        error += (reconstruction.real[i] - original[i]) ** 2 + reconstruction.imaginary[i] ** 2;
+        energy += original[i] ** 2;
+      }
+      return Math.sqrt(error / Math.max(EPSILON, energy));
+    }
+
+    function context(id) {
+      const canvas = $(id);
+      const ratio = Math.min(window.devicePixelRatio || 1, 3);
+      const width = Math.round(360 * ratio);
+      if (canvas.width !== width) { canvas.width = width; canvas.height = width; }
+      const ctx = canvas.getContext("2d");
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      ctx.clearRect(0, 0, 360, 360);
+      return ctx;
+    }
+
+    function axes(ctx, kspace = false) {
+      const { left, top, size } = PLOT;
+      const cell = size / N;
+      ctx.strokeStyle = "#bdcadb";
+      ctx.lineWidth = 1;
+      ctx.strokeRect(left, top, size, size);
+      ctx.fillStyle = "#627189";
+      ctx.font = '12px "Malgun Gothic", "Segoe UI", sans-serif';
+      ctx.textAlign = "center";
+      ctx.fillText("−8", left + cell / 2, top + size + 17);
+      ctx.fillText("0", left + (HALF + .5) * cell, top + size + 17);
+      ctx.fillText("+7", left + size - cell / 2, top + size + 17);
+      ctx.fillText(kspace ? "kx →" : "x →", left + size / 2, top + size + 37);
+      ctx.textAlign = "right";
+      ctx.fillText("+7", left - 6, top + cell / 2 + 4);
+      ctx.fillText("0", left - 6, top + (HALF - .5) * cell + 4);
+      ctx.fillText("−8", left - 6, top + size - cell / 2 + 4);
+      ctx.save();
+      ctx.translate(11, top + size / 2);
+      ctx.rotate(-Math.PI / 2);
+      ctx.textAlign = "center";
+      ctx.fillText(kspace ? "ky →" : "y →", 0, 0);
+      ctx.restore();
+    }
+
+    function signedColor(value) {
+      const strength = clamp(Math.abs(value), 0, 1);
+      const base = [246, 248, 251];
+      const color = value >= 0 ? [8, 145, 178] : [124, 58, 237];
+      return `rgb(${base.map((v, i) => Math.round(v + (color[i] - v) * strength)).join(",")})`;
+    }
+
+    function drawImage(id, values, view = "real", scale = 1) {
+      const ctx = context(id);
+      const cell = PLOT.size / N;
+      for (let i = 0; i < TOTAL; i++) {
+        const value = values[i] / Math.max(EPSILON, scale);
+        if (view === "magnitude") {
+          const gray = Math.round(250 - clamp(value, 0, 1) * 220);
+          ctx.fillStyle = `rgb(${gray},${gray + 2},${gray + 5})`;
+        } else ctx.fillStyle = signedColor(value);
+        ctx.fillRect(PLOT.left + (i % N) * cell, PLOT.top + Math.floor(i / N) * cell, cell + .2, cell + .2);
+      }
+      axes(ctx);
+    }
+
+    function phaseColor(phase) {
+      const degrees = (phase * 180 / Math.PI + 180 + 360) % 360;
+      return `hsl(${degrees}, 70%, 40%)`;
+    }
+
+    function drawKspace(active) {
+      const ctx = context("kspace");
+      const cell = PLOT.size / N;
+      const maxMagnitude = Math.max(EPSILON, ...samples.map(s => s.magnitude));
+      for (const s of samples) {
+        const x = PLOT.left + s.col * cell;
+        const y = PLOT.top + s.row * cell;
+        ctx.fillStyle = active.has(s) ? "#dce9f7" : "#f7f9fc";
+        ctx.fillRect(x, y, cell, cell);
+        ctx.strokeStyle = "#d8e0eb";
+        ctx.lineWidth = .5;
+        ctx.strokeRect(x, y, cell, cell);
+        const value = active.get(s) || s;
+        const magnitude = Math.hypot(value.real, value.imaginary);
+        const strength = Math.log1p(30 * magnitude / maxMagnitude) / Math.log(31);
+        ctx.globalAlpha = active.has(s) ? 1 : .4;
+        ctx.fillStyle = magnitude < EPSILON ? "#a4afbf" : phaseColor(Math.atan2(value.imaginary, value.real));
+        ctx.beginPath();
+        ctx.arc(x + cell / 2, y + cell / 2, magnitude < EPSILON ? 1 : Math.min(cell * .42, 1.5 + cell * .30 * strength), 0, TWO_PI);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        if (s.kx === state.kx && s.ky === state.ky) {
+          ctx.strokeStyle = "#d73f3f";
+          ctx.lineWidth = 2;
+          ctx.strokeRect(x + 1, y + 1, cell - 2, cell - 2);
+        }
+      }
+      axes(ctx, true);
+    }
+
+    const guides = {
+      component: "먼저 중심 (0,0)을 눌러 보세요. 이어 가로 변화 → 촘촘하게 → 대각선을 비교하면, 한 점이 영상 전체에 더하는 무늬의 간격과 방향을 볼 수 있습니다.",
+      sum: "재생을 눌러 무늬가 쌓이는 모습을 보세요. 중심 성분으로 큰 윤곽이 잡히고, 바깥 성분이 더해지며 경계와 세부 구조가 선명해집니다. 바깥부터 더하면 어떻게 달라질까요?",
+      mask: "전체와 중심만을 먼저 비교해 보세요. 이어 바깥만, ky 한 줄 건너뛰기를 선택해 흐림·경계·겹침이 어떻게 다른지 살펴봅니다."
+    };
+    const maskGuides = {
+      full: "모든 성분을 더하면 원본으로 돌아옵니다. 한 k-space 점과 한 영상 픽셀이 일대일로 대응하는 것이 아니라, 모든 성분의 합이 각 픽셀을 만듭니다.",
+      low: "중심의 낮은 공간 주파수만 남기면 큰 구조와 평균 밝기는 남지만 경계가 흐려집니다. 갑자기 잘라낸 주파수 범위 때문에 경계 주변에 잔물결도 생길 수 있습니다.",
+      high: "중심을 빼면 평균 밝기와 완만한 구조가 사라지고 경계 변화가 두드러집니다. 실수부의 양수·음수를 함께 관찰해 보세요.",
+      alternate: "ky를 한 줄씩 건너뛰면 y 방향으로 FOV 절반 떨어진 위치를 구별하지 못합니다. 이 zero-filled 영상에는 원본과 y 방향으로 반 화면 이동한 복사본이 각각 절반 세기로 겹칩니다."
+    };
+
+    function render() {
+      const sample = sampleMap.get(key(state.kx, state.ky));
+      const coefficient = effectiveCoefficient(sample);
+      const amplitude = Math.hypot(coefficient.real, coefficient.imaginary) / TOTAL;
+      const active = activeCoefficients();
+      const reconstruction = inverseSum(active);
+      const component = inverseSum(new Map([[sample, coefficient]]));
+      const magnitudeImage = Float64Array.from(reconstruction.real, (v, i) => Math.hypot(v, reconstruction.imaginary[i]));
+      drawImage("original", original, "magnitude");
+      drawKspace(active);
+      drawImage("component", component[state.componentView], "real", state.normalizeComponent ? amplitude : 1);
+      drawImage("reconstruction", state.imageView === "real" ? reconstruction.real : magnitudeImage, state.imageView);
+
+      for (const [id, control] of Object.entries(controls)) {
+        if (id === "playPause") continue;
+        if (control.type === "checkbox") control.checked = state[id];
+        else control.value = state[id];
+      }
+      document.querySelectorAll("[data-mode]").forEach(button => {
+        const selected = button.dataset.mode === state.mode;
+        button.classList.toggle("active", selected);
+        button.setAttribute("aria-pressed", String(selected));
+      });
+      const selfPaired = partner(sample) === sample;
+      controls.phaseOffset.disabled = selfPaired;
+      controls.includePair.disabled = selfPaired;
+      $("componentControls").hidden = state.mode !== "component";
+      $("sumControls").hidden = state.mode !== "sum";
+      $("maskControls").hidden = state.mode !== "mask";
+      $("cutoffRow").hidden = state.mask !== "low" && state.mask !== "high";
+      $("nextStage").hidden = state.mode === "mask";
+      $("guide").textContent = guides[state.mode];
+      $("maskGuide").textContent = maskGuides[state.mask];
+      $("kxOutput").textContent = signed(state.kx);
+      $("kyOutput").textContent = signed(state.ky);
+      $("gainOutput").textContent = `${state.gain.toFixed(1)}×`;
+      $("phaseOffsetOutput").textContent = selfPaired ? "자기 짝 · 실수만" : `${signed(state.phaseOffset)}°`;
+      $("cutoffOutput").textContent = state.cutoff;
+      $("speedOutput").textContent = `${state.speed.toFixed(1)}×`;
+      $("progressOutput").textContent = `${active.size} / ${TOTAL} 성분`;
+      $("previous").disabled = state.progress === 0;
+      $("next").disabled = state.progress === groups.length;
+      controls.playPause.textContent = state.running ? "일시정지" : state.progress === groups.length ? "다시 재생" : "재생";
+      $("selectedMetric").textContent = `(${signed(state.kx)}, ${signed(state.ky)})`;
+      $("countMetric").textContent = `${active.size} / ${TOTAL}`;
+      const error = nrmse(reconstruction);
+      $("errorMetric").textContent = error < 1e-10 ? "0.00%" : `${(error * 100).toFixed(2)}%`;
+      $("amplitudeOutput").textContent = amplitude < EPSILON ? "0" : amplitude.toFixed(5);
+      $("phaseOutput").textContent = amplitude < EPSILON ? "진폭 0 · 위상 없음" : `${(Math.atan2(coefficient.imaginary, coefficient.real) * 180 / Math.PI).toFixed(1)}°`;
+      $("componentSubtitle").textContent = `K(${state.kx}, ${state.ky})의 ${state.componentView === "real" ? "실수부" : "허수부"} · ${state.normalizeComponent ? "간격과 방향을 보도록 밝기 확대" : "실제 진폭, 고정 색 범위"}`;
+      $("componentCaption").textContent = amplitude < EPSILON
+        ? "이 원본에서는 선택한 성분의 진폭이 0이라 무늬를 더하지 않습니다. 다른 점이나 원본 패턴을 선택해 보세요."
+        : state.kx === 0 && state.ky === 0
+          ? "중심 성분은 공간 전체에 같은 값을 더합니다. 위상이 없는 이 원본에서는 실수부가 평균 밝기, 허수부가 0입니다."
+          : "한 점의 성분이 영상 전체에 펼쳐집니다. 색은 밝기 자체보다, 합에 더해질 값의 양수·음수를 보여줍니다.";
+      $("reconstructionTitle").textContent = state.mode === "component" ? "④ 선택한 성분을 더한 영상" : state.mode === "sum" ? "④ 지금까지 합친 영상" : "④ 남은 성분으로 재구성한 영상";
+      $("reconstructionSubtitle").textContent = `${active.size}개 복소 성분의 합 → ${state.imageView === "real" ? "실수부" : "크기"} · 밝기 범위 고정 (0~1)`;
+      $("reconstructionCaption").textContent = state.imageView === "real"
+        ? "양수는 청록, 음수는 보라입니다. 성분을 더하며 생기는 상쇄를 보기 위해 부호를 유지합니다."
+        : "실수부와 허수부를 모두 합친 뒤 크기를 표시합니다. 음수의 실수부도 크기 영상에서는 양수로 보입니다.";
+      $("viewNote").textContent = state.imageView === "real"
+        ? "재구성 색: 청록 (+), 흰색 (0), 보라 (−). 원본의 1을 기준으로 밝기를 고정합니다. 범위를 넘는 값은 색이 포화됩니다."
+        : "원본과 같은 회색 밝기 범위로 크기를 봅니다. 복소 합의 부호와 위상은 크기 표시에서 보이지 않습니다.";
+      const message = state.mode === "component"
+        ? "k-space의 한 점은 영상의 한 위치가 아니라, 영상 전체에 펼쳐지는 공간 무늬의 크기와 위상입니다."
+        : state.mode === "sum"
+          ? active.size === TOTAL
+            ? "모든 복소 성분을 더하면 원본이 복원됩니다. 같은 성분을 모두 사용했다면 합성 순서를 바꾸어도 최종 영상은 같습니다."
+            : "푸리에 역변환은 각 성분의 복소 무늬를 위치마다 더하는 과정입니다. 필요한 곳에서는 보강되고 다른 곳에서는 상쇄됩니다."
+          : maskGuides[state.mask];
+      // Keep the live explanation stable while numerical frames animate.
+      if ($("takeaway").textContent !== message) $("takeaway").textContent = message;
+      $("kspace").setAttribute("aria-label", `k-space, 관찰하는 점 kx ${state.kx}, ky ${state.ky}. 화살표 키로 이동, Home 키로 중심 선택. 재구성에 ${active.size}개 성분 사용.`);
+    }
+
+    function stop() {
+      state.running = false;
+      if (animationId !== null) cancelAnimationFrame(animationId);
+      animationId = null;
+      lastTime = null;
+      animationRemainder = 0;
+    }
+
+    function selectLastGroup() {
+      const group = groups[state.progress - 1];
+      if (group) { state.kx = group[0].kx; state.ky = group[0].ky; }
+    }
+
+    function animate(time) {
+      animationId = null;
+      if (!state.running) return;
+      if (lastTime !== null) animationRemainder += Math.min(.1, (time - lastTime) / 1000) * 12 * state.speed;
+      lastTime = time;
+      const steps = Math.floor(animationRemainder);
+      if (steps > 0) {
+        animationRemainder -= steps;
+        state.progress = Math.min(groups.length, state.progress + steps);
+        selectLastGroup();
+        if (state.progress === groups.length) stop();
+        render();
+      }
+      if (state.running) animationId = requestAnimationFrame(animate);
+    }
+
+    function setMode(mode) {
+      stop();
+      state.mode = mode;
+      if (mode === "sum") selectLastGroup();
+      render();
+    }
+
+    document.querySelectorAll("[data-mode]").forEach(button => button.addEventListener("click", () => setMode(button.dataset.mode)));
+    $("nextStage").addEventListener("click", () => setMode(state.mode === "component" ? "sum" : "mask"));
+    document.querySelectorAll("[data-k]").forEach(button => button.addEventListener("click", () => {
+      stop();
+      [state.kx, state.ky] = button.dataset.k.split(",").map(Number);
+      render();
+    }));
+    for (const id of ["kx", "ky", "gain", "phaseOffset", "progress", "speed", "cutoff"]) {
+      controls[id].addEventListener("input", () => {
+        if (id !== "speed") stop();
+        state[id] = Number(controls[id].value);
+        if (id === "progress") selectLastGroup();
+        render();
+      });
+    }
+    for (const id of ["includeDC", "includePair", "normalizeComponent"]) {
+      controls[id].addEventListener("change", () => { state[id] = controls[id].checked; render(); });
+    }
+    for (const id of ["order", "mask", "pattern", "componentView", "imageView"]) {
+      controls[id].addEventListener("change", () => {
+        stop();
+        state[id] = controls[id].value;
+        if (id === "pattern") computeKspace();
+        if (id === "order") { buildGroups(); selectLastGroup(); }
+        render();
+      });
+    }
+    controls.playPause.addEventListener("click", () => {
+      if (state.running) stop();
+      else {
+        if (state.progress === groups.length) state.progress = 0;
+        state.running = true;
+        animationId = requestAnimationFrame(animate);
+      }
+      render();
+    });
+    $("complete").addEventListener("click", () => { stop(); state.progress = groups.length; selectLastGroup(); render(); });
+    for (const [id, delta] of [["previous", -1], ["next", 1]]) {
+      $(id).addEventListener("click", () => {
+        stop(); state.progress = clamp(state.progress + delta, 0, groups.length); selectLastGroup(); render();
+      });
+    }
+    $("reset").addEventListener("click", () => { stop(); Object.assign(state, defaults); computeKspace(); buildGroups(); render(); });
+    $("kspace").addEventListener("click", event => {
+      const rect = $("kspace").getBoundingClientRect();
+      const x = (event.clientX - rect.left) * 360 / rect.width;
+      const y = (event.clientY - rect.top) * 360 / rect.height;
+      if (x < PLOT.left || y < PLOT.top || x >= PLOT.left + PLOT.size || y >= PLOT.top + PLOT.size) return;
+      stop();
+      state.kx = Math.floor((x - PLOT.left) / (PLOT.size / N)) - HALF;
+      state.ky = HALF - 1 - Math.floor((y - PLOT.top) / (PLOT.size / N));
+      $("kspace").focus();
+      render();
+    });
+    $("kspace").addEventListener("keydown", event => {
+      if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home"].includes(event.key)) return;
+      event.preventDefault();
+      stop();
+      if (event.key === "Home") { state.kx = 0; state.ky = 0; }
+      if (event.key === "ArrowLeft") state.kx = clamp(state.kx - 1, -HALF, HALF - 1);
+      if (event.key === "ArrowRight") state.kx = clamp(state.kx + 1, -HALF, HALF - 1);
+      if (event.key === "ArrowUp") state.ky = clamp(state.ky + 1, -HALF, HALF - 1);
+      if (event.key === "ArrowDown") state.ky = clamp(state.ky - 1, -HALF, HALF - 1);
+      render();
+    });
+    document.addEventListener("visibilitychange", () => { if (document.hidden) { stop(); render(); } });
+    window.addEventListener("resize", render);
+    computeKspace();
+    buildGroups();
+    render();
+  </script>
+</body>
+</html>
