@@ -27,6 +27,9 @@ This repository contains the following interactive simulations located in the [d
 7. **Spin Ensemble and Thermal Equilibrium** ([spin_ensemble_equilibrium.html](docs/spin_ensemble_equilibrium.html))
    - Start here before RF: compare real spin-1/2 occupations, magnified population differences, and a separate phasor-sum teaching diagram. Explore B0 and temperature with a fixed polarization scale.
 
+8. **SE and GRE Rephasing** ([spin_gradient_echo.html](docs/spin_gradient_echo.html))
+   - Compare RF refocusing and gradient reversal with linked timing, phasors, complex signals, gradient areas, and static off-resonance examples.
+
 ## Curriculum and Development
 
 - [Learning roadmap, implementation status, and future chapters](docs/learning-roadmap.md)
@@ -97,6 +100,9 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 7. **B01 스핀·순자화와 열평형** ([spin_ensemble_equilibrium.html](docs/spin_ensemble_equilibrium.html))
    - RF 앞에서 학습하는 기초 챕터입니다. 실제 두 준위의 작은 차이와 확대 막대, 별도 위상 합 도식을 구분하고 B0·온도를 바꾸며 편극을 비교합니다.
 
+8. **C02 SE와 GRE 재위상화** ([spin_gradient_echo.html](docs/spin_gradient_echo.html))
+   - RF 반전과 gradient reversal을 시간도식·벡터·신호로 비교하고 면적 불균형과 정적 주파수 분포의 영향을 관찰합니다.
+
 ## 학습 구성과 개발 방향
 
 - [전체 학습 챕터 · 구현 현황 · 앞으로 할 일](docs/learning-roadmap.md)
@@ -137,3 +143,5 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 ## 라이선스
 
 본 프로젝트는 [MIT 라이선스](LICENSE) 하에 배포됩니다.
+
+[C02 SE/GRE physical review · 물리 검증](docs/verification/2026-10-15/C02-physics.md): independent time-ordered/analytic comparisons and desktop/mobile controls.

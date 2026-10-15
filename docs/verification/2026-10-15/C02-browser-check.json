@@ -1,0 +1,4610 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "label": "1920 balanced se atStart",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "m": {
+          "x": 0,
+          "y": 1
+        },
+        "magnitude": 1,
+        "t2Envelope": 1,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "1.0000",
+      "phase": "90.0°",
+      "se": "1.0000",
+      "gre": "1.0000",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 6.123233995736766e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced se beforeRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": 0,
+          "y": -0.005161399384114328
+        },
+        "magnitude": 0.005161399384114328,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": 0.398,
+        "effectiveArea": 0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0052",
+      "phase": "-90.0°",
+      "se": "0.0052",
+      "gre": "0.0052",
+      "physical": "0.3980",
+      "effective": "0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 2.7755575615628914e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced se afterRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": 0,
+          "y": 6.938893903907228e-18
+        },
+        "magnitude": 6.938893903907228e-18,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": 0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": -20,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 4.85722573273506e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced se atTE",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced gre atStart",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "m": {
+          "x": 0,
+          "y": 1
+        },
+        "magnitude": 1,
+        "t2Envelope": 1,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "1.0000",
+      "phase": "90.0°",
+      "se": "1.0000",
+      "gre": "1.0000",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 6.123233995736766e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced gre beforeRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": 0,
+          "y": -0.005161399384114328
+        },
+        "magnitude": 0.005161399384114328,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": -0.398,
+        "effectiveArea": -0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0052",
+      "phase": "-90.0°",
+      "se": "0.0052",
+      "gre": "0.0052",
+      "physical": "-0.3980",
+      "effective": "-0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 2.7755575615628914e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced gre afterRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": 0,
+          "y": -6.938893903907228e-18
+        },
+        "magnitude": 6.938893903907228e-18,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": -0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": 20,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "-0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 4.163336342344337e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 balanced gre atTE",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.6065",
+      "phase": "90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 unbalanced",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 0.6,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 0.14800500588067692
+        },
+        "magnitude": 0.14800500588067692,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": -0.16,
+        "effectiveArea": -0.16,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 53.33333333333334,
+        "refocused": false
+      },
+      "signal": "0.1480",
+      "phase": "90.0°",
+      "se": "0.1480",
+      "gre": "0.1480",
+      "physical": "-0.1600",
+      "effective": "-0.1600",
+      "areaZero": "Gradient 위상 항 0의 기준: 53.33 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 2.7755575615628914e-17,
+      "curveError": 2.7755575615628914e-16
+    },
+    {
+      "label": "1920 spread se beforeRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": 8.673617379884035e-19,
+          "y": 0.000010297486120950609
+        },
+        "magnitude": 0.000010297486120950609,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": 0.398,
+        "effectiveArea": 0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "90.0°",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.3980",
+      "effective": "0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.5178830414797062e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 spread se afterRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": 8.673617379884035e-19,
+          "y": 3.5778671692021646e-17
+        },
+        "magnitude": 3.578918362340775e-17,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": 0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": -20,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 3.2742905609062234e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 spread se atTE",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 4.81482486096809e-35,
+          "y": -0.6065306597126336
+        },
+        "magnitude": 0.6065306597126336,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.0102",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 2.220446049250313e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 spread gre beforeRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": -4.336808689942018e-19,
+          "y": 0.000010297486120952343
+        },
+        "magnitude": 0.000010297486120952343,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": -0.398,
+        "effectiveArea": -0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "90.0°",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "-0.3980",
+      "effective": "-0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 8.239936510889834e-18,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 spread gre afterRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": -8.673617379884035e-19,
+          "y": -3.599551212651875e-17
+        },
+        "magnitude": 3.600596075144898e-17,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": -0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": 20,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "-0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 3.5128150388530344e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 spread gre atTE",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": -8.673617379884035e-19,
+          "y": 0.010171550696155475
+        },
+        "magnitude": 0.010171550696155475,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0102",
+      "phase": "90.0°",
+      "se": "0.6065",
+      "gre": "0.0102",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 5.898059818321144e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 common offset",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 35,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0.3565097768423106,
+          "y": -0.4906936113169686
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.6065",
+      "phase": "-54.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 5.551115123125783e-17,
+      "curveError": 6.661338147750939e-16
+    },
+    {
+      "label": "1920 common offset SE",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 35,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": -8.646425609619757e-18,
+          "y": -0.6065306597126334
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 4.5785717159710207e-17,
+      "curveError": 6.661338147750939e-16
+    },
+    {
+      "label": "1920 teControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 10,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 10
+      },
+      "result": {
+        "timeMs": 10,
+        "m": {
+          "x": 0,
+          "y": -0.8824969025845955
+        },
+        "magnitude": 0.8824969025845955,
+        "t2Envelope": 0.8824969025845955,
+        "physicalArea": 0.2,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 10,
+        "refocused": true
+      },
+      "signal": "0.8825",
+      "phase": "-90.0°",
+      "se": "0.8825",
+      "gre": "0.8825",
+      "physical": "0.2000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 10.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 5.4037350350383925e-17
+    },
+    {
+      "label": "1920 teControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 80,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "m": {
+          "x": 0,
+          "y": -0.36787944117144233
+        },
+        "magnitude": 0.36787944117144233,
+        "t2Envelope": 0.36787944117144233,
+        "physicalArea": 1.6,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 80,
+        "refocused": true
+      },
+      "signal": "0.3679",
+      "phase": "-90.0°",
+      "se": "0.3679",
+      "gre": "0.3679",
+      "physical": "1.6000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 80.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 2.2526119005136194e-17
+    },
+    {
+      "label": "1920 t2Control minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 20,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.1353352832366127
+        },
+        "magnitude": 0.1353352832366127,
+        "t2Envelope": 0.1353352832366127,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.1353",
+      "phase": "-90.0°",
+      "se": "0.1353",
+      "gre": "0.1353",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 8.286896071370909e-18
+    },
+    {
+      "label": "1920 t2Control maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 200,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.8187307530779818
+        },
+        "magnitude": 0.8187307530779818,
+        "t2Envelope": 0.8187307530779818,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.8187",
+      "phase": "-90.0°",
+      "se": "0.8187",
+      "gre": "0.8187",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 gradientControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 0,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126334
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": null,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "g=0: gradient 위상이 쌓이지 않습니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 3.713929155009045e-17,
+      "curveError": 2.220446049250313e-16
+    },
+    {
+      "label": "1920 gradientControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 40,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126334
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 1.6,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "1.6000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 3.713929155009045e-17
+    },
+    {
+      "label": "1920 balanceControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 0,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 2.7755575615628914e-17
+        },
+        "magnitude": 2.7755575615628914e-17,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": 0,
+        "gradientNullMs": null,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.4000",
+      "effective": "-0.4000",
+      "areaZero": "현재 표시 범위에서 gradient의 위상 항이 0이 되는 후반 시점이 없습니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "label": "1920 balanceControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 2,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 8.326672684688674e-17
+        },
+        "magnitude": 8.326672684688674e-17,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 1.2,
+        "effectiveArea": 0.4,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 30,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "1.2000",
+      "effective": "0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 30.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 4.85722573273506e-17
+    },
+    {
+      "label": "1920 offsetControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": -80,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 4.323212804809878e-18,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 offsetControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 80,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": -4.323212804809878e-18,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 spreadControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 spreadControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 60,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 1.2037062152420224e-34,
+          "y": -0.6065306597126338
+        },
+        "magnitude": 0.6065306597126338,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.0152",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "label": "1920 combined extrema se",
+      "state": {
+        "mode": "se",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "m": {
+          "x": 6.776263578034403e-19,
+          "y": -9.202165938970719e-18
+        },
+        "magnitude": 9.227081632300802e-18,
+        "t2Envelope": 0.01831563888873418,
+        "physicalArea": 4.8,
+        "effectiveArea": 1.6,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 60,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "4.8000",
+      "effective": "1.6000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 4.865357249028701e-18,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 combined extrema gre",
+      "state": {
+        "mode": "gre",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "m": {
+          "x": -1.3417001884508117e-18,
+          "y": -8.21960772015573e-18
+        },
+        "magnitude": 8.328391829695132e-18,
+        "t2Envelope": 0.01831563888873418,
+        "physicalArea": 1.6,
+        "effectiveArea": 1.6,
+        "offsetTimeMs": 80,
+        "gradientNullMs": 60,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "1.6000",
+      "effective": "1.6000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 7.630072788866737e-18,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 end of physical range",
+      "state": {
+        "mode": "gre",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 120
+      },
+      "result": {
+        "timeMs": 120,
+        "m": {
+          "x": -1.8821072087990554e-18,
+          "y": -1.777075123339522e-18
+        },
+        "magnitude": 2.5884983174430593e-18,
+        "t2Envelope": 0.0024787521766663585,
+        "physicalArea": 4.8,
+        "effectiveArea": 4.8,
+        "offsetTimeMs": 120,
+        "gradientNullMs": 60,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "4.8000",
+      "effective": "4.8000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 643,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 2.541098841762901e-18,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 start of physical range",
+      "state": {
+        "mode": "gre",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "m": {
+          "x": 0,
+          "y": 0.9999999999999999
+        },
+        "magnitude": 0.9999999999999999,
+        "t2Envelope": 1,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 60,
+        "refocused": false
+      },
+      "signal": "1.0000",
+      "phase": "90.0°",
+      "se": "1.0000",
+      "gre": "1.0000",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 642.2025756835938,
+            "h": 242.49754333496094
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 6.123233995736769e-17,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "1920 reset",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 680 295",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 680 260",
+          "box": {
+            "x": 8,
+            "y": 6.110330104827881,
+            "w": 642.2025756835938,
+            "h": 246.38720703125
+          }
+        },
+        {
+          "view": "0 0 680 295",
+          "box": {
+            "x": 71,
+            "y": 2.2115297317504883,
+            "w": 472.81707763671875,
+            "h": 264.7884826660156
+          }
+        },
+        {
+          "view": "0 0 680 300",
+          "box": {
+            "x": 9,
+            "y": 1.1103302240371704,
+            "w": 638.2025756835938,
+            "h": 285.38720703125
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced se atStart",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "m": {
+          "x": 0,
+          "y": 1
+        },
+        "magnitude": 1,
+        "t2Envelope": 1,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "1.0000",
+      "phase": "90.0°",
+      "se": "1.0000",
+      "gre": "1.0000",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 6.123233995736766e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced se beforeRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": 0,
+          "y": -0.005161399384114328
+        },
+        "magnitude": 0.005161399384114328,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": 0.398,
+        "effectiveArea": 0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0052",
+      "phase": "-90.0°",
+      "se": "0.0052",
+      "gre": "0.0052",
+      "physical": "0.3980",
+      "effective": "0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 2.7755575615628914e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced se afterRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": 0,
+          "y": 6.938893903907228e-18
+        },
+        "magnitude": 6.938893903907228e-18,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": 0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": -20,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 4.85722573273506e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced se atTE",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced gre atStart",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "m": {
+          "x": 0,
+          "y": 1
+        },
+        "magnitude": 1,
+        "t2Envelope": 1,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "1.0000",
+      "phase": "90.0°",
+      "se": "1.0000",
+      "gre": "1.0000",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 6.123233995736766e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced gre beforeRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": 0,
+          "y": -0.005161399384114328
+        },
+        "magnitude": 0.005161399384114328,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": -0.398,
+        "effectiveArea": -0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0052",
+      "phase": "-90.0°",
+      "se": "0.0052",
+      "gre": "0.0052",
+      "physical": "-0.3980",
+      "effective": "-0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 2.7755575615628914e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced gre afterRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": 0,
+          "y": -6.938893903907228e-18
+        },
+        "magnitude": 6.938893903907228e-18,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": -0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": 20,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "-0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 4.163336342344337e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 balanced gre atTE",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.6065",
+      "phase": "90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 unbalanced",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 0.6,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 0.14800500588067692
+        },
+        "magnitude": 0.14800500588067692,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": -0.16,
+        "effectiveArea": -0.16,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 53.33333333333334,
+        "refocused": false
+      },
+      "signal": "0.1480",
+      "phase": "90.0°",
+      "se": "0.1480",
+      "gre": "0.1480",
+      "physical": "-0.1600",
+      "effective": "-0.1600",
+      "areaZero": "Gradient 위상 항 0의 기준: 53.33 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 2.7755575615628914e-17,
+      "curveError": 2.7755575615628914e-16
+    },
+    {
+      "label": "390 spread se beforeRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": 8.673617379884035e-19,
+          "y": 0.000010297486120950609
+        },
+        "magnitude": 0.000010297486120950609,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": 0.398,
+        "effectiveArea": 0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "90.0°",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.3980",
+      "effective": "0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.5178830414797062e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 spread se afterRF",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": 8.673617379884035e-19,
+          "y": 3.5778671692021646e-17
+        },
+        "magnitude": 3.578918362340775e-17,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": 0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": -20,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 3.2742905609062234e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 spread se atTE",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 4.81482486096809e-35,
+          "y": -0.6065306597126336
+        },
+        "magnitude": 0.6065306597126336,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.0102",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 2.220446049250313e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 spread gre beforeRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 19.9
+      },
+      "result": {
+        "timeMs": 19.9,
+        "m": {
+          "x": -4.336808689942018e-19,
+          "y": 0.000010297486120952343
+        },
+        "magnitude": 0.000010297486120952343,
+        "t2Envelope": 0.779774892741951,
+        "physicalArea": -0.398,
+        "effectiveArea": -0.398,
+        "offsetTimeMs": 19.9,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "90.0°",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "-0.3980",
+      "effective": "-0.3980",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 8.239936510889834e-18,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 spread gre afterRF",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 20
+      },
+      "result": {
+        "timeMs": 20,
+        "m": {
+          "x": -8.673617379884035e-19,
+          "y": -3.599551212651875e-17
+        },
+        "magnitude": 3.600596075144898e-17,
+        "t2Envelope": 0.7788007830714049,
+        "physicalArea": -0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": 20,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "-0.4000",
+      "effective": "-0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 3.5128150388530344e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 spread gre atTE",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 35,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": -8.673617379884035e-19,
+          "y": 0.010171550696155475
+        },
+        "magnitude": 0.010171550696155475,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.0102",
+      "phase": "90.0°",
+      "se": "0.6065",
+      "gre": "0.0102",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 5.898059818321144e-17,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 common offset",
+      "state": {
+        "mode": "gre",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 35,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0.3565097768423106,
+          "y": -0.4906936113169686
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 40,
+        "gradientNullMs": 40,
+        "refocused": false
+      },
+      "signal": "0.6065",
+      "phase": "-54.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.59613037109375,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 5.551115123125783e-17,
+      "curveError": 6.661338147750939e-16
+    },
+    {
+      "label": "390 common offset SE",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 35,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": -8.646425609619757e-18,
+          "y": -0.6065306597126334
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 4.5785717159710207e-17,
+      "curveError": 6.661338147750939e-16
+    },
+    {
+      "label": "390 teControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 10,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 10
+      },
+      "result": {
+        "timeMs": 10,
+        "m": {
+          "x": 0,
+          "y": -0.8824969025845955
+        },
+        "magnitude": 0.8824969025845955,
+        "t2Envelope": 0.8824969025845955,
+        "physicalArea": 0.2,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 10,
+        "refocused": true
+      },
+      "signal": "0.8825",
+      "phase": "-90.0°",
+      "se": "0.8825",
+      "gre": "0.8825",
+      "physical": "0.2000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 10.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 5.4037350350383925e-17
+    },
+    {
+      "label": "390 teControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 80,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "m": {
+          "x": 0,
+          "y": -0.36787944117144233
+        },
+        "magnitude": 0.36787944117144233,
+        "t2Envelope": 0.36787944117144233,
+        "physicalArea": 1.6,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 80,
+        "refocused": true
+      },
+      "signal": "0.3679",
+      "phase": "-90.0°",
+      "se": "0.3679",
+      "gre": "0.3679",
+      "physical": "1.6000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 80.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.5987243652344,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 2.2526119005136194e-17
+    },
+    {
+      "label": "390 t2Control minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 20,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.1353352832366127
+        },
+        "magnitude": 0.1353352832366127,
+        "t2Envelope": 0.1353352832366127,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.1353",
+      "phase": "-90.0°",
+      "se": "0.1353",
+      "gre": "0.1353",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 8.286896071370909e-18
+    },
+    {
+      "label": "390 t2Control maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 200,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.8187307530779818
+        },
+        "magnitude": 0.8187307530779818,
+        "t2Envelope": 0.8187307530779818,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.8187",
+      "phase": "-90.0°",
+      "se": "0.8187",
+      "gre": "0.8187",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 gradientControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 0,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126334
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": null,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "g=0: gradient 위상이 쌓이지 않습니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 3.713929155009045e-17,
+      "curveError": 2.220446049250313e-16
+    },
+    {
+      "label": "390 gradientControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 40,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126334
+        },
+        "magnitude": 0.6065306597126334,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 1.6,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "1.6000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 3.713929155009045e-17
+    },
+    {
+      "label": "390 balanceControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 0,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 2.7755575615628914e-17
+        },
+        "magnitude": 2.7755575615628914e-17,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.4,
+        "effectiveArea": -0.4,
+        "offsetTimeMs": 0,
+        "gradientNullMs": null,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "0.4000",
+      "effective": "-0.4000",
+      "areaZero": "현재 표시 범위에서 gradient의 위상 항이 0이 되는 후반 시점이 없습니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "label": "390 balanceControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 2,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": 8.326672684688674e-17
+        },
+        "magnitude": 8.326672684688674e-17,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 1.2,
+        "effectiveArea": 0.4,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 30,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "1.2000",
+      "effective": "0.4000",
+      "areaZero": "Gradient 위상 항 0의 기준: 30.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 4.85722573273506e-17
+    },
+    {
+      "label": "390 offsetControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": -80,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 4.323212804809878e-18,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 offsetControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 80,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": -4.323212804809878e-18,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 spreadControl minimum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 spreadControl maximum",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 60,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 1.2037062152420224e-34,
+          "y": -0.6065306597126338
+        },
+        "magnitude": 0.6065306597126338,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.0152",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "label": "390 combined extrema se",
+      "state": {
+        "mode": "se",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "m": {
+          "x": 6.776263578034403e-19,
+          "y": -9.202165938970719e-18
+        },
+        "magnitude": 9.227081632300802e-18,
+        "t2Envelope": 0.01831563888873418,
+        "physicalArea": 4.8,
+        "effectiveArea": 1.6,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 60,
+        "refocused": true
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "4.8000",
+      "effective": "1.6000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.5987243652344,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 4.865357249028701e-18,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 combined extrema gre",
+      "state": {
+        "mode": "gre",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 80
+      },
+      "result": {
+        "timeMs": 80,
+        "m": {
+          "x": -1.3417001884508117e-18,
+          "y": -8.21960772015573e-18
+        },
+        "magnitude": 8.328391829695132e-18,
+        "t2Envelope": 0.01831563888873418,
+        "physicalArea": 1.6,
+        "effectiveArea": 1.6,
+        "offsetTimeMs": 80,
+        "gradientNullMs": 60,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "1.6000",
+      "effective": "1.6000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.5987243652344,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 7.630072788866737e-18,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 end of physical range",
+      "state": {
+        "mode": "gre",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 120
+      },
+      "result": {
+        "timeMs": 120,
+        "m": {
+          "x": -1.8821072087990554e-18,
+          "y": -1.777075123339522e-18
+        },
+        "magnitude": 2.5884983174430593e-18,
+        "t2Envelope": 0.0024787521766663585,
+        "physicalArea": 4.8,
+        "effectiveArea": 4.8,
+        "offsetTimeMs": 120,
+        "gradientNullMs": 60,
+        "refocused": false
+      },
+      "signal": "0.0000",
+      "phase": "정의 안 됨",
+      "se": "0.0000",
+      "gre": "0.0000",
+      "physical": "4.8000",
+      "effective": "4.8000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.5987243652344,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 341,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 2.541098841762901e-18,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 start of physical range",
+      "state": {
+        "mode": "gre",
+        "teMs": 80,
+        "t2Ms": 20,
+        "gradientHz": 40,
+        "balance": 2,
+        "offResHz": 80,
+        "spreadHz": 60,
+        "timeMs": 0
+      },
+      "result": {
+        "timeMs": 0,
+        "m": {
+          "x": 0,
+          "y": 0.9999999999999999
+        },
+        "magnitude": 0.9999999999999999,
+        "t2Envelope": 1,
+        "physicalArea": 0,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 60,
+        "refocused": false
+      },
+      "signal": "1.0000",
+      "phase": "90.0°",
+      "se": "1.0000",
+      "gre": "1.0000",
+      "physical": "0.0000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 60.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 10,
+            "w": 322.5987243652344,
+            "h": 241.33334350585938
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 22.888887405395508,
+            "y": 4.111110210418701,
+            "w": 293.84375,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 6.123233995736769e-17,
+      "curveError": 1.1102230246251565e-16
+    },
+    {
+      "label": "390 reset",
+      "state": {
+        "mode": "se",
+        "teMs": 40,
+        "t2Ms": 80,
+        "gradientHz": 20,
+        "balance": 1,
+        "offResHz": 0,
+        "spreadHz": 0,
+        "timeMs": 40
+      },
+      "result": {
+        "timeMs": 40,
+        "m": {
+          "x": 0,
+          "y": -0.6065306597126335
+        },
+        "magnitude": 0.6065306597126335,
+        "t2Envelope": 0.6065306597126334,
+        "physicalArea": 0.8,
+        "effectiveArea": 0,
+        "offsetTimeMs": 0,
+        "gradientNullMs": 40,
+        "refocused": true
+      },
+      "signal": "0.6065",
+      "phase": "-90.0°",
+      "se": "0.6065",
+      "gre": "0.6065",
+      "physical": "0.8000",
+      "effective": "0.0000",
+      "areaZero": "Gradient 위상 항 0의 기준: 40.00 ms (회색 수직선). 정적 Δf와 T2가 곱해진 곡선의 최대점과 구별합니다.",
+      "overflow": false,
+      "vectorBox": "0 0 360 425",
+      "paths": 3,
+      "graphics": [
+        {
+          "view": "0 0 360 260",
+          "box": {
+            "x": 8,
+            "y": 9.44444465637207,
+            "w": 322.59613037109375,
+            "h": 241.88890075683594
+          }
+        },
+        {
+          "view": "0 0 360 425",
+          "box": {
+            "x": 24,
+            "y": 4.111110210418701,
+            "w": 292.7326354980469,
+            "h": 408.3333435058594
+          }
+        },
+        {
+          "view": "0 0 360 300",
+          "box": {
+            "x": 9,
+            "y": 4.44444465637207,
+            "w": 336.5220031738281,
+            "h": 280.8888854980469
+          }
+        }
+      ],
+      "error": 1.1102230246251565e-16,
+      "curveError": 3.3306690738754696e-16
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,46 @@
+{
+  "baseCommit": "7de8555849be0055e366e13b2c57034138c253f8",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/spin_gradient_echo.html",
+      "sha256": "2E842ABA6A4C95F62DCFB2CC0D43381B326E65526A3CF0E1EB0C4AB72DDDCAF9"
+    },
+    {
+      "path": "docs/assets/echo-comparison-model.js",
+      "sha256": "DCCD236571396FB8489A14DC5E0A99E8F5179D7DE865801740C368A8AAFAD798"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/echo-reference.cjs",
+      "sha256": "3960FBE5C8093CB60EA832A2D854291C27C23983348D976F9665E535436CE9F3"
+    },
+    {
+      "path": "tests/helpers/echo-page-harness.cjs",
+      "sha256": "9B678DBF3D7D89D9CA7EF33FDCAF976ED0D08B814F14FF09862F13880BA1E928"
+    },
+    {
+      "path": "tests/echo-comparison.test.cjs",
+      "sha256": "6526FBB7CF115FC56655264BE8FD6160B6B308E8DC348D96CA9F913051595A6F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C02-numerical.cjs",
+      "sha256": "FA046D1890E113550D701C93B913EBB50EE24032AF1771F3B5FD324D0E119341"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C02-numerical.json",
+      "sha256": "76F2B4295A0B9C54172E4B6CD704D5D27A0047474E32E18176DAEA595CA0C91F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C02-browser-check.js",
+      "sha256": "8DF95A81B83C86B4B5EBD4CE396A9C2D1BFB22055241DBB358430C17B8035F0E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C02-browser-check.json",
+      "sha256": "B932A320CA11C6E7C9C9865C31E2756452650A7C8DF6B14E438FE78B9DEBCC85"
+    }
+  ]
+}
