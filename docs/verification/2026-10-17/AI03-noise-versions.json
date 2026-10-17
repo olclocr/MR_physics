@@ -1,0 +1,82 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/reconstruction_noise_ensemble.html",
+      "sha256": "5BF43C5ABE8C6ACB2062AE81BB8F59A458C18ADE5C94DA497C296991BC32F068"
+    },
+    {
+      "path": "docs/assets/ensemble-noise-model.js",
+      "sha256": "08966AEEB3BBDC3B8ADF33FEA2C500F9942BC06D695E64149AB1744A7A9CE74E"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "35938DCBBC78CEF3E6DFF6690C1ACFC9A6362965EB10EEEA86B04B1ACD9854E0"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "tests/ensemble-noise.test.cjs",
+      "sha256": "961B1A78DCC9EFB5AB64B52B8FFA4B7315D782CE581D97390BBC8C8B787B816A"
+    },
+    {
+      "path": "tests/helpers/ensemble-noise-reference.cjs",
+      "sha256": "EB5EF4401212398ED941F7A522A8597494F214D2BA0DCC1375D0F6C2FBBF70A8"
+    },
+    {
+      "path": "tests/helpers/ensemble-noise-input.json",
+      "sha256": "B2420B2D308E6CC6D996CC300C4A53227EDDCD2EE84F3E7F2DFA2E909CE29802"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-reference.cjs",
+      "sha256": "5EE54A4B42F2995AEB696D7D93D8871084B71D0D7B2C4EA78CB0E63869AB1781"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-noise.json",
+      "sha256": "39B56947C210394251869BAF923C8FF95B342F019057735CAD6EE972D6E5F3DA"
+    },
+    {
+      "path": "tests/helpers/kspace-fft-reference.cjs",
+      "sha256": "FF6BC1FA5C0836677A7C5FD90988AE275DAE0164BA2FF78FA8DA4782311DEA62"
+    },
+    {
+      "path": "tests/helpers/compressed-sensing-reference.cjs",
+      "sha256": "A225B384BDF80146185446AFAD23211193C4F7FD70B91A9ADBE504938B1D0772"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-numerical.cjs",
+      "sha256": "BE87F14497665D23873F346AE2F7C9B259B0A1444F22C5C5549D46D9A45B0248"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-numerical.json",
+      "sha256": "A066858B6707F630E943229DBF521F23D3F166BD6993A6F36EF0E5FE722B6EE9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-display-reference.json",
+      "sha256": "DB7ACC17D5DD798F1DFD5A44DF65DA405E57D9E1EAF48EF6A8B17CAA707B0228"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-browser-check.js",
+      "sha256": "772D6063259D78FD511D2D437449D03268E32A5B03E15DE4A5D245D9C0BCD749"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-browser-check.json",
+      "sha256": "0F05C3919114DC772BDC43A013E47DB0BE941DF0067C26471745BBE82CF7D35B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-physics.md",
+      "sha256": "087B52866539A7A101DA3F0ED5E090AE0F8CEDDD42A284210C715961B583AE3F"
+    }
+  ]
+}

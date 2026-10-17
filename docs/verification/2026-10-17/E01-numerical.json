@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-17",
+  "cases": 36,
+  "curveSamples": 14436,
+  "spatialSteps": 1843200,
+  "max": {
+    "displacementMicroM": 2.2464469588538434e-10,
+    "wavelengthMm": 5.381348699984301e-10
+  },
+  "examples": [
+    {
+      "options": {
+        "modulusKPa": 4,
+        "frequencyHz": 60,
+        "phaseDeg": 0
+      },
+      "speedMPerS": 2,
+      "wavelengthMm": 33.333333333333336,
+      "timeMs": 0,
+      "crests": [
+        0,
+        33.333333333333336,
+        66.66666666666667,
+        100,
+        133.33333333333334,
+        166.66666666666669,
+        200
+      ]
+    },
+    {
+      "options": {
+        "modulusKPa": 9,
+        "frequencyHz": 60,
+        "phaseDeg": 0
+      },
+      "speedMPerS": 3,
+      "wavelengthMm": 50,
+      "timeMs": 0,
+      "crests": [
+        0,
+        50,
+        100,
+        150,
+        200
+      ]
+    },
+    {
+      "options": {
+        "modulusKPa": 4,
+        "frequencyHz": 30,
+        "phaseDeg": 0
+      },
+      "speedMPerS": 2,
+      "wavelengthMm": 66.66666666666667,
+      "timeMs": 0,
+      "crests": [
+        0,
+        66.66666666666667,
+        133.33333333333334,
+        200
+      ]
+    },
+    {
+      "options": {
+        "modulusKPa": 4,
+        "frequencyHz": 60,
+        "phaseDeg": 90
+      },
+      "speedMPerS": 2,
+      "wavelengthMm": 33.333333333333336,
+      "timeMs": 4.166666666666667,
+      "crests": [
+        8.333333333333334,
+        41.66666666666667,
+        75,
+        108.33333333333334,
+        141.66666666666669,
+        175
+      ]
+    }
+  ]
+}

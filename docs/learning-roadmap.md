@@ -1,6 +1,6 @@
 # MR Physics 학습 구성과 개발 로드맵
 
-최종 갱신: **2026-10-15 (Asia/Seoul)**
+최종 갱신: **2026-10-17 (Asia/Seoul)**
 
 교육 대상은 영상의학과 의사·전공의이다. 물리 원리, 촬영 조건, 영상의 변화, 판독의 함정을 연결한다. 사용자와 논의한 전체 후보를 보존하되 한 페이지에 모든 내용을 넣지 않는다. 기본 형식은 [챕터 작성 지침](chapter-authoring.md), 내용 검토는 [물리적 정합성 검증 계획](physics-validation-plan.md), 짧은 개발 요청의 처리·완료·재개 절차는 [개발 진행 절차](development-workflow.md), 이후 작업자를 위한 지침은 [AGENTS.md](../AGENTS.md)에 둔다.
 
@@ -25,7 +25,7 @@
 
 | ID | 학습 챕터 | 상태와 연결된 구현 | 앞으로 할 일 |
 |---|---|---|---|
-| B00 | 세차운동의 고전적 비유 (선택) | 페이지 구현: [자전거 바퀴](bicycle_wheel_precession_interactive.html) | 고전적 비유와 양자 스핀의 경계를 확인 문제로 보강. 정상 세차 모델의 한계 유지 |
+| B00 | 세차운동의 고전적 비유 (선택) | 페이지 구현: [자전거 바퀴](bicycle_wheel_precession_interactive.html) / [대상 버전 통과](verification/2026-10-15/B00-physics.md) | W12에서 힘 척도·signed 세차·정지/예시/초기화·문제·모바일 라벨 보강. 일반 강체/양자 실체 모형은 제외 |
 | B01 | 스핀·순자화와 열평형 | 페이지 구현: [열평형 학습](spin_ensemble_equilibrium.html) / [대상 버전 통과](verification/2026-10-15/B01-physics.md) | W04에서 실제 점유율·확대·위상 합·B0/온도·확인 문제를 구현. 외부 전문가 검토 미시행 |
 | B02 | 라머 공명·RF·flip angle | 페이지 구현: [RF 공명](proton_spin_rf_larmor_resonance.html) / [대상 버전 통과](verification/2026-10-15/B02-physics.md) | W02에서 RF OFF·세 관찰·확인 문제·기호·정규화·모바일 보강. 외부 전문가 검토 미시행 |
 | B03 | 자화·회전좌표계·기본 이완 | 페이지 구현: [스핀 MR](proton_spin_mr_simulation.html) / [대상 버전 통과](verification/2026-10-15/B03-physics.md) | W03에서 RF→자유 이완→SE 관찰·정확한 시간 조작·chemical 별도 안내·확인 문제 보강. 외부 전문가 검토 미시행 |
@@ -37,7 +37,7 @@
 
 **C01 검증 상태:** W01에서 이상적 SE 정상상태·근사·표시·퀴즈의 통합 물리 검토와 실제 데스크톱·모바일 확인을 완료했다. 대상 버전·독립 검산·시험·화면·적용 범위는 [C01 물리 검증 기록](verification/2026-10-15/C01-physics.md)에 있다. [2026-10-14 구현 검증](verification/2026-10-14/contrast-chapter.md)은 과거 기록으로 보존한다. 외부 전문가 검토와 실제 임상 예시는 남아 있다.
 
-**구현 후 물리 검증의 개발 현황:** C01·B02·B03·B01·B04·C02·C03·B05는 각 W01–W08의 검토 범위에서 **대상 버전 통과**, 기존 B00은 **재검토 대기**이다. 나머지 후속 챕터·확장 후보는 **미착수**이다. 기존 시험을 새 물리 검증 기준의 통과로 소급하지 않는다. [ID별 계획과 상태](physics-validation-plan.md)를 참조한다.
+**구현 후 물리 검증의 개발 현황:** B00–B05·C01–C08·G01–G03·Q01–Q07(Q06은 유한반복/표시 범위)·F01–F04(F03은 선택 SAT·두 RF 물 여기 범위)·D01–D02·D03(균일field/시간 예측 범위)·S01(주어진분포/GRE·후처리 범위)는 각 W01–W34의 검토 범위에서 **대상 버전 통과**다. 다른 후속 챕터·확장 후보는 아래 표의 구현·검토 상태를 확인한다. 통과는 대상 버전/범위에 한정하며 외부 전문가 검토는 미시행이다. [ID별 계획과 상태](physics-validation-plan.md).
 
 ## 핵심 후속 챕터
 
@@ -47,68 +47,68 @@
 |---|---|---|---|
 | C02 | SE와 GRE: echo는 어떻게 다시 모이나? | B03, B04, C01 | 페이지 구현: [SE/GRE](spin_gradient_echo.html) / [대상 버전 통과](verification/2026-10-15/C02-physics.md). 외부 전문가 검토 미시행 |
 | C03 | T2와 T2*: 왜 GRE에서 더 빨리 어두워지나? | C02 | 페이지 구현: [T2/T2*](t2_t2star_dephasing.html) / [대상 버전 통과](verification/2026-10-15/C03-physics.md). 외부 전문가 검토 미시행 |
-| C04 | IR·TI·STIR·FLAIR: 특정 조직을 어떻게 지우나? | C01 | 계획. 같은 inversion 곡선에서 지방/CSF null 비교. 지방억제 선택은 F04에서 연결 |
-| C05 | FSE/TSE: 여러 echo를 어떻게 이용하나? | C02, B05 | 계획. ETL, effective TE, echo ordering, blurring |
-| C06 | Spoiled GRE: flip angle은 대비에 무엇을 바꾸나? | B02, C01 | 계획. 정상상태, TR·flip angle, Ernst angle은 심화 |
-| C07 | EPI: 한 번의 excitation으로 어떻게 빠르게 읽나? | B04, B05 | 계획. readout train·echo spacing·위상 방향 왜곡. D03/A05로 연결 |
-| C08 | bSSFP: 정상상태를 유지하면 무엇이 달라지나? | C06 | 계획. balanced gradient, T2/T1 관련 대비, banding |
+| C04 | IR·TI·STIR·FLAIR: 특정 조직을 어떻게 지우나? | C01 | 페이지 구현: [IR·TI·null](inversion_recovery.html) / [대상 버전 통과](verification/2026-10-15/C04-physics.md). TE0 이상적 읽기·유한 TR·signed/magnitude. 실제 IR-FSE/PSIR 제외 |
+| C05 | FSE/TSE: 여러 echo를 어떻게 이용하나? | C02, B05 | 페이지 구현: [Echo train·ordering](fast_spin_echo.html) / [대상 버전 통과](verification/2026-10-15/C05-physics.md). 명시한1D T2 가중/복소 역합. 실제 FA/stimulated echo 제외 |
+| C06 | Spoiled GRE: flip angle은 대비에 무엇을 바꾸나? | B02, C01 | 페이지 구현: [Spoiled GRE](spoiled_gre.html) / [대상 버전 통과](verification/2026-10-15/C06-physics.md). 이상적 spoiling·과도/정상상태·Ernst. 실제 spoiling 제외 |
+| C07 | EPI: 한 번의 excitation으로 어떻게 빠르게 읽나? | B04, B05 | 페이지 구현: [EPI 경로·시간](epi_trajectory.html) / [대상 버전 통과](verification/2026-10-15/C07-physics.md). ADC/gradient·중앙1D PE근사. 실제2D/eddy 제외 |
+| C08 | bSSFP: 정상상태를 유지하면 무엇이 달라지나? | C06 | 두 페이지 구현: [반복/주파수응답](balanced_ssfp.html)·[T1/T2 대비/근사](bssfp_contrast_limits.html) / [반복 검증](verification/2026-10-16/C08-physics.md)·[대비 검증](verification/2026-10-16/C08-contrast-physics.md). 순간RF·단일spin의지정범위통과, 실제조직/finiteRF는제외 |
 
 ### 공간 해상도와 화질 — 한 페이지에 변수를 몰지 않음
 
 | ID | 챕터와 중심 질문 | 선행 | 상태 / 구현할 사항 |
 |---|---|---|---|
-| G01 | FOV·matrix: 촬영 범위와 pixel 크기를 어떻게 정하나? | B04, B05 | [교육 HTML 초안](fov_matrix_resolution.html) / 통합 물리 검증 대기. FOV/N, k-space 간격·범위, 획득/재구성 matrix, interpolation |
-| G02 | Slice selection·두께·partial volume: 얇게 찍으면 무엇이 달라지나? | B02, B04 | 계획. RF bandwidth/gradient와 slice 두께, 경계 혼합, gap·cross-talk |
-| G03 | 2D와 3D: slice와 slab·partition은 어떻게 다른가? | G01, G02 | 계획. 두 획득 방식, isotropic voxel, MPR, 움직임 민감도 |
-| Q01 | SNR·CNR·NEX: 더 잘 보이는 영상은 무엇인가? | C01, G01 | 계획. 복소 잡음과 magnitude, averaging의 제곱근 관계, 병변 대비. AI와 기존 SNR 측정 구별 |
-| Q02 | Receiver bandwidth: 잡음과 왜곡을 어떻게 바꾸나? | B04, Q01 | 계획. Hz/pixel과 전체 BW 구별, SNR·chemical shift·readout 연결 |
-| Q03 | 검사 시간: 어떤 조건을 바꾸면 빨라지나? | C05, G03, Q01 | 계획. 시퀀스별 2D/3D 시간 모형. TR·phase steps·NEX·ETL·partition. multislice 수를 무조건 곱하지 않음 |
-| Q04 | Parallel imaging: 코일로 어떻게 덜 찍나? | B05, Q01 | 계획. coil sensitivity, SENSE/GRAPPA 개념, R·g-factor·잔여 aliasing |
-| Q05 | Partial Fourier: 덜 얻은 데이터를 어떻게 보완하나? | B05 | 부분 구현(B05의 누락/zero filling). 실제 위상 추정 복원은 별도 구현 |
-| Q06 | Compressed sensing: 어떤 조건에서 적은 데이터로 복원하나? | B05, Q04 | 계획. sparsity, incoherent sampling, regularization과 정보 보존 |
-| Q07 | SMS: 여러 slice를 동시에 찍을 수 있나? | G02, Q04 | 계획. slice 분리, CAIPI, leakage. Q03의 시간 모형으로 연결 |
+| G01 | FOV·matrix: 촬영 범위와 pixel 크기를 어떻게 정하나? | B04, B05 | 페이지 구현: [FOV·matrix](fov_matrix_resolution.html) / [대상 버전 통과](verification/2026-10-15/G01-physics.md). 1D 점/경계·획득/표시 격자·k-space 검증. 외부 전문가 검토 미시행 |
+| G02 | Slice selection·두께·partial volume: 얇게 찍으면 무엇이 달라지나? | B02, B04 | 페이지 구현: [Slice·부분 용적](slice_selection_partial_volume.html) / [대상 버전 통과](verification/2026-10-15/G02-physics.md). 실제 RF profile·gap/cross-talk은 정량 모형 밖 |
+| G03 | 2D와 3D: slice와 slab·partition은 어떻게 다른가? | G01, G02 | 페이지 구현: [2D/3D·MPR](volume_2d_3d.html) / [대상 버전 통과](verification/2026-10-15/G03-physics.md). 동일3D box·voxel평균·재단면. 실제PSF/움직임/시간 제외 |
+| Q01 | SNR·CNR·NEX: 더 잘 보이는 영상은 무엇인가? | C01, G01 | 페이지 구현: [SNR·CNR·평균](snr_cnr_averaging.html) / [대상 버전 통과](verification/2026-10-15/Q01-physics.md). 단일 복소 채널·고정 voxel·독립 반복. 실제 임상/AI는 모형 밖 |
+| Q02 | Receiver bandwidth: 잡음과 왜곡을 어떻게 바꾸나? | B04, Q01 | 페이지 구현: [Receiver BW](receiver_bandwidth.html) / [대상 버전 통과](verification/2026-10-15/Q02-physics.md). 전체/±/Hzpixel·ADC·generic off-res 위치·기대잡음. 실제 수신/감쇠 제외 |
+| Q03 | 검사 시간: 어떤 조건을 바꾸면 빨라지나? | C05, G03, Q01 | 페이지 구현: [이벤트 수와 시간](scan_time.html) / [대상 버전 통과](verification/2026-10-15/Q03-physics.md). 2D/3D 배정·나머지·NEX·gating·준비. 실제 장비 견적 제외 |
+| Q04 | Parallel imaging: 코일로 어떻게 덜 찍나? | B05, Q01 | 페이지 구현: [Coil·R2·잡음](parallel_imaging.html) / [대상 버전 통과](verification/2026-10-15/Q04-physics.md). 두위치/coil 선형모형·g/√R·분리실패. 실제map/vendor 제외 |
+| Q05 | Partial Fourier: 덜 얻은 데이터를 어떻게 보완하나? | B05 | 페이지 구현: [표본/위상복원](partial_fourier_phase.html) / [대상버전통과](verification/2026-10-16/Q05-physics.md). 중앙추정/정답prior·단순128회위상선반복, vendor/임상은제외 |
+| Q06 | Compressed sensing: 희소성으로 무엇을 더 가정하나? | B05, Q05 | 페이지 구현: [Haar/표본/L1](compressed_sensing_sparsity.html) / [지정유한반복범위 통과](verification/2026-10-16/Q06-physics.md). 두조합2000회solver기준미달표시, vendor/임상은제외 |
+| Q07 | SMS: 여러 slice를 동시에 찍을 수 있나? | G02, Q04 | 페이지 구현: [두 slice/coil·CAIPI](sms_slice_separation.html) / [대상 모형 통과](verification/2026-10-17/Q07-physics.md). 공간/균일 감도·오보정 leakage·묶음 수. 실제 RF/profile·장비 시간·SNR 제외 |
 
 ### 지방·확산·자화율 — 임상 판독과 연결
 
 | ID | 챕터와 중심 질문 | 선행 | 상태 / 구현할 사항 |
 |---|---|---|---|
-| F01 | Chemical shift·IP/OP: 물과 지방은 언제 상쇄되나? | B02, B03 | 부분 구현(B03 water/fat). 위상 벡터·TE·B0·지방 비율을 독립 학습으로 구성 |
-| F02 | Dixon: 물과 지방 영상을 어떻게 분리하나? | F01 | 계획. 다중 echo, field map, water/fat swap. 단순 IP/OP와 구별 |
-| F03 | Spectral fat suppression: 지방만 선택적으로 지울 수 있나? | B02, F01 | 계획. 주파수 선택, B0/B1 불균일, water excitation |
-| F04 | 지방억제 선택: fat-sat·STIR·SPIR/SPAIR·Dixon은 언제 다른가? | C04, F02, F03 | 계획. 원리를 재구현하지 않고 방법별 장단점·실패 사례 비교 |
-| D01 | DWI·b-value: 움직이는 물은 신호에 어떻게 나타나나? | C02, B04 | 계획. diffusion gradient와 신호 감소. 단순 monoexponential 모형 명시 |
-| D02 | ADC·shine-through: 밝은 DWI는 무엇을 뜻하나? | D01, C01 | 계획. DWI/ADC 비교, T2 영향, noise floor와 fitting. 진단적 단정 피하기 |
-| D03 | DWI 획득과 왜곡: EPI의 약점은 어떻게 줄이나? | C07, D02 | 계획. BW·echo spacing·가속·분할 readout, 움직임과의 균형 |
-| S01 | Susceptibility·T2*·SWI: 신호·위상·blooming은 무엇을 반영하나? | C03, B05 | 계획. magnitude/phase, phase mask, minIP. 벤더별 위상 부호 규약 명시 |
-| S02 | QSM: phase에서 susceptibility를 어떻게 추정하나? | S01 | 계획. field와 susceptibility 구별, inverse problem과 한계 |
+| F01 | Chemical shift·IP/OP: 물과 지방은 언제 상쇄되나? | B02, B03 | 페이지 구현: [IP/OP](chemical_shift_ip_op.html) / [대상 버전 통과](verification/2026-10-15/F01-physics.md). 단일peak 물/지방·복소합·B0/TE/비율·공통감쇠. 실제multipeak/PDFF 제외 |
+| F02 | Dixon: 물과 지방 영상을 어떻게 분리하나? | F01 | 페이지 구현: [복소 분리·field](dixon_water_fat.html) / [대상 버전 통과](verification/2026-10-15/F02-physics.md). 2echo/검증3echo·field/교환. 실제map/multipeak 제외 |
+| F03 | Spectral fat suppression: 지방만 선택적으로 지울 수 있나? | B02, F01 | 두 페이지 구현: [선택 saturation](spectral_fat_saturation.html)·[Water excitation](water_excitation.html) / [SAT 검증](verification/2026-10-15/F03-physics.md)·[물 여기 검증](verification/2026-10-15/F03-water-physics.md). 두 한계모형 범위 통과 |
+| F04 | 지방억제 선택: fat-sat·STIR·SPIR/SPAIR·Dixon은 언제 다른가? | C04, F02, F03 | 페이지 구현: [선택원리/실패비교](fat_suppression_comparison.html) / [대상버전통과](verification/2026-10-15/F04-physics.md). 세모형재사용·지원범위/스케일구별. SPIR/SPAIR는기전설명만 |
+| D01 | DWI·b-value: 움직이는 물은 신호에 어떻게 나타나나? | C02, B04 | 페이지 구현: [확산·b-value](diffusion_b_value.html) / [대상버전통과](verification/2026-10-15/D01-physics.md). 자유1D/Brownian·유한lobe·동일TE b0정규화. 실제조직/수신잡음 제외 |
+| D02 | ADC·shine-through: 밝은 DWI는 무엇을 뜻하나? | D01, C01, Q01 | 페이지 구현: [ADC/T2/잡음](adc_fitting_shine_through.html) / [대상버전통과](verification/2026-10-15/D02-physics.md). 동일TE단일지수·log OLS·음수/바닥. 실제임상map/진단 제외 |
+| D03 | DWI 획득과 왜곡: EPI의 약점은 어떻게 줄이나? | C07, D02 | 부분 구현: [신호·EPI 시간/위치](dwi_epi_conditions.html) / [해당범위 통과](verification/2026-10-16/D03-physics.md). 공간field/움직임·실제coil/분할재구성은 A05/A02 연계 후속 |
+| S01 | Susceptibility·T2*·SWI: 신호·위상·blooming은 무엇을 반영하나? | C03, B05 | 두 페이지 구현: [주어진분포/GRE](susceptibility_signal_phase.html)·[mask/minIP](swi_mask_projection.html) / [GRE 검증](verification/2026-10-16/S01-physics.md)·[처리 검증](verification/2026-10-16/S01-swi-physics.md). 두 한계모형 통과, χ→dipolefield/실제filtering·임상은 제외 |
+| S02 | QSM: phase에서 susceptibility를 어떻게 추정하나? | S01 | 부분 구현: [주기 dipole/영점 역문제](qsm_dipole_inverse.html) / [두 모드 범위 통과](verification/2026-10-17/S02-physics.md). 실제phase/field추정·배경제거/noise·COSMOS/임상은 남음 |
 
 ### Artifact — 관찰 → 원인 → 조절의 공통 형식
 
 | ID | 챕터 | 선행 / 상태 | 구현할 사항 |
 |---|---|---|---|
-| A01 | Aliasing·wrap-around | G01 / 부분 구현(B05) | FOV·undersampling·oversampling을 비교하고 병변과 혼동하는 사례 |
-| A02 | 움직임·ghosting·gating | B05, Q03 / 계획 | 주기/비주기 움직임, phase 방향, 호흡·ECG·navigator, gating efficiency |
-| A03 | Gibbs ringing·zero filling | B05, G01 / 부분 구현(B05) | 유한 k-space·경계·필터와 해상도. interpolation이 새 정보와 다른 점 |
-| A04 | Chemical shift displacement | Q02, F01 / 계획 | frequency 방향 이동과 IP/OP 경계 상쇄를 구별 |
-| A05 | Susceptibility·금속·EPI artifact | C03, C07, S01 / 계획 | signal loss·왜곡, TE·BW·SE/GRE, 금속 저감의 원리. D03으로 연결 |
-| A06 | B0/B1 불균일·RF 간섭·코일 문제 | Q01, F03 / 계획 | shading·zipper·coil flare, 원인 감별. 안전 판단과 분리 |
+| A01 | Aliasing·wrap-around | G01 / [페이지 구현](aliasing_fov.html) | [두 점/Fourier 범위 통과](verification/2026-10-17/A01-physics.md). FOV·짝수 표본·zero filling 구별. 실제 연속 조직·수신 필터/장비 oversampling·임상 예시는 남음 |
+| A02 | 움직임·ghosting·gating | B05, Q03 / [부분 구현](motion_ghosting.html) | [1D 모형 통과](verification/2026-10-17/A02-physics.md). 시간별 q·주기/한 번 이동·순서·이상적 gating/대기. 실제2D·호흡/ECG/navigator·DWI motion/eddy 보정은 남음 |
+| A03 | Gibbs ringing·zero filling | B05, G01 / [페이지 구현](gibbs_ringing.html) | [명시 모형 통과](verification/2026-10-17/A03-physics.md). 유한 계수·경계·표본 최대값·M/필터·PSF 폭. 실제 장비/임상 제거는 제외 |
+| A04 | Chemical shift displacement | Q02, F01 / [페이지 구현](chemical_shift_artifacts.html) | [두 분리 모형 통과](verification/2026-10-17/A04-physics.md). BW/극성 위치와 TE/f 상쇄. 실제 결합 경계 영상/다중 peak·임상은 제외 |
+| A05 | Susceptibility·금속·EPI artifact | C03, C07, S01 / [부분 구현](field_epi_distortion.html) | [1D 공간 field/위치 통과](verification/2026-10-17/A05-physics.md). 실제2D·voxel 분포/소실 결합·metal·보정은 남음. C03/S01·D03 연결 |
+| A06 | B0/B1 불균일·RF 간섭·코일 문제 | Q01, F03 / [부분 구현](b0_b1_receive_shading.html) | [TX/RX/B0 3기전 통과](verification/2026-10-17/A06-physics.md). 같은 밝기 반례/추가flip. 실제 간섭/zipper·coil noise/QA·보정/안전 판단은 남음 |
 
 ## 정량·분광·AI 심화
 
 | ID | 짧게 나눌 챕터 | 선행 | 상태 / 핵심 구현 |
 |---|---|---|---|
-| M01 | T2W와 T2 mapping / 여러 echo와 fitting | C01, C02 | 계획. signal points·곡선·map 연결, 오차·noise floor·비단일 지수 |
-| M02 | T1 mapping과 ECV의 기초 | C04, M01 | 계획. 획득 모형과 fitting, native/postcontrast. 임상 기준값은 별도 근거 확인 |
-| M03 | T2* mapping·R2*와 철 관련 신호 | C03, M01 | 계획. magnitude decay, 짧은 TE, fitting 한계 |
-| M04 | PDFF: 지방 비율을 정량화하려면? | F02, M01 | 계획. T1 bias·T2*·지방 multi-peak를 단순 IP/OP와 구별 |
-| N01 | NMR/MRS: 화학 환경은 spectrum에 어떻게 나타나나? | B02, F01, B05 | 계획. 핵종·chemical shift·ppm, FID→spectrum |
-| N02 | MRS peak를 읽기: 위치·면적·폭·TE | N01 | 계획. NAA·Cho·Cr·lactate 등의 교육 예시, J-coupling은 선택 심화, 과도한 진단 단정 방지 |
-| N03 | MRS localization과 품질 | N02, G02 | 계획. single/multivoxel, PRESS/STEAM, water suppression·shimming·오염 |
-| E01 | MRE: 파동을 MR로 측정하면 무엇을 알 수 있나? | B04 | 계획. 진동·shear wave·motion encoding·stiffness, 주파수 고정 비교 |
-| E02 | MRE 품질과 해석의 한계 | E01 | 계획. inversion·confidence·wave quality, 획득법/주파수 의존성 |
-| AI01 | AI 재구성: denoising·가속·선명도 개선 | Q01, Q04, Q06 | 계획. 역할별 비교, data consistency, 합성 잡음/undersampling 실험. 벤더 알고리즘을 임의로 재현했다고 표현하지 않음 |
-| AI02 | 벤더별 AI 접근 비교 | AI01 | 계획. GE AIR Recon DL, Siemens Deep Resolve, Philips SmartSpeed/Precise, Canon AiCE/PIQE. 공개 기술 범위와 제품/버전/자료 날짜 기록 |
-| AI03 | AI 화질을 평가하기: 작은 구조·texture·정량값 | AI01, M01 | 계획. smoothing·apparent resolution·정보 보존, nonlinear reconstruction에서 SNR 측정의 한계 |
+| M01 | T2W와 T2 mapping / 여러 echo와 fitting | C01, C02 | 부분 구현2페이지: [기본/밝기](t2_mapping_basics.html)·[잡음/두성분](t2_mapping_limits.html). [기본](verification/2026-10-17/M01-physics.md)·[한계](verification/2026-10-17/M01-limits-physics.md) 모형 통과. 실제2D/FSE·임상정량·추정방법 확장은 남음 |
+| M02 | T1 mapping과 ECV의 기초 | C04, M01 | 부분 구현: [IR signed/유한TR 추정](t1_mapping_ir.html) / [해당모형 통과](verification/2026-10-17/M02-physics.md). 실제sequence/B1/noise/ECV·임상정량은 남음 |
+| M03 | T2* mapping·R2*와 철 관련 신호 | C03, M01 | 부분 구현: [단위/echo범위/Gaussian](t2star_mapping.html) / [해당모형 통과](verification/2026-10-17/M03-physics.md). 실제2D/noise/철정량보정/임상은 남음 |
+| M04 | PDFF: 지방 비율을 정량화하려면? | F02, M01 | 두 부분 모형 구현: [T1 bias](pdff_t1_bias.html)·[echo/spectrum](pdff_echo_assumptions.html) / [T1 검증](verification/2026-10-17/M04-physics.md)·[echo 검증](verification/2026-10-17/M04-echo-physics.md). 실제 성분/field/감쇠 추정·noise·임상 PDFF는 미구현 |
+| N01 | NMR/MRS: 화학 환경은 spectrum에 어떻게 나타나나? | B02, F01, B05 | 페이지 구현: [복소 FID/spectrum](fid_spectrum.html) / [지정 모형 통과](verification/2026-10-17/N01-physics.md). 실제 대사물/농도·임상/localization은 제외 |
+| N02 | MRS peak를 읽기: 위치·면적·폭·TE | N01 | 부분 구현: [가상 단일 peak](spectral_peak_features.html) / [기본 모형 통과](verification/2026-10-17/N02-physics.md). 실제 대사물·J결합/overlap·농도/진단은 남음 |
+| N03 | MRS localization과 품질 | N02, G02 | 부분 구현: [관측 공간/혼합](mrs_observation_volume.html)·[field 분포/선폭](mrs_field_linewidth.html) / [공간 적분](verification/2026-10-17/N03-physics.md)·[균일 분포 모형 통과](verification/2026-10-17/N03-field-physics.md). 실제pulse/MRSI/SRF·억제·shim 최적화/임상품질은 남음 |
+| E01 | MRE: 파동을 MR로 측정하면 무엇을 알 수 있나? | B04 | 두 부분 모형 구현: [균일 파동](mre_shear_wave.html)·[MR위상encoding](mre_motion_encoding.html) / [파동](verification/2026-10-17/E01-physics.md)·[encoding 검증](verification/2026-10-17/E01-encoding-physics.md). 실제조직/sequence·inversion/임상은 남음 |
+| E02 | MRE 품질과 해석의 한계 | E01 | 부분 구현: [복소 국소 역산/표본/공간 오차](mre_inversion_limits.html) / [해당 범위 통과](verification/2026-10-17/E02-physics.md). 실제noise/confidence·2D3D/vendor/임상은 남음 |
+| AI01 | AI 재구성: denoising·가속·선명도 개선 | Q01, Q04, Q06 | 기본 부분 구현: [역할/자료일치 대리처리](reconstruction_roles.html) / [지정 범위 통과](verification/2026-10-17/AI01-physics.md). 실제 학습 모델/딥러닝·vendor/임상은 미구현 |
+| AI02 | 벤더별 AI 접근 비교 | AI01 | [공개 자료 읽기 페이지](vendor_ai_reading.html) / [주장·출처 검토 통과](verification/2026-10-17/AI02-physics.md). 2026-10-17 확인한 8명칭/6자료에 한정. 설치 버전·독립 임상 우열은 미확인 |
+| AI03 | AI 화질을 평가하기: 작은 구조·texture·정량값 | AI01, M01 | 세 부분 모형 구현: [구조/질감](structure_texture_evaluation.html)·[공간 처리/T2](processed_t2_mapping.html)·[반복 잡음](reconstruction_noise_ensemble.html) / [구조](verification/2026-10-17/AI03-physics.md)·[T2](verification/2026-10-17/AI03-t2-physics.md)·[반복 통계 검증](verification/2026-10-17/AI03-noise-physics.md). 실제 학습·다중coil/크기영상·임상 SNR/검출은 남음 |
 
 ## 나중에 추가할 후보 — 잊지 않고 보존
 
@@ -141,7 +141,7 @@
 
 ## 개발 순서와 실행 대기열
 
-**다음 실행 항목: W09.** 별도 주제 지정 없이 “개발 진행해”라는 요청을 받으면 아래에서 진행 중인 항목을 재개하거나, 선행 조건을 충족한 가장 앞의 미완료 항목을 실행한다. 완료 후 이 문장·행의 상태·결과 링크를 함께 갱신한다. 작업 상태와 챕터의 구현/물리 검증 상태는 별개다.
+**다음 실행 항목: W55.** 별도 주제 지정 없이 “개발 진행해”라는 요청을 받으면 아래에서 진행 중인 항목을 재개하거나, 선행 조건을 충족한 가장 앞의 미완료 항목을 실행한다. 완료 후 이 문장·행의 상태·결과 링크를 함께 갱신한다. 작업 상태와 챕터의 구현/물리 검증 상태는 별개다.
 
 2026-10-15 계획 검토 당시에는 **전체 24개 중 23개 통과, 보고서 파일 누락으로 1개 실패**했다. 원인은 [계획 검토 기록](verification/2026-10-15/development-plan-review.md)에 보존한다. 이후 W00에서 보고서 목록·링크·생성을 복구했다. 현재 근거와 시험·화면 결과는 [W00 완료 기록](verification/2026-10-15/W00-report-recovery.md)에 있다. 과거 시험 결과와 현재 검증을 구별한다.
 
@@ -160,10 +160,61 @@
 | W06 | C02 SE/GRE echo 비교 챕터 | W01, W02, W03, W04, W05 | 완료 — [검증](verification/2026-10-15/C02-physics.md) |
 | W07 | C03 T2/T2*와 dephasing 챕터 | W06 | 완료 — [검증](verification/2026-10-15/C03-physics.md) |
 | W08 | B05 k-space 재검토와 선행 안내 | W05 | 완료 — [검증](verification/2026-10-15/B05-physics.md) |
-| W09 | G01 FOV·matrix·해상도 챕터 | W05, W08 | 진행 중 |
-| W10 | G02 slice selection·부분 용적 챕터 | W02, W05 | 미착수 |
-| W11 | Q01 SNR·CNR·NEX 챕터 | W01, W09 | 미착수 |
-| W12 | B00 고전적 비유의 검증과 한계 | W00 | 미착수 |
+| W09 | G01 FOV·matrix·해상도 챕터 | W05, W08 | 완료 — [독립 계산·200개 실제 상태·통합 판정](verification/2026-10-15/G01-physics.md) |
+| W10 | G02 slice selection·부분 용적 챕터 | W02, W05 | 완료 — [독립 SI·공간 적분·512개 실제 상태·판정](verification/2026-10-15/G02-physics.md) |
+| W11 | Q01 SNR·CNR·NEX 챕터 | W01, W09 | 완료 — [독립 통계·564개 실제 상태·물리 판정](verification/2026-10-15/Q01-physics.md) |
+| W12 | B00 고전적 비유의 검증과 한계 | W00 | 완료 — [독립 적분·126개 실제 상태·판정](verification/2026-10-15/B00-physics.md) |
+| W13 | C04 IR·TI·null 챕터 | W01 | 완료 — [독립 시간 순서·448개 실제 상태·판정](verification/2026-10-15/C04-physics.md) |
+| W14 | C05 FSE/TSE·echo train 챕터 | W06, W08 | 완료 — [독립 FFT·이벤트·118개 실제 상태·판정](verification/2026-10-15/C05-physics.md) |
+| W15 | G03 2D/3D·partition 챕터 | W09, W10 | 완료 — [독립 공간적분·116개 실제 상태·판정](verification/2026-10-15/G03-physics.md) |
+| W16 | Q02 Receiver bandwidth 챕터 | W05, W11 | 완료 — [독립SI/kernel/PSD·216실제상태·판정](verification/2026-10-15/Q02-physics.md) |
+| W17 | Q03 검사 시간·이벤트 수 챕터 | W14, W15, W11 | 완료 — [독립 이벤트·시간·1,004실제상태·판정](verification/2026-10-15/Q03-physics.md) |
+| W18 | C06 Spoiled GRE·flip angle 챕터 | W01, W02 | 완료 — [독립 회전/RK4·314실제상태·판정](verification/2026-10-15/C06-physics.md) |
+| W19 | C07 EPI·trajectory 챕터 | W05, W08 | 완료 — [독립 SI적분/kernel·360실제상태·판정](verification/2026-10-15/C07-physics.md) |
+| W20 | Q04 Parallel imaging·coil sensitivity 챕터 | W08, W11 | 완료 — [독립 QR/DFT/통계·580실제상태·판정](verification/2026-10-15/Q04-physics.md) |
+| W21 | F01 Chemical shift·IP/OP 독립 챕터 | W02, W03 | 완료 — [독립RK4/단위·452실제상태·판정](verification/2026-10-15/F01-physics.md) |
+| W22 | F02 Dixon 물/지방 분리 챕터 | W21 | 완료 — [독립RK4/일반QR·298실제상태·판정](verification/2026-10-15/F02-physics.md) |
+| W23 | F03 Spectral fat suppression 챕터 | W02, W21 | 완료(선택SAT) — [독립Bloch/행렬지수·474실제상태·판정](verification/2026-10-15/F03-physics.md). Water excitation은W27 |
+| W24 | F04 지방억제 원리·실패 비교 | W13, W22, W23 | 완료 — [독립세모형사례·22실제상태·판정](verification/2026-10-15/F04-physics.md) |
+| W25 | D01 Diffusion·b-value 챕터 | W05, W06 | 완료 — [독립적분/공분산/통계·250실제상태·판정](verification/2026-10-15/D01-physics.md) |
+| W26 | D02 ADC fitting·shine-through 챕터 | W25, W01, W11 | 완료 — [독립ODE/QR/잡음통계·888실제상태·판정](verification/2026-10-15/D02-physics.md) |
+| W27 | F03 후속 Water excitation | W02, W21, W23 | 완료 — [독립 Bloch·480 실제 상태·판정](verification/2026-10-15/F03-water-physics.md) |
+| W28 | D03 DWI/EPI 왜곡과획득조건 | W19, W26 | 완료(균일field/시간 예측) — [504독립조건·260실제상태·판정](verification/2026-10-16/D03-physics.md) |
+| W29 | S01 주파수분포·GRE·blooming | W07, W08 | 완료 — [독립적분/196,608voxel·112실제상태·판정](verification/2026-10-16/S01-physics.md) |
+| W29b | S01 후속 phase mask·minIP | W29 | 완료 — [독립곱/최소·112실제상태/917,504pixel·판정](verification/2026-10-16/S01-swi-physics.md) |
+| W30 | C08 bSSFP·coherence·banding | W18 | 완료 — [독립lab두TR/ODE·240실제상태·판정](verification/2026-10-16/C08-physics.md) |
+| W30b | C08 후속 T2/T1 대비·근사 범위 | W30 | 완료 — [독립588조건/극한·54실제상태·판정](verification/2026-10-16/C08-contrast-physics.md) |
+| W31 | Q05 Partial Fourier·위상·대칭 | W08 | 완료 — [독립FFT/normal반복·64실제상태·판정](verification/2026-10-16/Q05-physics.md) |
+| W32 | Q06 Compressed sensing·희소성 | W08, W31 | 완료(지정유한반복) — [독립normal/ADMM·78실제상태·판정](verification/2026-10-16/Q06-physics.md). 두조합solver기준미달표시 |
+| W33 | Q07 SMS·slice 분리·CAIPI | W10, W20 | 완료 — [독립 368조건·96실제상태·범위 판정](verification/2026-10-17/Q07-physics.md) |
+| W34 | A01 FOV·aliasing·folding | W08, W09 | 완료 — [독립648조건·160실제상태·판정](verification/2026-10-17/A01-physics.md) |
+| W35 | A02 움직임·ghosting·gating | W08, W17 | 완료(1D 모형) — [독립30조건·60실제상태·판정](verification/2026-10-17/A02-physics.md) |
+| W36 | A03 유한 k-space·ringing·필터 | W08, W09 | 완료 — [독립 적분/FFT·24실제상태·판정](verification/2026-10-17/A03-physics.md) |
+| W37 | A04 Chemical shift·공간 이동과 voxel 상쇄 | W16, W21 | 완료 — [독립300조건·600실제상태·판정](verification/2026-10-17/A04-physics.md) |
+| W38 | A05 공간 field·susceptibility/EPI 위치 왜곡 | W07, W19, W28, W29 | 완료(1D 위치 모형) — [독립54조건·108실제상태·판정](verification/2026-10-17/A05-physics.md) |
+| W39 | A06 B0/B1·coil shading 원인 구분 | W11, W23, W33 | 완료(3기전 부분 모형) — [독립ODE·60실제상태·판정](verification/2026-10-17/A06-physics.md) |
+| W40 | M01 기본·밝기와 다중 echo T2 추정 | W01, W06 | 완료(기본 모형) — [독립72조건·144실제상태·판정](verification/2026-10-17/M01-physics.md) |
+| W40b | M01 후속·잡음 바닥과 다중 성분 fitting 한계 | W11, W26, W40 | 완료(명시 모형) — [독립48조건·96실제상태·판정](verification/2026-10-17/M01-limits-physics.md) |
+| W41 | M02 T1 mapping·추정과 입력 가정 | W13, W40 | 완료(기본IR모형) — [독립48조건·96실제상태·판정](verification/2026-10-17/M02-physics.md) |
+| W42 | M03 T2* mapping·R2*와 모형 한계 | W07, W40 | 완료(명시envelope) — [독립18조건·36실제상태·판정](verification/2026-10-17/M03-physics.md) |
+| W43 | M04 기본·신호 비율과 T1 bias | W18, W22, W40, W42 | 완료 · [부분 모형 검증](verification/2026-10-17/M04-physics.md) |
+| W43b | M04 후속·echo 감쇠/지방 spectrum 가정 | W43 | 완료 · [부분 모형 검증](verification/2026-10-17/M04-echo-physics.md) |
+| W44 | N01 FID·chemical shift·spectrum | W02, W08, W21 | 완료 · [지정 모형 검증](verification/2026-10-17/N01-physics.md) |
+| W45 | N02 spectrum의 위치·면적·폭·TE | W44 | 완료 · [기본 부분 검증](verification/2026-10-17/N02-physics.md) |
+| W46 | N03 MRS localization·관측 범위와 오염 | W45, W10 | 완료 · [공간 적분 부분 검증](verification/2026-10-17/N03-physics.md) |
+| W47 | E01 기본·균일 탄성 매질의 shear wave | W05, W46 | 완료 · [파동 부분 검증](verification/2026-10-17/E01-physics.md) |
+| W47b | E01 후속·변위와 motion encoding 위상 | W47 | 완료 · [encoding 부분 검증](verification/2026-10-17/E01-encoding-physics.md) |
+| W48 | E02 MRE inversion·wave quality의 한계 | W47b | 완료 · [기본 부분 검증](verification/2026-10-17/E02-physics.md) |
+| W49 | S02 QSM·주어진 field와 dipole 역문제 | W29, W48 | 완료 · [주기 부분 검증](verification/2026-10-17/S02-physics.md) |
+| W50 | AI01 재구성 역할·data consistency의 기본 비교 | W11, W20, W32, W49 | 완료 · [대리처리 기본 검증](verification/2026-10-17/AI01-physics.md) |
+| W51 | AI03 기본·작은 구조와 texture 평가 | W50, W40 | 완료 · [검증](verification/2026-10-17/AI03-physics.md) |
+| W51b | AI03 후속·공간 처리와 정량값 | W51, W40b | 완료 · [검증](verification/2026-10-17/AI03-t2-physics.md) |
+| W52 | AI02 공개 벤더 자료의 역할/근거 범위 비교 | W51b | 완료 · [검토](verification/2026-10-17/AI02-physics.md) |
+| W53 | AI03 후속·반복 잡음과 비선형 평가 | W51b, W11 | 완료 · [검증](verification/2026-10-17/AI03-noise-physics.md) |
+| W54 | N03 후속·주파수 분포와 linewidth | W46, W45 | 완료 · [검증](verification/2026-10-17/N03-field-physics.md) |
+| W55 | M02 후속·R1 변화와 ECV 분배의 개념 | W41, W43 | 미착수 |
+| W56 | G02 후속·유한 RF와 slice profile | W10, W23 | 미착수 |
+| W57 | M04 후속·알려진 field의 복소 echo 성분 분리 | W43b, W22 | 미착수 |
 
 W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을 누락하지 않고 C02의 선행 기반을 마련하며, B00의 전면 보강 때문에 핵심 경로를 중단하지 않는다. 다만 어느 페이지에서든 확인된 핵심 오류는 표 순서보다 먼저 수정한다.
 
@@ -240,7 +291,216 @@ W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을
 - 기존 바퀴 페이지에서 토크·각운동량·세차 방향, 관성·단위·화면 축척과 정상 세차 가정을 재검토한다.
 - 인수 기준: 독립 수치/불변량과 실제 그림을 대조하고, 이 비유로 설명 가능한 점/양자 스핀의 실체로 볼 수 없는 점을 확인 문제와 피드백으로 구별한다. 일반적인 강체 운동 해법 구현은 제외한다.
 
+**W13 — C04 “특정 조직의 종자화를 언제 0으로 만들까?”**
+
+- 선행 W01. 중심 질문은 inversion 뒤 TI가 부호와 magnitude를 어떻게 바꾸는가이다. 목표는 inversion 회복·TI null·magnitude 부호 소실을 구별하는 세 가지다. 관찰은 긴 TR의 TI, TR 단축, 예시 T1 변경이다.
+- 기본 TI 200 ms(0~3000, 0.1), TR 6000 ms(3500~10000, 500), 예시 T1 300/1000/4000 ms. 이상적 inversion→90° readout 후 횡자화 spoiling의 반복 모형을 쓰고 TE=0의 이상적 즉시 읽기로 T1 원리에 집중하고 T2 감쇠를 제외한다. STIR/FLAIR 값은 교육 예시이며 실제 권장 TI가 아니다.
+- 독립 시간 순서 이완·inversion 반복과 정상상태 식의 차이 ≤1e−9, null 전후 부호·긴 TR의 T1 ln2 극한, 실제 두 화면·정답을 대조한다. 실제 IR-FSE ordering·PSIR 재구성·임상 프로토콜은 제외한다. 인수 기준은 부호/크기/회복 곡선·예시 null·가정이 같은 모형과 일치하고 통합 검증 기록이 있는 것이다.
+
+**W14 — C05 “여러 echo를 서로 다른 k-space 줄에 쓰면?”**
+
+- 선행 W06·W08. 목표는 echo train과 effective TE, ordering에 따른 대비·blur를 구별한다. 관찰은 echo spacing, ETL, 중심 k-space echo 배치의 세 가지다.
+- N64·FOV240mm, ESP10ms(5~20,5), ETL8(1/4/8/16), k순서/중심먼저/외곽먼저, PD1·T2 A50/B150ms의 교육 모형을 구현한다. 64/ETL개의 TR과 echo별 k 배정, 복소 inverse와 고정 창을 독립 radix2 FFT·이벤트 열거로 대조한다. 단순 T2 가중 k-space 모형이며 stimulated echo·실제 refocusing train·scan time 전체 조절은 제외한다. 인수 기준은 같은 echo 시간 가중치로 pulse/echo 도식·k 줄·재구성 영상·문제가 일치하고 독립 FFT·실제 두 화면 검증이 있는 것이다.
+
+**W15 — G03 “2D slice와 3D partition은 어떻게 다른가?”**
+
+- 선행 W09·W10. 같은 3D 교육 phantom에서 slice 두께/partition·in-plane 격자를 비교하며 MPR·등방 voxel·두 획득 방식의 개념을 세 관찰로 나눈다. 착수 때 격자·두께·volume 범위·독립 공간 적분을 확정한다. 인수 기준은 같은 phantom의 평균·격자·MPR이 독립 공간 적분과 맞고 SNR/시간 비교의 고정 조건이 명시된 것이다. 실제 3D RF 정상상태·움직임·scanner scan time 전체는 제외한다.
+
+**W16 — Q02 “Receiver bandwidth를 바꾸면 무엇이 함께 바뀌나?”**
+
+- 선행 W05·W11. Hz/pixel과 전체 BW·readout 시간의 단위를 먼저 확정한다. 고정 matrix에서 BW만, 같은 off-resonance의 위치 이동, 독립 잡음 모형의 기대 SNR을 세 관찰로 구성한다. 착수 때 BW 범위·방향·표시 창을 확정하고 단위 계산과 알려진 주파수 phantom으로 검증한다. 실제 chemical shift 위상 상쇄는 F01과 구별하며 실제 장비 검사 시간·금속 안전은 제외한다.
+
+**W17 — Q03 “검사 시간은 어떤 이벤트를 세면 되나?”**
+
+- 선행 W14·W15·W11. 2D/3D, Ny128(32/64/96/128), sections16(4/8/16/32), ETL8(1/4/8/12/16), TR4000ms(200~4000,200), NEX1(1/2/4), gating100%(100/50%)를 비교한다. Active20+ETL×10ms, 준비10s/dummy4TR은1회, 2D는묶음별전체Ny/3D는ky빠른phase쌍의연속배정, 마지막train도전체active예약을명시한다. 독립 이벤트 열거와 시간 합, 실제 두 화면·문제로 검증한다. slice 수를 항상 곱하는 설명을 피하며 실제 장비 견적·임상 촬영 보장은 제외한다.
+
+**W18 — C06 “Spoiled GRE의 flip angle은 왜 중요할까?”**
+
+- 선행 W01·W02. 일정TR에서 반복pulse의 정상상태·flip angle sweep·긴/짧은TR을 세 관찰로 비교한다. 기본TR20ms(5/10/20/50/100/500/2000/5000), flip20°(0~90,0.1), T1 A600ms(300/600/1000), B1200ms, 공통PD1/T2*40ms/TE2ms를 쓴다. 50회 pulse와정상상태·1%잔차도달횟수·고정0~1신호창을 표시하며 완전 spoiling을 가정한다. 독립 시간 순서 반복/Bloch 계산과 Ernst angle 극한을 대조한다. 인수 기준은 수치·정상상태 곡선·부호/정규화·예측 문제가 같은 모형이며 실제 두 화면을 검증한 것이다. bSSFP의 잔여 coherence·실제 RF spoiling 효율은 제외한다.
+
+**W19 — C07 “EPI는 k-space를 어떻게 빠르게 훑을까?”**
+
+- 선행 W05·W08. readout zigzag·echo spacing·위상방향 off-resonance 왜곡의3관찰을 정한다. N16×16/FOV160mm, dwell10µs, TE30ms, ESP0.8ms(0.4/0.8/1.6/3.2), offset50Hz(−100~100,10), PE극성±1을 쓴다. 실제256ADC시간/좌표와 piecewise gradient를 연결한다. 재구성은 각echo중앙kx0의16표본을 쓰는1D PE점응답으로 한정하고 within-readout off-res와T2*감쇠를 제외한다. 독립gradient 적분·유한kernel/위치이동을 비교한다. 인수 기준은 trajectory·획득시점·재구성/왜곡·문제의 부호/단위가 일치하며 실제 두 화면 검증이 있는 것이다. 실제eddy current·Nyquist correction·vendor EPI는 제외한다.
+
+**W20 — Q04 “코일 감도로 어떻게 덜 찍은 위치를 구별할까?”**
+
+- 선행 W08·W11. 알려진 coil sensitivity의 이상적phantom에서 R1/full·R2/alias·분리/잡음증폭을 비교한다. 신호(1,0.5)의FOV/2간격 두voxel·두coil 실수선형모형을 쓴다. C=[[cosθ,sinθ],[sinθ,cosθ]], θ20°(0~45,1), R1/R2, σ0.05(0~0.1,0.01), 각열norm1·독립등분산잡음을 고정한다. R2합정규화의raw잡음σ√2·g/조건수·45°분리불가와고정seed1회예시를 표시한다. 독립QR/DFT와3seed×131072개의Monte Carlo를5SE/SD상대기준으로 검증한다. 실제 vendor SENSE/GRAPPA·임상SNR·AI는 제외하며 실제 두 화면/실패조건·정답을 기록한다.
+
+**W21 — F01 “물과 지방은 언제 상쇄될까?”**
+
+- 선행 W02·W03. 단일 peak 지방 근사의 ppm/Hz·B0·TE·물/지방 비율을 위상 벡터·복소 합·magnitude 세 관찰로 나눈다. B0=3T(1.5/3), TE1.1ms(0~12,0.001), TE0지방성분비율0.5(0~1,0.05), fat−3.5ppm/water0·공통T2*40ms·TE0전체신호1을 쓴다. 물회전계의Mx+iMy·복소합과크기/개별성분합·고정창·IP/OP 근처0.001ms반올림을 명시한다. 독립 복소 벡터 합과 IP/OP 주기·0/동일비율의 극한을 검증하고 실제 두 화면·문제와 대조한다. 실제 multipeak 지방·Dixon 분리·장비별 권장 TE는 제외한다.
+
+**W22 — F02 “서로 다른 TE의 위상으로 물과 지방을 나눌까?”**
+
+- 선행 W21. 알려진 single-peak 지방 주파수·균일한 field의 복소 echo 모형에서 두/세 echo의 정보·물/지방 분리·field 오류를 세 관찰로 구성한다. B0=3T·fat−3.5ppm, T=첫OP1.118409ms의TE(T,2T)에서복소분리하고3T는검증전용세번째echo로추가한다. 이완/잡음/초기공통위상0의이상모형, f0.3(0~1,0.05), 실제field100Hz(−500~500,25), 제공된field/0가정/IP주위상branch의3규칙을비교한다. 두echo복소해·세번째잔차와(W,F,b)↔(F,W,b±|Δf|)동일데이터를독립선형대수/시간적분으로 검증한다. 근접0branch를정답field로보장하지않는다. 복소 분리의 성공/실패와 IP/OP magnitude만의 모호성을 두 화면·문제에 일치시킨다. 실제 multipeak Dixon·공간 field map·임상PDFF는 제외한다.
+
+**W23 — F03 “주파수를 골라 지방 신호를 줄일까?”**
+
+- 선행 W02·W21. 지방 주파수의 선택 pulse·spoiling·영상 여기의 순서를 알려진 물/단일peak 지방 모형으로 비교한다. 명목90°사각RF의기간8ms(2/4/8/12/16), 추가offset0Hz(−500~500,25), B1배율1(0~2,0.05)을 세관찰로둔다. carrier는3T지방−3.5ppm으로고정하며 기간변경때명목90°를유지하도록B1을조정한다. 이완/지연없음·이상적netXYspoiling·순간90°영상여기/TE0·분리된순수물/지방voxel M0각1을쓴다. 전체응답/측면엽·signedMz/읽기크기·1/기간은폭척도이며정확한BW가아님을명시한다. 독립 Bloch 적분·원하는/원치 않는 saturation·off-res 실패를 두 화면과 문제에 대조한다. 실제 fat-sat 권장값·multipeak·임상 안전은 제외한다.
+
+**W24 — F04 “지방억제 방법마다 실패 이유가 왜 다를까?”**
+
+- 선행 W13·W22·W23. C04/F02/F03의 검증된 모형과 출처를 연결해 주파수 선택·T1 선택·복소 분리의 차이를 비교한다. 고정세사례는동일T1(물300/지방300ms)의IR동시null, 공통field−450Hz의선택SAT물손실/Dixon주위상swap, 선택RF B1배율2의즉시지방신호복귀다. IR TR6000ms/지방null TI·선택SAT8ms·Dixon f0.3을기준으로각모형을재사용한다. 해당오류입력이없는방법은숫자비교에서제외하고정규화가다른절대밝기/SNR/실제성능순위를만들지않는다. 모형을 중복 구현하지 않고 조건/예측/한계가 원 챕터와 일치하는지 독립 대조한다. 임상 방법 선택이나SPIR/SPAIR 장비별 성능은 근거 범위만 설명하며 실제 프로토콜 처방은 제외한다.
+
+**W25 — D01 “확산 gradient는 움직이는 물 신호를 어떻게 줄일까?”**
+
+- 선행 W05·W06. 두gradient lobe·재위상화의 정지/이동 차이, b-value, 알려진D의 신호감소를 세 관찰로 구성한다. δ10ms고정·G30mT/m(0~60,5), D0.001mm²/s(0~0.003,0.0005), Δ40ms(25~80,5)를쓴다. Δ는lobe시작간격·TE=Δ+δ·180시점TE/2, 물리두lobe동극성/효과gradient반전·q단위rad/mm·b단위s/mm²를명시한다. S(b)/동일TE의S(b0)로정규화하고T2/임상신호는제외한다. 고정seed8192자유Brownian·0.5ms격자에서선형q적분의bridge분산까지포함하고3seed평균/분산/복소신호/phase-position공분산5SE를사전기준으로둔다. 독립q(t)적분의b와확산ensemble/극한을 대조하고 실제 두 화면·문제를 검증한다. 실제restriction/IVIM/tensor·임상b값 권장·장비안전은 제외한다.
+
+**W26 — D02 “DWI가 밝을 때 ADC로 무엇을 구별할까?”**
+
+- 선행 W25. 알려진D·T2·S0 모형에서 b별신호·ADC fitting·T2 shine-through와저신호의영향을 세관찰로 구성한다. b=[0,500,1000,1500]s/mm²·TE80ms·PD1, D0.001mm²/s(0~0.003,0.00025), T280ms(40/80/160), 성분잡음σ0(0~0.1,0.01)로고정한다. 복소독립Gaussian→magnitude4표본을자유절편의비가중log OLS로맞추며0이하/비유한로그실패·음수ADC를숨기지않는다. 고정seed0x0adc2026·원신호/동일D T280기준/fit을고정축·창으로비교한다. 독립QR/Poisson-Gamma log-magnitude모멘트와3seed Monte Carlo의평균/분산5SE로검증한다. 독립회귀·동일D/다른T2 반례·노이즈바닥/입력실패를 두화면/문제와 대조한다. 실제병변진단·임상ADC역치·IVIM/비Gaussian확산은 제외한다.
+
+**W27 — F03 후속 “지방을 눕히지 않고 물만 여기할까?”**
+
+- 선행 W02·W21·W23. 선택saturation과별개인두pulse/시간간격의물여기를독립관찰로구성해기존F03범위의미구현계획을보존한다. 같은위상+x의순간45°두pulse, 지연1.118ms(0~2.5,0.001), 공통offset0Hz(−500~500,25), 각도/B1배율1(0~2,0.05), 3T단일peak지방−3.5ppm/물carrier0을쓴다. RF중detuning/이완없음·중간spoiling없음·마지막pulse즉시읽기·각순수voxel M0=1로고정한다. 첫OP버튼은0.001ms근처이며정확null로표현하지않는다. 독립시간순서Bloch적분/주파수응답과두pulse사이coherence/실패를검증한다. 독립Bloch시간순서·물/지방선택/실패·signed/크기를두화면/문제와대조한다. 실제 binomial/shaped RF·임상권장/장비안전은제외한다.
+
+**W28 — D03 “확산준비와EPI읽기는어떤문제를각각만들까?”**
+
+- 선행 W19·W26. 중심 질문은 “b를 높이면 EPI 위치 이동도 커질까?”다. D02의 TE80ms/T280ms/D0.001mm²/s/PD1·잡음0 신호를 재사용하고 b0/500/1000/1500만 바꾼다. N32/FOV160mm·참점 y0=−20mm, 공통 offset50Hz(−100~100,10)·PE ±1이다. 읽기 세 조건은 SS(R1/ESP0.8ms/1shot), PI(R2/실제ESP0.8ms/1shot/ky한줄건너), 읽기분할(3shot/실제ESP0.4ms/각shot32개ky)이다. 분할수로 ESP를 자동 유도하지 않고 선언한 예시 조건이다. TE는 모두80ms·shot간위상완전일치다. 시간/위상과 선형위상기울기의 예측 위치를 표시하며 누락 PI 표본의 실제 coil 분리/영상재구성은 구현하지 않는다. 잡음/SNR·실제scan time·motion/eddy·dropout/국소늘어남을 비교하지 않는다. 세 관찰은 b/밝기, 시간규칙/이동, field·PE방향이다. 독립 SI 시간→복소위상 적분/unwrap회귀·R2 alias모호성·b불변/극한·실제 두 화면과 정답을 검증한다.
+
+**W29 — S01 “신호·위상·blooming은무엇을반영할까?”**
+
+- 선행 W07·W08. S01을 두 페이지로 나눈다. W29는 “위상이 달라지는 것과 신호가 사라지는 것은 같은가?”로 주어진 주파수분포/GRE·TE·blooming을 다루고, 독립 후처리인 mask/minIP는 바로 다음 W29b에서 구현한다. N32/FOV32mm·1mm격자·T280ms·PD1·TE20ms(5~40,5), Gaussian 평균10hHz/SD12hHz, h=exp(−r²/72)인 주어진 분포를 쓴다. 4개2mm평면의 기준도형은 반지름3mm·중심x−6/−2/2/6mm이며 기본평면은 index2다. 기준도형으로 field를 유도하지 않는다. 평균만/분산만/둘다, 평균주파수 부호±를 비교하고 C03의 연속Gaussian GRE크기를 재사용한다. 위상−2πfTE·ΔB단위·PD고정창·배경대비0.5미만 면적을 명시한다. 독립 주파수복소구적/이완ODE·모든pixel/좌표·두화면/정답을 검증한다. 실제χ→dipolefield·field filtering/unwrap·임상물질진단/장비성능은 제외한다.
+
+**W29b — S01 후속 “위상 mask와 투영은 보이는 범위를 어떻게 바꿀까?”**
+
+- 선행 W29. 같은 복소모형의 4개평면을 재사용한다. TE20ms(5~40,5), mask지수4(0/1/4), 단일평면index2/4평면minIP를 세관찰로 비교한다. 위상은 이미 배경장이 제거된 것으로 가정하며 음의위상에서 m=1+φ/π, 나머지1·SWI=|S|m^p·minIP=평면별최소를 쓴다. 평면 index2·부호관례고정·회색창/위상창·기준도형합집합/최저값위치·면적기준을 명시하고 독립구적/반복곱/정렬최소·모든실제pixel/두화면/정답을 검증한다. 실제high-pass/unwrap·vendor SWI·SNR최적지수/물질진단은 제외한다.
+
+**W30 — C08 “잔여횡자화를보존하면정상상태가어떻게달라질까?”**
+
+- 선행 W18. 중심질문은 “잔여횡자화를 보존하면 off-resonance 신호가 왜 반복될까?”다. TR5ms(3/5/10), flip30°(0~90,1), offset0Hz(−500~500,10), TE=TR/2·T11000/T2100ms·M01·단일정적spin을쓴다. 각TR의gradient0차moment0, 순간RF위상0/π교대·RF와함께도는수신위상·순간RF중이완/offset없음을선언한다. 세관찰은반복과정/잔여횡자화, 주파수응답/offset, TR·flip조건이다. RFframe1TR행렬고정점과첫50pulse transient·M0절대벡터오차1e−4의반복도달을계산한다. 독립labframe두RF주기Bloch/affine행렬지수고정점·직접시간적분·magnitude1/TR주기/위상반주기·flip0·실제두화면/정답을검증한다. 실제spatialgradient/다중성분·finiteRF/MT·흐름·vendor/임상최적화·안전은제외한다.
+
+**W30b — C08 후속 “신호를 T2/T1 비율만으로 정할 수 있을까?”**
+
+- W30의 고정T1/T2 반복/주파수응답과 독립인 대비 실험을 분리한다. 같은T1(A1000/100,B1000/200), 같은T2(A500/100,B1000/100), 같은비율(A1000/100,B500/50)ms 세쌍을 쓴다. TR5ms(5/20/50/100/200), TE=TR/2·flip30°·offset0·RF0/π·M01고정이다. 두spin의정확Bloch고정점과짧은TR/on-res근사 S=sinα/[1+cosα+(T1/T2)(1−cosα)]를비교한다. 기존BSSFP고정점을T1/T2선택으로확장해재사용하고독립lab두TR행렬/ODE·공유모형원래범위/실제두화면을재검증한다. 실제조직/임상대비·SNR·finiteRF는제외한다. W30에명시적으로남긴T1/T2대비를완결한뒤Q05로진행한다.
+
+**W31 — Q05 “일부 k-space와 위상 가정은 어떤 관계일까?”**
+
+- 선행 W08. 중심질문은 “측정을맞춘부분Fourier복원이왜틀릴수있나?”다. N64/FOV64mm·x0..63mm·M0기준실수진폭0.2+두사각형(16..23:+0.8,40..47:+0.4), 위상0/0.9sin(2πx/64)/1.2sin(20πx/64), 표본수40/48/64를쓴다. DFT bin q−32..31중 q≤count−33을읽어Nyquist−32를포함하고 DC/자기conjugatebin을덮어쓰지않는다. inverse1/64·forward무정규화다. zero fill/결측만conjugate채움/고정128회phase-line projection→측정재대입의간단POCS를동시에비교한다. phaseprior는대칭중앙±(count−33)의Hann(.5[1+cos(πq/(radius+1))]) 저해상위상또는정답제공이다. 음수real진폭을자르지않고마지막은측정우선·mergingfilter없음으로선언한다. 세관찰은실수/복소위상·측정수·위상prior이다. 독립FFT와실수normal행렬의Landweber등가반복으로검산하고복소/크기오차·측정잔차/위상선잔차·실제두화면/정답을대조한다. 실제vendor homodyne/POCS·noise/SNR·scan시간/임상복원을보장하지않는다.
+
+**W32 — Q06 “희소하다는 가정은 누락 자료 복원에 무엇을 더할까?”**
+
+- 선행 W08·W31. N64/FOV64mm·초기phase0·noise0, 직교Haar변환/복소L1을쓴다. 계단진폭(배경.2,16..23:1,40..47:.6)과조밀진동(.6+.18sin5+.16cos13+.14sin23 주기/FOV)을비교한다. 표본은고정불규칙32(중앙±7+seed0x4d524353으로고른나머지17), 짝수q32, 전체64다. unitaryFourier1/√64·HaarL2보존과 min .5||A a−y||²+λΣ|a|를선언한다. λ.01(0/.001/.01/.1), 복소soft threshold/FISTA최대2000회·20회마다dual gap1e−8×max(1,objective) 도달을검사한다. λ0은zero-fill최소norm해다. 세관찰은Haar희소성·같은개수의표본집합·λ/자료오차의tradeoff다. 독립명시적Haar기저/FFT/normal행렬·ADMM목적함수/dual bound·짝수표본에서32mm이동동일데이터/동일HaarL1반례·실제두화면을검증한다. 실제wavelet선택최적화/noise/coil·vendor CS·임상/AI·시간/SNR는제외한다.
+
+**W33 — Q07 “겹친 두 slice를 코일과 위상 부호로 분리할 수 있을까?”**
+
+- 선행 W10·W20. MB2·N32·FOV160mm의 두 slice와 두 coil을 사용한다. 감도 각 a(j)=θ+v cos(2πj/32), θ20°(0–45°,1°), v10° 또는0°다. 두 slice의 열은 [cos a,sin a]와 [sin a,cos a]이며 제곱합1이다. 두 번째 slice에 exp(−i2πq d/32), d0/16을 적용해 +d pixel 순환 이동을 만든다. 고정 phantom·잡음/이완 없음·감도 오보정0/+5°를 비교한다. 세 관찰은 중첩/CAIPI·균일 특이점·오보정 leakage다. 독립 FFT·Householder QR·각도 차이 g·전달계수를 절대/상대1e−10으로 확인하고 두 화면의 표·곡선·영상을 대조한다. 시간은 서로 겹치지 않는 2s 예시 블록에서 4slice의4→2묶음만 계산하며 실제TR/시간·RF/SAR/SNR는 제외한다. 균일 감도에서 CAIPI의 g 이득이 없는 반례를 포함한다. 실제 RF/profile·blipped gradient·실제 calibration은 후속 범위다.
+
+**W34 — A01 “FOV 밖의 신호는 영상의 어디에 나타날까?”**
+
+- 선행 W08·W09. 1D 점 phantom 두 개(−20mm 진폭1, 이동점+84mm 진폭0.6)를 쓴다. 이동점 −160..160mm/4mm, FOV128/256mm, 획득 pixel4mm 고정(N32/64), 모든 q 또는 짝수 q만 획득한다. q−N/2..N/2−1의 k=q/FOV이며 원래 위치에서 직접 Fourier 신호를 합성한다. 역변환의 1/N 정규화는 누락 상태에도 유지해 짝수 표본의 복제본이 각각1/2 진폭임을 명시한다. 표시 격자는 N 또는4N(1/4mm)이며 계수는 바꾸지 않는다. 세 관찰은 FOV modulo 위치·Δk를 줄이는 FOV 확대·새 정보 없는 zero filling이다. 독립 residue-class 격자/FFT와 Dirichlet 등비급수로 모든 복소 영상과 접힘 위치를 사전1e−10으로 검산하고 실제 두 화면/키보드/정답을 대조한다. 동일 Δx로 FOV 확대 시 자료 수가 늘지만 실제 scan time·SNR은 계산하지 않는다. 연속 조직/anti-alias filter·coil 복원·장비 oversampling은 제외한다. Chemical shift는 A04로 보존한다.
+
+**W35 — A02 “움직인 물체의 k-space를 한 영상으로 합치면?”**
+
+- 선행 W08·W17. N32/FOV160mm/5mm의 1D 두 점(−20mm:1,+35mm:0.6)을 y방향으로 함께 이동시킨다. 순간 q표본을250ms마다 하나 읽고 q는linear 또는centric 순서다. 주기 모형은 δ(s)=A[1−cos(2πs/8)]/2, 한 번 이동은 slot16부터δ=A다. A10mm(0–20/5mm)이며 실제 호흡 파형/시간은 아니다. gating은 주기 모형에서 외부 phase0 slot만 수락하고 마지막 수락slot 끝까지 대기 시간을 센다. 32줄의 accepted신호와 원래 정적 영상, 궤적·수락/대기 표·복소 NRMSE를 비교한다. 세 관찰은 주기/step, q획득 순서, 이상적 gating/대기다. 독립 좌표점 Fourier 합과 unitary spectral modulation 분해/FFT를 사전1e−10으로 대조하고 A0·gating 정적 극한·시간 사건 수·실제 두 화면/정답을 확인한다. 실제 readout 중 움직임·2D motion·coil/noise·호흡/ECG/navigator 보정·임상 최적화는 제외한다. D03의 실제 움직임/eddy 복원은 여전히 후속이다.
+
+**W36 — A03 “표시 pixel을 늘리면 ringing과 실제 해상도는 어떻게 바뀔까?”**
+
+- 선행 W08·W09. FOV160mm의 주기적 사각형 신호(.2 배경, |y|<20mm에서1, 경계.6)를 쓴다. 측정 q=−K…K, K8/16/32(기본16), Fourier 급수 계수 c0=.4/cq=.8sin(πq/4)/(πq)다. 표시 M128/512(기본128), rect/Hann 가중을 독립 조작한다. Hann wq=.5[1+cos(πq/(K+1))]이고 DC1이다. 실제 입력과 유한 역합·PSF를 같은 고정 창으로 비교한다. 세 관찰은 K/경계 진동, 표시 격자/동일 계수, 필터/PSF 폭이다. 초과/미달은 표시 격자에서 측정한 값으로 명명하며 연속 최대값으로 부르지 않는다. PSF는 중심1로 정규화한 진폭 FWHM(mm)을 표시한다. 독립 Simpson 적분 계수·radix-2 FFT와 PSF half-height 근을 사전1e−9 신호/1e−7mm로 검산하고 실제 두 화면/문제를 대조한다. 새 해상도 정보 없는 보간과 필터의 tradeoff를 확인한다. 실제2D/조직 진단·장비 필터/임상 ringing 제거는 제외한다.
+
+**W37 — A04 “공간 이동과 한 voxel의 상쇄는 어떻게 다를까?”**
+
+- 선행 W16·W21. Q02와 F01의 검증된 순수 모형을 수정 없이 재사용하는 두 실험 비교다. 실험1은 N64/FOV240mm/3.75mm의 물 점−30mm와 지방 점+30mm를 서로 별도 순수 진폭1로 읽어, BW50/100/200/400/800Hz/pixel(기본200)·readout극성±1에서 지방의 위치 이동을 표시한다. 실험2는 한 voxel의 물/지방 비율f0/.5/1(기본.5), B0 1.5/3T, TE0/첫OP/첫IP/3/6ms(기본OP)에서 복소 합과 공통감쇠 전 신호비를 표시한다. B0만 두 실험에 공통이며 BW/극성은 실험1, TE/f는 실험2에만 적용된다고 명시한다. 합성 모형·순수 점의 고정창/혼합 신호 정규화·fat−3.5ppm/위상 부호를 구별한다. 독립 SI gradient 위치 역산/Dirichlet와 물/지방 RK4 ODE로300조건의 위치·복소값을 사전1e−9로 대조하고 실제 두 화면/정답을 확인한다. 두 실험을 동시에 합친 임상 영상이나 실제 권장 BW·SNR·다중 peak/진단은 제외한다.
+
+
+
+**W38 — A05 “공간에 따라 다른 field는 영상의 위치를 어떻게 바꿀까?”**
+
+- 선행 W07·W19·W28·W29. D03의 공간 field 후속을1D 위치 왜곡에 한정한다. N32/FOV160mm의 고정4점 y−45/−15/+15/+45mm, 진폭.5/1/.8/.6을 사용한다. TE50ms·이상적180°는25ms, 각 q−16…15의 중앙 표본 t=TE+polarity×q×ESP, ESP.5/1/1.5ms, polarity±1이다. 주어진 df는 A(균일), Ay/80(선형), A exp{−[(y−20)/30]²} (국소), A0/40/80Hz(기본80), 기본선형/ESP1/+극성이다. 점별 신호는 exp{−i2π[qy/160+df(y)(t−TE)/1000]}이며 inverse1/32를 계산한다. 세 관찰은 균일/국소 이동·ESP/극성·변한 밝기와 위상 소실의 구별이다. 단일 주파수 점이라 voxel 내 분포·T2 손실은 없으며 실제 신호 소실은 C03/S01과 연결한다. 독립 두 자유진화/180° 반전/Taylor 회전·FFT·unwrap 위상 기울기로 복소1e−9/위치1e−7mm를 검산하고 실제 두 화면·표·그림·정답을 확인한다. 실제χ→dipole·metal·2D/readout ADC·공간적 역보정·voxel 분포·임상 성능은 제외하며 A05는 부분 구현으로 유지한다.
+
+**W39 — A06 “밝기 불균일의 원인이 RF인지 수신 감도인지 구별할 수 있을까?”**
+
+- 선행 W11·W23·W33. 균일 M0=1의 N64/FOV160mm/2.5mm phantom을 사용한다. h(y)=cos(2πy/160), 강도v0/.25/.5/.75/1(기본.5), RF8ms·nominal90/45°다. TX는B1scale=1+v h, RX는gain=cos(πv h/2)와균일RF, B0는df=60v h Hz와균일RF/gain이다. F03의유한RF pulse 회전에서spoil전 Mxy크기를재사용한다. RX감도는90°에서TX와일부러같은밝기를만드는고정함수이며flip을바꿔도감도자체는변하지않는다. 세관찰은원인별map·90°의비식별반례·45°추가조건에서의구별이다. 독립SI Bloch ODE·수신곱과30조합/전체voxel을사전1e−9로검산하고실제두화면·map/신호/정답을대조한다. 단일RF직후·이완/noise 없음·고정창0–1이며실제QA/간섭/zipper·RF안전·진단·B1map추정/보정은제외한다. A06은이3기전부분구현으로유지한다.
+
 ### 이후 승격 순서
+
+**W57 — M04 “성분 신호를 이미 안다는 가정을 풀면 어떤 정보가 더 필요할까?”**
+
+- 선행 PDFF 가정·Dixon. 알려진 field/감쇠의 다중 복소 echo에서 물/지방 계수를 실제로 추정하고 모형 불일치를 별도로 비교한다. 착수 때 spectrum/echo·복소 least squares/비음수·독립 기준을 정한다. 실제 field/T2* 동시 최적화·환자 PDFF는 제외한다.
+
+**W56 — G02 “유한 길이 RF의 slice profile은 이상적 사각형과 같을까?”**
+
+- 선행 이상적 선택·유한 RF. 알려진 gradient와 RF 파형의 Bloch 적분으로 위치별 flip/횡자화와 선택 범위를 연결한다. 착수 때 pulse/진폭·duration·gradient·이완·독립 시간 순서 기준을 정한다. 실제 장비 pulse·다중 slice cross-talk·안전 판단은 제외한다.
+
+**W55 — M02 “T1 변화의 비율과 hematocrit는 ECV 계산에 어떻게 들어갈까?”**
+
+- 선행 signed T1 mapping·정량 bias. 알려진 R1 전후 변화와 동일 relaxivity/평형의 가정에서 분배 비율과 세포외 부피 분율의 관계를 다루는 기본 모형을 구체화한다. 착수 때 단위·입력·분모0·독립 보존식 기준을 정한다. 실제 조영제 투여/촬영 프로토콜·환자 진단은 제외한다.
+
+**W53 — AI03 “매끈한 결과의 잡음 표준편차만으로 SNR을 말할 수 있을까?”**
+
+- 선행 AI03 정량·Q01. N64/FOV64 mm, 0/상수.2/상수1/기존단계+작은점의4원본에영상 Re/Im σ0/.05/.15의512회 고정seed 복소 Gaussian 잡음을 더한다. AI01의4처리를 그대로 재사용하는48조건. 기본단계/.15/평활. 관찰은 분산감소와bias·인접잡음상관·비선형처리의신호의존성. 복소출력을유지하되 Re의위치별반복평균/표본분산/인접공분산·상관과평균biasRMS를별도표시한다. 평균/SD 표본비는한정된반복지표이며SD0은정의불가. 순환j63→0공분산과m−1분모를명시한다. 독립FFT응답/Haar행렬·2pass통계로신호1e−9/분산공분산1e−10검산,선형σ²Σh²·σ²Σh[k]h[k+1]기대와유한표본차를구별한다. 실제환자·다중coil/비선형SNR임상표준은제외한다. 실제두화면/표/키보드/정답과전체시험으로완료한다.
+
+**W54 — N03 “voxel 안의 주파수 분포는 peak 폭과 높이를 어떻게 바꿀까?”**
+
+- 선행 localization·단일 line. 중심0의 균일 voxel 폭10/20/40 mm, 잔여 선형 field gradient0/.5/1 Hz/mm, 균일 offset−10/0/10 Hz, intrinsic T2=80/160 ms의54조건. 기본20mm/.5/0/80. 단위부피 평균으로 FID(0)=1/연속흡수선 전체면적1을 고정하고 실제 voxel부피/SNR효과는 제외한다. 복소FID는공통free×uniform분포의sinc, spectrum은N02 Lorentz와uniform분포convolution의arctan해석식이다. T2*를다시곱하지않는다. 관찰은uniformoffset/폭·gradient에따른broadening/같은면적과다른높이, shimming은gradient잔여를줄이는개념만이다. 독립공간Simpson으로복소FID/선분포적분,별도halfheight root/면적구적으로 신호1e−9/폭1e−7 Hz를검산한다. 실제finiteDFT/MRS대사물/voxel선택기전·shim최적화/임상품질기준은제외한다. 고정field±30Hz/FID±1/spectrum0… .35signal·s·원표/정답과실제두화면/전체시험을확인한다.
+
+**W52 — AI02 “벤더별 AI라는 이름에서 같은 역할과 다른 근거를 어떻게 구별할까?”**
+
+- 선행 AI01·AI03. GE AIR Recon DL, Siemens Deep Resolve Gain/Boost/Sharp, Philips SmartSpeed/SmartSpeed Precise, Canon MR AiCE/PIQE의8명칭을2026-10-17에직접읽은공식자료로비교한다. 중심질문은 제품군 안의 역할/근거 구별이다. 관찰은 denoising/가속조합/행렬·선명도 역할 필터, 자료 날짜와 software버전의 구별, vendor자료/독립성능 근거의 구별이다. 기본전체8개·역할3필터·초기화/세예시·확인문제. 제조사 원문과 각 주장·조건·페이지를 대조하고 미확인 버전/업데이트일은 명시한다. 특히 PIQE의zero filling과AI denoise/deringing을 구별하고 Gain을신경망으로단정하지않는다. 실제가중/실행/기관별지원·동일과제임상우열은 미검증. 과학계산을새로넣지않는읽기페이지이며 별도수치시험을늘리지않고 기존전체시험과 실제두화면의필터/표/문제/링크를확인한다.
+
+**W51b — AI03 후속 “공간 처리가 서로 다른 감쇠를 섞으면 정량값도 바뀔까?”**
+
+- 선행 AI03 기본·M01. N64/FOV64 mm, A1/위상0/잡음0의 이상적 SE echo10/20/40/60/80/120/160/200 ms. 배경T2=80 ms, 중심j32의 폭1/3/7표본은T2=20/40/120 ms다. AI01의identity/평활/선명도/Haar1회를 각echo에 적용하고 all/early4/late4의 free-intercept log OLS를 한다. 기본40 ms/폭1/평활/all. 관찰은 공간 혼합·echo 범위·음수/피팅 불가다. 사용 신호≤1e−12이면 절댓값/누락 없이 불가, slope≥−1e−12이면 감쇠추정 불가로 표시한다. 유효점만의 map RMSE와 제외 개수를 함께 표시하고 T2고정창0…200 ms 밖 값은 원표에 유지한다. 독립 이완ODE/주파수필터·Haar행렬/QR로108조건 신호1e−10·T2 1e−7 ms를 검산한다. 실제 학습·noise/2D/임상mapping은 제외한다.
+
+**W51 — AI03 “매끈한 영상에서 작은 구조와 정량값은 유지됐을까?”**
+
+- 선행 AI01·M01. 기본은N64/FOV64mm의같은단계원본/작은점0.15(j32)/texture.06cos(2π12j/64)이다. 전표본복소영상에Re/Imσ0/.05/.15의고정seed A/B잡음을더하고AI01의identity/평활/선명도/1회Haar처리를수정없이재사용한다. 동일잡음의점없는쌍/texture없는쌍도처리하여출력차를비교한다. 세관찰은전체NRMSE/작은구조·선명도overshoot·texture/seed조건이다. 점정점비·국소대비비·알려진cos투영진폭비를정의하고비율을0–100%로clamp하지않는다. 실제한장검출/AI성능이나SNR추정이아닌paired교육지표임을명시한다. 독립FFT주파수응답/명시Haar기저/고정입력으로24조건을1e−9검산하고두화면·고정창/표/질문/키보드를확인한다. 정량mapping은W51b,실제학습/임상/비선형SNR은후속이다.
+
+**W50 — AI01 “잡음을 줄이는 것과 덜 찍은 데이터를 복원하는 것은 어떻게 다를까?”**
+
+- 선행 Q01·Q04·Q06. 기본은실제학습모델없는역할/평가대리모형이다. N64/FOV64mm의Q06단계원본에j32의.15작은성분을추가하고unitary Fourier의k-space에고정seed의독립Re/Im Gaussian σ0/.05/.15를더한다. Full/짝수/기존irregular마스크,identity/3tap평활/3tap선명도/1회Haar shrink(.08),획득k치환off/on의72조건이다. Q04 RNG와Q06 Fourier/Haar를수정없이재사용한다. 세관찰은잡음감소/세부변형·누락표본/사전가정·data consistency와정답오차구별이다. 실제AI나vendor를재현했다고부르지않고원전학습모형과구별한다. 독립radix FFT·필터주파수응답·명시적Haar행렬및고정잡음입력으로72조건을1e−9검산하고실제두화면·복소신호/표/고정창·키보드/문제를확인한다. 실제학습/딥러닝·임상/vendor성능·실제2D다중coil은후속으로남긴다.
+
+**W49 — S02 “자화율로 생긴 field를 되돌리면 왜 답이 불안정해질까?”**
+
+- 선행 S01·E02. 기본은9³/FOV90mm/10mm주기격자의두cos모드이다. χppm=.2cos(2πjx/9)+hcos[2π(jx+jy+jz)/9]+m, h0/.1/.2,m0/.1이다. B0방향z/(1,1,1)/√3,D=1/3−(k·b)²/|k|²,k0=0;fieldδB/B0도ppm으로표시한다. λ0/.01/.1에서λ0은|D|<1e−10을0으로둔최소norm역산,양수는D/(D²+λ²)의L2역산이다. 세관찰은같은field/다른χ·방향별null·정규화/mean기준이다. 각모드의독립해석field/회복계수로36조건/전체729voxel을1e−9ppm검산하고실제두화면의고정χ/field창·z0단면/표/잔차/정답·키보드를확인한다. 실제phase/field추정·background removal/noise·COSMOS통합/vendor/임상은미구현이며S02부분으로유지한다.
+
+**W48 — E02 “파동을 잘 맞췄다고 stiffness를 항상 믿어도 될까?”**
+
+- 선행 E01. 기본은μ4kPa/ρ1000kg/m³/f60Hz의알려진복소변위U=e^{ikx}+r e^{−ikx}이다. x0–128mm,Δx1/2/4mm,r0/.5/1,추가공간오차η0/.02/.1×exp(i2πx/8mm)의27조건이다. η는결정된coherent모형오차이며무작위noise나조직점탄성이아니다. 중앙차분D²U와μhat=−ρω²U/D²U를복소수그대로계산하고|U|<.05(전진파진폭1기준)/미소분모는보고하지않는다. 실수/허수/정답과마스크를구별하며표시창밖원래값도보존한다. 세관찰은표본간격의편향·반사만으로Helmholtz해가깨지지않음/약한위치·작은고주파오차의미분증폭이다. 독립모드별차분고유값/실수2×2소거로27조건을1e−8kPa검산하고실제두화면·곡선/표/정답을확인한다. 실제위상→변위추정/통계noise/confidence·감쇠/점탄성/이방성·2D3D/vendor/임상은남기며E02부분으로유지한다.
+
+**W47 — E01 “MR 위상으로 파동의 변위를 읽으면 무엇을 알 수 있을까?”**
+
+- 선행 B04·N03. 기본은 균일/등방/무한/순수탄성 매질의1D shear wave다. ρ1000kg/m³,μ1/4/9kPa,기계진동f30/60/90Hz,변위진폭10µm,스냅샷0/90/180/270°이다. x0–200mm/401표시점,변위−10…10µm고정으로파장/전파방향/주파수조건을비교한다. μ=ρc²,c=fλ의가정과단위를명시하고독립파동ODE/RK4및crest간격으로36조건을변위1e−8µm/파장1e−6mm로검산한다. 실제두화면·3관찰/키보드/문제를확인한다. MR위상encoding은W47b로분리하고반사/감쇠·실제조직점탄성·inversion/임상은미구현이다.
+
+**W47b — E01 후속 “작은 변위를 MR 위상으로 어떻게 바꿀까?”**
+
+- 선행 W47. 같은순수탄성μ4kPa/ρ1000kg/m³/f60Hz/λ33.333mm를고정한다. U5/10/20µm,유효y방향gradientG0/10/20mT/m,극성±,동기화0/90/180/270°의72조건이다. G(t)=pGcosωt,u_y=Ucos(kx−ωt−θ),한주기16.667ms에서φ=−γ∫Gu dt를계산한다. 공간x0–200mm/위상−1…1rad,probe x0의실제G/u시간파형(각각±20mT/m/µm)과누적위상−1…1rad를고정표시한다. 세관찰은변위진폭·G0/극성·동기화90°의적분상쇄이다. 물리gradient는유효 파형으로제공하며실제RF/imagegradient는계산하지않는다. 독립Simpson시간적분과복소MR신호ODE로72조건/전체표시곡선을1e−9rad검산하고실제두화면·표/단위/정답·키보드/초기화를확인한다. 실제배경위상/wrapping/noise·전체sequence/inversion/임상은미구현이다.
+
+**W46 — N03 “측정한 spectrum은 어느 공간에서 온 신호일까?”**
+
+- 선행 N02·G02. 기본은3D 직육면체 관측 가중의 공간 적분이다. 모형영역100×40×40mm, x<0의A밀도1/2ppm, x≥0의B밀도2/3ppm, 공통T2*80ms/3T/위상0이다. 선택box는x중심−20/0/20mm,폭10/20/40mm,y/z폭20mm;안가중1/밖가중ε0/.02/.1이다. 외부가중은임의의균일양의모형이며실제RF/profile/coil이아니다. G02의ideal직사각구간길이와N02의연속absorption을재사용하고부피×밀도/고정8000mm³를신호로쓴다. 세관찰은이동/경계부분용적·폭/총신호·작은외부가중과큰외부부피이다. 독립1mm³격자3D적분과복소ODE선형계로27조건을부피1e−8/신호1e−8검산하고두화면·공간도형/신호표/곡선·키보드/문제를확인한다. PRESS/STEAM교차면기전은원전설명과대조하되실제pulse·MRSI/SRF·shimming/억제/임상정량은후속이며N03부분으로유지한다.
+
+**W45 — N02 “Spectrum의 위치·면적·폭은 어떤 정보를 다르게 줄까?”**
+
+- 선행 N01. 기본은 가상 단일 peak의 이상적 연속 absorption이다. B0 3T/물4.7ppm 기준, 중심2.0/2.1/2.2ppm, 초기 진폭.5/1/2, 획득 후 T2*40/80/160ms, 획득 전 이상적 refocused TE0/40/80/160ms와T2=200ms를 별도로 둔다. Peak 면적이 echo시작진폭과 같도록2Re 연속 Fourier 적분의 정규화를 명시한다. 세 관찰은 중심·같은 면적의폭/높이·TE로줄어드는면적이다. 고정Hz/ppm창과 세로0–.7,전체면적/유한창면적을 구별한다. 독립 복소ODE적분/선형계·수치구적/halfheight root로108조건을1e−8 검산하고 실제 두화면·조작/정답을 확인한다. 실제 대사물/NAA·Cho·Cr·lactate와J결합·농도/진단은 후속이며N02부분으로유지한다.
+
+**W44 — N01 “시간의 FID를 주파수로 나누면 무엇을 읽을까?”**
+
+- 선행 B02·B05·F01. 가상 성분 A2ppm/진폭1, B3ppm/진폭.6, 물 기준4.7ppm, 공통T2*80ms의 단일 A/혼합 FID를 사용한다. B0 1.5/3T, N128/dt1ms, 표시M128/512, Hz/내림차순ppm 축이다. FID는 음의 위상, spectrum은 양의 Fourier kernel과dt초 가중을 사용하고 magnitude를0–.13 상대신호·초 고정 축으로 표시한다. 세 관찰은 복소 FID/성분·B0의Hz/ppm·zero filling/새 획득 구별이다. 직접 합을 독립 복소ODE와radix FFT/유한등비급수로1e−8 검산하고 Parseval/공통 입력을 확인한다. 실제 두 화면의16메뉴조건/축/정규화·키보드/문제를 확인한다. 실제 대사물·농도 정량/진단·localization·linewidth 심화는 후속이다.
+
+**W43 — M04 “물/지방의 신호 비율을 PDFF라고 부르려면 무엇을 더 보정할까?”**
+
+- 선행 C06·F02·M01·M03. 기본은T1 bias로분리한다. ρW+ρF=1,정답fat fraction0/.1/.3/.5/.9/1(기본.3),T1W1000/T1F300ms,TR20/100ms,flip3/15/30°(기본15),TE2ms/공통T2*40ms이다. C06의이상적spoiledGRE를재사용하며물/지방amplitude는이미정확히분리되어알려진다고가정한다. 원신호비F/(W+F)와알려진T1회복항을나눈분율을비교한다. 세관찰은density/신호분율·flip/TR·알려진T1교정의가정이다. 독립RF회전/이완ODE의정상상태반복으로72조건을신호1e−9/분율1e−9로검산하고실제두화면·정규화/정답을확인한다. 실제Dixon재구성·noise/B1·서로다른T2*/multipeak·임상PDFF는제외하며M04부분으로유지한다.
+
+**W43b — M04 후속 “Echo와 지방 spectrum 가정이 다르면 분율도 달라질까?”**
+
+- 선행 W43. T1 가중은 제거된 별도 두 성분 모형이다. 밀도 분율 0/.3/.5/1, B0 1.5/3T, TE 0/2/4/6/8/12ms, 단일 −3.4ppm 또는 Hamilton의 주어진 6peak spectrum, 공통 T2*40ms 또는 물40/지방20ms, 원신호/알려진 모형 역산을 비교한다. 물/지방 복소 신호는 이미 정확히 분리되어 주어진다고 가정하며 실제 Dixon/추정은 구현하지 않는다. 세 관찰은 감쇠 차이·지방 내부 상쇄·정답 모형 역산의 가정이다. C 계열의 음의 위상 규약과 양성자 상수를 재사용하고, 독립 복소 이완/회전 RK4로384메뉴 조건과121점 곡선을1e−8로 검산한다. 실제 두 화면·분율/신호 고정 축·순수 성분·TE0·키보드/문제를 검증한다. 실제 장비PDFF/교란 동시 추정·임상 cutoff는 남긴다.
+
+**W42 — M03 “감쇠 곡선에서 T2*와 R2*를 추정하면 무엇을 가정할까?”**
+
+- 선행 C03·M01. 잡음0의단일지수(A1,T2*40ms·R2*25s⁻¹)와 C03 Gaussian주파수분포(T280ms,σ0/4/8Hz)를비교한다. TE2/5/10/15/20/30/40/60ms,전체8/앞4/뒤4점에동일free-intercept log OLS를적용한다. 단일지수는추가R2′12.5s⁻¹를가정한예시이며Gaussian의비지수감쇠를항상같은상수로분해하지않는다. Curve0–80ms와T2*(ms)/R2*(s⁻¹)·범위별fit/잔차를표시한다. 세관찰은단위변환·echo범위·Gaussian폭/유효값이다. 독립시간ODE·Gaussian복소구적·Householder QR로신호1e−9/기울기1e−10/T2*상대1e−8을확인하고실제두화면·정답을대조한다. 실제noise/phase/2Dmap·철정량보정/임상cutoff는제외해M03부분구현으로유지한다.
+
+**W41 — M02 “T1 추정값은 어떤 획득식과 입력을 전제로 할까?”**
+
+- 선행 C04·M01. C04의 반복180→TI→90→spoil 유한TR signed신호를 재사용한다. T1300/600/1000/1800ms,A.5/1/2,TR3000/6000ms,TI50/100/200/400/700/1100/1700/2400ms,잡음0/TE0이다. fit은A≥0·T1∈[100,4000]ms의signed신호 NLLS이며유한TR식또는TR∞근사를선택한다. product는T1별최적A의1D목적함수를log-grid401점·국소golden탐색해최솟값을고른다. 세관찰은T1/A·유한TR가정·signed/magnitude부호정보다. Magnitude곡선은참고만표시하고그자체를fit하지않는다. 독립종자화ODE·다중초기값2parameter LM과목적함수/추정값을사전신호1e−9/T1 1e−4ms/목적함수1e−9로대조하고실제두화면·부호/잔차/정답을확인한다. B1/finiteRF·실제mapping sequence/Look-Locker/ECV·임상정량은제외하며M02는부분구현으로유지한다.
+
+**W40 — M01 “밝은 T2W와 긴 T2 추정값은 어떻게 다를까?”**
+
+- 선행 C01·C02. 완전회복/이상적SE의 한 voxel S(TE)=A exp(−TE/T2), A0.5/1/2(기본1),T220/40/80/160ms(기본80), 잡음0이다. TE10/20/40/60/80/120/160/200ms를 사용하고 fitting은전체8점 또는20/80ms 두 점을 선택한다. 선택T2W 신호의TE는20/80/160ms(기본80)다. free-intercept log OLS로 A/T2/잔차를 추정하고 각 사용점을 표시한다. 관찰은A와밝기·T2와비율·선택TE와fitting표본의 구별이다. 동일TE80에서 A1/T280과 Aexp(.5)/T2(160/3)ms가같은밝기인반례를별도제시한다. 독립SE이완ODE·Householder QR와두점비율을신호1e−10/T2 1e−7ms로검산하고실제두화면·같은신호/단위·문제를대조한다. 단일voxel의값표시이며실제2Dmap/IR/FSE stimulated echo는제외한다. Noise/Rician바닥·비단일지수는별도W40b로분리해M01전체상태에남긴다.
+
+**W40b — M01 후속 “작은 잔차나 긴 추정 T2는 항상 조직의 T2일까?”**
+
+- 선행 W11·W26·W40. TE10/20/40/60/80/120/160/200ms,A1고정, monoT240 또는.3exp(−TE/20)+.7exp(−TE/120)의두성분을비교한다. 복소성분별σ0/.02/.08/.2·두고정Gaussian실현(seed0x4c574d52/0x040b2026)을사용하고magnitude에free-intercept log OLS를적용한다. Echo범위는전체8/앞4/뒤4점이다. 선택seed는성능통계가아닌재현예시이며실현B의late/σ.2에서비감쇠기울기반례를제공한다. 기울기≥0이면양의T2를보고하지않고그기울기/형식상역수는기록한다. 세관찰은magnitude바닥·두성분/작은잔차·echo범위/실현변화다. 독립횡이완ODE/Householder QR·고정noise입력/기대Rayleigh바닥·전체48조건을사전신호1e−9/기울기1e−10/T2상대1e−9로확인하고실제두화면을대조한다. 실제noise추정/Rician likelihood/NLLS·임상cutoff·성분분리는제외한다.
 
 첫 묶음 뒤에는 다음 순서에서 **선행 학습의 핵심 구현·검증이 준비된 첫 항목**을 작업 카드로 승격한다. 누락된 선행이 있으면 먼저 보충하며 순서를 바꾼 이유를 기록한다. 단순 주제명에서 바로 큰 페이지를 만들지 않고 개발 진행 절차의 카드 필수 항목을 채운다.
 
@@ -251,7 +511,7 @@ W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을
 
 ## 현재 작업의 재개 메모
 
-W09 진행 중 (2026-10-15). `fov-resolution-model.js`와 `fov_matrix_resolution.html` 초안에 FOV/N/M·점/경계 곡선·격자·띠 영상·문제를 연결했다. 전체 56/56, 독립 수치 162조건 최대 1.286e−12, 실제 14개 기본 상태 확인. **표시 전체와 독립 수치 대조·통합 내용 판정이 남아 완료 아님.** [재개 기록](verification/2026-10-15/G01-physics.md). 다음 요청 첫 행동: HTML `render()`의 곡선·띠 좌표와 k/격자/정규화를 독립 기준으로 검토하고 모든 N/M·키보드/초기화·정답을 실제 두 화면에서 보강한다. 사용량 한도 전 W00–W08 완료와 W09 초안을 보관·푸시한다.
+W54 완료 (2026-10-17). 저장된14개 파일의 SHA-256 일치를 확인해 기존54조건 독립 적분/108실제상태 검증을 재사용하고 통합 내용 판정·정식 버전/보고서·포털/README/선행 연결을 마감했다. [최종155시험·125 HTML/두 화면250상태·탐색/링크 감사](verification/2026-10-17/checkpoint-W54-navigation.md)가 통과했다. [이전 중단 이력](verification/2026-10-17/restart-state.md). 다음 첫 행동은 W55의 R1 변화·분배/ECV 기본 카드를 입력·단위·분모0·독립 보존식 기준까지 구체화해 구현하는 것이다. W55/W56/W57은 미착수이며 커밋·푸시·게시는 하지 않았다.
 
 ## 작업 기록
 
@@ -281,9 +541,59 @@ MRIQuestions는 주제 선택과 질문 발굴의 참고 자료이며 원문·�
 - [Canon PIQE의 잡음 제거·zero filling·ringing 감소](https://global.medical.canon/publications/mri/g2k/g2k-on-piqe/)
 
 | 2026-10-15 | W06 C02 구현·통합 검증 | 15,562개 시간·조건과 실제 브라우저 68개 상태를 확인하고 모바일 도식·음수 0·축 여백을 보강. [근거와 판정](verification/2026-10-15/C02-physics.md). 다음 W07 |
-
 | 2026-10-15 | W07 C03 구현·통합 검증 | 연속 Gaussian 정적 탈위상·T2의 인자·FID/GRE/SE를 구현. [독립 적분·34개 실제 상태·내용 판정](verification/2026-10-15/C03-physics.md). 다음 W08 |
-
 | 2026-10-15 | W08 B05 통합 물리 재검토 | 1,432개 독립 FFT 조건, 78개 실제 상태·canvas 색, 부호 표시 범위·복소수 안내·예측 문제를 검토·수정. [판정](verification/2026-10-15/B05-physics.md). 다음 W09 |
-
 | 2026-10-15 | W09 G01 계산·화면 초안·중간 기록 | FOV/N/M·점/경계 Fourier 모형·독립 convolution 검산과 초안 화면 기본 연결. [화면·통합 검증이 남은 정확한 재개 위치](verification/2026-10-15/G01-physics.md). W09 진행 중 유지 |
+| 2026-10-15 | W09 G01 통합 검토 완료 | 반 칸 밀린 띠 수정, 첫 영점/원래 경계·k 표본·단위·교육 설명 보강. [독립 전 좌표·200개 실제 상태·판정](verification/2026-10-15/G01-physics.md). 다음 W10 |
+| 2026-10-15 | W10 G02 구현·통합 검증 | RF 공간/주파수·두께·극성·경계 평균/적분·반례를 구현. [3,280 독립 조건·512개 실제 상태·판정](verification/2026-10-15/G02-physics.md). 다음 W11, 후속 W13/W14 승격 |
+| 2026-10-15 | W11 Q01 구현·통합 검증 | 고정 seed·복소 평균·Rician/Rayleigh·정의/창/ROI를 구현. [독립 통계·564상태·실제 346만 pixel·판정](verification/2026-10-15/Q01-physics.md). 다음 W12, W15 승격 |
+| 2026-10-15 | W12 B00 통합 재검토 완료 | 힘의 질량 척도·signed Ωz·L 크기·정지/초기화/비유 한계·진자 라벨을 수정. [648 독립 조건·126개 실제 상태·판정](verification/2026-10-15/B00-physics.md). 다음 W13, W16 승격 |
+| 2026-10-15 | W13 C04 IR·TI·null 구현·통합 검증 | 유한TR·TI별 반복·signed/magnitude·STIR/FLAIR의 조건·0.1ms null을 구현. [독립 RK4/이분법·448상태·판정](verification/2026-10-15/C04-physics.md). 다음 W14, W17 승격 |
+| 2026-10-15 | W14 C05 Echo train·ordering 구현·통합 검증 | 공통 위상의 이상적T2 가중·k 배정·복소 inverse·TEeff를 구현. [48독립FFT·이벤트·118상태·판정](verification/2026-10-15/C05-physics.md). 다음 W15, W18 승격 |
+| 2026-10-15 | W15 G03 2D/3D·MPR 구현·통합 검증 | 동일3D phantom·비대칭방향표식·voxel평균·등방/비등방·정사각 물리aspect 구현. [독립적분/부피·116상태·판정](verification/2026-10-15/G03-physics.md). 다음 W16, W19 승격 |
+| 2026-10-15 | W16 Q02 Receiver BW 구현·통합 검증 | whole/±/Hzpixel·sample time·signed off-res 이동·기대PSD잡음을 구현. [544독립조건·216실제상태·판정](verification/2026-10-15/Q02-physics.md). 다음W17, W20승격 |
+| 2026-10-15 | W17 Q03 검사 시간 구현·통합 검증 | 독립 이벤트19,200조건·시간·2D 반복 순서를 수정/검증. [1,004실제상태·내용 판정](verification/2026-10-15/Q03-physics.md). 다음 W18, W21 승격 |
+| 2026-10-15 | W18 C06 Spoiled GRE 구현·통합 검증 | 완전 spoiling·반복/정상상태·Ernst·신호/대비 구별. [독립384조건·314실제상태·판정](verification/2026-10-15/C06-physics.md). 다음 W19, W22 승격 |
+| 2026-10-15 | W19 C07 EPI 구현·통합 검증 | 실제 ADC/gradient 시간과 명시적1D 중앙근사·PE 이동. [독립168조건/43,008ADC·360실제상태·판정](verification/2026-10-15/C07-physics.md). 다음 W20, W23 승격 |
+| 2026-10-15 | W20 Q04 병렬 분리 구현·통합 검증 | 두위치/coil·R1/R2·합정규화·g/√R·singular·회색경계. [독립QR/통계·580실제상태·판정](verification/2026-10-15/Q04-physics.md). 다음 W21, W24 승격 |
+| 2026-10-15 | W21 F01 IP/OP 독립 구현·통합 검증 | 단일peak·복소합·B0/TE/비율·감쇠/상쇄·미소벡터 표시 개선. [독립504조건·452실제상태·판정](verification/2026-10-15/F01-physics.md). 다음 W22, W25 승격 |
+| 2026-10-15 | 보고서 탐색 모바일 보강 | 21개 링크를 접힌 목록으로 제공하고 현재 보고서·키보드 펼침·이동 확인. [80시험·82실제상태·표시범위](verification/2026-10-15/report-navigation.md). 챕터 물리 판정 유지, W22 계속 |
+| 2026-10-15 | W22 F02 Dixon·field 구현·통합 검증 | 알려진field/잘못된적합·검증echo·교환동일성/주위상규칙 구별. [독립2,583조건·298실제상태·판정](verification/2026-10-15/F02-physics.md). 다음 W23, W26 승격 |
+| 2026-10-15 | W23 F03 선택saturation 구현·통합검증 | 사각RF·spoiling/즉시읽기·B0물손실/B1반전·전체응답. [독립405조건·474실제상태·판정](verification/2026-10-15/F03-physics.md). Water excitation미구현을W27로보존. 다음W24 |
+| 2026-10-15 | W24 F04 원리·실패 비교 구현·통합검증 | 재사용IR/SAT/Dixon·동일T1/field/B1세사례·지원범위/정규화·기전출처. [독립세사례·22실제상태·판정](verification/2026-10-15/F04-physics.md). 다음W25, W28승격 |
+| 2026-10-15 | W25 D01 확산·b-value 구현·통합검증 | 자유Brownian/bridge·동극성lobe/180·q/b단위·동일TE정규화·기대/표본구별. [독립1,092조건/81통계·250실제상태·판정](verification/2026-10-15/D01-physics.md). 다음W26, W29승격 |
+| 2026-10-15 | W26 D02 ADC·T2·잡음 구현·통합검증 | 같은D/T2반례·magnitude/log OLS·음수/실패·고정창. [독립429조건/27통계·888실제상태·판정](verification/2026-10-15/D02-physics.md). 다음W27, W30승격 |
+| 2026-10-16 | W27 F03 Water excitation 구현·통합 검증 | 두 순간 RF·coherence·OP/IP·B0/각도 오차. [독립 378조건·480 실제 상태·범위 판정](verification/2026-10-15/F03-water-physics.md). 15일 착수/16일 완료, 다음 W28·W31 승격 |
+| 2026-10-16 | W28 D03 신호·EPI 시간 구현·통합 검증 | 독립504조건/24,192echo·260실제상태·균일field/PI alias·고정TE/신호를 대조. [부분범위 판정](verification/2026-10-16/D03-physics.md). 공간field/움직임은 A05/A02 연계 후속. 다음W29·W32승격 |
+| 2026-10-16 | W29 S01 GRE 신호/위상 구현·통합 검증 | C03재사용·독립48조건/196,608voxel·112실제상태/344,064pixel·도형불변과문턱을 대조. [판정](verification/2026-10-16/S01-physics.md). 후처리는 별도 W29b로 계속 |
+| 2026-10-16 | W29b S01 phase mask/minIP 구현·통합 검증 | 독립48조건/49,152출력·112실제상태/917,504pixel·가중순서/부호/깊이를검토. 모바일grid/표너비수정후재검증. [판정](verification/2026-10-16/S01-swi-physics.md). 다음W30 |
+| 2026-10-16 | W30 C08 bSSFP 구현·통합 검증 | 독립lab2TR/ODE·147조건/21,021주파수점·240실제상태·복소부호/초기·낮은flip반례. [판정](verification/2026-10-16/C08-physics.md). 다음W31·W33승격 |
+| 2026-10-16 | W30b C08 대비·근사 구현·통합 검증 | 독립588조건/1,176신호/수치극한·54실제상태·같은비율장TR반례. 원래공유C08도재검증. [판정](verification/2026-10-16/C08-contrast-physics.md). 다음W31 |
+| 2026-10-16 | W31 Q05 Partial Fourier 구현·통합 검증 | 독립FFT/normal반복·18조건/3,456복소표본·64실제상태/16,384pixel·위상실패/측정일치반례. [판정](verification/2026-10-16/Q05-physics.md). 다음W32·W34승격 |
+| 2026-10-16 | W32 Q06 희소성·표본·L1 구현·통합 검증 | 독립기저/FFT/normal·ADMM상하한/24조건·78실제상태/14,976pixel. [유한반복범위 판정](verification/2026-10-16/Q06-physics.md). 두조합반복한도표시보존. 다음W33·W35승격 |
+| 2026-10-17 | W33 Q07 SMS 구현·ID 정정·모바일 보고서 탐색 | Q07/AI와 A01/chemical shift 카드 혼동을 원래 ID에 맞게 수정. [독립368조건·96실제상태·모형 판정](verification/2026-10-17/Q07-physics.md), [전체107시험·75HTML/150상태·링크 감사](verification/2026-10-17/checkpoint-W33-navigation.md), [보고서 UI 보강](verification/2026-10-17/report-navigation.md). 다음W34·W37승격 |
+| 2026-10-17 | W34 A01 FOV·aliasing 구현·통합 검증 | [독립648조건/77,760복소표본·실제160상태/19,200pixel·판정](verification/2026-10-17/A01-physics.md). 전체109시험과 링크 감사. 다음W35·W38승격 |
+| 2026-10-17 | W35 A02 1D motion·순서·gating 구현 | [독립30조건·실제60상태/5,760pixel·범위 판정](verification/2026-10-17/A02-physics.md). 실제2D/호흡/ECG/navigator·DWI 보정은 남음. 다음W36·W39승격 |
+| 2026-10-17 | W36 A03 ringing·M·Hann 구현 | [독립12조건/적분·FFT·PSF/실제24상태·판정](verification/2026-10-17/A03-physics.md). 필터/PSF 폭·같은 계수 보간·표본 최대값을 구별. 다음W37·W40승격 |
+| 2026-10-17 | W37 A04 chemical shift 두 기전 비교 | [독립300조건·실제600상태·범위 판정](verification/2026-10-17/A04-physics.md). 기존 Q02/F01 모형은 수정 없이 재사용. 다음W38·W41승격 |
+| 2026-10-17 | W38 A05 공간 field/위치 부분 모형 | [독립54조건·실제108상태/6,912pixel·판정](verification/2026-10-17/A05-physics.md). 실제2D/voxel 분포/metal/역보정은 미구현. 다음W39·W42승격 |
+| 2026-10-17 | W39 A06 세 기전 부분 모형 | [독립30조건/5,760모드voxel·실제60상태·판정](verification/2026-10-17/A06-physics.md). 90°의 비식별반례와45°/v0조건을 구별. 다음W40·W43승격 |
+| 2026-10-17 | W40 M01 기본 부분 모형 | [독립72조건/ODE·QR·실제144상태·판정](verification/2026-10-17/M01-physics.md). Noise floor/비단일지수는 별도W40b로 분리하고 M01부분 상태 유지 |
+| 2026-10-17 | W40b M01 noise/두성분 한계 | [독립48조건/별도Rayleigh65,536표본·실제96상태·판정](verification/2026-10-17/M01-limits-physics.md). 작은잔차/유효T2/비감쇠를 구별하고 양의T2 강제보고를 막음. 다음W41·W44승격 |
+| 2026-10-17 | W41 M02 IR 기본 부분 모형 | [독립48조건/ODE·LM·실제96상태·판정](verification/2026-10-17/M02-physics.md). 유한TR/부호/근사모형을 구별. 실제mapping/ECV는 미구현. 다음W42·W45승격 |
+| 2026-10-17 | W42 M03 T2*/R2* 부분 모형 | [독립18조건/구적·ODE·QR·실제36상태·판정](verification/2026-10-17/M03-physics.md). 지수/비지수·단위/유효값 구별. 실제철정량/임상은 미구현. 다음W43·W46승격 |
+| 2026-10-17 | W43 M04 T1 bias 부분 모형 | [독립72조건/4,320곡선·실제144상태·판정](verification/2026-10-17/M04-physics.md). 알려진 T1 항의 회복과 실제 PDFF를 구별. W43b 진행 |
+| 2026-10-17 | W43b M04 echo/spectrum 부분 모형 | [독립384조건/46,464곡선·실제768상태·판정](verification/2026-10-17/M04-echo-physics.md). 지방 내부 상쇄/감쇠 차이와 실제 추정을 구별. 다음 W44 |
+| 2026-10-17 | W44 N01 복소 FID/spectrum | [독립16조건/ODE·FFT·등비합·실제32상태·판정](verification/2026-10-17/N01-physics.md). Hz/ppm·표시격자/새획득을 구별. 다음 W45 |
+| 2026-10-17 | W45 N02 단일 peak 부분 모형 | [독립108조건/구적·ODE·43,308곡선·실제216상태·판정](verification/2026-10-17/N02-physics.md). 같은높이/다른면적·TE/width를 구별. 다음 W46 |
+| 2026-10-17 | W46 N03 관측 공간 부분 모형 | [독립27조건/432만cube·실제54상태·판정](verification/2026-10-17/N03-physics.md). 명목부피/총신호/바깥기여와 실제localization을 구별. 다음 W47 |
+| 2026-10-17 | W47 E01 균일 파동 부분 모형 | [독립36조건/184만공간단계·실제72상태·판정](verification/2026-10-17/E01-physics.md). 파장/주파수/탄성률의 조건과 단위를 구별. 다음 W47b |
+| 2026-10-17 | W47b E01 변위/위상 부분 모형 | [독립72조건/구적·복소ODE·실제144상태·판정](verification/2026-10-17/E01-encoding-physics.md). 무위상/무운동·극성/물성을 구별. 다음 W48 |
+| 2026-10-17 | W48 E02 국소 역산 부분 모형 | [독립27조건/모드고유값·복소선형계·실제54상태·판정](verification/2026-10-17/E02-physics.md). 표본편향/공간오차·약한위치/반사·추정허수를 구별. 다음 W49 |
+| 2026-10-17 | W49 S02 dipole/영점 부분 모형 | [독립36조건/104,976voxel·실제72상태·판정](verification/2026-10-17/S02-physics.md). 같은field/다른χ·방향별null·정규화/평균기준 구별. 다음 W50 |
+| 2026-10-17 | W50 AI01 역할/평가 부분 모형 | [독립72조건/32,256복소값·실제144상태·판정](verification/2026-10-17/AI01-physics.md). 대리처리/학습모형·자료/정답·누락/잡음 구별. 다음 W51 |
+| 2026-10-17 | W51 AI03 구조/질감 기본 | [독립24조건/7,680복소값·실제48상태](verification/2026-10-17/AI03-physics.md). 전체 오차와 쌍의 구조 반응 구별. 다음 W51b |
+| 2026-10-17 | W51b AI03 공간 처리/T2 | [독립108조건/55,296신호·실제216상태](verification/2026-10-17/AI03-t2-physics.md). 공간 혼합/echo 범위·음수 불가·창 밖 원값 보존. 다음 W52 |
+| 2026-10-17 | W52 AI02 공식 자료 읽기 | [6자료/8명칭 원문 대조·실제8필터 상태](verification/2026-10-17/AI02-physics.md). 역할/문서날짜/설치버전/임상근거 구별. 다음 W53 |
+| 2026-10-17 | W53 AI03 반복 잡음 | [독립48조건/24,576영상·실제96상태](verification/2026-10-17/AI03-noise-physics.md). bias/분산/공분산·모집단/유한표본·SD0 구별. 다음 W54 |
+| 2026-10-17 | W54 N03 주파수 분포/선폭 마감 | [54조건 독립 적분·108실제상태·통합 판정](verification/2026-10-17/N03-field-physics.md). 재개 후 버전 대조·보고서/학습 경로 연결·최종 회귀/탐색 완료. 균일 이동/공간 퍼짐·고유 T2·연속 흡수선/유한창을 구별. 다음 W55 |

@@ -1,0 +1,2862 @@
+{
+  "summary": {
+    "cases": 1092,
+    "maxBError": 4.320099833421409e-12,
+    "maxBRelativeError": 3.552713678800501e-15,
+    "maxPhaseVarianceError": 1.2434497875801753e-14,
+    "maxVarianceRelativeError": 2.4424906541753444e-15,
+    "maxQEnd": 8.731149137020111e-14,
+    "maxShapeError": 2.541098841762901e-20,
+    "statisticalCases": 81,
+    "samples": 8192,
+    "seeds": 3,
+    "maxima": {
+      "meanPhaseZ": 1.5248491106965454,
+      "meanPositionZ": 1.4695944474403069,
+      "covarianceZ": 2.0068658146103124,
+      "realZ": 2.459181915778922,
+      "imaginaryZ": 2.090884214467407,
+      "sdPhaseRelative": 0.015208775708571598,
+      "sdPositionRelative": 0.014135626365869625
+    },
+    "sdRelativeBound": 0.03906488440409195,
+    "method": "SI piecewise gradient/Simpson q-squared integral, independent Brownian min(t,s) double covariance, three seeded ensembles and phase-position sign"
+  },
+  "rows": [
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00008005356838351659,
+          "varianceA": 0,
+          "varianceB": 0.00007003821492797336,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.866017458246775,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.00027292652679378193,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00013865684776743993,
+          "varianceA": 0,
+          "varianceB": 0.00021011464478391977,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.866017458246773,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.00027292652679289375,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 0.8697427174458386,
+      "signal": {
+        "real": 0.8673981086346703,
+        "imaginary": -0.004515575599191539,
+        "magnitude": 0.8674098623407479
+      },
+      "expectedPhaseVariance": 0.27911567628626044,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": -0.004012832849503392,
+      "statistics": {
+        "moments": {
+          "meanA": -0.004769746441819391,
+          "meanB": 0.00008005356838351659,
+          "varianceA": 0.2843971136442779,
+          "varianceB": 0.00007003821492797336,
+          "covariance": -0.004059402292868597
+        },
+        "meanPhaseZ": 0.8171431605714621,
+        "meanPositionZ": 0.866017458246775,
+        "sdPhaseRelative": 0.00941668191637035,
+        "sdPositionRelative": 0.00027292652679378193,
+        "covarianceZ": 0.7060273685136009,
+        "realZ": 1.2322433935457169,
+        "imaginaryZ": 0.8837164992598965,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 0.6579189612543912,
+      "signal": {
+        "real": 0.6524938508225718,
+        "imaginary": -0.007109699460417066,
+        "magnitude": 0.6525325840045738
+      },
+      "expectedPhaseVariance": 0.8373470288587813,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": -0.012038498548510175,
+      "statistics": {
+        "moments": {
+          "meanA": -0.008261443176452056,
+          "meanB": 0.00013865684776743993,
+          "varianceA": 0.8531913409328331,
+          "varianceB": 0.00021011464478391977,
+          "covariance": -0.012178206878605805
+        },
+        "meanPhaseZ": 0.8171431605714622,
+        "meanPositionZ": 0.866017458246773,
+        "sdPhaseRelative": 0.009416681916369907,
+        "sdPositionRelative": 0.00027292652679289375,
+        "covarianceZ": 0.7060273685136842,
+        "realZ": 1.2244082630716127,
+        "imaginaryZ": 1.0095168741981757,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 0.5722202252205376,
+      "signal": {
+        "real": 0.5659565204617707,
+        "imaginary": -0.007860946561453986,
+        "magnitude": 0.5660111107867377
+      },
+      "expectedPhaseVariance": 1.1164627051450418,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": -0.008025665699006784,
+      "statistics": {
+        "moments": {
+          "meanA": -0.009539492883638782,
+          "meanB": 0.00008005356838351659,
+          "varianceA": 1.1375884545771116,
+          "varianceB": 0.00007003821492797336,
+          "covariance": -0.008118804585737193
+        },
+        "meanPhaseZ": 0.8171431605714621,
+        "meanPositionZ": 0.866017458246775,
+        "sdPhaseRelative": 0.00941668191637035,
+        "sdPositionRelative": 0.00027292652679378193,
+        "covarianceZ": 0.7060273685136009,
+        "realZ": 1.1920860953210302,
+        "imaginaryZ": 1.0649058356945242,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 0.18736549374088746,
+      "signal": {
+        "real": 0.18431648103204668,
+        "imaginary": -0.009369760342383824,
+        "magnitude": 0.18455448406611674
+      },
+      "expectedPhaseVariance": 3.3493881154351253,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": -0.02407699709702035,
+      "statistics": {
+        "moments": {
+          "meanA": -0.016522886352904113,
+          "meanB": 0.00013865684776743993,
+          "varianceA": 3.4127653637313324,
+          "varianceB": 0.00021011464478391977,
+          "covariance": -0.02435641375721161
+        },
+        "meanPhaseZ": 0.8171431605714622,
+        "meanPositionZ": 0.866017458246773,
+        "sdPhaseRelative": 0.009416681916369907,
+        "sdPositionRelative": 0.00027292652679289375,
+        "covarianceZ": 0.7060273685136842,
+        "realZ": 0.40447298590442876,
+        "imaginaryZ": 1.2000690458600707,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00010114292964932231,
+          "varianceA": 0,
+          "varianceB": 0.00010078440941317456,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.9154412982286044,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.003914385857551883,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00017518469297899048,
+          "varianceA": 0,
+          "varianceB": 0.0003023532282395216,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.9154412982286024,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.00391438585754833,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 0.7896426299582161,
+      "signal": {
+        "real": 0.7893111592450996,
+        "imaginary": -0.0030206067363413532,
+        "magnitude": 0.7893169389883247
+      },
+      "expectedPhaseVariance": 0.47234960602290244,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": -0.006420532559205423,
+      "statistics": {
+        "moments": {
+          "meanA": -0.0024899002317711446,
+          "meanB": 0.00010114292964932231,
+          "varianceA": 0.47138280397269694,
+          "varianceB": 0.00010078440941317456,
+          "covariance": -0.006432809588141126
+        },
+        "meanPhaseZ": 0.3279028102213436,
+        "meanPositionZ": 0.9154412982286044,
+        "sdPhaseRelative": 0.0010239209007656402,
+        "sdPositionRelative": 0.003914385857551883,
+        "covarianceZ": 0.11814604960695575,
+        "realZ": 0.11270185998496168,
+        "imaginaryZ": 0.494551176653775,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 0.4923701987057589,
+      "signal": {
+        "real": 0.48850568604225864,
+        "imaginary": -0.006833053263249764,
+        "magnitude": 0.4885534729305648
+      },
+      "expectedPhaseVariance": 1.4170488180687073,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": -0.019261597677616264,
+      "statistics": {
+        "moments": {
+          "meanA": -0.0043126337072051674,
+          "meanB": 0.00017518469297899048,
+          "varianceA": 1.4141484119180994,
+          "varianceB": 0.0003023532282395216,
+          "covariance": -0.019298428764423343
+        },
+        "meanPhaseZ": 0.3279028102213453,
+        "meanPositionZ": 0.9154412982286024,
+        "sdPhaseRelative": 0.0010239209007626426,
+        "sdPositionRelative": 0.00391438585754833,
+        "covarianceZ": 0.11814604960685839,
+        "realZ": 0.6529516538607707,
+        "imaginaryZ": 0.9015239097242774,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 0.38879649861906485,
+      "signal": {
+        "real": 0.3827349695561327,
+        "imaginary": -0.008620161708815284,
+        "magnitude": 0.3828320311951704
+      },
+      "expectedPhaseVariance": 1.8893984240916097,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": -0.012841065118410846,
+      "statistics": {
+        "moments": {
+          "meanA": -0.004979800463542289,
+          "meanB": 0.00010114292964932231,
+          "varianceA": 1.8855312158907878,
+          "varianceB": 0.00010078440941317456,
+          "covariance": -0.012865619176282253
+        },
+        "meanPhaseZ": 0.3279028102213436,
+        "meanPositionZ": 0.9154412982286044,
+        "sdPhaseRelative": 0.0010239209007656402,
+        "sdPositionRelative": 0.003914385857551883,
+        "covarianceZ": 0.11814604960695575,
+        "realZ": 0.9140452898375709,
+        "imaginaryZ": 1.1162071538065368,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 0.05877153522293063,
+      "signal": {
+        "real": 0.04603104613758016,
+        "imaginary": -0.016334935480550004,
+        "magnitude": 0.04884349829479625
+      },
+      "expectedPhaseVariance": 5.668195272274829,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": -0.03852319535523253,
+      "statistics": {
+        "moments": {
+          "meanA": -0.008625267414410335,
+          "meanB": 0.00017518469297899048,
+          "varianceA": 5.6565936476723975,
+          "varianceB": 0.0003023532282395216,
+          "covariance": -0.03859685752884669
+        },
+        "meanPhaseZ": 0.3279028102213453,
+        "meanPositionZ": 0.9154412982286024,
+        "sdPhaseRelative": 0.0010239209007626426,
+        "sdPositionRelative": 0.00391438585754833,
+        "covarianceZ": 0.11814604960685839,
+        "realZ": 1.6364350021876497,
+        "imaginaryZ": 2.090884214467407,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00016308811245592918,
+          "varianceA": 0,
+          "varianceB": 0.00017970265739426658,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 1.1002237752712816,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.0008262930627055409,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00028247689688417504,
+          "varianceA": 0,
+          "varianceB": 0.0005391079721828003,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 1.1002237752712778,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.0008262930627050968,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 0.6102905994819734,
+      "signal": {
+        "real": 0.6091467193757311,
+        "imaginary": -0.004715954933117519,
+        "magnitude": 0.6091649743354807
+      },
+      "expectedPhaseVariance": 0.9876400853206126,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": -0.01284106511841083,
+      "statistics": {
+        "moments": {
+          "meanA": -0.012907449779781381,
+          "meanB": 0.00016308811245592918,
+          "varianceA": 0.991262662867181,
+          "varianceB": 0.00017970265739426658,
+          "covariance": -0.012861092889460033
+        },
+        "meanPhaseZ": 1.1755363464378599,
+        "meanPositionZ": 1.1002237752712816,
+        "sdPhaseRelative": 0.0018322776961088305,
+        "sdPositionRelative": 0.0008262930627055409,
+        "covarianceZ": 0.09792435238050926,
+        "realZ": 0.23331643780540354,
+        "imaginaryZ": 0.6504412114437621,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 0.22730555076621536,
+      "signal": {
+        "real": 0.22845734442807672,
+        "imaginary": -0.0038600547924316792,
+        "magnitude": 0.22848995217761645
+      },
+      "expectedPhaseVariance": 2.962920255961838,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": -0.038523195355232485,
+      "statistics": {
+        "moments": {
+          "meanA": -0.022356358814725093,
+          "meanB": 0.00028247689688417504,
+          "varianceA": 2.973787988601542,
+          "varianceB": 0.0005391079721828003,
+          "covariance": -0.03858327866838002
+        },
+        "meanPhaseZ": 1.1755363464378612,
+        "meanPositionZ": 1.1002237752712778,
+        "sdPhaseRelative": 0.0018322776961086085,
+        "sdPositionRelative": 0.0008262930627050968,
+        "covarianceZ": 0.09792435238038487,
+        "realZ": 0.1554619687097661,
+        "imaginaryZ": 0.49474783499526304,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 0.13872244084269372,
+      "signal": {
+        "real": 0.14218384568877862,
+        "imaginary": -0.006146543495781919,
+        "magnitude": 0.14231663982751966
+      },
+      "expectedPhaseVariance": 3.9505603412824506,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": -0.02568213023682166,
+      "statistics": {
+        "moments": {
+          "meanA": -0.025814899559562763,
+          "meanB": 0.00016308811245592918,
+          "varianceA": 3.965050651468724,
+          "varianceB": 0.00017970265739426658,
+          "covariance": -0.025722185778920065
+        },
+        "meanPhaseZ": 1.1755363464378599,
+        "meanPositionZ": 1.1002237752712816,
+        "sdPhaseRelative": 0.0018322776961088305,
+        "sdPositionRelative": 0.0008262930627055409,
+        "covarianceZ": 0.09792435238050926,
+        "realZ": 0.45175332311796657,
+        "imaginaryZ": 0.7869032872257125,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 1836211457,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 0.002669562942480933,
+      "signal": {
+        "real": 0.007687424015857329,
+        "imaginary": -0.010269401765626103,
+        "magnitude": 0.012827981159302681
+      },
+      "expectedPhaseVariance": 11.851681023847352,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": -0.07704639071046497,
+      "statistics": {
+        "moments": {
+          "meanA": -0.044712717629450185,
+          "meanB": 0.00028247689688417504,
+          "varianceA": 11.895151954406169,
+          "varianceB": 0.0005391079721828003,
+          "covariance": -0.07716655733676003
+        },
+        "meanPhaseZ": 1.1755363464378612,
+        "meanPositionZ": 1.1002237752712778,
+        "sdPhaseRelative": 0.0018322776961086085,
+        "sdPositionRelative": 0.0008262930627050968,
+        "covarianceZ": 0.09792435238038487,
+        "realZ": 0.6422907947201136,
+        "imaginaryZ": 1.3144834260335212,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00013584746874776643,
+          "varianceA": 0,
+          "varianceB": 0.00007148812480286374,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 1.4695944474403069,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.010573562762848265,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.0002352947179507561,
+          "varianceA": 0,
+          "varianceB": 0.0002144643744085916,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 1.4695944474403033,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.010573562762848931,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 0.8697427174458386,
+      "signal": {
+        "real": 0.8673263803692549,
+        "imaginary": -0.00644516933656256,
+        "magnitude": 0.8673503273142925
+      },
+      "expectedPhaseVariance": 0.27911567628626044,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": -0.004012832849503392,
+      "statistics": {
+        "moments": {
+          "meanA": -0.008900696929250315,
+          "meanB": 0.00013584746874776643,
+          "varianceA": 0.28471725060288666,
+          "varianceB": 0.00007148812480286374,
+          "covariance": -0.004103005236090465
+        },
+        "meanPhaseZ": 1.5248491106965454,
+        "meanPositionZ": 1.4695944474403069,
+        "sdPhaseRelative": 0.009984656557729066,
+        "sdPositionRelative": 0.010573562762848265,
+        "covarianceZ": 1.3670803903623665,
+        "realZ": 1.2699412307147722,
+        "imaginaryZ": 1.2613458368992967,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 0.6579189612543912,
+      "signal": {
+        "real": 0.6527207889172021,
+        "imaginary": -0.005098440612259119,
+        "magnitude": 0.65274070072378
+      },
+      "expectedPhaseVariance": 0.8373470288587813,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": -0.012038498548510175,
+      "statistics": {
+        "moments": {
+          "meanA": -0.015416459304233823,
+          "meanB": 0.0002352947179507561,
+          "varianceA": 0.8541517518086562,
+          "varianceB": 0.0002144643744085916,
+          "covariance": -0.012309015708271429
+        },
+        "meanPhaseZ": 1.5248491106965443,
+        "meanPositionZ": 1.4695944474403033,
+        "sdPhaseRelative": 0.009984656557726845,
+        "sdPositionRelative": 0.010573562762848931,
+        "covarianceZ": 1.3670803903625506,
+        "realZ": 1.173189973275836,
+        "imaginaryZ": 0.7239352181942906,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 0.5722202252205376,
+      "signal": {
+        "real": 0.566424997457124,
+        "imaginary": -0.0035085884382017526,
+        "magnitude": 0.5664358639220611
+      },
+      "expectedPhaseVariance": 1.1164627051450418,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": -0.008025665699006784,
+      "statistics": {
+        "moments": {
+          "meanA": -0.01780139385850063,
+          "meanB": 0.00013584746874776643,
+          "varianceA": 1.1388690024115466,
+          "varianceB": 0.00007148812480286374,
+          "covariance": -0.00820601047218093
+        },
+        "meanPhaseZ": 1.5248491106965454,
+        "meanPositionZ": 1.4695944474403069,
+        "sdPhaseRelative": 0.009984656557729066,
+        "sdPositionRelative": 0.010573562762848265,
+        "covarianceZ": 1.3670803903623665,
+        "realZ": 1.1029272135335615,
+        "imaginaryZ": 0.4753010688575781,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 0.18736549374088746,
+      "signal": {
+        "real": 0.18539822759186383,
+        "imaginary": 0.0023228404954466477,
+        "magnitude": 0.1854127783680829
+      },
+      "expectedPhaseVariance": 3.3493881154351253,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": -0.02407699709702035,
+      "statistics": {
+        "moments": {
+          "meanA": -0.030832918608467645,
+          "meanB": 0.0002352947179507561,
+          "varianceA": 3.416607007234625,
+          "varianceB": 0.0002144643744085916,
+          "covariance": -0.024618031416542858
+        },
+        "meanPhaseZ": 1.5248491106965443,
+        "meanPositionZ": 1.4695944474403033,
+        "sdPhaseRelative": 0.009984656557726845,
+        "sdPositionRelative": 0.010573562762848931,
+        "covarianceZ": 1.3670803903625506,
+        "realZ": 0.26097169456102876,
+        "imaginaryZ": 0.2975069665812379,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00007791238607083894,
+          "varianceA": 0,
+          "varianceB": 0.00010284710686644949,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.7051824195726658,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.014135626365869625,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00013494821121361525,
+          "varianceA": 0,
+          "varianceB": 0.0003085413205993472,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.7051824195726686,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.014135626365867626,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 0.7896426299582161,
+      "signal": {
+        "real": 0.7834598571816935,
+        "imaginary": -0.005404231130328412,
+        "magnitude": 0.783478495894603
+      },
+      "expectedPhaseVariance": 0.47234960602290244,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": -0.006420532559205423,
+      "statistics": {
+        "moments": {
+          "meanA": -0.0074162157351577475,
+          "meanB": 0.00007791238607083894,
+          "varianceA": 0.48610734952980406,
+          "varianceB": 0.00010284710686644949,
+          "covariance": -0.006629074019186581
+        },
+        "meanPhaseZ": 0.9766648276650661,
+        "meanPositionZ": 0.7051824195726658,
+        "sdPhaseRelative": 0.014458568976421615,
+        "sdPositionRelative": 0.014135626365869625,
+        "covarianceZ": 2.0068658146099865,
+        "realZ": 2.102176645493475,
+        "imaginaryZ": 0.8848119261132587,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 0.4923701987057589,
+      "signal": {
+        "real": 0.4781342550748116,
+        "imaginary": -0.004975675287056385,
+        "magnitude": 0.47816014390631434
+      },
+      "expectedPhaseVariance": 1.4170488180687073,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": -0.019261597677616264,
+      "statistics": {
+        "moments": {
+          "meanA": -0.012845262453184975,
+          "meanB": 0.00013494821121361525,
+          "varianceA": 1.4583220485894197,
+          "varianceB": 0.0003085413205993472,
+          "covariance": -0.01988722205755984
+        },
+        "meanPhaseZ": 0.976664827665065,
+        "meanPositionZ": 0.7051824195726686,
+        "sdPhaseRelative": 0.01445856897642428,
+        "sdPositionRelative": 0.014135626365867626,
+        "covarianceZ": 2.0068658146103124,
+        "realZ": 2.4053182761928196,
+        "imaginaryZ": 0.6564693798643344,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 0.38879649861906485,
+      "signal": {
+        "real": 0.37248833225218814,
+        "imaginary": -0.004194302993312176,
+        "magnitude": 0.37251194590457926
+      },
+      "expectedPhaseVariance": 1.8893984240916097,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": -0.012841065118410846,
+      "statistics": {
+        "moments": {
+          "meanA": -0.014832431470315495,
+          "meanB": 0.00007791238607083894,
+          "varianceA": 1.9444293981192162,
+          "varianceB": 0.00010284710686644949,
+          "covariance": -0.013258148038373161
+        },
+        "meanPhaseZ": 0.9766648276650661,
+        "meanPositionZ": 0.7051824195726658,
+        "sdPhaseRelative": 0.014458568976421615,
+        "sdPositionRelative": 0.014135626365869625,
+        "covarianceZ": 2.0068658146099865,
+        "realZ": 2.459181915778922,
+        "imaginaryZ": 0.5431117378667661,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 0.05877153522293063,
+      "signal": {
+        "real": 0.047908629349021147,
+        "imaginary": -0.0016389632330937305,
+        "magnitude": 0.0479366557717716
+      },
+      "expectedPhaseVariance": 5.668195272274829,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": -0.03852319535523253,
+      "statistics": {
+        "moments": {
+          "meanA": -0.02569052490636995,
+          "meanB": 0.00013494821121361525,
+          "varianceA": 5.833288194357679,
+          "varianceB": 0.0003085413205993472,
+          "covariance": -0.03977444411511968
+        },
+        "meanPhaseZ": 0.976664827665065,
+        "meanPositionZ": 0.7051824195726686,
+        "sdPhaseRelative": 0.01445856897642428,
+        "sdPositionRelative": 0.014135626365867626,
+        "covarianceZ": 2.0068658146103124,
+        "realZ": 1.3952713493530928,
+        "imaginaryZ": 0.20978854530821578,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": -0.000016291105593716205,
+          "varianceA": 0,
+          "varianceB": 0.00017955213131367652,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.10990293179403281,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.001244854515614402,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": -0.000028217022599786284,
+          "varianceA": 0,
+          "varianceB": 0.0005386563939410335,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.10990293179403388,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.0012448545156107382,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 0.6102905994819734,
+      "signal": {
+        "real": 0.6094056214459987,
+        "imaginary": -0.001824913618049978,
+        "magnitude": 0.6094083538643832
+      },
+      "expectedPhaseVariance": 0.9876400853206126,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": -0.01284106511841083,
+      "statistics": {
+        "moments": {
+          "meanA": 0.0012351224210578686,
+          "meanB": -0.000016291105593716205,
+          "varianceA": 0.9864474391750047,
+          "varianceB": 0.00017955213131367652,
+          "covariance": -0.012816389096146926
+        },
+        "meanPhaseZ": 0.11248785182400631,
+        "meanPositionZ": 0.10990293179403281,
+        "sdPhaseRelative": 0.0006039682027439985,
+        "sdPositionRelative": 0.001244854515614402,
+        "covarianceZ": 0.12065164383911932,
+        "realZ": 0.18050836076511315,
+        "imaginaryZ": 0.25169855126668306,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 0.22730555076621536,
+      "signal": {
+        "real": 0.22270431061951165,
+        "imaginary": -0.01173602584202001,
+        "magnitude": 0.2230133275637949
+      },
+      "expectedPhaseVariance": 2.962920255961838,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": -0.038523195355232485,
+      "statistics": {
+        "moments": {
+          "meanA": 0.0021392947868396424,
+          "meanB": -0.000028217022599786284,
+          "varianceA": 2.9593423175250004,
+          "varianceB": 0.0005386563939410335,
+          "covariance": -0.038449167288440646
+        },
+        "meanPhaseZ": 0.11248785182400285,
+        "meanPositionZ": 0.10990293179403388,
+        "sdPhaseRelative": 0.00060396820274633,
+        "sdPositionRelative": 0.0012448545156107382,
+        "covarianceZ": 0.12065164383932855,
+        "realZ": 0.6210468727158847,
+        "imaginaryZ": 1.5042204551531966,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 0.13872244084269372,
+      "signal": {
+        "real": 0.13309063312519026,
+        "imaginary": -0.015240596594847751,
+        "magnitude": 0.13396041359383332
+      },
+      "expectedPhaseVariance": 3.9505603412824506,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": -0.02568213023682166,
+      "statistics": {
+        "moments": {
+          "meanA": 0.0024702448421157373,
+          "meanB": -0.000016291105593716205,
+          "varianceA": 3.9457897567000186,
+          "varianceB": 0.00017955213131367652,
+          "covariance": -0.025632778192293853
+        },
+        "meanPhaseZ": 0.11248785182400631,
+        "meanPositionZ": 0.10990293179403281,
+        "sdPhaseRelative": 0.0006039682027439985,
+        "sdPositionRelative": 0.001244854515614402,
+        "covarianceZ": 0.12065164383911932,
+        "realZ": 0.7350159731882452,
+        "imaginaryZ": 1.9511576820365522,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 608135816,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 0.002669562942480933,
+      "signal": {
+        "real": -0.001177375981904364,
+        "imaginary": -0.0048722504913903215,
+        "magnitude": 0.005012488309574247
+      },
+      "expectedPhaseVariance": 11.851681023847352,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": -0.07704639071046497,
+      "statistics": {
+        "moments": {
+          "meanA": 0.004278589573679285,
+          "meanB": -0.000028217022599786284,
+          "varianceA": 11.837369270100002,
+          "varianceB": 0.0005386563939410335,
+          "covariance": -0.07689833457688129
+        },
+        "meanPhaseZ": 0.11248785182400285,
+        "meanPositionZ": 0.10990293179403388,
+        "sdPhaseRelative": 0.00060396820274633,
+        "sdPositionRelative": 0.0012448545156107382,
+        "covarianceZ": 0.12065164383932855,
+        "realZ": 0.49241169152588643,
+        "imaginaryZ": 0.623648062913798,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00008194256703536253,
+          "varianceA": 0,
+          "varianceB": 0.00007021459988821915,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.8864525974184105,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.0015316833175298417,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00014192868940786683,
+          "varianceA": 0,
+          "varianceB": 0.00021064379966465618,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.8864525974184124,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.001531683317526733,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 0.8697427174458386,
+      "signal": {
+        "real": 0.8698726600021655,
+        "imaginary": -0.004668372786925627,
+        "magnitude": 0.8698851868630254
+      },
+      "expectedPhaseVariance": 0.27911567628626044,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": -0.004012832849503392,
+      "statistics": {
+        "moments": {
+          "meanA": -0.005456009406783061,
+          "meanB": 0.00008194256703536253,
+          "varianceA": 0.2787858342345544,
+          "varianceB": 0.00007021459988821915,
+          "covariance": -0.004014395935823042
+        },
+        "meanPhaseZ": 0.9347123217446609,
+        "meanPositionZ": 0.8864525974184105,
+        "sdPhaseRelative": 0.0005910444740542253,
+        "sdPositionRelative": 0.0015316833175298417,
+        "covarianceZ": 0.023697550180436722,
+        "realZ": 0.06829320772464545,
+        "imaginaryZ": 0.9136195299754714,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 139.55783814313017,
+      "expected": 0.6579189612543912,
+      "signal": {
+        "real": 0.6582316900229617,
+        "imaginary": -0.0058627456255999945,
+        "magnitude": 0.658257798690418
+      },
+      "expectedPhaseVariance": 0.8373470288587813,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": -0.012038498548510175,
+      "statistics": {
+        "moments": {
+          "meanA": -0.009450085499121989,
+          "meanB": 0.00014192868940786683,
+          "varianceA": 0.8363575027036639,
+          "varianceB": 0.00021064379966465618,
+          "covariance": -0.012043187807469094
+        },
+        "meanPhaseZ": 0.9347123217446607,
+        "meanPositionZ": 0.8864525974184124,
+        "sdPhaseRelative": 0.0005910444740537812,
+        "sdPositionRelative": 0.001531683317526733,
+        "covarianceZ": 0.023697550180283307,
+        "realZ": 0.0705806256204596,
+        "imaginaryZ": 0.8324600316969718,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 0.5722202252205376,
+      "signal": {
+        "real": 0.572645187493512,
+        "imaginary": -0.005710532902880367,
+        "magnitude": 0.5726736600765872
+      },
+      "expectedPhaseVariance": 1.1164627051450418,
+      "expectedPositionVariance": 0.00007000000000000001,
+      "expectedPhasePositionCovariance": -0.008025665699006784,
+      "statistics": {
+        "moments": {
+          "meanA": -0.010912018813566121,
+          "meanB": 0.00008194256703536253,
+          "varianceA": 1.1151433369382175,
+          "varianceB": 0.00007021459988821915,
+          "covariance": -0.008028791871646084
+        },
+        "meanPhaseZ": 0.9347123217446609,
+        "meanPositionZ": 0.8864525974184105,
+        "sdPhaseRelative": 0.0005910444740542253,
+        "sdPositionRelative": 0.0015316833175298417,
+        "covarianceZ": 0.023697550180436722,
+        "realZ": 0.08087731401128864,
+        "imaginaryZ": 0.7735938370350783,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 25
+      },
+      "b": 558.2313525725207,
+      "expected": 0.18736549374088746,
+      "signal": {
+        "real": 0.1892917507527794,
+        "imaginary": -0.00045764858839096324,
+        "magnitude": 0.1892923039779558
+      },
+      "expectedPhaseVariance": 3.3493881154351253,
+      "expectedPositionVariance": 0.00021000000000000004,
+      "expectedPhasePositionCovariance": -0.02407699709702035,
+      "statistics": {
+        "moments": {
+          "meanA": -0.018900170998243978,
+          "meanB": 0.00014192868940786683,
+          "varianceA": 3.3454300108146557,
+          "varianceB": 0.00021064379966465618,
+          "covariance": -0.024086375614938187
+        },
+        "meanPhaseZ": 0.9347123217446607,
+        "meanPositionZ": 0.8864525974184124,
+        "sdPhaseRelative": 0.0005910444740537812,
+        "sdPositionRelative": 0.001531683317526733,
+        "covarianceZ": 0.023697550180283307,
+        "realZ": 0.25553154401756994,
+        "imaginaryZ": 0.058615149666658733,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00008365402832354778,
+          "varianceA": 0,
+          "varianceB": 0.00009979205214208256,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.7571498329747475,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.0010402803812230577,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00014489302731419048,
+          "varianceA": 0,
+          "varianceB": 0.0002993761564262465,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.7571498329747465,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.001040280381225056,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 0.7896426299582161,
+      "signal": {
+        "real": 0.7908176899648139,
+        "imaginary": -0.004749586627867056,
+        "magnitude": 0.7908319526513962
+      },
+      "expectedPhaseVariance": 0.47234960602290244,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": -0.006420532559205423,
+      "statistics": {
+        "moments": {
+          "meanA": -0.005335200926236447,
+          "meanB": 0.00008365402832354778,
+          "varianceA": 0.4685937054760645,
+          "varianceB": 0.00009979205214208256,
+          "covariance": -0.006383578831509451
+        },
+        "meanPhaseZ": 0.7026094276733423,
+        "meanPositionZ": 0.7571498329747475,
+        "sdPhaseRelative": 0.003983698321476825,
+        "sdPositionRelative": 0.0010402803812230577,
+        "covarianceZ": 0.3556183640517024,
+        "realZ": 0.39952684535055993,
+        "imaginaryZ": 0.7776297480802684,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 236.17480301145108,
+      "expected": 0.4923701987057589,
+      "signal": {
+        "real": 0.49340216060765774,
+        "imaginary": -0.006879748028617884,
+        "magnitude": 0.4934501221250656
+      },
+      "expectedPhaseVariance": 1.4170488180687073,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": -0.019261597677616264,
+      "statistics": {
+        "moments": {
+          "meanA": -0.009240839072830047,
+          "meanB": 0.00014489302731419048,
+          "varianceA": 1.40578111642819,
+          "varianceB": 0.0002993761564262465,
+          "covariance": -0.019150736494528326
+        },
+        "meanPhaseZ": 0.7026094276733413,
+        "meanPositionZ": 0.7571498329747465,
+        "sdPhaseRelative": 0.003983698321478046,
+        "sdPositionRelative": 0.001040280381225056,
+        "covarianceZ": 0.3556183640517692,
+        "realZ": 0.17436124273321954,
+        "imaginaryZ": 0.9076846179489202,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 0.38879649861906485,
+      "signal": {
+        "real": 0.3893737646792931,
+        "imaginary": -0.0073817589604554205,
+        "magnitude": 0.38944373019202116
+      },
+      "expectedPhaseVariance": 1.8893984240916097,
+      "expectedPositionVariance": 0.0001,
+      "expectedPhasePositionCovariance": -0.012841065118410846,
+      "statistics": {
+        "moments": {
+          "meanA": -0.010670401852472894,
+          "meanB": 0.00008365402832354778,
+          "varianceA": 1.874374821904258,
+          "varianceB": 0.00009979205214208256,
+          "covariance": -0.012767157663018901
+        },
+        "meanPhaseZ": 0.7026094276733423,
+        "meanPositionZ": 0.7571498329747475,
+        "sdPhaseRelative": 0.003983698321476825,
+        "sdPositionRelative": 0.0010402803812230577,
+        "covarianceZ": 0.3556183640517024,
+        "realZ": 0.08704855125770294,
+        "imaginaryZ": 0.9558489083690582,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 40
+      },
+      "b": 944.6992120458043,
+      "expected": 0.05877153522293063,
+      "signal": {
+        "real": 0.06186722532981169,
+        "imaginary": -0.009099976709120208,
+        "magnitude": 0.06253289651148604
+      },
+      "expectedPhaseVariance": 5.668195272274829,
+      "expectedPositionVariance": 0.00030000000000000003,
+      "expectedPhasePositionCovariance": -0.03852319535523253,
+      "statistics": {
+        "moments": {
+          "meanA": -0.018481678145660093,
+          "meanB": 0.00014489302731419048,
+          "varianceA": 5.62312446571276,
+          "varianceB": 0.0002993761564262465,
+          "covariance": -0.03830147298905665
+        },
+        "meanPhaseZ": 0.7026094276733413,
+        "meanPositionZ": 0.7571498329747465,
+        "sdPhaseRelative": 0.003983698321478046,
+        "sdPositionRelative": 0.001040280381225056,
+        "covarianceZ": 0.3556183640517692,
+        "realZ": 0.3976217563461642,
+        "imaginaryZ": 1.1648039672869193,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00006354402395741769,
+          "varianceA": 0,
+          "varianceB": 0.000175172578035347,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.42868020778185867,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.013500639085224253,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 0,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 0,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0.00011006147801162128,
+          "varianceA": 0,
+          "varianceB": 0.0005255177341060414,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0.4286802077818582,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0.013500639085223809,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 0.6102905994819734,
+      "signal": {
+        "real": 0.6202265712424406,
+        "imaginary": -0.00678415209938404,
+        "magnitude": 0.6202636732832755
+      },
+      "expectedPhaseVariance": 0.9876400853206126,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": -0.01284106511841083,
+      "statistics": {
+        "moments": {
+          "meanA": -0.00492239994598801,
+          "meanB": 0.00006354402395741769,
+          "varianceA": 0.9578269401692622,
+          "varianceB": 0.000175172578035347,
+          "covariance": -0.01245527391712188
+        },
+        "meanPhaseZ": 0.4483038978990838,
+        "meanPositionZ": 0.42868020778185867,
+        "sdPhaseRelative": 0.01520877570856971,
+        "sdPositionRelative": 0.013500639085224253,
+        "covarianceZ": 1.8862984526589894,
+        "realZ": 2.0266333199050988,
+        "imaginaryZ": 0.935694291553599,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 30,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 493.82004266030685,
+      "expected": 0.22730555076621536,
+      "signal": {
+        "real": 0.23826113837741764,
+        "imaginary": -0.014038975648586614,
+        "magnitude": 0.2386743867660805
+      },
+      "expectedPhaseVariance": 2.962920255961838,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": -0.038523195355232485,
+      "statistics": {
+        "moments": {
+          "meanA": -0.008525846801625573,
+          "meanB": 0.00011006147801162128,
+          "varianceA": 2.873480820507775,
+          "varianceB": 0.0005255177341060414,
+          "covariance": -0.03736582175136557
+        },
+        "meanPhaseZ": 0.44830389789908603,
+        "meanPositionZ": 0.4286802077818582,
+        "sdPhaseRelative": 0.015208775708571598,
+        "sdPositionRelative": 0.013500639085223809,
+        "covarianceZ": 1.886298452659097,
+        "realZ": 1.4787173039808277,
+        "imaginaryZ": 1.7993922835778973,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 1,
+      "signal": {
+        "real": 1,
+        "imaginary": 0,
+        "magnitude": 1
+      },
+      "expectedPhaseVariance": 0,
+      "expectedPositionVariance": 0,
+      "expectedPhasePositionCovariance": 0,
+      "statistics": {
+        "moments": {
+          "meanA": 0,
+          "meanB": 0,
+          "varianceA": 0,
+          "varianceB": 0,
+          "covariance": 0
+        },
+        "meanPhaseZ": 0,
+        "meanPositionZ": 0,
+        "sdPhaseRelative": 0,
+        "sdPositionRelative": 0,
+        "covarianceZ": 0,
+        "realZ": 0,
+        "imaginaryZ": 0,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.001,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 0.13872244084269372,
+      "signal": {
+        "real": 0.14653256601879128,
+        "imaginary": -0.014980261299663494,
+        "magnitude": 0.1472963038662465
+      },
+      "expectedPhaseVariance": 3.9505603412824506,
+      "expectedPositionVariance": 0.00017999999999999998,
+      "expectedPhasePositionCovariance": -0.02568213023682166,
+      "statistics": {
+        "moments": {
+          "meanA": -0.00984479989197602,
+          "meanB": 0.00006354402395741769,
+          "varianceA": 3.8313077606770487,
+          "varianceB": 0.000175172578035347,
+          "covariance": -0.02491054783424376
+        },
+        "meanPhaseZ": 0.4483038978990838,
+        "meanPositionZ": 0.42868020778185867,
+        "sdPhaseRelative": 0.01520877570856971,
+        "sdPositionRelative": 0.013500639085224253,
+        "covarianceZ": 1.8862984526589894,
+        "realZ": 1.0193115683246567,
+        "imaginaryZ": 1.9178285923291494,
+        "sdBound": 0.03906488440409195
+      }
+    },
+    {
+      "seed": 324508639,
+      "options": {
+        "gradientMilliTPerM": 60,
+        "diffusionMm2PerS": 0.003,
+        "separationMs": 80
+      },
+      "b": 1975.2801706412274,
+      "expected": 0.002669562942480933,
+      "signal": {
+        "real": 0.0014990027799379666,
+        "imaginary": -0.008600120365483856,
+        "magnitude": 0.00872978119056096
+      },
+      "expectedPhaseVariance": 11.851681023847352,
+      "expectedPositionVariance": 0.00054,
+      "expectedPhasePositionCovariance": -0.07704639071046497,
+      "statistics": {
+        "moments": {
+          "meanA": -0.017051693603251147,
+          "meanB": 0.00011006147801162128,
+          "varianceA": 11.4939232820311,
+          "varianceB": 0.0005255177341060414,
+          "covariance": -0.07473164350273113
+        },
+        "meanPhaseZ": 0.44830389789908603,
+        "meanPositionZ": 0.4286802077818582,
+        "sdPhaseRelative": 0.015208775708571598,
+        "sdPositionRelative": 0.013500639085223809,
+        "covarianceZ": 1.886298452659097,
+        "realZ": 0.14983276859865963,
+        "imaginaryZ": 1.1008154068098877,
+        "sdBound": 0.03906488440409195
+      }
+    }
+  ]
+}

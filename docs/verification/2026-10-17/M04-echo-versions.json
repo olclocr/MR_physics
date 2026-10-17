@@ -1,0 +1,46 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/pdff_echo_assumptions.html",
+      "sha256": "332582F40EB47A759ED9AC441EDD60751ACF7C2D4B51FD59221FB6278B992EDE"
+    },
+    {
+      "path": "docs/assets/pdff-echo-model.js",
+      "sha256": "775074FD6B33BE9BA90711F254337F5EA3D142CC44F19F735668475A6C41A085"
+    },
+    {
+      "path": "tests/helpers/pdff-echo-reference.cjs",
+      "sha256": "5E4C66050409945C5CD122A23FC4C87B6B93AF6B153BF5B9AF9657773724348D"
+    },
+    {
+      "path": "tests/pdff-echo.test.cjs",
+      "sha256": "3EBA0184AA1BBC72EBB40771F8B78FCE3B8A438BCA8C13D13D862A3D31D1F5D5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-numerical.cjs",
+      "sha256": "C7A15988C16126CE2C75BEDAA67F46569790605CE1236F7B106C9D484BBFE066"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-numerical.json",
+      "sha256": "93F9CF5F58AFA3194F3B921366E077738B89C3805048D2D76B247D8D33C96F24"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-display-reference.json",
+      "sha256": "CE06879D1981588C0C3725C919782D554C53EE949C305E4B4852DEFFFE140D39"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-browser-check.js",
+      "sha256": "D2439EC01032565DA37DB4ED916DFAA5EF359F134F767602567EA691995D9287"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-browser-check.json",
+      "sha256": "5714F1CB615394E67083F7C80520059EE7339EA926F351950A6D42F21D161BEB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-physics.md",
+      "sha256": "222FBBDDEAD3005A64A7AD0DED9CA11A25C975ED05F4C9A84036DBD675E13452"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-17",
+  "cases": 54,
+  "complexNativeSamples": 1728,
+  "denseSamples": 17334,
+  "max": {
+    "coefficient": 5.503314052751682e-14,
+    "image": 8.285120681430785e-15,
+    "dense": 5.225424803740312e-15,
+    "positionMm": 3.552713678800501e-14,
+    "spinAmplitude": 2.4646951146678475e-14
+  },
+  "examples": [
+    {
+      "options": {
+        "field": "linear",
+        "amplitudeHz": 80,
+        "espMs": 1,
+        "polarity": 1
+      },
+      "landmarks": [
+        {
+          "yMm": -45,
+          "amplitude": 0.5,
+          "offsetHz": -45,
+          "shiftMm": -7.2,
+          "predictedMm": -52.2
+        },
+        {
+          "yMm": -15,
+          "amplitude": 1,
+          "offsetHz": -15,
+          "shiftMm": -2.4,
+          "predictedMm": -17.4
+        },
+        {
+          "yMm": 15,
+          "amplitude": 0.8,
+          "offsetHz": 15,
+          "shiftMm": 2.4,
+          "predictedMm": 17.4
+        },
+        {
+          "yMm": 45,
+          "amplitude": 0.6,
+          "offsetHz": 45,
+          "shiftMm": 7.2,
+          "predictedMm": 52.2
+        }
+      ],
+      "separations": [
+        {
+          "originalMm": 30,
+          "mappedMm": 34.800000000000004
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 34.8
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 34.800000000000004
+        }
+      ],
+      "firstMs": 34,
+      "lastMs": 65,
+      "echoSum": 2.9
+    },
+    {
+      "options": {
+        "field": "linear",
+        "amplitudeHz": 80,
+        "espMs": 1,
+        "polarity": -1
+      },
+      "landmarks": [
+        {
+          "yMm": -45,
+          "amplitude": 0.5,
+          "offsetHz": -45,
+          "shiftMm": 7.2,
+          "predictedMm": -37.8
+        },
+        {
+          "yMm": -15,
+          "amplitude": 1,
+          "offsetHz": -15,
+          "shiftMm": 2.4,
+          "predictedMm": -12.6
+        },
+        {
+          "yMm": 15,
+          "amplitude": 0.8,
+          "offsetHz": 15,
+          "shiftMm": -2.4,
+          "predictedMm": 12.6
+        },
+        {
+          "yMm": 45,
+          "amplitude": 0.6,
+          "offsetHz": 45,
+          "shiftMm": -7.2,
+          "predictedMm": 37.8
+        }
+      ],
+      "separations": [
+        {
+          "originalMm": 30,
+          "mappedMm": 25.199999999999996
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 25.2
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 25.199999999999996
+        }
+      ],
+      "firstMs": 35,
+      "lastMs": 66,
+      "echoSum": 2.9
+    },
+    {
+      "options": {
+        "field": "uniform",
+        "amplitudeHz": 80,
+        "espMs": 1,
+        "polarity": 1
+      },
+      "landmarks": [
+        {
+          "yMm": -45,
+          "amplitude": 0.5,
+          "offsetHz": 80,
+          "shiftMm": 12.8,
+          "predictedMm": -32.2
+        },
+        {
+          "yMm": -15,
+          "amplitude": 1,
+          "offsetHz": 80,
+          "shiftMm": 12.8,
+          "predictedMm": -2.1999999999999993
+        },
+        {
+          "yMm": 15,
+          "amplitude": 0.8,
+          "offsetHz": 80,
+          "shiftMm": 12.8,
+          "predictedMm": 27.8
+        },
+        {
+          "yMm": 45,
+          "amplitude": 0.6,
+          "offsetHz": 80,
+          "shiftMm": 12.8,
+          "predictedMm": 57.8
+        }
+      ],
+      "separations": [
+        {
+          "originalMm": 30,
+          "mappedMm": 30.000000000000004
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 30
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 29.999999999999996
+        }
+      ],
+      "firstMs": 34,
+      "lastMs": 65,
+      "echoSum": 2.9
+    },
+    {
+      "options": {
+        "field": "local",
+        "amplitudeHz": 80,
+        "espMs": 1,
+        "polarity": 1
+      },
+      "landmarks": [
+        {
+          "yMm": -45,
+          "amplitude": 0.5,
+          "offsetHz": 0.7316757630742303,
+          "shiftMm": 0.11706812209187686,
+          "predictedMm": -44.88293187790812
+        },
+        {
+          "yMm": -15,
+          "amplitude": 1,
+          "offsetHz": 20.510060534912977,
+          "shiftMm": 3.2816096855860764,
+          "predictedMm": -11.718390314413924
+        },
+        {
+          "yMm": 15,
+          "amplitude": 0.8,
+          "offsetHz": 77.80835816930787,
+          "shiftMm": 12.449337307089259,
+          "predictedMm": 27.44933730708926
+        },
+        {
+          "yMm": 45,
+          "amplitude": 0.6,
+          "offsetHz": 39.94814308794209,
+          "shiftMm": 6.391702894070735,
+          "predictedMm": 51.39170289407073
+        }
+      ],
+      "separations": [
+        {
+          "originalMm": 30,
+          "mappedMm": 33.1645415634942
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 39.16772762150318
+        },
+        {
+          "originalMm": 30,
+          "mappedMm": 23.942365586981474
+        }
+      ],
+      "firstMs": 34,
+      "lastMs": 65,
+      "echoSum": 2.9
+    }
+  ]
+}

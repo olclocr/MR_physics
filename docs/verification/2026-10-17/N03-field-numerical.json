@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-17",
+  "cases": 54,
+  "fidSamples": 16254,
+  "spectralSamples": 21654,
+  "max": {
+    "fid": 3.951950919289793e-11,
+    "spectrum": 2.90935261992864e-11,
+    "height": 2.9976021664879227e-15,
+    "fwhmHz": 9.793836852622917e-10,
+    "windowArea": 5.551115123125783e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "widthMm": 20,
+        "gradientHzPerMm": 0.5,
+        "offsetHz": 0,
+        "t2Ms": 80
+      },
+      "spreadHz": 5,
+      "height": 0.07589224003162216,
+      "fwhmHz": 10.76250133305986,
+      "area": 1,
+      "windowArea": 0.9745983847542093,
+      "firstNullMs": 100
+    },
+    {
+      "options": {
+        "widthMm": 20,
+        "gradientHzPerMm": 0.5,
+        "offsetHz": 10,
+        "t2Ms": 80
+      },
+      "spreadHz": 5,
+      "height": 0.07589224003162216,
+      "fwhmHz": 10.76250133305986,
+      "area": 1,
+      "windowArea": 0.9735238745291831,
+      "firstNullMs": 100
+    },
+    {
+      "options": {
+        "widthMm": 20,
+        "gradientHzPerMm": 0,
+        "offsetHz": 0,
+        "t2Ms": 80
+      },
+      "spreadHz": 0,
+      "height": 0.16,
+      "fwhmHz": 3.9788735772973833,
+      "area": 1,
+      "windowArea": 0.9746830585708668,
+      "firstNullMs": null
+    },
+    {
+      "options": {
+        "widthMm": 40,
+        "gradientHzPerMm": 0.5,
+        "offsetHz": 0,
+        "t2Ms": 80
+      },
+      "spreadHz": 10,
+      "height": 0.043749041263918494,
+      "fwhmHz": 20.391945344770694,
+      "area": 1,
+      "windowArea": 0.9743381108504856,
+      "firstNullMs": 50
+    },
+    {
+      "options": {
+        "widthMm": 20,
+        "gradientHzPerMm": 0.5,
+        "offsetHz": 0,
+        "t2Ms": 160
+      },
+      "spreadHz": 5,
+      "height": 0.08749808252783699,
+      "fwhmHz": 10.195972672385347,
+      "area": 1,
+      "windowArea": 0.9872940841628252,
+      "firstNullMs": 100
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/reconstruction_roles.html",
+      "sha256": "1D0BC099D48DCCD4120AE9FB399EFF7D44F6D038954FD5DE81FE0959C84D5791"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "35938DCBBC78CEF3E6DFF6690C1ACFC9A6362965EB10EEEA86B04B1ACD9854E0"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "tests/helpers/reconstruction-roles-reference.cjs",
+      "sha256": "DE46BFACB3F24FC42B72B1844FD8C97D035C8EAA8E59A1D3D30D920298F0CC69"
+    },
+    {
+      "path": "tests/helpers/reconstruction-roles-noise.json",
+      "sha256": "B85E14B0A52C6A433D9977FDC69EE59ACD501DD3217A8FBA7D47ED26EC0B2B37"
+    },
+    {
+      "path": "tests/reconstruction-roles.test.cjs",
+      "sha256": "49066B61BCFDFBE1005BD6ACC68B729653AC98EBF23AF93721CE91B7C580BD84"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-numerical.cjs",
+      "sha256": "3DF7D6057873ECB588A59D1E26F6C4CCBA3C6EB1F8D647A50B23467764957353"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-numerical.json",
+      "sha256": "043DE1703101ED59CEE946DD75D763686599918693D45A6296C41D031AEA4FD1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-display-reference.json",
+      "sha256": "B6AF9FA1D596F006084C963F4A326A1F98EBF95A731E16D259600D63C4D84E51"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-browser-check.js",
+      "sha256": "F421C8E3AF0A13F0773E1DFBA711A3B0791B9E25CF7B49A27198E6C0014217D5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-browser-check.json",
+      "sha256": "173CB3B0BD5F6E8AC784573E8B65FF2ADB334DF145393D8F2D9F296AC05953A5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-physics.md",
+      "sha256": "2EEB30ACD127485F39E1D4D22A4AD44FB5AE84BB85EE5AFF64503332EE8777BE"
+    }
+  ]
+}

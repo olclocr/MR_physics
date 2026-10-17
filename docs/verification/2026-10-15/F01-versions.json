@@ -1,0 +1,43 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/chemical_shift_ip_op.html",
+      "sha256": "93BE89D2D42DBD80B636C9CDE2FD9D343643BD57B6A4BBEDF0EEAC1FB4A01942"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/chemical-shift.test.cjs",
+      "sha256": "A4D31B098FA8D89CF03C76293A1CF97FEA38CC887970E9F815B93AC6C08C9B35"
+    },
+    {
+      "path": "tests/helpers/chemical-reference.cjs",
+      "sha256": "D52AC25F6FFCC5E24BA6C650D69900D94DE05CA745E8302A5257D585C6F5E719"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-numerical.cjs",
+      "sha256": "43DC6EDE232B035AB0AF8651DFAF9E53319A30E2EBA3A1E6478E0A68C41BB7B7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-display-reference.cjs",
+      "sha256": "234AB17157C7E9BDA3863026A851917433504B765D6C5ECC32CE6C2E878475F4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-browser-check.js",
+      "sha256": "165652F52D44593F6C89CDA6728791106CB4D17E8FFF54DB63150B6F59D2BFFF"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

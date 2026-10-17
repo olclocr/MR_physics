@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-17",
+  "cases": 72,
+  "spatialSamples": 28872,
+  "timingSamples": 28872,
+  "max": {
+    "spatialRad": 8.881784197001252e-16,
+    "timelineRad": 6.6547323207544196e-12,
+    "probeRad": 6.106226635438361e-16,
+    "magnitude": 3.6637359812630166e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "amplitudeMicroM": 10,
+        "gradientMilliTPerM": 10,
+        "polarity": 1,
+        "phaseDeg": 0
+      },
+      "probePhaseRad": -0.2229351583057437,
+      "phaseAmplitudeRad": 0.22293515830574376
+    },
+    {
+      "options": {
+        "amplitudeMicroM": 20,
+        "gradientMilliTPerM": 10,
+        "polarity": 1,
+        "phaseDeg": 0
+      },
+      "probePhaseRad": -0.4458703166114874,
+      "phaseAmplitudeRad": 0.4458703166114875
+    },
+    {
+      "options": {
+        "amplitudeMicroM": 10,
+        "gradientMilliTPerM": 10,
+        "polarity": -1,
+        "phaseDeg": 0
+      },
+      "probePhaseRad": 0.2229351583057437,
+      "phaseAmplitudeRad": 0.22293515830574376
+    },
+    {
+      "options": {
+        "amplitudeMicroM": 10,
+        "gradientMilliTPerM": 10,
+        "polarity": 1,
+        "phaseDeg": 90
+      },
+      "probePhaseRad": -1.3650841401826875e-17,
+      "phaseAmplitudeRad": 0.22293515830574376
+    },
+    {
+      "options": {
+        "amplitudeMicroM": 10,
+        "gradientMilliTPerM": 0,
+        "polarity": 1,
+        "phaseDeg": 0
+      },
+      "probePhaseRad": 0,
+      "phaseAmplitudeRad": 0
+    }
+  ]
+}

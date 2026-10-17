@@ -1,0 +1,34 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/b0_b1_receive_shading.html",
+      "sha256": "0E26E0FBE06DADDA5DC2EC2B7A3B6DA0A6EA58BB13EF55E94C21D92E4BDDF506"
+    },
+    {
+      "path": "docs/assets/shading-model.js",
+      "sha256": "44D45219CCA228483918C5616A5590F7160C4EB3F46B6D3BB5B18DB49B9B882A"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/shading-reference.cjs",
+      "sha256": "F568E58522D56D606EE9989C8DDBD5B8FBF67120F6E4F682A0868A7E59490232"
+    },
+    {
+      "path": "tests/shading.test.cjs",
+      "sha256": "8FF103C61B3F57B4F876A6A088FF76D6B655174E416FFCC23873440627D68B3C"
+    }
+  ]
+}

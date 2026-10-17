@@ -1,0 +1,28 @@
+{
+  "changes": [
+    {
+      "manifest": "docs\\verification\\2026-10-15\\C06-versions.json",
+      "path": "docs/spoiled_gre.html",
+      "previous": "9024446309303B30DDC95F66EFF38D6B84A5F41BD0E0D41A99DE446F085456EB",
+      "current": "4F53C6842A739392CB978A09FC0EA0448C93BB8EC2C313D26F4B4AC74424AABB"
+    },
+    {
+      "manifest": "docs\\verification\\2026-10-16\\C08-versions.json",
+      "path": "docs/balanced_ssfp.html",
+      "previous": "C0823F1370F86E899496CFD749FB719FE7798E6809C50664022BD4E8B2D0D98C",
+      "current": "96D5EA901DC96E9C09E97CBF409FCB26BBEAFD55D563E651F30AF17A1A1BD942"
+    },
+    {
+      "manifest": "docs\\verification\\2026-10-16\\C08-versions.json",
+      "path": "docs/assets/bssfp-model.js",
+      "previous": "3F182525A487A936CE380DAAFEE6E6AE222FB5BE7714B3ED9AD792CFEE25BFB3",
+      "current": "252421E0B5CB8F69280EAF3A856E309BF8358B658B720C6DCBABC4EC15B03921"
+    },
+    {
+      "manifest": "docs\\verification\\2026-10-16\\C08-versions.json",
+      "path": "tests/helpers/bssfp-reference.cjs",
+      "previous": "F167359862BBFB8CD943EF1EE54ABDBCB85A429A59EEB8692593B3582CF3D398",
+      "current": "02F0CEAB0D0E689B2684123B814F9202A677C5E191993BE5BCB1A4A5F41E52B9"
+    }
+  ]
+}

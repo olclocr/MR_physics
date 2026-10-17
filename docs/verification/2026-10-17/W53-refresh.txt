@@ -1,0 +1,1 @@
+{"learningPages":60,"reports":63,"browserStates":246,"changes":[{"manifest":"docs\\verification\\2026-10-17\\AI02-versions.json","path":"docs/vendor_ai_reading.html","before":"2DC00924C44E4F5C91F7D28CCEB0A788853EC1A7E8C33ABE9755DADC60A93CFC","after":"0EC8B9FBCA1A922DEDC2FFD99E58AD4E7134A9400F4A71D68E74AD693D14F6BE"}]}

@@ -1,0 +1,50 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/mre_inversion_limits.html",
+      "sha256": "97CF513771E9C1B0DBE32CD4BD6F2558B883F27BF47899A9C57CD89F35F55C90"
+    },
+    {
+      "path": "docs/assets/mre-inversion-model.js",
+      "sha256": "4E29430363D40B98711639A9E53A9A6D026CFC669538986D2BB44D6452AF3CF8"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "tests/helpers/mre-inversion-reference.cjs",
+      "sha256": "2FF343D8C47FA4BF27698DE3BBF0F101373563CC6FF904CE675027B8B6F98B3A"
+    },
+    {
+      "path": "tests/mre-inversion.test.cjs",
+      "sha256": "578CF7C08F7C8CD7B99234BAEF6C49073ADE5BE3E924FD2B6FF9A44415C1B024"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-numerical.cjs",
+      "sha256": "5CDB146C7C670CE68B3350DB987D023B8DF7C1C8CEFC09D048A8FC9A19C3BCEB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-numerical.json",
+      "sha256": "17187B277D1E361FF380ADB6B6387CB002D0C4A1652A4C3DA943DC42AF2CDA65"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-display-reference.json",
+      "sha256": "E2CB3D75EEDCE54B5873CA38572BC73028F91E7672FD512F4E2D8D417E43C206"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-browser-check.js",
+      "sha256": "0C56D7896DC2487DD6DDDAA86063EE0DDFEA79355264E5D51BD436211C4A1956"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-browser-check.json",
+      "sha256": "C09A4EBD48B45CD18EF5F86AC6C7594CF75D6DFF3C589927FEF5D98A853930CD"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-physics.md",
+      "sha256": "74DD640894C5344C26F8C24DDD4E18C69EBD9DFE2007F3B83EE7D67FC0839457"
+    }
+  ]
+}

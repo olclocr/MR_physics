@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-17",
+  "cases": 24,
+  "complexComparisons": 7680,
+  "max": {
+    "complex": 1.1102230246251565e-15,
+    "metric": 2.220446049250313e-15
+  },
+  "bounds": {
+    "point": [
+      -0.03750000000000003,
+      0.22499999999999992
+    ],
+    "texture": [
+      -0.07851949702904748,
+      0.07851949702904748
+    ]
+  },
+  "examples": [
+    {
+      "options": {
+        "sigma": 0.15,
+        "processing": "smooth",
+        "noiseSeed": "A"
+      },
+      "inputNRMSE": 0.44318010810505887,
+      "outputNRMSE": 0.2989323870253188,
+      "peakRatio": 0.4999999999999997,
+      "contrastRatio": 0.24999999999999986,
+      "textureRatio": 0.6913417161825446
+    },
+    {
+      "options": {
+        "sigma": 0,
+        "processing": "sharpen",
+        "noiseSeed": "A"
+      },
+      "inputNRMSE": 0,
+      "outputNRMSE": 0.1314416726612618,
+      "peakRatio": 1.4999999999999996,
+      "contrastRatio": 1.7499999999999993,
+      "textureRatio": 1.308658283817455
+    },
+    {
+      "options": {
+        "sigma": 0.15,
+        "processing": "haar",
+        "noiseSeed": "B"
+      },
+      "inputNRMSE": 0.45028023453895083,
+      "outputNRMSE": 0.3226863325317931,
+      "peakRatio": 0.5502010597980067,
+      "contrastRatio": 0.3442008632637672,
+      "textureRatio": 0.7189919290144449
+    }
+  ]
+}

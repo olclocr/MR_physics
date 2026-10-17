@@ -1,0 +1,46 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/pdff_t1_bias.html",
+      "sha256": "B5AAC37DF99498D1BCD34260589CBD626C32A90B498D891FB532504CACE400AD"
+    },
+    {
+      "path": "docs/assets/pdff-t1-model.js",
+      "sha256": "89E7B5CEE1E807045C0D9BB5BC9DBFD18F16809733359A2B42BD3F9D7406122C"
+    },
+    {
+      "path": "tests/helpers/pdff-t1-reference.cjs",
+      "sha256": "1D39240122342455A801BA9911468E477D765B857B36C37279C47A36656C3135"
+    },
+    {
+      "path": "tests/pdff-t1.test.cjs",
+      "sha256": "5BF7A6F6F5001CE12E1462A7C64744453120294AC717F7BC601131497FA47166"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-numerical.cjs",
+      "sha256": "51ABE77C693F52135D78E3EDC349ED688A3B5C580A7A1535A660815C1BE51568"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-numerical.json",
+      "sha256": "1EF24474405B8C7482A39DF8DE3F6652A6BA2453E6E595AE685E6EDAD752434F"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-display-reference.json",
+      "sha256": "3E7BC1B7DB18FEAECCC21B83DF18EA1B502E4C88D91ED63E4286C9F5B09C2EA7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-browser-check.js",
+      "sha256": "C5DFDBF67770451111A0CF587B1E96084D4015E6370CF0BAC3D52EE3611FE8E1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-browser-check.json",
+      "sha256": "623B7464C98F24581DBC10765438D94212AF266E9C8C32AE8777A6964944E4AB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-physics.md",
+      "sha256": "03E2C88DE0C80EEA83C6A3D6544C06D30D9E79B59D759A8BAEF767DCEFC7C1E3"
+    }
+  ]
+}

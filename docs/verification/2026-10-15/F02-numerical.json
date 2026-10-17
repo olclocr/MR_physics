@@ -1,0 +1,464 @@
+{
+  "summary": {
+    "cases": 2583,
+    "maxEchoError": 2.084248178891245e-10,
+    "maxCoefficientError": 1.0260574890513847e-10,
+    "maxFieldErrorHz": 9.89206938584175e-9,
+    "maxResidualError": 1.3013534694295004e-10,
+    "maxTwoEchoFitError": 3.7238012298709097e-16,
+    "maxAlternativeError": 2.084244735261923e-10,
+    "method": "independent complex RK4 and generic 4x4 real-augmented QR; held-out third echo and swapped physical signals"
+  },
+  "examples": [
+    {
+      "options": {
+        "fieldHz": 0,
+        "fatFraction": 0.3,
+        "strategy": "known"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.7,
+          "imaginary": -1.8369701987210297e-17
+        },
+        "fat": {
+          "real": 0.30000000000000004,
+          "imaginary": -5.5109105961630896e-17
+        }
+      },
+      "thirdResidual": 6.656779788617954e-17,
+      "alternativeField": 447.0635286599999,
+      "alternativeResiduals": [
+        7.347880794884119e-17,
+        1.469576158976824e-16,
+        2.2043642384652358e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 0,
+        "fatFraction": 0.3,
+        "strategy": "zero"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.7,
+          "imaginary": -1.8369701987210297e-17
+        },
+        "fat": {
+          "real": 0.30000000000000004,
+          "imaginary": -5.5109105961630896e-17
+        }
+      },
+      "thirdResidual": 6.656779788617954e-17,
+      "alternativeField": 447.0635286599999,
+      "alternativeResiduals": [
+        7.347880794884119e-17,
+        1.469576158976824e-16,
+        2.2043642384652358e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 0,
+        "fatFraction": 0.3,
+        "strategy": "principal"
+      },
+      "assumedField": 5.228191364307391e-15,
+      "estimate": {
+        "water": {
+          "real": 0.7,
+          "imaginary": 2.5717582782094422e-17
+        },
+        "fat": {
+          "real": 0.30000000000000004,
+          "imaginary": -2.571758278209441e-17
+        }
+      },
+      "thirdResidual": 5.599535037121748e-17,
+      "alternativeField": 447.0635286599999,
+      "alternativeResiduals": [
+        7.347880794884119e-17,
+        1.469576158976824e-16,
+        2.2043642384652358e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 0,
+        "fatFraction": 0.5,
+        "strategy": "known"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": -3.061616997868383e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": -9.184850993605148e-17
+        }
+      },
+      "thirdResidual": 6.123233995736767e-17,
+      "alternativeField": 447.0635286599999,
+      "alternativeResiduals": [
+        1.2246467991473532e-16,
+        2.4492935982947064e-16,
+        3.6739403974420594e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 0,
+        "fatFraction": 0.5,
+        "strategy": "zero"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": -3.061616997868383e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": -9.184850993605148e-17
+        }
+      },
+      "thirdResidual": 6.123233995736767e-17,
+      "alternativeField": 447.0635286599999,
+      "alternativeResiduals": [
+        1.2246467991473532e-16,
+        2.4492935982947064e-16,
+        3.6739403974420594e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 0,
+        "fatFraction": 0.5,
+        "strategy": "principal"
+      },
+      "assumedField": 8.713652273845651e-15,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": 3.061616997868383e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": -3.061616997868383e-17
+        }
+      },
+      "thirdResidual": 6.123233995736767e-17,
+      "alternativeField": 447.0635286599999,
+      "alternativeResiduals": [
+        1.2246467991473532e-16,
+        2.4492935982947064e-16,
+        3.6739403974420594e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 100,
+        "fatFraction": 0.3,
+        "strategy": "known"
+      },
+      "assumedField": 100,
+      "estimate": {
+        "water": {
+          "real": 0.7,
+          "imaginary": -2.7755575615628914e-17
+        },
+        "fat": {
+          "real": 0.30000000000000004,
+          "imaginary": -5.551115123125783e-17
+        }
+      },
+      "thirdResidual": 7.850462293418876e-17,
+      "alternativeField": -347.0635286599999,
+      "alternativeResiduals": [
+        2.482534153247273e-16,
+        7.850462293418876e-16,
+        1.5700924586837752e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 100,
+        "fatFraction": 0.3,
+        "strategy": "zero"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.2349223597252391,
+          "imaginary": -0.6224381531705457
+        },
+        "fat": {
+          "real": -0.07031317951722973,
+          "imaginary": -0.36392071549300875
+        }
+      },
+      "thirdResidual": 0.517034875355074,
+      "alternativeField": -347.0635286599999,
+      "alternativeResiduals": [
+        2.482534153247273e-16,
+        7.850462293418876e-16,
+        1.5700924586837752e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 100,
+        "fatFraction": 0.3,
+        "strategy": "principal"
+      },
+      "assumedField": 100.00000000000001,
+      "estimate": {
+        "water": {
+          "real": 0.7,
+          "imaginary": 1.249000902703301e-16
+        },
+        "fat": {
+          "real": 0.30000000000000004,
+          "imaginary": 1.3877787807814457e-17
+        }
+      },
+      "thirdResidual": 2.355138688025663e-16,
+      "alternativeField": -347.0635286599999,
+      "alternativeResiduals": [
+        2.482534153247273e-16,
+        7.850462293418876e-16,
+        1.5700924586837752e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 100,
+        "fatFraction": 0.5,
+        "strategy": "known"
+      },
+      "assumedField": 100,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": -2.4894981252573997e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": -8.612732120994166e-17
+        }
+      },
+      "thirdResidual": 6.123233995736769e-17,
+      "alternativeField": -347.0635286599999,
+      "alternativeResiduals": [
+        1.2246467991473532e-16,
+        7.027150473277823e-16,
+        3.673940397442059e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 100,
+        "fatFraction": 0.5,
+        "strategy": "zero"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.08230459010400468,
+          "imaginary": -0.49317943433177724
+        },
+        "fat": {
+          "real": 0.08230459010400465,
+          "imaginary": -0.49317943433177724
+        }
+      },
+      "thirdResidual": 1.577912272928162e-16,
+      "alternativeField": -347.0635286599999,
+      "alternativeResiduals": [
+        1.2246467991473532e-16,
+        7.027150473277823e-16,
+        3.673940397442059e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 100,
+        "fatFraction": 0.5,
+        "strategy": "principal"
+      },
+      "assumedField": 100.00000000000001,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": 8.612732120994166e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": 2.4894981252573997e-17
+        }
+      },
+      "thirdResidual": 6.123233995736766e-17,
+      "alternativeField": -347.0635286599999,
+      "alternativeResiduals": [
+        1.2246467991473532e-16,
+        7.027150473277823e-16,
+        3.673940397442059e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 350,
+        "fatFraction": 0.3,
+        "strategy": "known"
+      },
+      "assumedField": 350,
+      "estimate": {
+        "water": {
+          "real": 0.7,
+          "imaginary": -2.7755575615628914e-17
+        },
+        "fat": {
+          "real": 0.3,
+          "imaginary": -5.551115123125783e-17
+        }
+      },
+      "thirdResidual": 0,
+      "alternativeField": -97.06352865999992,
+      "alternativeResiduals": [
+        2.482534153247273e-16,
+        7.575797802392804e-16,
+        3.2487068343022356e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 350,
+        "fatFraction": 0.3,
+        "strategy": "zero"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": -0.05267001767613176,
+          "imaginary": 0.3632815920543785
+        },
+        "fat": {
+          "real": 0.2578346905487324,
+          "imaginary": 0.6154458761435253
+        }
+      },
+      "thirdResidual": 0.5043285681782937,
+      "alternativeField": -97.06352865999992,
+      "alternativeResiduals": [
+        2.482534153247273e-16,
+        7.575797802392804e-16,
+        3.2487068343022356e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 350,
+        "fatFraction": 0.3,
+        "strategy": "principal"
+      },
+      "assumedField": -97.06352865999997,
+      "estimate": {
+        "water": {
+          "real": 0.3,
+          "imaginary": -4.163336342344337e-17
+        },
+        "fat": {
+          "real": 0.7,
+          "imaginary": -1.3877787807814457e-17
+        }
+      },
+      "thirdResidual": 2.237726045655905e-16,
+      "alternativeField": -97.06352865999992,
+      "alternativeResiduals": [
+        2.482534153247273e-16,
+        7.575797802392804e-16,
+        3.2487068343022356e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 350,
+        "fatFraction": 0.5,
+        "strategy": "known"
+      },
+      "assumedField": 350,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": -2.4894981252573997e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": -8.612732120994166e-17
+        }
+      },
+      "thirdResidual": 6.123233995736769e-17,
+      "alternativeField": -97.06352865999992,
+      "alternativeResiduals": [
+        1.2246467991473535e-16,
+        6.753223014464258e-16,
+        3.67394039744206e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 350,
+        "fatFraction": 0.5,
+        "strategy": "zero"
+      },
+      "assumedField": 0,
+      "estimate": {
+        "water": {
+          "real": 0.10258233643630037,
+          "imaginary": 0.4893637340989519
+        },
+        "fat": {
+          "real": 0.10258233643630034,
+          "imaginary": 0.4893637340989519
+        }
+      },
+      "thirdResidual": 3.172676033221675e-16,
+      "alternativeField": -97.06352865999992,
+      "alternativeResiduals": [
+        1.2246467991473535e-16,
+        6.753223014464258e-16,
+        3.67394039744206e-16
+      ]
+    },
+    {
+      "options": {
+        "fieldHz": 350,
+        "fatFraction": 0.5,
+        "strategy": "principal"
+      },
+      "assumedField": -97.06352865999996,
+      "estimate": {
+        "water": {
+          "real": 0.5,
+          "imaginary": 2.4894981252573997e-17
+        },
+        "fat": {
+          "real": 0.5,
+          "imaginary": 8.612732120994166e-17
+        }
+      },
+      "thirdResidual": 3.061616997868383e-16,
+      "alternativeField": -97.06352865999992,
+      "alternativeResiduals": [
+        1.2246467991473535e-16,
+        6.753223014464258e-16,
+        3.67394039744206e-16
+      ]
+    }
+  ]
+}

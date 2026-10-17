@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-17",
+  "cases": 72,
+  "curveSamples": 4320,
+  "max": {
+    "signal": 5.571654249081348e-13,
+    "fraction": 3.4877656318599293e-13,
+    "curve": 3.535505221918811e-13
+  },
+  "examples": [
+    {
+      "options": {
+        "fatDensityFraction": 0.3,
+        "trMs": 20,
+        "flipDeg": 3,
+        "report": "raw"
+      },
+      "rawFraction": 0.30973809873972263,
+      "correctedFraction": 0.3
+    },
+    {
+      "options": {
+        "fatDensityFraction": 0.3,
+        "trMs": 20,
+        "flipDeg": 15,
+        "report": "raw"
+      },
+      "rawFraction": 0.4352142698085102,
+      "correctedFraction": 0.3
+    },
+    {
+      "options": {
+        "fatDensityFraction": 0.3,
+        "trMs": 100,
+        "flipDeg": 15,
+        "report": "raw"
+      },
+      "rawFraction": 0.3431540277492833,
+      "correctedFraction": 0.29999999999999993
+    }
+  ]
+}

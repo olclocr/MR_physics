@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "cases": 405,
+    "spinPropagations": 810,
+    "maxVectorError": 3.626966782466212e-11,
+    "maxExponentialError": 3.6269640069086506e-11,
+    "maxNormError": 4.440892098500626e-16,
+    "method": "independent time-domain Bloch RK4 and general 3x3 scaled Taylor matrix exponential"
+  },
+  "examples": [
+    {
+      "options": {
+        "durationMs": 8,
+        "offsetHz": -450,
+        "b1Scale": 0
+      },
+      "water": {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "magnitude": 1
+      },
+      "fat": {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "magnitude": 1
+      },
+      "nominalB1MicroT": 0.7339560911700875,
+      "actualB1MicroT": 0
+    },
+    {
+      "options": {
+        "durationMs": 8,
+        "offsetHz": -450,
+        "b1Scale": 1
+      },
+      "water": {
+        "x": -0.09378915888379531,
+        "y": 0.9955902814117034,
+        "z": 0.0018934715301798504,
+        "magnitude": 0.0018934715301798504
+      },
+      "fat": {
+        "x": -0.12272845360555859,
+        "y": -0.04371163407977195,
+        "z": 0.991477190721836,
+        "magnitude": 0.991477190721836
+      },
+      "nominalB1MicroT": 0.7339560911700875,
+      "actualB1MicroT": 0.7339560911700875
+    },
+    {
+      "options": {
+        "durationMs": 8,
+        "offsetHz": -450,
+        "b1Scale": 2
+      },
+      "water": {
+        "x": -0.09375983030931796,
+        "y": -0.003461722245220087,
+        "z": -0.9955888261222425,
+        "magnitude": 0.9955888261222425
+      },
+      "fat": {
+        "x": -0.22665558639441155,
+        "y": -0.10293757080149107,
+        "z": 0.9685200574452206,
+        "magnitude": 0.9685200574452206
+      },
+      "nominalB1MicroT": 0.7339560911700875,
+      "actualB1MicroT": 1.467912182340175
+    },
+    {
+      "options": {
+        "durationMs": 8,
+        "offsetHz": 0,
+        "b1Scale": 0
+      },
+      "water": {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "magnitude": 1
+      },
+      "fat": {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "magnitude": 1
+      },
+      "nominalB1MicroT": 0.7339560911700875,
+      "actualB1MicroT": 0
+    },
+    {
+      "options": {
+        "durationMs": 8,
+        "offsetHz": 0,
+        "b1Scale": 1
+      },
+      "water": {
+        "x": 0.1293821350193113,
+        "y": -0.03558432023180761,
+        "z": 0.9909561137060939,
+        "magnitude": 0.9909561137060939
+      },
+      "fat": {
+        "x": 0,
+        "y": 1,
+        "z": 6.123233995736766e-17,
+        "magnitude": 6.123233995736766e-17
+      },
+      "nominalB1MicroT": 0.7339560911700875,
+      "actualB1MicroT": 0.7339560911700875
+    },
+    {
+      "options": {
+        "durationMs": 8,
+        "offsetHz": 0,
+        "b1Scale": 2
+      },
+      "water": {
+        "x": 0.2420633559207441,
+        "y": -0.08911572353955327,
+        "z": 0.9661592619948378,
+        "magnitude": 0.9661592619948378
+      },
+      "fat": {
+        "x": 0,
+        "y": 1.2246467991473532e-16,
+        "z": -1,
+        "magnitude": 1
+      },
+      "nominalB1MicroT": 0.7339560911700875,
+      "actualB1MicroT": 1.467912182340175
+    }
+  ]
+}

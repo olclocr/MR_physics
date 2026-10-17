@@ -1,0 +1,8 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),M=require('../docs/assets/volume-geometry-model.js'),{reference}=require('./helpers/volume-reference.cjs');const tolerance=1.7*3/(2*4096),near=(a,b,t=tolerance)=>assert.ok(Math.abs(a-b)<=t,`${a} != ${b}`);
+test('all 3D voxel averages and oriented MPR planes agree with independent spatial indicator quadrature',()=>{
+ for(const dx of [1.5,3,6])for(const dz of [1.5,3,6,12]){const v=M.volume(dx,dz),p=M.planes(v),r=reference(dx,dz);v.data.forEach((a,i)=>near(a,r.data[i]));for(const name of ['axial','coronal','sagittal']){assert.equal(p[name].width,r.planes[name].width);assert.equal(p[name].height,r.planes[name].height);p[name].data.forEach((a,i)=>near(a,r.planes[name].data[i]));}let sum=0,correction=0;for(const a of v.data){const y=a*v.geometry.voxelMm3-correction,t=sum+y;correction=(t-sum)-y;sum=t;}near(sum,.2*48**3+.8*16*16*6+.5*6**3+.4*6**3,1e-8);}
+});
+test('matched geometry has equal stack/slab arrays, isotropy is geometric, and larger z cells lose fine information',()=>{
+ for(const inPlaneMm of [1.5,3,6])for(const dz of [1.5,3,6,12]){const a=M.calculate({inPlaneMm,sliceMm:dz,partitionMm:dz});assert.deepEqual(a.stack.data,a.slab.data);assert.deepEqual(a.stack.planes,a.slab.planes);assert.equal(a.stack.geometry.isotropic,inPlaneMm===dz);near(a.stack.geometry.nz*dz,48,1e-12);}
+ const r=M.calculate();near(Math.max(...r.stack.planes.axial.data),.6,1e-12);near(Math.max(...r.slab.planes.axial.data),1,1e-12);for(const o of [{inPlaneMm:0},{sliceMm:5},{partitionMm:-1}])assert.throws(()=>M.calculate(o),RangeError);
+});

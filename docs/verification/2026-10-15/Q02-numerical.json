@@ -1,0 +1,147 @@
+{
+  "summary": {
+    "cases": 544,
+    "maxComplexError": 1.1041935314040005e-15,
+    "maxPositionErrorMm": 8.881784197001252e-16,
+    "maxSigmaError": 7.494005416219807e-15,
+    "maxEnergyError": 1.1102230246251565e-15,
+    "method": "SI frequency roots + independent Dirichlet kernel + white-noise PSD quadrature"
+  },
+  "examples": [
+    {
+      "options": {
+        "hzPerPixel": 50,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "fullHz": 3200,
+      "dwellSeconds": 0.0003125,
+      "readoutMs": 20,
+      "firstLastMs": 19.6875,
+      "gradientMilliTPerM": 0.31315459889923736,
+      "shiftMm": 0,
+      "sigma": 0.05,
+      "snrReference": 20
+    },
+    {
+      "options": {
+        "hzPerPixel": 50,
+        "offsetHz": 200,
+        "polarity": 1
+      },
+      "fullHz": 3200,
+      "dwellSeconds": 0.0003125,
+      "readoutMs": 20,
+      "firstLastMs": 19.6875,
+      "gradientMilliTPerM": 0.31315459889923736,
+      "shiftMm": 15,
+      "sigma": 0.05,
+      "snrReference": 20
+    },
+    {
+      "options": {
+        "hzPerPixel": 50,
+        "offsetHz": 400,
+        "polarity": 1
+      },
+      "fullHz": 3200,
+      "dwellSeconds": 0.0003125,
+      "readoutMs": 20,
+      "firstLastMs": 19.6875,
+      "gradientMilliTPerM": 0.31315459889923736,
+      "shiftMm": 30,
+      "sigma": 0.05,
+      "snrReference": 20
+    },
+    {
+      "options": {
+        "hzPerPixel": 200,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "fullHz": 12800,
+      "dwellSeconds": 0.000078125,
+      "readoutMs": 5,
+      "firstLastMs": 4.921875,
+      "gradientMilliTPerM": 1.2526183955969494,
+      "shiftMm": 0,
+      "sigma": 0.1,
+      "snrReference": 10
+    },
+    {
+      "options": {
+        "hzPerPixel": 200,
+        "offsetHz": 200,
+        "polarity": 1
+      },
+      "fullHz": 12800,
+      "dwellSeconds": 0.000078125,
+      "readoutMs": 5,
+      "firstLastMs": 4.921875,
+      "gradientMilliTPerM": 1.2526183955969494,
+      "shiftMm": 3.75,
+      "sigma": 0.1,
+      "snrReference": 10
+    },
+    {
+      "options": {
+        "hzPerPixel": 200,
+        "offsetHz": 400,
+        "polarity": 1
+      },
+      "fullHz": 12800,
+      "dwellSeconds": 0.000078125,
+      "readoutMs": 5,
+      "firstLastMs": 4.921875,
+      "gradientMilliTPerM": 1.2526183955969494,
+      "shiftMm": 7.5,
+      "sigma": 0.1,
+      "snrReference": 10
+    },
+    {
+      "options": {
+        "hzPerPixel": 800,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "fullHz": 51200,
+      "dwellSeconds": 0.00001953125,
+      "readoutMs": 1.25,
+      "firstLastMs": 1.23046875,
+      "gradientMilliTPerM": 5.010473582387798,
+      "shiftMm": 0,
+      "sigma": 0.2,
+      "snrReference": 5
+    },
+    {
+      "options": {
+        "hzPerPixel": 800,
+        "offsetHz": 200,
+        "polarity": 1
+      },
+      "fullHz": 51200,
+      "dwellSeconds": 0.00001953125,
+      "readoutMs": 1.25,
+      "firstLastMs": 1.23046875,
+      "gradientMilliTPerM": 5.010473582387798,
+      "shiftMm": 0.9375,
+      "sigma": 0.2,
+      "snrReference": 5
+    },
+    {
+      "options": {
+        "hzPerPixel": 800,
+        "offsetHz": 400,
+        "polarity": 1
+      },
+      "fullHz": 51200,
+      "dwellSeconds": 0.00001953125,
+      "readoutMs": 1.25,
+      "firstLastMs": 1.23046875,
+      "gradientMilliTPerM": 5.010473582387798,
+      "shiftMm": 1.875,
+      "sigma": 0.2,
+      "snrReference": 5
+    }
+  ]
+}

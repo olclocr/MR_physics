@@ -1,0 +1,6 @@
+const {fft}=require('./kspace-fft-reference.cjs');const cache=new Map();
+function coefficient(q){if(cache.has(q))return cache.get(q);let sum=0;const steps=4096,dy=40/steps;for(let j=0;j<=steps;j++){const y=-20+j*dy;sum+=(j===0||j===steps?1:j%2?4:2)*Math.cos(2*Math.PI*q*y/160);}const value=.8*sum*dy/3/160+(q===0?.2:0);cache.set(q,value);return value;}
+function reference(o){const m=o.display,k=o.cutoff,coefficients=Array.from({length:2*k+1},(_,i)=>{const q=i-k,weight=o.filter==='rect'?1:Math.cos(Math.PI*q/(2*(k+1)))**2;return{q,raw:coefficient(q),weight,value:coefficient(q)*weight};}),bins=Array.from({length:m},()=>({real:0,imaginary:0}));for(const p of coefficients)bins[(p.q+m)%m]={real:p.value*(p.q%2===0?1:-1),imaginary:0};const image=fft(bins,true),den=coefficients.reduce((s,p)=>s+p.weight,0),psf=x=>coefficients.reduce((s,p)=>s+p.weight*Math.cos(Math.PI*p.q*x/80),0)/den;
+ // Find the first half-height crossing by a dense independent bracket, then safeguarded secants.
+let left=0,right=.01;while(psf(right)>.5){left=right;right+=.01;}for(let it=0;it<100&&right-left>1e-10;it++){const a=psf(left)-.5,b=psf(right)-.5;let x=(left*b-right*a)/(b-a);if(x<=left+.1*(right-left)||x>=right-.1*(right-left))x=(left+right)/2;if(psf(x)>.5)left=x;else right=x;}return{coefficients,image,psf,fwhmMm:left+right};}
+module.exports={reference,coefficient};

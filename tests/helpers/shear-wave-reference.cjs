@@ -1,0 +1,3 @@
+// Independent spatial oscillator from μ u_xx + ρ ω²u = 0; distances in metres.
+function reference(o){const a=1000*(2*Math.PI*o.frequencyHz)**2/(o.modulusKPa*1000),k=Math.sqrt(a),phase=o.phaseDeg*Math.PI/180,step=.0005/128;let u=10*Math.cos(phase),v=10*k*Math.sin(phase),x=0;const curve=[u],crests=[];if(Math.abs(v)<1e-10&&u>0)crests.push(0);for(let j=1;j<=400*128;j++){const prevV=v,prevX=x,k1u=v,k1v=-a*u,k2u=v+step*k1v/2,k2v=-a*(u+step*k1u/2),k3u=v+step*k2v/2,k3v=-a*(u+step*k2u/2),k4u=v+step*k3v,k4v=-a*(u+step*k3u);u+=step/6*(k1u+2*k2u+2*k3u+k4u);v+=step/6*(k1v+2*k2v+2*k3v+k4v);x=j*step;if(prevV>0&&v<=0&&u>0)crests.push((prevX+step*prevV/(prevV-v))*1000);if(j%128===0)curve.push(u);}return{curve,crests,wavelengthMm:crests[1]-crests[0]};}
+module.exports={reference};

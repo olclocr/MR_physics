@@ -1,0 +1,47 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/dixon_water_fat.html",
+      "sha256": "E4DCC13CB8B99E523602498A59E8EE0EC7B9AA4B242DB4433F3B44DFB481DF1D"
+    },
+    {
+      "path": "docs/assets/dixon-model.js",
+      "sha256": "388EE6DE7658C031F43E8A8F1611DC50219A2AB83B80B1481358DA2A1F547113"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/dixon.test.cjs",
+      "sha256": "D517BB7E984725B2F68F1CCE33ACDE2CEFE8C85CCD1BD7ECB467AA7F7F22DA04"
+    },
+    {
+      "path": "tests/helpers/dixon-reference.cjs",
+      "sha256": "8C4A20BF39AB71E640630EB94815F1A1CB1A405E80235BA7F867043F585DB4C6"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-numerical.cjs",
+      "sha256": "732EFB0B8321F2EA33ED5817F3BE5AC51909E427BB04E728A450BA63D5EFCE15"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-display-reference.cjs",
+      "sha256": "31CAA63180BF73D2001C683F5A7B4CDDE3351C6A8B311277F25463A657F14337"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-browser-check.js",
+      "sha256": "65763BFB228B6C3C8741AEA3CB8D1FAC2EAFD4797343D35EF9D9F3027CBD0532"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

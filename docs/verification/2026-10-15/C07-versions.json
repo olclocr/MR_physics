@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/epi_trajectory.html",
+      "sha256": "3CF9285A9DCAC2F357803416D4523C222425F7D2C9CD0576CBD04F7414027110"
+    },
+    {
+      "path": "docs/assets/epi-model.js",
+      "sha256": "6C5D5BFA3588DBF7559A6B1CC2ECAB4055BC5621EB5263DED7057FA6C0C51383"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/epi.test.cjs",
+      "sha256": "06D906704CB563C81009AFEA99D9E8F313D18B34F79446EA216DB744CF734379"
+    },
+    {
+      "path": "tests/helpers/epi-reference.cjs",
+      "sha256": "E1DF12C58058961D360C681AB40BD1F8E38954CC4F13A998A635523720B02CA4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C07-numerical.cjs",
+      "sha256": "678591D90E61AAB2FAAB3D7E61369738F5441E60A904142C80BDB57D3A93B448"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C07-browser-check.js",
+      "sha256": "6B5F289E8069DEB42F977AC39BBF460D0B9D18E290F2BF1E9F7BE9BE13C81963"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

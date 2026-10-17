@@ -1,0 +1,38 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/t2_mapping_limits.html",
+      "sha256": "9D34B7D9A949D40956BFF7B2F43995F53D59C5D0168FF4933FB9A362D56CE488"
+    },
+    {
+      "path": "docs/assets/t2-limits-model.js",
+      "sha256": "C5013DB430FF34822BD66BBD9866A96DC226BD797F15F8B2A074668121B01E92"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/fixtures/t2-noise-realizations.json",
+      "sha256": "5251FB31D51780191171E9BF0FE50532DC2EA1C4503A90DE60AF765B294AE329"
+    },
+    {
+      "path": "tests/helpers/t2-limits-reference.cjs",
+      "sha256": "EDD2137F66C240B3770D5C673DB3ADB036145C8632A7A6443510CD4D1703F350"
+    },
+    {
+      "path": "tests/t2-limits.test.cjs",
+      "sha256": "9A800FB98473AB3D055AE5E9A81477CB9E6D52AB004DBA2024CE7334B303F043"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/sms_slice_separation.html",
+      "sha256": "A6B40DB1E24817123AD6D81D7F165680A85C42EBC11869E1D8E47253F9728B88"
+    },
+    {
+      "path": "docs/assets/sms-model.js",
+      "sha256": "49D775402BA7A0071A89BD65CF7A71EF33F9217D44149171C663E4C544C1E923"
+    },
+    {
+      "path": "tests/helpers/sms-reference.cjs",
+      "sha256": "FA179075BB1EFEBE4B733C157A012AD8C3119071F105A61B7154B40B982B9D5C"
+    },
+    {
+      "path": "tests/sms.test.cjs",
+      "sha256": "14B078ED5F6AA6BE88EA8CC348902A51A37AAF7497F642E3F8B88B657D27DE9B"
+    }
+  ]
+}

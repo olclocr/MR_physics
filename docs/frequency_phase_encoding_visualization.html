@@ -770,7 +770,7 @@
         <p id="quizGridFeedback" role="status">답을 선택해 이유를 확인하세요.</p>
         <p>학습 후: ① Gy가 꺼진 뒤 무엇이 남는가? ② readout 시간은 왜 x 위치 정보로 바뀌는가? ③ 신호가 거의 0일 때 위상 숫자를 해석할 수 있는가?</p>
         <details><summary>모형의 범위와 출처</summary>
-          <p>5×5 점 표본 모형입니다. RF는 이상적 순간 90°, 매 반복의 시작 자화는 같습니다. 균일 코일·동일 T2*의 단일 지수 감쇠를 쓰며 finite voxel profile·잡음·T1 정상상태·gradient ramp·실제 TR·slice selection은 제외합니다. 일반 역변환을 직접 합산합니다.</p>
+          <p>5×5 점 표본 모형입니다. RF는 이상적 순간 90°, 매 반복의 시작 자화는 같습니다. 균일 코일·동일 T2*의 단일 지수 감쇠를 쓰며 finite voxel profile·잡음·T1 정상상태·gradient ramp·실제 TR·slice selection은 제외합니다. <a href="slice_selection_partial_volume.html">G02 · Slice 선택과 부분 용적</a>에서 위치·두께를 비교하세요. 일반 역변환을 직접 합산합니다.</p>
           <p>한쪽 4줄 모드도 빠진 줄을 0으로 둘 뿐이며 실제 partial Fourier 위상 추정 복원은 수행하지 않습니다. 임의 k 격자는 정보를 모두 잃었다는 뜻이 아니라 이 화면의 고정 5×5 역변환 대상 밖입니다.</p>
           <p><a href="https://larsonlab.github.io/MRI-education-resources/Spatial%20Encoding.html">Larson · Spatial Encoding</a>의 위치와 주파수/위상, <a href="https://larsonlab.github.io/MRI-education-resources/K-space.html">K-space</a>의 gradient 적분·Fourier 부호, <a href="https://larsonlab.github.io/MRI-education-resources/MRI%20Signal%20Equation.html">MRI Signal Equation</a>의 복소 합을 기준으로 대조합니다.</p>
           <p><a href="verification/2026-10-15/B04-physics.html">B04 물리 검증 기록</a> · 독립 수치·실제 화면·대상 버전·적용 범위</p>

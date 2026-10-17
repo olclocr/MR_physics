@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/snr_cnr_averaging.html",
+      "sha256": "D0FEE7ACBAB4D6CE185B879F1E780A9006CA08323883D55D57B3B61CFD528516"
+    },
+    {
+      "path": "docs/assets/snr-averaging-model.js",
+      "sha256": "636E0004B60BD6CAB83552E0C77BD89D3E2478F9953477BF8A38522424FC92CD"
+    },
+    {
+      "path": "tests/helpers/noise-reference.cjs",
+      "sha256": "72A8387DA4EF7A74B6BD39166AD5678487BB753367FA66723D0DE8C756BF8CDD"
+    },
+    {
+      "path": "tests/snr-averaging.test.cjs",
+      "sha256": "7AB0EBDCB8C20A4B27E76FF75B33709FE093DF703D15F541D4FD25A815EF319B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-numerical.cjs",
+      "sha256": "7B280E2949841CA7BD702F0F0569454D79E2ED1B4860B058A578CF740508A321"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-numerical.json",
+      "sha256": "1463A73F5B3DB41C2D692DBC91A22A08AD6EADCF3F3B7B976DEFBC20297A988A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-browser-check.js",
+      "sha256": "2B5750BACA5CF14F1729BF140EBBD8183266556890D30DE68C63E94BBB93C5D1"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-browser-check.json",
+      "sha256": "5E8F2517B73F5BC7AC1815EFE09CE719490853B3312936E59D34D5B65A9A94AA"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

@@ -1,0 +1,90 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/processed_t2_mapping.html",
+      "sha256": "D12A42B717DC811A5CB66B04C2E4D37DB2874D90043650B34590DA612BCC88DB"
+    },
+    {
+      "path": "docs/assets/processed-t2-model.js",
+      "sha256": "DD84D1963E51DD90944F58FDC92DF39A1024152D22F26FC1293A577F93A4A22C"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "35938DCBBC78CEF3E6DFF6690C1ACFC9A6362965EB10EEEA86B04B1ACD9854E0"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "tests/processed-t2.test.cjs",
+      "sha256": "EE21D38B40257CCAAE44F373A5E8FB1CD3B2B0966960552D4A1F0A3CEB92D21B"
+    },
+    {
+      "path": "tests/helpers/processed-t2-reference.cjs",
+      "sha256": "15897167B6C8A9102AFB47F37DA6B3A689CC136D921E5A447EC6CCF0A0A42608"
+    },
+    {
+      "path": "tests/helpers/t2-fit-reference.cjs",
+      "sha256": "149B3D60B7ABCA3ACB0D65463955E5791ADAE41317118BB60D3E1959E6070CF8"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-reference.cjs",
+      "sha256": "5EE54A4B42F2995AEB696D7D93D8871084B71D0D7B2C4EA78CB0E63869AB1781"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-noise.json",
+      "sha256": "39B56947C210394251869BAF923C8FF95B342F019057735CAD6EE972D6E5F3DA"
+    },
+    {
+      "path": "tests/helpers/kspace-fft-reference.cjs",
+      "sha256": "FF6BC1FA5C0836677A7C5FD90988AE275DAE0164BA2FF78FA8DA4782311DEA62"
+    },
+    {
+      "path": "tests/helpers/compressed-sensing-reference.cjs",
+      "sha256": "A225B384BDF80146185446AFAD23211193C4F7FD70B91A9ADBE504938B1D0772"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-numerical.cjs",
+      "sha256": "1D45ED291F693B208F44DB07C4C2F73DAD08C607ECD519B5C12E3F6FC7ADEF20"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-numerical.json",
+      "sha256": "583A5955237EC6661FE70B1AE695E1E9F3FF5BDB2F006021317834262865245D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-display-reference.json",
+      "sha256": "E66E8D8AAC0AE81431F1A344E33AA733CFD09F4A9B3542797F7E1F2D08B83DD5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-browser-check.js",
+      "sha256": "F97F2ABBB713FAD62AD4F902FFA5482C8B0347F34DA5ADD570AF218321D17F8D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-browser-check.json",
+      "sha256": "6A5270D146C8AA0A166C67239FA81F52677CD33370D2EBE0940E1081F51F914B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-physics.md",
+      "sha256": "26ACC855198435751A53CD79046DD0A74326B73DE7D745901FAD184713555E75"
+    }
+  ]
+}

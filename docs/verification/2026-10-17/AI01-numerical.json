@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-17",
+  "cases": 72,
+  "complexComparisons": 32256,
+  "max": {
+    "complex": 1.426636586643326e-14,
+    "metric": 4.1279449700430936e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "sampling": "full",
+        "sigma": 0.15,
+        "processing": "smooth",
+        "consistency": false
+      },
+      "inputNRMSE": 0.4462860201005009,
+      "outputNRMSE": 0.315668630649851,
+      "dataResidual": 0.2795723508526394,
+      "missingError": null
+    },
+    {
+      "options": {
+        "sampling": "periodic",
+        "sigma": 0,
+        "processing": "identity",
+        "consistency": false
+      },
+      "inputNRMSE": 0.49927173821618315,
+      "outputNRMSE": 0.499271738216183,
+      "dataResidual": 1.5689302370756112e-15,
+      "missingError": 0.9999999999999999
+    },
+    {
+      "options": {
+        "sampling": "irregular",
+        "sigma": 0.05,
+        "processing": "haar",
+        "consistency": true
+      },
+      "inputNRMSE": 0.19818000067098848,
+      "outputNRMSE": 0.1402453865614499,
+      "dataResidual": 0,
+      "missingError": 0.4862036469221853
+    }
+  ]
+}

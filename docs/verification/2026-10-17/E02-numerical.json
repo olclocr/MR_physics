@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-17",
+  "cases": 27,
+  "reported": 1977,
+  "masked": 66,
+  "max": {
+    "modulusKPa": 5.073275133327115e-10,
+    "wave": 8.382183835919932e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "spacingMm": 1,
+        "reflection": 0,
+        "errorAmplitude": 0
+      },
+      "medianRealKPa": 4.011864595347626,
+      "rmseKPa": 0.011864595347627129,
+      "weakCount": 0,
+      "outsidePlotCount": 0
+    },
+    {
+      "options": {
+        "spacingMm": 4,
+        "reflection": 0,
+        "errorAmplitude": 0
+      },
+      "medianRealKPa": 4.19500671154154,
+      "rmseKPa": 0.19500671154153895,
+      "weakCount": 0,
+      "outsidePlotCount": 0
+    },
+    {
+      "options": {
+        "spacingMm": 1,
+        "reflection": 1,
+        "errorAmplitude": 0
+      },
+      "medianRealKPa": 4.011864595347641,
+      "rmseKPa": 0.011864595347643673,
+      "weakCount": 3,
+      "outsidePlotCount": 0
+    },
+    {
+      "options": {
+        "spacingMm": 1,
+        "reflection": 0,
+        "errorAmplitude": 0.02
+      },
+      "medianRealKPa": 3.640257514862423,
+      "rmseKPa": 1.3191905019919936,
+      "weakCount": 0,
+      "outsidePlotCount": 0
+    },
+    {
+      "options": {
+        "spacingMm": 1,
+        "reflection": 0,
+        "errorAmplitude": 0.1
+      },
+      "medianRealKPa": 1.2519753473272923,
+      "rmseKPa": 4.714816060602644,
+      "weakCount": 0,
+      "outsidePlotCount": 0
+    }
+  ]
+}

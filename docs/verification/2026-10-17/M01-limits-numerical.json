@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-17",
+  "cases": 48,
+  "curveSamples": 19248,
+  "max": {
+    "signal": 2.1094237467877974e-15,
+    "slope": 7.632783294297951e-17,
+    "amplitude": 1.7763568394002505e-14,
+    "t2Relative": 2.5646151868841116e-14,
+    "rmse": 5.585809592645319e-16
+  },
+  "rayleigh": {
+    "samples": 65536,
+    "mean": 1.2536527471457755,
+    "expected": 1.2533141373155001,
+    "standardError": 0.0025591264748516937
+  },
+  "nondecaying": [
+    {
+      "options": {
+        "mode": "mono",
+        "sigma": 0.08,
+        "realization": "b",
+        "subset": "late"
+      },
+      "slope": 0.004286901625062553,
+      "formalT2Ms": -233.26870720654998
+    },
+    {
+      "options": {
+        "mode": "mono",
+        "sigma": 0.2,
+        "realization": "b",
+        "subset": "late"
+      },
+      "slope": 0.011274427442262105,
+      "formalT2Ms": -88.69630011112649
+    },
+    {
+      "options": {
+        "mode": "bi",
+        "sigma": 0.2,
+        "realization": "b",
+        "subset": "late"
+      },
+      "slope": 0.006525007189128633,
+      "formalT2Ms": -153.25653612552458
+    }
+  ],
+  "mixtureNoNoise": [
+    {
+      "subset": "all",
+      "t2Ms": 106.38904071099101,
+      "rmse": 0.03243664888725325
+    },
+    {
+      "subset": "early",
+      "t2Ms": 79.76885542152941,
+      "rmse": 0.01260052386432179
+    },
+    {
+      "subset": "late",
+      "t2Ms": 118.31232066068101,
+      "rmse": 0.0008494288627409848
+    }
+  ]
+}

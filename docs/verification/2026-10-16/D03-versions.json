@@ -1,0 +1,27 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/dwi_epi_conditions.html",
+      "sha256": "2A572E94AB37D0DDC9D0DD667EB8F1E32DD7D3649B843AF146B4B0185430273E"
+    },
+    {
+      "path": "docs/assets/dwi-epi-model.js",
+      "sha256": "32A2AF2E7B98928A59179CC4C07AD8C8FF5BC9DBC5B4B9A00B66BA5370BB81BF"
+    },
+    {
+      "path": "tests/helpers/dwi-epi-reference.cjs",
+      "sha256": "DEF5F5B45D6C71FFF74AC11A6726FD97A4D5C0F942A203EE3BF3C929DB32D0AC"
+    },
+    {
+      "path": "tests/dwi-epi.test.cjs",
+      "sha256": "76193397D3766186B8FD863F4C33353D5114999B4A163B7C6F9FF1BC11EF8086"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    }
+  ],
+  "navigationAudit": "checkpoint-W31-browser.json"
+}

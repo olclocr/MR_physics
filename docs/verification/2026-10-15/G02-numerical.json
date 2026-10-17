@@ -1,0 +1,456 @@
+{
+  "summary": {
+    "cases": 3280,
+    "steps": 20000,
+    "maxGeometryError": 1.4210854715202004e-14,
+    "maxFractionError": 0.00002142857142861665,
+    "maxAverageError": 0.000015000000410103631,
+    "maxIntegralError": 0.0006165231334449572
+  },
+  "examples": [
+    {
+      "options": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 0,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 0,
+        "thicknessMm": 2.34865949174428,
+        "lowMm": -1.17432974587214,
+        "highMm": 1.17432974587214,
+        "lowFrequencyHz": -500,
+        "highFrequencyHz": 500,
+        "lengthA": 1.17432974587214,
+        "lengthB": 1.17432974587214,
+        "fractionA": 0.5,
+        "fractionB": 0.5,
+        "integratedSignal": 1.526628669633782,
+        "meanSignal": 0.65
+      },
+      "reference": {
+        "lowMm": -1.1743297458721402,
+        "highMm": 1.1743297458721398,
+        "centerMm": -2.220446049250313e-16,
+        "thicknessMm": 2.34865949174428,
+        "fractionA": 0.5,
+        "fractionB": 0.5,
+        "integratedSignal": 1.5266286696347098,
+        "meanSignal": 0.650000000000395
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 500,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 500,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 1.17432974587214,
+        "thicknessMm": 2.34865949174428,
+        "lowMm": 0,
+        "highMm": 2.34865949174428,
+        "lowFrequencyHz": 0,
+        "highFrequencyHz": 1000,
+        "lengthA": 0,
+        "lengthB": 2.34865949174428,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 0.704597847523284,
+        "meanSignal": 0.3
+      },
+      "reference": {
+        "lowMm": -7.888609052210118e-28,
+        "highMm": 2.3486594917442796,
+        "centerMm": 1.1743297458721398,
+        "thicknessMm": 2.3486594917442796,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 0.7045978475230436,
+        "meanSignal": 0.2999999999998977
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 1000,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 1000,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 2.34865949174428,
+        "thicknessMm": 2.34865949174428,
+        "lowMm": 1.17432974587214,
+        "highMm": 3.52298923761642,
+        "lowFrequencyHz": 500,
+        "highFrequencyHz": 1500,
+        "lengthA": 0,
+        "lengthB": 2.34865949174428,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 0.704597847523284,
+        "meanSignal": 0.3
+      },
+      "reference": {
+        "lowMm": 1.1743297458721398,
+        "highMm": 3.52298923761642,
+        "centerMm": 2.3486594917442796,
+        "thicknessMm": 2.34865949174428,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 0.7045978475230436,
+        "meanSignal": 0.2999999999998976
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 2000,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 1000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 2000,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 4.69731898348856,
+        "thicknessMm": 2.34865949174428,
+        "lowMm": 3.52298923761642,
+        "highMm": 5.8716487293607,
+        "lowFrequencyHz": 1500,
+        "highFrequencyHz": 2500,
+        "lengthA": 0,
+        "lengthB": 2.34865949174428,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 0.704597847523284,
+        "meanSignal": 0.3
+      },
+      "reference": {
+        "lowMm": 3.52298923761642,
+        "highMm": 5.8716487293607,
+        "centerMm": 4.69731898348856,
+        "thicknessMm": 2.3486594917442805,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 0.7045978475230436,
+        "meanSignal": 0.29999999999989757
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 0,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 0,
+        "thicknessMm": 4.69731898348856,
+        "lowMm": -2.34865949174428,
+        "highMm": 2.34865949174428,
+        "lowFrequencyHz": -1000,
+        "highFrequencyHz": 1000,
+        "lengthA": 2.34865949174428,
+        "lengthB": 2.34865949174428,
+        "fractionA": 0.5,
+        "fractionB": 0.5,
+        "integratedSignal": 3.053257339267564,
+        "meanSignal": 0.65
+      },
+      "reference": {
+        "lowMm": -2.3486594917442805,
+        "highMm": 2.3486594917442796,
+        "centerMm": -4.440892098500626e-16,
+        "thicknessMm": 4.69731898348856,
+        "fractionA": 0.5,
+        "fractionB": 0.5,
+        "integratedSignal": 3.0532573392694196,
+        "meanSignal": 0.650000000000395
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 500,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 500,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 1.17432974587214,
+        "thicknessMm": 4.69731898348856,
+        "lowMm": -1.17432974587214,
+        "highMm": 3.52298923761642,
+        "lowFrequencyHz": -500,
+        "highFrequencyHz": 1500,
+        "lengthA": 1.17432974587214,
+        "lengthB": 3.52298923761642,
+        "fractionA": 0.25,
+        "fractionB": 0.75,
+        "integratedSignal": 2.231226517157066,
+        "meanSignal": 0.475
+      },
+      "reference": {
+        "lowMm": -1.1743297458721402,
+        "highMm": 3.52298923761642,
+        "centerMm": 1.1743297458721398,
+        "thicknessMm": 4.69731898348856,
+        "fractionA": 0.25,
+        "fractionB": 0.75,
+        "integratedSignal": 2.231226517157186,
+        "meanSignal": 0.4750000000000255
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 1000,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 1000,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 2.34865949174428,
+        "thicknessMm": 4.69731898348856,
+        "lowMm": 0,
+        "highMm": 4.69731898348856,
+        "lowFrequencyHz": 0,
+        "highFrequencyHz": 2000,
+        "lengthA": 0,
+        "lengthB": 4.69731898348856,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 1.409195695046568,
+        "meanSignal": 0.3
+      },
+      "reference": {
+        "lowMm": -7.888609052210118e-28,
+        "highMm": 4.697318983488559,
+        "centerMm": 2.3486594917442796,
+        "thicknessMm": 4.697318983488559,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 1.409195695046087,
+        "meanSignal": 0.2999999999998977
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 2000,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 2000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 2000,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 4.69731898348856,
+        "thicknessMm": 4.69731898348856,
+        "lowMm": 2.34865949174428,
+        "highMm": 7.04597847523284,
+        "lowFrequencyHz": 1000,
+        "highFrequencyHz": 3000,
+        "lengthA": 0,
+        "lengthB": 4.69731898348856,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 1.409195695046568,
+        "meanSignal": 0.3
+      },
+      "reference": {
+        "lowMm": 2.3486594917442796,
+        "highMm": 7.04597847523284,
+        "centerMm": 4.697318983488559,
+        "thicknessMm": 4.69731898348856,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 1.409195695046087,
+        "meanSignal": 0.2999999999998976
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 0,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 0,
+        "thicknessMm": 9.39463796697712,
+        "lowMm": -4.69731898348856,
+        "highMm": 4.69731898348856,
+        "lowFrequencyHz": -2000,
+        "highFrequencyHz": 2000,
+        "lengthA": 4.69731898348856,
+        "lengthB": 4.69731898348856,
+        "fractionA": 0.5,
+        "fractionB": 0.5,
+        "integratedSignal": 6.106514678535128,
+        "meanSignal": 0.65
+      },
+      "reference": {
+        "lowMm": -4.697318983488561,
+        "highMm": 4.697318983488559,
+        "centerMm": -8.881784197001252e-16,
+        "thicknessMm": 9.39463796697712,
+        "fractionA": 0.5,
+        "fractionB": 0.5,
+        "integratedSignal": 6.106514678538839,
+        "meanSignal": 0.650000000000395
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 500,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 500,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 1.17432974587214,
+        "thicknessMm": 9.39463796697712,
+        "lowMm": -3.52298923761642,
+        "highMm": 5.8716487293607,
+        "lowFrequencyHz": -1500,
+        "highFrequencyHz": 2500,
+        "lengthA": 3.52298923761642,
+        "lengthB": 5.8716487293607,
+        "fractionA": 0.375,
+        "fractionB": 0.625,
+        "integratedSignal": 5.28448385642463,
+        "meanSignal": 0.5625
+      },
+      "reference": {
+        "lowMm": -3.5229892376164207,
+        "highMm": 5.8716487293607,
+        "centerMm": 1.1743297458721398,
+        "thicknessMm": 9.394637966977122,
+        "fractionA": 0.375,
+        "fractionB": 0.625,
+        "integratedSignal": 5.284483856427705,
+        "meanSignal": 0.5625000000003272
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 1000,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 1000,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 2.34865949174428,
+        "thicknessMm": 9.39463796697712,
+        "lowMm": -2.34865949174428,
+        "highMm": 7.04597847523284,
+        "lowFrequencyHz": -1000,
+        "highFrequencyHz": 3000,
+        "lengthA": 2.34865949174428,
+        "lengthB": 7.04597847523284,
+        "fractionA": 0.25,
+        "fractionB": 0.75,
+        "integratedSignal": 4.462453034314132,
+        "meanSignal": 0.475
+      },
+      "reference": {
+        "lowMm": -2.3486594917442805,
+        "highMm": 7.04597847523284,
+        "centerMm": 2.3486594917442796,
+        "thicknessMm": 9.39463796697712,
+        "fractionA": 0.25,
+        "fractionB": 0.75,
+        "integratedSignal": 4.462453034314372,
+        "meanSignal": 0.4750000000000255
+      }
+    },
+    {
+      "options": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 2000,
+        "polarity": 1
+      },
+      "actual": {
+        "bandwidthHz": 4000,
+        "gradientMilliTPerM": 10,
+        "offsetHz": 2000,
+        "polarity": 1,
+        "slopeHzPerMm": 425.7747892,
+        "centerMm": 4.69731898348856,
+        "thicknessMm": 9.39463796697712,
+        "lowMm": 0,
+        "highMm": 9.39463796697712,
+        "lowFrequencyHz": 0,
+        "highFrequencyHz": 4000,
+        "lengthA": 0,
+        "lengthB": 9.39463796697712,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 2.818391390093136,
+        "meanSignal": 0.3
+      },
+      "reference": {
+        "lowMm": -7.888609052210118e-28,
+        "highMm": 9.394637966977118,
+        "centerMm": 4.697318983488559,
+        "thicknessMm": 9.394637966977118,
+        "fractionA": 0,
+        "fractionB": 1,
+        "integratedSignal": 2.818391390092174,
+        "meanSignal": 0.2999999999998977
+      }
+    }
+  ]
+}

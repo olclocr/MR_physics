@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-17",
+  "cases": 30,
+  "complexSamples": 2880,
+  "max": {
+    "coefficients": 2.7755575615628914e-15,
+    "image": 1.1692242128166958e-15,
+    "averageImage": 1.1986939218999737e-15,
+    "trajectory": 1.7763568394002505e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "amplitudeMm": 10,
+        "motion": "periodic",
+        "order": "linear",
+        "gating": false
+      },
+      "error": 1.1676212422666288,
+      "averageError": 0.873799598082399,
+      "elapsedMs": 8000
+    },
+    {
+      "options": {
+        "amplitudeMm": 10,
+        "motion": "periodic",
+        "order": "linear",
+        "gating": true
+      },
+      "error": 0,
+      "averageError": 0,
+      "elapsedMs": 62250
+    },
+    {
+      "options": {
+        "amplitudeMm": 10,
+        "motion": "periodic",
+        "order": "centric",
+        "gating": false
+      },
+      "error": 1.1676010287899932,
+      "averageError": 0.873799598082399,
+      "elapsedMs": 8000
+    },
+    {
+      "options": {
+        "amplitudeMm": 10,
+        "motion": "periodic",
+        "order": "centric",
+        "gating": true
+      },
+      "error": 0,
+      "averageError": 0,
+      "elapsedMs": 62250
+    },
+    {
+      "options": {
+        "amplitudeMm": 10,
+        "motion": "step",
+        "order": "linear",
+        "gating": false
+      },
+      "error": 1,
+      "averageError": 0.7071067811865475,
+      "elapsedMs": 8000
+    },
+    {
+      "options": {
+        "amplitudeMm": 10,
+        "motion": "step",
+        "order": "centric",
+        "gating": false
+      },
+      "error": 1.0297912732855354,
+      "averageError": 0.7071067811865475,
+      "elapsedMs": 8000
+    }
+  ]
+}

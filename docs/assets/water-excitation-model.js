@@ -1,0 +1,8 @@
+(function(root,factory){const chemical=typeof module==='object'&&module.exports?require('./chemical-shift-model.js'):root.ChemicalShift,api=factory(chemical);if(typeof module==='object'&&module.exports)module.exports=api;else root.WaterExcitation=api;})(typeof globalThis!=='undefined'?globalThis:this,function(chemical){
+ 'use strict';const defaults=Object.freeze({delayMs:1.118,offsetHz:0,b1Scale:1}),fatHz=chemical.frequencyHz(3),idealDelayMs=500/Math.abs(fatHz);
+ function rf(m,angle){const a=angle*Math.PI/180,c=Math.cos(a),s=Math.sin(a);return {x:m.x,y:m.y*c+m.z*s,z:m.z*c-m.y*s};}
+ function evolve(m,frequencyHz,delayMs){const a=-2*Math.PI*frequencyHz*delayMs/1000,c=Math.cos(a),s=Math.sin(a);return {x:m.x*c-m.y*s,y:m.x*s+m.y*c,z:m.z};}
+ function history(frequencyHz,delayMs,b1Scale){const initial={x:0,y:0,z:1},first=rf(initial,45*b1Scale),gap=evolve(first,frequencyHz,delayMs),last=rf(gap,45*b1Scale);return {initial,first,gap,last,magnitude:Math.hypot(last.x,last.y)};}
+ function calculate(options={}){const o={...defaults,...options};if(!Number.isFinite(o.delayMs)||o.delayMs<0||o.delayMs>2.5||!Number.isFinite(o.offsetHz)||o.offsetHz< -500||o.offsetHz>500||!Number.isFinite(o.b1Scale)||o.b1Scale<0||o.b1Scale>2)throw new RangeError('Unsupported water excitation scenario');const water=history(o.offsetHz,o.delayMs,o.b1Scale),fat=history(o.offsetHz+fatHz,o.delayMs,o.b1Scale),curve=Array.from({length:501},(_,i)=>{const frequencyHz=-1000+i*4,h=history(frequencyHz,o.delayMs,o.b1Scale);return {frequencyHz,magnitude:h.magnitude,mz:h.last.z};});return {options:o,fatHz,idealDelayMs,actualFlipDeg:45*o.b1Scale,waterFrequencyHz:o.offsetHz,fatFrequencyHz:o.offsetHz+fatHz,water,fat,curve};}
+ return {defaults,fatHz,idealDelayMs,rf,evolve,history,calculate};
+});

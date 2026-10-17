@@ -1,0 +1,1 @@
+{"learningPages":59,"reports":62,"browserStates":242,"changes":[{"manifest":"docs\\verification\\2026-10-17\\AI03-t2-versions.json","path":"docs/processed_t2_mapping.html","before":"E4E120E866DA9311318976D7FC12C72812321E70D340AD33FDDDAE2FD646BA7F","after":"D12A42B717DC811A5CB66B04C2E4D37DB2874D90043650B34590DA612BCC88DB"}]}

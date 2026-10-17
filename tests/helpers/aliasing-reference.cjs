@@ -1,0 +1,4 @@
+const {fft}=require('./kspace-fft-reference.cjs');
+function reference(o){const n=o.fovMm/4,m=n*o.displayFactor,points=[[-20,1],[o.positionMm,.6]],grid=Array(n).fill(0);for(const [x,a]of points){const j=((x/4)%n+n)%n;grid[j]+=a;}const standard=fft(grid.map(real=>({real,imaginary:0}))),coefficients=Array.from({length:n},(_,i)=>standard[(i+n/2)%n]),r=o.mask==='full'?1:2,count=n/r;
+ const image=Array.from({length:m},(_,j)=>{const x=-o.fovMm/2+j*o.fovMm/m;let real=0,imaginary=0;for(const [p,a]of points){const t=(x-p)/o.fovMm,phase=2*Math.PI*(-n/2+r*(count-1)/2)*t,den=Math.sin(Math.PI*r*t);let kr,ki;if(Math.abs(den)<1e-10){const ph=-Math.PI*n*t;kr=count/n*Math.cos(ph);ki=count/n*Math.sin(ph);}else{const ratio=Math.sin(Math.PI*count*r*t)/(n*den);kr=ratio*Math.cos(phase);ki=ratio*Math.sin(phase);}real+=a*kr;imaginary+=a*ki;}return{positionMm:x,real,imaginary,magnitude:Math.hypot(real,imaginary)};});return{coefficients,image};}
+module.exports={reference};

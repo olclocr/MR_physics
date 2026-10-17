@@ -1,0 +1,74 @@
+{
+  "summary": {
+    "cases": 24,
+    "maxCoefficientError": 4.3021626581059554e-13,
+    "maxImageError": 3.384907736972331e-13,
+    "maxObjectiveError": 1.5543122344752192e-15,
+    "maxGapDifference": 2.936539900133539e-14,
+    "maxADMMGap": 8.587960724504295e-11,
+    "maxDualFeasibility": 4.163336342344337e-17,
+    "maxObjectiveDifferenceToADMM": 1.2188893835224368e-9,
+    "maxMagnitude": 1.0551873882831044,
+    "maxDetailCoefficient": 1.6,
+    "iterationMismatches": 0,
+    "productNotAtTolerance": [
+      {
+        "options": {
+          "phantom": "dense",
+          "sampling": "irregular",
+          "lambda": 0.001
+        },
+        "gap": 0.000003929868215074225,
+        "iterations": 2000
+      },
+      {
+        "options": {
+          "phantom": "dense",
+          "sampling": "irregular",
+          "lambda": 0.01
+        },
+        "gap": 7.731093745189099e-7,
+        "iterations": 2000
+      }
+    ],
+    "method": "explicit orthonormal Haar basis, radix-2 FFT, dense complex normal operator, independent ADMM rho=.02"
+  },
+  "examples": [
+    {
+      "options": {
+        "phantom": "steps",
+        "sampling": "irregular",
+        "lambda": 0.01
+      },
+      "error": 0.007192797745824434,
+      "gap": 3.5110803153770576e-15,
+      "aliasDifference": 3.4571511100406327,
+      "truthL1": 7.297056274847712,
+      "shiftedL1": 7.297056274847712
+    },
+    {
+      "options": {
+        "phantom": "steps",
+        "sampling": "periodic",
+        "lambda": 0.01
+      },
+      "error": 0.5000546845096051,
+      "gap": 1.457167719820518e-15,
+      "aliasDifference": 0,
+      "truthL1": 7.297056274847712,
+      "shiftedL1": 7.297056274847712
+    },
+    {
+      "options": {
+        "phantom": "steps",
+        "sampling": "full",
+        "lambda": 0.01
+      },
+      "error": 0.006846531968814463,
+      "gap": 6.50868248186498e-15,
+      "aliasDifference": 3.5777087639996643,
+      "truthL1": 7.297056274847712,
+      "shiftedL1": 7.297056274847712
+    }
+  ]
+}

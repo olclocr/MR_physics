@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-17",
+  "cases": 12,
+  "imageSamples": 3840,
+  "psfSamples": 9612,
+  "max": {
+    "coefficient": 8.261811373921901e-13,
+    "image": 7.784217717828892e-12,
+    "psf": 3.3306690738754696e-16,
+    "fwhmMm": 9.702638692488108e-11
+  },
+  "examples": [
+    {
+      "options": {
+        "cutoff": 8,
+        "display": 128,
+        "filter": "rect"
+      },
+      "fwhmMm": 11.371654351386844,
+      "overshoot": 0.09382942452410692,
+      "undershoot": 0.060029330777604945
+    },
+    {
+      "options": {
+        "cutoff": 8,
+        "display": 128,
+        "filter": "hann"
+      },
+      "fwhmMm": 17.777777777720992,
+      "overshoot": 0.00716088220211164,
+      "undershoot": 0.005005926071631611
+    },
+    {
+      "options": {
+        "cutoff": 16,
+        "display": 128,
+        "filter": "rect"
+      },
+      "fwhmMm": 5.852675891217839,
+      "overshoot": 0.08098202082337203,
+      "undershoot": 0.0648216840974502
+    },
+    {
+      "options": {
+        "cutoff": 16,
+        "display": 128,
+        "filter": "hann"
+      },
+      "fwhmMm": 9.411764705805698,
+      "overshoot": 0.004717255406458953,
+      "undershoot": 0.004645484249205384
+    },
+    {
+      "options": {
+        "cutoff": 32,
+        "display": 128,
+        "filter": "rect"
+      },
+      "fwhmMm": 2.9706179741017347,
+      "overshoot": 0.07591207290657498,
+      "undershoot": 0.06792374222871925
+    },
+    {
+      "options": {
+        "cutoff": 32,
+        "display": 128,
+        "filter": "hann"
+      },
+      "fwhmMm": 4.8484848484325695,
+      "overshoot": 0.004964271127749775,
+      "undershoot": 0.004961655479658572
+    }
+  ]
+}

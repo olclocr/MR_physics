@@ -1,0 +1,395 @@
+{
+  "summary": {
+    "cases": 504,
+    "maxVectorError": 1.5015755305824996e-10,
+    "maxSignalError": 9.607620254925564e-11,
+    "maxTimeErrorMs": 8.881784197001252e-16,
+    "method": "independent SI frequency, simultaneous complex RK4 ODE and phase-root bisection"
+  },
+  "examples": [
+    {
+      "b0": 1.5,
+      "teMs": 0,
+      "fatFraction": 0,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 1,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 1,
+      "individualSum": 1
+    },
+    {
+      "b0": 1.5,
+      "teMs": 0,
+      "fatFraction": 0.5,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.5,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.5,
+        "imaginary": 0
+      },
+      "magnitude": 1,
+      "individualSum": 1
+    },
+    {
+      "b0": 1.5,
+      "teMs": 0,
+      "fatFraction": 1,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 1,
+        "imaginary": 0
+      },
+      "magnitude": 1,
+      "individualSum": 1
+    },
+    {
+      "b0": 1.5,
+      "teMs": 1.1,
+      "fatFraction": 0,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.972874682553454,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 0.972874682553454,
+      "individualSum": 0.972874682553454
+    },
+    {
+      "b0": 1.5,
+      "teMs": 1.1,
+      "fatFraction": 0.5,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.486437341276727,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.012575766814515556,
+        "imaginary": 0.48627475471938486
+      },
+      "magnitude": 0.6967619529827098,
+      "individualSum": 0.972874682553454
+    },
+    {
+      "b0": 1.5,
+      "teMs": 1.1,
+      "fatFraction": 1,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.025151533629031112,
+        "imaginary": 0.9725495094387697
+      },
+      "magnitude": 0.9728746825534539,
+      "individualSum": 0.972874682553454
+    },
+    {
+      "b0": 1.5,
+      "teMs": 2.2368185635659814,
+      "fatFraction": 0,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.9456143431976153,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 0.9456143431976153,
+      "individualSum": 0.9456143431976153
+    },
+    {
+      "b0": 1.5,
+      "teMs": 2.2368185635659814,
+      "fatFraction": 0.5,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.47280717159880764,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": -0.47280717159880764,
+        "imaginary": 5.790217893123932e-17
+      },
+      "magnitude": 5.790217893123932e-17,
+      "individualSum": 0.9456143431976153
+    },
+    {
+      "b0": 1.5,
+      "teMs": 2.2368185635659814,
+      "fatFraction": 1,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": -0.9456143431976153,
+        "imaginary": 1.1580435786247864e-16
+      },
+      "magnitude": 0.9456143431976153,
+      "individualSum": 0.9456143431976153
+    },
+    {
+      "b0": 1.5,
+      "teMs": 4.473637127131963,
+      "fatFraction": 0,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.8941864860610573,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 0.8941864860610573,
+      "individualSum": 0.8941864860610573
+    },
+    {
+      "b0": 1.5,
+      "teMs": 4.473637127131963,
+      "fatFraction": 0.5,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0.44709324303052866,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.44709324303052866,
+        "imaginary": -1.0950626179954932e-16
+      },
+      "magnitude": 0.8941864860610573,
+      "individualSum": 0.8941864860610573
+    },
+    {
+      "b0": 1.5,
+      "teMs": 4.473637127131963,
+      "fatFraction": 1,
+      "deltaHz": -223.53176432999996,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.8941864860610573,
+        "imaginary": -2.1901252359909865e-16
+      },
+      "magnitude": 0.8941864860610573,
+      "individualSum": 0.8941864860610573
+    },
+    {
+      "b0": 3,
+      "teMs": 0,
+      "fatFraction": 0,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 1,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 1,
+      "individualSum": 1
+    },
+    {
+      "b0": 3,
+      "teMs": 0,
+      "fatFraction": 0.5,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.5,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.5,
+        "imaginary": 0
+      },
+      "magnitude": 1,
+      "individualSum": 1
+    },
+    {
+      "b0": 3,
+      "teMs": 0,
+      "fatFraction": 1,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 1,
+        "imaginary": 0
+      },
+      "magnitude": 1,
+      "individualSum": 1
+    },
+    {
+      "b0": 3,
+      "teMs": 1.1,
+      "fatFraction": 0,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.972874682553454,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 0.972874682553454,
+      "individualSum": 0.972874682553454
+    },
+    {
+      "b0": 3,
+      "teMs": 1.1,
+      "fatFraction": 0.5,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.486437341276727,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": -0.48578710373304673,
+        "imaginary": 0.025143126993854036
+      },
+      "magnitude": 0.02515153362903111,
+      "individualSum": 0.972874682553454
+    },
+    {
+      "b0": 3,
+      "teMs": 1.1,
+      "fatFraction": 1,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": -0.9715742074660935,
+        "imaginary": 0.05028625398770807
+      },
+      "magnitude": 0.9728746825534539,
+      "individualSum": 0.972874682553454
+    },
+    {
+      "b0": 3,
+      "teMs": 1.1184092817829907,
+      "fatFraction": 0,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.9724270374673954,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 0.9724270374673954,
+      "individualSum": 0.9724270374673954
+    },
+    {
+      "b0": 3,
+      "teMs": 1.1184092817829907,
+      "fatFraction": 0.5,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.4862135187336977,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": -0.4862135187336977,
+        "imaginary": 5.954398294193945e-17
+      },
+      "magnitude": 5.954398294193945e-17,
+      "individualSum": 0.9724270374673954
+    },
+    {
+      "b0": 3,
+      "teMs": 1.1184092817829907,
+      "fatFraction": 1,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": -0.9724270374673954,
+        "imaginary": 1.190879658838789e-16
+      },
+      "magnitude": 0.9724270374673954,
+      "individualSum": 0.9724270374673954
+    },
+    {
+      "b0": 3,
+      "teMs": 2.2368185635659814,
+      "fatFraction": 0,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.9456143431976153,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "magnitude": 0.9456143431976153,
+      "individualSum": 0.9456143431976153
+    },
+    {
+      "b0": 3,
+      "teMs": 2.2368185635659814,
+      "fatFraction": 0.5,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0.47280717159880764,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.47280717159880764,
+        "imaginary": -1.1580435786247864e-16
+      },
+      "magnitude": 0.9456143431976153,
+      "individualSum": 0.9456143431976153
+    },
+    {
+      "b0": 3,
+      "teMs": 2.2368185635659814,
+      "fatFraction": 1,
+      "deltaHz": -447.0635286599999,
+      "water": {
+        "real": 0,
+        "imaginary": 0
+      },
+      "fat": {
+        "real": 0.9456143431976153,
+        "imaginary": -2.3160871572495727e-16
+      },
+      "magnitude": 0.9456143431976153,
+      "individualSum": 0.9456143431976153
+    }
+  ]
+}

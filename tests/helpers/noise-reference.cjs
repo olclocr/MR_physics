@@ -1,0 +1,5 @@
+// Deterministic probability integration; no PRNG or production statistics used.
+function magnitudeMoments(signal,sigma){if(sigma===0)return {mean:Math.abs(signal),variance:0,second:signal*signal};const step=.04,limit=8;let mean=0,mass=0;for(let a=-limit+step/2;a<limit;a+=step){const pa=Math.exp(-a*a/2)/Math.sqrt(2*Math.PI)*step;for(let b=-limit+step/2;b<limit;b+=step){const p=pa*Math.exp(-b*b/2)/Math.sqrt(2*Math.PI)*step;mass+=p;mean+=p*Math.hypot(signal+sigma*a,sigma*b);}}const second=signal*signal+2*sigma*sigma;return {mean:mean/mass,second,variance:second-(mean/mass)**2};}
+function moments(values){const count=values.length,mean=values.reduce((a,b)=>a+b,0)/count,variance=values.reduce((a,b)=>a+(b-mean)**2,0)/(count-1);return {count,mean,variance,sd:Math.sqrt(variance),second:values.reduce((a,b)=>a+b*b,0)/count};}
+function correlation(a,b){const x=moments(a),y=moments(b);let sum=0;for(let i=0;i<a.length;i++)sum+=(a[i]-x.mean)*(b[i]-y.mean);return sum/(a.length-1)/x.sd/y.sd;}
+module.exports={magnitudeMoments,moments,correlation};

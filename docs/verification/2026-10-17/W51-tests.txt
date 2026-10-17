@@ -1,0 +1,904 @@
+TAP version 13
+# Subtest: ADC signal and log fit match independent decay integration and QR across the teaching inputs
+ok 1 - ADC signal and log fit match independent decay integration and QR across the teaching inputs
+  ---
+  duration_ms: 16.2855
+  type: 'test'
+  ...
+# Subtest: log magnitude moments include the non-Gaussian fourth moment and predict ADC sampling statistics
+ok 2 - log magnitude moments include the non-Gaussian fourth moment and predict ADC sampling statistics
+  ---
+  duration_ms: 50.2107
+  type: 'test'
+  ...
+# Subtest: Aliasing independent residue-class FFT and closed geometric-series inverse across all controls
+ok 3 - Aliasing independent residue-class FFT and closed geometric-series inverse across all controls
+  ---
+  duration_ms: 265.8534
+  type: 'test'
+  ...
+# Subtest: FOV versus display interpolation preserves information limits and unscaled missing-bin normalization
+ok 4 - FOV versus display interpolation preserves information limits and unscaled missing-bin normalization
+  ---
+  duration_ms: 3.0089
+  type: 'test'
+  ...
+# Subtest: varying relaxation times use the same bSSFP fixed point and agree with independent laboratory-frame matrix exponentials and Bloch ODE
+ok 5 - varying relaxation times use the same bSSFP fixed point and agree with independent laboratory-frame matrix exponentials and Bloch ODE
+  ---
+  duration_ms: 112.5225
+  type: 'test'
+  ...
+# Subtest: short-TR approximation has the correct limit but equal T2/T1 does not imply equal finite-TR signal
+ok 6 - short-TR approximation has the correct limit but equal T2/T1 does not imply equal finite-TR signal
+  ---
+  duration_ms: 8.9456
+  type: 'test'
+  ...
+# Subtest: alternating RF-frame fixed point and transients agree with independent two-pulse laboratory-frame affine exponentials
+ok 7 - alternating RF-frame fixed point and transients agree with independent two-pulse laboratory-frame affine exponentials
+  ---
+  duration_ms: 283.9847
+  type: 'test'
+  ...
+# Subtest: magnitude repeats every 1/TR while echo phase changes sign, and balanced gradients do not remove off-resonance
+ok 8 - magnitude repeats every 1/TR while echo phase changes sign, and balanced gradients do not remove off-resonance
+  ---
+  duration_ms: 7.8716
+  type: 'test'
+  ...
+# Subtest: Chemical artifact composition agrees with independent SI spatial inverse/Dirichlet and time ODE
+ok 9 - Chemical artifact composition agrees with independent SI spatial inverse/Dirichlet and time ODE
+  ---
+  duration_ms: 490.6713
+  type: 'test'
+  ...
+# Subtest: BW/polarity and TE/f are isolated experiments; mixed OP cancellation is different from displacement
+ok 10 - BW/polarity and TE/f are isolated experiments; mixed OP cancellation is different from displacement
+  ---
+  duration_ms: 0.6964
+  type: 'test'
+  ...
+# Subtest: water/fat vectors and magnitudes agree with independent SI complex RK4 and phase roots
+ok 11 - water/fat vectors and magnitudes agree with independent SI complex RK4 and phase roots
+  ---
+  duration_ms: 20.2365
+  type: 'test'
+  ...
+# Subtest: IP/OP, pure-species, field scaling and existing B03 global phase support the specified teaching scope
+ok 12 - IP/OP, pure-species, field scaling and existing B03 global phase support the specified teaching scope
+  ---
+  duration_ms: 3.1802
+  type: 'test'
+  ...
+# Subtest: Haar/unitary Fourier and FISTA agree with explicit wavelet bases, independent FFT and dense normal operator
+ok 13 - Haar/unitary Fourier and FISTA agree with explicit wavelet bases, independent FFT and dense normal operator
+  ---
+  duration_ms: 912.4757
+  type: 'test'
+  ...
+# Subtest: independent ADMM objective bounds, complete/zero-penalty limits and half-FOV ambiguity separate optimization from truth
+ok 14 - independent ADMM objective bounds, complete/zero-penalty limits and half-FOV ambiguity separate optimization from truth
+  ---
+  duration_ms: 33.766
+  type: 'test'
+  ...
+# Subtest: SE recovery agrees with independent chronological relaxation and inversion
+ok 15 - SE recovery agrees with independent chronological relaxation and inversion
+  ---
+  duration_ms: 2.0458
+  type: 'test'
+  ...
+# Subtest: repeated Bloch integration distinguishes steady-state echo, first shot, and recovery without refocusing
+ok 16 - repeated Bloch integration distinguishes steady-state echo, first shot, and recovery without refocusing
+  ---
+  duration_ms: 230.5043
+  type: 'test'
+  ...
+# Subtest: recovery gaps can first grow with TR and the simple recovery approximation fails near long TE/short TR
+ok 17 - recovery gaps can first grow with TR and the simple recovery approximation fails near long TE/short TR
+  ---
+  duration_ms: 0.2745
+  type: 'test'
+  ...
+# Subtest: contrast examples, monotonic signal loss and PD isolation support the lesson
+ok 18 - contrast examples, monotonic signal loss and PD isolation support the lesson
+  ---
+  duration_ms: 0.5696
+  type: 'test'
+  ...
+# Subtest: synthetic compartments are labeled and fixed display signals stay finite at all slider boundaries
+ok 19 - synthetic compartments are labeled and fixed display signals stay finite at all slider boundaries
+  ---
+  duration_ms: 3.8173
+  type: 'test'
+  ...
+# Subtest: controls, numeric constraints, quiz, PD switch and reset keep all outputs synchronized
+ok 20 - controls, numeric constraints, quiz, PD switch and reset keep all outputs synchronized
+  ---
+  duration_ms: 220.593
+  type: 'test'
+  ...
+# Subtest: page resources, local navigation and unique labels resolve
+ok 21 - page resources, local navigation and unique labels resolve
+  ---
+  duration_ms: 5.8907
+  type: 'test'
+  ...
+# Subtest: continuous Gaussian envelopes agree with independent Simpson integration of time-ordered Bloch vectors
+ok 22 - continuous Gaussian envelopes agree with independent Simpson integration of time-ordered Bloch vectors
+  ---
+  duration_ms: 525.3184
+  type: 'test'
+  ...
+# Subtest: zero spread, RF boundary, irreversible T2 and non-exponential Gaussian limits are consistent
+ok 23 - zero spread, RF boundary, irreversible T2 and non-exponential Gaussian limits are consistent
+  ---
+  duration_ms: 1.789
+  type: 'test'
+  ...
+# Subtest: observation examples, keyboard-compatible controls, time markers and explanatory quizzes stay synchronized
+ok 24 - observation examples, keyboard-compatible controls, time markers and explanatory quizzes stay synchronized
+  ---
+  duration_ms: 28.7898
+  type: 'test'
+  ...
+# Subtest: diffusion b and Gaussian phase variance agree with independent SI gradient and Brownian covariance integrals
+ok 25 - diffusion b and Gaussian phase variance agree with independent SI gradient and Brownian covariance integrals
+  ---
+  duration_ms: 51.9472
+  type: 'test'
+  ...
+# Subtest: seeded Brownian projection, endpoint covariance and echo means meet independent statistical bounds
+ok 26 - seeded Brownian projection, endpoint covariance and echo means meet independent statistical bounds
+  ---
+  duration_ms: 617.0304
+  type: 'test'
+  ...
+# Subtest: Dixon two-echo complex coefficients, field rule and held-out echo agree with independent RK4/QR
+ok 27 - Dixon two-echo complex coefficients, field rule and held-out echo agree with independent RK4/QR
+  ---
+  duration_ms: 62.1939
+  type: 'test'
+  ...
+# Subtest: known field, swapped branches, incorrect exact fits and equal-mixture degeneracy remain distinct
+ok 28 - known field, swapped branches, incorrect exact fits and equal-mixture degeneracy remain distinct
+  ---
+  duration_ms: 2.9768
+  type: 'test'
+  ...
+# Subtest: DWI preparation amplitude and acquired EPI echo phase agree with SI time integration and unwrapped phase regression
+ok 29 - DWI preparation amplitude and acquired EPI echo phase agree with SI time integration and unwrapped phase regression
+  ---
+  duration_ms: 134.4286
+  type: 'test'
+  ...
+# Subtest: b changes amplitude independently of the fixed EPI timing, while PI aliasing and segment timing assumptions remain explicit
+ok 30 - b changes amplitude independently of the fixed EPI timing, while PI aliasing and segment timing assumptions remain explicit
+  ---
+  duration_ms: 2.1295
+  type: 'test'
+  ...
+# Subtest: time-ordered SE/GRE agree with independent complex phases before, at and after refocusing
+ok 31 - time-ordered SE/GRE agree with independent complex phases before, at and after refocusing
+  ---
+  duration_ms: 429.3156
+  type: 'test'
+  ...
+# Subtest: balanced SE refocuses all static offsets, while a common GRE offset only rotates phase
+ok 32 - balanced SE refocuses all static offsets, while a common GRE offset only rotates phase
+  ---
+  duration_ms: 0.5708
+  type: 'test'
+  ...
+# Subtest: 180-degree right limit conjugates transverse vectors and T2 loss remains after refocusing
+ok 33 - 180-degree right limit conjugates transverse vectors and T2 loss remains after refocusing
+  ---
+  duration_ms: 0.7734
+  type: 'test'
+  ...
+# Subtest: observations, controls, time boundaries, responsive SVGs and quizzes keep the same physical state
+ok 34 - observations, controls, time boundaries, responsive SVGs and quizzes keep the same physical state
+  ---
+  duration_ms: 50.7673
+  type: 'test'
+  ...
+# Subtest: all echo schedules and complex reconstructions match independently enumerated events and radix-2 FFT
+ok 35 - all echo schedules and complex reconstructions match independently enumerated events and radix-2 FFT
+  ---
+  duration_ms: 55.6856
+  type: 'test'
+  ...
+# Subtest: single-echo limit, central effective TE, refocusing times and changed peripheral weighting support the lesson
+ok 36 - single-echo limit, central effective TE, refocusing times and changed peripheral weighting support the lesson
+  ---
+  duration_ms: 4.1421
+  type: 'test'
+  ...
+# Subtest: EPI ADC timing and coordinates agree with independent SI gradient integration and finite-kernel point response
+ok 37 - EPI ADC timing and coordinates agree with independent SI gradient integration and finite-kernel point response
+  ---
+  duration_ms: 91.7402
+  type: 'test'
+  ...
+# Subtest: EPI phase bandwidth, polarity, center TE and sampled versus continuous peak match the teaching scope
+ok 38 - EPI phase bandwidth, polarity, center TE and sampled versus continuous peak match the teaching scope
+  ---
+  duration_ms: 2.0177
+  type: 'test'
+  ...
+# Subtest: three mechanism cases preserve independent IR, Bloch and complex-QR results and exclude unsupported comparisons
+ok 39 - three mechanism cases preserve independent IR, Bloch and complex-QR results and exclude unsupported comparisons
+  ---
+  duration_ms: 108.9598
+  type: 'test'
+  ...
+# Subtest: Complex FID and weighted spectrum match independent ODE, positive-sign radix FFT and finite geometric sum
+ok 40 - Complex FID and weighted spectrum match independent ODE, positive-sign radix FFT and finite geometric sum
+  ---
+  duration_ms: 47.4138
+  type: 'test'
+  ...
+# Subtest: Zero filling preserves acquired samples and native grid; B0 changes Hz while input ppm remains fixed
+ok 41 - Zero filling preserves acquired samples and native grid; B0 changes Hz while input ppm remains fixed
+  ---
+  duration_ms: 5.68
+  type: 'test'
+  ...
+# Subtest: Spatial field EPI samples match independent lab evolution/RF reversal, FFT and unwrapped position regression
+ok 42 - Spatial field EPI samples match independent lab evolution/RF reversal, FFT and unwrapped position regression
+  ---
+  duration_ms: 68.7295
+  type: 'test'
+  ...
+# Subtest: Uniform field translates; spatial gradient changes relative locations; PE reversal reverses only displacement
+ok 43 - Uniform field translates; spatial gradient changes relative locations; PE reversal reverses only displacement
+  ---
+  duration_ms: 2.3572
+  type: 'test'
+  ...
+# Subtest: FOV, sample spacing, acquired bins and display grids have consistent physical units
+ok 44 - FOV, sample spacing, acquired bins and display grids have consistent physical units
+  ---
+  duration_ms: 23.7155
+  type: 'test'
+  ...
+# Subtest: point and edge Fourier profiles match an independent finite kernel and spatial convolution
+ok 45 - point and edge Fourier profiles match an independent finite kernel and spatial convolution
+  ---
+  duration_ms: 23.645
+  type: 'test'
+  ...
+# Subtest: more reconstruction pixels preserve acquired information and the same point-response first zeros
+ok 46 - more reconstruction pixels preserve acquired information and the same point-response first zeros
+  ---
+  duration_ms: 27.0309
+  type: 'test'
+  ...
+# Subtest: IR formula and null agree with an independent chronological RK4 recovery, inversion and readout reset
+ok 47 - IR formula and null agree with an independent chronological RK4 recovery, inversion and readout reset
+  ---
+  duration_ms: 225.9361
+  type: 'test'
+  ...
+# Subtest: long-TR limits, opposite signs with equal magnitude and finite-TR changes support null and magnitude lessons
+ok 48 - long-TR limits, opposite signs with equal magnitude and finite-TR changes support null and magnitude lessons
+  ---
+  duration_ms: 0.7308
+  type: 'test'
+  ...
+# Subtest: standalone direct DFT and zero-filled reconstructions agree with an independent radix-2 FFT
+ok 49 - standalone direct DFT and zero-filled reconstructions agree with an independent radix-2 FFT
+  ---
+  duration_ms: 573.4446
+  type: 'test'
+  ...
+# Subtest: new prediction feedback explains spatial support and zero filling and resets with the page
+ok 50 - new prediction feedback explains spatial support and zero filling and resets with the page
+  ---
+  duration_ms: 77.8487
+  type: 'test'
+  ...
+# Subtest: HTML IDs, labels and local navigation resolve
+ok 51 - HTML IDs, labels and local navigation resolve
+  ---
+  duration_ms: 38.0966
+  type: 'test'
+  ...
+# Subtest: all original patterns round-trip, conserve energy, and have real-image conjugate symmetry
+ok 52 - all original patterns round-trip, conserve energy, and have real-image conjugate symmetry
+  ---
+  duration_ms: 64.6631
+  type: 'test'
+  ...
+# Subtest: a single complex component has constant magnitude; edited conjugate pairs stay real
+ok 53 - a single complex component has constant magnitude; edited conjugate pairs stay real
+  ---
+  duration_ms: 60.8168
+  type: 'test'
+  ...
+# Subtest: center and outer reconstruction orders cover every sample once and yield the same final image
+ok 54 - center and outer reconstruction orders cover every sample once and yield the same final image
+  ---
+  duration_ms: 51.3259
+  type: 'test'
+  ...
+# Subtest: low and high masks are complementary; alternating ky produces the expected half-FOV fold
+ok 55 - low and high masks are complementary; alternating ky produces the expected half-FOV fold
+  ---
+  duration_ms: 71.824
+  type: 'test'
+  ...
+# Subtest: uniform brightness has only DC; a single off-center pixel needs all spatial frequencies
+ok 56 - uniform brightness has only DC; a single off-center pixel needs all spatial frequencies
+  ---
+  duration_ms: 46.5346
+  type: 'test'
+  ...
+# Subtest: page controls, keyboard selection, animation completion and reset stay consistent
+ok 57 - page controls, keyboard selection, animation completion and reset stay consistent
+  ---
+  duration_ms: 575.1796
+  type: 'test'
+  ...
+# Subtest: Time-varying Fourier samples match independent FFT and spatial modulation-kernel convolution
+ok 58 - Time-varying Fourier samples match independent FFT and spatial modulation-kernel convolution
+  ---
+  duration_ms: 33.2513
+  type: 'test'
+  ...
+# Subtest: Ordering changes the mixed-time reconstruction while perfect phase gating increases waiting
+ok 59 - Ordering changes the mixed-time reconstruction while perfect phase gating increases waiting
+  ---
+  duration_ms: 1.6236
+  type: 'test'
+  ...
+# Subtest: Complex local inversion agrees with independent spatial-mode eigenvalues and real linear elimination
+ok 60 - Complex local inversion agrees with independent spatial-mode eigenvalues and real linear elimination
+  ---
+  duration_ms: 16.4343
+  type: 'test'
+  ...
+# Subtest: Reflection alone preserves the same discrete bias away from masked nodes; coherent error can introduce apparent imaginary modulus
+ok 61 - Reflection alone preserves the same discrete bias away from masked nodes; coherent error can introduce apparent imaginary modulus
+  ---
+  duration_ms: 2.0388
+  type: 'test'
+  ...
+# Subtest: Motion encoding phase matches independent temporal quadrature and complex signal ODE
+ok 62 - Motion encoding phase matches independent temporal quadrature and complex signal ODE
+  ---
+  duration_ms: 1233.9053
+  type: 'test'
+  ...
+# Subtest: Gradient zero, opposite polarity, doubled displacement and quadrature synchronization have distinct effects
+ok 63 - Gradient zero, opposite polarity, doubled displacement and quadrature synchronization have distinct effects
+  ---
+  duration_ms: 1.5293
+  type: 'test'
+  ...
+# Subtest: Spatially weighted volumes and spectra match independent 1mm cube integration and complex-ODE line integral
+ok 64 - Spatially weighted volumes and spectra match independent 1mm cube integration and complex-ODE line integral
+  ---
+  duration_ms: 56.6158
+  type: 'test'
+  ...
+# Subtest: Changing selected volume preserves densities; outside gain can introduce a component absent inside
+ok 65 - Changing selected volume preserves densities; outside gain can introduce a component absent inside
+  ---
+  duration_ms: 0.7727
+  type: 'test'
+  ...
+# Subtest: full and R2 reconstruction, noise propagation and singularity agree with independent QR and DFT normalization
+ok 66 - full and R2 reconstruction, noise propagation and singularity agree with independent QR and DFT normalization
+  ---
+  duration_ms: 11.327
+  type: 'test'
+  ...
+# Subtest: independent Monte Carlo shows g amplification beyond the sqrt R sampling loss
+ok 67 - independent Monte Carlo shows g amplification beyond the sqrt R sampling loss
+  ---
+  duration_ms: 34.2064
+  type: 'test'
+  ...
+# Subtest: partial Fourier DFT, symmetry fill and phase-line POCS agree with independent FFT and real normal-operator iteration
+ok 68 - partial Fourier DFT, symmetry fill and phase-line POCS agree with independent FFT and real normal-operator iteration
+  ---
+  duration_ms: 203.9341
+  type: 'test'
+  ...
+# Subtest: real-image conjugate symmetry is conditional, complete data override a wrong phase prior, and acquired-data agreement does not prove accuracy
+ok 69 - real-image conjugate symmetry is conditional, complete data override a wrong phase prior, and acquired-data agreement does not prove accuracy
+  ---
+  duration_ms: 34.9585
+  type: 'test'
+  ...
+# Subtest: Separated echo components and fraction agree with independent complex relaxation/rotation integration
+ok 70 - Separated echo components and fraction agree with independent complex relaxation/rotation integration
+  ---
+  duration_ms: 26.7921
+  type: 'test'
+  ...
+# Subtest: TE zero, common single-peak decay and pure limits retain density; spectrum and differential decay change mixed raw fractions
+ok 71 - TE zero, common single-peak decay and pure limits retain density; spectrum and differential decay change mixed raw fractions
+  ---
+  duration_ms: 7.2826
+  type: 'test'
+  ...
+# Subtest: Signal and T1-only fraction correction match independent RF/ODE spoiled steady-state iteration
+ok 72 - Signal and T1-only fraction correction match independent RF/ODE spoiled steady-state iteration
+  ---
+  duration_ms: 21.1023
+  type: 'test'
+  ...
+# Subtest: Lower flip/longer TR reduce this constructed T1 bias; reporting mode does not change measurements
+ok 73 - Lower flip/longer TR reduce this constructed T1 bias; reporting mode does not change measurements
+  ---
+  duration_ms: 2.0033
+  type: 'test'
+  ...
+# Subtest: all four corrected HTML pages initialize and draw with finite canvas coordinates
+ok 74 - all four corrected HTML pages initialize and draw with finite canvas coordinates
+  ---
+  duration_ms: 94.0639
+  type: 'test'
+  ...
+# Subtest: RF offset signs and both frames agree with independent time-dependent Bloch integration
+ok 75 - RF offset signs and both frames agree with independent time-dependent Bloch integration
+  ---
+  duration_ms: 54.5044
+  type: 'test'
+  ...
+# Subtest: finite RF includes off resonance and relaxation, rather than forcing nominal flip
+ok 76 - finite RF includes off resonance and relaxation, rather than forcing nominal flip
+  ---
+  duration_ms: 20.981
+  type: 'test'
+  ...
+# Subtest: refocusing rotates Mz and transverse components while retaining each frequency
+ok 77 - refocusing rotates Mz and transverse components while retaining each frequency
+  ---
+  duration_ms: 1.1172
+  type: 'test'
+  ...
+# Subtest: TE timeline and chemical signal use the same pulse-center clock and normalization
+ok 78 - TE timeline and chemical signal use the same pulse-center clock and normalization
+  ---
+  duration_ms: 7.0723
+  type: 'test'
+  ...
+# Subtest: Mxy magnitude and current direction remain meaningful after 270 degrees and relaxation
+ok 79 - Mxy magnitude and current direction remain meaningful after 270 degrees and relaxation
+  ---
+  duration_ms: 7.1914
+  type: 'test'
+  ...
+# Subtest: sequence observation control reaches exact TE and stays paused without advancing physical time
+ok 80 - sequence observation control reaches exact TE and stays paused without advancing physical time
+  ---
+  duration_ms: 15.2427
+  type: 'test'
+  ...
+# Subtest: every stored ADC value equals the displayed complex signal at that time
+ok 81 - every stored ADC value equals the displayed complex signal at that time
+  ---
+  duration_ms: 26.3118
+  type: 'test'
+  ...
+# Subtest: Gy=0 loses y information and cannot generate a full 2D reconstruction
+ok 82 - Gy=0 loses y information and cannot generate a full 2D reconstruction
+  ---
+  duration_ms: 22.531
+  type: 'test'
+  ...
+# Subtest: ideal complete DFT round trips; T2* changes acquired data; partial IFFT preserves imaginary part
+ok 83 - ideal complete DFT round trips; T2* changes acquired data; partial IFFT preserves imaginary part
+  ---
+  duration_ms: 16.0203
+  type: 'test'
+  ...
+# Subtest: physical-pendulum hoop inertia, energy conservation, and logical-pixel camera scale
+ok 84 - physical-pendulum hoop inertia, energy conservation, and logical-pixel camera scale
+  ---
+  duration_ms: 6.5446
+  type: 'test'
+  ...
+# Subtest: published report pages and simulation assets have resolvable local links
+ok 85 - published report pages and simulation assets have resolvable local links
+  ---
+  duration_ms: 872.801
+  type: 'test'
+  ...
+# Subtest: Periodic dipole field and minimum-norm/L2 inverse agree with independently derived harmonic responses
+ok 86 - Periodic dipole field and minimum-norm/L2 inverse agree with independently derived harmonic responses
+  ---
+  duration_ms: 288.3994
+  type: 'test'
+  ...
+# Subtest: Changing a null harmonic or mean can preserve all field samples; orientation exchanges the missing harmonic
+ok 87 - Changing a null harmonic or mean can preserve all field samples; orientation exchanges the missing harmonic
+  ---
+  duration_ms: 33.5487
+  type: 'test'
+  ...
+# Subtest: all receiver settings match SI frequency roots, finite Fourier kernels and integrated white-noise power
+ok 88 - all receiver settings match SI frequency roots, finite Fourier kernels and integrated white-noise power
+  ---
+  duration_ms: 881.645
+  type: 'test'
+  ...
+# Subtest: fixed FOV, zero off-resonance, polarity reversal and bandwidth scaling keep their stated comparison conditions
+ok 89 - fixed FOV, zero off-resonance, polarity reversal and bandwidth scaling keep their stated comparison conditions
+  ---
+  duration_ms: 8.4054
+  type: 'test'
+  ...
+# Subtest: Role proxies match independent FFT, spectral filter response, explicit Haar basis and fixed complex noise inputs
+ok 90 - Role proxies match independent FFT, spectral filter response, explicit Haar basis and fixed complex noise inputs
+  ---
+  duration_ms: 80.6413
+  type: 'test'
+  ...
+# Subtest: Measured-data replacement can retain noise and alias error; linear filtering cannot create missing modes
+ok 91 - Measured-data replacement can retain noise and alias error; linear filtering cannot create missing modes
+  ---
+  duration_ms: 2.0068
+  type: 'test'
+  ...
+# Subtest: RF ON/OFF and both frames agree with independent time-dependent Bloch integration over the lesson range
+ok 92 - RF ON/OFF and both frames agree with independent time-dependent Bloch integration over the lesson range
+  ---
+  duration_ms: 1632.5008
+  type: 'test'
+  ...
+# Subtest: normalized readout and RF OFF log distinguish applied amplitude from the reference pulse duration
+ok 93 - normalized readout and RF OFF log distinguish applied amplitude from the reference pulse duration
+  ---
+  duration_ms: 17.8939
+  type: 'test'
+  ...
+# Subtest: Ringing analytic coefficients and inverse match independent quadrature/FFT and first half-height crossing
+ok 94 - Ringing analytic coefficients and inverse match independent quadrature/FFT and first half-height crossing
+  ---
+  duration_ms: 58.2141
+  type: 'test'
+  ...
+# Subtest: Changing display preserves coefficients; Hann broadens the PSF and reduces sampled ringing without restoring missing data
+ok 95 - Changing display preserves coefficients; Hann broadens the PSF and reduces sampled ringing without restoring missing data
+  ---
+  duration_ms: 9.647
+  type: 'test'
+  ...
+# Subtest: all scan-time settings match independently packed slice trains, phase-pair echo jobs and elapsed slots
+ok 96 - all scan-time settings match independently packed slice trains, phase-pair echo jobs and elapsed slots
+  ---
+  duration_ms: 1608.8267
+  type: 'test'
+  ...
+# Subtest: interleaving capacity, partial trains, fixed preparation and gating distinguish dataset time from total time
+ok 97 - interleaving capacity, partial trains, fixed preparation and gating distinguish dataset time from total time
+  ---
+  duration_ms: 0.71
+  type: 'test'
+  ...
+# Subtest: TX, RX and finite-RF off-resonance agree with independent Bloch ODE and receiver multiplication
+ok 98 - TX, RX and finite-RF off-resonance agree with independent Bloch ODE and receiver multiplication
+  ---
+  duration_ms: 1967.2968
+  type: 'test'
+  ...
+# Subtest: Matched 90-degree brightness is not unique; fixed receiver gain and a second flip separate this example
+ok 99 - Matched 90-degree brightness is not unique; fixed receiver gain and a second flip separate this example
+  ---
+  duration_ms: 1.3653
+  type: 'test'
+  ...
+# Subtest: Displacement and wavelength agree with independent spatial wave-equation RK4 integration
+ok 100 - Displacement and wavelength agree with independent spatial wave-equation RK4 integration
+  ---
+  duration_ms: 48.7991
+  type: 'test'
+  ...
+# Subtest: Fixed-frequency modulus changes wavelength; phase changes position without changing material
+ok 101 - Fixed-frequency modulus changes wavelength; phase changes position without changing material
+  ---
+  duration_ms: 0.7165
+  type: 'test'
+  ...
+# Subtest: slice geometry follows independently inverted SI frequencies and spatial quadrature at every allowed setting
+ok 102 - slice geometry follows independently inverted SI frequencies and spatial quadrature at every allowed setting
+  ---
+  duration_ms: 143.6915
+  type: 'test'
+  ...
+# Subtest: slice polarity, thickness scaling, pure compartments and centered boundary distinguish average from integrated signal
+ok 103 - slice polarity, thickness scaling, pure compartments and centered boundary distinguish average from integrated signal
+  ---
+  duration_ms: 0.6773
+  type: 'test'
+  ...
+# Subtest: SMS independent spatial folding FFT/QR, transfer and conditioning across all UI combinations
+ok 104 - SMS independent spatial folding FFT/QR, transfer and conditioning across all UI combinations
+  ---
+  duration_ms: 276.0899
+  type: 'test'
+  ...
+# Subtest: SMS shift conditions, rank loss, calibration leakage and ideal grouping limits
+ok 105 - SMS shift conditions, rank loss, calibration leakage and ideal grouping limits
+  ---
+  duration_ms: 3.2186
+  type: 'test'
+  ...
+# Subtest: seeded independent quadratures and nested averages match predeclared five-standard-error statistical bounds
+ok 106 - seeded independent quadratures and nested averages match predeclared five-standard-error statistical bounds
+  ---
+  duration_ms: 971.4477
+  type: 'test'
+  ...
+# Subtest: averaging precedes magnitude and fixed seed, zero noise, zero contrast and pixel layout retain their meaning
+ok 107 - averaging precedes magnitude and fixed seed, zero noise, zero contrast and pixel layout retain their meaning
+  ---
+  duration_ms: 20.3099
+  type: 'test'
+  ...
+# Subtest: gradient-area quadrature independently matches signed k, physical time, complex ADC and normalized readout
+ok 108 - gradient-area quadrature independently matches signed k, physical time, complex ADC and normalized readout
+  ---
+  duration_ms: 108.6322
+  type: 'test'
+  ...
+# Subtest: all patterns, fill orders and sampling modes agree with an independent inverse complex sum
+ok 109 - all patterns, fill orders and sampling modes agree with an independent inverse complex sum
+  ---
+  duration_ms: 106.2126
+  type: 'test'
+  ...
+# Subtest: PE labels use the physical negative phase and zero signal has no fabricated phase
+ok 110 - PE labels use the physical negative phase and zero signal has no fabricated phase
+  ---
+  duration_ms: 29.5711
+  type: 'test'
+  ...
+# Subtest: speed and display options preserve observation, while Gy zero and unmatched grids withhold reconstruction
+ok 111 - speed and display options preserve observation, while Gy zero and unmatched grids withhold reconstruction
+  ---
+  duration_ms: 97.9269
+  type: 'test'
+  ...
+# Subtest: Absorption, area, echo loss and half height width match independent ODE integral and quadratures
+ok 112 - Absorption, area, echo loss and half height width match independent ODE integral and quadratures
+  ---
+  duration_ms: 293.237
+  type: 'test'
+  ...
+# Subtest: A broader peak preserves total area at fixed echo amplitude; TE loss changes area without changing linewidth
+ok 113 - A broader peak preserves total area at fixed echo amplitude; TE loss changes area without changing linewidth
+  ---
+  duration_ms: 0.8086
+  type: 'test'
+  ...
+# Subtest: finite spectral pulse agrees with independent Bloch ODE and matrix exponential, including vector signs
+ok 114 - finite spectral pulse agrees with independent Bloch ODE and matrix exponential, including vector signs
+  ---
+  duration_ms: 611.9242
+  type: 'test'
+  ...
+# Subtest: on-resonance saturation, inversion, no RF and frequency-duration scaling distinguish the learning cases
+ok 115 - on-resonance saturation, inversion, no RF and frequency-duration scaling distinguish the learning cases
+  ---
+  duration_ms: 1.2309
+  type: 'test'
+  ...
+# Subtest: thermal polarization agrees with independent 60-digit Boltzmann weights and high-temperature series
+ok 116 - thermal polarization agrees with independent 60-digit Boltzmann weights and high-temperature series
+  ---
+  duration_ms: 8.2229
+  type: 'test'
+  ...
+# Subtest: uniform phasors cancel by root-of-unity symmetry, aligned phasors sum, and visual magnification leaves actual occupations unchanged
+ok 117 - uniform phasors cancel by root-of-unity symmetry, aligned phasors sum, and visual magnification leaves actual occupations unchanged
+  ---
+  duration_ms: 0.9244
+  type: 'test'
+  ...
+# Subtest: controls synchronize actual values, separate P from R, clamp invalid input and reset all learning state
+ok 118 - controls synchronize actual values, separate P from R, clamp invalid input and reset all learning state
+  ---
+  duration_ms: 33.8807
+  type: 'test'
+  ...
+# Subtest: new chapter resources and local navigation resolve with unique static IDs and control labels
+ok 119 - new chapter resources and local navigation resolve with unique static IDs and control labels
+  ---
+  duration_ms: 8.9255
+  type: 'test'
+  ...
+# Subtest: finite RF, RF-to-free continuity and T1/T2 landmarks agree with independent equations
+ok 120 - finite RF, RF-to-free continuity and T1/T2 landmarks agree with independent equations
+  ---
+  duration_ms: 956.9936
+  type: 'test'
+  ...
+# Subtest: SE vectors, 180-degree limits and TE/TR clocks agree with independent complex phases
+ok 121 - SE vectors, 180-degree limits and TE/TR clocks agree with independent complex phases
+  ---
+  duration_ms: 3.9296
+  type: 'test'
+  ...
+# Subtest: single-peak water/fat vectors, IP/OP times and limiting fractions agree independently
+ok 122 - single-peak water/fat vectors, IP/OP times and limiting fractions agree independently
+  ---
+  duration_ms: 0.9219
+  type: 'test'
+  ...
+# Subtest: guided observations, custom scrub, pause and reset retain the intended clock and controls
+ok 123 - guided observations, custom scrub, pause and reset retain the intended clock and controls
+  ---
+  duration_ms: 17.4451
+  type: 'test'
+  ...
+# Subtest: spoiled GRE steady state and first fifty echoes agree with independent rotation/RK4/iteration
+ok 124 - spoiled GRE steady state and first fifty echoes agree with independent rotation/RK4/iteration
+  ---
+  duration_ms: 74.363
+  type: 'test'
+  ...
+# Subtest: Ernst maxima, zero/90 degree limits and signal versus contrast demonstrate the stated assumptions
+ok 125 - Ernst maxima, zero/90 degree limits and signal versus contrast demonstrate the stated assumptions
+  ---
+  duration_ms: 130.5139
+  type: 'test'
+  ...
+# Subtest: Paired structure and texture responses match independent spectral filters and explicit Haar matrix
+ok 126 - Paired structure and texture responses match independent spectral filters and explicit Haar matrix
+  ---
+  duration_ms: 43.8937
+  type: 'test'
+  ...
+# Subtest: Linear paired responses cancel identical noise; sharpening can exceed 100% while smoothing loses small contrast
+ok 127 - Linear paired responses cancel identical noise; sharpening can exceed 100% while smoothing loses small contrast
+  ---
+  duration_ms: 2.7149
+  type: 'test'
+  ...
+# Subtest: prescribed frequency distributions agree with independent complex Gaussian quadrature and relaxation integration
+ok 128 - prescribed frequency distributions agree with independent complex Gaussian quadrature and relaxation integration
+  ---
+  duration_ms: 23.7663
+  type: 'test'
+  ...
+# Subtest: mean frequency changes phase, distribution width changes magnitude, and threshold blooming does not change reference geometry
+ok 129 - mean frequency changes phase, distribution width changes magnitude, and threshold blooming does not change reference geometry
+  ---
+  duration_ms: 70.6093
+  type: 'test'
+  ...
+# Subtest: phase weights, repeated products and minimum projection agree with independent frequency integrals and ordered minima
+ok 130 - phase weights, repeated products and minimum projection agree with independent frequency integrals and ordered minima
+  ---
+  duration_ms: 375.7944
+  type: 'test'
+  ...
+# Subtest: mask power zero preserves the source only before projection, phase convention matters, and minIP loses depth
+ok 131 - mask power zero preserves the source only before projection, phase convention matters, and minIP loses depth
+  ---
+  duration_ms: 19.2255
+  type: 'test'
+  ...
+# Subtest: Signed finite-TR IR and profiled T1 fit match longitudinal ODE and independent two-parameter multi-start LM
+ok 132 - Signed finite-TR IR and profiled T1 fit match longitudinal ODE and independent two-parameter multi-start LM
+  ---
+  duration_ms: 79.3193
+  type: 'test'
+  ...
+# Subtest: A finite-TR recovery curve is biased by the infinite-TR assumption; initial scale does not alter noiseless fitted T1
+ok 133 - A finite-TR recovery curve is biased by the infinite-TR assumption; initial scale does not alter noiseless fitted T1
+  ---
+  duration_ms: 2.1163
+  type: 'test'
+  ...
+# Subtest: Basic T2 decay and log OLS match independent transverse ODE, Householder QR and two-point ratio
+ok 134 - Basic T2 decay and log OLS match independent transverse ODE, Householder QR and two-point ratio
+  ---
+  duration_ms: 23.1772
+  type: 'test'
+  ...
+# Subtest: Brightness changes with initial amplitude/display TE while fitted T2 is invariant; one brightness admits distinct T2
+ok 135 - Brightness changes with initial amplitude/display TE while fitted T2 is invariant; one brightness admits distinct T2
+  ---
+  duration_ms: 4.3208
+  type: 'test'
+  ...
+# Subtest: T2 limits agree with independent component ODE and Householder QR for all data/subset/noise states
+ok 136 - T2 limits agree with independent component ODE and Householder QR for all data/subset/noise states
+  ---
+  duration_ms: 21.7417
+  type: 'test'
+  ...
+# Subtest: Biexponential effective T2 depends on range; a rising noisy late fit is not reported as positive T2
+ok 137 - Biexponential effective T2 depends on range; a rising noisy late fit is not reported as positive T2
+  ---
+  duration_ms: 11.3366
+  type: 'test'
+  ...
+# Subtest: T2star signal and rate fits match independent ODE/Gaussian quadrature and Householder QR
+ok 138 - T2star signal and rate fits match independent ODE/Gaussian quadrature and Householder QR
+  ---
+  duration_ms: 111.0115
+  type: 'test'
+  ...
+# Subtest: A supplied single exponential has range-invariant rate; Gaussian dephasing has range-dependent effective rate
+ok 139 - A supplied single exponential has range-invariant rate; Gaussian dephasing has range-dependent effective rate
+  ---
+  duration_ms: 0.7598
+  type: 'test'
+  ...
+# Subtest: every registered report has a source and an up-to-date HTML with resolvable links
+ok 140 - every registered report has a source and an up-to-date HTML with resolvable links
+  ---
+  duration_ms: 383.6584
+  type: 'test'
+  ...
+# Subtest: explicit dates and partial selection preserve other dates and map only registered Markdown links
+ok 141 - explicit dates and partial selection preserve other dates and map only registered Markdown links
+  ---
+  duration_ms: 20.1973
+  type: 'test'
+  ...
+# Subtest: missing inputs and local assets fail before any report is overwritten
+ok 142 - missing inputs and local assets fail before any report is overwritten
+  ---
+  duration_ms: 14.1212
+  type: 'test'
+  ...
+# Subtest: unknown date, source and options fail instead of silently selecting zero reports
+ok 143 - unknown date, source and options fail instead of silently selecting zero reports
+  ---
+  duration_ms: 8.0107
+  type: 'test'
+  ...
+# Subtest: all 3D voxel averages and oriented MPR planes agree with independent spatial indicator quadrature
+ok 144 - all 3D voxel averages and oriented MPR planes agree with independent spatial indicator quadrature
+  ---
+  duration_ms: 120.481
+  type: 'test'
+  ...
+# Subtest: matched geometry has equal stack/slab arrays, isotropy is geometric, and larger z cells lose fine information
+ok 145 - matched geometry has equal stack/slab arrays, isotropy is geometric, and larger z cells lose fine information
+  ---
+  duration_ms: 7.9628
+  type: 'test'
+  ...
+# Subtest: two RF pulses and free interval agree with independent time-ordered Bloch integration and response identity
+ok 146 - two RF pulses and free interval agree with independent time-ordered Bloch integration and response identity
+  ---
+  duration_ms: 177.0085
+  type: 'test'
+  ...
+# Subtest: ideal OP/IP, zero delay/no RF and intermediate spoiling distinguish water excitation from saturation
+ok 147 - ideal OP/IP, zero delay/no RF and intermediate spoiling distinguish water excitation from saturation
+  ---
+  duration_ms: 7.4943
+  type: 'test'
+  ...
+# Subtest: ring quadrature, signed spin and finite-vector change agree with torques across masses, radii, gravity and phases
+ok 148 - ring quadrature, signed spin and finite-vector change agree with torques across masses, radii, gravity and phases
+  ---
+  duration_ms: 239.2168
+  type: 'test'
+  ...
+# Subtest: physical pendulum quarter-period and energy match independent elliptic integral without assuming small angles
+ok 149 - physical pendulum quarter-period and energy match independent elliptic integral without assuming small angles
+  ---
+  duration_ms: 16.6439
+  type: 'test'
+  ...
+1..149
+# tests 149
+# suites 0
+# pass 149
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3532.1472

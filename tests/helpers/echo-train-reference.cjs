@@ -1,0 +1,5 @@
+const {fft}=require('./kspace-fft-reference.cjs');
+function reference(o){const n=64,shots=n/o.etl,linear=Array.from({length:n},(_,i)=>i-32),centric=[0];for(let k=1;k<32;k++)centric.push(-k,k);centric.push(-32);const order=o.ordering==='linear'?linear:o.ordering==='centric'?centric:centric.slice().reverse(),events=[];for(let shot=0;shot<shots;shot++)for(let e=0;e<o.etl;e++)events.push({shot:shot+1,echo:e+1,k:order[e*shots+shot],timeMs:(e+1)*o.spacingMs});
+ const objects=[{start:12,end:28,t2:50},{start:36,end:48,t2:150}],spectra=objects.map(q=>fft(Array.from({length:n},(_,j)=>({real:j>=q.start&&j<q.end?1:0,imaginary:0})))),coefficients=Array.from({length:n},()=>({real:0,imaginary:0}));for(const e of events){const k=(e.k+n)%n;for(let q=0;q<2;q++){const weight=Math.exp(-e.timeMs/objects[q].t2);coefficients[k].real+=spectra[q][k].real*weight;coefficients[k].imaginary+=spectra[q][k].imaginary*weight;}}
+ const pixels=fft(coefficients,true).map(v=>({real:v.real/n,imaginary:v.imaginary/n,magnitude:Math.hypot(v.real,v.imaginary)/n}));return {events,coefficients,pixels,effectiveTeMs:events.find(e=>e.k===0).timeMs};}
+module.exports={reference};

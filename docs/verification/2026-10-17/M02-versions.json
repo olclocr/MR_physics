@@ -1,0 +1,26 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/t1_mapping_ir.html",
+      "sha256": "59FD8736210B045DE74DE0BDC2F65D67701882F5D27E21BCE52F82C3B170CE0C"
+    },
+    {
+      "path": "docs/assets/t1-fit-model.js",
+      "sha256": "76B3489CE66A269BD5DBE6F9B1A14F4CB7AF8E5AE5F1ABC65AD68137CD0A2CBA"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "tests/helpers/t1-fit-reference.cjs",
+      "sha256": "D49182922B223DE7750A77F3CD90A28B4DAEB7E58C62F3E4F5844F12951250C0"
+    },
+    {
+      "path": "tests/t1-fit.test.cjs",
+      "sha256": "9DA24910CC142E8EB22823DE4B3C3B0B017E9B5F64FFA4C27B2C1ED629AEB3B2"
+    }
+  ]
+}

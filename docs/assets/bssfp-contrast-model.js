@@ -1,0 +1,7 @@
+(function(root,factory){const bssfp=typeof module==='object'&&module.exports?require('./bssfp-model.js'):root.BSSFP,api=factory(bssfp);if(typeof module==='object'&&module.exports)module.exports=api;else root.BSSFPContrast=api;})(typeof globalThis!=='undefined'?globalThis:this,function(bssfp){
+ 'use strict';const defaults=Object.freeze({scenario:'same-t1',trMs:5}),cases=Object.freeze({'same-t1':Object.freeze({label:'같은 T1 · 다른 T2',a:[1000,100],b:[1000,200]}),'same-t2':Object.freeze({label:'같은 T2 · 다른 T1',a:[500,100],b:[1000,100]}),'same-ratio':Object.freeze({label:'같은 T2/T1 · 다른 절대시간',a:[1000,100],b:[500,50]})}),flipDeg=30;
+ function approximate(t1Ms,t2Ms){const a=flipDeg*Math.PI/180;return Math.sin(a)/(1+Math.cos(a)+t1Ms/t2Ms*(1-Math.cos(a)));}
+ function point(trMs,times){const [t1Ms,t2Ms]=times,exact=bssfp.steady({trMs,flipDeg,offsetHz:0,t1Ms,t2Ms}).magnitude,approx=approximate(t1Ms,t2Ms);return {t1Ms,t2Ms,ratio:t2Ms/t1Ms,exact,approx,relativeErrorPct:Math.abs(approx-exact)/exact*100};}
+ function calculate(options={}){const o={...defaults,...options};if(!Object.hasOwn(cases,o.scenario)||!Number.isFinite(o.trMs)||o.trMs<5||o.trMs>200)throw new RangeError('Unsupported bSSFP contrast scenario');const scenario=cases[o.scenario],a=point(o.trMs,scenario.a),b=point(o.trMs,scenario.b),curve=Array.from({length:196},(_,i)=>({trMs:i+5,a:point(i+5,scenario.a).exact,b:point(i+5,scenario.b).exact}));return {options:o,scenario,flipDeg,teMs:o.trMs/2,a,b,signalRatio:a.exact/b.exact,curve};}
+ return {defaults,cases,flipDeg,approximate,point,calculate};
+});

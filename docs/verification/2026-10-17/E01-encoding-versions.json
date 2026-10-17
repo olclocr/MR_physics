@@ -1,0 +1,54 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/mre_motion_encoding.html",
+      "sha256": "8F7CBC5F44306E0DC5034A2341BBEFAF84893852A7D7A02914815A1CA0E29652"
+    },
+    {
+      "path": "docs/assets/mre-motion-encoding-model.js",
+      "sha256": "FC5CEE4B610C663E6579BD65E6D38ED1875993EF68C49E6008FB7DE8D0DC75EE"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/mre-motion-encoding-reference.cjs",
+      "sha256": "920AFF34802DB18F3DA3C7D0A59BFB6DCFBE05CC3B0D46F7E38A6E99CDDBF046"
+    },
+    {
+      "path": "tests/mre-motion-encoding.test.cjs",
+      "sha256": "6BF6431D70412A7EAEBD8A751DBB6D7B500B1AFC45E133299E6A3DD872A9C861"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-numerical.cjs",
+      "sha256": "5C8BCF68CA5EA4CB3BF34BE7614BD39CCC1FF34D751F462BB5385BFED9EEC634"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-numerical.json",
+      "sha256": "011C223738227DF045531373145913681695869CFEC8CC7681A94E9F83D11C2D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-display-reference.json",
+      "sha256": "56D869EF9047E822F7AEF2080A98B439FF14AA2C5628177B6C822CDD98846F0F"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-browser-check.js",
+      "sha256": "FA47ACCF857926BA54C05445EDEC906CE66BD5FFA14EB587969CABA43B9E563D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-browser-check.json",
+      "sha256": "E8AB25EFD4673F1EB3843394BF9F58A40A479D1A97A3FAE0309646207C92A557"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-physics.md",
+      "sha256": "F981CA8998C8C15A3412A793B4F7E3902C33B309562831D33400139349C1EBE4"
+    }
+  ]
+}

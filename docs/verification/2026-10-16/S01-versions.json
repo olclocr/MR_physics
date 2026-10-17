@@ -1,0 +1,27 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/susceptibility_signal_phase.html",
+      "sha256": "EFE29C40BBC3D166105061A5A42FADA307FA261FA100F1ABEE51D4762F85CD22"
+    },
+    {
+      "path": "docs/assets/susceptibility-signal-model.js",
+      "sha256": "B1B84634ED64C6CDB33E75969906E30C565237A54628060CF22927FCCB4B98A3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "tests/helpers/susceptibility-reference.cjs",
+      "sha256": "E7F2711BA8228340E375F2115A9753D8D1C94AAC849D24CDB19B253AC37398BF"
+    },
+    {
+      "path": "tests/susceptibility-signal.test.cjs",
+      "sha256": "4939C8D546C1A6D215E45B5F536FEB31FAF7B9AECDC414E86DD6CB14A718B422"
+    }
+  ],
+  "navigationAudit": "checkpoint-W31-browser.json"
+}

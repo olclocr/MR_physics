@@ -1,0 +1,23 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/balanced_ssfp.html",
+      "sha256": "96D5EA901DC96E9C09E97CBF409FCB26BBEAFD55D563E651F30AF17A1A1BD942"
+    },
+    {
+      "path": "docs/assets/bssfp-model.js",
+      "sha256": "252421E0B5CB8F69280EAF3A856E309BF8358B658B720C6DCBABC4EC15B03921"
+    },
+    {
+      "path": "tests/helpers/bssfp-reference.cjs",
+      "sha256": "02F0CEAB0D0E689B2684123B814F9202A677C5E191993BE5BCB1A4A5F41E52B9"
+    },
+    {
+      "path": "tests/bssfp.test.cjs",
+      "sha256": "B224D046C00E6A2FD631F3563AB09962E45230C059F303282F15CC3C92AAD8DF"
+    }
+  ],
+  "navigationAudit": "checkpoint-W31-browser.json"
+}

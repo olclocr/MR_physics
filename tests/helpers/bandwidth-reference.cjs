@@ -1,0 +1,3 @@
+const {reference:point}=require('./fov-reference.cjs');
+function reference(o){const fullHz=64*o.hzPerPixel,dwellSeconds=1/fullHz,gradientTPerM=o.polarity*fullHz/(42577478.92*.24),frequency=xMm=>42577478.92*gradientTPerM*xMm/1000;let lo=-1000,hi=1000;for(let i=0;i<100;i++){const x=(lo+hi)/2;if((frequency(x)<o.offsetHz)===(o.polarity>0))lo=x;else hi=x;}const shiftMm=(lo+hi)/2,psd=.1**2/(64*200),step=fullHz/4096;let variance=0;for(let i=0;i<4096;i++)variance+=psd*step;return {fullHz,dwellSeconds,shiftMm,sigma:Math.sqrt(variance),at:x=>point({fovMm:240,acquired:64,phantom:'point'},o.polarity*(x-shiftMm))};}
+module.exports={reference};

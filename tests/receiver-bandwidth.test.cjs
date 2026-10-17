@@ -1,0 +1,8 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),M=require('../docs/assets/receiver-bandwidth-model.js'),{reference}=require('./helpers/bandwidth-reference.cjs');const near=(a,b,t=1e-9)=>assert.ok(Math.abs(a-b)<=t,`${a} != ${b}`);
+test('all receiver settings match SI frequency roots, finite Fourier kernels and integrated white-noise power',()=>{
+ for(let hzPerPixel=50;hzPerPixel<=800;hzPerPixel+=50)for(let offsetHz=-400;offsetHz<=400;offsetHz+=50)for(const polarity of [-1,1]){const o={hzPerPixel,offsetHz,polarity},a=M.calculate(o),r=reference(o);near(a.shiftMm,r.shiftMm);near(a.sigma,r.sigma,1e-12);near(a.fullHz,2*a.halfHz,1e-12);near(a.readoutMs,1000/hzPerPixel,1e-12);near(a.firstLastMs,(a.size-1)*a.dwellSeconds*1000,1e-12);for(const x of [-120,-30,0,30,120,a.shiftMm,a.shiftMm+3.75]){const q=a.at(x),ref=r.at(x);near(q.real,ref.real);near(q.imaginary,ref.imaginary);}near(a.profile.reduce((s,p)=>s+p.magnitude**2,0),1);}
+});
+test('fixed FOV, zero off-resonance, polarity reversal and bandwidth scaling keep their stated comparison conditions',()=>{
+ for(const hzPerPixel of [50,200,800]){const a=M.calculate({hzPerPixel,offsetHz:0});near(a.pixelMm,3.75);near(a.at(0).magnitude,1);near(a.profile.filter((_,i)=>i!==32).reduce((s,p)=>s+p.magnitude**2,0),0);}
+ const a=M.calculate(),b=M.calculate({hzPerPixel:800}),c=M.calculate({polarity:-1});near(b.readoutMs,a.readoutMs/4);near(b.sigma,a.sigma*2);near(b.snrReference,a.snrReference/2);near(c.shiftMm,-a.shiftMm);for(const o of [{hzPerPixel:0},{offsetHz:NaN},{polarity:0}])assert.throws(()=>M.calculate(o),RangeError);
+});

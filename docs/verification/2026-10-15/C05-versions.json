@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/fast_spin_echo.html",
+      "sha256": "F19552387270ED7B8AA5A350E2C124EB352B7E7DFD1920AAE99BA22B4C4D0648"
+    },
+    {
+      "path": "docs/assets/echo-train-model.js",
+      "sha256": "EBEED552028FA9C065AECC7B2554F539EA546970F7BAB6999A9F32CD64D20D41"
+    },
+    {
+      "path": "tests/helpers/echo-train-reference.cjs",
+      "sha256": "8DE32C959A4C0AC7FD6EF8636ED7CEA63B6EEF85B146FFC57CBD12EB82AECC87"
+    },
+    {
+      "path": "tests/echo-train.test.cjs",
+      "sha256": "F9D2AF4141FAFB010C5FDD156518DCFA17E7F01D398D2C793F14A98E8E836A60"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-numerical.cjs",
+      "sha256": "FBF7F8BC48917C1DC3E4602107EB7E67733D72CDDEF828632829F77CF072AF38"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-numerical.json",
+      "sha256": "C461D7573D6BD27FD80572FEC758ED3FF58DE13AC8A2253FB7E690B9BCAA15F3"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-browser-check.js",
+      "sha256": "A140C690EAA3210428CEC316C8D40CC43E15BDF142368CC6FEC5C30388209D41"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-browser-check.json",
+      "sha256": "B5250D2FD53AD63E394C5DC15EADDB3F15E1E7F5F6F6E2671FF67C9F718801C6"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

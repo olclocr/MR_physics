@@ -1,0 +1,183 @@
+{
+  "summary": {
+    "cases": 18,
+    "complexSamples": 3456,
+    "maxFourierError": 2.959634696354307e-14,
+    "maxReconstructionError": 9.160654043342802e-15,
+    "maxPhasePriorError": 7.022160630754115e-15,
+    "maxMeasuredResidual": 2.459882007878351e-16,
+    "maxProductMeasuredResidual": 3.0243095398620694e-15,
+    "maxMagnitude": 1.8260712430017099,
+    "method": "independent radix-2 FFT and real normal-operator/Landweber-equivalent 128-step iteration"
+  },
+  "examples": [
+    {
+      "options": {
+        "count": 40,
+        "phase": "zero",
+        "prior": "low"
+      },
+      "phasePriorRMSE": 1.2945299685651198e-16,
+      "metrics": {
+        "zero": {
+          "complexNRMSE": 0.15143391185832364,
+          "magnitudeNRMSE": 0.1101183919408768,
+          "dataResidual": 1.8774130678513817e-16,
+          "phaseLineResidual": 0.1083292657392732
+        },
+        "conjugate": {
+          "complexNRMSE": 1.84238261870024e-16,
+          "magnitudeNRMSE": 1.5379475650849023e-16,
+          "dataResidual": 1.2732932312633304e-16,
+          "phaseLineResidual": 7.055787886209003e-17
+        },
+        "pocs": {
+          "complexNRMSE": 1.4886815830600394e-15,
+          "magnitudeNRMSE": 1.0497585627438692e-15,
+          "dataResidual": 1.4002600677641185e-16,
+          "phaseLineResidual": 1.0508241081984411e-15
+        }
+      }
+    },
+    {
+      "options": {
+        "count": 40,
+        "phase": "zero",
+        "prior": "known"
+      },
+      "phasePriorRMSE": 0,
+      "metrics": {
+        "zero": {
+          "complexNRMSE": 0.15143391185832364,
+          "magnitudeNRMSE": 0.1101183919408768,
+          "dataResidual": 1.8774130678513817e-16,
+          "phaseLineResidual": 0.10832926573927322
+        },
+        "conjugate": {
+          "complexNRMSE": 1.84238261870024e-16,
+          "magnitudeNRMSE": 1.5379475650849023e-16,
+          "dataResidual": 1.2732932312633304e-16,
+          "phaseLineResidual": 1.0144412258668186e-16
+        },
+        "pocs": {
+          "complexNRMSE": 1.4323552698845904e-15,
+          "magnitudeNRMSE": 1.0044333548350052e-15,
+          "dataResidual": 1.2929086110821245e-16,
+          "phaseLineResidual": 1.0211538840258368e-15
+        }
+      }
+    },
+    {
+      "options": {
+        "count": 40,
+        "phase": "smooth",
+        "prior": "low"
+      },
+      "phasePriorRMSE": 0.03676270942964729,
+      "metrics": {
+        "zero": {
+          "complexNRMSE": 0.15196712412556598,
+          "magnitudeNRMSE": 0.11021357482370686,
+          "dataResidual": 1.9372332453413646e-16,
+          "phaseLineResidual": 0.11276696808252627
+        },
+        "conjugate": {
+          "complexNRMSE": 0.21275136583459622,
+          "magnitudeNRMSE": 0.1586857397385127,
+          "dataResidual": 1.763672486852422e-16,
+          "phaseLineResidual": 0.15588532183198264
+        },
+        "pocs": {
+          "complexNRMSE": 0.017944363077701784,
+          "magnitudeNRMSE": 0.012482514699635327,
+          "dataResidual": 1.822939411807737e-16,
+          "phaseLineResidual": 0.031813573575692644
+        }
+      }
+    },
+    {
+      "options": {
+        "count": 40,
+        "phase": "smooth",
+        "prior": "known"
+      },
+      "phasePriorRMSE": 0,
+      "metrics": {
+        "zero": {
+          "complexNRMSE": 0.15196712412556598,
+          "magnitudeNRMSE": 0.11021357482370686,
+          "dataResidual": 1.9372332453413646e-16,
+          "phaseLineResidual": 0.10873312362930763
+        },
+        "conjugate": {
+          "complexNRMSE": 0.21275136583459622,
+          "magnitudeNRMSE": 0.1586857397385127,
+          "dataResidual": 1.763672486852422e-16,
+          "phaseLineResidual": 0.15079480726259065
+        },
+        "pocs": {
+          "complexNRMSE": 2.644494143240828e-15,
+          "magnitudeNRMSE": 1.9720533018949306e-15,
+          "dataResidual": 1.6690621765600814e-16,
+          "phaseLineResidual": 1.7545145025430272e-15
+        }
+      }
+    },
+    {
+      "options": {
+        "count": 40,
+        "phase": "rapid",
+        "prior": "low"
+      },
+      "phasePriorRMSE": 0.8546202698605242,
+      "metrics": {
+        "zero": {
+          "complexNRMSE": 0.4404975979586413,
+          "magnitudeNRMSE": 0.3538361870990815,
+          "dataResidual": 1.5342045416140558e-16,
+          "phaseLineResidual": 0.4745582649705186
+        },
+        "conjugate": {
+          "complexNRMSE": 0.9188407475078754,
+          "magnitudeNRMSE": 0.6456978981973492,
+          "dataResidual": 2.0177202455189274e-16,
+          "phaseLineResidual": 0.17335128623402696
+        },
+        "pocs": {
+          "complexNRMSE": 0.9261662157609332,
+          "magnitudeNRMSE": 0.6542627322762055,
+          "dataResidual": 2.459882007878351e-16,
+          "phaseLineResidual": 0.1482776042447217
+        }
+      }
+    },
+    {
+      "options": {
+        "count": 40,
+        "phase": "rapid",
+        "prior": "known"
+      },
+      "phasePriorRMSE": 0,
+      "metrics": {
+        "zero": {
+          "complexNRMSE": 0.4404975979586413,
+          "magnitudeNRMSE": 0.3538361870990815,
+          "dataResidual": 1.5342045416140558e-16,
+          "phaseLineResidual": 0.25427336371729775
+        },
+        "conjugate": {
+          "complexNRMSE": 0.9188407475078754,
+          "magnitudeNRMSE": 0.6456978981973492,
+          "dataResidual": 2.0177202455189274e-16,
+          "phaseLineResidual": 0.5039050462291021
+        },
+        "pocs": {
+          "complexNRMSE": 0.000006014729805210017,
+          "magnitudeNRMSE": 0.000005792033933694831,
+          "dataResidual": 2.1644702009665586e-16,
+          "phaseLineResidual": 0.000001621518071354807
+        }
+      }
+    }
+  ]
+}

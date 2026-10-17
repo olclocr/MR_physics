@@ -1,0 +1,46 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/spectral_peak_features.html",
+      "sha256": "9888E32BF2E684110E1604DB8A8E61E649BC9B15F08AE6C3806EC15BA683701E"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "tests/helpers/spectral-line-reference.cjs",
+      "sha256": "077911B082755ED508DF67B040C8A70A2B79C5CA107C87BA5753BE7D8B0369A8"
+    },
+    {
+      "path": "tests/spectral-line.test.cjs",
+      "sha256": "45386FE926E50715657E2433C52F4EFFD16EAF21FA6B167B29FC6824B86E46AE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-numerical.cjs",
+      "sha256": "6C193BAA722A864164641E708C9AF2A1E50A0DF91036BDE757061C9A12545E05"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-numerical.json",
+      "sha256": "35E4B38800D139E0D7F5ED1DC61A75C3B57E329E9A7E82D7436FBCAF54544445"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-display-reference.json",
+      "sha256": "037FD72D8121FE09FE0A3CA77C9EEDF4FF19711AFEC51CA548F668B9CE4329C1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-browser-check.js",
+      "sha256": "0195B35F33083005C9AE9FCDB5062CEA80EFA6A4D4AF2159A21251849D0DA34A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-browser-check.json",
+      "sha256": "693B2D6379F61478DC0A2A406E5385C0B564272E8F9CDFC76181380CF44449B1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-physics.md",
+      "sha256": "4D3CEF1485FB1123FA0E233E4B13A03EE7B96CA14DA5CAD87D35971AA0E67795"
+    }
+  ]
+}

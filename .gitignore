@@ -1,0 +1,3 @@
+# Local browser sessions and temporary operating-system controls.
+.playwright-cli/
+.local-operations/

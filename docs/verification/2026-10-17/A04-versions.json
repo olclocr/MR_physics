@@ -1,0 +1,34 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/chemical_shift_artifacts.html",
+      "sha256": "A955494292856F9B75B97396C1E0D2CEF63352DB1B7243B89017C27066359E13"
+    },
+    {
+      "path": "docs/assets/chemical-artifact-model.js",
+      "sha256": "BD51F04777FEC2C9F69B6E7FED9ECAEEE7C69A99F04C3D359CF387000EBF0B06"
+    },
+    {
+      "path": "docs/assets/receiver-bandwidth-model.js",
+      "sha256": "964CE8EB3F80028F41ADA973E037BBB13E492799B4A9165A46043EE76CC8B789"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/chemical-artifact-reference.cjs",
+      "sha256": "CBAEE341E4527346ED545699F54A45F9D3D1A69BDBC7E55FEEDC9509B4B8959C"
+    },
+    {
+      "path": "tests/chemical-artifact.test.cjs",
+      "sha256": "80A0F49AF207EB98043DC87FDF3ACB1E8F7F390A05BBA780E449FFFBEA977C6E"
+    }
+  ]
+}

@@ -164,7 +164,7 @@
         <div class="metric"><b>원본과의 오차 · NRMSE</b><span id="errorMetric"></span></div>
       </div>
       <p class="takeaway" id="takeaway" aria-live="polite"></p>
-      <section class="learning"><h2>관찰 후 예측 확인</h2><p><b>1.</b> 하나의 복소 k-space 성분은 어디에 기여하나요?</p><div class="quiz-options"><button id="quizPointWrong" type="button">영상의 한 픽셀에만</button><button id="quizPointCorrect" type="button">영상 전체에 펼쳐지는 무늬로</button></div><p id="quizPointFeedback" class="quiz-feedback" role="status">답을 선택해 이유를 확인하세요.</p><p><b>2.</b> ky 한 줄 건너뛰기 후 빠진 곳을 0으로 두면 원래 한 점의 위치를 완전히 알 수 있나요?</p><div class="quiz-options"><button id="quizMissingCorrect" type="button">아니요. 반 FOV 떨어진 y 위치가 겹칩니다</button><button id="quizMissingWrong" type="button">네. 0도 측정값이므로 정보가 보충됩니다</button></div><p id="quizMissingFeedback" class="quiz-feedback" role="status">답을 선택해 이유를 확인하세요.</p><p><b>흔한 오개념:</b> “중심은 영상 가운데, 바깥은 영상 가장자리다.” 각 성분은 전체에 퍼집니다. 중심에 가까운 성분은 완만한 변화, 바깥 성분은 촘촘한 변화를 나타냅니다. 중심만 남기면 경계가 흐려지고, 바깥만 남기면 평균 밝기를 잃으며 경계 변화가 강조됩니다.</p><p>다음 질문: k-space 간격과 최대 범위는 FOV·pixel 크기를 어떻게 정할까요? 후속 G01에서 다룹니다. Zero filling은 새 측정 정보를 더하지 않으며, 실제 partial Fourier·병렬 재구성과 구별합니다.</p></section>
+      <section class="learning"><h2>관찰 후 예측 확인</h2><p><b>1.</b> 하나의 복소 k-space 성분은 어디에 기여하나요?</p><div class="quiz-options"><button id="quizPointWrong" type="button">영상의 한 픽셀에만</button><button id="quizPointCorrect" type="button">영상 전체에 펼쳐지는 무늬로</button></div><p id="quizPointFeedback" class="quiz-feedback" role="status">답을 선택해 이유를 확인하세요.</p><p><b>2.</b> ky 한 줄 건너뛰기 후 빠진 곳을 0으로 두면 원래 한 점의 위치를 완전히 알 수 있나요?</p><div class="quiz-options"><button id="quizMissingCorrect" type="button">아니요. 반 FOV 떨어진 y 위치가 겹칩니다</button><button id="quizMissingWrong" type="button">네. 0도 측정값이므로 정보가 보충됩니다</button></div><p id="quizMissingFeedback" class="quiz-feedback" role="status">답을 선택해 이유를 확인하세요.</p><p><b>흔한 오개념:</b> “중심은 영상 가운데, 바깥은 영상 가장자리다.” 각 성분은 전체에 퍼집니다. 중심에 가까운 성분은 완만한 변화, 바깥 성분은 촘촘한 변화를 나타냅니다. 중심만 남기면 경계가 흐려지고, 바깥만 남기면 평균 밝기를 잃으며 경계 변화가 강조됩니다.</p><p>다음 질문: k-space 간격과 최대 범위는 FOV·pixel 크기를 어떻게 정할까요? <a href="epi_trajectory.html">C07 · EPI 경로</a>와 <a href="fov_matrix_resolution.html">G01 · FOV와 matrix</a>에서 비교하세요. Zero filling은 새 측정 정보를 더하지 않으며, 실제 partial Fourier와 구별하며 <a href="parallel_imaging.html">Q04 · Coil 감도에 의한 병렬 분리</a>는 별도의 알려진 감도 모형으로 비교합니다.</p></section>
     </section>
 
     <aside class="sidebar" aria-label="학습 단계와 조작">
@@ -262,7 +262,7 @@
         </details>
       </section>
     </aside>
-  </main>
+  <p><a href="partial_fourier_phase.html">Q05 · Partial Fourier의 위상 가정과 복원 실패 비교</a></p></main>
   <script>
     "use strict";
     const N = 16;

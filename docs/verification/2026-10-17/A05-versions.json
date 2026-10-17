@@ -1,0 +1,22 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/field_epi_distortion.html",
+      "sha256": "A5EFC3AADA6A8D5AE50B2B31CE54E6CBD919FB47BD1B4D3DB71489D65C7C88E8"
+    },
+    {
+      "path": "docs/assets/field-distortion-model.js",
+      "sha256": "682FB9DDD2EBAEFD9E8230A086D4EB3B9B283E30403AE259E820FD39B46E2CBE"
+    },
+    {
+      "path": "tests/helpers/field-distortion-reference.cjs",
+      "sha256": "047579AE2F6A2E540F97DF4380958307F7580BDE136DFF38ABC7ADBE3AD524A3"
+    },
+    {
+      "path": "tests/field-distortion.test.cjs",
+      "sha256": "284BE1C966728D442439F8823C91553591E8168C51076643B15B5EC684FE98E8"
+    }
+  ]
+}

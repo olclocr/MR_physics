@@ -1,0 +1,447 @@
+{
+  "summary": {
+    "cases": 48,
+    "voxels": 196608,
+    "maxComplexError": 7.707858776888524e-15,
+    "maxMagnitudeError": 7.66053886991358e-15,
+    "maxPhaseError": 6.661338147750939e-15,
+    "maxProfileError": 1.2878587085651816e-14,
+    "maxBackgroundError": 6.217248937900877e-15,
+    "areaMismatches": 0,
+    "method": "independent finite Gaussian frequency quadrature and RK4 T2 relaxation; full four-plane voxel check"
+  },
+  "records": [
+    {
+      "options": {
+        "teMs": 5,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 52,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 52,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 52,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 52,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 112,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 112,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 112,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 112,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 180,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 180,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 180,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 180,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "kind": "mean",
+        "sign": -1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "kind": "mean",
+        "sign": 1
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "kind": "spread",
+        "sign": -1
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "kind": "spread",
+        "sign": 1
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "kind": "both",
+        "sign": -1
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 32
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "kind": "both",
+        "sign": 1
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 32
+    }
+  ]
+}

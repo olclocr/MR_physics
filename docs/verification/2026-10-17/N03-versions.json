@@ -1,0 +1,58 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/mrs_observation_volume.html",
+      "sha256": "2C70AA2610F57ACEDFB59BCCFCE5DF852F760C5B83820E5AA1CA36609DAB661C"
+    },
+    {
+      "path": "docs/assets/mrs-localization-model.js",
+      "sha256": "63AAAEECF1F9DB08AC9B53E8C78CCB001B0685BCA094CC997049C99E5C64397D"
+    },
+    {
+      "path": "docs/assets/slice-selection-model.js",
+      "sha256": "54C2DBDB22268EAFCC46075184B09DC6AA660FA0FED58FBDC547C190B728EB41"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/mrs-localization-reference.cjs",
+      "sha256": "1682FB766F312E5ABFECD8D982C7CEC34D3E65C5F4DF4DD433E018F6F9A25668"
+    },
+    {
+      "path": "tests/mrs-localization.test.cjs",
+      "sha256": "B7DD7F9C128BB3BE510BE9587B4C728B7F76DF2B2BB5430F7D48BB332244EA24"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-numerical.cjs",
+      "sha256": "EF25DD3CB1E79BCA6CAF2A6EDDBBBF0BE2A19EF3128904B3B9C2C27DC5B5AAB9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-numerical.json",
+      "sha256": "51DEBDB98034514F4B651F34662C35DB27BAD51F68E54FEDF189218DBC2425D5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-display-reference.json",
+      "sha256": "B629E97F67B95CA235A815F45B9E6652C653663441705B13A4D8A31C273397F3"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-browser-check.js",
+      "sha256": "DFFB2566FA6500B562B83C81E2CA48FAFEF856935D25EFA15C1443A7C18938A8"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-browser-check.json",
+      "sha256": "B37C160BF1A53F44A5A6281352FECC562C224138FF48ABCC1A52E78BC6676A87"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-physics.md",
+      "sha256": "51B5A764965430887B8E52D6F01567FB2B267D081FE81F144ECE2E35A49BFB54"
+    }
+  ]
+}

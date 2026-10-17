@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-17",
+  "cases": 48,
+  "replicas": 512,
+  "processedImages": 24576,
+  "positions": 3072,
+  "max": {
+    "mean": 7.105427357601002e-15,
+    "variance": 1.5265566588595902e-16,
+    "covariance": 4.85722573273506e-17,
+    "correlation": 5.6343818499726694e-15,
+    "metric": 1.7053025658242404e-13
+  },
+  "bounds": {
+    "mean": [
+      -0.022504560763390566,
+      1.2179539950891825
+    ],
+    "variance": [
+      0,
+      0.06096432778149916
+    ],
+    "covariance": [
+      -0.020812123408625007,
+      0.007353452345625916
+    ]
+  },
+  "examples": [
+    {
+      "options": {
+        "signal": "edges",
+        "sigma": 0.15,
+        "processing": "smooth"
+      },
+      "biasRMS": 0.05728504046537288,
+      "meanSD": 0.09216828542591557,
+      "probeMean": 0.26960432241711146,
+      "probeVariance": 0.008016085590930594,
+      "probeCovariance": 0.005078984372284757,
+      "probeCorrelation": 0.6271847082728523,
+      "probeRatio": 3.0112421294388083,
+      "expectedVariance": 0.0084375,
+      "expectedCovariance": 0.005625
+    },
+    {
+      "options": {
+        "signal": "edges",
+        "sigma": 0.15,
+        "processing": "sharpen"
+      },
+      "biasRMS": 0.057815542335763234,
+      "meanSD": 0.23057361470716362,
+      "probeMean": 0.4095591458962971,
+      "probeVariance": 0.04891820319522394,
+      "probeCovariance": -0.01578817756154571,
+      "probeCorrelation": -0.3072006524856905,
+      "probeRatio": 1.851745851229071,
+      "expectedVariance": 0.0534375,
+      "expectedCovariance": -0.016875
+    },
+    {
+      "options": {
+        "signal": "zero",
+        "sigma": 0.05,
+        "processing": "haar"
+      },
+      "biasRMS": 0.0005580985373082489,
+      "meanSD": 0.012053870047442369,
+      "probeMean": -0.0007121732906100382,
+      "probeVariance": 0.0001307267141791122,
+      "probeCovariance": 0.000007395079060605318,
+      "probeCorrelation": 0.05504942879130214,
+      "probeRatio": -0.062287874190367465,
+      "expectedVariance": null,
+      "expectedCovariance": null
+    },
+    {
+      "options": {
+        "signal": "high",
+        "sigma": 0.05,
+        "processing": "haar"
+      },
+      "biasRMS": 0.010074224096299775,
+      "meanSD": 0.013491664306471883,
+      "probeMean": 0.9892285152629811,
+      "probeVariance": 0.00015957087258779964,
+      "probeCovariance": 0.00004426859543967404,
+      "probeCorrelation": 0.2590938723924092,
+      "probeRatio": 78.31046752543988,
+      "expectedVariance": null,
+      "expectedCovariance": null
+    },
+    {
+      "options": {
+        "signal": "edges",
+        "sigma": 0,
+        "processing": "smooth"
+      },
+      "biasRMS": 0.05706869489921773,
+      "meanSD": 0,
+      "probeMean": 0.27499999999999997,
+      "probeVariance": 0,
+      "probeCovariance": 0,
+      "probeCorrelation": null,
+      "probeRatio": null,
+      "expectedVariance": 0,
+      "expectedCovariance": 0
+    }
+  ]
+}

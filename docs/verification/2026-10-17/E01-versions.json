@@ -1,0 +1,46 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/mre_shear_wave.html",
+      "sha256": "5D5A8502ACB8ED6F6C432375E83B74281BFC01070FF452C31F7AEB6E0036A915"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "tests/helpers/shear-wave-reference.cjs",
+      "sha256": "BF470EB290DADBCEA40B01C2126F1A1751AA88EC50F776C92A9472512EDA056C"
+    },
+    {
+      "path": "tests/shear-wave.test.cjs",
+      "sha256": "5FD9D5772ACB917490CB568536D36A9A3EE091897F682D41668999DB54E445AB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-numerical.cjs",
+      "sha256": "361E9F1737C4F2320EFBE8E2D2462D00E3BE33061E253096EFEB76A0655356A9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-numerical.json",
+      "sha256": "27093AC89E842293FD7CC48443C4E5B7EC9A5A343AE30E3F7EE9896229530623"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-display-reference.json",
+      "sha256": "A832FD8CD1BA5429B9595771B65EC839D77C01454AF05CC49E1D25FC7EE6B8C5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-browser-check.js",
+      "sha256": "3D5F33C6DDB2C8DCEF08807C30525B754A615CC2B984CC3CF5B3584F4088D4FF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-browser-check.json",
+      "sha256": "2C82EB812B25CB039787BD1D21C425635B7CEE7A762891E3F4CC75E80CE5D679"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-physics.md",
+      "sha256": "656EDF8030956617FE8975F9F0892D0A65A30A2BF114FC2A88E9D7EEBFC6F11E"
+    }
+  ]
+}

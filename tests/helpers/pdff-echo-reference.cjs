@@ -1,0 +1,6 @@
+// Independent time stepping of dZ/dt=(-1/T2* - i 2π df/1000) Z.
+const cache=new Map(),peaks={single:[[-3.4,1]],multi:[[-3.8,.088],[-3.4,.7],[-2.6,.12],[-1.95,.006],[-.5,.039],[.6,.047]]};
+function evolve(t,rate,hz){const n=Math.max(1,Math.ceil(t/.001)),dt=t/n,a=-rate*dt,b=-2*Math.PI*hz*dt/1000;let pr=1,pi=0,fr=1,fi=0;for(let k=1;k<=4;k++){const r=(pr*a-pi*b)/k,i=(pr*b+pi*a)/k;pr=r;pi=i;fr+=r;fi+=i;}let re=1,im=0;for(let j=0;j<n;j++){const r=re*fr-im*fi;im=re*fi+im*fr;re=r;}return{re,im};}
+function factors(teMs,o){const key=[teMs,o.b0,o.spectrum,o.relaxation].join('/');if(!cache.has(key)){const water=evolve(teMs,1/40,0).re;let re=0,im=0;for(const [ppm,w]of peaks[o.spectrum]){const z=evolve(teMs,1/(o.relaxation==='same'?40:20),ppm*42.57747892*o.b0);re+=w*z.re;im+=w*z.im;}cache.set(key,{water,re,im,fat:Math.hypot(re,im)});}return cache.get(key);}
+function reference(teMs,o){const v=factors(teMs,o),f=o.fatDensityFraction,water=(1-f)*v.water,fatReal=f*v.re,fatImaginary=f*v.im,fatMagnitude=Math.hypot(fatReal,fatImaginary);return{teMs,water,fatReal,fatImaginary,fatMagnitude,waterFactor:v.water,fatFactor:v.fat,rawFraction:fatMagnitude/(water+fatMagnitude),correctedFraction:(fatMagnitude/v.fat)/(water/v.water+fatMagnitude/v.fat)};}
+module.exports={reference,evolve};

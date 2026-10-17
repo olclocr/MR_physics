@@ -1,0 +1,1 @@
+{"learningPages":57,"reports":60,"browserStates":234,"changes":[{"manifest":"docs\\verification\\2026-10-17\\AI01-versions.json","path":"docs/reconstruction_roles.html","before":"E109D77077060E805606327D7511ED7FEED3FA0E714D9027225594FB4BEC41B4","after":"1D0BC099D48DCCD4120AE9FB399EFF7D44F6D038954FD5DE81FE0959C84D5791"}]}

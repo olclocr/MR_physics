@@ -63,6 +63,270 @@
         "source": "B05-physics.md",
         "target": "B05-physics.html",
         "label": "B05 k-space·역변환 검증"
+      },
+      {
+        "source": "G01-physics.md",
+        "target": "G01-physics.html",
+        "label": "G01 FOV·matrix 검증"
+      },
+      {
+        "source": "G02-physics.md",
+        "target": "G02-physics.html",
+        "label": "G02 Slice 선택·부분 용적 검증"
+      },
+      {
+        "source": "Q01-physics.md",
+        "target": "Q01-physics.html",
+        "label": "Q01 SNR·CNR·NEX 검증"
+      },
+      {
+        "source": "B00-physics.md",
+        "target": "B00-physics.html",
+        "label": "B00 고전적 세차 비유 검증"
+      },
+      {
+        "source": "C04-physics.md",
+        "target": "C04-physics.html",
+        "label": "C04 IR·TI·null 검증"
+      },
+      {
+        "source": "C05-physics.md",
+        "target": "C05-physics.html",
+        "label": "C05 Echo train·ordering 검증"
+      },
+      {
+        "source": "G03-physics.md",
+        "target": "G03-physics.html",
+        "label": "G03 2D/3D·voxel·MPR 검증"
+      },
+      {
+        "source": "Q02-physics.md",
+        "target": "Q02-physics.html",
+        "label": "Q02 Receiver BW 검증"
+      },
+      {
+        "source": "Q03-physics.md",
+        "target": "Q03-physics.html",
+        "label": "Q03 검사 시간·이벤트 검증"
+      },
+      {
+        "source": "C06-physics.md",
+        "target": "C06-physics.html",
+        "label": "C06 Spoiled GRE·Ernst angle 검증"
+      },
+      {
+        "source": "C07-physics.md",
+        "target": "C07-physics.html",
+        "label": "C07 EPI 경로·시간·PE 이동 검증"
+      },
+      {
+        "source": "Q04-physics.md",
+        "target": "Q04-physics.html",
+        "label": "Q04 Coil·R2·g-factor 검증"
+      },
+      {
+        "source": "F01-physics.md",
+        "target": "F01-physics.html",
+        "label": "F01 물·지방 IP/OP 검증"
+      },
+      {
+        "source": "F02-physics.md",
+        "target": "F02-physics.html",
+        "label": "F02 Dixon·field·교환 검증"
+      },
+      {
+        "source": "F03-physics.md",
+        "target": "F03-physics.html",
+        "label": "F03 선택 saturation·B0/B1 검증"
+      },
+      {
+        "source": "F04-physics.md",
+        "target": "F04-physics.html",
+        "label": "F04 지방억제 원리·실패 검증"
+      },
+      {
+        "source": "D01-physics.md",
+        "target": "D01-physics.html",
+        "label": "D01 확산·gradient·b 검증"
+      },
+      {
+        "source": "D02-physics.md",
+        "target": "D02-physics.html",
+        "label": "D02 ADC·T2·잡음 검증"
+      },
+      {
+        "source": "F03-water-physics.md",
+        "target": "F03-water-physics.html",
+        "label": "F03 Water excitation·두 RF 검증"
+      }
+    ],
+    "2026-10-16": [
+      {
+        "source": "D03-physics.md",
+        "target": "D03-physics.html",
+        "label": "D03 DWI·EPI 시간·위치 검증"
+      },
+      {
+        "source": "S01-physics.md",
+        "target": "S01-physics.html",
+        "label": "S01 주파수분포·GRE·blooming 검증"
+      },
+      {
+        "source": "S01-swi-physics.md",
+        "target": "S01-swi-physics.html",
+        "label": "S01 phase mask·minIP 검증"
+      },
+      {
+        "source": "C08-physics.md",
+        "target": "C08-physics.html",
+        "label": "C08 bSSFP·주기·초기/정상 검증"
+      },
+      {
+        "source": "C08-contrast-physics.md",
+        "target": "C08-contrast-physics.html",
+        "label": "C08 T2/T1 대비·근사 검증"
+      },
+      {
+        "source": "Q05-physics.md",
+        "target": "Q05-physics.html",
+        "label": "Q05 Partial Fourier·위상 복원 검증"
+      },
+      {
+        "source": "Q06-physics.md",
+        "target": "Q06-physics.html",
+        "label": "Q06 희소성·표본·L1 검증"
+      }
+    ],
+    "2026-10-17": [
+      {
+        "source": "Q07-physics.md",
+        "target": "Q07-physics.html",
+        "label": "Q07 SMS·slice 분리·CAIPI 검증"
+      },
+      {
+        "source": "A01-physics.md",
+        "target": "A01-physics.html",
+        "label": "A01 FOV·aliasing·표시 보간 검증"
+      },
+      {
+        "source": "A02-physics.md",
+        "target": "A02-physics.html",
+        "label": "A02 움직임·순서·gating 검증"
+      },
+      {
+        "source": "A03-physics.md",
+        "target": "A03-physics.html",
+        "label": "A03 유한 계수·ringing·Hann 검증"
+      },
+      {
+        "source": "A04-physics.md",
+        "target": "A04-physics.html",
+        "label": "A04 Chemical shift·두 기전 비교 검증"
+      },
+      {
+        "source": "A05-physics.md",
+        "target": "A05-physics.html",
+        "label": "A05 공간 field·EPI 위치 모형 검증"
+      },
+      {
+        "source": "A06-physics.md",
+        "target": "A06-physics.html",
+        "label": "A06 B1·수신 gain·B0 부분 모형 검증"
+      },
+      {
+        "source": "M01-physics.md",
+        "target": "M01-physics.html",
+        "label": "M01 기본·밝기와 T2 추정 검증"
+      },
+      {
+        "source": "M01-limits-physics.md",
+        "target": "M01-limits-physics.html",
+        "label": "M01 후속·잡음/두성분 fitting 검증"
+      },
+      {
+        "source": "M02-physics.md",
+        "target": "M02-physics.html",
+        "label": "M02 기본·IR T1 추정 검증"
+      },
+      {
+        "source": "M03-physics.md",
+        "target": "M03-physics.html",
+        "label": "M03 기본·T2*/R2* 범위 검증"
+      },
+      {
+        "source": "M04-physics.md",
+        "target": "M04-physics.html",
+        "label": "M04 기본 · 신호 분율과 T1 bias"
+      },
+      {
+        "source": "M04-echo-physics.md",
+        "target": "M04-echo-physics.html",
+        "label": "M04 후속 · Echo 감쇠와 지방 spectrum"
+      },
+      {
+        "source": "N01-physics.md",
+        "target": "N01-physics.html",
+        "label": "N01 · 복소 FID와 spectrum"
+      },
+      {
+        "source": "N02-physics.md",
+        "target": "N02-physics.html",
+        "label": "N02 기본 · Peak 위치·면적·폭·TE"
+      },
+      {
+        "source": "N03-physics.md",
+        "target": "N03-physics.html",
+        "label": "N03 기본 · 관측 공간과 spectrum 혼합"
+      },
+      {
+        "source": "E01-physics.md",
+        "target": "E01-physics.html",
+        "label": "E01 기본 · Shear wave와 파장"
+      },
+      {
+        "source": "E01-encoding-physics.md",
+        "target": "E01-encoding-physics.html",
+        "label": "E01 후속 · 변위와 MR 위상"
+      },
+      {
+        "source": "E02-physics.md",
+        "target": "E02-physics.html",
+        "label": "E02 기본 · 국소 역산과 공간 오차"
+      },
+      {
+        "source": "S02-physics.md",
+        "target": "S02-physics.html",
+        "label": "S02 기본 · Dipole field와 역문제"
+      },
+      {
+        "source": "AI01-physics.md",
+        "target": "AI01-physics.html",
+        "label": "AI01 기본 · 재구성 역할과 자료 일치"
+      },
+      {
+        "source": "AI03-physics.md",
+        "target": "AI03-physics.html",
+        "label": "AI03 기본 · 구조와 질감 검증"
+      },
+      {
+        "source": "AI03-t2-physics.md",
+        "target": "AI03-t2-physics.html",
+        "label": "AI03 정량 · 공간 처리와 T2 검증"
+      },
+      {
+        "source": "AI02-physics.md",
+        "target": "AI02-physics.html",
+        "label": "AI02 · 벤더 공개 자료 읽기 검토"
+      },
+      {
+        "source": "AI03-noise-physics.md",
+        "target": "AI03-noise-physics.html",
+        "label": "AI03 반복 · 평균/분산/공분산 검증"
+      },
+      {
+        "source": "N03-field-physics.md",
+        "target": "N03-field-physics.html",
+        "label": "N03 후속 · 주파수 분포와 선폭 검증"
       }
     ]
   }

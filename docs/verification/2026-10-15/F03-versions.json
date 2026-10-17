@@ -1,0 +1,47 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/spectral_fat_saturation.html",
+      "sha256": "A456A151C2257D26F50500171E7963E1B0A655094C487F4B1EAF1D4FC6DFD2D5"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/spectral-saturation.test.cjs",
+      "sha256": "73FEB16C264D639A4CC44FDCAE4FF6345CDC05E880A595C31F23B357D476F20F"
+    },
+    {
+      "path": "tests/helpers/saturation-reference.cjs",
+      "sha256": "87403692B2DA55CEF853A32C150C60A1A5C685B2AC46B318EA7F57CC8DB89F86"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-numerical.cjs",
+      "sha256": "C17B235DAECB6081D79966D3A44BDB667E83FCCA5AC8D2FD3B6C0CF4CE4BB932"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-display-reference.cjs",
+      "sha256": "2655455BBCA8D1D7D81E80B58A14348C18223D2E35DA59BB5D9B8B9A18E5F685"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-browser-check.js",
+      "sha256": "0326B3F3A92A0D2D94AC549B958DB561E3CC08D6978D0C855075578120AC4CDF"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

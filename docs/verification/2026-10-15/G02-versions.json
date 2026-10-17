@@ -1,0 +1,43 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/slice_selection_partial_volume.html",
+      "sha256": "A7E9C692C0CF16413A54F4D32D9E179B45E5E8FEC77E2FB871FB0E7B1E5B6234"
+    },
+    {
+      "path": "docs/assets/slice-selection-model.js",
+      "sha256": "54C2DBDB22268EAFCC46075184B09DC6AA660FA0FED58FBDC547C190B728EB41"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/slice-reference.cjs",
+      "sha256": "B133BDB46B2CF5B5F23D7CE6479D39C5E84809BD6FA38C802B4F1C24CA328806"
+    },
+    {
+      "path": "tests/slice-selection.test.cjs",
+      "sha256": "6FC3204AD408231299AE4711F018D2F48F540A6C2343B0407EA35696CFB51E9A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-numerical.cjs",
+      "sha256": "7A26F686BEDE68EFAE89DB6A30E6E37A6B3764B078085BCAEB4A549E3937165C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-numerical.json",
+      "sha256": "DB6315E97B6F11D04D47BF1DB04309D2F7654D34FFD8FF00AD511C5545811A09"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-browser-check.js",
+      "sha256": "B43B23A56A32194E27F42CA247D3547681017F06F66BE0EEE62FF6DAA19D0526"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-browser-check.json",
+      "sha256": "D21F65253FC0F86392AD75AA37EE107820A263232DFAF24E6476C30F25463746"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

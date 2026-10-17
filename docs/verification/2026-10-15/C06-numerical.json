@@ -1,0 +1,103 @@
+{
+  "summary": {
+    "cases": 384,
+    "optima": 32,
+    "maxSignalError": 1.6472379016363448e-12,
+    "maxMzError": 4.791500529677251e-12,
+    "maxTransientError": 1.87960758069039e-12,
+    "maxOptimalErrorDeg": 0.0000010389044291514438,
+    "method": "independent 3D Rodrigues RF, RK4 relaxation, transverse reset, repeated fixed point and numerical ternary maximum"
+  },
+  "examples": [
+    {
+      "tr": 5,
+      "t1": 600,
+      "flip": 0,
+      "mz": 1,
+      "signal": 0,
+      "ernstDeg": 7.38658421465699,
+      "pulsesToOnePercent": 1,
+      "iterations": 50
+    },
+    {
+      "tr": 5,
+      "t1": 600,
+      "flip": 20,
+      "mz": 0.12185056357383367,
+      "signal": 0.039642816549889666,
+      "ernstDeg": 7.38658421465699,
+      "pulsesToOnePercent": 67,
+      "iterations": 409
+    },
+    {
+      "tr": 5,
+      "t1": 600,
+      "flip": 90,
+      "mz": 0.008298707361124045,
+      "signal": 0.007893974627221865,
+      "ernstDeg": 7.38658421465699,
+      "pulsesToOnePercent": 2,
+      "iterations": 50
+    },
+    {
+      "tr": 20,
+      "t1": 600,
+      "flip": 0,
+      "mz": 1,
+      "signal": 0,
+      "ernstDeg": 14.71165800447078,
+      "pulsesToOnePercent": 1,
+      "iterations": 50
+    },
+    {
+      "tr": 20,
+      "t1": 600,
+      "flip": 20,
+      "mz": 0.3598112165838654,
+      "signal": 0.11706084595155575,
+      "ernstDeg": 14.71165800447078,
+      "pulsesToOnePercent": 50,
+      "iterations": 302
+    },
+    {
+      "tr": 20,
+      "t1": 600,
+      "flip": 90,
+      "mz": 0.032783899517994104,
+      "signal": 0.031185009871390768,
+      "ernstDeg": 14.71165800447078,
+      "pulsesToOnePercent": 2,
+      "iterations": 50
+    },
+    {
+      "tr": 5000,
+      "t1": 600,
+      "flip": 0,
+      "mz": 1,
+      "signal": 0,
+      "ernstDeg": 89.98622784334478,
+      "pulsesToOnePercent": 1,
+      "iterations": 50
+    },
+    {
+      "tr": 5000,
+      "t1": 600,
+      "flip": 20,
+      "mz": 0.9999855006718212,
+      "signal": 0.3253349068973482,
+      "ernstDeg": 89.98622784334478,
+      "pulsesToOnePercent": 2,
+      "iterations": 50
+    },
+    {
+      "tr": 5000,
+      "t1": 600,
+      "flip": 90,
+      "mz": 0.9997596305235805,
+      "signal": 0.951000777981992,
+      "ernstDeg": 89.98622784334478,
+      "pulsesToOnePercent": 2,
+      "iterations": 50
+    }
+  ]
+}

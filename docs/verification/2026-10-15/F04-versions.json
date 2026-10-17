@@ -1,0 +1,55 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/fat_suppression_comparison.html",
+      "sha256": "5748F291B94EF3CED650C95B9DCD815AE8138D9BF9E7FCBCCCB28CF439D3C791"
+    },
+    {
+      "path": "docs/assets/fat-suppression-comparison.js",
+      "sha256": "404E5F429CC37F4CB4E42C02A6439916CF8C13EB87D4FCD4333204AAD8090E68"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "docs/assets/dixon-model.js",
+      "sha256": "388EE6DE7658C031F43E8A8F1611DC50219A2AB83B80B1481358DA2A1F547113"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/fat-suppression-comparison.test.cjs",
+      "sha256": "9A7D920CBB219099DF2B6CEEC714B252475357FE3C29952738EF754F8FD132C3"
+    },
+    {
+      "path": "tests/helpers/fat-comparison-reference.cjs",
+      "sha256": "000B830361ECC21EB1A735722E8C56CC9F8DABF36183BAA4B559DAC0A8FFDA72"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F04-numerical.cjs",
+      "sha256": "F96646CF0AAFBA1B1A66141132A1753F3BDF780066A807CEC94877A7761778E8"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F04-browser-check.js",
+      "sha256": "B35229000007A47B85A5EEC893FD6091EDDD227B0E1CDD3026797B71627EC239"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

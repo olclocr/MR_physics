@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-17",
+  "cases": 36,
+  "voxelsPerMap": 729,
+  "voxelComparisons": 104976,
+  "max": {
+    "voxelPpm": 1.1379786002407855e-15,
+    "metric": 1.2410608733711556e-15,
+    "mode": 3.3306690738754696e-16,
+    "imaginary": 1.6807324847894877e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "hiddenAmplitudePpm": 0.2,
+        "offsetPpm": 0,
+        "orientation": "z",
+        "lambda": 0
+      },
+      "nrmse": 0.7071067811865477,
+      "errorRmsPpm": 0.14142135623730936,
+      "residualRmsPpm": 0,
+      "fieldRmsPpm": 0.047140452079103015,
+      "modes": [
+        {
+          "name": "A",
+          "k": "(1,0,0)",
+          "amplitudePpm": 0.2,
+          "d": 0.3333333333333333,
+          "estimatePpm": 0.2
+        },
+        {
+          "name": "B",
+          "k": "(1,1,1)",
+          "amplitudePpm": 0.2,
+          "d": 0,
+          "estimatePpm": 0
+        },
+        {
+          "name": "mean",
+          "k": "(0,0,0)",
+          "amplitudePpm": 0,
+          "d": 0,
+          "estimatePpm": 0
+        }
+      ]
+    },
+    {
+      "options": {
+        "hiddenAmplitudePpm": 0,
+        "offsetPpm": 0,
+        "orientation": "z",
+        "lambda": 0
+      },
+      "nrmse": 1.2410608733711556e-15,
+      "errorRmsPpm": 1.7551251188520848e-16,
+      "residualRmsPpm": 0,
+      "fieldRmsPpm": 0.047140452079103015,
+      "modes": [
+        {
+          "name": "A",
+          "k": "(1,0,0)",
+          "amplitudePpm": 0.2,
+          "d": 0.3333333333333333,
+          "estimatePpm": 0.19999999999999996
+        },
+        {
+          "name": "B",
+          "k": "(1,1,1)",
+          "amplitudePpm": 0,
+          "d": 0,
+          "estimatePpm": 0
+        },
+        {
+          "name": "mean",
+          "k": "(0,0,0)",
+          "amplitudePpm": 0,
+          "d": 0,
+          "estimatePpm": 0
+        }
+      ]
+    },
+    {
+      "options": {
+        "hiddenAmplitudePpm": 0.2,
+        "offsetPpm": 0.1,
+        "orientation": "z",
+        "lambda": 0
+      },
+      "nrmse": 0.7745966692414856,
+      "errorRmsPpm": 0.173205080756888,
+      "residualRmsPpm": 0,
+      "fieldRmsPpm": 0.047140452079103015,
+      "modes": [
+        {
+          "name": "A",
+          "k": "(1,0,0)",
+          "amplitudePpm": 0.2,
+          "d": 0.3333333333333333,
+          "estimatePpm": 0.19999999999999996
+        },
+        {
+          "name": "B",
+          "k": "(1,1,1)",
+          "amplitudePpm": 0.2,
+          "d": 0,
+          "estimatePpm": 0
+        },
+        {
+          "name": "mean",
+          "k": "(0,0,0)",
+          "amplitudePpm": 0.1,
+          "d": 0,
+          "estimatePpm": 0
+        }
+      ]
+    },
+    {
+      "options": {
+        "hiddenAmplitudePpm": 0.2,
+        "offsetPpm": 0,
+        "orientation": "diagonal",
+        "lambda": 0
+      },
+      "nrmse": 0.7071067811865479,
+      "errorRmsPpm": 0.14142135623730942,
+      "residualRmsPpm": 0,
+      "fieldRmsPpm": 0.09428090415820609,
+      "modes": [
+        {
+          "name": "A",
+          "k": "(1,0,0)",
+          "amplitudePpm": 0.2,
+          "d": 0,
+          "estimatePpm": 0
+        },
+        {
+          "name": "B",
+          "k": "(1,1,1)",
+          "amplitudePpm": 0.2,
+          "d": -0.666666666666667,
+          "estimatePpm": 0.20000000000000004
+        },
+        {
+          "name": "mean",
+          "k": "(0,0,0)",
+          "amplitudePpm": 0,
+          "d": 0,
+          "estimatePpm": 0
+        }
+      ]
+    },
+    {
+      "options": {
+        "hiddenAmplitudePpm": 0.2,
+        "offsetPpm": 0,
+        "orientation": "z",
+        "lambda": 0.1
+      },
+      "nrmse": 0.7095130752655168,
+      "errorRmsPpm": 0.1419026150531032,
+      "residualRmsPpm": 0.0038923309056140237,
+      "fieldRmsPpm": 0.047140452079103015,
+      "modes": [
+        {
+          "name": "A",
+          "k": "(1,0,0)",
+          "amplitudePpm": 0.2,
+          "d": 0.3333333333333333,
+          "estimatePpm": 0.18348623853211007
+        },
+        {
+          "name": "B",
+          "k": "(1,1,1)",
+          "amplitudePpm": 0.2,
+          "d": 0,
+          "estimatePpm": 0
+        },
+        {
+          "name": "mean",
+          "k": "(0,0,0)",
+          "amplitudePpm": 0,
+          "d": 0,
+          "estimatePpm": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/scan_time.html",
+      "sha256": "C548C62A91AA2E1A6488D9D04D94633DBE47B4C2821242A00E740942A8DBC31A"
+    },
+    {
+      "path": "docs/assets/scan-time-model.js",
+      "sha256": "F83EF77B2F8BDEBA1D5A6A07508F84BBEF2A903333C2A6B2D58459A64B66A66E"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/scan-time.test.cjs",
+      "sha256": "B124A6159B3359AD520B7C4D3EB2E27960107A753698A1C5D3A3D1AB1FF03B0E"
+    },
+    {
+      "path": "tests/helpers/scan-time-reference.cjs",
+      "sha256": "B432A6AEE3446A621C376D57668EDA2BD0557820C320B57F3EEB9BCCB7B58B1C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q03-numerical.cjs",
+      "sha256": "22FD45A9C19EF9343B1CC50FA434CA5A5F6AC283C2C8A89D035C382C3326383E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q03-browser-check.js",
+      "sha256": "6965DFE88218AD45D6FE921458F85C45FB196324539655B443697F9F75F402EB"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

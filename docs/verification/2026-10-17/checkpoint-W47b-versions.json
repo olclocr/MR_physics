@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-17",
+  "changes": [
+    {
+      "manifest": "docs\\verification\\2026-10-17\\E01-versions.json",
+      "path": "docs/mre_shear_wave.html",
+      "before": "83C87DA4642C73D8A6C4E6941E1FC1FDA2942A201CF2ADC46B31CCA2077551A2",
+      "after": "5D5A8502ACB8ED6F6C432375E83B74281BFC01070FF452C31F7AEB6E0036A915"
+    }
+  ],
+  "navigationFiles": [
+    {
+      "path": "docs/adc_fitting_shine_through.html",
+      "sha256": "22D9428CFE645CE2D98F561699782A5520B4B584FB4B03640850236DEFCF28DC"
+    },
+    {
+      "path": "docs/aliasing_fov.html",
+      "sha256": "4999E7A79537C2F3E6DBC10ADFCBAD58DC5A16AFF8C8C2753AA4ED12D1D2EC53"
+    },
+    {
+      "path": "docs/b0_b1_receive_shading.html",
+      "sha256": "0E26E0FBE06DADDA5DC2EC2B7A3B6DA0A6EA58BB13EF55E94C21D92E4BDDF506"
+    },
+    {
+      "path": "docs/balanced_ssfp.html",
+      "sha256": "96D5EA901DC96E9C09E97CBF409FCB26BBEAFD55D563E651F30AF17A1A1BD942"
+    },
+    {
+      "path": "docs/bicycle_wheel_precession_interactive.html",
+      "sha256": "168CEE7A4399E4AE404E882AF0860C1DB07595534E740104AF22E050DA1B59CC"
+    },
+    {
+      "path": "docs/bssfp_contrast_limits.html",
+      "sha256": "2692F539567D334EC770456CE3C3AA31765B8DE9556FF635F16DD73F6B8C862A"
+    },
+    {
+      "path": "docs/chemical_shift_artifacts.html",
+      "sha256": "A955494292856F9B75B97396C1E0D2CEF63352DB1B7243B89017C27066359E13"
+    },
+    {
+      "path": "docs/chemical_shift_ip_op.html",
+      "sha256": "93BE89D2D42DBD80B636C9CDE2FD9D343643BD57B6A4BBEDF0EEAC1FB4A01942"
+    },
+    {
+      "path": "docs/compressed_sensing_sparsity.html",
+      "sha256": "BF75F079DB98AA201CCBD1833F4B88034B3663F887394AEB92B1979200646782"
+    },
+    {
+      "path": "docs/contrast_weighting.html",
+      "sha256": "831DD65267DE3F46A3B49CDC58CF2406D1E66948E2CF628FE2786A7B27C34953"
+    },
+    {
+      "path": "docs/diffusion_b_value.html",
+      "sha256": "CEDFE0AAF3BF4A728C3380299D7666C7FE10FBED0B893F8E7F9626DA8BC4A543"
+    },
+    {
+      "path": "docs/dixon_water_fat.html",
+      "sha256": "E4DCC13CB8B99E523602498A59E8EE0EC7B9AA4B242DB4433F3B44DFB481DF1D"
+    },
+    {
+      "path": "docs/dwi_epi_conditions.html",
+      "sha256": "2A572E94AB37D0DDC9D0DD667EB8F1E32DD7D3649B843AF146B4B0185430273E"
+    },
+    {
+      "path": "docs/epi_trajectory.html",
+      "sha256": "3CF9285A9DCAC2F357803416D4523C222425F7D2C9CD0576CBD04F7414027110"
+    },
+    {
+      "path": "docs/fast_spin_echo.html",
+      "sha256": "F19552387270ED7B8AA5A350E2C124EB352B7E7DFD1920AAE99BA22B4C4D0648"
+    },
+    {
+      "path": "docs/fat_suppression_comparison.html",
+      "sha256": "5748F291B94EF3CED650C95B9DCD815AE8138D9BF9E7FCBCCCB28CF439D3C791"
+    },
+    {
+      "path": "docs/fid_spectrum.html",
+      "sha256": "C12CB7EB026B7FF113863C35D872E71C7A48D603C6A62E0E7A20EB9ADD8821FE"
+    },
+    {
+      "path": "docs/field_epi_distortion.html",
+      "sha256": "A5EFC3AADA6A8D5AE50B2B31CE54E6CBD919FB47BD1B4D3DB71489D65C7C88E8"
+    },
+    {
+      "path": "docs/fov_matrix_resolution.html",
+      "sha256": "852C7EDD155BB21CF633DBA9BB91C1371F443D934F0B96AC5D16697BA5360E81"
+    },
+    {
+      "path": "docs/frequency_phase_encoding_visualization.html",
+      "sha256": "2D63C41E918F838E9BBB863269FA6CB2C5936C95CBDF4D76A763ED8A9D943F9B"
+    },
+    {
+      "path": "docs/gibbs_ringing.html",
+      "sha256": "B34C756DA340FE331A7C23E4183CF195A954597F116E75932540087E345678DE"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "6D8F46C352656AF715EEB2B2AE8973016BD639F996A6DA6F07628AF484F89D9F"
+    },
+    {
+      "path": "docs/inversion_recovery.html",
+      "sha256": "5B340DC6803799510371E4F6909882DBEC9A2E836EDC4DC154CC4A4C5A7BB8B1"
+    },
+    {
+      "path": "docs/kspace_inverse_fourier.html",
+      "sha256": "9BB45567068DF9E66CFBC94B6B77C0B0D8A3219C5EF0BF8F71614676AABA7AB5"
+    },
+    {
+      "path": "docs/motion_ghosting.html",
+      "sha256": "3A96F69FE9BF69747A57B78E818C760A97FB0791B2582254F013A04F11F55A28"
+    },
+    {
+      "path": "docs/mre_motion_encoding.html",
+      "sha256": "60554EEA84780677E1EBE7ABD4C4074727FF262CCB893D4AB31278F3B364B376"
+    },
+    {
+      "path": "docs/mre_shear_wave.html",
+      "sha256": "5D5A8502ACB8ED6F6C432375E83B74281BFC01070FF452C31F7AEB6E0036A915"
+    },
+    {
+      "path": "docs/mrs_observation_volume.html",
+      "sha256": "B2336A6F5693B4D31EEF872BEE80A455B0D6D7AC90B2A61F73E999ACFBBC1BBF"
+    },
+    {
+      "path": "docs/parallel_imaging.html",
+      "sha256": "71F87A15897D01E275018FB0A136083B8DE1FD9CA6B19A9605C941477F6C0605"
+    },
+    {
+      "path": "docs/partial_fourier_phase.html",
+      "sha256": "C9C2696CB97EDB009395FC48637CCA5FC2EB660D2AFAF5D982F70CF590E80E63"
+    },
+    {
+      "path": "docs/pdff_echo_assumptions.html",
+      "sha256": "332582F40EB47A759ED9AC441EDD60751ACF7C2D4B51FD59221FB6278B992EDE"
+    },
+    {
+      "path": "docs/pdff_t1_bias.html",
+      "sha256": "B5AAC37DF99498D1BCD34260589CBD626C32A90B498D891FB532504CACE400AD"
+    },
+    {
+      "path": "docs/proton_spin_mr_simulation.html",
+      "sha256": "B4C1F5700794D3EB959DA47F34E5DF68457EABEF41F45D224525CD09AC36B9E6"
+    },
+    {
+      "path": "docs/proton_spin_rf_larmor_resonance.html",
+      "sha256": "E26A07904D344ACCA01BC17AAA72FED5148AC3196ECC74546B5B183EAB18916A"
+    },
+    {
+      "path": "docs/receiver_bandwidth.html",
+      "sha256": "785EF380C7D71FBF64D82CDBF4E84BE429FF4185C05923F2302F2D60872CA96C"
+    },
+    {
+      "path": "docs/scan_time.html",
+      "sha256": "C548C62A91AA2E1A6488D9D04D94633DBE47B4C2821242A00E740942A8DBC31A"
+    },
+    {
+      "path": "docs/slice_selection_partial_volume.html",
+      "sha256": "A7E9C692C0CF16413A54F4D32D9E179B45E5E8FEC77E2FB871FB0E7B1E5B6234"
+    },
+    {
+      "path": "docs/sms_slice_separation.html",
+      "sha256": "A6B40DB1E24817123AD6D81D7F165680A85C42EBC11869E1D8E47253F9728B88"
+    },
+    {
+      "path": "docs/snr_cnr_averaging.html",
+      "sha256": "D0FEE7ACBAB4D6CE185B879F1E780A9006CA08323883D55D57B3B61CFD528516"
+    },
+    {
+      "path": "docs/spectral_fat_saturation.html",
+      "sha256": "A456A151C2257D26F50500171E7963E1B0A655094C487F4B1EAF1D4FC6DFD2D5"
+    },
+    {
+      "path": "docs/spectral_peak_features.html",
+      "sha256": "9888E32BF2E684110E1604DB8A8E61E649BC9B15F08AE6C3806EC15BA683701E"
+    },
+    {
+      "path": "docs/spin_ensemble_equilibrium.html",
+      "sha256": "C8AB1C8A28BB48880CC6586A9CC1B6BF54D7F682C5EF8F2775F0E8ED3BB56532"
+    },
+    {
+      "path": "docs/spin_gradient_echo.html",
+      "sha256": "7540D5EEA250EE3E0C3BA6F9B9B0E2952D3A921D7FFE3001B9C1159AA717E56C"
+    },
+    {
+      "path": "docs/spoiled_gre.html",
+      "sha256": "A4636792A56CF2DD3C746A643B832B8C8708EBCF1CF53B231B58DA1E907BC047"
+    },
+    {
+      "path": "docs/susceptibility_signal_phase.html",
+      "sha256": "68CE25A7F17ECCE524BD30B7A19D0F52523802BD666FFF4E27151CC7DF201080"
+    },
+    {
+      "path": "docs/swi_mask_projection.html",
+      "sha256": "07E851ED05DA4A8668E2A045DC23595AEBE1248489D7341DE57EDEAD6C734265"
+    },
+    {
+      "path": "docs/t1_mapping_ir.html",
+      "sha256": "59FD8736210B045DE74DE0BDC2F65D67701882F5D27E21BCE52F82C3B170CE0C"
+    },
+    {
+      "path": "docs/t2_mapping_basics.html",
+      "sha256": "10724C681F6B7FB33E8B45E00754FABCEDC56ABBF0A21D96FB062F2E725959FA"
+    },
+    {
+      "path": "docs/t2_mapping_limits.html",
+      "sha256": "9D34B7D9A949D40956BFF7B2F43995F53D59C5D0168FF4933FB9A362D56CE488"
+    },
+    {
+      "path": "docs/t2_t2star_dephasing.html",
+      "sha256": "29305F7A3CCE55170040960346D21BAA481BC31E4758C59B82FD8D24C2072377"
+    },
+    {
+      "path": "docs/t2star_mapping.html",
+      "sha256": "722C73750C8C8FEE9A3C6BF3EE5422CC21DA8DABDEE478FEC86F3B652ED07492"
+    },
+    {
+      "path": "docs/volume_2d_3d.html",
+      "sha256": "3A77B24E89837A41BEE5FB30D36CE15C6B1AE11887100AFA3E493B612F210BED"
+    },
+    {
+      "path": "docs/water_excitation.html",
+      "sha256": "B6D144384B29BC9B07471DFCB82078331144748E6AA280A0EAA9F5074BB85E11"
+    }
+  ]
+}

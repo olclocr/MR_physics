@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-17",
+  "cases": 27,
+  "spatialCubeChecks": 4320000,
+  "spectrumSamples": 10827,
+  "max": {
+    "volume": 1.8189894035458565e-12,
+    "signal": 4.440892098500626e-16,
+    "curve": 1.6542323066914832e-14
+  },
+  "examples": [
+    {
+      "options": {
+        "centerMm": -20,
+        "widthMm": 20,
+        "leakage": 0
+      },
+      "components": [
+        {
+          "name": "A",
+          "ppm": 2,
+          "density": 1,
+          "hz": -344.87757925200003,
+          "insideVolumeMm3": 8000,
+          "outsideVolumeMm3": 72000,
+          "weightedOutsideVolumeMm3": 0,
+          "insideAmplitude": 1,
+          "outsideAmplitude": 0,
+          "amplitude": 1
+        },
+        {
+          "name": "B",
+          "ppm": 3,
+          "density": 2,
+          "hz": -217.145142492,
+          "insideVolumeMm3": 0,
+          "outsideVolumeMm3": 80000,
+          "weightedOutsideVolumeMm3": 0,
+          "insideAmplitude": 0,
+          "outsideAmplitude": 0,
+          "amplitude": 0
+        }
+      ],
+      "outsideFraction": 0,
+      "volumeMm3": 8000
+    },
+    {
+      "options": {
+        "centerMm": 0,
+        "widthMm": 20,
+        "leakage": 0
+      },
+      "components": [
+        {
+          "name": "A",
+          "ppm": 2,
+          "density": 1,
+          "hz": -344.87757925200003,
+          "insideVolumeMm3": 3999.999999999999,
+          "outsideVolumeMm3": 76000,
+          "weightedOutsideVolumeMm3": 0,
+          "insideAmplitude": 0.4999999999999999,
+          "outsideAmplitude": 0,
+          "amplitude": 0.4999999999999999
+        },
+        {
+          "name": "B",
+          "ppm": 3,
+          "density": 2,
+          "hz": -217.145142492,
+          "insideVolumeMm3": 3999.999999999999,
+          "outsideVolumeMm3": 76000,
+          "weightedOutsideVolumeMm3": 0,
+          "insideAmplitude": 0.9999999999999998,
+          "outsideAmplitude": 0,
+          "amplitude": 0.9999999999999998
+        }
+      ],
+      "outsideFraction": 0,
+      "volumeMm3": 8000
+    },
+    {
+      "options": {
+        "centerMm": -20,
+        "widthMm": 40,
+        "leakage": 0
+      },
+      "components": [
+        {
+          "name": "A",
+          "ppm": 2,
+          "density": 1,
+          "hz": -344.87757925200003,
+          "insideVolumeMm3": 16000,
+          "outsideVolumeMm3": 64000,
+          "weightedOutsideVolumeMm3": 0,
+          "insideAmplitude": 2,
+          "outsideAmplitude": 0,
+          "amplitude": 2
+        },
+        {
+          "name": "B",
+          "ppm": 3,
+          "density": 2,
+          "hz": -217.145142492,
+          "insideVolumeMm3": 0,
+          "outsideVolumeMm3": 80000,
+          "weightedOutsideVolumeMm3": 0,
+          "insideAmplitude": 0,
+          "outsideAmplitude": 0,
+          "amplitude": 0
+        }
+      ],
+      "outsideFraction": 0,
+      "volumeMm3": 16000
+    },
+    {
+      "options": {
+        "centerMm": -20,
+        "widthMm": 20,
+        "leakage": 0.02
+      },
+      "components": [
+        {
+          "name": "A",
+          "ppm": 2,
+          "density": 1,
+          "hz": -344.87757925200003,
+          "insideVolumeMm3": 8000,
+          "outsideVolumeMm3": 72000,
+          "weightedOutsideVolumeMm3": 1440,
+          "insideAmplitude": 1,
+          "outsideAmplitude": 0.18,
+          "amplitude": 1.18
+        },
+        {
+          "name": "B",
+          "ppm": 3,
+          "density": 2,
+          "hz": -217.145142492,
+          "insideVolumeMm3": 0,
+          "outsideVolumeMm3": 80000,
+          "weightedOutsideVolumeMm3": 1600,
+          "insideAmplitude": 0,
+          "outsideAmplitude": 0.4,
+          "amplitude": 0.4
+        }
+      ],
+      "outsideFraction": 0.3670886075949367,
+      "volumeMm3": 8000
+    }
+  ]
+}

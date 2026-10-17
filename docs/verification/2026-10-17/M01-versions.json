@@ -1,0 +1,26 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/t2_mapping_basics.html",
+      "sha256": "10724C681F6B7FB33E8B45E00754FABCEDC56ABBF0A21D96FB062F2E725959FA"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/t2-fit-reference.cjs",
+      "sha256": "149B3D60B7ABCA3ACB0D65463955E5791ADAE41317118BB60D3E1959E6070CF8"
+    },
+    {
+      "path": "tests/t2-fit.test.cjs",
+      "sha256": "042C32AD92129561C796869561DAA0C92F53035B6A8117EFA7DEAE00C2B89672"
+    }
+  ]
+}

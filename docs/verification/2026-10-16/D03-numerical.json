@@ -1,0 +1,7574 @@
+{
+  "summary": {
+    "cases": 504,
+    "echoes": 24192,
+    "maxSignalError": 2.932654119547351e-13,
+    "maxPositionErrorMm": 8.71835936777643e-12,
+    "maxTimeErrorMs": 1.5631940186722204e-13,
+    "maxComplexError": 2.015026157713012e-12,
+    "maxKyError": 0,
+    "method": "SI echo schedule, independent Bloch ODE and phase unwrap/linear regression"
+  },
+  "records": [
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.705924869900628e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.015026157713012e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.71835936777643e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.014350266773856e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 7.839062732273305e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.81930687428337e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.8188314659138976e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.957989739930781e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.6205666738640784e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.6201285812422737e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.087574888624658e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4251864167195098e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4249103864080887e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 5.222489107836736e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2303248142827728e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2303169499283687e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.346745186012413e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.036869791860482e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.348521542851813e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.0368847835725693e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.479264524151031e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.481659405224491e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.477940258370858e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.641207495066822e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.641207495066822e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.920084354619422e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.91907565763045e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.526510194203649e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.739675649849232e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.526510194203649e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.9329412230799004e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.9329412230799004e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.739675649849232e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.526510194203649e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.526510194203649e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.91907565763045e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.920084354619422e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.641207495066822e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.641207495066822e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.481659405224491e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.477940258370858e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.479264524151031e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.348521542851813e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.0368847835725693e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.346745186012413e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.036869791860482e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2303169499283687e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 5.222489107836736e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2303248142827728e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4249103864080887e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.087574888624658e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4251864167195098e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.6201285812422737e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 6.957989739930781e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.6205666738640784e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.8188314659138976e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 7.839062732273305e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.81930687428337e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.71835936777643e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.014350266773856e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 0,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.705924869900628e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.015026157713012e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.705924869900628e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2246235861093322e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.711253940418828e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.224084895156838e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 7.835510018594505e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.1049425503960842e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.1045715458722434e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.959766096770181e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.863469255533628e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.859457287226593e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.091127602303459e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.670597656000142e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.671566355617631e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 5.222489107836736e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.496063585458829e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.49793947218312e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.346745186012413e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.330281623795325e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.355626970209414e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.330746955165326e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.190960839031847e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.191241591945422e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.604139126560767e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.094329057610646e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.094324682984719e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.0786185747414024e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.078492487176871e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.2635569060436203e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.739675649849232e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.2645006847801934e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.927288493034334e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.927288493034334e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.739675649849232e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.2645006847801934e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.2635569060436203e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.078492487176871e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.0786185747414024e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.094324682984719e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.604139126560767e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.094329057610646e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.191241591945422e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.190960839031847e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.355626970209414e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.330746955165326e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.346745186012413e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.330281623795325e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.49793947218312e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 5.222489107836736e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.496063585458829e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.671566355617631e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.091127602303459e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.670597656000142e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.859457287226593e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 6.959766096770181e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.863469255533628e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.1045715458722434e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 7.835510018594505e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.1049425503960842e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.711253940418828e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.224084895156838e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 500,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.705924869900628e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2246235861093322e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.705036691480927e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.442893952438698e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.711253940418828e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.440390982127795e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 7.837286375433905e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.715700085432121e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.715216390230606e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.957989739930781e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.996489202949967e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.99596892462878e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.092903959142859e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.282060528258288e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.28279235172341e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 5.224265464676137e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.57268009708424e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.572624816465407e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.352074256530614e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.869277138431842e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.348521542851813e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.8689907029788673e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.1858872342906126e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.185846397435768e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.52538686647508e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.5252023076440903e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.926387138239809e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.9261247351554368e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4515733586905316e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.668621376273222e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4518227468537616e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2601980424395092e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2601980424395092e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.668621376273222e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4518227468537616e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.4515733586905316e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.9261247351554368e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.926387138239809e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.5252023076440903e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.52538686647508e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.185846397435768e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.1858872342906126e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.348521542851813e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.8689907029788673e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.352074256530614e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.869277138431842e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.572624816465407e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 5.224265464676137e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.57268009708424e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.28279235172341e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.092903959142859e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.282060528258288e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.99596892462878e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 6.957989739930781e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 5.996489202949967e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.715216390230606e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 7.837286375433905e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 6.715700085432121e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.711253940418828e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.440390982127795e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1000,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.705036691480927e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 7.442893952438698e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.704148513061227e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.5228514326734184e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.711253940418828e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.5208580762405983e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 7.835510018594505e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.0867630607482054e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.0858966042095755e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.957989739930781e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.6487121437481216e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.648146544491832e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.092903959142859e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.2200593616668097e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.220702034149731e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 5.217160037318536e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.7888577872406887e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.78927061740917e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.346745186012413e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.3643328023718455e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.355626970209414e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.36415571902732e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.9548438357992027e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.4781066915456904e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.954542386445608e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.604139126560767e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.561347420295316e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6147972675971687e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.5615456951862738e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2049895278494634e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2053144698708395e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.302802061753063e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.739675649849232e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.299521168409796e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.200789173262693e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.552713678800501e-15,
+        "time": 1.5631940186722204e-13,
+        "complex": 8.200789173262693e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.739675649849232e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.299521168409796e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.597567102697212e-13,
+        "time": 1.5631940186722204e-13,
+        "complex": 9.302802061753063e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.737276988933445e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2053144698708395e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7266188478970435e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.2049895278494634e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6147972675971687e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.5615456951862738e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.604139126560767e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.561347420295316e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.4781066915456904e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.954542386445608e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.47455397786689e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 1.9548438357992027e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.355626970209414e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.36415571902732e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.346745186012413e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.3643328023718455e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 5.236699962551938e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.78927061740917e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 5.217160037318536e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 2.7888577872406887e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.0964566728216596e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.220702034149731e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.092903959142859e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.2200593616668097e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.966871524127782e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.648146544491832e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 6.957989739930781e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 3.6487121437481216e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 7.844391802791506e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.0858966042095755e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 7.835510018594505e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.0867630607482054e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.711253940418828e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.5208580762405983e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "single",
+        "b": 1500,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.704148513061227e-12,
+        "time": 1.5631940186722204e-13,
+        "complex": 4.5228514326734184e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0387298226102759e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.039401716461069e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428921346920757e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.907985046680551e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428738497725066e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.47633033470629e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.49179733374337e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.490276899673344e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562497593293076e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562906851057714e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.604139126560767e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.767759062747779e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768844071211535e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.925206269830168e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.924543557246458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.171987574590469e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.1717960937817415e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5299149982353533e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.526512829121202e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5303411534245836e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.09092560307093e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.091547846995855e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 2.932654119547351e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 2.932654119547351e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.091547846995855e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.09092560307093e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.526512829121202e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5303411534245836e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5299149982353533e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.1717960937817415e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.171987574590469e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.924543557246458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.925206269830168e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768844071211535e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.767759062747779e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.604139126560767e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562906851057714e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562497593293076e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.490276899673344e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.47633033470629e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.49179733374337e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.907985046680551e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428738497725066e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428921346920757e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.039401716461069e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 0,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0387298226102759e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.341582503674494e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.345815530580263e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768619378951098e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.907985046680551e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768512376460251e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.47633033470629e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198438365403686e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198566643353476e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.643112778965606e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.64200793803599e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.10131619961867e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.101582391173958e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.577254899298449e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5781811222936553e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081614523269993e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081670041191874e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.637965168049165e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.6379586557128696e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.562039965909207e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.265565704179654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.266440989600856e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0120899732763085e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0129472505966512e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9270696149931155e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9270696149931155e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0129472505966512e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0120899732763085e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.266440989600856e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.562039965909207e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.265565704179654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.6379586557128696e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.637965168049165e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081670041191874e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081614523269993e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5781811222936553e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.577254899298449e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.101582391173958e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.10131619961867e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.64200793803599e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.643112778965606e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198566643353476e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.47633033470629e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198438365403686e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.907985046680551e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768512376460251e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768619378951098e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.345815530580263e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 500,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.341582503674494e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.876043837281864e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.878082944985595e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.9186431877169525e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296308514132387e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296843107026933e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.47633033470629e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902628865402897e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902224218832407e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.855903071051909e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.8560778627589484e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529611736918401e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529398533594355e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2203868119902487e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.170708057747106e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2206117145832146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9281464089868328e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9280736232522246e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.6658039462236524e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.666371376423146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.452576534694914e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.4530535381157718e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3096485357712022e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3092180512184012e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2601031329495527e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2601031329495527e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3092180512184012e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3096485357712022e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.4530535381157718e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.452576534694914e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.666371376423146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.6658039462236524e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9280736232522246e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9281464089868328e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.170708057747106e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2206117145832146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2203868119902487e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529398533594355e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529611736918401e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.8560778627589484e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.855903071051909e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902224218832407e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.47633033470629e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902628865402897e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296843107026933e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.9186431877169525e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296308514132387e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.878082944985595e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1000,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.876043837281864e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.368398377197362e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.369657479703366e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1615384964488584e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.907985046680551e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1612966478064458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9575201026507655e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9571515483198953e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7568366161831842e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7569904196593654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.563822749512412e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.5640896165018985e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3792127862471588e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.170708057747106e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3793801343920104e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2060252088300903e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.206347018183948e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0545306271507393e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0544215097618255e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.309729732458201e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.633094239485217e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.306898738946589e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475376689324988e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475575861329182e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 8.200384815637562e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 8.200384815637562e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475575861329182e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475376689324988e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.633094239485217e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.306898738946589e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.309729732458201e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.2967404927621828e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0544215097618255e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0545306271507393e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7195134205394424e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.206347018183948e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2060252088300903e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.170708057747106e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3793801343920104e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3792127862471588e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.5640896165018985e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.563822749512412e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.0446756227320293e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7569904196593654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.0375701953744283e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7568366161831842e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.4710012641880894e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9571515483198953e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9575201026507655e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.907985046680551e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1612966478064458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1615384964488584e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.369657479703366e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "parallel",
+        "b": 1500,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.368398377197362e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.346745186012413e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0387298226102759e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.348521542851813e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.039401716461069e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428921346920757e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.922195901395753e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428738497725066e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.49179733374337e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.481659405224491e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.490276899673344e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562497593293076e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.0517810500896303e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562906851057714e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.767759062747779e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768844071211535e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.925206269830168e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.924543557246458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.171987574590469e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.1717960937817415e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5299149982353533e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.739675649849232e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5303411534245836e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.192202140984591e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.09092560307093e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.091547846995855e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 2.9329412230799004e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 2.9329412230799004e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.091547846995855e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.192202140984591e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.09092560307093e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.739675649849232e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5303411534245836e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5299149982353533e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.1717960937817415e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.171987574590469e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.924543557246458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.925206269830168e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768844071211535e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.767759062747779e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.653232502811148e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.0517810500896303e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562906851057714e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 7.562497593293076e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.481659405224491e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.490276899673344e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 8.49179733374337e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.922195901395753e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428738497725066e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 9.428921346920757e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.348521542851813e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.039401716461069e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 0,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 2.932654119547351e-13,
+        "position": 4.346745186012413e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0387298226102759e-12,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.346745186012413e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.341582503674494e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.345815530580263e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768619378951098e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.922195901395753e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768512376460251e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198438365403686e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198566643353476e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.643112778965606e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.0517810500896303e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.64200793803599e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.604139126560767e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.10131619961867e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.101582391173958e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.577254899298449e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.170708057747106e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5781811222936553e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081614523269993e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081670041191874e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.2931877790833823e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.637965168049165e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.6379586557128696e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.265565704179654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.739675649849232e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.266440989600856e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.227729277772596e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0120899732763085e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0129472505966512e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.927288493034334e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.927288493034334e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0129472505966512e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.227729277772596e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.0120899732763085e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.739675649849232e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.266440989600856e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 2.265565704179654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.6379586557128696e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.2931877790833823e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.637965168049165e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081670041191874e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.081614523269993e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.170708057747106e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5781811222936553e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.577254899298449e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.101582391173958e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 2.604139126560767e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.10131619961867e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.0517810500896303e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.64200793803599e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 4.643112778965606e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198566643353476e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.198438365403686e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.922195901395753e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768512376460251e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 5.768619378951098e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.345815530580263e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 500,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.9270696149931155e-13,
+        "position": 4.346745186012413e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 6.341582503674494e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.876043837281864e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.348521542851813e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.878082944985595e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296308514132387e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296843107026933e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902628865402897e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902224218832407e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.855903071051909e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.0482283364108298e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.8560778627589484e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529611736918401e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529398533594355e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.163602630389505e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2203868119902487e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2206117145832146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9281464089868328e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9280736232522246e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.6658039462236524e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.666371376423146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.452576534694914e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.668621376273222e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.4530535381157718e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.227729277772596e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3096485357712022e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3092180512184012e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2601980424395092e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2601980424395092e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3092180512184012e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.227729277772596e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3096485357712022e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.668621376273222e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.4530535381157718e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 1.452576534694914e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.666371376423146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.6658039462236524e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9280736232522246e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9281464089868328e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2206117145832146e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.163602630389505e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.2203868119902487e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6076918402395677e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529398533594355e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 2.6005864128819667e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.529611736918401e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.0482283364108298e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.8560778627589484e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.855903071051909e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.4781066915456904e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902224218832407e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.1902628865402897e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.915090474038152e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296843107026933e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.5296308514132387e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.348521542851813e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.878082944985595e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1000,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 1.2601031329495527e-13,
+        "position": 4.352074256530614e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 3.876043837281864e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.346745186012413e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.368398377197362e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.369657479703366e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1615384964488584e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.922195901395753e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1612966478064458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9575201026507655e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.4781066915456904e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9571515483198953e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7568366161831842e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.0482283364108298e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7569904196593654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.604139126560767e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.563822749512412e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6147972675971687e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.5640896165018985e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3792127862471588e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3793801343920104e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2060252088300903e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.206347018183948e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0545306271507393e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.3073986337985843e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0544215097618255e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.309729732458201e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.739675649849232e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.306898738946589e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475376689324988e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": -10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475575861329182e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 0,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 8.200789173262693e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 0,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.552713678800501e-15,
+        "time": 7.105427357601002e-14,
+        "complex": 8.200789173262693e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 10,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.334310688136611e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475575861329182e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 10,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.263256414560601e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 8.475376689324988e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 20,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.739675649849232e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.306898738946589e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 20,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 8.597567102697212e-13,
+        "time": 7.105427357601002e-14,
+        "complex": 9.309729732458201e-14,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 30,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.3073986337985843e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0544215097618255e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 30,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.3002932064409833e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.0545306271507393e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 40,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.737276988933445e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.206347018183948e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 40,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 1.7266188478970435e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.2060252088300903e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 50,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.1742607714259066e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3793801343920104e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 50,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.1671553440683056e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.3792127862471588e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 60,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.6147972675971687e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.5640896165018985e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 60,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 2.604139126560767e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.563822749512412e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 70,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.0482283364108298e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7569904196593654e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 70,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.035793838535028e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.7568366161831842e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 80,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.4781066915456904e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9571515483198953e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 80,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.47455397786689e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 1.9575201026507655e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 90,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.922195901395753e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1612966478064458e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 90,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 3.913314117198752e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.1615384964488584e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 100,
+        "polarity": -1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.355626970209414e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.369657479703366e-13,
+        "ky": 0
+      }
+    },
+    {
+      "options": {
+        "mode": "segmented",
+        "b": 1500,
+        "offsetHz": 100,
+        "polarity": 1
+      },
+      "errors": {
+        "signal": 8.200384815637562e-14,
+        "position": 4.346745186012413e-12,
+        "time": 7.105427357601002e-14,
+        "complex": 2.368398377197362e-13,
+        "ky": 0
+      }
+    }
+  ]
+}

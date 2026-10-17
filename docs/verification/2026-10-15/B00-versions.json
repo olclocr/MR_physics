@@ -1,0 +1,35 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/bicycle_wheel_precession_interactive.html",
+      "sha256": "168CEE7A4399E4AE404E882AF0860C1DB07595534E740104AF22E050DA1B59CC"
+    },
+    {
+      "path": "tests/helpers/wheel-page-harness.cjs",
+      "sha256": "FD1BC5E6C1D64F6FE91DEDF5CAF6083BCB8722719C8B4FEDE401AD121FE6CB5A"
+    },
+    {
+      "path": "tests/wheel-precession.test.cjs",
+      "sha256": "00C4CDCA894D26814DAC79022B135F8A37E23921F6487C66B34FE8273E8DB92D"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-numerical.cjs",
+      "sha256": "EBC64AEE9D12A35278676111D6336606444AB71E63005AC88C2B0D0107582C0F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-numerical.json",
+      "sha256": "0B4A193089A516B50E11B2E37631EFA49A985CF537044C92185DF85F74D51EFD"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-browser-check.js",
+      "sha256": "DBC5A1A942517970FDDB5CDD2CF2DD592C214A795AB300E67D9D528FC4D2BBC6"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-browser-check.json",
+      "sha256": "98CE5B26134977E51973431F51ABC42CA68B48EA593196F2A5ACE695B755F50D"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

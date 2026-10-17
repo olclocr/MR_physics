@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-17",
+  "cases": 368,
+  "voxelPairs": 11776,
+  "methods": "Radix-2 FFT of spatially folded coil data; Householder QR; angle-difference analytic g",
+  "max": {
+    "fourier": 1.0658141036401503e-14,
+    "mixed": 2.0544077525383223e-15,
+    "estimate": 2.9061268106966364e-12,
+    "transfer": 3.424815986363683e-12,
+    "gRelative": 5.6288307348495437e-14,
+    "cleanError": 4.0465545989771015e-14,
+    "residual": 2.2536406217213306e-14
+  },
+  "examples": {
+    "base": {
+      "error": 1.4177098983301329e-15,
+      "residual": 1.218992781261599e-15,
+      "rmsG": 1.450786777844132,
+      "maxG": 2,
+      "leakage": [
+        6.359601310784502e-17,
+        4.955361418800576e-17
+      ],
+      "solved": 32,
+      "identifiable": 32
+    },
+    "shift": {
+      "error": 1.5876526293497727e-15,
+      "residual": 9.336178537170573e-16,
+      "rmsG": 1.3054072893322786,
+      "maxG": 1.3054072893322788,
+      "leakage": [
+        4.5236053827798003e-17,
+        4.24918736097037e-17
+      ],
+      "solved": 32,
+      "identifiable": 32
+    },
+    "uniform": {
+      "error": 1.463294484913766e-15,
+      "residual": 1.210565479999955e-15,
+      "rmsG": 1.3054072893322788,
+      "maxG": 1.3054072893322788,
+      "leakage": [
+        0,
+        0
+      ],
+      "solved": 32,
+      "identifiable": 32
+    },
+    "uniformShift": {
+      "error": 1.8286512594900594e-15,
+      "residual": 9.26224463861961e-16,
+      "rmsG": 1.3054072893322788,
+      "maxG": 1.3054072893322788,
+      "leakage": [
+        0,
+        0
+      ],
+      "solved": 32,
+      "identifiable": 32
+    },
+    "leakage": {
+      "error": 0.1632719815684753,
+      "residual": 1.1932810020391543e-15,
+      "rmsG": 1.450786777844132,
+      "maxG": 2,
+      "leakage": [
+        0.1638402569328016,
+        0.16384025693280166
+      ],
+      "solved": 32,
+      "identifiable": 32
+    },
+    "singular": {
+      "error": null,
+      "residual": null,
+      "rmsG": null,
+      "maxG": null,
+      "leakage": null,
+      "solved": 0,
+      "identifiable": 0
+    }
+  }
+}

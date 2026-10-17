@@ -1,0 +1,13 @@
+const fs=require('node:fs'),M=require('../../assets/sms-model.js'),{reference}=require('../../../tests/helpers/sms-reference.cjs');
+const max={fourier:0,mixed:0,estimate:0,transfer:0,gRelative:0,cleanError:0,residual:0},cases=[];
+for(const profile of ['uniform','spatial'])for(let angleDeg=0;angleDeg<=45;angleDeg++)for(const shift of [0,16])for(const calibrationDeg of [0,5]){
+ const options={profile,angleDeg,shift,calibrationDeg},r=M.calculate(options),v=reference(options);
+ for(let c=0;c<2;c++)for(let j=0;j<32;j++){max.fourier=Math.max(max.fourier,Math.hypot(r.raw[c][j].real-v.raw[c][j].real,r.raw[c][j].imaginary-v.raw[c][j].imaginary));max.mixed=Math.max(max.mixed,Math.hypot(r.mixed[c][j].real-v.mixed[c][j],r.mixed[c][j].imaginary));if(r.estimate[c][j])max.estimate=Math.max(max.estimate,Math.hypot(r.estimate[c][j].real-v.estimate[c][j],r.estimate[c][j].imaginary));}
+ for(let j=0;j<32;j++){if(Number.isFinite(r.pairs[j].g))max.gRelative=Math.max(max.gRelative,Math.abs(r.pairs[j].g/v.pairs[j].g-1));if(r.pairs[j].transfer)for(let a=0;a<2;a++)for(let b=0;b<2;b++)max.transfer=Math.max(max.transfer,Math.abs(r.pairs[j].transfer[a][b]-v.pairs[j].transfer[a][b]));}
+ if(r.error!==null&&calibrationDeg===0)max.cleanError=Math.max(max.cleanError,r.error);if(r.residual!==null)max.residual=Math.max(max.residual,r.residual);
+ if([0,20,35,40,43,45].includes(angleDeg))cases.push({options,truth:v.truth,mixed:v.mixed,estimate:v.estimate,pairs:v.pairs.map(p=>({g:Number.isFinite(p.g)?p.g:null,transfer:p.transfer})),error:v.estimate.flat().every(x=>x!==null)?Math.sqrt(v.estimate.reduce((t,a,s)=>t+a.reduce((u,x,j)=>u+(x-v.truth[s][j])**2,0),0)/v.truth.flat().reduce((t,x)=>t+x*x,0)):null});
+}
+const examples={base:M.calculate(),shift:M.calculate({shift:16}),uniform:M.calculate({profile:'uniform'}),uniformShift:M.calculate({profile:'uniform',shift:16}),leakage:M.calculate({calibrationDeg:5}),singular:M.calculate({profile:'uniform',angleDeg:45,shift:16})};
+const result={date:'2026-10-17',cases:368,voxelPairs:11776,methods:'Radix-2 FFT of spatially folded coil data; Householder QR; angle-difference analytic g',max,examples:Object.fromEntries(Object.entries(examples).map(([k,r])=>[k,{error:r.error,residual:r.residual,rmsG:r.rmsG,maxG:r.maxG,leakage:r.leakage,solved:r.solved,identifiable:r.identifiable}]))};
+for(const [key,value]of Object.entries(max))if(value>(key==='gRelative'?1e-10:1e-10))throw Error(key+' '+value);
+fs.writeFileSync(__dirname+'/Q07-numerical.json',JSON.stringify(result,null,2));fs.writeFileSync(__dirname+'/Q07-display-reference.json',JSON.stringify(cases));console.log(JSON.stringify(result));

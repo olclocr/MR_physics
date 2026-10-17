@@ -1,0 +1,109 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "scope": "W09-W21 navigation and generated report checkpoint",
+  "manifestUpdates": [
+    {
+      "manifest": "Q01-versions.json",
+      "path": "docs/snr_cnr_averaging.html",
+      "previous": "B0B2134F803B6D0109B045FFDA7627D1DF9A7FBFA385AA1FF383A2577B58AD2E",
+      "current": "D0FEE7ACBAB4D6CE185B879F1E780A9006CA08323883D55D57B3B61CFD528516"
+    },
+    {
+      "manifest": "Q02-versions.json",
+      "path": "docs/receiver_bandwidth.html",
+      "previous": "D9EA1258BFD09A7BD5B80242EE27B6A03C0E37DDDFD59E1A6D28EDBAEB4770C7",
+      "current": "6D1E6C78632DA56F8E65AC8C1FC74BBEE94D5D8861F186A43A45FC06053E4105"
+    }
+  ],
+  "currentPages": [
+    {
+      "path": "docs/bicycle_wheel_precession_interactive.html",
+      "sha256": "168CEE7A4399E4AE404E882AF0860C1DB07595534E740104AF22E050DA1B59CC"
+    },
+    {
+      "path": "docs/chemical_shift_ip_op.html",
+      "sha256": "E241F49A86C1270A550AE573B2B8235D9B2DAF5FC8F8AA699D7E9A3A82B26FE3"
+    },
+    {
+      "path": "docs/contrast_weighting.html",
+      "sha256": "9E396111BD0AB9454A9546843E7C64759A3443052BF624B92FAA2126C5DDEC8F"
+    },
+    {
+      "path": "docs/epi_trajectory.html",
+      "sha256": "76266BEA0DC9D5F2F8D71FDA961D2FC8205FFFEB880C68CE1F91F84AC903A12E"
+    },
+    {
+      "path": "docs/fast_spin_echo.html",
+      "sha256": "F19552387270ED7B8AA5A350E2C124EB352B7E7DFD1920AAE99BA22B4C4D0648"
+    },
+    {
+      "path": "docs/fov_matrix_resolution.html",
+      "sha256": "8586AE2C9C8654AA67DE73CAD070338DE44876873DD3D409B00513F452887F52"
+    },
+    {
+      "path": "docs/frequency_phase_encoding_visualization.html",
+      "sha256": "2D63C41E918F838E9BBB863269FA6CB2C5936C95CBDF4D76A763ED8A9D943F9B"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "D605E9AEC81B5FC4886385A261BB59E95237A7F2A96033027F49370F27B919F4"
+    },
+    {
+      "path": "docs/inversion_recovery.html",
+      "sha256": "E70B7EE7B5A41FE8520B37D3463366B60D1D032382D1441AF02D523898B63405"
+    },
+    {
+      "path": "docs/kspace_inverse_fourier.html",
+      "sha256": "0762745EB51C2604B37D4C3ACAC91DB8AD1AABCB670DC6E25473EB05A5805B2A"
+    },
+    {
+      "path": "docs/parallel_imaging.html",
+      "sha256": "5E2B6C6C3A65F6EEF47E972F5C31F24538C82638B7A8CB891976FF920429428D"
+    },
+    {
+      "path": "docs/proton_spin_mr_simulation.html",
+      "sha256": "B4C1F5700794D3EB959DA47F34E5DF68457EABEF41F45D224525CD09AC36B9E6"
+    },
+    {
+      "path": "docs/proton_spin_rf_larmor_resonance.html",
+      "sha256": "E26A07904D344ACCA01BC17AAA72FED5148AC3196ECC74546B5B183EAB18916A"
+    },
+    {
+      "path": "docs/receiver_bandwidth.html",
+      "sha256": "6D1E6C78632DA56F8E65AC8C1FC74BBEE94D5D8861F186A43A45FC06053E4105"
+    },
+    {
+      "path": "docs/scan_time.html",
+      "sha256": "C548C62A91AA2E1A6488D9D04D94633DBE47B4C2821242A00E740942A8DBC31A"
+    },
+    {
+      "path": "docs/slice_selection_partial_volume.html",
+      "sha256": "A7E9C692C0CF16413A54F4D32D9E179B45E5E8FEC77E2FB871FB0E7B1E5B6234"
+    },
+    {
+      "path": "docs/snr_cnr_averaging.html",
+      "sha256": "D0FEE7ACBAB4D6CE185B879F1E780A9006CA08323883D55D57B3B61CFD528516"
+    },
+    {
+      "path": "docs/spin_ensemble_equilibrium.html",
+      "sha256": "C8AB1C8A28BB48880CC6586A9CC1B6BF54D7F682C5EF8F2775F0E8ED3BB56532"
+    },
+    {
+      "path": "docs/spin_gradient_echo.html",
+      "sha256": "7540D5EEA250EE3E0C3BA6F9B9B0E2952D3A921D7FFE3001B9C1159AA717E56C"
+    },
+    {
+      "path": "docs/spoiled_gre.html",
+      "sha256": "9024446309303B30DDC95F66EFF38D6B84A5F41BD0E0D41A99DE446F085456EB"
+    },
+    {
+      "path": "docs/t2_t2star_dephasing.html",
+      "sha256": "922958A9999D1128613F4B41FEEDA92FC0CA40F33070B956D7CD0854BC948DC3"
+    },
+    {
+      "path": "docs/volume_2d_3d.html",
+      "sha256": "3A77B24E89837A41BEE5FB30D36CE15C6B1AE11887100AFA3E493B612F210BED"
+    }
+  ]
+}

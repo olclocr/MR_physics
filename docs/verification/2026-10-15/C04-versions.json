@@ -1,0 +1,43 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/inversion_recovery.html",
+      "sha256": "5B340DC6803799510371E4F6909882DBEC9A2E836EDC4DC154CC4A4C5A7BB8B1"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/helpers/ir-reference.cjs",
+      "sha256": "5843983A8800A62383D462F04F6B32B0E2C933EED02684890F5C6D521195BF29"
+    },
+    {
+      "path": "tests/inversion-recovery.test.cjs",
+      "sha256": "9C1C65EFD5C8BEEC2C56315F5B185D23F7104653DC3DDB405E3673E9792BB354"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-numerical.cjs",
+      "sha256": "0FE8A19A4F3B7A0D7520F9146830FE08B441BE053D9F3251EAC60C095ED8D15F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-numerical.json",
+      "sha256": "23C295D58FE93E40C9A0E12324DD44CB9B89DA840C0BFBDC72FB9AE5E9A66649"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-browser-check.js",
+      "sha256": "4CB8AC0C261D7E7B170ED2E4D5974CF893C3E893D01912035EDDA41AB793E54F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-browser-check.json",
+      "sha256": "5AB3AD28CA43D4BFA8F92EC29BE9E30A6B4471B4103D0F7194D0B4D2855EC5DD"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

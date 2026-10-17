@@ -1,0 +1,541 @@
+{
+  "summary": {
+    "cases": 48,
+    "voxelOutputs": 49152,
+    "maxWeightError": 2.1649348980190553e-15,
+    "maxOutputError": 7.438494264988549e-15,
+    "areaMismatches": 0,
+    "sourceMismatches": 0,
+    "method": "independent complex frequency quadrature, repeated mask multiplication, sorted plane minima"
+  },
+  "records": [
+    {
+      "options": {
+        "teMs": 5,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 5,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 88,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 88,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 88,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 0,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 0,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 52,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 52,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 52,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 188,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 188,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 15,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 380,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 188,
+      "magnitudeDarkAreaMm2": 0
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 52,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 52,
+      "magnitudeDarkAreaMm2": 52
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 52,
+      "magnitudeDarkAreaMm2": 52
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 112,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 112,
+      "magnitudeDarkAreaMm2": 52
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 256,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 112,
+      "magnitudeDarkAreaMm2": 52
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 256,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 256,
+      "magnitudeDarkAreaMm2": 52
+    },
+    {
+      "options": {
+        "teMs": 20,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 472,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 256,
+      "magnitudeDarkAreaMm2": 52
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 112,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 112,
+      "magnitudeDarkAreaMm2": 112
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 256,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 112,
+      "magnitudeDarkAreaMm2": 112
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 164,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 164,
+      "magnitudeDarkAreaMm2": 112
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 332,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 164,
+      "magnitudeDarkAreaMm2": 112
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 300,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 300,
+      "magnitudeDarkAreaMm2": 112
+    },
+    {
+      "options": {
+        "teMs": 25,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 540,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 300,
+      "magnitudeDarkAreaMm2": 112
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 148,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 148,
+      "magnitudeDarkAreaMm2": 148
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 316,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 148,
+      "magnitudeDarkAreaMm2": 148
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 208,
+      "magnitudeDarkAreaMm2": 148
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 400,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 208,
+      "magnitudeDarkAreaMm2": 148
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 332,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 332,
+      "magnitudeDarkAreaMm2": 148
+    },
+    {
+      "options": {
+        "teMs": 30,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 572,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 332,
+      "magnitudeDarkAreaMm2": 148
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 180,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 180,
+      "magnitudeDarkAreaMm2": 180
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 360,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 180,
+      "magnitudeDarkAreaMm2": 180
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 240,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 240,
+      "magnitudeDarkAreaMm2": 180
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 456,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 240,
+      "magnitudeDarkAreaMm2": 180
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 376,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 376,
+      "magnitudeDarkAreaMm2": 180
+    },
+    {
+      "options": {
+        "teMs": 35,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 628,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 376,
+      "magnitudeDarkAreaMm2": 180
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "power": 0,
+        "projection": "single"
+      },
+      "darkAreaMm2": 208,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 208,
+      "magnitudeDarkAreaMm2": 208
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "power": 0,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 400,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 208,
+      "magnitudeDarkAreaMm2": 208
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "power": 1,
+        "projection": "single"
+      },
+      "darkAreaMm2": 268,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 268,
+      "magnitudeDarkAreaMm2": 208
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "power": 1,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 484,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 268,
+      "magnitudeDarkAreaMm2": 208
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "power": 4,
+        "projection": "single"
+      },
+      "darkAreaMm2": 400,
+      "referenceAreaMm2": 32,
+      "selectedDarkAreaMm2": 400,
+      "magnitudeDarkAreaMm2": 208
+    },
+    {
+      "options": {
+        "teMs": 40,
+        "power": 4,
+        "projection": "minip"
+      },
+      "darkAreaMm2": 648,
+      "referenceAreaMm2": 104,
+      "selectedDarkAreaMm2": 400,
+      "magnitudeDarkAreaMm2": 208
+    }
+  ]
+}

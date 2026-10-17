@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-17",
+  "cases": 48,
+  "max": {
+    "signal": 9.126033262418787e-14,
+    "t1Ms": 0.0000016132265727719641,
+    "amplitude": 4.678220033582647e-10,
+    "objective": 9.575673587391975e-16
+  },
+  "examples": [
+    {
+      "options": {
+        "t1Ms": 1000,
+        "amplitude": 1,
+        "trMs": 3000,
+        "assumption": "finite"
+      },
+      "fit": {
+        "t1Ms": 1000,
+        "amplitude": 1,
+        "objective": 0,
+        "rmse": 0,
+        "boundary": false,
+        "candidateCount": 3
+      },
+      "nullMs": 644.5598289862035,
+      "longTrNullMs": 693.1471805599452
+    },
+    {
+      "options": {
+        "t1Ms": 1800,
+        "amplitude": 1,
+        "trMs": 3000,
+        "assumption": "long"
+      },
+      "fit": {
+        "t1Ms": 1276.013264879733,
+        "amplitude": 0.8565772365705764,
+        "objective": 0.00856783271144904,
+        "rmse": 0.032725816856590914,
+        "boundary": false,
+        "candidateCount": 3
+      },
+      "nullMs": 936.2505450133913,
+      "longTrNullMs": 1247.6649250079015
+    },
+    {
+      "options": {
+        "t1Ms": 1800,
+        "amplitude": 1,
+        "trMs": 6000,
+        "assumption": "long"
+      },
+      "fit": {
+        "t1Ms": 1696.8943044636248,
+        "amplitude": 0.9708637205873513,
+        "objective": 0.00019427250325288495,
+        "rmse": 0.004927886251387162,
+        "boundary": false,
+        "candidateCount": 3
+      },
+      "nullMs": 1184.5705760648682,
+      "longTrNullMs": 1247.6649250079015
+    }
+  ]
+}

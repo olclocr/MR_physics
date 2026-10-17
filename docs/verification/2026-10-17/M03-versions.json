@@ -1,0 +1,34 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/t2star_mapping.html",
+      "sha256": "722C73750C8C8FEE9A3C6BF3EE5422CC21DA8DABDEE478FEC86F3B652ED07492"
+    },
+    {
+      "path": "docs/assets/t2star-fit-model.js",
+      "sha256": "CFCB0666AD1DB386BE8BA47D0970F36F3D405D83CB912C95CDC9DF00D63517AA"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/helpers/t2star-fit-reference.cjs",
+      "sha256": "AEB50FC41052E5958FFCB2AF13CFF8762697E94ED58CCFDC0CC43127E9CC74E5"
+    },
+    {
+      "path": "tests/t2star-fit.test.cjs",
+      "sha256": "EA02E8659D17F2B1B460E2F456C2D22C535D65FADBAACB3B3BB31887F9C743E0"
+    }
+  ]
+}

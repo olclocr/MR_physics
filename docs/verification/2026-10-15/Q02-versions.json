@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/receiver_bandwidth.html",
+      "sha256": "785EF380C7D71FBF64D82CDBF4E84BE429FF4185C05923F2302F2D60872CA96C"
+    },
+    {
+      "path": "docs/assets/receiver-bandwidth-model.js",
+      "sha256": "964CE8EB3F80028F41ADA973E037BBB13E492799B4A9165A46043EE76CC8B789"
+    },
+    {
+      "path": "tests/helpers/bandwidth-reference.cjs",
+      "sha256": "EABE6CECFEA64787FE6EF8BADF36F7D15E69417AB3767329BD295357A850B91C"
+    },
+    {
+      "path": "tests/receiver-bandwidth.test.cjs",
+      "sha256": "97DE7B3B532D6C289CB2F8C2D81CDE41448C9A77CC4115C3FDB82A0D8BB4A3D4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-numerical.cjs",
+      "sha256": "AA10263F514DAFDCCD3F7FD548E0CC55A57A05E1CCC0F61CC386361D69E299E4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-numerical.json",
+      "sha256": "DA4ADC072B856549E99D0DE022E6659DFB99E272846BACA1762796EDB3ED84DA"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-browser-check.js",
+      "sha256": "E6BA6B09B1CC9D3CA93E758EFE595CB42BF57C06AA8633DE77D952E0B9E1BAC7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-browser-check.json",
+      "sha256": "3584E98B5F38F075068BE150A12AC18454D689C6522AD2C8268BDBA7EA6FBE08"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

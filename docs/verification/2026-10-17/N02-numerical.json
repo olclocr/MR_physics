@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-17",
+  "cases": 108,
+  "curveSamples": 43308,
+  "timeIntegrals": 15,
+  "max": {
+    "metrics": 9.031664305325648e-13,
+    "curve": 1.900701818158268e-13,
+    "timeIntegral": 2.7575896210593753e-13
+  },
+  "examples": [
+    {
+      "options": {
+        "centerPpm": 2.1,
+        "amplitude": 1,
+        "t2StarMs": 80,
+        "teMs": 0
+      },
+      "area": 1,
+      "height": 0.16,
+      "fwhmHz": 3.9788735772973833,
+      "windowArea": 0.9683631991740266
+    },
+    {
+      "options": {
+        "centerPpm": 2.1,
+        "amplitude": 1,
+        "t2StarMs": 40,
+        "teMs": 0
+      },
+      "area": 1,
+      "height": 0.08,
+      "fwhmHz": 7.957747154594767,
+      "windowArea": 0.9368818908948043
+    },
+    {
+      "options": {
+        "centerPpm": 2.1,
+        "amplitude": 0.5,
+        "t2StarMs": 160,
+        "teMs": 0
+      },
+      "area": 0.5,
+      "height": 0.16,
+      "fwhmHz": 1.9894367886486917,
+      "windowArea": 0.4920859136566909
+    },
+    {
+      "options": {
+        "centerPpm": 2.1,
+        "amplitude": 1,
+        "t2StarMs": 80,
+        "teMs": 80
+      },
+      "area": 0.6703200460356393,
+      "height": 0.10725120736570229,
+      "fwhmHz": 3.9788735772973833,
+      "windowArea": 0.6491132642495524
+    }
+  ]
+}

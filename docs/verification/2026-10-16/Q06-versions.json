@@ -1,0 +1,26 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/compressed_sensing_sparsity.html",
+      "sha256": "BF75F079DB98AA201CCBD1833F4B88034B3663F887394AEB92B1979200646782"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "35938DCBBC78CEF3E6DFF6690C1ACFC9A6362965EB10EEEA86B04B1ACD9854E0"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "tests/helpers/compressed-sensing-reference.cjs",
+      "sha256": "A225B384BDF80146185446AFAD23211193C4F7FD70B91A9ADBE504938B1D0772"
+    },
+    {
+      "path": "tests/compressed-sensing.test.cjs",
+      "sha256": "B24235E0B08452052A109DB5A2F6211ED290C901980A7F55322B248A23CB9A30"
+    }
+  ]
+}

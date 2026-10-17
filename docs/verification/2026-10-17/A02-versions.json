@@ -1,0 +1,22 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/motion_ghosting.html",
+      "sha256": "3A96F69FE9BF69747A57B78E818C760A97FB0791B2582254F013A04F11F55A28"
+    },
+    {
+      "path": "docs/assets/motion-model.js",
+      "sha256": "5110FE4CECBE65DF18AFD0D911E3C06241101CDC041220D0A1B08719A461D085"
+    },
+    {
+      "path": "tests/helpers/motion-reference.cjs",
+      "sha256": "2396704C4850019F0383B5347979BA67865D31936751B4B9828FA58580EF5F33"
+    },
+    {
+      "path": "tests/motion.test.cjs",
+      "sha256": "727BF4B89989DFE9C7A86A907B09A9C9FF55E6B1A2FB1B1DF106CEF1AE499137"
+    }
+  ]
+}

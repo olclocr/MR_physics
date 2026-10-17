@@ -35,6 +35,33 @@ This repository contains the following interactive simulations located in the [d
 
 ## Curriculum and Development
 
+- [Q07 · SMS, slice separation, and CAIPI](docs/sms_slice_separation.html): compare two-slice coil mixtures, spatial versus uniform sensitivity, controlled shifts, and calibration leakage. [Scope and validation](docs/verification/2026-10-17/Q07-physics.md).
+- [A01 · FOV, wrap-around, and zero filling](docs/aliasing_fov.html): track point locations, reduced sampling, and unchanged information after display interpolation. [Validation](docs/verification/2026-10-17/A01-physics.md).
+- [A02 · Motion, view ordering, and ideal gating](docs/motion_ghosting.html): compare samples acquired at different positions with a temporal complex-image average and count accepted/waiting slots. [Limited 1D validation](docs/verification/2026-10-17/A02-physics.md).
+- [A03 · Gibbs ringing, interpolation, and Hann filtering](docs/gibbs_ringing.html): compare finite Fourier coefficients, sampled overshoot, and normalized amplitude PSF width. [Validation](docs/verification/2026-10-17/A03-physics.md).
+- [A04 · Chemical shift displacement and intravoxel cancellation](docs/chemical_shift_artifacts.html): reuse Q02/F01 in explicitly separate spatial and temporal experiments. [Validation and limits](docs/verification/2026-10-17/A04-physics.md).
+- [A05 · Spatial field and EPI distortion](docs/field_epi_distortion.html): reconstruct four single-frequency landmarks using their actual SE/EPI sample times, and separate displacement from unmodeled intravoxel signal loss. [Partial-model validation](docs/verification/2026-10-17/A05-physics.md).
+- [A06 · B1 excitation, receive gain, and finite-RF B0 shading](docs/b0_b1_receive_shading.html): compare distinct mechanisms, matched 90° brightness, and a fixed-gain 45° counterexample. [Partial-model validation](docs/verification/2026-10-17/A06-physics.md).
+- [M01 basics · T2-weighted brightness and T2 fitting](docs/t2_mapping_basics.html): separate initial signal, display TE, fitting echoes, and a noiseless log-OLS T2 estimate. [Basic-model validation](docs/verification/2026-10-17/M01-physics.md); noise/model limits are implemented in the separate follow-up below.
+- [M01 limits · Magnitude noise and biexponential fitting](docs/t2_mapping_limits.html): compare fixed complex-noise realizations, echo ranges, effective T2, and nondecaying fits. [Validation](docs/verification/2026-10-17/M01-limits-physics.md).
+- [M02 basics · Finite-TR IR and T1 fitting](docs/t1_mapping_ir.html): fit signed IR data with explicit recovery assumptions and compare the infinite-TR approximation. [Partial-model validation](docs/verification/2026-10-17/M02-physics.md).
+- [AI03 noise · Repeat variance and bias](docs/reconstruction_noise_ensemble.html): compares 512-repeat means, variances and neighbour covariance for declared linear/nonlinear proxies; preserves bias and undefined zero-SD ratios. [Partial-model validation](docs/verification/2026-10-17/AI03-noise-physics.md).
+- [AI02 · Reading vendor AI reconstruction claims](docs/vendor_ai_reading.html): separates eight product names by roles, source dates, document types and unverified installed versions; makes no clinical ranking. [Source and content review](docs/verification/2026-10-17/AI02-physics.md).
+- [AI03 quantitative example · Processing and T2](docs/processed_t2_mapping.html): applies the same declared processor to each noiseless echo and compares spatial mixing, echo selection and invalid signed fits. [Partial-model validation](docs/verification/2026-10-17/AI03-t2-physics.md).
+- [AI03 basics · Small structures and texture](docs/structure_texture_evaluation.html): compares paired known-feature responses with overall complex error using declared proxies; no trained AI or clinical detection claims. [Partial-model validation](docs/verification/2026-10-17/AI03-physics.md).
+- [AI01 basics · Reconstruction roles and data consistency](docs/reconstruction_roles.html): compares declared mathematical proxies on known noisy and undersampled complex data; contains no trained AI/vendor model. [Partial-model validation](docs/verification/2026-10-17/AI01-physics.md).
+- [S02 basics · Dipole field and missing susceptibility components](docs/qsm_dipole_inverse.html): demonstrates equal fields from different periodic susceptibility maps, orientation-dependent nulls and a declared L2 inverse. [Partial-model validation](docs/verification/2026-10-17/S02-physics.md).
+- [E02 basics · Local inversion, sampling and spatial error](docs/mre_inversion_limits.html): compares complex modulus estimates with a fixed known elastic material and explicit exclusion rules. [Partial-model validation](docs/verification/2026-10-17/E02-physics.md).
+- [E01 follow-up · Motion encoding and MR phase](docs/mre_motion_encoding.html): integrates a prescribed effective gradient against known transverse displacement, separating polarity and synchronization from material properties. [Partial-model validation](docs/verification/2026-10-17/E01-encoding-physics.md).
+- [E01 basics · Shear waves and wavelength](docs/mre_shear_wave.html): distinguishes frequency-dependent wavelength from a known uniform elastic modulus. [Partial-model validation](docs/verification/2026-10-17/E01-physics.md).
+- [N03 follow-up · Intravoxel field distribution and linewidth](docs/mrs_field_linewidth.html): separates a uniform frequency shift from spatial dephasing, linewidth and peak height at fixed normalized area. [Partial-model validation](docs/verification/2026-10-17/N03-field-physics.md).
+- [N03 basics · Observation volume and spectral mixing](docs/mrs_observation_volume.html): integrates a prescribed three-dimensional response over two synthetic regions, including outside contributions. [Partial-model validation](docs/verification/2026-10-17/N03-physics.md).
+- [N02 basics · Peak position, area, width and echo weighting](docs/spectral_peak_features.html): distinguishes equal height from equal area in a declared continuous absorption model. [Partial-model validation](docs/verification/2026-10-17/N02-physics.md).
+- [N01 · Complex FID and frequency spectrum](docs/fid_spectrum.html): two synthetic components, Hz/ppm axes and zero filling of a fixed acquisition. [Model validation](docs/verification/2026-10-17/N01-physics.md).
+- [M04 follow-up · Echo decay and fat spectrum](docs/pdff_echo_assumptions.html): holds density fixed while changing component decay and a prescribed six-peak spectrum. [Partial-model validation](docs/verification/2026-10-17/M04-echo-physics.md).
+- [M04 basics · Density fraction and T1 bias](docs/pdff_t1_bias.html): separates signal fractions from mobile proton-density fractions under known T1 assumptions. [Partial-model validation](docs/verification/2026-10-17/M04-physics.md).
+- [M03 basics · T2*, R2*, and echo range](docs/t2star_mapping.html): distinguish an exponential rate from a range-dependent summary of Gaussian dephasing. [Partial-model validation](docs/verification/2026-10-17/M03-physics.md).
+
 - [Learning roadmap, implementation status, and future chapters](docs/learning-roadmap.md)
 - [Chapter authoring and verification workflow](docs/chapter-authoring.md)
 - [Per-chapter physical consistency review plan and progress](docs/physics-validation-plan.md)
@@ -156,4 +183,54 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 
 [B05 k-space physical review · 물리 검증](docs/verification/2026-10-15/B05-physics.md): independent FFT checks, complex-number guidance, prediction feedback, and real canvas verification.
 
-G01 draft / 초안: [FOV and matrix](docs/fov_matrix_resolution.html). Calculation checks and a 14-state real-browser smoke check are recorded; full display/reference comparison and integrated physical review are pending. [Resume record](docs/verification/2026-10-15/G01-physics.md).
+G01: [FOV and matrix](docs/fov_matrix_resolution.html). Acquired versus display grids, point/edge response, k-space spacing and extent. [Independent calculation, 200 real-browser states and physical review](docs/verification/2026-10-15/G01-physics.md).
+
+G02: [Slice selection and partial volume](docs/slice_selection_partial_volume.html). RF bandwidth, gradient polarity, slice location and thickness, and normalized versus integrated compartment signal. [Independent calculation and physical review](docs/verification/2026-10-15/G02-physics.md).
+
+Q01: [SNR, CNR and complex averaging](docs/snr_cnr_averaging.html). Fixed-seed independent quadrature noise, nested NEX comparisons and magnitude noise floor. [Independent statistics and physical review](docs/verification/2026-10-15/Q01-physics.md).
+
+[B00 classical analogy review](docs/verification/2026-10-15/B00-physics.md): signed precession, consistent force scale, independent ring/elliptic-integral checks and explicit limits of the quantum-spin analogy.
+
+C04: [Inversion recovery, TI and null](docs/inversion_recovery.html). Finite-TR ideal 180°/90° readout, signed magnetization versus magnitude, and STIR/FLAIR concept limits. [Independent chronological calculation and physical review](docs/verification/2026-10-15/C04-physics.md).
+
+C05: [Echo train and k-space ordering](docs/fast_spin_echo.html). Explicit shot/echo assignments, T2-weighted complex reconstruction, and effective-TE comparison. [Independent FFT and physical review](docs/verification/2026-10-15/C05-physics.md).
+
+G03: [2D slices, 3D partitions and MPR](docs/volume_2d_3d.html). Matched voxel geometry, physical aspect and asymmetric orientation markers in an explicit box-average phantom. [Independent spatial integration and physical review](docs/verification/2026-10-15/G03-physics.md).
+
+Q02: [Receiver bandwidth and readout](docs/receiver_bandwidth.html). Full versus one-sided BW, Hz/pixel, ADC time, signed off-resonance displacement and expected noise at fixed geometry. [Independent kernel, units and physical review](docs/verification/2026-10-15/Q02-physics.md).
+
+Q03: [Scan time and acquisition events](docs/scan_time.html). Explicit 2D interleaving, 3D phase-pair scheduling, ETL remainder, NEX, gating and fixed preparation. [Independent event enumeration and physical review](docs/verification/2026-10-15/Q03-physics.md).
+
+C06: [Spoiled GRE and flip angle](docs/spoiled_gre.html). Ideal spoiling, transient versus steady state, TR and Ernst angle, fixed signal scale and signal-versus-contrast distinction. [Independent rotation, RK4 and physical review](docs/verification/2026-10-15/C06-physics.md).
+
+C07: [EPI trajectory and echo spacing](docs/epi_trajectory.html). Timed ADC/gradient path and a declared echo-center 1D phase-direction point-response approximation. [Independent SI integration, finite kernel and physical review](docs/verification/2026-10-15/C07-physics.md).
+
+Q04: [Parallel imaging with coil sensitivity](docs/parallel_imaging.html). Two-position real linear model, R1/R2 alias separation, singularity, g-factor and fixed-condition noise scaling. [Independent QR, DFT, Monte Carlo and physical review](docs/verification/2026-10-15/Q04-physics.md).
+
+F01: [Chemical shift and IP/OP](docs/chemical_shift_ip_op.html). Same-voxel complex water/fat sum, single-peak frequency, B0/TE/signal-fraction comparisons and common T2* decay. [Independent RK4, units and physical review](docs/verification/2026-10-15/F01-physics.md).
+
+F02: [Dixon complex separation and field ambiguity](docs/dixon_water_fat.html). Declared two-echo fit, held-out third echo, known versus assumed field and an equal-spacing swap counterexample. [Independent RK4, generic QR and physical review](docs/verification/2026-10-15/F02-physics.md).
+
+F03: [Spectral fat saturation](docs/spectral_fat_saturation.html). Declared rectangular RF, net transverse spoiling, immediate imaging excitation, signed Mz and B0/B1 failure cases. Water excitation is covered in the separate two-pulse lesson below. [Independent Bloch ODE, matrix exponential and physical review](docs/verification/2026-10-15/F03-physics.md).
+
+F04: [Fat-suppression mechanisms and failure cases](docs/fat_suppression_comparison.html). Reuses validated IR, spectral saturation and Dixon models; shows only supported error cases and keeps their different signal scales explicit. [Independent case checks and physical review](docs/verification/2026-10-15/F04-physics.md).
+
+D01: [Diffusion gradients and b-value](docs/diffusion_b_value.html). Free 1D Brownian motion, finite rectangular PGSE lobes, q/b units, exact bridge variance and same-TE b0 normalization. [Independent integrals, covariance, seeded statistics and physical review](docs/verification/2026-10-15/D01-physics.md).
+
+D02: [ADC fitting and T2 shine-through](docs/adc_fitting_shine_through.html). Fixed-TE single-voxel signal, complex-to-magnitude noise, declared log OLS, same-D/T2 comparison and unclipped negative estimates. [Independent ODE, QR, log-noise moments and physical review](docs/verification/2026-10-15/D02-physics.md).
+
+F03 follow-up: [Water excitation](docs/water_excitation.html). Two instantaneous RF pulses, coherent delay, separate water/fat magnetization and B0/angle errors. [Independent time-ordered Bloch integration and physical review](docs/verification/2026-10-15/F03-water-physics.md).
+
+D03: [DWI amplitude and EPI timing](docs/dwi_epi_conditions.html). Fixed-TE diffusion signal, declared single-shot/PI/readout-segment timing, uniform-field position prediction and PI alias ambiguity. [Independent SI schedule, Bloch integration and physical review](docs/verification/2026-10-16/D03-physics.md). Spatial distortion and motion reconstruction remain planned.
+
+S01: [Prescribed frequency distributions, GRE magnitude and phase](docs/susceptibility_signal_phase.html). Reuses C03 Gaussian dephasing; separates mean frequency from dispersion and shows a fixed-threshold blooming example. [Independent frequency quadrature, full voxel check and physical review](docs/verification/2026-10-16/S01-physics.md). Phase masking and projection are covered in the separate follow-up below.
+
+S01 follow-up: [Phase masks and minIP](docs/swi_mask_projection.html). Same complex volume, explicit mask powers and per-plane weighting before minimum projection; shows depth loss and a fixed geometry comparison. [Independent quadrature, repeated products, sorted minima and physical review](docs/verification/2026-10-16/S01-swi-physics.md).
+
+C08: [Balanced SSFP and frequency response](docs/balanced_ssfp.html). Alternating instantaneous RF, retained transverse magnetization, RF-frame steady state versus startup, and explicit magnitude/complex periodicity. [Independent laboratory-frame affine exponentials, Bloch ODE and physical review](docs/verification/2026-10-16/C08-physics.md).
+
+C08 follow-up: [bSSFP relaxation contrast and short-TR limits](docs/bssfp_contrast_limits.html). Same-T1, same-T2 and same-ratio pairs; exact shared Bloch fixed points versus a declared short-TR approximation. [Independent variable-relaxation matrix/ODE checks and physical review](docs/verification/2026-10-16/C08-contrast-physics.md).
+
+Q05: [Partial Fourier and phase assumptions](docs/partial_fourier_phase.html). Explicit sample sets, zero/conjugate filling and a declared 128-step phase-line reconstruction; separates acquired-data agreement from complex accuracy. [Independent FFT, real normal-operator iteration and physical review](docs/verification/2026-10-16/Q05-physics.md).
+
+Q06: [Haar sparsity, sampling and L1 reconstruction](docs/compressed_sensing_sparsity.html). Declared complex optimization, fixed masks and penalty tradeoffs; shows half-FOV ambiguity and finite-iteration status. [Independent wavelet basis, FFT, normal operator, ADMM bounds and physical review](docs/verification/2026-10-16/Q06-physics.md). Two dense cases retain an explicit iteration-limit flag.

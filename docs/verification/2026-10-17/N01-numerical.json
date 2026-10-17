@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-17",
+  "cases": 16,
+  "fidSamples": 2048,
+  "spectrumSamples": 5120,
+  "max": {
+    "fid": 1.2142675753779031e-11,
+    "spectrum": 1.0968656538601351e-12,
+    "geometric": 9.52363188311267e-16,
+    "energy": 2.8449465006019636e-16
+  },
+  "examples": [
+    {
+      "b0": 1.5,
+      "peaks": [
+        {
+          "name": "A",
+          "ppm": 2,
+          "amplitude": 1,
+          "hz": -172.43878962600002
+        },
+        {
+          "name": "B",
+          "ppm": 3,
+          "amplitude": 0.6,
+          "hz": -108.572571246
+        }
+      ]
+    },
+    {
+      "b0": 3,
+      "peaks": [
+        {
+          "name": "A",
+          "ppm": 2,
+          "amplitude": 1,
+          "hz": -344.87757925200003
+        },
+        {
+          "name": "B",
+          "ppm": 3,
+          "amplitude": 0.6,
+          "hz": -217.145142492
+        }
+      ]
+    }
+  ],
+  "acquisitionIntervalHz": 7.8125,
+  "filledIntervalHz": 1.953125
+}

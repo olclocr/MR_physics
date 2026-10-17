@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-17",
+  "cases": 384,
+  "curveSamples": 46464,
+  "max": {
+    "complex": 1.089570100809567e-11,
+    "fraction": 9.207079543216423e-13,
+    "curve": 1.7011947406331274e-12
+  },
+  "minFatFactor": 0.3465855805452025,
+  "examples": [
+    {
+      "spectrum": "single",
+      "relaxation": "same",
+      "rawFraction": 0.2999999999999893,
+      "correctedFraction": 0.3
+    },
+    {
+      "spectrum": "single",
+      "relaxation": "different",
+      "rawFraction": 0.279428568630593,
+      "correctedFraction": 0.3
+    },
+    {
+      "spectrum": "multi",
+      "relaxation": "same",
+      "rawFraction": 0.21267236069514917,
+      "correctedFraction": 0.3
+    },
+    {
+      "spectrum": "multi",
+      "relaxation": "different",
+      "rawFraction": 0.19640892207595165,
+      "correctedFraction": 0.3
+    }
+  ]
+}

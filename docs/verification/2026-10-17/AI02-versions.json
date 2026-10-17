@@ -1,0 +1,30 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/vendor_ai_reading.html",
+      "sha256": "0EC8B9FBCA1A922DEDC2FFD99E58AD4E7134A9400F4A71D68E74AD693D14F6BE"
+    },
+    {
+      "path": "docs/assets/vendor-ai-reading.js",
+      "sha256": "73BA4B0E9D9DB95E0037253E97D0695F5A711DDFF977A3DE892E1F09773E73DC"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-source-review.md",
+      "sha256": "36C0D2CA76AC08E1BE715EFFF68DF5D3D6049CFB53AFCF5552234526A9BECF44"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-browser-check.js",
+      "sha256": "DF6CB488778CF64E7CA64B2075A6EBB5CA1719AF6DC88DAAB96AE02EEB531C46"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-browser-check.json",
+      "sha256": "BE0EC64CDAF820E944F10A60E464E7601933AB97D44921E6C7CF619408FEA760"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-physics.md",
+      "sha256": "D3E52244C5A618ABCC145346A44509A1AA475909730997181840C802D80DB71B"
+    }
+  ]
+}

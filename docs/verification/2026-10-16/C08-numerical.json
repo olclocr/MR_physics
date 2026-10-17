@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "cases": 147,
+    "profilePoints": 21021,
+    "maxBeforeError": 5.233591338082988e-13,
+    "maxEchoError": 5.233591338082988e-13,
+    "maxTransientError": 7.394085344003543e-14,
+    "maxProfileError": 6.833422716567839e-14,
+    "maxODEError": 6.583622536027178e-14,
+    "maxSteadyMagnitude": 0.1581019468423552,
+    "convergenceMismatches": 0,
+    "method": "independent two-pulse lab-frame affine matrix exponentials, Householder fixed point and direct Bloch ODE"
+  },
+  "lowFlip": {
+    "on": 0.008717503627842137,
+    "halfPeriod": 0.15731037078946478
+  }
+}

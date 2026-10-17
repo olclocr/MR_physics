@@ -1,0 +1,4 @@
+const IR=require('./ir-reference.cjs'),SAT=require('./saturation-reference.cjs'),DIXON=require('./dixon-reference.cjs');
+let ti;
+function reference(id){if(ti===undefined)ti=IR.root(6000,300);const waterT1=id==='same-t1'?300:1000,ir={tiMs:ti,baseline:{water:IR.reference(ti,6000,1000).mz,fat:IR.reference(ti,6000,300).mz},current:{water:IR.reference(ti,6000,waterT1).mz,fat:IR.reference(ti,6000,300).mz}},offset=id==='field'?-450:0,b1=id==='b1'?2:1,carrier=-3.5e-6*42577478.92*3,saturation={baseline:{water:SAT.ode(8,1,-carrier),fat:SAT.ode(8,1,0)},current:{water:SAT.ode(8,b1,-carrier+offset),fat:SAT.ode(8,b1,offset)}},dixon={baseline:DIXON.reference({fieldHz:0,fatFraction:.3,strategy:'known'}),current:DIXON.reference({fieldHz:id==='field'?-450:0,fatFraction:.3,strategy:id==='field'?'principal':'known'})};return {id,ir,saturation,dixon};}
+module.exports={reference};

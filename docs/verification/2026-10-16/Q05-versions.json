@@ -1,0 +1,23 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/partial_fourier_phase.html",
+      "sha256": "C9C2696CB97EDB009395FC48637CCA5FC2EB660D2AFAF5D982F70CF590E80E63"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "tests/helpers/partial-fourier-reference.cjs",
+      "sha256": "0E36BDF9074D73FA29180629337621F8FF458EF3F7CD5EEA91F53DDBAF75C4DF"
+    },
+    {
+      "path": "tests/partial-fourier.test.cjs",
+      "sha256": "50B44A84BEF52EF46EED9BC598842A6E30426806D44EB71EE8C9EACD66DB4DF5"
+    }
+  ],
+  "navigationAudit": "checkpoint-W31-browser.json"
+}

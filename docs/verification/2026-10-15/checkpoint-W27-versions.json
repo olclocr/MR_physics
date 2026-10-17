@@ -1,0 +1,23 @@
+{
+  "changes": [
+    {
+      "manifest": "F03-versions.json",
+      "path": "docs/spectral_fat_saturation.html",
+      "previous": "A1D725AE53219A161F014FDA275651DC4CB7E0162E123C68B57FE001FE885218",
+      "current": "1FA97B6714AC07FFB76B0DEC5D359CB16D6D55F4A683A8387654E32F41063841"
+    },
+    {
+      "manifest": "F04-versions.json",
+      "path": "docs/fat_suppression_comparison.html",
+      "previous": "65BE39B684962A647DCFEDA4710318029084DE7930AAE3184B3223CAD2A00C1F",
+      "current": "5748F291B94EF3CED650C95B9DCD815AE8138D9BF9E7FCBCCCB28CF439D3C791"
+    },
+    {
+      "manifest": "D01-versions.json",
+      "path": "docs/diffusion_b_value.html",
+      "previous": "D610DED475055E98513A5987D07103159B07CCB5218CBA5F44C5947B9756E529",
+      "current": "CEDFE0AAF3BF4A728C3380299D7666C7FE10FBED0B893F8E7F9626DA8BC4A543"
+    }
+  ],
+  "rendererSha256": "13A47A8676AC81FF38005D58C7C443C5CB156173B90501EC2FEDA8FD658D901F"
+}

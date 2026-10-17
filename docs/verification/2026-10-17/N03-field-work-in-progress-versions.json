@@ -1,0 +1,63 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "status": "W54 incomplete; individual numerical and browser checks passed",
+  "files": [
+    {
+      "path": "docs/mrs_field_linewidth.html",
+      "sha256": "87D795A4E8E1BB671E2FF59944CFA081788BB60AB9B3DA1BB8779896EEC8EF41"
+    },
+    {
+      "path": "docs/assets/mrs-field-distribution-model.js",
+      "sha256": "09E8275836A935DFC47F3E07FFCEB58B3301DB0446F5FA5C46A5BC312334AD44"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "tests/mrs-field-distribution.test.cjs",
+      "sha256": "C184E4386C006860FC6A8C4C7138610C5CC3D7FD771C3B22DB9C6201BDE1D575"
+    },
+    {
+      "path": "tests/helpers/mrs-field-distribution-reference.cjs",
+      "sha256": "32E1BD068AA71460707CFED762786DD30FF28A8884A839A94D9798380AD523E7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-numerical.cjs",
+      "sha256": "5A36AB4D60318BEF4091501F446922BCEA4774E5AAA9E19016ECDA660CF9804D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-numerical.json",
+      "sha256": "4EA6B12B43D38D6FF3C26911E2C9C601784267216DDBFA7C0212CADBA3EAA42B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-display-reference.json",
+      "sha256": "755593182341191F8B87AB539614478DCB96D562D2E53C5392A3F1FBAE3FD296"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-check.js",
+      "sha256": "1F5453E6BDD835BC36272CAA4F401771547A35437186034CFF5711AFB9F72213"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-check.json",
+      "sha256": "77683CD62E5394D0B784101AAB53008CF0273D91E47A594432B20CC43DFBF7BA"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-capture.js",
+      "sha256": "64F7D4FBDA55E4685F53F2695B7BB7D0836F6F25BC4AFC89A860BE0391C4B7B4"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-capture.json",
+      "sha256": "BD704133D1681D86D7C9F8C127CC902574998A3DFB0019E3B49AED614B5FB21B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-physics.md",
+      "sha256": "C4BA889CB14BFCF32B65D0BD59DFF00777DC77DAE5E00DC242FE750A4BB50133"
+    }
+  ]
+}

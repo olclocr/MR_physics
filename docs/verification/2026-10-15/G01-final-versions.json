@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/fov_matrix_resolution.html",
+      "sha256": "852C7EDD155BB21CF633DBA9BB91C1371F443D934F0B96AC5D16697BA5360E81"
+    },
+    {
+      "path": "docs/assets/fov-resolution-model.js",
+      "sha256": "3540BBFDFD2FE0102626CE481A9023EB2B7C501E2782631E9506076E7A1D1FF0"
+    },
+    {
+      "path": "tests/helpers/fov-reference.cjs",
+      "sha256": "AC9FDF1785C8EA49F34B38AB148E732A1F4F3DBDDA8281F25A94920B867C4F52"
+    },
+    {
+      "path": "tests/fov-resolution.test.cjs",
+      "sha256": "A4ABCC92FE10ADBC2A95CB3CA627DA1BFBE1C4CEE6BD54ACF85A80F36D0AA042"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-display-reference.cjs",
+      "sha256": "1CE57C5EED1412FCB37247E73C43025B739B50798605EE9783E5AA5BA5CFDDDC"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-display-reference.json",
+      "sha256": "458C91E9E8316ECCB19BD79B7EE41F2AF4E2AEE14EB0D93C65A0896AE781FB7B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-browser-check.js",
+      "sha256": "6D02F9BC69F6F12922793D4F455CC8B0B35E319E93358347D476DC0CAB44D62F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-browser-check.json",
+      "sha256": "B64D5DD5DFD9BA0B0C9D8E75635C578AF41BC28257474FFF04B622FBF196E66D"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

@@ -1,0 +1,22 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/aliasing_fov.html",
+      "sha256": "4999E7A79537C2F3E6DBC10ADFCBAD58DC5A16AFF8C8C2753AA4ED12D1D2EC53"
+    },
+    {
+      "path": "docs/assets/aliasing-model.js",
+      "sha256": "A9FA759B9B024069E19809BA9FB956BC30925EBAE192141926BDD23989D3DB05"
+    },
+    {
+      "path": "tests/helpers/aliasing-reference.cjs",
+      "sha256": "4E11F532407662FBF176AEFC95B16468B88CFF8E2CDF198D2F71A5C73FEFB552"
+    },
+    {
+      "path": "tests/aliasing.test.cjs",
+      "sha256": "860F4922119CA0895FDE936C199A4354D99AC922AC37C4903D8AEF284E6DDE63"
+    }
+  ]
+}

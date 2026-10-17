@@ -1,0 +1,330 @@
+{
+  "date": "2026-10-17",
+  "cases": 108,
+  "signals": 55296,
+  "fits": 6912,
+  "invalidFits": 25,
+  "clippedFits": 9,
+  "max": {
+    "signal": 3.885780586188048e-15,
+    "t2Ms": 1.3415046851150692e-11,
+    "amplitude": 4.769518113789672e-13,
+    "rmse": 1.9326762412674725e-12
+  },
+  "examples": [
+    {
+      "options": {
+        "targetT2Ms": 40,
+        "width": 1,
+        "processing": "smooth",
+        "subset": "all"
+      },
+      "center": {
+        "j": 32,
+        "truthT2Ms": 40,
+        "amplitude": 0.9119492207150361,
+        "t2Ms": 64.83237686766822,
+        "slope": -0.015424392075600394,
+        "intercept": -0.09217096949847159,
+        "predicted": [
+          {
+            "teMs": 10,
+            "signal": 0.8306488428280001,
+            "used": true,
+            "predicted": 0.781597880302962
+          },
+          {
+            "teMs": 20,
+            "signal": 0.6926657213920192,
+            "used": true,
+            "predicted": 0.669878577246983
+          },
+          {
+            "teMs": 40,
+            "signal": 0.4872050504420379,
+            "used": true,
+            "predicted": 0.49206391985575537
+          },
+          {
+            "teMs": 60,
+            "signal": 0.34774835644472224,
+            "used": true,
+            "predicted": 0.3614489393270141
+          },
+          {
+            "teMs": 80,
+            "signal": 0.2516073622040275,
+            "used": true,
+            "predicted": 0.2655048063245953
+          },
+          {
+            "teMs": 120,
+            "signal": 0.13645861425814687,
+            "used": true,
+            "predicted": 0.14325944117610828
+          },
+          {
+            "teMs": 160,
+            "signal": 0.07682546106267343,
+            "used": true,
+            "predicted": 0.07729904317061563
+          },
+          {
+            "teMs": 200,
+            "signal": 0.04441147281149213,
+            "used": true,
+            "predicted": 0.04170853959808119
+          }
+        ],
+        "rmse": 0.020565401084208644,
+        "valid": true,
+        "reason": "ok"
+      },
+      "mapRMSE": 3.3440084010310467,
+      "invalidCount": 0,
+      "mapClipCount": 0,
+      "nonpositiveSamples": 0
+    },
+    {
+      "options": {
+        "targetT2Ms": 40,
+        "width": 1,
+        "processing": "smooth",
+        "subset": "early"
+      },
+      "center": {
+        "j": 32,
+        "truthT2Ms": 40,
+        "amplitude": 0.9838419596693607,
+        "t2Ms": 57.44733414835899,
+        "slope": -0.0174072481312619,
+        "intercept": -0.016290004921178713,
+        "predicted": [
+          {
+            "teMs": 10,
+            "signal": 0.8306488428280001,
+            "used": true,
+            "predicted": 0.8266594269645032
+          },
+          {
+            "teMs": 20,
+            "signal": 0.6926657213920192,
+            "used": true,
+            "predicted": 0.6945890053509602
+          },
+          {
+            "teMs": 40,
+            "signal": 0.4872050504420379,
+            "used": true,
+            "predicted": 0.49037742455767425
+          },
+          {
+            "teMs": 60,
+            "signal": 0.34774835644472224,
+            "used": true,
+            "predicted": 0.3462047580127091
+          }
+        ],
+        "rmse": 0.0028311267089055495,
+        "valid": true,
+        "reason": "ok"
+      },
+      "mapRMSE": 3.0544483422508444,
+      "invalidCount": 0,
+      "mapClipCount": 0,
+      "nonpositiveSamples": 0
+    },
+    {
+      "options": {
+        "targetT2Ms": 40,
+        "width": 1,
+        "processing": "smooth",
+        "subset": "late"
+      },
+      "center": {
+        "j": 32,
+        "truthT2Ms": 40,
+        "amplitude": 0.7859488157887667,
+        "t2Ms": 69.23288597359934,
+        "slope": -0.014444002816542,
+        "intercept": -0.2408636085349407,
+        "predicted": [
+          {
+            "teMs": 80,
+            "signal": 0.2516073622040275,
+            "used": true,
+            "predicted": 0.24749031381052997
+          },
+          {
+            "teMs": 120,
+            "signal": 0.13645861425814687,
+            "used": true,
+            "predicted": 0.13888015020576142
+          },
+          {
+            "teMs": 160,
+            "signal": 0.07682546106267343,
+            "used": true,
+            "predicted": 0.07793313533854433
+          },
+          {
+            "teMs": 200,
+            "signal": 0.04441147281149213,
+            "used": true,
+            "predicted": 0.043732481385550144
+          }
+        ],
+        "rmse": 0.002474969468393454,
+        "valid": true,
+        "reason": "ok"
+      },
+      "mapRMSE": 3.737371804556797,
+      "invalidCount": 0,
+      "mapClipCount": 0,
+      "nonpositiveSamples": 0
+    },
+    {
+      "options": {
+        "targetT2Ms": 40,
+        "width": 3,
+        "processing": "smooth",
+        "subset": "all"
+      },
+      "center": {
+        "j": 32,
+        "truthT2Ms": 40,
+        "amplitude": 1,
+        "t2Ms": 40,
+        "slope": -0.025,
+        "intercept": 0,
+        "predicted": [
+          {
+            "teMs": 10,
+            "signal": 0.7788007830714049,
+            "used": true,
+            "predicted": 0.7788007830714049
+          },
+          {
+            "teMs": 20,
+            "signal": 0.6065306597126334,
+            "used": true,
+            "predicted": 0.6065306597126334
+          },
+          {
+            "teMs": 40,
+            "signal": 0.36787944117144233,
+            "used": true,
+            "predicted": 0.36787944117144233
+          },
+          {
+            "teMs": 60,
+            "signal": 0.22313016014842982,
+            "used": true,
+            "predicted": 0.22313016014842982
+          },
+          {
+            "teMs": 80,
+            "signal": 0.1353352832366127,
+            "used": true,
+            "predicted": 0.1353352832366127
+          },
+          {
+            "teMs": 120,
+            "signal": 0.049787068367863944,
+            "used": true,
+            "predicted": 0.049787068367863944
+          },
+          {
+            "teMs": 160,
+            "signal": 0.01831563888873418,
+            "used": true,
+            "predicted": 0.01831563888873418
+          },
+          {
+            "teMs": 200,
+            "signal": 0.006737946999085467,
+            "used": true,
+            "predicted": 0.006737946999085467
+          }
+        ],
+        "rmse": 0,
+        "valid": true,
+        "reason": "ok"
+      },
+      "mapRMSE": 2.9048027589696512,
+      "invalidCount": 0,
+      "mapClipCount": 0,
+      "nonpositiveSamples": 0
+    },
+    {
+      "options": {
+        "targetT2Ms": 20,
+        "width": 1,
+        "processing": "sharpen",
+        "subset": "all"
+      },
+      "center": {
+        "j": 32,
+        "truthT2Ms": 20,
+        "valid": false,
+        "reason": "nonpositive",
+        "t2Ms": null,
+        "amplitude": null,
+        "rmse": null
+      },
+      "mapRMSE": 0.75375778279584,
+      "invalidCount": 1,
+      "mapClipCount": 0,
+      "nonpositiveSamples": 6
+    },
+    {
+      "options": {
+        "targetT2Ms": 120,
+        "width": 1,
+        "processing": "sharpen",
+        "subset": "late"
+      },
+      "center": {
+        "j": 32,
+        "truthT2Ms": 120,
+        "amplitude": 1.060903045064479,
+        "t2Ms": 135.78150014232318,
+        "slope": -0.007364773543905628,
+        "intercept": 0.05912047474429061,
+        "predicted": [
+          {
+            "teMs": 80,
+            "signal": 0.5861859579631669,
+            "used": true,
+            "predicted": 0.5885688252820374
+          },
+          {
+            "teMs": 120,
+            "signal": 0.44025408168294855,
+            "used": true,
+            "predicted": 0.4383873711159203
+          },
+          {
+            "teMs": 160,
+            "signal": 0.3277280655552838,
+            "used": true,
+            "predicted": 0.32652678650085626
+          },
+          {
+            "teMs": 200,
+            "signal": 0.24227090494439338,
+            "used": true,
+            "predicted": 0.24320897299384775
+          }
+        ],
+        "rmse": 0.0016945285503945783,
+        "valid": true,
+        "reason": "ok"
+      },
+      "mapRMSE": 3.015248590350829,
+      "invalidCount": 0,
+      "mapClipCount": 0,
+      "nonpositiveSamples": 0
+    }
+  ]
+}

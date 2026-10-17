@@ -71,8 +71,11 @@ function buildReports({baseDir = path.resolve(__dirname, '../docs/verification')
   const selected = inputs.filter(doc => !sources.length || sources.includes(doc.source));
   const output = selected.map(({source, target, markdown}) => {
     const title=markdown.match(/^# (.+)/m)?.[1]||'검증 보고서';
-    const nav=documents.map(doc => `<a href="${escape(doc.target)}">${escape(doc.label)}</a>`).join('');
-    const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}</style></head><body><main><nav><a href="../../index.html">시뮬레이션 홈</a>${nav}<a href="${escape(source)}">Markdown 원문</a></nav>${render(markdown, resolveLink)}<footer>${escape(date)} · MR Physics 과학 검증 기록</footer></main></body></html>\n`;
+    const compact=documents.length>4;
+    const nav=documents.map(doc => `<a href="${escape(doc.target)}"${compact&&doc.target===target?' aria-current="page"':''}>${escape(doc.label)}</a>`).join('');
+    const extraCss=compact?'.report-list{flex-basis:100%}.report-list summary{cursor:pointer;font-weight:700}.report-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 18px;margin-top:14px}.report-links a[aria-current=page]{font-weight:700}summary:focus-visible{outline:3px solid #7c3aed;outline-offset:4px}':'';
+    const navigation=compact?`<a href="../../index.html">시뮬레이션 홈</a><a href="${escape(source)}">Markdown 원문</a><details class="report-list"><summary>검증 보고서 목록 (${documents.length})</summary><div class="report-links">${nav}</div></details>`:`<a href="../../index.html">시뮬레이션 홈</a>${nav}<a href="${escape(source)}">Markdown 원문</a>`;
+    const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}${extraCss}</style></head><body><main><nav>${navigation}</nav>${render(markdown, resolveLink)}<footer>${escape(date)} · MR Physics 과학 검증 기록</footer></main></body></html>\n`;
     return {source: path.join(folder, source), target: path.join(folder, target), html};
   });
   const generated = new Set(output.map(doc => path.resolve(doc.target)));

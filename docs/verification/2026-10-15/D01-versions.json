@@ -1,0 +1,43 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/diffusion_b_value.html",
+      "sha256": "CEDFE0AAF3BF4A728C3380299D7666C7FE10FBED0B893F8E7F9626DA8BC4A543"
+    },
+    {
+      "path": "docs/assets/diffusion-model.js",
+      "sha256": "0F6C54597E2FFC0357D482535511F924BD16F2EA2D89639EDE2A619111C06F84"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/diffusion.test.cjs",
+      "sha256": "F21B0615139949A710DDEC7312DE2E06E560E61408CC5BDF14B6DD11191FAFA5"
+    },
+    {
+      "path": "tests/helpers/diffusion-reference.cjs",
+      "sha256": "30E4F86B1B72351766C4810098987A9A4417C1D5E77634B471F6BA498C8887EC"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-numerical.cjs",
+      "sha256": "FFE152819795A3A1E0B30DE9415EA4FE760BA65DF7FE7E1145259E7F1FECB20A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-display-reference.cjs",
+      "sha256": "90DED70907C4B9495C7A494A376199C9F91ACFF351DBA23DD775D235E54C6ED3"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-browser-check.js",
+      "sha256": "1D1D532F4EF2C8735B18B8BE2639263DE69F7CAC2A73DC421E64A9C0DFCE4D22"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

@@ -1,0 +1,31 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/swi_mask_projection.html",
+      "sha256": "07E851ED05DA4A8668E2A045DC23595AEBE1248489D7341DE57EDEAD6C734265"
+    },
+    {
+      "path": "docs/assets/swi-processing-model.js",
+      "sha256": "3B29E31EB52001D199BF6F891C57BA7E13629B4664616791C52C782B28B29C9F"
+    },
+    {
+      "path": "docs/assets/susceptibility-signal-model.js",
+      "sha256": "B1B84634ED64C6CDB33E75969906E30C565237A54628060CF22927FCCB4B98A3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "tests/helpers/swi-reference.cjs",
+      "sha256": "48CF812401BC1B8D3E22B0B08CD21414556995395A605A2AD9FD81A5348B54A0"
+    },
+    {
+      "path": "tests/swi-processing.test.cjs",
+      "sha256": "0A2533D2496C0DB709B546B072E9C209FE4BED5FE709FAAA2457A6EC87B24726"
+    }
+  ],
+  "navigationAudit": "checkpoint-W31-browser.json"
+}

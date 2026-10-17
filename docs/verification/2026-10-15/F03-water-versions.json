@@ -1,0 +1,23 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/water_excitation.html",
+      "sha256": "B6D144384B29BC9B07471DFCB82078331144748E6AA280A0EAA9F5074BB85E11"
+    },
+    {
+      "path": "docs/assets/water-excitation-model.js",
+      "sha256": "B3189E425B8E156777A228646343A5DE1187F280AA1B46F207EEFC56B9660A29"
+    },
+    {
+      "path": "tests/helpers/water-excitation-reference.cjs",
+      "sha256": "30D90535271540D19DF3C538FB8AABECAAE9BA3270D49BC457AE39E726024208"
+    },
+    {
+      "path": "tests/water-excitation.test.cjs",
+      "sha256": "EACCD429BC66F82D5ABE7835D5237F13D2AEDDF399CE0084D10ADF64C822FFB6"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

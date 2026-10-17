@@ -1,0 +1,6 @@
+(function(root,factory){const node=typeof module==='object'&&module.exports,api=factory(node?require('./dephasing-model.js'):root.DephasingModel,node?require('./t2-fit-model.js'):root.T2Fit);if(node)module.exports=api;else root.T2StarFit=api;})(typeof globalThis!=='undefined'?globalThis:this,function(D,T){
+'use strict';const times=Object.freeze([2,5,10,15,20,30,40,60]),defaults=Object.freeze({mode:'exponential',sigmaHz:4,subset:'all'});
+function signal(teMs,o){return o.mode==='exponential'?T.signal(teMs,40,1):D.calculate({t2Ms:80,sigmaHz:o.sigmaHz,teMs:40},teMs).fid;}
+function calculate(options={}){const o={...defaults,...options};if(!['exponential','gaussian'].includes(o.mode)||![0,4,8].includes(o.sigmaHz)||!['all','early','late'].includes(o.subset))throw new RangeError('Unsupported T2star fit state');const rows=times.map((teMs,j)=>({teMs,signal:signal(teMs,o),used:o.subset==='all'||(o.subset==='early'?j<4:j>=4)})),raw=T.logFit(rows.filter(p=>p.used)),fit={...raw,t2StarMs:raw.t2Ms,r2StarPerSecond:-1000*raw.slope},curve=Array.from({length:401},(_,j)=>({teMs:j*.2,signal:signal(j*.2,o),fit:fit.amplitude*Math.exp(fit.slope*j*.2)}));return{options:o,times,rows,fit,curve,t2Ms:80,exponentialT2StarMs:40,exponentialR2PrimePerSecond:12.5};}
+return{times,defaults,signal,calculate};
+});

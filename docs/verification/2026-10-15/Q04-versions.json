@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/parallel_imaging.html",
+      "sha256": "71F87A15897D01E275018FB0A136083B8DE1FD9CA6B19A9605C941477F6C0605"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/parallel-imaging.test.cjs",
+      "sha256": "8B0305CF1BC02AF2035C101DA6105F02D62E5AD8F46B330038A50F10782F728F"
+    },
+    {
+      "path": "tests/helpers/parallel-reference.cjs",
+      "sha256": "3931D348C6F61817A283AC5BA6440478F15E3817B3814AC3EF59BBD0533F3BCE"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-numerical.cjs",
+      "sha256": "2C02D167EBB16CAC6D14E363EE7D52ED20D814B76E6488C27F3B41192F7B46AA"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-display-reference.cjs",
+      "sha256": "67040D46B233C0503B776F557EC1A368661C84F78CEDB5092692E2B5634F4055"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-browser-check.js",
+      "sha256": "75B643A64E1D1BF31E0CB790D750C8C9CE2D50307EF5337A29E53983F6B79F48"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

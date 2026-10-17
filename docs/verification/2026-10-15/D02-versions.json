@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/adc_fitting_shine_through.html",
+      "sha256": "22D9428CFE645CE2D98F561699782A5520B4B584FB4B03640850236DEFCF28DC"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/adc-fit.test.cjs",
+      "sha256": "FA61BA37E96E070D1E02A36A7D4959F778EFC30943C3CEF2BEABFDB5C0DD0D3D"
+    },
+    {
+      "path": "tests/helpers/adc-reference.cjs",
+      "sha256": "A81A0126AFA23310AFF9176B74309D1E25CCE8C7E16B030229E9E79C26B94796"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-numerical.cjs",
+      "sha256": "DA222258C30076FD9EFC1A48BC122CDAA9B3672184345676B71A5CE0D29DB4D7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-display-reference.cjs",
+      "sha256": "B4E48BA72A78EA1342FC4965E442737EE07303AFB9D6BE9EFB042C4042A7C155"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-browser-check.js",
+      "sha256": "1F1DDA8F8785F1C22A80F9D5DB7D2791EC14B780DFE18C92EC39700731224A18"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

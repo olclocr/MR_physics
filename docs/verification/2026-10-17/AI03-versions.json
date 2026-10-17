@@ -1,0 +1,74 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/structure_texture_evaluation.html",
+      "sha256": "00C512D896BFC5D9C6F5C58A20DE3BD357A21DC76BF29814CCD29D28F0C61DE6"
+    },
+    {
+      "path": "docs/assets/structure-evaluation-model.js",
+      "sha256": "E0247BC80B853642B1F06A256B70DF7DFB4350FAF53CA30758DC5598DB95F824"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "35938DCBBC78CEF3E6DFF6690C1ACFC9A6362965EB10EEEA86B04B1ACD9854E0"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "tests/structure-evaluation.test.cjs",
+      "sha256": "8F8A7351FEA42D2F7594C48A834773418ABA08C25C2F66624998A1EC3AB4BD4A"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-reference.cjs",
+      "sha256": "5EE54A4B42F2995AEB696D7D93D8871084B71D0D7B2C4EA78CB0E63869AB1781"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-noise.json",
+      "sha256": "39B56947C210394251869BAF923C8FF95B342F019057735CAD6EE972D6E5F3DA"
+    },
+    {
+      "path": "tests/helpers/kspace-fft-reference.cjs",
+      "sha256": "FF6BC1FA5C0836677A7C5FD90988AE275DAE0164BA2FF78FA8DA4782311DEA62"
+    },
+    {
+      "path": "tests/helpers/compressed-sensing-reference.cjs",
+      "sha256": "A225B384BDF80146185446AFAD23211193C4F7FD70B91A9ADBE504938B1D0772"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-numerical.cjs",
+      "sha256": "573DEE25634AE5267D30C4B295220110A6A1CFCFEFCC30B419506FD5B6783E4B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-numerical.json",
+      "sha256": "88A3E2310C6269401CB3AECFCF10AEE5BED79505D6727A7CCEA2651D439658B7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-display-reference.json",
+      "sha256": "18E4BB28C3F229C008020F1D195F0A1C81A43570B3BA27051248667207A8FB9B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-browser-check.js",
+      "sha256": "C700FA908A15D06EE912E537A3E33BBC933B83FD095020F2A1D16A09B6183F0C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-browser-check.json",
+      "sha256": "B57645C349B2DD50823B474EF97A8E80DEBCA2205EDFCE14E32A5D634DAC8B93"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-physics.md",
+      "sha256": "C1D58E1F81CF7FE521207552BC7219FDAA1DD923719DFB332254ED91F9E6D318"
+    }
+  ]
+}

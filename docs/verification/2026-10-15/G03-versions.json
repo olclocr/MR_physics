@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/volume_2d_3d.html",
+      "sha256": "3A77B24E89837A41BEE5FB30D36CE15C6B1AE11887100AFA3E493B612F210BED"
+    },
+    {
+      "path": "docs/assets/volume-geometry-model.js",
+      "sha256": "5BA63E556BB3B6FC4B8D2D134B771D013F0507CDF985CA39AC7C8FCBB4C73FF3"
+    },
+    {
+      "path": "tests/helpers/volume-reference.cjs",
+      "sha256": "59952840BF33496BF352EC822DDDEE951E4B21A9D25CF8BCBF0551A9F8547B87"
+    },
+    {
+      "path": "tests/volume-geometry.test.cjs",
+      "sha256": "410B6F5AF2D23A368F9548B05B1542BBDEEEFEEF2242576D854BD3486E9BE4DD"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-numerical.cjs",
+      "sha256": "257C863200C39CA81EFED116F00C432E0F02CA22DFE7F4D20ACF06489C89BDD9"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-numerical.json",
+      "sha256": "949EAC74BEF711C84C0BEFD52B18CBF83E62D56A989240F7BDEBB562A8752D2A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-browser-check.js",
+      "sha256": "67F847F0A41F51E6A83F9E248664DB4D412E53C965991F485756878E1A83992F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-browser-check.json",
+      "sha256": "C686B61E85A60660A54FFB34290E24F9A4BD526111C677D3179079EBD8BE6520"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

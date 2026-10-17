@@ -1,0 +1,46 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/qsm_dipole_inverse.html",
+      "sha256": "192028DE8FBC7B2598F9A1BBC90E1DCAC8B5836434800C14605D86C84AE92601"
+    },
+    {
+      "path": "docs/assets/qsm-dipole-model.js",
+      "sha256": "80049AB56CF24C7365951A568ABAEF9A13E0A38C5B5E9F0DB5DB094870071267"
+    },
+    {
+      "path": "tests/helpers/qsm-dipole-reference.cjs",
+      "sha256": "C3AA99F3DB3A2A256DCD1AE443D07DEA2192510C3EECF61DE7363BAC8D59AF8C"
+    },
+    {
+      "path": "tests/qsm-dipole.test.cjs",
+      "sha256": "FDA92A60F79F3BA07799EB5DE34B250A37FD0BC1EB89A60468C8E9C7D012DF51"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-numerical.cjs",
+      "sha256": "EC989F4C506AFD0F0A93B21EFF76DDA8EB9D932DC772AA0527AEDB217BBAC345"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-numerical.json",
+      "sha256": "D8EA17231D5347F8B814049438F2813AFE764F58E71A5C13BD0BB172FF6B27DA"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-display-reference.json",
+      "sha256": "F74D39AEF0A639949C60923CEEB8DB40AB87523E326DF953E6E3421469E698F5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-browser-check.js",
+      "sha256": "2F663174E6FE3624A1A649BECAF664E321939B428D4C9D2052CC0258B49E1FCE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-browser-check.json",
+      "sha256": "D63D27D5C9CDD61678078FCC150909FAA03C26477280D91136586C2F5226374C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-physics.md",
+      "sha256": "18BFA5452393C3822EF36A5FBB00E25813C3D2D3E1A941DC88347B05F008F8DB"
+    }
+  ]
+}

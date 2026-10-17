@@ -1,0 +1,28 @@
+{
+  "changes": [
+    {
+      "manifest": "docs\\verification\\2026-10-15\\C07-versions.json",
+      "path": "docs/epi_trajectory.html",
+      "previous": "76266BEA0DC9D5F2F8D71FDA961D2FC8205FFFEB880C68CE1F91F84AC903A12E",
+      "current": "3CF9285A9DCAC2F357803416D4523C222425F7D2C9CD0576CBD04F7414027110"
+    },
+    {
+      "manifest": "docs\\verification\\2026-10-15\\D02-versions.json",
+      "path": "docs/adc_fitting_shine_through.html",
+      "previous": "2C911B863EEA6642D999949B587D923E8905E013EFB48D68BC7AE9AC2041FF04",
+      "current": "22D9428CFE645CE2D98F561699782A5520B4B584FB4B03640850236DEFCF28DC"
+    },
+    {
+      "manifest": "docs\\verification\\2026-10-16\\D03-versions.json",
+      "path": "docs/dwi_epi_conditions.html",
+      "previous": "CF8ACDEEDA37E4F377E93D30D69B249DC1718687AC8EAFBB6A9B6047B2E9DD78",
+      "current": "19B649B70CD2EF9F09D457F11F80111427015EFDCCE09C91BB46817D5F3A650E"
+    },
+    {
+      "manifest": "docs\\verification\\2026-10-16\\S01-versions.json",
+      "path": "docs/susceptibility_signal_phase.html",
+      "previous": "A8622DC43A0FE2ACBA1E6494AE56AF8377B9CEEE0F3C4B9512D0097FA47C6520",
+      "current": "68CE25A7F17ECCE524BD30B7A19D0F52523802BD666FFF4E27151CC7DF201080"
+    }
+  ]
+}

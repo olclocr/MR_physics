@@ -1,0 +1,905 @@
+{
+  "summary": {
+    "cases": 19200,
+    "maxTimeError": 1.4551915228366852e-11,
+    "method": "independent active-time packing + phase-pair job enumeration + explicit dummy/wait/data slots"
+  },
+  "examples": [
+    {
+      "options": {
+        "mode": "2d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 1000,
+        "nex": 1,
+        "efficiency": 1
+      },
+      "dataTr": 32,
+      "waitTr": 0,
+      "totalSeconds": 46,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 11
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 11,
+          "endSeconds": 12
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 12,
+          "endSeconds": 13
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 13,
+          "endSeconds": 14
+        },
+        {
+          "slot": 5,
+          "kind": "data",
+          "startSeconds": 14,
+          "endSeconds": 15,
+          "average": 1,
+          "kyFirst": 0,
+          "kyLast": 7,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 15,
+          "endSeconds": 16,
+          "average": 1,
+          "kyFirst": 8,
+          "kyLast": 15,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 7,
+          "kind": "data",
+          "startSeconds": 16,
+          "endSeconds": 17,
+          "average": 1,
+          "kyFirst": 16,
+          "kyLast": 23,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 17,
+          "endSeconds": 18,
+          "average": 1,
+          "kyFirst": 24,
+          "kyLast": 31,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 9,
+          "kind": "data",
+          "startSeconds": 18,
+          "endSeconds": 19,
+          "average": 1,
+          "kyFirst": 32,
+          "kyLast": 39,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 19,
+          "endSeconds": 20,
+          "average": 1,
+          "kyFirst": 40,
+          "kyLast": 47,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 11,
+          "kind": "data",
+          "startSeconds": 20,
+          "endSeconds": 21,
+          "average": 1,
+          "kyFirst": 48,
+          "kyLast": 55,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 21,
+          "endSeconds": 22,
+          "average": 1,
+          "kyFirst": 56,
+          "kyLast": 63,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "2d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 1000,
+        "nex": 1,
+        "efficiency": 0.5
+      },
+      "dataTr": 32,
+      "waitTr": 32,
+      "totalSeconds": 78,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 11
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 11,
+          "endSeconds": 12
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 12,
+          "endSeconds": 13
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 13,
+          "endSeconds": 14
+        },
+        {
+          "slot": 5,
+          "kind": "wait",
+          "startSeconds": 14,
+          "endSeconds": 15
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 15,
+          "endSeconds": 16,
+          "average": 1,
+          "kyFirst": 0,
+          "kyLast": 7,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 7,
+          "kind": "wait",
+          "startSeconds": 16,
+          "endSeconds": 17
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 17,
+          "endSeconds": 18,
+          "average": 1,
+          "kyFirst": 8,
+          "kyLast": 15,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 9,
+          "kind": "wait",
+          "startSeconds": 18,
+          "endSeconds": 19
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 19,
+          "endSeconds": 20,
+          "average": 1,
+          "kyFirst": 16,
+          "kyLast": 23,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        },
+        {
+          "slot": 11,
+          "kind": "wait",
+          "startSeconds": 20,
+          "endSeconds": 21
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 21,
+          "endSeconds": 22,
+          "average": 1,
+          "kyFirst": 24,
+          "kyLast": 31,
+          "sectionFirst": 1,
+          "sectionLast": 10
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "2d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 4000,
+        "nex": 1,
+        "efficiency": 1
+      },
+      "dataTr": 16,
+      "waitTr": 0,
+      "totalSeconds": 90,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 14
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 14,
+          "endSeconds": 18
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 18,
+          "endSeconds": 22
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 22,
+          "endSeconds": 26
+        },
+        {
+          "slot": 5,
+          "kind": "data",
+          "startSeconds": 26,
+          "endSeconds": 30,
+          "average": 1,
+          "kyFirst": 0,
+          "kyLast": 7,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 30,
+          "endSeconds": 34,
+          "average": 1,
+          "kyFirst": 8,
+          "kyLast": 15,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 7,
+          "kind": "data",
+          "startSeconds": 34,
+          "endSeconds": 38,
+          "average": 1,
+          "kyFirst": 16,
+          "kyLast": 23,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 38,
+          "endSeconds": 42,
+          "average": 1,
+          "kyFirst": 24,
+          "kyLast": 31,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 9,
+          "kind": "data",
+          "startSeconds": 42,
+          "endSeconds": 46,
+          "average": 1,
+          "kyFirst": 32,
+          "kyLast": 39,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 46,
+          "endSeconds": 50,
+          "average": 1,
+          "kyFirst": 40,
+          "kyLast": 47,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 11,
+          "kind": "data",
+          "startSeconds": 50,
+          "endSeconds": 54,
+          "average": 1,
+          "kyFirst": 48,
+          "kyLast": 55,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 54,
+          "endSeconds": 58,
+          "average": 1,
+          "kyFirst": 56,
+          "kyLast": 63,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "2d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 4000,
+        "nex": 1,
+        "efficiency": 0.5
+      },
+      "dataTr": 16,
+      "waitTr": 16,
+      "totalSeconds": 154,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 14
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 14,
+          "endSeconds": 18
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 18,
+          "endSeconds": 22
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 22,
+          "endSeconds": 26
+        },
+        {
+          "slot": 5,
+          "kind": "wait",
+          "startSeconds": 26,
+          "endSeconds": 30
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 30,
+          "endSeconds": 34,
+          "average": 1,
+          "kyFirst": 0,
+          "kyLast": 7,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 7,
+          "kind": "wait",
+          "startSeconds": 34,
+          "endSeconds": 38
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 38,
+          "endSeconds": 42,
+          "average": 1,
+          "kyFirst": 8,
+          "kyLast": 15,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 9,
+          "kind": "wait",
+          "startSeconds": 42,
+          "endSeconds": 46
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 46,
+          "endSeconds": 50,
+          "average": 1,
+          "kyFirst": 16,
+          "kyLast": 23,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        },
+        {
+          "slot": 11,
+          "kind": "wait",
+          "startSeconds": 50,
+          "endSeconds": 54
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 54,
+          "endSeconds": 58,
+          "average": 1,
+          "kyFirst": 24,
+          "kyLast": 31,
+          "sectionFirst": 1,
+          "sectionLast": 16
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "3d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 1000,
+        "nex": 1,
+        "efficiency": 1
+      },
+      "dataTr": 256,
+      "waitTr": 0,
+      "totalSeconds": 270,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 11
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 11,
+          "endSeconds": 12
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 12,
+          "endSeconds": 13
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 13,
+          "endSeconds": 14
+        },
+        {
+          "slot": 5,
+          "kind": "data",
+          "startSeconds": 14,
+          "endSeconds": 15,
+          "average": 1,
+          "pairFirst": 0,
+          "pairLast": 7
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 15,
+          "endSeconds": 16,
+          "average": 1,
+          "pairFirst": 8,
+          "pairLast": 15
+        },
+        {
+          "slot": 7,
+          "kind": "data",
+          "startSeconds": 16,
+          "endSeconds": 17,
+          "average": 1,
+          "pairFirst": 16,
+          "pairLast": 23
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 17,
+          "endSeconds": 18,
+          "average": 1,
+          "pairFirst": 24,
+          "pairLast": 31
+        },
+        {
+          "slot": 9,
+          "kind": "data",
+          "startSeconds": 18,
+          "endSeconds": 19,
+          "average": 1,
+          "pairFirst": 32,
+          "pairLast": 39
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 19,
+          "endSeconds": 20,
+          "average": 1,
+          "pairFirst": 40,
+          "pairLast": 47
+        },
+        {
+          "slot": 11,
+          "kind": "data",
+          "startSeconds": 20,
+          "endSeconds": 21,
+          "average": 1,
+          "pairFirst": 48,
+          "pairLast": 55
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 21,
+          "endSeconds": 22,
+          "average": 1,
+          "pairFirst": 56,
+          "pairLast": 63
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "3d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 1000,
+        "nex": 1,
+        "efficiency": 0.5
+      },
+      "dataTr": 256,
+      "waitTr": 256,
+      "totalSeconds": 526,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 11
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 11,
+          "endSeconds": 12
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 12,
+          "endSeconds": 13
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 13,
+          "endSeconds": 14
+        },
+        {
+          "slot": 5,
+          "kind": "wait",
+          "startSeconds": 14,
+          "endSeconds": 15
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 15,
+          "endSeconds": 16,
+          "average": 1,
+          "pairFirst": 0,
+          "pairLast": 7
+        },
+        {
+          "slot": 7,
+          "kind": "wait",
+          "startSeconds": 16,
+          "endSeconds": 17
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 17,
+          "endSeconds": 18,
+          "average": 1,
+          "pairFirst": 8,
+          "pairLast": 15
+        },
+        {
+          "slot": 9,
+          "kind": "wait",
+          "startSeconds": 18,
+          "endSeconds": 19
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 19,
+          "endSeconds": 20,
+          "average": 1,
+          "pairFirst": 16,
+          "pairLast": 23
+        },
+        {
+          "slot": 11,
+          "kind": "wait",
+          "startSeconds": 20,
+          "endSeconds": 21
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 21,
+          "endSeconds": 22,
+          "average": 1,
+          "pairFirst": 24,
+          "pairLast": 31
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "3d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 4000,
+        "nex": 1,
+        "efficiency": 1
+      },
+      "dataTr": 256,
+      "waitTr": 0,
+      "totalSeconds": 1050,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 14
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 14,
+          "endSeconds": 18
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 18,
+          "endSeconds": 22
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 22,
+          "endSeconds": 26
+        },
+        {
+          "slot": 5,
+          "kind": "data",
+          "startSeconds": 26,
+          "endSeconds": 30,
+          "average": 1,
+          "pairFirst": 0,
+          "pairLast": 7
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 30,
+          "endSeconds": 34,
+          "average": 1,
+          "pairFirst": 8,
+          "pairLast": 15
+        },
+        {
+          "slot": 7,
+          "kind": "data",
+          "startSeconds": 34,
+          "endSeconds": 38,
+          "average": 1,
+          "pairFirst": 16,
+          "pairLast": 23
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 38,
+          "endSeconds": 42,
+          "average": 1,
+          "pairFirst": 24,
+          "pairLast": 31
+        },
+        {
+          "slot": 9,
+          "kind": "data",
+          "startSeconds": 42,
+          "endSeconds": 46,
+          "average": 1,
+          "pairFirst": 32,
+          "pairLast": 39
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 46,
+          "endSeconds": 50,
+          "average": 1,
+          "pairFirst": 40,
+          "pairLast": 47
+        },
+        {
+          "slot": 11,
+          "kind": "data",
+          "startSeconds": 50,
+          "endSeconds": 54,
+          "average": 1,
+          "pairFirst": 48,
+          "pairLast": 55
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 54,
+          "endSeconds": 58,
+          "average": 1,
+          "pairFirst": 56,
+          "pairLast": 63
+        }
+      ]
+    },
+    {
+      "options": {
+        "mode": "3d",
+        "phaseSteps": 128,
+        "sections": 16,
+        "etl": 8,
+        "trMs": 4000,
+        "nex": 1,
+        "efficiency": 0.5
+      },
+      "dataTr": 256,
+      "waitTr": 256,
+      "totalSeconds": 2074,
+      "trace": [
+        {
+          "slot": 1,
+          "kind": "dummy",
+          "startSeconds": 10,
+          "endSeconds": 14
+        },
+        {
+          "slot": 2,
+          "kind": "dummy",
+          "startSeconds": 14,
+          "endSeconds": 18
+        },
+        {
+          "slot": 3,
+          "kind": "dummy",
+          "startSeconds": 18,
+          "endSeconds": 22
+        },
+        {
+          "slot": 4,
+          "kind": "dummy",
+          "startSeconds": 22,
+          "endSeconds": 26
+        },
+        {
+          "slot": 5,
+          "kind": "wait",
+          "startSeconds": 26,
+          "endSeconds": 30
+        },
+        {
+          "slot": 6,
+          "kind": "data",
+          "startSeconds": 30,
+          "endSeconds": 34,
+          "average": 1,
+          "pairFirst": 0,
+          "pairLast": 7
+        },
+        {
+          "slot": 7,
+          "kind": "wait",
+          "startSeconds": 34,
+          "endSeconds": 38
+        },
+        {
+          "slot": 8,
+          "kind": "data",
+          "startSeconds": 38,
+          "endSeconds": 42,
+          "average": 1,
+          "pairFirst": 8,
+          "pairLast": 15
+        },
+        {
+          "slot": 9,
+          "kind": "wait",
+          "startSeconds": 42,
+          "endSeconds": 46
+        },
+        {
+          "slot": 10,
+          "kind": "data",
+          "startSeconds": 46,
+          "endSeconds": 50,
+          "average": 1,
+          "pairFirst": 16,
+          "pairLast": 23
+        },
+        {
+          "slot": 11,
+          "kind": "wait",
+          "startSeconds": 50,
+          "endSeconds": 54
+        },
+        {
+          "slot": 12,
+          "kind": "data",
+          "startSeconds": 54,
+          "endSeconds": 58,
+          "average": 1,
+          "pairFirst": 24,
+          "pairLast": 31
+        }
+      ]
+    }
+  ]
+}

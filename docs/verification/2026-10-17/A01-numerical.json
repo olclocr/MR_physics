@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-17",
+  "cases": 648,
+  "imageSamples": 77760,
+  "max": {
+    "coefficients": 1.2066239713342886e-14,
+    "image": 4.8426378447670815e-15,
+    "alternative": 4.2430423319662066e-14
+  },
+  "examples": {
+    "base": {
+      "n": 32,
+      "m": 32,
+      "acquired": 32,
+      "deltaK": 0.0078125,
+      "effectiveFovMm": 128,
+      "movingCopies": {
+        "name": "이동점",
+        "positionMm": 84,
+        "amplitude": 0.6,
+        "nominalWrapped": -44,
+        "locations": [
+          -44
+        ],
+        "eachAmplitude": 0.6
+      },
+      "alternativeDifference": 1.5377146246983744e-14
+    },
+    "wide": {
+      "n": 64,
+      "m": 64,
+      "acquired": 64,
+      "deltaK": 0.00390625,
+      "effectiveFovMm": 256,
+      "movingCopies": {
+        "name": "이동점",
+        "positionMm": 84,
+        "amplitude": 0.6,
+        "nominalWrapped": 84,
+        "locations": [
+          84
+        ],
+        "eachAmplitude": 0.6
+      },
+      "alternativeDifference": 3.0806291483479e-14
+    },
+    "even": {
+      "n": 32,
+      "m": 32,
+      "acquired": 16,
+      "deltaK": 0.015625,
+      "effectiveFovMm": 64,
+      "movingCopies": {
+        "name": "이동점",
+        "positionMm": 84,
+        "amplitude": 0.6,
+        "nominalWrapped": -44,
+        "locations": [
+          -44,
+          20
+        ],
+        "eachAmplitude": 0.3
+      },
+      "alternativeDifference": 6.687809484617725e-15
+    },
+    "display4": {
+      "n": 32,
+      "m": 128,
+      "acquired": 32,
+      "deltaK": 0.0078125,
+      "effectiveFovMm": 128,
+      "movingCopies": {
+        "name": "이동점",
+        "positionMm": 84,
+        "amplitude": 0.6,
+        "nominalWrapped": -44,
+        "locations": [
+          -44
+        ],
+        "eachAmplitude": 0.6
+      },
+      "alternativeDifference": 1.5377146246983744e-14
+    }
+  }
+}

@@ -390,6 +390,15 @@
       line-height: 1.5;
       margin: 0;
     }
+    .lesson { font-size: 13px; line-height: 1.65; }
+    .lesson p { margin: 9px 0; }
+    .lesson li { margin-bottom: 10px; }
+    .lesson a { color: #1956de; }
+    .lesson button { margin: 4px 0; width: 100%; min-height: 44px; }
+    .lesson nav { display: flex; gap: 14px; flex-wrap: wrap; }
+    .lesson details { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 10px; }
+    summary { cursor: pointer; font-weight: 800; }
+    button:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid #7c3aed; outline-offset: 3px; }
 
     @media (max-width: 900px) {
       body {
@@ -429,8 +438,8 @@
   <main class="app">
     <section class="stage" aria-label="세차운동 3D 시뮬레이션">
       <h1 class="title">자전거 바퀴와 세차운동</h1>
-      <canvas id="scene"></canvas>
-      <div class="readout" aria-live="polite">
+      <canvas id="scene" role="img" aria-label="중력 토크와 spin 각운동량의 방향, 바퀴의 세차 또는 무회전 물리진자"></canvas>
+      <div id="metricsReadout" class="readout" aria-live="polite">
         <div class="metric"><b>m 질량</b><span id="massMetric">1.5 kg</span></div>
         <div class="metric"><b>r 축 길이</b><span id="distanceMetric">0.40 m</span></div>
         <div class="metric"><b>g 중력</b><span id="gravityMetric">9.81 m/s²</span></div>
@@ -440,12 +449,26 @@
         <div class="metric"><b>Fθ 접선 성분</b><span id="tangentMetric">-14.7 N</span></div>
         <div class="metric"><b>τ 토크</b><span id="torqueMetric">5.9 N·m</span></div>
         <div class="metric"><b id="angularMetricLabel">L 각운동량</b><span id="angularMetric">1.29</span></div>
-        <div class="metric"><b>Ω 세차 각속도</b><span id="precessionMetric">4.58 rad/s</span></div>
+        <div class="metric"><b>Ωz 세차 각속도</b><span id="precessionMetric">4.58 rad/s</span></div>
       </div>
     </section>
 
     <aside class="sidebar">
+      <section class="section lesson">
+        <nav><a href="index.html">학습 목록</a><a href="spin_ensemble_equilibrium.html">B01 · 실제 스핀·열평형</a></nav>
+        <h2>토크는 각운동량의 방향을 어떻게 바꿀까요?</h2>
+        <p>목표는 τ와 dL/dt의 방향, spin 반전과 세차 방향, 고전적 비유의 한계를 구별하는 것입니다. 외적 r×mg는 두 벡터 모두에 수직인 방향을 정합니다. L의 크기와 방향은 다른 정보입니다.</p>
+        <ol>
+          <li>ω=+15에서 −15로 반전하세요. L과 세차는 뒤집히지만 같은 자세의 중력 토크도 뒤집힐까요?<button id="exampleWheel" type="button">spin 지배 관찰 예시</button></li>
+          <li>g만 0으로 줄이면 어떤 화살표와 운동이 남을까요? 질량만 바꿀 때 Ω도 변하는지 확인하세요.</li>
+          <li>ω=0의 진자와 다시 회전하는 도식을 비교하세요. 이 전환으로 양성자 스핀의 실체를 설명할 수 있을까요?<button id="examplePendulum" type="button">무회전 진자 관찰</button></li>
+        </ol>
+        <p id="modelNotice"></p>
+        <button id="pauseWheel" type="button">일시정지</button><button id="resetWheel" type="button">전체 기본값으로 초기화</button>
+        <p class="hint">시간 배속은 물리 초/화면 초입니다. 배속 0은 정지입니다. 그림의 길이 축척은 r·R·격자에 공통 적용하며 힘·토크·L의 화살표는 서로 다른 표시 척도입니다.</p>
+      </section>
       <section id="generalPanel" class="section">
+        <div class="row"><label for="phaseControl">세차 위치 관찰 (정지)</label><output id="phaseOutput"></output><input id="phaseControl" type="range" min="0" max="360" step="1" value="0"></div>
         <div class="row">
           <label for="timeScale">시간 배속</label>
           <output id="timeScaleOutput">0.10x</output>
@@ -496,7 +519,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section"><details><summary>선택 수식·단위</summary>
         <div class="formula-list">
           <div class="formula-row">
             <b>각운동량</b>
@@ -512,7 +535,7 @@
           </div>
           <div class="formula-row">
             <b>세차 각속도</b>
-            <div><code>Ω ≈ |τ| / |L| = rmg / (Iω)</code><span id="precessionFormula">빠르게 회전할 때의 근사</span></div>
+            <div><code>|Ω| = |τ| / |L_spin|, Ωz = rmg / (Iω)</code><span id="precessionFormula">수평 정상 세차를 지정한 도식</span></div>
           </div>
           <div class="formula-row">
             <b>접선 성분</b>
@@ -526,13 +549,19 @@
             <b>L_pend</b>
             <div><code>L_pend,y = -Iₚ θ˙, &nbsp; Iₚ = m(r²+R²/2)</code><span id="pendulumLFormula">L_pend = 0.00 kg·m²/s</span></div>
           </div>
-        </div>
+        </div></details>
       </section>
 
       <section class="section">
         <p class="hint">바퀴는 표시된 방향으로 회전하고, 축의 한쪽은 검은 고정점에 묶여 있으며, 중력은 아래 방향으로 작용한다.</p>
         <p class="hint">가정: 바퀴 중심이 축+바퀴의 무게중심(CM)이고, r은 고정점에서 그 무게중심까지의 위치벡터다. xy평면 격자 한 칸은 20 cm다.</p>
         <p class="hint">회전 중 화면은 초기 세차 속도를 지정한 수평 정상 세차의 도식입니다. L 화살표는 spin 성분이며 총각운동량은 세차 성분도 포함합니다. 저속 바퀴를 놓을 때의 nutation·축 처짐·진자로의 전이는 이 도식으로 예측하지 않습니다. ω=0은 질량 없는 축과 얇은 고리의 물리진자입니다.</p>
+      </section>
+      <section class="section lesson">
+        <h2>관찰 후 확인</h2><p>같은 수평 자세에서 ω만 반전하면?</p><button id="quizTorqueCorrect" type="button">토크는 같고 L과 세차 방향은 반전한다</button><button id="quizTorqueWrong" type="button">중력 토크도 반전한다</button><p id="quizTorqueFeedback" role="status">답을 선택해 이유를 확인하세요.</p>
+        <p>이 바퀴가 핵스핀을 설명하는 범위는?</p><button id="quizSpinWrong" type="button">양성자는 전하가 붙은 작은 바퀴다</button><button id="quizSpinCorrect" type="button">각운동량 방향 변화의 고전적 비유다</button><p id="quizSpinFeedback" role="status">답을 선택해 이유를 확인하세요.</p>
+        <details><summary>가정·오개념·다음 학습</summary><p>바퀴 반지름 R=0.35 m, 얇은 고리, 질량 없는 축, 고정 pivot, 마찰/감쇠 없는 중력을 가정합니다. 회전 도식과 ω=0 진자는 각각 지정한 별도 모형입니다. 작은 비영 spin에서 실제로 놓아주는 운동을 연속 계산하지 않습니다.</p><p>“토크가 아래로 향한다”는 오개념은 r×mg의 수직 방향으로 확인하세요. 토크와 힘은 다릅니다. “핵이 작은 고리처럼 자전한다”는 결론은 이 비유에서 나오지 않습니다. 양자 스핀은 고유 각운동량이며 열평형 점유율·RF 공명·이완은 이 중력 바퀴로 계산하지 않습니다.</p><p>화살표 길이는 읽기 위한 표시입니다. mg와 Fθ는 같은 고정 힘 척도, τ와 dL/dt는 같은 고정 토크 척도를 씁니다. spin L 화살표는 작은 L도 보이도록 길이 offset이 있고, 진자 L은 각 조건의 최대값으로 정규화합니다. 숫자 지표가 물리 크기의 기준입니다.</p><p>학습 후 질문: m을 바꾸면 τ와 L_spin은 각각 어떻게 바뀌며 왜 이 수평 모형의 Ω에서는 m이 소거될까요? 실제 자기장 속 스핀과 순자화는 <a href="spin_ensemble_equilibrium.html">B01 · 열평형</a>, <a href="proton_spin_rf_larmor_resonance.html">B02 · RF 공명</a>으로 이어 보세요.</p></details>
+        <details><summary>근거와 검증</summary><p><a href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">OpenStax · Gyroscope precession</a>, <a href="https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/28.54.html">UCSB · Bicycle wheel as a top</a>, <a href="https://larsonlab.github.io/MRI-education-resources/Spin%20Physics.html">Larson · Spin Physics</a>. 그림은 자체 도식입니다. <a href="verification/2026-10-15/B00-physics.md">독립 검산·실제 화면·물리 판정</a>.</p></details>
       </section>
     </aside>
   </main>
@@ -893,6 +922,8 @@
     function flushLabels() {
       const placed = [];
       const mobile = canvas.clientWidth < 520;
+      const readoutTop = document.getElementById('metricsReadout').offsetTop;
+      const lastLabelY = readoutTop > 100 ? readoutTop - 26 : canvas.clientHeight - (mobile ? 350 : 160);
       for (const label of labelQueue) {
         if (label.alpha <= 0) continue;
         const anchor = screenProject(label.p);
@@ -906,7 +937,7 @@
           const column = Math.floor(attempt / 15);
           const shiftX = column === 0 ? 0 : Math.ceil(column / 2) * 36 * (column % 2 ? 1 : -1);
           box = { x: Math.max(6, Math.min(canvas.clientWidth - width - 6, anchor.x - width / 2 + shiftX)),
-            y: Math.max(80, Math.min(canvas.clientHeight - (mobile ? 330 : 120), anchor.y - 10 + shiftY)), w: width, h: 20 };
+            y: Math.max(80, Math.min(lastLabelY, anchor.y - 10 + shiftY)), w: width, h: 20 };
           if (!placed.some(b => box.x < b.x + b.w + 4 && box.x + box.w + 4 > b.x && box.y < b.y + b.h + 4 && box.y + box.h + 4 > b.y)) break;
         }
         const labelPoint = { x: box.x + width / 2, y: box.y + 10 };
@@ -1104,7 +1135,7 @@
     }
 
     function gravityArrowScale() {
-      return state.gravityScale;
+      return state.mass / DEFAULT_MASS_KG * state.gravityScale;
     }
 
     function pendulumOmega() {
@@ -1336,6 +1367,7 @@
       const torque = torqueMagnitude();
       const precession = angularMomentum > 0.01 ? torque / angularMomentum : 0;
       const visualPrecession = angularMomentum > 0.01 ? precession * state.timeScale : 0;
+      const signedPrecession = precession === 0 ? 0 : spinDirection() * precession;
       const leverFactor = leverFactorForCurrentPose();
       const signedTangentFactor = signedTangentFactorForCurrentPose();
       const tangentForce = weight * signedTangentFactor;
@@ -1348,12 +1380,12 @@
       controls.gravityMetric.textContent = `${g.toFixed(2)} m/s²`;
       controls.weightMetric.textContent = `${weight.toFixed(1)} N`;
       controls.spinMetric.textContent = `${state.spinSpeed.toFixed(0)} rad/s`;
-      controls.angularMetricLabel.textContent = pendulumMode ? "L_pend 진자 각운동량" : "L_spin spin 각운동량";
+      controls.angularMetricLabel.textContent = pendulumMode ? "L_pend 진자 각운동량" : "|L_spin| spin 각운동량 크기";
       controls.angularMetric.textContent = pendulumMode
         ? `${lPend.toFixed(3)} kg·m²/s`
         : `${angularMomentum.toFixed(2)} kg·m²/s`;
       controls.torqueMetric.textContent = `${torque.toFixed(1)} N·m`;
-      controls.precessionMetric.textContent = angularMomentum > 0.01 ? `${precession.toFixed(2)} rad/s` : "-";
+      controls.precessionMetric.textContent = angularMomentum > 0.01 ? `${signedPrecession.toFixed(2)} rad/s` : "-";
       controls.thetaMetric.textContent = `${thetaDeg.toFixed(0)}°`;
       controls.tangentMetric.textContent = `${tangentForce.toFixed(1)} N`;
       controls.massOutput.textContent = `${state.mass.toFixed(1)} kg`;
@@ -1361,17 +1393,23 @@
       controls.timeScaleOutput.textContent = `${state.timeScale.toFixed(2)}x`;
       controls.spinOutput.textContent = `${state.spinSpeed.toFixed(0)} rad/s`;
       controls.gravityOutput.textContent = `${state.gravityScale.toFixed(2)}x`;
-      controls.angularFormula.textContent = `R = ${WHEEL_RADIUS_M.toFixed(2)} m 근사, L = ${angularMomentum.toFixed(2)} kg·m²/s`;
+      controls.angularFormula.textContent = `R = ${WHEEL_RADIUS_M.toFixed(2)} m, |L_spin| = ${angularMomentum.toFixed(2)} kg·m²/s`;
       controls.weightFormula.textContent = `W = ${state.mass.toFixed(1)} × ${g.toFixed(2)} = ${weight.toFixed(1)} N`;
       controls.torqueFormula.textContent = `|τ| = rW sinθ ≈ ${state.distance.toFixed(2)} × ${weight.toFixed(1)} × ${leverFactor.toFixed(2)} = ${torque.toFixed(1)} N·m`;
       controls.precessionFormula.textContent = angularMomentum > 0.01
-        ? `정상 세차 Ω = ${precession.toFixed(2)} rad/s; Ω/|ω| = ${(precession / spinAngularSpeed()).toFixed(2)}. ${precession / spinAngularSpeed() > 0.1 ? "spin 지배 근사 밖: 총 L·nutation 생략" : "spin 지배 근사"}. 화면 ${visualPrecession.toFixed(2)} rad/s.`
+        ? `수평 도식 Ωz = ${signedPrecession.toFixed(2)} rad/s; |Ω|/|ω| = ${(precession / spinAngularSpeed()).toFixed(2)}. ${precession / spinAngularSpeed() > 0.1 ? "생략한 세차 각운동량 주의" : "spin 지배 예시"}. 화면 |Ω|=${visualPrecession.toFixed(2)} rad/s.`
         : `L이 거의 0이면 세차 근사가 깨지고 축이 아래로 처진다.`;
       controls.tangentFormula.textContent = `θ ≈ ${thetaDeg.toFixed(0)}°, Fθ ≈ ${weight.toFixed(1)} × ${signedTangentFactor.toFixed(2)} = ${tangentForce.toFixed(1)} N`;
       controls.pendulumFormula.textContent = isPendulumMode()
         ? `진자 모드: θ가 +90°와 -90° 사이를 대칭 왕복한다.`
         : `수평 정상 세차를 지정한 도식: 축 처짐과 nutation은 계산하지 않습니다.`;
       controls.pendulumLFormula.textContent = `θ˙ = ${thetaDotDisplay.toFixed(2)} rad/s, L_pend = ${lPend.toFixed(3)} kg·m²/s, 최대 |L_pend| ≈ ${lPendMax.toFixed(3)}`;
+      document.getElementById('modelNotice').textContent = pendulumMode ? 'ω=0: 별도 물리진자. 중력 토크가 진자 각운동량을 바꿉니다.' : `수평 정상 세차를 지정한 도식. Ωz 부호는 +z에서 본 회전의 오른손 규약입니다. |Ω|/|ω|=${(precession/spinAngularSpeed()).toFixed(2)}이며 기본값은 spin 지배의 좋은 예시가 아닙니다. 위 관찰 예시로 비교하세요.`;
+      document.getElementById('pauseWheel').textContent = state.timeScale === 0 ? '재생' : '일시정지';
+      const phaseDegrees = ((state.phase * 180 / Math.PI) % 360 + 360) % 360;
+      document.getElementById('phaseControl').value = String(phaseDegrees);
+      document.getElementById('phaseControl').disabled = isPendulumMode();
+      document.getElementById('phaseOutput').textContent = isPendulumMode() ? '진자에서는 적용 안 함' : `${phaseDegrees.toFixed(0)}°`;
     }
 
     function renderToggles() {
@@ -1467,6 +1505,23 @@
       for (const [key] of labels) state.visible[key] = false;
       renderToggles();
     });
+
+    function resetWheel(example = 'base') {
+      Object.assign(state, {mass:DEFAULT_MASS_KG,distance:DEFAULT_DISTANCE_M,gravityScale:1,spinSpeed:7,timeScale:.1,mode:'general',activeStep:-1});
+      if (example === 'spin') { state.spinSpeed = 15; state.gravityScale = .25; }
+      if (example === 'pendulum') { state.spinSpeed = 0; state.timeScale = .1; }
+      for (const [key] of labels) state.visible[key] = true;
+      for (const [id,key] of [['mass','mass'],['distance','distance'],['gravity','gravityScale'],['spinSpeed','spinSpeed'],['timeScale','timeScale']]) document.getElementById(id).value = String(state[key]);
+      resetMotionForCurrentSettings();
+      renderToggles(); renderTimeline(); syncElementModeUI(); updateMetrics(); drawScene();
+      for(const id of ['quizTorqueFeedback','quizSpinFeedback'])document.getElementById(id).textContent='답을 선택해 이유를 확인하세요.';
+    }
+    document.getElementById('exampleWheel').addEventListener('click',()=>resetWheel('spin'));
+    document.getElementById('examplePendulum').addEventListener('click',()=>resetWheel('pendulum'));
+    document.getElementById('resetWheel').addEventListener('click',()=>resetWheel());
+    document.getElementById('pauseWheel').addEventListener('click',()=>{state.timeScale=state.timeScale===0?.1:0;controls.timeScale.value=String(state.timeScale);updateMetrics();});
+    document.getElementById('phaseControl').addEventListener('input',()=>{state.phase=Number(document.getElementById('phaseControl').value)*Math.PI/180;state.timeScale=0;controls.timeScale.value='0';updateMetrics();drawScene();});
+    for(const [id,target,message]of [['quizTorqueCorrect','quizTorqueFeedback','맞습니다. 같은 자세에서 r×mg는 같습니다. L_spin의 부호가 바뀌어 같은 토크 방향으로 L을 바꾸는 세차 Ωz의 부호가 반전합니다.'],['quizTorqueWrong','quizTorqueFeedback','토크는 r과 중력으로 정해집니다. spin 반전만으로 중력이나 같은 자세의 r은 달라지지 않습니다.'],['quizSpinCorrect','quizSpinFeedback','맞습니다. 각운동량 방향과 토크의 관계를 보여 주는 비유입니다. 핵스핀은 고유 각운동량이며 작은 전하 고리의 실제 자전으로 설명하지 않습니다.'],['quizSpinWrong','quizSpinFeedback','고전적 바퀴는 핵의 실체 모형이 아닙니다. 양자 스핀·열평형 점유율·RF 공명·이완은 별도 물리로 배웁니다.']])document.getElementById(id).addEventListener('click',()=>document.getElementById(target).textContent=message);
 
     function tick(now) {
       if (!tick.last) tick.last = now;

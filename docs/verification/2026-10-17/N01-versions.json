@@ -1,0 +1,46 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/fid_spectrum.html",
+      "sha256": "C12CB7EB026B7FF113863C35D872E71C7A48D603C6A62E0E7A20EB9ADD8821FE"
+    },
+    {
+      "path": "docs/assets/fid-spectrum-model.js",
+      "sha256": "86CC223D18789288F91CAD7CD74F58A0963A633743B6A85B23D1C7AD8DDE9E44"
+    },
+    {
+      "path": "tests/helpers/fid-spectrum-reference.cjs",
+      "sha256": "E5A418BCF6B1E954EB9D2E90CA06821F8705737029CC9EDB9E34C569E0943960"
+    },
+    {
+      "path": "tests/fid-spectrum.test.cjs",
+      "sha256": "EBC62B8FC9B4262799F86655BC9FEF21DDD776F82CE4F785897F24F578D79B4C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-numerical.cjs",
+      "sha256": "5099C165B9325EB68E5D6834BE6A03AD9D0908A0895168EF51E3D35FB425179A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-numerical.json",
+      "sha256": "BB52C9E9ACF512A8A0EB789F78F31240EE561A85F45D65411942852AA6898D7D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-display-reference.json",
+      "sha256": "F8BEED1BE08A00F898D82A5C3EC451D2104BBC00E7E5383B57D984A4006593FF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-browser-check.js",
+      "sha256": "C8F92B76A61E8AFB7C48062C0E9D91E05326F60C80FC61D04D28DBA9278BADFB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-browser-check.json",
+      "sha256": "6FE28ECEB633B5352679B3FC4951542150CB4D6C04EF0CBA23F3A4C84F40952A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-physics.md",
+      "sha256": "8B07083C5A9931AF9E7E8877B5FC9C077CA9A94979D7B5B8EA7C0EF95ECB9F9E"
+    }
+  ]
+}

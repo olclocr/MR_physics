@@ -1,0 +1,39 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/spoiled_gre.html",
+      "sha256": "A4636792A56CF2DD3C746A643B832B8C8708EBCF1CF53B231B58DA1E907BC047"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "0D16E5812BE35FC2E57DC94477DB5EF413E09D0A287C04A3C0A075056C18E304"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/spoiled-gre.test.cjs",
+      "sha256": "5F3E1A0D8E2BADAD6CC158E74BA018D350060E6246FA616EB297FDE98B7D48E2"
+    },
+    {
+      "path": "tests/helpers/gre-reference.cjs",
+      "sha256": "7AF6532C4F015099EE94861F7A9DD01099947499C2A9EA900896A6B1A16A3772"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-numerical.cjs",
+      "sha256": "921044DB63250FA4F92CF82C097C48347A6BBDD53C9AC1178DDF27478EEC934A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-display-reference.cjs",
+      "sha256": "DE9D0C8DF7CA8F8C78C36A063EF56C44766DB40B122E2F76DBF6EFA4D778C07C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-browser-check.js",
+      "sha256": "356F2C7B84043A2AE534819CFA8162D0A711593EA0FC48EEF5F1537F54EFA8A9"
+    }
+  ],
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+}

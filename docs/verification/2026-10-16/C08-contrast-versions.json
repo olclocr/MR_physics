@@ -1,0 +1,27 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/bssfp_contrast_limits.html",
+      "sha256": "2692F539567D334EC770456CE3C3AA31765B8DE9556FF635F16DD73F6B8C862A"
+    },
+    {
+      "path": "docs/assets/bssfp-contrast-model.js",
+      "sha256": "23855C462A05EA01B4CCD7862EC340F378B2C9FD7CD36E8C2CE3D0CA8EC51267"
+    },
+    {
+      "path": "docs/assets/bssfp-model.js",
+      "sha256": "252421E0B5CB8F69280EAF3A856E309BF8358B658B720C6DCBABC4EC15B03921"
+    },
+    {
+      "path": "tests/helpers/bssfp-reference.cjs",
+      "sha256": "02F0CEAB0D0E689B2684123B814F9202A677C5E191993BE5BCB1A4A5F41E52B9"
+    },
+    {
+      "path": "tests/bssfp-contrast.test.cjs",
+      "sha256": "3FF3F36250137D21FF44E62F3D9F598385C1553682D79CF540290EE2E50A36EA"
+    }
+  ],
+  "navigationAudit": "checkpoint-W31-browser.json"
+}

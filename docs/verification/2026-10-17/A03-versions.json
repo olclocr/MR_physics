@@ -1,0 +1,22 @@
+{
+  "baseCommit": "417aa00ac10fbe7bc7362cf8f8443172669090e9",
+  "uncommitted": true,
+  "files": [
+    {
+      "path": "docs/gibbs_ringing.html",
+      "sha256": "B34C756DA340FE331A7C23E4183CF195A954597F116E75932540087E345678DE"
+    },
+    {
+      "path": "docs/assets/ringing-model.js",
+      "sha256": "CB3EA1F5B5E3570C2CCA1804BAA415E615150A1CA44DFA36D6F5294F951351D5"
+    },
+    {
+      "path": "tests/helpers/ringing-reference.cjs",
+      "sha256": "988772AF560F813A9E073A1B33227B305D4111C31D9ED504F5FFAFC5BFA334B2"
+    },
+    {
+      "path": "tests/ringing.test.cjs",
+      "sha256": "DF76E109651BEE2BFEEA14F5FB435BB99E8B19C09DE1E649FB60F181745FDD94"
+    }
+  ]
+}

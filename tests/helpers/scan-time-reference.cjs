@@ -1,0 +1,6 @@
+// Enumerates packing and echo jobs. No ceil/floor formulas for expected counts.
+function reference(o){let activeMs=20;for(let e=0;e<o.etl;e++)activeMs+=10;const data=[];let measurements=0;for(let avg=1;avg<=o.nex;avg++){
+ if(o.mode==='2d'){let first=1;while(first<=o.sections){let used=0,last=first-1;while(last<o.sections&&used+activeMs<=o.trMs){used+=activeMs;last++;}if(last<first)throw Error('No slice fits');let ky=0;while(ky<o.phaseSteps){let end=ky;for(let e=0;e<o.etl&&end<o.phaseSteps;e++)end++;data.push({average:avg,kyFirst:ky,kyLast:end-1,sectionFirst:first,sectionLast:last});measurements+=(end-ky)*(last-first+1);ky=end;}first=last+1;}}
+ else {let pair=0;while(pair<o.phaseSteps*o.sections){const first=pair;for(let e=0;e<o.etl&&pair<o.phaseSteps*o.sections;e++)pair++;data.push({average:avg,pairFirst:first,pairLast:pair-1});measurements+=pair-first;}}
+ }const trace=[];let elapsedMs=10000,waitTr=0;function slot(kind,entry){const record={slot:trace.length+1,kind,startSeconds:elapsedMs/1000,endSeconds:(elapsedMs+o.trMs)/1000,...entry};trace.push(record);elapsedMs+=o.trMs;}for(let i=0;i<4;i++)slot('dummy',{});for(const d of data){if(o.efficiency===.5){slot('wait',{});waitTr++;}slot('data',d);}return {activeMs,dataTr:data.length,waitTr,clockTr:trace.length,measurements,totalSeconds:elapsedMs/1000,trace};}
+module.exports={reference};
