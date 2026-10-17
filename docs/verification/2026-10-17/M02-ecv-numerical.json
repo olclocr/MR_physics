@@ -1,0 +1,1022 @@
+{
+  "date": "2026-10-17",
+  "cases": 36,
+  "curvePoints": 1476,
+  "max": {
+    "r1": 2.1582735598713043e-13,
+    "t1Ms": 7.16227077646181e-12,
+    "amount": 8.881784197001252e-16,
+    "fraction": 6.783462680459706e-14,
+    "curve": 2.1582735598713043e-13
+  },
+  "examples": [
+    {
+      "options": {
+        "ecv": 0.3,
+        "plasmaMm": 1,
+        "analysisHct": 0.4
+      },
+      "trueHct": 0.4,
+      "relaxivity": 4,
+      "nativeT1Ms": {
+        "tissue": 1000,
+        "blood": 1500
+      },
+      "rows": [
+        {
+          "key": "tissue",
+          "accessibleFraction": 0.3,
+          "amountUmol": 0.3,
+          "meanConcentrationMm": 0.3,
+          "preT1Ms": 1000,
+          "postT1Ms": 454.5454545454545,
+          "preR1": 1,
+          "postR1": 2.2,
+          "deltaR1": 1.2
+        },
+        {
+          "key": "blood",
+          "accessibleFraction": 0.6,
+          "amountUmol": 0.6,
+          "meanConcentrationMm": 0.6,
+          "preT1Ms": 1500,
+          "postT1Ms": 326.0869565217392,
+          "preR1": 0.6666666666666666,
+          "postR1": 3.0666666666666664,
+          "deltaR1": 2.4
+        }
+      ],
+      "estimate": {
+        "deltaTissue": 1.2000000000000002,
+        "deltaBlood": 2.3999999999999995,
+        "lambda": 0.5000000000000002,
+        "ecv": 0.3000000000000001,
+        "reason": null
+      },
+      "curve": [
+        {
+          "plasmaMm": 0,
+          "deltaTissue": 0,
+          "deltaBlood": 0
+        },
+        {
+          "plasmaMm": 0.05,
+          "deltaTissue": 0.06,
+          "deltaBlood": 0.12
+        },
+        {
+          "plasmaMm": 0.1,
+          "deltaTissue": 0.12,
+          "deltaBlood": 0.24
+        },
+        {
+          "plasmaMm": 0.15,
+          "deltaTissue": 0.18,
+          "deltaBlood": 0.36
+        },
+        {
+          "plasmaMm": 0.2,
+          "deltaTissue": 0.24,
+          "deltaBlood": 0.48
+        },
+        {
+          "plasmaMm": 0.25,
+          "deltaTissue": 0.3,
+          "deltaBlood": 0.6
+        },
+        {
+          "plasmaMm": 0.3,
+          "deltaTissue": 0.36,
+          "deltaBlood": 0.72
+        },
+        {
+          "plasmaMm": 0.35,
+          "deltaTissue": 0.42,
+          "deltaBlood": 0.84
+        },
+        {
+          "plasmaMm": 0.4,
+          "deltaTissue": 0.48,
+          "deltaBlood": 0.96
+        },
+        {
+          "plasmaMm": 0.45,
+          "deltaTissue": 0.54,
+          "deltaBlood": 1.08
+        },
+        {
+          "plasmaMm": 0.5,
+          "deltaTissue": 0.6,
+          "deltaBlood": 1.2
+        },
+        {
+          "plasmaMm": 0.55,
+          "deltaTissue": 0.66,
+          "deltaBlood": 1.32
+        },
+        {
+          "plasmaMm": 0.6,
+          "deltaTissue": 0.72,
+          "deltaBlood": 1.44
+        },
+        {
+          "plasmaMm": 0.65,
+          "deltaTissue": 0.78,
+          "deltaBlood": 1.56
+        },
+        {
+          "plasmaMm": 0.7,
+          "deltaTissue": 0.84,
+          "deltaBlood": 1.68
+        },
+        {
+          "plasmaMm": 0.75,
+          "deltaTissue": 0.8999999999999999,
+          "deltaBlood": 1.7999999999999998
+        },
+        {
+          "plasmaMm": 0.8,
+          "deltaTissue": 0.96,
+          "deltaBlood": 1.92
+        },
+        {
+          "plasmaMm": 0.85,
+          "deltaTissue": 1.02,
+          "deltaBlood": 2.04
+        },
+        {
+          "plasmaMm": 0.9,
+          "deltaTissue": 1.08,
+          "deltaBlood": 2.16
+        },
+        {
+          "plasmaMm": 0.95,
+          "deltaTissue": 1.14,
+          "deltaBlood": 2.28
+        },
+        {
+          "plasmaMm": 1,
+          "deltaTissue": 1.2,
+          "deltaBlood": 2.4
+        },
+        {
+          "plasmaMm": 1.05,
+          "deltaTissue": 1.26,
+          "deltaBlood": 2.52
+        },
+        {
+          "plasmaMm": 1.1,
+          "deltaTissue": 1.32,
+          "deltaBlood": 2.64
+        },
+        {
+          "plasmaMm": 1.15,
+          "deltaTissue": 1.38,
+          "deltaBlood": 2.76
+        },
+        {
+          "plasmaMm": 1.2,
+          "deltaTissue": 1.44,
+          "deltaBlood": 2.88
+        },
+        {
+          "plasmaMm": 1.25,
+          "deltaTissue": 1.5,
+          "deltaBlood": 3
+        },
+        {
+          "plasmaMm": 1.3,
+          "deltaTissue": 1.56,
+          "deltaBlood": 3.12
+        },
+        {
+          "plasmaMm": 1.35,
+          "deltaTissue": 1.62,
+          "deltaBlood": 3.24
+        },
+        {
+          "plasmaMm": 1.4,
+          "deltaTissue": 1.68,
+          "deltaBlood": 3.36
+        },
+        {
+          "plasmaMm": 1.45,
+          "deltaTissue": 1.74,
+          "deltaBlood": 3.48
+        },
+        {
+          "plasmaMm": 1.5,
+          "deltaTissue": 1.7999999999999998,
+          "deltaBlood": 3.5999999999999996
+        },
+        {
+          "plasmaMm": 1.55,
+          "deltaTissue": 1.8599999999999999,
+          "deltaBlood": 3.7199999999999998
+        },
+        {
+          "plasmaMm": 1.6,
+          "deltaTissue": 1.92,
+          "deltaBlood": 3.84
+        },
+        {
+          "plasmaMm": 1.65,
+          "deltaTissue": 1.9799999999999998,
+          "deltaBlood": 3.9599999999999995
+        },
+        {
+          "plasmaMm": 1.7,
+          "deltaTissue": 2.04,
+          "deltaBlood": 4.08
+        },
+        {
+          "plasmaMm": 1.75,
+          "deltaTissue": 2.1,
+          "deltaBlood": 4.2
+        },
+        {
+          "plasmaMm": 1.8,
+          "deltaTissue": 2.16,
+          "deltaBlood": 4.32
+        },
+        {
+          "plasmaMm": 1.85,
+          "deltaTissue": 2.22,
+          "deltaBlood": 4.44
+        },
+        {
+          "plasmaMm": 1.9,
+          "deltaTissue": 2.28,
+          "deltaBlood": 4.56
+        },
+        {
+          "plasmaMm": 1.95,
+          "deltaTissue": 2.34,
+          "deltaBlood": 4.68
+        },
+        {
+          "plasmaMm": 2,
+          "deltaTissue": 2.4,
+          "deltaBlood": 4.8
+        }
+      ],
+      "bias": 1.1102230246251565e-16
+    },
+    {
+      "options": {
+        "ecv": 0.3,
+        "plasmaMm": 2,
+        "analysisHct": 0.4
+      },
+      "trueHct": 0.4,
+      "relaxivity": 4,
+      "nativeT1Ms": {
+        "tissue": 1000,
+        "blood": 1500
+      },
+      "rows": [
+        {
+          "key": "tissue",
+          "accessibleFraction": 0.3,
+          "amountUmol": 0.6,
+          "meanConcentrationMm": 0.6,
+          "preT1Ms": 1000,
+          "postT1Ms": 294.11764705882354,
+          "preR1": 1,
+          "postR1": 3.4,
+          "deltaR1": 2.4
+        },
+        {
+          "key": "blood",
+          "accessibleFraction": 0.6,
+          "amountUmol": 1.2,
+          "meanConcentrationMm": 1.2,
+          "preT1Ms": 1500,
+          "postT1Ms": 182.9268292682927,
+          "preR1": 0.6666666666666666,
+          "postR1": 5.466666666666667,
+          "deltaR1": 4.8
+        }
+      ],
+      "estimate": {
+        "deltaTissue": 2.4,
+        "deltaBlood": 4.8,
+        "lambda": 0.5,
+        "ecv": 0.3,
+        "reason": null
+      },
+      "curve": [
+        {
+          "plasmaMm": 0,
+          "deltaTissue": 0,
+          "deltaBlood": 0
+        },
+        {
+          "plasmaMm": 0.05,
+          "deltaTissue": 0.06,
+          "deltaBlood": 0.12
+        },
+        {
+          "plasmaMm": 0.1,
+          "deltaTissue": 0.12,
+          "deltaBlood": 0.24
+        },
+        {
+          "plasmaMm": 0.15,
+          "deltaTissue": 0.18,
+          "deltaBlood": 0.36
+        },
+        {
+          "plasmaMm": 0.2,
+          "deltaTissue": 0.24,
+          "deltaBlood": 0.48
+        },
+        {
+          "plasmaMm": 0.25,
+          "deltaTissue": 0.3,
+          "deltaBlood": 0.6
+        },
+        {
+          "plasmaMm": 0.3,
+          "deltaTissue": 0.36,
+          "deltaBlood": 0.72
+        },
+        {
+          "plasmaMm": 0.35,
+          "deltaTissue": 0.42,
+          "deltaBlood": 0.84
+        },
+        {
+          "plasmaMm": 0.4,
+          "deltaTissue": 0.48,
+          "deltaBlood": 0.96
+        },
+        {
+          "plasmaMm": 0.45,
+          "deltaTissue": 0.54,
+          "deltaBlood": 1.08
+        },
+        {
+          "plasmaMm": 0.5,
+          "deltaTissue": 0.6,
+          "deltaBlood": 1.2
+        },
+        {
+          "plasmaMm": 0.55,
+          "deltaTissue": 0.66,
+          "deltaBlood": 1.32
+        },
+        {
+          "plasmaMm": 0.6,
+          "deltaTissue": 0.72,
+          "deltaBlood": 1.44
+        },
+        {
+          "plasmaMm": 0.65,
+          "deltaTissue": 0.78,
+          "deltaBlood": 1.56
+        },
+        {
+          "plasmaMm": 0.7,
+          "deltaTissue": 0.84,
+          "deltaBlood": 1.68
+        },
+        {
+          "plasmaMm": 0.75,
+          "deltaTissue": 0.8999999999999999,
+          "deltaBlood": 1.7999999999999998
+        },
+        {
+          "plasmaMm": 0.8,
+          "deltaTissue": 0.96,
+          "deltaBlood": 1.92
+        },
+        {
+          "plasmaMm": 0.85,
+          "deltaTissue": 1.02,
+          "deltaBlood": 2.04
+        },
+        {
+          "plasmaMm": 0.9,
+          "deltaTissue": 1.08,
+          "deltaBlood": 2.16
+        },
+        {
+          "plasmaMm": 0.95,
+          "deltaTissue": 1.14,
+          "deltaBlood": 2.28
+        },
+        {
+          "plasmaMm": 1,
+          "deltaTissue": 1.2,
+          "deltaBlood": 2.4
+        },
+        {
+          "plasmaMm": 1.05,
+          "deltaTissue": 1.26,
+          "deltaBlood": 2.52
+        },
+        {
+          "plasmaMm": 1.1,
+          "deltaTissue": 1.32,
+          "deltaBlood": 2.64
+        },
+        {
+          "plasmaMm": 1.15,
+          "deltaTissue": 1.38,
+          "deltaBlood": 2.76
+        },
+        {
+          "plasmaMm": 1.2,
+          "deltaTissue": 1.44,
+          "deltaBlood": 2.88
+        },
+        {
+          "plasmaMm": 1.25,
+          "deltaTissue": 1.5,
+          "deltaBlood": 3
+        },
+        {
+          "plasmaMm": 1.3,
+          "deltaTissue": 1.56,
+          "deltaBlood": 3.12
+        },
+        {
+          "plasmaMm": 1.35,
+          "deltaTissue": 1.62,
+          "deltaBlood": 3.24
+        },
+        {
+          "plasmaMm": 1.4,
+          "deltaTissue": 1.68,
+          "deltaBlood": 3.36
+        },
+        {
+          "plasmaMm": 1.45,
+          "deltaTissue": 1.74,
+          "deltaBlood": 3.48
+        },
+        {
+          "plasmaMm": 1.5,
+          "deltaTissue": 1.7999999999999998,
+          "deltaBlood": 3.5999999999999996
+        },
+        {
+          "plasmaMm": 1.55,
+          "deltaTissue": 1.8599999999999999,
+          "deltaBlood": 3.7199999999999998
+        },
+        {
+          "plasmaMm": 1.6,
+          "deltaTissue": 1.92,
+          "deltaBlood": 3.84
+        },
+        {
+          "plasmaMm": 1.65,
+          "deltaTissue": 1.9799999999999998,
+          "deltaBlood": 3.9599999999999995
+        },
+        {
+          "plasmaMm": 1.7,
+          "deltaTissue": 2.04,
+          "deltaBlood": 4.08
+        },
+        {
+          "plasmaMm": 1.75,
+          "deltaTissue": 2.1,
+          "deltaBlood": 4.2
+        },
+        {
+          "plasmaMm": 1.8,
+          "deltaTissue": 2.16,
+          "deltaBlood": 4.32
+        },
+        {
+          "plasmaMm": 1.85,
+          "deltaTissue": 2.22,
+          "deltaBlood": 4.44
+        },
+        {
+          "plasmaMm": 1.9,
+          "deltaTissue": 2.28,
+          "deltaBlood": 4.56
+        },
+        {
+          "plasmaMm": 1.95,
+          "deltaTissue": 2.34,
+          "deltaBlood": 4.68
+        },
+        {
+          "plasmaMm": 2,
+          "deltaTissue": 2.4,
+          "deltaBlood": 4.8
+        }
+      ],
+      "bias": 0
+    },
+    {
+      "options": {
+        "ecv": 0.3,
+        "plasmaMm": 1,
+        "analysisHct": 0.25
+      },
+      "trueHct": 0.4,
+      "relaxivity": 4,
+      "nativeT1Ms": {
+        "tissue": 1000,
+        "blood": 1500
+      },
+      "rows": [
+        {
+          "key": "tissue",
+          "accessibleFraction": 0.3,
+          "amountUmol": 0.3,
+          "meanConcentrationMm": 0.3,
+          "preT1Ms": 1000,
+          "postT1Ms": 454.5454545454545,
+          "preR1": 1,
+          "postR1": 2.2,
+          "deltaR1": 1.2
+        },
+        {
+          "key": "blood",
+          "accessibleFraction": 0.6,
+          "amountUmol": 0.6,
+          "meanConcentrationMm": 0.6,
+          "preT1Ms": 1500,
+          "postT1Ms": 326.0869565217392,
+          "preR1": 0.6666666666666666,
+          "postR1": 3.0666666666666664,
+          "deltaR1": 2.4
+        }
+      ],
+      "estimate": {
+        "deltaTissue": 1.2000000000000002,
+        "deltaBlood": 2.3999999999999995,
+        "lambda": 0.5000000000000002,
+        "ecv": 0.37500000000000017,
+        "reason": null
+      },
+      "curve": [
+        {
+          "plasmaMm": 0,
+          "deltaTissue": 0,
+          "deltaBlood": 0
+        },
+        {
+          "plasmaMm": 0.05,
+          "deltaTissue": 0.06,
+          "deltaBlood": 0.12
+        },
+        {
+          "plasmaMm": 0.1,
+          "deltaTissue": 0.12,
+          "deltaBlood": 0.24
+        },
+        {
+          "plasmaMm": 0.15,
+          "deltaTissue": 0.18,
+          "deltaBlood": 0.36
+        },
+        {
+          "plasmaMm": 0.2,
+          "deltaTissue": 0.24,
+          "deltaBlood": 0.48
+        },
+        {
+          "plasmaMm": 0.25,
+          "deltaTissue": 0.3,
+          "deltaBlood": 0.6
+        },
+        {
+          "plasmaMm": 0.3,
+          "deltaTissue": 0.36,
+          "deltaBlood": 0.72
+        },
+        {
+          "plasmaMm": 0.35,
+          "deltaTissue": 0.42,
+          "deltaBlood": 0.84
+        },
+        {
+          "plasmaMm": 0.4,
+          "deltaTissue": 0.48,
+          "deltaBlood": 0.96
+        },
+        {
+          "plasmaMm": 0.45,
+          "deltaTissue": 0.54,
+          "deltaBlood": 1.08
+        },
+        {
+          "plasmaMm": 0.5,
+          "deltaTissue": 0.6,
+          "deltaBlood": 1.2
+        },
+        {
+          "plasmaMm": 0.55,
+          "deltaTissue": 0.66,
+          "deltaBlood": 1.32
+        },
+        {
+          "plasmaMm": 0.6,
+          "deltaTissue": 0.72,
+          "deltaBlood": 1.44
+        },
+        {
+          "plasmaMm": 0.65,
+          "deltaTissue": 0.78,
+          "deltaBlood": 1.56
+        },
+        {
+          "plasmaMm": 0.7,
+          "deltaTissue": 0.84,
+          "deltaBlood": 1.68
+        },
+        {
+          "plasmaMm": 0.75,
+          "deltaTissue": 0.8999999999999999,
+          "deltaBlood": 1.7999999999999998
+        },
+        {
+          "plasmaMm": 0.8,
+          "deltaTissue": 0.96,
+          "deltaBlood": 1.92
+        },
+        {
+          "plasmaMm": 0.85,
+          "deltaTissue": 1.02,
+          "deltaBlood": 2.04
+        },
+        {
+          "plasmaMm": 0.9,
+          "deltaTissue": 1.08,
+          "deltaBlood": 2.16
+        },
+        {
+          "plasmaMm": 0.95,
+          "deltaTissue": 1.14,
+          "deltaBlood": 2.28
+        },
+        {
+          "plasmaMm": 1,
+          "deltaTissue": 1.2,
+          "deltaBlood": 2.4
+        },
+        {
+          "plasmaMm": 1.05,
+          "deltaTissue": 1.26,
+          "deltaBlood": 2.52
+        },
+        {
+          "plasmaMm": 1.1,
+          "deltaTissue": 1.32,
+          "deltaBlood": 2.64
+        },
+        {
+          "plasmaMm": 1.15,
+          "deltaTissue": 1.38,
+          "deltaBlood": 2.76
+        },
+        {
+          "plasmaMm": 1.2,
+          "deltaTissue": 1.44,
+          "deltaBlood": 2.88
+        },
+        {
+          "plasmaMm": 1.25,
+          "deltaTissue": 1.5,
+          "deltaBlood": 3
+        },
+        {
+          "plasmaMm": 1.3,
+          "deltaTissue": 1.56,
+          "deltaBlood": 3.12
+        },
+        {
+          "plasmaMm": 1.35,
+          "deltaTissue": 1.62,
+          "deltaBlood": 3.24
+        },
+        {
+          "plasmaMm": 1.4,
+          "deltaTissue": 1.68,
+          "deltaBlood": 3.36
+        },
+        {
+          "plasmaMm": 1.45,
+          "deltaTissue": 1.74,
+          "deltaBlood": 3.48
+        },
+        {
+          "plasmaMm": 1.5,
+          "deltaTissue": 1.7999999999999998,
+          "deltaBlood": 3.5999999999999996
+        },
+        {
+          "plasmaMm": 1.55,
+          "deltaTissue": 1.8599999999999999,
+          "deltaBlood": 3.7199999999999998
+        },
+        {
+          "plasmaMm": 1.6,
+          "deltaTissue": 1.92,
+          "deltaBlood": 3.84
+        },
+        {
+          "plasmaMm": 1.65,
+          "deltaTissue": 1.9799999999999998,
+          "deltaBlood": 3.9599999999999995
+        },
+        {
+          "plasmaMm": 1.7,
+          "deltaTissue": 2.04,
+          "deltaBlood": 4.08
+        },
+        {
+          "plasmaMm": 1.75,
+          "deltaTissue": 2.1,
+          "deltaBlood": 4.2
+        },
+        {
+          "plasmaMm": 1.8,
+          "deltaTissue": 2.16,
+          "deltaBlood": 4.32
+        },
+        {
+          "plasmaMm": 1.85,
+          "deltaTissue": 2.22,
+          "deltaBlood": 4.44
+        },
+        {
+          "plasmaMm": 1.9,
+          "deltaTissue": 2.28,
+          "deltaBlood": 4.56
+        },
+        {
+          "plasmaMm": 1.95,
+          "deltaTissue": 2.34,
+          "deltaBlood": 4.68
+        },
+        {
+          "plasmaMm": 2,
+          "deltaTissue": 2.4,
+          "deltaBlood": 4.8
+        }
+      ],
+      "bias": 0.07500000000000018
+    },
+    {
+      "options": {
+        "ecv": 0.3,
+        "plasmaMm": 0,
+        "analysisHct": 0.4
+      },
+      "trueHct": 0.4,
+      "relaxivity": 4,
+      "nativeT1Ms": {
+        "tissue": 1000,
+        "blood": 1500
+      },
+      "rows": [
+        {
+          "key": "tissue",
+          "accessibleFraction": 0.3,
+          "amountUmol": 0,
+          "meanConcentrationMm": 0,
+          "preT1Ms": 1000,
+          "postT1Ms": 1000,
+          "preR1": 1,
+          "postR1": 1,
+          "deltaR1": 0
+        },
+        {
+          "key": "blood",
+          "accessibleFraction": 0.6,
+          "amountUmol": 0,
+          "meanConcentrationMm": 0,
+          "preT1Ms": 1500,
+          "postT1Ms": 1500,
+          "preR1": 0.6666666666666666,
+          "postR1": 0.6666666666666666,
+          "deltaR1": 0
+        }
+      ],
+      "estimate": {
+        "deltaTissue": 0,
+        "deltaBlood": 0,
+        "lambda": null,
+        "ecv": null,
+        "reason": "no-positive-blood-change"
+      },
+      "curve": [
+        {
+          "plasmaMm": 0,
+          "deltaTissue": 0,
+          "deltaBlood": 0
+        },
+        {
+          "plasmaMm": 0.05,
+          "deltaTissue": 0.06,
+          "deltaBlood": 0.12
+        },
+        {
+          "plasmaMm": 0.1,
+          "deltaTissue": 0.12,
+          "deltaBlood": 0.24
+        },
+        {
+          "plasmaMm": 0.15,
+          "deltaTissue": 0.18,
+          "deltaBlood": 0.36
+        },
+        {
+          "plasmaMm": 0.2,
+          "deltaTissue": 0.24,
+          "deltaBlood": 0.48
+        },
+        {
+          "plasmaMm": 0.25,
+          "deltaTissue": 0.3,
+          "deltaBlood": 0.6
+        },
+        {
+          "plasmaMm": 0.3,
+          "deltaTissue": 0.36,
+          "deltaBlood": 0.72
+        },
+        {
+          "plasmaMm": 0.35,
+          "deltaTissue": 0.42,
+          "deltaBlood": 0.84
+        },
+        {
+          "plasmaMm": 0.4,
+          "deltaTissue": 0.48,
+          "deltaBlood": 0.96
+        },
+        {
+          "plasmaMm": 0.45,
+          "deltaTissue": 0.54,
+          "deltaBlood": 1.08
+        },
+        {
+          "plasmaMm": 0.5,
+          "deltaTissue": 0.6,
+          "deltaBlood": 1.2
+        },
+        {
+          "plasmaMm": 0.55,
+          "deltaTissue": 0.66,
+          "deltaBlood": 1.32
+        },
+        {
+          "plasmaMm": 0.6,
+          "deltaTissue": 0.72,
+          "deltaBlood": 1.44
+        },
+        {
+          "plasmaMm": 0.65,
+          "deltaTissue": 0.78,
+          "deltaBlood": 1.56
+        },
+        {
+          "plasmaMm": 0.7,
+          "deltaTissue": 0.84,
+          "deltaBlood": 1.68
+        },
+        {
+          "plasmaMm": 0.75,
+          "deltaTissue": 0.8999999999999999,
+          "deltaBlood": 1.7999999999999998
+        },
+        {
+          "plasmaMm": 0.8,
+          "deltaTissue": 0.96,
+          "deltaBlood": 1.92
+        },
+        {
+          "plasmaMm": 0.85,
+          "deltaTissue": 1.02,
+          "deltaBlood": 2.04
+        },
+        {
+          "plasmaMm": 0.9,
+          "deltaTissue": 1.08,
+          "deltaBlood": 2.16
+        },
+        {
+          "plasmaMm": 0.95,
+          "deltaTissue": 1.14,
+          "deltaBlood": 2.28
+        },
+        {
+          "plasmaMm": 1,
+          "deltaTissue": 1.2,
+          "deltaBlood": 2.4
+        },
+        {
+          "plasmaMm": 1.05,
+          "deltaTissue": 1.26,
+          "deltaBlood": 2.52
+        },
+        {
+          "plasmaMm": 1.1,
+          "deltaTissue": 1.32,
+          "deltaBlood": 2.64
+        },
+        {
+          "plasmaMm": 1.15,
+          "deltaTissue": 1.38,
+          "deltaBlood": 2.76
+        },
+        {
+          "plasmaMm": 1.2,
+          "deltaTissue": 1.44,
+          "deltaBlood": 2.88
+        },
+        {
+          "plasmaMm": 1.25,
+          "deltaTissue": 1.5,
+          "deltaBlood": 3
+        },
+        {
+          "plasmaMm": 1.3,
+          "deltaTissue": 1.56,
+          "deltaBlood": 3.12
+        },
+        {
+          "plasmaMm": 1.35,
+          "deltaTissue": 1.62,
+          "deltaBlood": 3.24
+        },
+        {
+          "plasmaMm": 1.4,
+          "deltaTissue": 1.68,
+          "deltaBlood": 3.36
+        },
+        {
+          "plasmaMm": 1.45,
+          "deltaTissue": 1.74,
+          "deltaBlood": 3.48
+        },
+        {
+          "plasmaMm": 1.5,
+          "deltaTissue": 1.7999999999999998,
+          "deltaBlood": 3.5999999999999996
+        },
+        {
+          "plasmaMm": 1.55,
+          "deltaTissue": 1.8599999999999999,
+          "deltaBlood": 3.7199999999999998
+        },
+        {
+          "plasmaMm": 1.6,
+          "deltaTissue": 1.92,
+          "deltaBlood": 3.84
+        },
+        {
+          "plasmaMm": 1.65,
+          "deltaTissue": 1.9799999999999998,
+          "deltaBlood": 3.9599999999999995
+        },
+        {
+          "plasmaMm": 1.7,
+          "deltaTissue": 2.04,
+          "deltaBlood": 4.08
+        },
+        {
+          "plasmaMm": 1.75,
+          "deltaTissue": 2.1,
+          "deltaBlood": 4.2
+        },
+        {
+          "plasmaMm": 1.8,
+          "deltaTissue": 2.16,
+          "deltaBlood": 4.32
+        },
+        {
+          "plasmaMm": 1.85,
+          "deltaTissue": 2.22,
+          "deltaBlood": 4.44
+        },
+        {
+          "plasmaMm": 1.9,
+          "deltaTissue": 2.28,
+          "deltaBlood": 4.56
+        },
+        {
+          "plasmaMm": 1.95,
+          "deltaTissue": 2.34,
+          "deltaBlood": 4.68
+        },
+        {
+          "plasmaMm": 2,
+          "deltaTissue": 2.4,
+          "deltaBlood": 4.8
+        }
+      ],
+      "bias": null
+    }
+  ]
+}

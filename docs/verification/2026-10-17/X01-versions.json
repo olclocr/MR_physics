@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W60 known constant velocity trajectory and bipolar gradient phase; own report excluded",
+  "files": [
+    {
+      "path": "docs/flow_gradient_phase.html",
+      "sha256": "3F8048E6B2912FD9C3887976C8A9CC932E3A2D1EDE43DE3A6A0D5170E567D7E3"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/flow-gradient-phase.test.cjs",
+      "sha256": "D1D2AFCDD113456F4206C2037BF284CA1510CC6D827C4D55E2DD617B7E0F5B62"
+    },
+    {
+      "path": "tests/helpers/flow-gradient-phase-reference.cjs",
+      "sha256": "D9D2E2CC88EBE908B3F3627B4026641B66A0D007A3B74301B8E3AAC1151D5C56"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-numerical.cjs",
+      "sha256": "B4974F057B24FDFE684F1786305CA423E01E100505F444E55A59837105E8A1C9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-numerical.json",
+      "sha256": "026D35D16F1B167870EB747743BD7E0B379D3E0376B6B14F910C7AC4D112A68E"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-display-reference.json",
+      "sha256": "9B6287CB183DBF744B111EA7FDE45F6E7AA3174437A7895FAB0B69B5C2B3A75B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-browser-check.js",
+      "sha256": "9AF69E52B35263A2EBBB990C67F6E43FDBAF270927ABBEEE910B512B8340F614"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-browser-check.json",
+      "sha256": "C197745960FB4BEFEB7BBD187C69A7B6978B815198DB04A70CEF34A73C4FCA85"
+    }
+  ]
+}

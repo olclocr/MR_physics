@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-17",
+  "cases": 54,
+  "curvePoints": 8694,
+  "max": {
+    "signal": 5.730416141602745e-13,
+    "magnetization": 1.3429257705865894e-12,
+    "ratio": 1.7209345060109627e-11,
+    "rateAndTime": 0,
+    "analyticAttenuation": 2.220446049250313e-16
+  },
+  "examples": [
+    {
+      "options": {
+        "concentrationMm": 1,
+        "teMs": 8,
+        "flipDeg": 15
+      },
+      "current": {
+        "concentrationMm": 1,
+        "r1PerS": 5,
+        "r2StarPerS": 45,
+        "t1Ms": 200,
+        "t2StarMs": 22.22222222222222,
+        "beforeRF": 0.7552935383664572,
+        "afterRF": 0.19548435237211056,
+        "signal": 0.13638480476734893,
+        "t1Only": 0.16004905103257963,
+        "ratio": 1.7292286261837357
+      },
+      "baseline": {
+        "concentrationMm": 0,
+        "r1PerS": 1,
+        "r2StarPerS": 25,
+        "t1Ms": 1000,
+        "t2StarMs": 40,
+        "beforeRF": 0.37219988601837023,
+        "afterRF": 0.09633241908654164,
+        "signal": 0.07887031402454799,
+        "t1Only": 0.07887031402454799
+      }
+    },
+    {
+      "options": {
+        "concentrationMm": 4,
+        "teMs": 8,
+        "flipDeg": 15
+      },
+      "current": {
+        "concentrationMm": 4,
+        "r1PerS": 17,
+        "r2StarPerS": 105,
+        "t1Ms": 58.8235294117647,
+        "t2StarMs": 9.523809523809524,
+        "beforeRF": 0.922386140087523,
+        "afterRF": 0.23873109999325262,
+        "signal": 0.10306272813688705,
+        "t1Only": 0.1954564932806107,
+        "ratio": 1.3067366272284564
+      },
+      "baseline": {
+        "concentrationMm": 0,
+        "r1PerS": 1,
+        "r2StarPerS": 25,
+        "t1Ms": 1000,
+        "t2StarMs": 40,
+        "beforeRF": 0.37219988601837023,
+        "afterRF": 0.09633241908654164,
+        "signal": 0.07887031402454799,
+        "t1Only": 0.07887031402454799
+      }
+    },
+    {
+      "options": {
+        "concentrationMm": 4,
+        "teMs": 16,
+        "flipDeg": 15
+      },
+      "current": {
+        "concentrationMm": 4,
+        "r1PerS": 17,
+        "r2StarPerS": 105,
+        "t1Ms": 58.8235294117647,
+        "t2StarMs": 9.523809523809524,
+        "beforeRF": 0.922386140087523,
+        "afterRF": 0.23873109999325262,
+        "signal": 0.04449326431000445,
+        "t1Only": 0.16002624193761592,
+        "ratio": 0.6890323237571303
+      },
+      "baseline": {
+        "concentrationMm": 0,
+        "r1PerS": 1,
+        "r2StarPerS": 25,
+        "t1Ms": 1000,
+        "t2StarMs": 40,
+        "beforeRF": 0.37219988601837023,
+        "afterRF": 0.09633241908654164,
+        "signal": 0.06457355159681509,
+        "t1Only": 0.06457355159681509
+      }
+    },
+    {
+      "options": {
+        "concentrationMm": 1,
+        "teMs": 8,
+        "flipDeg": 5
+      },
+      "current": {
+        "concentrationMm": 1,
+        "r1PerS": 5,
+        "r2StarPerS": 45,
+        "t1Ms": 200,
+        "t2StarMs": 22.22222222222222,
+        "beforeRF": 0.965081355282679,
+        "afterRF": 0.08411238233157847,
+        "signal": 0.05868321788217757,
+        "t1Only": 0.06886539412951638,
+        "ratio": 0.9773003280019981
+      },
+      "baseline": {
+        "concentrationMm": 0,
+        "r1PerS": 1,
+        "r2StarPerS": 25,
+        "t1Ms": 1000,
+        "t2StarMs": 40,
+        "beforeRF": 0.8414896211408487,
+        "afterRF": 0.07334065294497615,
+        "signal": 0.06004624801687122,
+        "t1Only": 0.06004624801687122
+      }
+    }
+  ]
+}

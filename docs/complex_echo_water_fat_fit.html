@@ -1,0 +1,69 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M04 후속 · 복소 echo에서 물과 지방 계수 추정</title><link rel="stylesheet" href="assets/ir-lesson.css">
+<style>.layout>*{min-width:0}.metrics output{font-size:18px}.table-scroll{overflow:auto}.table-scroll table{min-width:650px}.table-scroll th,.table-scroll td{padding:8px;white-space:nowrap}.small,.note{overflow-wrap:anywhere}@media(max-width:760px){.metrics output{display:block;margin-left:0}}</style></head>
+<body><main><nav><a href="index.html">학습 목록</a><a href="pdff_echo_assumptions.html">M04 · Echo와 spectrum</a><a href="dixon_water_fat.html">F02 · Dixon과 field</a><a href="pdff_t1_bias.html">M04 · 신호와 밀도</a></nav>
+<header><p class="tag">M04 후속 · 알려진 field/감쇠/위상 · 비음수 두 계수</p>
+<h1>이미 분리된 물·지방 신호가 없으면 무엇을 맞춰야 할까요?</h1>
+<p>한 voxel에서 얻은 여섯 개 complex echo는 물과 지방 신호의 합입니다. 시간에 따라 물과 지방이 어떻게 보일지 아는 모형을 만들고, 그 합이 자료와 가장 가까워지는 두 계수를 찾습니다.</p>
+<p>목표: 합성 자료와 추정 계수를 구별하고, 알려진 field와 spectrum·감쇠 가정의 역할, 잔차가 검증하는 범위를 설명합니다.</p>
+<details><summary>선행 · 이 실험에서 이미 알고 있는 것</summary>
+<p><a href="pdff_echo_assumptions.html">M04 echo 기본</a>은 물/지방이 이미 정확히 분리됐다고 가정했습니다. 여기서는 TE1/2/3/4/5/6ms의 Re/Im 합6개만 fitting 자료로 줍니다. B0 3T, 실제 지방6peak, 물T2*=40ms/지방20ms는 고정된 교육 모형입니다. 실제 환자 값이나 권장 echo 조건이 아닙니다.</p>
+<p>수신 위상과 초기 두 계수의 위상을0으로 알고, field offset도 정확히 안다고 가정합니다. Fitting은 실수 비음수 물계수 W와 지방계수 F만 추정합니다. 일반적인 미지 복소수신위상·field/R2* 동시 추정과 다른 한계 모형입니다. Field 조작은 자료와 fitting 열에 같은 값을 적용합니다.</p>
+<p>정답 W+F=1, T1 가중/잡음0입니다. 각 지방 peak의 감쇠는 같고,0시점의6peak 가중 합은1입니다. 추정 W+F는1로 강제하지 않습니다. 고유 밀도와 보정되지 않은 echo magnitude 분율을 섞어 읽지 않습니다.</p></details></header>
+<section class="card"><h2>세 가지 관찰</h2><ol class="tasks">
+<li>Field를 바꾸면 Re/Im 자료는 바뀝니다. 그 field를 이미 알고 맞추면 분율도 바뀌나요?<button id="exampleField">−60Hz · 같은 정답/모형</button></li>
+<li>같은 자료를 단일 지방 peak로 맞추면 계수와 잔차는?<button id="exampleSingle">같은 자료 · 단일peak fit</button></li>
+<li>지방이 없을 때 잘못된 지방 열도 잔차0으로 맞을 수 있나요?<button id="exampleWater">지방0 · 단일peak 가정</button></li>
+</ol></section>
+<section class="layout"><aside class="card"><h2>가상 정답과 fitting 모형</h2>
+<div class="control"><label for="fractionControl">정답 지방 밀도 분율 (%)</label><select id="fractionControl"><option value="0">0</option><option value="0.3">30</option><option value="0.5">50</option><option value="1">100</option></select></div>
+<div class="control"><label for="fieldControl">알려진 field offset (Hz)</label><select id="fieldControl"><option value="-60">−60</option><option value="0">0</option><option value="60">+60</option></select></div>
+<div class="control"><label for="assumptionControl">Fit의 spectrum/감쇠</label><select id="assumptionControl"><option value="matched">일치 · 6peak / T2*40·20ms</option><option value="single">단일peak / T2*40·20ms</option><option value="common">6peak / 공통T2*40ms</option></select></div>
+<button id="reset">초기화</button><p class="small">기본: 지방30%, known field+60Hz, 모형일치. Fit 가정만 바꾸면 원자료는 그대로입니다. 공통T2* 가정은 이번 교육 정답과 다른 조건이며 실제 모든 공통R2* 모형이 틀렸다는 뜻이 아닙니다.</p></aside>
+<div class="card"><h2>자료의 합으로부터 두 계수 추정</h2>
+<svg id="coefficientGraphic" role="img" aria-label="정답과 추정 물 지방 계수 비교"></svg>
+<p class="small">파랑=물 W, 보라=지방 F. 두 막대의 테두리는0…1.2의 동일한 계수 축입니다. 추정 합을 정답의1에 맞춰 다시 정규화하지 않습니다. 아래 분율의 분모는 추정 W+F입니다.</p>
+<div class="metrics"><p>추정 물 W <output id="waterOutput"></output></p><p>추정 지방 F <output id="fatOutput"></output></p><p>추정 계수 합 <output id="sumOutput"></output></p><p>추정 지방 분율 <output id="fractionOutput"></output></p><p>Complex 신호 RMSE <output id="rmseOutput"></output></p><p>분율−정답 <output id="biasOutput"></output></p></div>
+<p id="status" class="note" aria-live="polite"></p>
+<h3>같은 여섯 echo의 자료와 예측</h3><svg id="echoGraphic" role="img" aria-label="복소 echo 자료와 fitting 예측의 실수 허수"></svg>
+<p class="small">파랑 원=자료 Re, 보라 원=자료 Im. 주황 점선=fit Re, 초록 점선=fit Im. 시간0…6ms/신호−1.2…1.2 고정. 선은 여섯 예측점을 잇는 안내이며 추가 획득 자료가 아닙니다. 신호는 정답의0시점 계수 합1을 기준으로 한 상대 복소 신호입니다.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="여섯 복소 echo와 예측 잔차 표"><table><caption>작은 화면에서는 좌우로 스크롤하세요. 잔차는 복소 차이의 크기입니다.</caption><thead><tr><th>TE(ms)</th><th>자료 Re</th><th>자료 Im</th><th>fit Re</th><th>fit Im</th><th>|fit−자료|</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div></section>
+<section class="card"><h2>예측 열이 이미 알려져야 두 계수만 구할 수 있습니다</h2>
+<p>각 echo에서 “물1이면 어떤 복소 신호가 나올까?”와 “지방1이면?”를 두 열로 만듭니다. 알려진 field와 감쇠·spectrum이 이 열에 들어갑니다. 같은 열로 생성된 noiseless 자료라면 여섯 합에서 정답 계수를 회복할 수 있습니다. 이 결과가 실제 획득의 미지수와 교란을 모두 해결했다는 뜻은 아닙니다.</p>
+<p>이번 모형의 단일peak fit이나 공통감쇠 fit은 정답과 다른 열로 같은 자료를 설명합니다. 잔차와 분율·계수 합을 함께 보세요. 지방100%에서 단일peak fit의 분율이100%로 남더라도 지방계수의 절대값과 잔차는 다를 수 있습니다.</p>
+<details><summary>복소 선형 모형 · 비음수 최소 · 단위와 정의</summary><p class="formula">aⱼ = exp(−TEⱼ/40ms) exp(−i2π fieldHz TEⱼ초)<br>bⱼ = exp(−TEⱼ/T2*F) exp(−i2π fieldHz TEⱼ초) Σₖpₖexp(−i2πΔfₖ TEⱼ초)<br>min W,F≥0 Σⱼ |Sⱼ−(W aⱼ+F bⱼ)|²<br>지방분율 = F/(W+F)<br>RMSE = √[Σⱼ ((Re잔차)²+(Im잔차)²)/6]</p>
+<p>W/F는 실수 비음수 계수입니다. Re/Im을 두 행으로 놓으면12실수행×2열 문제입니다. 내부해와 W=0/F=0 경계의 최소를 비교합니다. 이 메뉴의 두 열은 독립입니다. 열 수나 echo 수만으로 일반적인 안정성을 보장하지 않습니다. W+F=0의 분율은 정의되지 않으며 이번 정답합1의 메뉴에서는 나오지 않습니다.</p>
+<p>6peak는 기존M04와 같은 −3.8/−3.4/−2.6/−1.95/−0.5/+0.6ppm, 가중8.8/70/12/0.6/3.9/4.7%입니다. Δf(Hz)=ppm숫자×10⁻⁶×(42.57747892×10⁶Hz/T)×B0(T)입니다. ppm과MHz의10⁻⁶/10⁶이 상쇄됩니다. 단일peak 비교는−3.4ppm입니다. 모든 ppm은 물 기준이고 시간은 Hz와 곱할 때초로 바꿉니다. 실제 spectrum을 새로 측정하거나 환자별로 추정한 것이 아닙니다.</p></details></section>
+<section class="card"><h2>잔차0이 검증하지 못하는 것</h2><p><b>“잔차가0이면 물과 지방의 모든 가정이 맞다.”</b> → 지방이 없는 자료는 지방 열이 어떻게 생겼는지 시험하지 못합니다. 지방0/단일peak 예시에서는 지방계수를0으로 두면 정확한 물 자료가 남습니다.</p>
+<div class="quiz"><h3>이번 모형에서 field를+60→−60Hz로 바꾸고 그 값을 정확히 사용하면?</h3><button id="quizFieldCorrect">복소 자료의 위상은 바뀌어도 추정 분율은 유지된다</button><button id="quizFieldWrong">Field를 바꾸기만 하면 지방 분율도 반드시 늘어난다</button><p id="fieldFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p>
+<h3>지방0 자료를 단일peak 모형으로 맞춰 잔차0이면?</h3><button id="quizModelWrong">실제 지방 spectrum이 단일peak임을 증명한다</button><button id="quizModelCorrect">이 자료에 지방이 없어서 그 열을 검증하지 못한다</button><p id="modelFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p></div></section>
+<section class="card"><h2>근거와 남은 범위</h2>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/18956464/">Yu 등2008, multifrequency water-fat separation</a>의 원전 초록에서 여러fat peak를 포함한 모형과 분리/감쇠의 연결을 확인했습니다. 여기서는 기존 <a href="pdff_echo_assumptions.html">M04 echo 모형</a>을 재사용하고, 이미 알려진 field/감쇠 열에 대한 두 계수만 구합니다. 논문의 IDEAL·self-calibration·field/R2* 동시 추정·환자 성능을 구현하지 않았습니다.</p>
+<p>Field나 수신 위상을 모르면? T2*와 spectrum도 함께 추정해야 한다면? 실제 unknown field/R2*·T1/B1/위상·잡음/다중coil·J결합·환자PDFF/영상 재구성·진단 cutoff·임상성능은 남은 범위입니다.</p>
+<p><a href="verification/2026-10-17/M04-fit-physics.html">독립 ODE/QR·비음수·화면 검증</a> · <a href="learning-roadmap.md">로드맵</a></p></section>
+</main><script src="assets/mr-physics-models.js"></script><script src="assets/pdff-echo-model.js"></script><script src="assets/complex-fat-fit-model.js"></script><script>
+'use strict';const M=ComplexFatFit,el=id=>document.getElementById(id),fmt=v=>(Math.abs(v)<.5e-6?0:v).toFixed(6),controls=[['fractionControl','fatDensityFraction'],['fieldControl','fieldHz'],['assumptionControl','assumption']];let state={...M.defaults};
+function render(){
+  const r=M.calculate(state);window.lessonResult=r;for(const [id,key]of controls)el(id).value=String(state[key]);
+  for(const [id,value,unit]of [['waterOutput',r.estimate.water,''],['fatOutput',r.estimate.fat,''],['sumOutput',r.estimate.coefficientSum,''],['fractionOutput',r.estimate.estimatedFraction===null?null:100*r.estimate.estimatedFraction,'%'],['rmseOutput',r.estimate.rmse,' 상대신호'],['biasOutput',r.bias===null?null:100*r.bias,' percentage points']])el(id).textContent=value===null?'정의 불가':fmt(value)+unit;
+  el('status').textContent='정답 W='+fmt(r.trueWater)+', F='+fmt(r.trueFat)+'. '+(state.assumption==='matched'?'정답과 같은 열로6개복소합만 맞춥니다.':state.fatDensityFraction===0?'지방이0이므로 이 자료의 잔차만으로 잘못된 fat 열을 확인할 수 없습니다.':'정답과 다른 '+(state.assumption==='single'?'단일peak':'공통감쇠')+' 열을 사용합니다. 분율과 잔차·계수 합을 함께 보세요.');
+  el('rows').innerHTML=r.rows.map(p=>'<tr><th>'+p.teMs+'</th>'+[p.data.real,p.data.imaginary,p.predicted.real,p.predicted.imaginary,p.residual].map(v=>'<td>'+fmt(v)+'</td>').join('')+'</tr>').join('');
+  const width=Math.max(260,el('coefficientGraphic').getBoundingClientRect().width),left=44,right=width-16,span=right-left;
+  const bars=el('coefficientGraphic');bars.setAttribute('viewBox',`0 0 ${width} 185`);
+  let b=`<g font-size="12" fill="#52657e">`;
+  for(const [name,y,water,fat]of [['truth',32,r.trueWater,r.trueFat],['fit',108,r.estimate.water,r.estimate.fat]])b+=`<text x="${left}" y="${y-10}">${name==='truth'?'정답':'추정'} W+F=${fmt(water+fat)}</text><rect x="${left}" y="${y}" width="${span}" height="26" fill="none" stroke="#a9c0e7"/><rect data-bar="${name}-water" x="${left}" y="${y}" width="${water/1.2*span}" height="26" fill="#245cf6"/><rect data-bar="${name}-fat" x="${left+water/1.2*span}" y="${y}" width="${fat/1.2*span}" height="26" fill="#7c3aed"/>`;
+  bars.innerHTML=b+`<text x="${left}" y="168">0</text><text x="${right}" y="168" text-anchor="end">1.2 · 계수</text></g>`;
+  const svg=el('echoGraphic'),x=t=>left+t/6*span,y=v=>210-(v+1.2)/2.4*180;svg.setAttribute('viewBox',`0 0 ${width} 265`);
+  let g=`<g font-size="12" fill="#52657e"><path d="M${left} 30V210H${right}" fill="none" stroke="#a9c0e7"/>`;
+  for(const v of [-1.2,0,1.2])g+=`<text x="${left-5}" y="${y(v)+4}" text-anchor="end">${v}</text>`;
+  for(const [component,color]of [['real','#b64b24'],['imaginary','#16804a']])g+=`<polyline data-fit="${component}" points="${r.rows.map(p=>x(p.teMs)+','+y(p.predicted[component])).join(' ')}" fill="none" stroke="${color}" stroke-width="1.7" stroke-dasharray="4 4"/>`;
+  for(const p of r.rows)for(const [component,color]of [['real','#245cf6'],['imaginary','#7c3aed']])g+=`<circle data-echo="${p.teMs}" data-component="${component}" cx="${x(p.teMs)}" cy="${y(p.data[component])}" r="3.5" fill="white" stroke="${color}" stroke-width="1.8"/>`;
+  for(const t of [0,3,6])g+=`<text x="${x(t)}" y="245" text-anchor="${t===0?'start':t===6?'end':'middle'}">${t}${t===6?' ms · TE':''}</text>`;
+  svg.innerHTML=g+'</g>';
+}
+function reset(type){state={...M.defaults};if(type==='field')state.fieldHz=-60;if(type==='single')state.assumption='single';if(type==='water'){state.fatDensityFraction=0;state.assumption='single';}for(const id of ['fieldFeedback','modelFeedback'])el(id).textContent='답을 선택해 이유를 확인하세요.';render();}
+for(const [id,key]of controls)el(id).addEventListener('change',()=>{state[key]=key==='assumption'?el(id).value:Number(el(id).value);render();});for(const [id,type]of [['reset','base'],['exampleField','field'],['exampleSingle','single'],['exampleWater','water']])el(id).addEventListener('click',()=>reset(type));
+for(const [id,target,text]of [['quizFieldCorrect','fieldFeedback','맞습니다. 이번 모형은 자료와 두 예측 열에 같은 알려진 field를 적용하므로 위상 변화와 분율 추정을 구별할 수 있습니다.'],['quizFieldWrong','fieldFeedback','Field가 지방 양을 바꾸는 것은 아닙니다. Field를 정확히 아는 이번 가정과 unknown field 문제를 구별하세요.'],['quizModelCorrect','modelFeedback','맞습니다. F=0이면 fat 열은 합에 기여하지 않으므로 그 열이 맞는지 잔차가 시험하지 못합니다.'],['quizModelWrong','modelFeedback','이 자료에는 지방이 없습니다. 잔차0을 실제 지방 spectrum의 증명으로 확대할 수 없습니다.']])el(id).addEventListener('click',()=>el(target).textContent=text);
+window.addEventListener('resize',render);render();
+</script></body></html>

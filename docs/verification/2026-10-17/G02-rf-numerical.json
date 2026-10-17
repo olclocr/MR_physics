@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-17",
+  "cases": 24,
+  "spatialPoints": 4824,
+  "max": {
+    "vector": 0.0000012175008840542567,
+    "magnitude": 9.140987090594521e-7,
+    "norm": 7.993605777301127e-15,
+    "widthMm": 1.7763568394002505e-15,
+    "areaFlipDeg": 2.842170943040401e-14,
+    "peakMicroT": 0.0000022899907090589977,
+    "referenceConvergence": 2.2623511159065857e-10
+  },
+  "examples": [
+    {
+      "options": {
+        "durationMs": 4,
+        "flipDeg": 90,
+        "gradientMilliTPerM": 10
+      },
+      "peakB1MicroT": 6.503653089918031,
+      "areaFlipDeg": 89.99999999999999,
+      "nominalBandwidthHz": 1000,
+      "nominalThicknessMm": 2.34865949174428,
+      "center": {
+        "zMm": 0,
+        "offResHz": 0,
+        "x": 0,
+        "y": 0.9999999999999974,
+        "z": -2.8542280758797394e-15,
+        "magnitude": 0.9999999999999974,
+        "norm": 0.9999999999999974,
+        "idealMagnitude": 1
+      }
+    },
+    {
+      "options": {
+        "durationMs": 8,
+        "flipDeg": 90,
+        "gradientMilliTPerM": 10
+      },
+      "peakB1MicroT": 3.2518265449590156,
+      "areaFlipDeg": 89.99999999999999,
+      "nominalBandwidthHz": 500,
+      "nominalThicknessMm": 1.17432974587214,
+      "center": {
+        "zMm": 0,
+        "offResHz": 0,
+        "x": 0,
+        "y": 0.9999999999999974,
+        "z": -2.8542280758797394e-15,
+        "magnitude": 0.9999999999999974,
+        "norm": 0.9999999999999974,
+        "idealMagnitude": 1
+      }
+    },
+    {
+      "options": {
+        "durationMs": 4,
+        "flipDeg": 90,
+        "gradientMilliTPerM": 5
+      },
+      "peakB1MicroT": 6.503653089918031,
+      "areaFlipDeg": 89.99999999999999,
+      "nominalBandwidthHz": 1000,
+      "nominalThicknessMm": 4.69731898348856,
+      "center": {
+        "zMm": 0,
+        "offResHz": 0,
+        "x": 0,
+        "y": 0.9999999999999974,
+        "z": -2.8542280758797394e-15,
+        "magnitude": 0.9999999999999974,
+        "norm": 0.9999999999999974,
+        "idealMagnitude": 1
+      }
+    },
+    {
+      "options": {
+        "durationMs": 4,
+        "flipDeg": 30,
+        "gradientMilliTPerM": 10
+      },
+      "peakB1MicroT": 2.1678843633060105,
+      "areaFlipDeg": 29.99999999999997,
+      "nominalBandwidthHz": 1000,
+      "nominalThicknessMm": 2.34865949174428,
+      "center": {
+        "zMm": 0,
+        "offResHz": 0,
+        "x": 0,
+        "y": 0.5000000000000027,
+        "z": 0.8660254037844378,
+        "magnitude": 0.5000000000000027,
+        "norm": 1.0000000000000004,
+        "idealMagnitude": 0.49999999999999994
+      }
+    }
+  ]
+}

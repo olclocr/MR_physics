@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-17",
+  "cases": 36,
+  "positions": 4320,
+  "max": {
+    "magnetization": 6.103728633632954e-13,
+    "signal": 3.051864316816477e-13,
+    "ratio": 1.4910739309925702e-10,
+    "mean": 3.0539459849876494e-13,
+    "count": 0
+  },
+  "examples": [
+    {
+      "options": {
+        "velocityCmS": 10,
+        "trMs": 20,
+        "flipDeg": 30
+      },
+      "displacementMm": 2,
+      "staticSignal": 0.055730956046724095,
+      "freshSignal": 0.49999999999999994,
+      "meanSignal": 0.23748071368959905,
+      "entrance": {
+        "index": 0,
+        "positionMm": 0.125,
+        "previousRF": 0,
+        "beforeRF": 1,
+        "signal": 0.49999999999999994,
+        "ratioToStatic": 8.971674549792517
+      },
+      "exit": {
+        "index": 119,
+        "positionMm": 29.875,
+        "previousRF": 14,
+        "beforeRF": 0.20538438388903502,
+        "signal": 0.1026921919445175,
+        "ratioToStatic": 1.8426418498620716
+      }
+    },
+    {
+      "options": {
+        "velocityCmS": 5,
+        "trMs": 20,
+        "flipDeg": 30
+      },
+      "displacementMm": 1,
+      "staticSignal": 0.055730956046724095,
+      "freshSignal": 0.49999999999999994,
+      "meanSignal": 0.15478727392532282,
+      "entrance": {
+        "index": 0,
+        "positionMm": 0.125,
+        "previousRF": 0,
+        "beforeRF": 1,
+        "signal": 0.49999999999999994,
+        "ratioToStatic": 8.971674549792517
+      },
+      "exit": {
+        "index": 119,
+        "positionMm": 29.875,
+        "previousRF": 29,
+        "beforeRF": 0.11991772506463712,
+        "signal": 0.05995886253231855,
+        "ratioToStatic": 1.075862802031421
+      }
+    },
+    {
+      "options": {
+        "velocityCmS": 10,
+        "trMs": 20,
+        "flipDeg": 60
+      },
+      "displacementMm": 2,
+      "staticSignal": 0.028162791752218207,
+      "freshSignal": 0.8660254037844386,
+      "meanSignal": 0.13805873143255776,
+      "entrance": {
+        "index": 0,
+        "positionMm": 0.125,
+        "previousRF": 0,
+        "beforeRF": 1,
+        "signal": 0.8660254037844386,
+        "ratioToStatic": 30.750694441229435
+      },
+      "exit": {
+        "index": 119,
+        "positionMm": 29.875,
+        "previousRF": 14,
+        "beforeRF": 0.03256635212921817,
+        "signal": 0.028203288252492378,
+        "ratioToStatic": 1.0014379433910696
+      }
+    },
+    {
+      "options": {
+        "velocityCmS": 0,
+        "trMs": 20,
+        "flipDeg": 30
+      },
+      "displacementMm": 0,
+      "staticSignal": 0.055730956046724095,
+      "freshSignal": 0.49999999999999994,
+      "meanSignal": 0.055730956046724074,
+      "entrance": {
+        "index": 0,
+        "positionMm": 0.125,
+        "previousRF": null,
+        "beforeRF": 0.1114619120934482,
+        "signal": 0.055730956046724095,
+        "ratioToStatic": 1
+      },
+      "exit": {
+        "index": 119,
+        "positionMm": 29.875,
+        "previousRF": null,
+        "beforeRF": 0.1114619120934482,
+        "signal": 0.055730956046724095,
+        "ratioToStatic": 1
+      }
+    }
+  ]
+}

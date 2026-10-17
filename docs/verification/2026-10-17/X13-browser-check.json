@@ -1,0 +1,102 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 18,
+  "keyboard": true,
+  "quiz": true,
+  "sources": true,
+  "qualitativeClaims": "H01-H06; no new quantitative model",
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "state": "intracellular",
+      "view": "t1"
+    },
+    {
+      "width": 1920,
+      "state": "intracellular",
+      "view": "t2"
+    },
+    {
+      "width": 1920,
+      "state": "intracellular",
+      "view": "gre"
+    },
+    {
+      "width": 1920,
+      "state": "free-dense",
+      "view": "t1"
+    },
+    {
+      "width": 1920,
+      "state": "free-dense",
+      "view": "t2"
+    },
+    {
+      "width": 1920,
+      "state": "free-dense",
+      "view": "gre"
+    },
+    {
+      "width": 1920,
+      "state": "free-dilute",
+      "view": "t1"
+    },
+    {
+      "width": 1920,
+      "state": "free-dilute",
+      "view": "t2"
+    },
+    {
+      "width": 1920,
+      "state": "free-dilute",
+      "view": "gre"
+    },
+    {
+      "width": 390,
+      "state": "intracellular",
+      "view": "t1"
+    },
+    {
+      "width": 390,
+      "state": "intracellular",
+      "view": "t2"
+    },
+    {
+      "width": 390,
+      "state": "intracellular",
+      "view": "gre"
+    },
+    {
+      "width": 390,
+      "state": "free-dense",
+      "view": "t1"
+    },
+    {
+      "width": 390,
+      "state": "free-dense",
+      "view": "t2"
+    },
+    {
+      "width": 390,
+      "state": "free-dense",
+      "view": "gre"
+    },
+    {
+      "width": 390,
+      "state": "free-dilute",
+      "view": "t1"
+    },
+    {
+      "width": 390,
+      "state": "free-dilute",
+      "view": "t2"
+    },
+    {
+      "width": 390,
+      "state": "free-dilute",
+      "view": "gre"
+    }
+  ]
+}

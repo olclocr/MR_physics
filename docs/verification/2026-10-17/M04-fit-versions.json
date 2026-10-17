@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W57 known-basis six-echo nonnegative water/fat coefficients; own report excluded",
+  "files": [
+    {
+      "path": "docs/complex_echo_water_fat_fit.html",
+      "sha256": "ED9F4D393A9121F8E05BB47B45F22B6F2C6E74B69E7D7C3CA47C3DAF214DB713"
+    },
+    {
+      "path": "docs/assets/complex-fat-fit-model.js",
+      "sha256": "FF6313DCD2B117E18A736236756D689DF3928B1F70BB2DCF25484878A39B756C"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/pdff-echo-model.js",
+      "sha256": "775074FD6B33BE9BA90711F254337F5EA3D142CC44F19F735668475A6C41A085"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/complex-fat-fit.test.cjs",
+      "sha256": "9FD14227E2DF99EF5291AC3D603B76DB40EC48C3ACA1612D331DE791BCBD521A"
+    },
+    {
+      "path": "tests/helpers/complex-fat-fit-reference.cjs",
+      "sha256": "A329D8C1A16CAC6055D66510D3D71AA321DA491BE00F09E3617A6B9110A302F7"
+    },
+    {
+      "path": "tests/helpers/pdff-echo-reference.cjs",
+      "sha256": "5E4C66050409945C5CD122A23FC4C87B6B93AF6B153BF5B9AF9657773724348D"
+    },
+    {
+      "path": "tests/helpers/dixon-reference.cjs",
+      "sha256": "8C4A20BF39AB71E640630EB94815F1A1CB1A405E80235BA7F867043F585DB4C6"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-numerical.cjs",
+      "sha256": "4C641AA83871A7D642F71D06083741DE779114FE5DAE06AFB4A477B4CB97FBEF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-numerical.json",
+      "sha256": "B0A4D4209C150765A0664C80E7DA1A0CAAB79D3616A7FE70DDA0790BA81DC995"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-display-reference.json",
+      "sha256": "D8C46D965059A6DB11D2CD9C5681C046231567CBF043B59834F183FBA6A8E98C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-browser-check.js",
+      "sha256": "5E5CDFC5C294A2A1D68215ECF86550FEEEA6828135B7C46FFF3CEFB54D96B3FD"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-browser-check.json",
+      "sha256": "ED93156190E60D83EE1866D3F05DBC965CDD4A465A587F03A801AEB6C201CC5F"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁</title><link rel="stylesheet" href="assets/ir-lesson.css">
+<style>.layout>*{min-width:0}.metrics output{font-size:18px}.table-scroll{overflow:auto;max-height:350px}.table-scroll table{min-width:650px}.table-scroll th,.table-scroll td{padding:8px;white-space:nowrap}.table-scroll thead th{position:sticky;top:0;background:white;z-index:1}.current-row{background:#edf3ff}.small,.note{overflow-wrap:anywhere}@media(max-width:760px){.metrics output{display:block;margin-left:0}}</style></head>
+<body><main><nav><a href="index.html">학습 목록</a><a href="spoiled_gre.html">C06 · Spoiled GRE</a><a href="t2star_mapping.html">M03 · T2*와 R2*</a><a href="ecv_r1_partition.html">M02 · R1과 농도</a></nav>
+<header><p class="tag">X05 기본 · 직접 정의한 선형 이완률 · 단일 voxel</p>
+<h1>조영 농도가 늘면 GRE 신호도 계속 커질까요?</h1>
+<p>T1 단축은 반복 RF 사이의 회복을 늘릴 수 있지만, T2* 단축은 읽기 전까지 남은 횡자화를 줄입니다. 두 효과를 같은 농도 모형과 같은 GRE에서 비교합니다.</p>
+<p>목표: 이완률의 기울기와 농도의 단위를 연결하고, 신호의 비단조 변화와 TE·flip의 역할을 설명합니다.</p>
+<details><summary>선행 · 교육용 값과 독립적인 정상상태 조건</summary>
+<p><a href="spoiled_gre.html">C06</a>의 이상적 spoiled GRE입니다. TR20ms, 정확한 순간 RF, 완전한 횡성분 spoiling, 균일한 flip, M0/PD1, 잡음0을 고정합니다. 각 농도 조건에서 따로 정상상태에 도달한 신호를 계산합니다. 농도 축은 시간 축이 아니며 bolus 주입 후 변화를 추적하는 실험이 아닙니다.</p>
+<p>모형 농도 C는0…4mM이고, R1=1+4C s⁻¹, R2*=25+20C s⁻¹로 직접 정의합니다. T1(ms)=1000/R1, T2*(ms)=1000/R2*입니다. 이 숫자는 특정 약제·조직·field의 측정값이나 투여량/권장 농도가 아닙니다. 혈장/구획 분배와 교환도 계산하지 않습니다.</p>
+<p>기울기 r1=4, 유효 r2*=20의 단위는 s⁻¹mM⁻¹입니다. 여기 r2*는 T2 실험의 r2를 가져온 값이 아닙니다. 실제 T2*는 미세환경과 자화율 분포 등에도 좌우되므로 이 단순 선형 범위를 실제 환자에 적용하지 않습니다.</p></details></header>
+<section class="card"><h2>세 가지 관찰</h2><ol class="tasks">
+<li>기본 C1에서4mM로 올리면 T1과 실제 계산 신호는?<button id="exampleHigh">C4mM · TE8ms</button></li>
+<li>C4mM를 유지하고 TE8→16ms로 늘리면 C0 기준보다도 어두워질까요?<button id="exampleLong">C4mM · TE16ms</button></li>
+<li>같은 C1/TE8ms에서 flip을5°로 줄이면 두 효과의 상대적인 영향은?<button id="exampleLowFlip">C1mM · flip5°</button></li>
+</ol></section>
+<section class="layout"><aside class="card"><h2>모형 농도와 읽기 조건</h2>
+<div class="control"><label for="concentrationControl">모형 농도 C (mM)</label><select id="concentrationControl"><option value="0">0</option><option value="0.25">0.25</option><option value="0.5">0.5</option><option value="1">1</option><option value="2">2</option><option value="4">4</option></select></div>
+<div class="control"><label for="teControl">TE (ms) · TR20ms 고정</label><select id="teControl"><option value="2">2</option><option value="8">8</option><option value="16">16</option></select></div>
+<div class="control"><label for="flipControl">실제 flip (°)</label><select id="flipControl"><option value="5">5</option><option value="15">15</option><option value="30">30</option></select></div>
+<button id="reset">초기화</button><p class="small">기본 C1mM/TE8ms/flip15°. 모든 조건에서 TR20ms와 M0=1을 유지하고 같은0…0.5 신호 창을 사용합니다. C0 기준은 선택한TE/flip과 같은 조건입니다.</p></aside>
+<div class="card"><h2>회복의 이득과 횡성분의 손실</h2>
+<svg id="concentrationGraphic" role="img" aria-label="농도별 T1 T2star 동시 변화 신호와 T1만 변하는 참조"></svg>
+<p class="small">파랑: T1·T2*가 함께 변하는 신호. 보라 점선: 같은 T1에서 R2* 증가항만0인 가상 참조. 원: 선택 농도의 각 신호. 농도0…4mM/상대 신호0…0.5 고정. 선은161개 표시 표본을 연결하며 농도/시간 자료를 새로 획득한 것이 아닙니다.</p>
+<div class="metrics"><p>모형 T1 <output id="t1Output"></output></p><p>모형 T2* <output id="t2Output"></output></p><p>T1·T2* 동시 변화 신호 <output id="signalOutput"></output></p><p>T1만 변하는 가상 참조 <output id="referenceOutput"></output></p><p>같은TE/flip의 C0 신호 <output id="baselineOutput"></output></p><p>선택 신호 / C0 신호 <output id="ratioOutput"></output></p></div>
+<p id="status" class="note" aria-live="polite"></p>
+<button id="showCurrentRow">표에서 선택 농도 보기</button>
+<div class="table-scroll" tabindex="0" role="region" aria-label="농도별 이완시간과 GRE 신호 원값 표"><table><caption>161개 계산 표본 · 선택 C 행은 옅은 파랑 · 옆/아래로 스크롤하세요.</caption><thead><tr><th>C(mM)</th><th>T1(ms)</th><th>T2*(ms)</th><th>동시 신호</th><th>T1 참조</th><th>S/S(C0)</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div></section>
+<section class="card"><h2>짧은 T1만으로 최종 밝기를 결정할 수 없습니다</h2>
+<p>T1이 짧아지면 이 반복의 RF 전 종자화가 커집니다. 그러나 읽을 때의 신호에는 exp(−TE/T2*)도 곱해집니다. 농도가 높아질 때 두 기전이 함께 변하므로, 곡선에 신호가 증가하는 구간과 감소하는 구간이 생길 수 있습니다.</p>
+<p>보라 참조선은 다른 실제 조영제가 아닙니다. T1은 파란 선과 같고, 농도에 따른 R2* 증가항만 제거한 비교입니다. 두 선 사이의 차이로 이번 모형의 추가 횡감쇠를 분리해 봅니다. Flip을 바꾸면 같은 T1 차이가 신호에 반영되는 정도도 달라집니다.</p>
+<details><summary>계산식 · 단위 · 중복 감쇠 방지</summary><p class="formula">R1(C)=1+4C (s⁻¹)<br>R2*(C)=25+20C (s⁻¹)<br>E1=exp(−TR/T1)<br>Mz_beforeRF=(1−E1)/(1−E1 cosα)<br>S(C)=Mz_beforeRF sinα exp[−TE초 R2*(C)]<br>S_T1참조=Mz_beforeRF sinα exp(−TE초×25)<br>S/S_T1참조=exp(−TE초×20C)</p>
+<p>지수의 TR/T1은 같은 시간 단위끼리 나눈 무차원 비입니다. 표시 T1/T2*는 ms이며 R1/R2*는 s⁻¹이므로 T(ms)=1000/R(s⁻¹)로 변환합니다. 기울기 s⁻¹mM⁻¹×농도 mM은 이완률 s⁻¹입니다. 농도 대신 T1 자체를 선형으로 줄이는 식을 쓰지 않습니다.</p>
+<p>C06의 동일한 RF/정상상태 성분을 재사용하고, 그 모형의 고정 TE 감쇠를 제거한 뒤 여기의 TE/T2* 감쇠를 한 번만 적용합니다. 기준 신호는 같은TE/flip의 C0입니다. C0로 나눈 비율을 표시해도 그래프/원표의 신호 창을 조건마다 다시 정규화하지 않습니다.</p></details></section>
+<section class="card"><h2>오개념과 확인 문제</h2><p><b>“조영 농도가 높아져 T1이 짧아지면 언제나 더 밝다.”</b> → 같은 농도에서 변하는 T2*와 TE·flip 조건도 함께 확인하세요.</p>
+<div class="quiz"><h3>이번 C4/TE16ms/flip15° 예시에서 T1이 더 짧아도 C0보다 신호가 낮을 수 있는 이유는?</h3><button id="quizSignalCorrect">늘어난 횡감쇠가 회복 이득을 넘기 때문이다</button><button id="quizSignalWrong">T1이 짧아졌으므로 그런 결과는 불가능하다</button><p id="signalFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p>
+<h3>보라색 “T1 참조”는 무엇인가요?</h3><button id="quizReferenceWrong">실제로 측정한 다른 약제의 권장 농도 곡선</button><button id="quizReferenceCorrect">같은 R1에서 R2* 증가항만0으로 둔 가상 비교</button><p id="referenceFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p></div></section>
+<section class="card"><h2>근거와 다음 질문</h2>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/16230904/?dopt=Abstract">Rohrer 등2005</a>의 원전 초록과 본문에서 이완률 차이/농도의 기울기, field·용매·선형 범위의 조건을 확인했습니다. 그 논문은 T1/T2 실험이며 여기의 유효r2*=20이나0…4mM 범위를 검증한 자료로 쓰지 않습니다. 숫자는 교육용 정의입니다. GRE의 반복/정상상태 가정은 <a href="spoiled_gre.html">C06</a>과 같습니다.</p>
+<p>실제 bolus의 농도는 어떻게 변할까요? 조직/혈관 구획이나 water exchange가 있으면? 실제 약제·용량/투여시간·미세환경·환자 최적 조건/안전·동태/관류·CNR/진단·subtraction은 남은 범위입니다. 이 페이지의 신호 곡선을 주입 프로토콜이나 환자 농도 역산에 사용하지 않습니다.</p>
+<p><a href="verification/2026-10-17/X05-physics.html">독립 회전/회복·신호·화면 검증</a> · <a href="learning-roadmap.md">로드맵</a></p></section>
+</main><script src="assets/spoiled-gre-model.js"></script><script src="assets/contrast-concentration-model.js"></script><script>
+'use strict';const M=ContrastConcentration,el=id=>document.getElementById(id),fmt=v=>(Math.abs(v)<.5e-6?0:v).toFixed(6),controls=[['concentrationControl','concentrationMm'],['teControl','teMs'],['flipControl','flipDeg']];let state={...M.defaults};
+function render(){
+  const r=M.calculate(state);window.lessonResult=r;for(const [id,key]of controls)el(id).value=String(state[key]);
+  for(const [id,value,unit]of [['t1Output',r.current.t1Ms,' ms'],['t2Output',r.current.t2StarMs,' ms'],['signalOutput',r.current.signal,''],['referenceOutput',r.current.t1Only,''],['baselineOutput',r.baseline.signal,''],['ratioOutput',r.current.ratio,' 배']])el(id).textContent=fmt(value)+unit;
+  el('status').textContent='각 농도별 독립 정상상태 · TR20ms. '+(r.current.ratio<1?'이 조건의 선택 신호는 같은TE/flip의 C0보다 작습니다.':'이 조건의 선택 신호는 같은TE/flip의 C0 이상입니다.')+' T1과 T2* 효과 및 가상 참조를 함께 비교하세요.';
+  el('rows').innerHTML=r.curve.map(p=>'<tr'+(Math.abs(p.concentrationMm-state.concentrationMm)<1e-12?' class="current-row"':'')+'><th>'+p.concentrationMm.toFixed(3)+'</th>'+[p.t1Ms,p.t2StarMs,p.signal,p.t1Only,p.ratio].map(v=>'<td>'+fmt(v)+'</td>').join('')+'</tr>').join('');
+  const svg=el('concentrationGraphic'),width=Math.max(260,svg.getBoundingClientRect().width),left=44,right=width-16,span=right-left,x=c=>left+c/4*span,y=s=>210-s/.5*180;svg.setAttribute('viewBox',`0 0 ${width} 265`);
+  let g=`<g font-size="12" fill="#52657e"><text x="${left}" y="17">신호 / M0</text><path d="M${left} 30V210H${right}" fill="none" stroke="#a9c0e7"/>`;
+  for(const v of [0,.25,.5])g+=`<text x="${left-5}" y="${y(v)+4}" text-anchor="end">${v}</text>`;
+  for(const [key,color,dash]of [['t1Only','#7c3aed','4 4'],['signal','#245cf6','']])g+=`<polyline data-curve="${key}" points="${r.curve.map(p=>x(p.concentrationMm)+','+y(p[key])).join(' ')}" fill="none" stroke="${color}" stroke-width="2" stroke-dasharray="${dash}"/><circle data-current="${key}" cx="${x(state.concentrationMm)}" cy="${y(r.current[key])}" r="4" fill="white" stroke="${color}" stroke-width="2"/>`;
+  for(const c of [0,2,4])g+=`<text x="${x(c)}" y="245" text-anchor="${c===0?'start':c===4?'end':'middle'}">${c}${c===4?' mM · C':''}</text>`;
+  svg.innerHTML=g+'</g>';
+}
+function reset(type){state={...M.defaults};if(type==='high')state.concentrationMm=4;if(type==='long'){state.concentrationMm=4;state.teMs=16;}if(type==='low')state.flipDeg=5;for(const id of ['signalFeedback','referenceFeedback'])el(id).textContent='답을 선택해 이유를 확인하세요.';render();}
+for(const [id,key]of controls)el(id).addEventListener('change',()=>{state[key]=Number(el(id).value);render();});for(const [id,type]of [['reset','base'],['exampleHigh','high'],['exampleLong','long'],['exampleLowFlip','low']])el(id).addEventListener('click',()=>reset(type));
+el('showCurrentRow').addEventListener('click',()=>el('rows').querySelector('.current-row').scrollIntoView({block:'nearest',inline:'nearest'}));
+for(const [id,target,text]of [['quizSignalCorrect','signalFeedback','맞습니다. 이번 모형에서는 고농도/긴TE의 추가 횡감쇠 때문에 회복 이득이 최종 신호 증가를 보장하지 않습니다.'],['quizSignalWrong','signalFeedback','최종GRE신호에는 TE/T2*의 감쇠도 곱합니다. T1만으로 밝기를 정할 수 없습니다.'],['quizReferenceCorrect','referenceFeedback','맞습니다. R1과RF/회복은 그대로 두고 R2*의농도증가항만 제거한 가상비교입니다.'],['quizReferenceWrong','referenceFeedback','참조선은 실제약제의측정/권장곡선이 아닙니다. 교육모형에서한기전의영향을구별합니다.']])el(id).addEventListener('click',()=>el(target).textContent=text);
+window.addEventListener('resize',render);render();
+</script></body></html>

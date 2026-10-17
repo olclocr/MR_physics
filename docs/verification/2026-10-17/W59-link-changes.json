@@ -1,0 +1,464 @@
+{
+  "date": "2026-10-17",
+  "reports": 65,
+  "sourceLinksChanged": 91,
+  "uniqueSources": 89,
+  "onlyExistingSourceAnchorTargetsChanged": true,
+  "changed": [
+    {
+      "report": "docs/verification/2026-10-14/index.html",
+      "before": "../../../scripts/README.md",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/scripts/README.md"
+    },
+    {
+      "report": "docs/verification/2026-10-14/contrast-chapter.html",
+      "before": "../../../tests/contrast_weighting.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/contrast_weighting.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C01-physics.html",
+      "before": "../../../tests/helpers/contrast-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/contrast-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/B02-physics.html",
+      "before": "../../../tests/helpers/rf-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/rf-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/B02-physics.html",
+      "before": "../../../tests/helpers/rf-page-harness.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/rf-page-harness.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C02-physics.html",
+      "before": "../../../tests/helpers/echo-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/echo-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C03-physics.html",
+      "before": "../../../tests/helpers/dephasing-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/dephasing-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/B05-physics.html",
+      "before": "../../../tests/helpers/kspace-fft-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/kspace-fft-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/G01-physics.html",
+      "before": "../../../tests/helpers/fov-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/fov-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/G02-physics.html",
+      "before": "../../../tests/helpers/slice-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/slice-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/Q01-physics.html",
+      "before": "../../../tests/helpers/noise-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/noise-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/B00-physics.html",
+      "before": "../../../tests/wheel-precession.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/wheel-precession.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C04-physics.html",
+      "before": "../../../tests/helpers/ir-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/ir-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C05-physics.html",
+      "before": "../../../tests/helpers/echo-train-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/echo-train-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/G03-physics.html",
+      "before": "../../../tests/helpers/volume-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/volume-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/Q02-physics.html",
+      "before": "../../../tests/helpers/bandwidth-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/bandwidth-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/Q03-physics.html",
+      "before": "../../../tests/helpers/scan-time-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/scan-time-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C06-physics.html",
+      "before": "../../../tests/helpers/gre-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/gre-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/C07-physics.html",
+      "before": "../../../tests/helpers/epi-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/epi-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/Q04-physics.html",
+      "before": "../../../tests/helpers/parallel-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/parallel-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/F01-physics.html",
+      "before": "../../../tests/helpers/chemical-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/chemical-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/F02-physics.html",
+      "before": "../../../tests/helpers/dixon-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/dixon-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/F03-physics.html",
+      "before": "../../../tests/helpers/saturation-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/saturation-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/F04-physics.html",
+      "before": "../../../tests/helpers/fat-comparison-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/fat-comparison-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/D01-physics.html",
+      "before": "../../../tests/helpers/diffusion-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/diffusion-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/D02-physics.html",
+      "before": "../../../tests/helpers/adc-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/adc-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-15/F03-water-physics.html",
+      "before": "../../../tests/helpers/water-excitation-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/water-excitation-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/D03-physics.html",
+      "before": "../../../tests/helpers/dwi-epi-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/dwi-epi-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/S01-physics.html",
+      "before": "../../../tests/helpers/susceptibility-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/susceptibility-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/S01-swi-physics.html",
+      "before": "../../../tests/helpers/swi-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/swi-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/C08-physics.html",
+      "before": "../../../tests/helpers/bssfp-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/bssfp-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/C08-contrast-physics.html",
+      "before": "../../../tests/helpers/bssfp-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/bssfp-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/Q05-physics.html",
+      "before": "../../../tests/helpers/partial-fourier-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/partial-fourier-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-16/Q06-physics.html",
+      "before": "../../../tests/helpers/compressed-sensing-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/compressed-sensing-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/Q07-physics.html",
+      "before": "../../../tests/helpers/sms-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/sms-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/Q07-physics.html",
+      "before": "../../../tests/sms.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/sms.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A01-physics.html",
+      "before": "../../../tests/helpers/aliasing-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/aliasing-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A01-physics.html",
+      "before": "../../../tests/aliasing.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/aliasing.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A02-physics.html",
+      "before": "../../../tests/helpers/motion-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/motion-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A02-physics.html",
+      "before": "../../../tests/motion.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/motion.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A03-physics.html",
+      "before": "../../../tests/helpers/ringing-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/ringing-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A03-physics.html",
+      "before": "../../../tests/ringing.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/ringing.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A04-physics.html",
+      "before": "../../../tests/helpers/chemical-artifact-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/chemical-artifact-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A04-physics.html",
+      "before": "../../../tests/chemical-artifact.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/chemical-artifact.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A05-physics.html",
+      "before": "../../../tests/helpers/field-distortion-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/field-distortion-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A05-physics.html",
+      "before": "../../../tests/field-distortion.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/field-distortion.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A06-physics.html",
+      "before": "../../../tests/helpers/shading-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/shading-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/A06-physics.html",
+      "before": "../../../tests/shading.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/shading.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M01-physics.html",
+      "before": "../../../tests/helpers/t2-fit-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/t2-fit-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M01-physics.html",
+      "before": "../../../tests/t2-fit.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/t2-fit.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M01-limits-physics.html",
+      "before": "../../../tests/fixtures/t2-noise-realizations.json",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/fixtures/t2-noise-realizations.json"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M01-limits-physics.html",
+      "before": "../../../tests/helpers/t2-limits-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/t2-limits-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M01-limits-physics.html",
+      "before": "../../../tests/t2-limits.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/t2-limits.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M02-physics.html",
+      "before": "../../../tests/helpers/t1-fit-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/t1-fit-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M02-physics.html",
+      "before": "../../../tests/t1-fit.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/t1-fit.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M03-physics.html",
+      "before": "../../../tests/helpers/t2star-fit-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/t2star-fit-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M03-physics.html",
+      "before": "../../../tests/t2star-fit.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/t2star-fit.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M04-physics.html",
+      "before": "../../../tests/helpers/gre-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/gre-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M04-physics.html",
+      "before": "../../../tests/helpers/pdff-t1-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/pdff-t1-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M04-physics.html",
+      "before": "../../../tests/pdff-t1.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/pdff-t1.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M04-echo-physics.html",
+      "before": "../../../tests/helpers/pdff-echo-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/pdff-echo-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M04-echo-physics.html",
+      "before": "../../../tests/pdff-echo.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/pdff-echo.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N01-physics.html",
+      "before": "../../../tests/helpers/fid-spectrum-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/fid-spectrum-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N01-physics.html",
+      "before": "../../../tests/fid-spectrum.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/fid-spectrum.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N02-physics.html",
+      "before": "../../../tests/helpers/spectral-line-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/spectral-line-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N02-physics.html",
+      "before": "../../../tests/spectral-line.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/spectral-line.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N03-physics.html",
+      "before": "../../../tests/helpers/mrs-localization-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/mrs-localization-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N03-physics.html",
+      "before": "../../../tests/mrs-localization.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/mrs-localization.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/E01-physics.html",
+      "before": "../../../tests/helpers/shear-wave-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/shear-wave-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/E01-physics.html",
+      "before": "../../../tests/shear-wave.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/shear-wave.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/E01-encoding-physics.html",
+      "before": "../../../tests/helpers/mre-motion-encoding-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/mre-motion-encoding-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/E01-encoding-physics.html",
+      "before": "../../../tests/mre-motion-encoding.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/mre-motion-encoding.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/E02-physics.html",
+      "before": "../../../tests/helpers/mre-inversion-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/mre-inversion-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/E02-physics.html",
+      "before": "../../../tests/mre-inversion.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/mre-inversion.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/S02-physics.html",
+      "before": "../../../tests/helpers/qsm-dipole-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/qsm-dipole-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/S02-physics.html",
+      "before": "../../../tests/qsm-dipole.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/qsm-dipole.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI01-physics.html",
+      "before": "../../../tests/helpers/reconstruction-roles-noise.json",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/reconstruction-roles-noise.json"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI01-physics.html",
+      "before": "../../../tests/helpers/reconstruction-roles-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/reconstruction-roles-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI01-physics.html",
+      "before": "../../../tests/reconstruction-roles.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/reconstruction-roles.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-physics.html",
+      "before": "../../../tests/helpers/structure-evaluation-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/structure-evaluation-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-physics.html",
+      "before": "../../../tests/helpers/structure-evaluation-noise.json",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/structure-evaluation-noise.json"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-physics.html",
+      "before": "../../../tests/structure-evaluation.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/structure-evaluation.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-t2-physics.html",
+      "before": "../../../tests/helpers/processed-t2-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/processed-t2-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-t2-physics.html",
+      "before": "../../../tests/processed-t2.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/processed-t2.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-noise-physics.html",
+      "before": "../../../tests/helpers/ensemble-noise-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/ensemble-noise-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-noise-physics.html",
+      "before": "../../../tests/helpers/ensemble-noise-input.json",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/ensemble-noise-input.json"
+    },
+    {
+      "report": "docs/verification/2026-10-17/AI03-noise-physics.html",
+      "before": "../../../tests/ensemble-noise.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/ensemble-noise.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N03-field-physics.html",
+      "before": "../../../tests/helpers/mrs-field-distribution-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/mrs-field-distribution-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/N03-field-physics.html",
+      "before": "../../../tests/mrs-field-distribution.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/mrs-field-distribution.test.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M02-ecv-physics.html",
+      "before": "../../../tests/helpers/ecv-partition-reference.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/ecv-partition-reference.cjs"
+    },
+    {
+      "report": "docs/verification/2026-10-17/M02-ecv-physics.html",
+      "before": "../../../tests/ecv-partition.test.cjs",
+      "after": "https://github.com/olclocr/MR_physics/blob/main/tests/ecv-partition.test.cjs"
+    }
+  ]
+}

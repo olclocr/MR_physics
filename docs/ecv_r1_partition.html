@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M02 후속 · R1 변화와 ECV 분배</title><link rel="stylesheet" href="assets/ir-lesson.css">
+<style>.layout>*{min-width:0}.metrics output{font-size:18px}.table-scroll{overflow:auto}.table-scroll table{min-width:650px}.table-scroll th,.table-scroll td{padding:9px 8px;white-space:nowrap}.note,.small{overflow-wrap:anywhere}@media(max-width:760px){.metrics output{display:block;margin-left:0}}</style></head>
+<body><main>
+<nav><a href="index.html">학습 목록</a><a href="t1_mapping_ir.html">M02 · T1 추정</a><a href="pdff_t1_bias.html">M04 · 신호와 분율</a></nav>
+<header><p class="tag">M02 후속 · 알려진 구획의 평형 분배 · 교육 모형</p>
+<h1>T1의 전후 변화와 hematocrit는 ECV 계산에 어떻게 들어갈까요?</h1>
+<p>조직과 혈액의 T1을 각각 역수로 바꾸고, 그 전후 변화의 비율을 비교합니다. 혈액 안의 혈장 부피를 고려하면 왜 hematocrit(Hct)가 필요한지 볼 수 있습니다.</p>
+<p>목표: T1과 R1 변화의 비율을 구별하고, 같은 자료에 넣는 Hct의 영향과 변화가 없는 자료의 한계를 설명합니다.</p>
+<details><summary>선행 · 단위 · 여기서 이미 아는 정답</summary>
+<p><a href="t1_mapping_ir.html">M02 기본</a>은 신호에서 T1을 추정했습니다. 여기서는 전후 T1을 정확히 안다고 가정하고 그다음 계산만 다룹니다. R1=1/T1은 종이완률이며 T1을 ms로 쓸 때 R1(s⁻¹)=1000/T1(ms)입니다. Δ는 post−native의 차이입니다. T1 자체의 전후 차이나 비율을 ΔR1 대신 쓰지 않습니다.</p>
+<p>가상 조직과 혈액을 각각 1cm³로 둡니다. 실제 모형 Hct는 40%로 고정하여 혈장 부피는 60%입니다. 조직의 세포외 분율 ECV가 정답입니다. 조영물질은 세포내에 들어가지 않고 평형에서 혈장과 조직 세포외의 농도가 같다고 가정합니다. 조직에서 접근 가능한 세포외 부피를 나타내며 간질과 혈관 내 혈장 부피를 따로 분리하지 않습니다.</p>
+<p>Native T1 조직1000/혈액1500ms, 두 매질의 공통 유효 relaxivity r1=4s⁻¹mM⁻¹는 교육값입니다. 빠른 물 교환으로 각 매질을 하나의 유효 R1으로 나타내고, R1 증가는 평균 농도에 선형이라고 둡니다. 실제 조직·약제·장비 값이나 임상 권장 범위가 아닙니다.</p>
+</details></header>
+<section class="card"><h2>세 가지 관찰</h2><ol class="tasks">
+<li>혈장 농도를 두 배로 하면 전후 T1과 ECV는 각각 어떻게 되나요?<button id="exampleDose">농도 2mM · 같은 정답 ECV</button></li>
+<li>이미 얻은 T1은 그대로 두고 계산용 Hct만 바꾸면?<button id="exampleHct">계산용 Hct 25%</button></li>
+<li>전후 변화가 모두0이면 그 비율로 ECV를 알 수 있나요?<button id="exampleZero">농도0 · 변화 없는 자료</button></li>
+</ol></section>
+<section class="layout"><aside class="card"><h2>가상 정답과 계산 조건</h2>
+<div class="control"><label for="ecvControl">조직의 정답 ECV (%)</label><select id="ecvControl"><option value="0.2">20</option><option value="0.3">30</option><option value="0.5">50</option></select></div>
+<div class="control"><label for="plasmaControl">평형 혈장 농도 (mM)</label><select id="plasmaControl"><option value="0">0</option><option value="0.5">0.5</option><option value="1">1</option><option value="2">2</option></select></div>
+<div class="control"><label for="hctControl">계산에 넣는 Hct (%)</label><select id="hctControl"><option value="0.25">25</option><option value="0.4">40 · 실제 모형과 일치</option><option value="0.55">55</option></select></div>
+<button id="reset">초기화</button><p class="small">기본: 정답30%, 혈장1mM, 계산용Hct40%. 실제 모형의 Hct40%는 고정입니다. 계산용 Hct 조작은 T1 자료를 새로 생성하지 않습니다.</p></aside>
+<div class="card"><h2>같은 부피에서 어디에 분포하나요?</h2>
+<svg id="volumeGraphic" role="img" aria-label="단위 부피 혈액과 조직의 접근 가능한 구획 분율"></svg>
+<p class="small" id="volumeText"></p>
+<div class="metrics"><p>ΔR1 조직 <output id="tissueOutput"></output></p><p>ΔR1 혈액 <output id="bloodOutput"></output></p><p>분배 비율 λ <output id="lambdaOutput"></output></p><p>계산 ECV <output id="ecvOutput"></output></p><p>모형의 정답 ECV <output id="truthOutput"></output></p><p>계산−정답 <output id="biasOutput"></output></p></div>
+<p id="status" class="note" aria-live="polite"></p>
+<h3>농도에 따라 함께 변하는 두 R1 변화</h3><svg id="partitionGraphic" role="img" aria-label="혈액과 조직 R1 변화의 관계와 선택 농도"></svg>
+<p class="small">파랑 선: 같은 정답 ECV에서 혈장 농도0…2mM의 모형. 주황 원: 선택 농도. 두 축 모두0…5s⁻¹ 고정입니다. Hct 입력만 바꾸면 선과 원은 그대로입니다. 원점에서 선택한 한 점의 변화 비율은0/0으로 정의되지 않습니다. 선은 정답을 알고 그린 모형이며 추가 측정 자료가 아닙니다.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="전후 T1과 R1 및 물질량 표"><table><caption>각 매질 1cm³ · 원값 표 · 작은 화면에서는 좌우로 스크롤하세요.</caption>
+<thead><tr><th>매질</th><th>분포 부피<br>(cm³)</th><th>양<br>(µmol)</th><th>평균 농도<br>(mM)</th><th>native T1<br>(ms)</th><th>post T1<br>(ms)</th><th>native R1<br>(s⁻¹)</th><th>post R1<br>(s⁻¹)</th><th>ΔR1<br>(s⁻¹)</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div></section>
+<section class="card"><h2>비율을 구하기 전에 무엇을 가정했는지 확인합니다</h2>
+<p>조직1cm³의 조영물질 양은 정답 ECV×혈장 농도이고, 혈액1cm³에서는 (1−실제Hct)×혈장 농도입니다. 1mM=1µmol/cm³이므로 이 곱은 각각의 양(µmol)입니다. 각 단위 부피로 나눈 평균 농도에 같은 유효 r1을 곱하면 R1 증가가 됩니다.</p>
+<p>농도가 양수이면 공통 농도와 r1이 변화의 비율에서 상쇄됩니다. 그러나 혈액의 혈장 비율을 보정할 Hct는 필요합니다. 이 모형에서 계산용 Hct를 낮게 넣으면 계산 ECV가 높아집니다. 조직 구획이 실제로 커진 것이 아니라, 같은 자료의 해석 조건이 바뀐 것입니다.</p>
+<details><summary>단위 · 보존식 · 계산식 · 분모0</summary><p class="formula">C조직평균 = ECV정답 × C혈장<br>C혈액평균 = (1−Hct실제) × C혈장<br>R1_post = R1_native + r1 C평균<br>ΔR1 = 1000/T1_post(ms) − 1000/T1_native(ms)<br>λ = ΔR1조직 / ΔR1혈액<br>ECV계산 = (1−Hct입력) λ<br>ECV계산(%) = 100 × ECV계산</p>
+<p>Hct는 식 안에서0…1 분율, 화면에서는 %입니다. 예를 들어40%=0.4이므로1−Hct=0.6입니다. r1의 단위는s⁻¹mM⁻¹, 농도는mM이므로 그 곱은s⁻¹입니다. 분율막대는0–100% 고정이며 실제 임상 영상이 아닌 교육 도식입니다.</p>
+<p>혈장 농도0에서는 두 ΔR1이 모두0입니다. λ와ECV를0으로 표시하지 않고 “정의 불가”로 둡니다. 이 결과가 정답 ECV0을 의미하지는 않습니다. 아주 작은 차이의 noise 증폭·음수 변화·실제 신호 추정 실패는 이 noiseless 메뉴 범위 밖이며 안정성을 검증한 것이 아닙니다.</p></details></section>
+<section class="card"><h2>오개념과 확인 문제</h2>
+<p><b>“Post T1이 더 짧아졌으니 ECV도 반드시 늘었다.”</b> → 혈장 농도만 늘려도 post T1은 짧아집니다. 같은 조건의 혈액 변화와 비율을 함께 보세요.</p>
+<div class="quiz"><h3>정답30%/Hct40%에서 혈장 농도1→2mM만 바꾸면?</h3><button id="quizDoseCorrect">T1은 변하지만 계산 ECV는30%를 유지한다</button><button id="quizDoseWrong">혈장 농도가 두 배이므로 ECV도60%다</button><p id="doseFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p>
+<h3>농도0에서 조직과 혈액의 ΔR1이 모두0이면?</h3><button id="quizZeroWrong">0/0을0으로 두어 ECV0%를 보고한다</button><button id="quizZeroCorrect">이 자료의 비율로는 ECV를 결정할 수 없다</button><p id="zeroFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p></div></section>
+<section class="card"><h2>근거와 다음 질문</h2>
+<p><a href="https://link.springer.com/article/10.1186/s12968-017-0389-8">Messroghli 등2017 SCMR/EACVI 합의문</a>의 Table1과 원리 설명에서 R1 전후 변화 비율·Hct 보정·ECV 퍼센트 표기를 확인했습니다. 이 페이지의 구획·T1·농도·유효relaxivity 숫자는 그 논문의 환자 자료를 재현한 것이 아닙니다.</p>
+<p>평형이 아니거나 교환이 느리면 어떤 일이 생길까요? Native/post 위치가 다르거나 T1 추정이 치우치면 어떨까요? 실제 조영제·투여량/측정 시점·MOLLI/임상map·환자Hct추정·신장기능·진단/정상cutoff는 이 모형의 범위 밖입니다. ECV를 질병명이나 섬유화만의 양으로 바꾸어 읽지 않습니다.</p>
+<p><a href="verification/2026-10-17/M02-ecv-physics.html">구획·이완·화면 검증</a> · <a href="learning-roadmap.md">남은 범위와 로드맵</a></p></section>
+</main><script src="assets/ecv-partition-model.js"></script><script>
+'use strict';
+const M=ECVPartition,el=id=>document.getElementById(id),fmt=v=>v.toFixed(6),controls=[['ecvControl','ecv'],['plasmaControl','plasmaMm'],['hctControl','analysisHct']];
+let state={...M.defaults};
+function render(){
+  const r=M.calculate(state);window.lessonResult=r;
+  for(const [id,key]of controls)el(id).value=String(state[key]);
+  el('tissueOutput').textContent=fmt(r.rows[0].deltaR1)+' s⁻¹';el('bloodOutput').textContent=fmt(r.rows[1].deltaR1)+' s⁻¹';
+  el('lambdaOutput').textContent=r.estimate.lambda===null?'정의 불가':fmt(r.estimate.lambda);
+  el('ecvOutput').textContent=r.estimate.ecv===null?'정의 불가':fmt(100*r.estimate.ecv)+'%';
+  el('truthOutput').textContent=fmt(100*state.ecv)+'%';
+  el('biasOutput').textContent=r.bias===null?'계산 불가':fmt(100*r.bias)+' percentage points';
+  el('status').textContent=r.estimate.ecv===null?'두 변화가0인 자료입니다. 정답 ECV는 존재하지만 이 한 쌍의 비율로는 결정할 수 없습니다.':'실제 모형 Hct40%, 계산용 Hct'+Math.round(100*state.analysisHct)+'%. '+(state.analysisHct===.4?'평형/동일 유효 r1 가정에서 정답 분율을 회복합니다.':'T1 자료는 그대로이며 Hct 입력 차이가 계산 분율에 반영됩니다.');
+  el('volumeText').textContent='혈액1cm³: 혈장0.6cm³·세포0.4cm³. 조직1cm³: 세포외'+fmt(state.ecv)+'cm³·나머지'+fmt(1-state.ecv)+'cm³. 색은 물질량이나 신호 밝기가 아닌 구획 구별입니다.';
+  el('rows').innerHTML=r.rows.map(p=>'<tr><th>'+(p.key==='tissue'?'조직':'혈액')+'</th>'+[p.accessibleFraction,p.amountUmol,p.meanConcentrationMm,p.preT1Ms,p.postT1Ms,p.preR1,p.postR1,p.deltaR1].map(v=>'<td>'+fmt(v)+'</td>').join('')+'</tr>').join('');
+  const width=Math.max(260,el('volumeGraphic').getBoundingClientRect().width),left=44,right=width-16,span=right-left;
+  const svg=el('volumeGraphic');svg.setAttribute('viewBox',`0 0 ${width} 185`);
+  svg.innerHTML=`<g font-size="12" fill="#52657e"><text x="${left}" y="22">혈액 1cm³ · 혈장60% / 세포40%</text><rect x="${left}" y="34" width="${span}" height="28" fill="#e5e7eb"/><rect data-fraction="plasma" x="${left}" y="34" width="${.6*span}" height="28" fill="#245cf6"/><text x="${left}" y="100">조직 1cm³ · 세포외${100*state.ecv}% / 나머지${100*(1-state.ecv)}%</text><rect x="${left}" y="112" width="${span}" height="28" fill="#e5e7eb"/><rect data-fraction="tissue" x="${left}" y="112" width="${state.ecv*span}" height="28" fill="#7c3aed"/><text x="${left}" y="174">각 막대 0–100% 고정 · 모형의 실제 구획</text></g>`;
+  const graph=el('partitionGraphic'),x=v=>left+v/5*span,y=v=>210-v/5*180;
+  graph.setAttribute('viewBox',`0 0 ${width} 280`);
+  let g=`<g font-size="12" fill="#52657e"><text x="${left}" y="20">ΔR1 조직 (s⁻¹)</text><path d="M${left} 30V210H${right}" fill="none" stroke="#a9c0e7"/>`;
+  for(const v of [0,2.5,5])g+=`<text x="${left-5}" y="${y(v)+4}" text-anchor="end">${v}</text><text x="${x(v)}" y="234" text-anchor="${v===0?'start':v===5?'end':'middle'}">${v}</text>`;
+  g+=`<polyline data-curve="partition" points="${r.curve.map(p=>x(p.deltaBlood)+','+y(p.deltaTissue)).join(' ')}" fill="none" stroke="#245cf6" stroke-width="2"/><circle data-current cx="${x(r.rows[1].deltaR1)}" cy="${y(r.rows[0].deltaR1)}" r="5" fill="white" stroke="#b64b24" stroke-width="3"/><text x="${right}" y="267" text-anchor="end">ΔR1 혈액 (s⁻¹)</text></g>`;
+  graph.innerHTML=g;
+}
+function reset(type){state={...M.defaults};if(type==='dose')state.plasmaMm=2;if(type==='hct')state.analysisHct=.25;if(type==='zero')state.plasmaMm=0;for(const id of ['doseFeedback','zeroFeedback'])el(id).textContent='답을 선택해 이유를 확인하세요.';render();}
+for(const [id,key]of controls)el(id).addEventListener('change',()=>{state[key]=Number(el(id).value);render();});
+for(const [id,type]of [['reset','base'],['exampleDose','dose'],['exampleHct','hct'],['exampleZero','zero']])el(id).addEventListener('click',()=>reset(type));
+for(const [id,target,text]of [['quizDoseCorrect','doseFeedback','맞습니다. 양쪽 ΔR1이 함께 두 배가 되어 그 비율과 계산 ECV는 유지됩니다.'],['quizDoseWrong','doseFeedback','T1의 변화와 분율은 다릅니다. 같은 Hct에서 양쪽 R1 변화가 함께 커지는지 확인하세요.'],['quizZeroCorrect','zeroFeedback','맞습니다. 0/0은 정의되지 않습니다. 이 자료가 정답 ECV0을 뜻하지는 않습니다.'],['quizZeroWrong','zeroFeedback','0/0을0으로 대체할 수 없습니다. 변화가 없는 자료에서 이 비율은 정보를 주지 못합니다.']])el(id).addEventListener('click',()=>el(target).textContent=text);
+window.addEventListener('resize',render);render();
+</script></body></html>

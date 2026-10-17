@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W56 finite sinc RF and pulse-end slice profile; own report excluded",
+  "files": [
+    {
+      "path": "docs/finite_rf_slice_profile.html",
+      "sha256": "26A3C858F7A2454543771CFE070A8C154571F75F01539DADAE1D3EB98DAC8861"
+    },
+    {
+      "path": "docs/assets/finite-slice-rf-model.js",
+      "sha256": "85405A9BF179203C8A56B6741670A3F7CFCEE638E3DBCAA303E9C14075F9BD83"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/finite-slice-rf.test.cjs",
+      "sha256": "2C6F691EC59A902A59CCC4D88BAE129C6CCDCC946A28DFB8D6D8665D22999CAD"
+    },
+    {
+      "path": "tests/helpers/finite-slice-rf-reference.cjs",
+      "sha256": "7D5791C13D06BD96AF4EA9AA8AF49996724EF30170529B340FA45EB1CF504005"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-numerical.cjs",
+      "sha256": "9EF9858E6A335A2788D3DCD132DFE82443BEA70E0D72DA42E631AAF7557DDDAF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-numerical.json",
+      "sha256": "32A812314D49D38E5DC06FEEBBB6226F988565EC3FA11BE825144996E3F2BEDB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-display-reference.json",
+      "sha256": "A8032DBAC679F5DF117399FEE64D30BE1B96453682C9D8444FBF95EF9D43FC64"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-browser-check.js",
+      "sha256": "10DA98E52110302EEEBD0D899E4976DDE6A1D42FC8D9042642B3C52B0D1BC870"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-browser-check.json",
+      "sha256": "AF112FA452FB4CF2B74E980942DF7AD61A2337593A078547B6F4B739364611BD"
+    }
+  ]
+}

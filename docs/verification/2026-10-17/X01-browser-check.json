@@ -1,0 +1,1273 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 180,
+  "maxGraphicError": 2.9296924822119763E-05,
+  "keyboard": true,
+  "range": true,
+  "quiz": true,
+  "table": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 1920,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": -10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 0,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 1,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 2,
+      "polarity": 1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": -1,
+      "index": 200
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 0
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 50
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 100
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 150
+    },
+    {
+      "width": 390,
+      "velocityCmS": 10,
+      "lobeMs": 3,
+      "polarity": 1,
+      "index": 200
+    }
+  ]
+}

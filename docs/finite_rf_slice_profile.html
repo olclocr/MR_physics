@@ -1,0 +1,71 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G02 후속 · 유한 RF와 slice profile</title><link rel="stylesheet" href="assets/ir-lesson.css">
+<style>.layout>*{min-width:0}.metrics output{font-size:18px}.table-scroll{overflow:auto;max-height:330px}.table-scroll table{min-width:610px}.table-scroll th,.table-scroll td{white-space:nowrap;padding:8px}.small,.note{overflow-wrap:anywhere}@media(max-width:760px){.metrics output{display:block;margin-left:0}}</style></head>
+<body><main><nav><a href="index.html">학습 목록</a><a href="slice_selection_partial_volume.html">G02 · 이상적 선택과 부분 용적</a><a href="proton_spin_rf_larmor_resonance.html">B02 · RF와 flip</a><a href="spectral_fat_saturation.html">F03 · 유한 RF</a></nav>
+<header><p class="tag">G02 후속 · 직접 정의한 sinc RF · 끝 직후 자화</p>
+<h1>유한 길이 RF로 고른 slice는 완전한 사각형일까요?</h1>
+<p>RF가 작용하는 동안 gradient 때문에 위치마다 공명 주파수가 다릅니다. 파형의 시간과 세기를 바꾸며, 같은 Bloch 회전이 위치마다 다른 횡자화와 종자화를 남기는 모습을 봅니다.</p>
+<p>목표: 명목 두께와 실제 계산 profile을 구별하고, duration·gradient·flip의 역할을 설명합니다.</p>
+<details><summary>선행 · 좌표와 자화 · 무엇을 읽는가?</summary>
+<p><a href="slice_selection_partial_volume.html">G02 기본</a>은 RF 범위 안을 완전히 선택하는 이상적 사각형으로 다뤘습니다. 여기서는 중심0의 일정한 Gz와 유한 sinc RF를 동시에 적용합니다. 초기 자화는 M=(0,0,1), M0=1입니다. +x방향 RF의 중심 회전은 +My를 만들며, 양의 잔여 주파수는 공통 모형의 음의 z회전을 따릅니다.</p>
+<p>관측은 RF 끝 직후입니다. Slice rephaser·echo·ADC를 계산하지 않습니다. 위치별 Mx/My가 달라 생기는 위상을 아직 모으지 않았으므로 |Mxy| profile을 전체 slice 신호나 실제 영상 밝기로 합쳐 읽지 않습니다.</p>
+<p>T1/T2∞, 추가 B0 offset0, 균일 B1·초기 밀도, 잡음0입니다. Gradient의 켜짐/꺼짐은 순간적이며 RF 동안만 일정합니다. 단일 pulse의 교육용 자화 도식이고 실제 장비 pulse/임상 영상이 아닙니다.</p></details></header>
+<section class="card"><h2>세 가지 관찰</h2><ol class="tasks">
+<li>같은 TBW와 중심 flip에서 RF를 길게 하면 진폭과 선택 폭은?<button id="exampleLong">8ms · 같은90°</button></li>
+<li>Gradient를 약하게 하면? 극성만 바꿨을 때 원값 Mx/My도 비교하세요.<button id="exampleGradient">+5mT/m · 같은 RF</button></li>
+<li>RF 진폭을 세 배로 하여30°→90°로 바꾸면 중심 |Mxy|도 세 배인가요?<button id="exampleFlip">30°에서 비교 시작</button></li>
+</ol></section>
+<section class="layout"><aside class="card"><h2>직접 정의한 pulse 조건</h2>
+<div class="control"><label for="durationControl">RF duration T (ms)</label><select id="durationControl"><option value="2">2</option><option value="4">4</option><option value="8">8</option></select></div>
+<div class="control"><label for="flipControl">중심 nominal flip (°)</label><select id="flipControl"><option value="30">30</option><option value="90">90</option></select></div>
+<div class="control"><label for="gradientControl">Gz (mT/m)</label><select id="gradientControl"><option value="-10">−10</option><option value="-5">−5</option><option value="5">+5</option><option value="10">+10</option></select></div>
+<button id="reset">초기화</button><p class="small">기본4ms/90°/+10mT/m. TBW4 파형과 중심 주파수0은 고정입니다. 중심 flip을 유지하도록 RF 면적을 맞추므로 duration만 늘려도 RF 진폭은 바뀝니다.</p></aside>
+<div class="card"><h2>유한 sinc RF와 위치별 응답</h2>
+<svg id="rfGraphic" role="img" aria-label="시간별 signed RF 진폭"></svg>
+<p class="small">파랑: 실제축 B1. 음의 부분은 RF 위상180°에 해당합니다. 시간0…8ms/진폭−20…20µT 고정이며 선택 duration 밖은 RF0입니다. 설정한 pulse 구간만 선으로 표시합니다.</p>
+<div class="metrics"><p>RF 중심 peak 진폭 <output id="peakOutput"></output></p><p>면적으로 확인한 중심 flip <output id="areaOutput"></output></p><p>명목 RF bandwidth <output id="bandwidthOutput"></output></p><p>명목 slice 두께 <output id="widthOutput"></output></p><p>중심 |Mxy| <output id="centerOutput"></output></p><p>중심 Mz <output id="mzOutput"></output></p></div>
+<p id="status" class="note" aria-live="polite"></p>
+<h3>RF 끝 직후 profile · 같은 M0 척도</h3><svg id="profileGraphic" role="img" aria-label="위치별 횡자화 크기와 종자화 및 이상적 참고"></svg>
+<p class="small">파랑=|Mxy|, 보라=Mz, 회색 점선=명목 두께에 놓은 이상적 |Mxy| 참고. 위치−10…10mm/자화−1…1 고정입니다. 연속선은201개 계산 표본을 연결한 것입니다. 명목 두께는 실제 FWHM이나 통과/차단 경계의 측정값이 아닙니다. 중심90°가 모든 위치의90°를 뜻하지 않으며, 이 파형은 일부 위치에서 Mz가 음수도 됩니다.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="위치별 주파수와 자화 원값 표"><table><caption>201개 위치 · 옆/아래로 스크롤해 위상 성분을 확인하세요.</caption><thead><tr><th>z (mm)</th><th>잔여 f (Hz)</th><th>Mx/M0</th><th>My/M0</th><th>Mz/M0</th><th>|Mxy|/M0</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div></section>
+<section class="card"><h2>명목 설계 척도와 계산한 자화는 구별합니다</h2>
+<p>정해진 모양의 RF를 시간축으로 늘리면 명목 주파수 폭이 줄어듭니다. 같은 주파수 폭도 gradient가 강하면 더 좁은 공간에 대응합니다. 그러나 유한 pulse를 적용한 자화가 정확한 사각형이 되는 것은 아닙니다. 통과 영역의 변화와 경계의 완만한 부분, 바깥 응답을 계산 곡선에서 비교하세요.</p>
+<p>중심에서는 모든 RF 구간이 같은 회전축을 가지므로 면적이 flip을 결정합니다. 초기 M0=1이면 중심 |Mxy|=sinα, Mz=cosα입니다.30°와90°의 RF 진폭 비는3이지만 중심 |Mxy|는0.5와1입니다.90° profile을 RF Fourier 변환의 선형 배수로 대신 계산하지 않습니다.</p>
+<details><summary>파형 · 단위 · 계산식과 이산화</summary><p class="formula">sinc(u)=sin(πu)/(πu), sinc(0)=1<br>B1(t)=A sinc[4(t/T−1/2)], 0≤t≤T<br>α=2πγ̄ ∫ B1(t)dt (rad)<br>BW_nominal=4/T초 (Hz)<br>Δf(z)=γ̄ Gz z<br>Δz_nominal=BW_nominal/(γ̄|Gz|)<br>dM/dt=γ M×B_eff</p>
+<p>γ̄=42.57747892Hz/µT이고 γ=2πγ̄입니다. mT/m×mm=µT이므로 Δf 계산에 이 조합을 사용합니다. 면적 적분에서 시간은초로 바꿉니다. 각 RF 구간은2048개 중점의 일정 field로 근사하고 공통 모형의 정확한 회전을 시간 순서대로 합성합니다. 연속 pulse의 별도 RK4와 비교해 이 이산화 오차를 확인했습니다.</p>
+<p>이 pulse는 Hamming 같은 추가 window 없이 sinc의 양끝을 자른 교육 파형입니다. SLR·최적 pulse 설계·실제 장비 파형의 성능을 재현하지 않습니다. RF 끝의 공간 위상은 남아 있고 위상 재집속이나 echo 신호를 이 plot에서 계산하지 않습니다.</p></details></section>
+<section class="card"><h2>오개념과 확인 문제</h2><p><b>“명목 두께 밖은 항상 신호0이다.”</b> → 점선의 이상적 선택과 유한 RF의 실제 계산을 비교하세요. 또한 |Mxy|가 같은 위치도 Mx/My 위상은 다를 수 있습니다.</p>
+<div class="quiz"><h3>TBW4/같은 중심90°에서 duration4→8ms, Gz는 같다면?</h3><button id="quizWidthWrong">명목 두께가 두 배로 늘어난다</button><button id="quizWidthCorrect">명목 두께와 peak RF 진폭이 각각 절반이 된다</button><p id="widthFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p>
+<h3>30°→90°로 RF 진폭을 세 배로 했을 때 중심 |Mxy|는?</h3><button id="quizFlipCorrect">0.5→1로 변한다 · sinα의 관계다</button><button id="quizFlipWrong">0.5→1.5로 변한다</button><p id="flipFeedback" class="feedback" aria-live="polite">답을 선택해 이유를 확인하세요.</p></div></section>
+<section class="card"><h2>근거 · 다음 질문 · 남은 범위</h2>
+<p><a href="https://larsonlab.github.io/MRI-education-resources/RF%20Pulses.html">Larson의 RF Pulses</a>와 <a href="https://larsonlab.github.io/MRI-education-resources/Slice%20Selection.html">Slice Selection</a>에서 시간/주파수 폭·공간 대응·Bloch와Fourier 근사·RF 끝 위상의 구별을 확인했습니다. 여기의 수치와 파형은 직접 정의한 교육 예시입니다.</p>
+<p>Rephaser 뒤 위상과 echo는 어떻게 달라질까요? 이완이 pulse 중 일어나거나 B1이 고르지 않으면? 여러 slice의 profile이 겹치는 cross-talk은 회복 시간도 함께 봐야 합니다. 실제 rephaser/echo·이완/교환·SLR/vendor pulse·B0/B1 분포·다중 slice/cross-talk·SAR/안전·임상 권장 조건은 남은 범위입니다.</p>
+<p><a href="verification/2026-10-17/G02-rf-physics.html">독립 Bloch·시간 수렴·화면 검증</a> · <a href="learning-roadmap.md">로드맵</a></p></section>
+</main><script src="assets/mr-physics-models.js"></script><script src="assets/finite-slice-rf-model.js"></script><script>
+'use strict';const M=FiniteSliceRF,el=id=>document.getElementById(id),fmt=v=>(Math.abs(v)<.5e-6?0:v).toFixed(6),controls=[['durationControl','durationMs'],['flipControl','flipDeg'],['gradientControl','gradientMilliTPerM']];let state={...M.defaults};
+function render(recompute=true){
+  const r=recompute?M.calculate(state):window.lessonResult;window.lessonResult=r;
+  for(const [id,key]of controls)el(id).value=String(state[key]);
+  for(const [id,value,unit]of [['peakOutput',r.peakB1MicroT,' µT'],['areaOutput',r.areaFlipDeg,'°'],['bandwidthOutput',r.nominalBandwidthHz,' Hz'],['widthOutput',r.nominalThicknessMm,' mm'],['centerOutput',r.center.magnitude,''],['mzOutput',r.center.z,'']])el(id).textContent=fmt(value)+unit;
+  el('status').textContent='RF 끝 직후 · 명목두께 '+fmt(r.nominalThicknessMm)+'mm는 설계 척도이며 실제 FWHM이 아닙니다. Gradient 극성은 '+(state.gradientMilliTPerM>0?'+':'−')+'이고 slice rephaser는 적용하지 않았습니다.';
+  el('rows').innerHTML=r.profile.map(p=>'<tr><th>'+p.zMm.toFixed(1)+'</th>'+[p.offResHz,p.x,p.y,p.z,p.magnitude].map(v=>'<td>'+fmt(v)+'</td>').join('')+'</tr>').join('');
+  const width=Math.max(260,el('rfGraphic').getBoundingClientRect().width),left=44,right=width-16,span=right-left;
+  const draw=(id,low,high,start,end,unit,polylines,extra='')=>{
+    const svg=el(id),x=v=>left+(v-start)/(end-start)*span,y=v=>210-(v-low)/(high-low)*180;svg.setAttribute('viewBox',`0 0 ${width} 265`);
+    let s=`<g font-size="12" fill="#52657e"><path d="M${left} 30V210H${right}" fill="none" stroke="#a9c0e7"/>`;
+    for(const v of [low,0,high])s+=`<text x="${left-5}" y="${y(v)+4}" text-anchor="end">${v}</text>`;
+    s+=`<line x1="${left}" x2="${right}" y1="${y(0)}" y2="${y(0)}" stroke="#d4deec"/>`;
+    for(const [key,points,color]of polylines)s+=`<polyline data-curve="${key}" points="${points.map(p=>x(p[0])+','+y(p[1])).join(' ')}" fill="none" stroke="${color}" stroke-width="1.7"/>`;
+    if(extra==='ideal')s+=`<path data-ideal d="M${x(start)} ${y(0)}H${x(-r.nominalThicknessMm/2)}V${y(Math.sin(state.flipDeg*Math.PI/180))}H${x(r.nominalThicknessMm/2)}V${y(0)}H${x(end)}" fill="none" stroke="#6b7280" stroke-dasharray="4 4"/>`;
+    svg.innerHTML=s+`<text x="${left}" y="245">${start}</text><text x="${right}" y="245" text-anchor="end">${end} ${unit}</text></g>`;
+  };
+  draw('rfGraphic',-20,20,0,8,'ms · B1(µT)',[['rf',r.waveform.map(p=>[p.timeMs,p.b1MicroT]),'#245cf6']]);
+  draw('profileGraphic',-1,1,-10,10,'mm · z',[['magnitude',r.profile.map(p=>[p.zMm,p.magnitude]),'#245cf6'],['mz',r.profile.map(p=>[p.zMm,p.z]),'#7c3aed']],'ideal');
+}
+function reset(type){state={...M.defaults};if(type==='long')state.durationMs=8;if(type==='gradient')state.gradientMilliTPerM=5;if(type==='flip')state.flipDeg=30;for(const id of ['widthFeedback','flipFeedback'])el(id).textContent='답을 선택해 이유를 확인하세요.';render();}
+for(const [id,key]of controls)el(id).addEventListener('change',()=>{state[key]=Number(el(id).value);render();});
+for(const [id,type]of [['reset','base'],['exampleLong','long'],['exampleGradient','gradient'],['exampleFlip','flip']])el(id).addEventListener('click',()=>reset(type));
+for(const [id,target,text]of [['quizWidthCorrect','widthFeedback','맞습니다. 같은 모양/TBW에서 시간은 두 배, 주파수 폭과 면적을 맞춘 RF 진폭은 절반입니다. 같은 gradient에서 명목 두께도 절반입니다.'],['quizWidthWrong','widthFeedback','TBW=시간×명목 bandwidth입니다. 시간을 늘리고 TBW를 유지하면 주파수 폭은 줄어듭니다.'],['quizFlipCorrect','flipFeedback','맞습니다. 중심 회전은 sin30°=0.5, sin90°=1입니다. 자화를 RF 진폭의 선형 배수로 계속 늘릴 수 없습니다.'],['quizFlipWrong','flipFeedback','M0=1인 회전 모형입니다.30°와90°의 횡자화는 각각sinα로 정해집니다.']])el(id).addEventListener('click',()=>el(target).textContent=text);
+window.addEventListener('resize',()=>render(false));render();
+</script></body></html>

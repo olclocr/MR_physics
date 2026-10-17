@@ -75,3 +75,22 @@ test('unknown date, source and options fail instead of silently selecting zero r
   assert.throws(() => parseArgs(['--unknown']), /Unknown option/);
   assert.deepEqual(parseArgs(['--date', '2026-10-15', 'review.md']), {date: '2026-10-15', sources: ['review.md']});
 });
+
+test('Pages report links use existing repository sources without moving local assets or hiding missing files', t => {
+  const options = fixture(t);
+  renderReports(options);
+  options.reports.repositorySourceBase = 'https://github.com/example/learning/blob/main/';
+  const repoRoot = path.resolve(options.baseDir, '../..');
+  fs.mkdirSync(path.join(repoRoot, 'tests'), {recursive: true});
+  fs.mkdirSync(path.join(repoRoot, 'docs/assets'), {recursive: true});
+  fs.writeFileSync(path.join(repoRoot, 'tests/independent oracle.cjs'), 'module.exports = 1;');
+  fs.writeFileSync(path.join(repoRoot, 'docs/assets/model.js'), 'const value = 1;');
+  const source = path.join(options.baseDir, options.reports.defaultDate, 'review.md');
+  fs.writeFileSync(source, '# Sources\n\n[Oracle](../../../tests/independent oracle.cjs#L1) / [Local](../../assets/model.js) / [Report](README.md)\n');
+  const result = buildReports({...options, sources: ['review.md']})[0];
+  assert.match(result.html, /href="https:\/\/github.com\/example\/learning\/blob\/main\/tests\/independent%20oracle.cjs#L1"/);
+  assert.match(result.html, /href="..\/..\/assets\/model.js"/);
+  assert.match(result.html, /href="index.html"/);
+  fs.writeFileSync(source, '# Missing\n\n[Missing](../../../tests/missing.cjs)\n');
+  assert.throws(() => buildReports({...options, sources: ['review.md']}), /Missing report link/);
+});

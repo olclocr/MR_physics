@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W58 defined concentration relaxation and ideal spoiled GRE signal; own report excluded",
+  "files": [
+    {
+      "path": "docs/contrast_concentration_competition.html",
+      "sha256": "F2BBD3F4AB5039E3A278765BD360DE97C570700D3C4A149D4323B2AF581B02C7"
+    },
+    {
+      "path": "docs/assets/contrast-concentration-model.js",
+      "sha256": "049A7B0707E5965BA36D89EBB8F97B174FE6839A56ADEB1750D29AB20CFDF0F3"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "0D16E5812BE35FC2E57DC94477DB5EF413E09D0A287C04A3C0A075056C18E304"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/contrast-concentration.test.cjs",
+      "sha256": "4F62264A8AC5484F4E012C08FA8F2067F9422BAE04AC1691D425844BF11A8060"
+    },
+    {
+      "path": "tests/helpers/contrast-concentration-reference.cjs",
+      "sha256": "141EF188AEFEF408560304670C069F2DC5B4264B98C04EDDEE004AB5F5756129"
+    },
+    {
+      "path": "tests/helpers/gre-reference.cjs",
+      "sha256": "7AF6532C4F015099EE94861F7A9DD01099947499C2A9EA900896A6B1A16A3772"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-numerical.cjs",
+      "sha256": "B374736B2660BA3A8FD96A368F8DA2498872D8697005618A710B6096A0827A37"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-numerical.json",
+      "sha256": "50ED4ECAE73184AA3D5611273A5FED909FDBDD2DE0F8FD986B78C33776E2415A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-display-reference.json",
+      "sha256": "EFA46A95F26BE3B09CF2A48DEEB797213616E2523D7DAA2719EE82C6CCB25D02"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-browser-check.js",
+      "sha256": "13177CDEF127126059F56CD273C5B4CD90AFE159855858B9BDF4ECFCA1DB37C5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-browser-check.json",
+      "sha256": "1CFDAD60A1D9EA480DFA684FACC336D80A0AE81A9659526A3B6CE5F0E8723D43"
+    }
+  ]
+}

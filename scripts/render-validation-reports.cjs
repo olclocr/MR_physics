@@ -63,8 +63,21 @@ function buildReports({baseDir = path.resolve(__dirname, '../docs/verification')
   const resolveLink = url => {
     if (/^(?:[a-z]+:|\/\/|#)/i.test(url)) return url;
     const [, file, suffix] = url.match(/^([^?#]*)(.*)$/);
-    const target = targets.get(path.resolve(folder, file));
-    return target ? path.relative(folder, target).split(path.sep).join('/') + suffix : url;
+    const local = path.resolve(folder, file);
+    const target = targets.get(local);
+    if (target) return path.relative(folder, target).split(path.sep).join('/') + suffix;
+    // Pages serves docs/, while independent tests/scripts live at repo root.
+    // Keep local assets as local URLs; do not mask missing files with web links.
+    const docsRoot = path.resolve(baseDir, '..');
+    const repoRoot = path.resolve(docsRoot, '..');
+    const docsRelative = path.relative(docsRoot, local);
+    const repoRelative = path.relative(repoRoot, local);
+    const outsideDocs = docsRelative === '..' || docsRelative.startsWith('..' + path.sep);
+    const insideRepo = repoRelative !== '..' && !repoRelative.startsWith('..' + path.sep) && !path.isAbsolute(repoRelative);
+    if (reports.repositorySourceBase && outsideDocs && insideRepo && fs.existsSync(local)) {
+      return reports.repositorySourceBase.replace(/\/?$/, '/') + repoRelative.split(path.sep).map(encodeURIComponent).join('/') + suffix;
+    }
+    return url;
   };
   // Read every registered input before rendering or writing anything, including on partial runs.
   const inputs = documents.map(doc => ({...doc, markdown: fs.readFileSync(path.join(folder, doc.source), 'utf8')}));

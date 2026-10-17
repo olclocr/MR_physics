@@ -1,5 +1,6 @@
 {
   "defaultDate": "2026-10-14",
+  "repositorySourceBase": "https://github.com/olclocr/MR_physics/blob/main/",
   "dates": {
     "2026-10-14": [
       {
@@ -327,6 +328,41 @@
         "source": "N03-field-physics.md",
         "target": "N03-field-physics.html",
         "label": "N03 후속 · 주파수 분포와 선폭 검증"
+      },
+      {
+        "source": "M02-ecv-physics.md",
+        "target": "M02-ecv-physics.html",
+        "label": "M02 후속 · R1 분배와 ECV 검증"
+      },
+      {
+        "source": "G02-rf-physics.md",
+        "target": "G02-rf-physics.html",
+        "label": "G02 후속 · 유한 sinc RF와 profile 검증"
+      },
+      {
+        "source": "M04-fit-physics.md",
+        "target": "M04-fit-physics.html",
+        "label": "M04 후속 · 복소 echo의 두 계수 추정 검증"
+      },
+      {
+        "source": "X05-physics.md",
+        "target": "X05-physics.html",
+        "label": "X05 기본 · 농도와 T1/T2* 신호 경쟁 검증"
+      },
+      {
+        "source": "X01-physics.md",
+        "target": "X01-physics.html",
+        "label": "X01 기본 · 등속 궤적과 gradient 위상 검증"
+      },
+      {
+        "source": "X02-physics.md",
+        "target": "X02-physics.html",
+        "label": "X02 기본 · Slab 유입과 반복 RF 포화 검증"
+      },
+      {
+        "source": "X13-physics.md",
+        "target": "X13-physics.html",
+        "label": "X13 기본 · metHb 상태/정성 근거 검토"
       }
     ]
   }

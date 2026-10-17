@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W55 equilibrium compartments and R1 ratio; own report excluded",
+  "files": [
+    {
+      "path": "docs/ecv_r1_partition.html",
+      "sha256": "5BB7BF6851813E64798EE3F607836A6F5C22A2F1C65D0D74C708A71860CCEA02"
+    },
+    {
+      "path": "docs/assets/ecv-partition-model.js",
+      "sha256": "1FFBF91FFA38266C77671CF52B07D3468055873846D1E1CD502DBAD7B1B8F8AC"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/ecv-partition.test.cjs",
+      "sha256": "60C793689B9BF512A54CB75B328DC5A907555399940B3084D70C1F2AB367D9BB"
+    },
+    {
+      "path": "tests/helpers/ecv-partition-reference.cjs",
+      "sha256": "4E4433B569FD294DD4D555642ADD5ED0926C8672FBBCDD7F7598577AB0C06D16"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-numerical.cjs",
+      "sha256": "1A85B5A815B35EEE29AEF42618C593F4A669C373859F12A4B0A4F8B45B3D7127"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-numerical.json",
+      "sha256": "DF86A103B2E3FDCAAF1B1AB7DE5115FF81CDFEC146F8133E6DCFD62F139A196C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-display-reference.json",
+      "sha256": "9FCC8AE09591D8CEE09AB3A1A49005FD3D70A881B617DE6871C216048C3EFF7A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-browser-check.js",
+      "sha256": "2341941C892F6E835BDF67800CA09369947D1964A2B039286104D78C97FA9D14"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-browser-check.json",
+      "sha256": "A2FA7095CC85B7BAC30726B5AE9A4B8B2631747E11E5D7A8228F70BAE74339CD"
+    }
+  ]
+}

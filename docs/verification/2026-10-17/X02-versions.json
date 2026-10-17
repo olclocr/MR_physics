@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W61 ideal slab inflow RF history and saturation; own report excluded",
+  "files": [
+    {
+      "path": "docs/inflow_rf_saturation.html",
+      "sha256": "E704CC600419E3E59AD8E73AFD660954605ACE469FC85E7E3B6ABC6038069E6C"
+    },
+    {
+      "path": "docs/assets/inflow-rf-saturation-model.js",
+      "sha256": "82D9A34A28D265FC0B3F2FD098A8201492384217F91BA7E096F29C21997C1C2A"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "0D16E5812BE35FC2E57DC94477DB5EF413E09D0A287C04A3C0A075056C18E304"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/inflow-rf-saturation.test.cjs",
+      "sha256": "2A053CDD4962A3C8308E6DBCAE066A105E9D6267B78E56000A2521C1C1952156"
+    },
+    {
+      "path": "tests/helpers/inflow-rf-saturation-reference.cjs",
+      "sha256": "CFADBE17F01EF3073BD456990AE20DFF02CAF0C2D93850479B1F8D3E3371DE49"
+    },
+    {
+      "path": "tests/helpers/gre-reference.cjs",
+      "sha256": "7AF6532C4F015099EE94861F7A9DD01099947499C2A9EA900896A6B1A16A3772"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-numerical.cjs",
+      "sha256": "1A9E42BC1BCF5670161CF666815DB406734FB0316A87B5B195C2BCE62D8D8E9C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-numerical.json",
+      "sha256": "7274BF3C7793AC230E0C961F6DF278B4961B63A44B50D4021B7E34A2DB81862A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-display-reference.json",
+      "sha256": "85ABD54165DFEAA8CE44DFACEBE91AB695BF718C8BE23916F37FC075503F55BC"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-browser-check.js",
+      "sha256": "033A56631BEB38EBC843698CED174A6E436200C494970AFAE89797375248AEA0"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-browser-check.json",
+      "sha256": "A07DC536ED34725D85BF7A31797050B6C23A92717E4E7B37B733F39E60690E0E"
+    }
+  ]
+}

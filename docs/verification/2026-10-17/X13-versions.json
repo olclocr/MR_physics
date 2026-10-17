@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "ba0a3323254353349430c06c7e670c336259990e",
+  "uncommitted": true,
+  "scope": "W62 qualitative methemoglobin compartment and concentration source reading; own report excluded",
+  "files": [
+    {
+      "path": "docs/hemorrhage_state_reading.html",
+      "sha256": "1FDB265C3D420C439D53F7003B72EC3DFFCB0D07F19A5D2970DF106B274DB544"
+    },
+    {
+      "path": "docs/assets/hemorrhage-state-reading.js",
+      "sha256": "109FE246BD4808DE3C75047A2A3C082245529B1749E4292AFDE4D42810B6CB1A"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-source-review.md",
+      "sha256": "D5876C9FE2D6B1964F4EC9C58E6989C8116D41A079C2532382C7EDBD0D367AE2"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-browser-check.js",
+      "sha256": "0DC33DC356BCD781CC07FE0265B2A7A44956261636E250CA0A8F5249AC287242"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-browser-check.json",
+      "sha256": "6E189B8B4B8205D8B62AEE2E794760B4A9586A4BCFDD8F68F486A45B8732875C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-viewport-check.js",
+      "sha256": "1FE107E61F1F6CF0E856130D54C169F3D1B1B207659775B445A9719437722D2E"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-viewport-check.json",
+      "sha256": "44489A9297FC70A20847730F85997C89035A88300CFFB24F097EB8EDD5183AD8"
+    }
+  ]
+}

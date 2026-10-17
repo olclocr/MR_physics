@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-17",
+  "cases": 18,
+  "points": 3618,
+  "max": {
+    "phase": 3.4419689320941416e-13,
+    "complex": 3.3595348725157237e-13,
+    "positionMm": 6.405986852087153e-13,
+    "moment0": 3.2949581648192283e-19,
+    "moment1": 1.8429584047681457e-21,
+    "norm": 2.220446049250313e-16,
+    "refConvergence": 9.112155474610972e-13
+  },
+  "examples": [
+    {
+      "timeMs": 4,
+      "positionMm": 1.4,
+      "gradientMtM": 0,
+      "moment0": 0,
+      "moment1": -8.000000000000002e-9,
+      "phase": 0.2140177519735141,
+      "phaseMotion": 0.2140177519735141,
+      "phaseStationary": 0,
+      "real": 0.9771854829647303,
+      "imaginary": 0.2123876923999757,
+      "stationaryReal": 1,
+      "stationaryImaginary": 0,
+      "magnitude": 1
+    },
+    {
+      "timeMs": 6,
+      "positionMm": 1.6,
+      "gradientMtM": 0,
+      "moment0": 0,
+      "moment1": -1.8e-8,
+      "phase": 0.4815399419404066,
+      "phaseMotion": 0.4815399419404066,
+      "phaseStationary": 0,
+      "real": 0.8862827582216543,
+      "imaginary": 0.46314454814778583,
+      "stationaryReal": 1,
+      "stationaryImaginary": 0,
+      "magnitude": 1
+    },
+    {
+      "timeMs": 4,
+      "positionMm": 0.6000000000000001,
+      "gradientMtM": 0,
+      "moment0": 0,
+      "moment1": -8.000000000000002e-9,
+      "phase": -0.2140177519735141,
+      "phaseMotion": -0.2140177519735141,
+      "phaseStationary": 0,
+      "real": 0.9771854829647303,
+      "imaginary": -0.2123876923999757,
+      "stationaryReal": 1,
+      "stationaryImaginary": 0,
+      "magnitude": 1
+    },
+    {
+      "timeMs": 4,
+      "positionMm": 1,
+      "gradientMtM": 0,
+      "moment0": 0,
+      "moment1": -8.000000000000002e-9,
+      "phase": 0,
+      "phaseMotion": 0,
+      "phaseStationary": 0,
+      "real": 1,
+      "imaginary": 0,
+      "stationaryReal": 1,
+      "stationaryImaginary": 0,
+      "magnitude": 1
+    }
+  ]
+}
