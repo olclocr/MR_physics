@@ -1,0 +1,823 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 54,
+  "maxGraphicError": 4.948931973558501E-06,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 0,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 0,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.67032,
+        0.67032,
+        0.67032
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 0,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.449329,
+        0.449329,
+        0.449329
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 45,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 45,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.67032,
+        0.67032,
+        0.67032
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 45,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.449329,
+        0.449329,
+        0.449329
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 90,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 90,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.67032,
+        0.67032,
+        0.67032
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 90,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.449329,
+        0.449329,
+        0.449329
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 0,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 0,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.496585,
+        0.778801,
+        0.778801
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 0,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.246597,
+        0.606531,
+        0.606531
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 45,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 45,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.621885,
+        0.621885,
+        0.778801
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 45,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.386741,
+        0.386741,
+        0.606531
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 90,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 90,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.778801,
+        0.496585,
+        0.778801
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 90,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.606531,
+        0.246597,
+        0.606531
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 0,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 0,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.57695,
+        0.57695,
+        0.904837
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 0,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.332871,
+        0.332871,
+        0.818731
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 45,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 45,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.57695,
+        0.57695,
+        0.904837
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 45,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.332871,
+        0.332871,
+        0.818731
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 90,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 90,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.57695,
+        0.57695,
+        0.904837
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 90,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.332871,
+        0.332871,
+        0.818731
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 0,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 0,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.67032,
+        0.67032,
+        0.67032
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 0,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.449329,
+        0.449329,
+        0.449329
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 45,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 45,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.67032,
+        0.67032,
+        0.67032
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 45,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.449329,
+        0.449329,
+        0.449329
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 90,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 90,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.67032,
+        0.67032,
+        0.67032
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "isotropic",
+        "rotationDeg": 90,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0,
+      "axisSignals": [
+        0.449329,
+        0.449329,
+        0.449329
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 0,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 0,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.496585,
+        0.778801,
+        0.778801
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 0,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.246597,
+        0.606531,
+        0.606531
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 45,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 45,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.621885,
+        0.621885,
+        0.778801
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 45,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.386741,
+        0.386741,
+        0.606531
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 90,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 90,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.778801,
+        0.496585,
+        0.778801
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "prolate",
+        "rotationDeg": 90,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.606531,
+        0.246597,
+        0.606531
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 0,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 0,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.57695,
+        0.57695,
+        0.904837
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 0,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.332871,
+        0.332871,
+        0.818731
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 45,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 45,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.57695,
+        0.57695,
+        0.904837
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 45,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.332871,
+        0.332871,
+        0.818731
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 90,
+        "b": 0
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 90,
+        "b": 500
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.57695,
+        0.57695,
+        0.904837
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "shape": "oblate",
+        "rotationDeg": 90,
+        "b": 1000
+      },
+      "md": 0.8,
+      "fa": 0.573819,
+      "axisSignals": [
+        0.332871,
+        0.332871,
+        0.818731
+      ]
+    }
+  ]
+}

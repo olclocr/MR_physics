@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "scope": "W74 prescribed plasma input with single EES compartment, volume concentration and event-split exchange; own report excluded",
+  "files": [
+    {
+      "path": "docs/compartment_input_washout.html",
+      "sha256": "64114BB6CF2A335A8B9AABF03E29508B945E23BD3DEF81E5FC5DD8B167C69D8D"
+    },
+    {
+      "path": "docs/assets/compartment-exchange-model.js",
+      "sha256": "2FCCE0D25060FD02A2F3980F8E4900F02F15E3B9B160E09B55247369D827E224"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/compartment-exchange.test.cjs",
+      "sha256": "7ED5596EFB816A1F59344CF9F151A474CC05CEC5073F9A7E37EF687FB822340A"
+    },
+    {
+      "path": "tests/helpers/compartment-exchange-reference.cjs",
+      "sha256": "8F577A79B17E765B097EDDD6BA69C5EFAA83B5D724250E6DCAD0E1E91A5E8F82"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-numerical.cjs",
+      "sha256": "08D48890F6C82AB7B1137CE518180A0AF490BA52B73E76993DA7EE20076C8865"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-numerical.json",
+      "sha256": "071675FAB49B55FA39C6605D7838AF84A9954880247BC8990D1C0EBAB14825DD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-display-reference.json",
+      "sha256": "4B7BADEFC42A67C857608712CF52A19F0BF2A53FED0513F9BE497C711B7E4EB9"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-browser-check.js",
+      "sha256": "32BAA24ABAAF0694912EF7D3CE55126164F86C7CE3CC44CFD44A74ADE3D032CE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-browser-check.json",
+      "sha256": "B5F714BD7C10056622226DBA124F2B15D5A625F432D2F72E7DEC308E87E3927F"
+    }
+  ]
+}

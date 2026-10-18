@@ -1,0 +1,3898 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "https://olclocr.github.io/MR_physics/",
+  "commit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "states": 84,
+  "errors": [],
+  "outputMismatches": [],
+  "publicBytes": [
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "BFE97AD0AB37E41953FDA86D8415AB22D9B61E1AED6101C3DCA4D6180F75121C"
+    },
+    {
+      "path": "docs/assets/fov-resolution-model.js",
+      "sha256": "3540BBFDFD2FE0102626CE481A9023EB2B7C501E2782631E9506076E7A1D1FF0"
+    },
+    {
+      "path": "docs/assets/slice-selection-model.js",
+      "sha256": "54C2DBDB22268EAFCC46075184B09DC6AA660FA0FED58FBDC547C190B728EB41"
+    },
+    {
+      "path": "docs/assets/snr-averaging-model.js",
+      "sha256": "636E0004B60BD6CAB83552E0C77BD89D3E2478F9953477BF8A38522424FC92CD"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "docs/assets/echo-train-model.js",
+      "sha256": "EBEED552028FA9C065AECC7B2554F539EA546970F7BAB6999A9F32CD64D20D41"
+    },
+    {
+      "path": "docs/assets/volume-geometry-model.js",
+      "sha256": "5BA63E556BB3B6FC4B8D2D134B771D013F0507CDF985CA39AC7C8FCBB4C73FF3"
+    },
+    {
+      "path": "docs/assets/receiver-bandwidth-model.js",
+      "sha256": "964CE8EB3F80028F41ADA973E037BBB13E492799B4A9165A46043EE76CC8B789"
+    },
+    {
+      "path": "docs/assets/scan-time-model.js",
+      "sha256": "F83EF77B2F8BDEBA1D5A6A07508F84BBEF2A903333C2A6B2D58459A64B66A66E"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "8B4732F9CF17ED15A0D7F30E5348643D0BA2EC1D710D69B4711F2768A67BEDDE"
+    },
+    {
+      "path": "docs/assets/epi-model.js",
+      "sha256": "6C5D5BFA3588DBF7559A6B1CC2ECAB4055BC5621EB5263DED7057FA6C0C51383"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/dixon-model.js",
+      "sha256": "388EE6DE7658C031F43E8A8F1611DC50219A2AB83B80B1481358DA2A1F547113"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "docs/assets/fat-suppression-comparison.js",
+      "sha256": "404E5F429CC37F4CB4E42C02A6439916CF8C13EB87D4FCD4333204AAD8090E68"
+    },
+    {
+      "path": "docs/assets/diffusion-model.js",
+      "sha256": "0F6C54597E2FFC0357D482535511F924BD16F2EA2D89639EDE2A619111C06F84"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "docs/assets/water-excitation-model.js",
+      "sha256": "B3189E425B8E156777A228646343A5DE1187F280AA1B46F207EEFC56B9660A29"
+    },
+    {
+      "path": "docs/assets/dwi-epi-model.js",
+      "sha256": "32A2AF2E7B98928A59179CC4C07AD8C8FF5BC9DBC5B4B9A00B66BA5370BB81BF"
+    },
+    {
+      "path": "docs/assets/susceptibility-signal-model.js",
+      "sha256": "B1B84634ED64C6CDB33E75969906E30C565237A54628060CF22927FCCB4B98A3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "docs/assets/swi-processing-model.js",
+      "sha256": "3B29E31EB52001D199BF6F891C57BA7E13629B4664616791C52C782B28B29C9F"
+    },
+    {
+      "path": "docs/assets/bssfp-model.js",
+      "sha256": "B2F5F480B22AE7476E1EF7A22800224C5B11B31DC2F060DE618B87685BEC5008"
+    },
+    {
+      "path": "docs/assets/bssfp-contrast-model.js",
+      "sha256": "23855C462A05EA01B4CCD7862EC340F378B2C9FD7CD36E8C2CE3D0CA8EC51267"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "303AB363BA79C10BF66325E68E60D9F070BF2D3E208BD3B0CFAA412B3B578995"
+    },
+    {
+      "path": "docs/assets/sms-model.js",
+      "sha256": "49D775402BA7A0071A89BD65CF7A71EF33F9217D44149171C663E4C544C1E923"
+    },
+    {
+      "path": "docs/assets/aliasing-model.js",
+      "sha256": "A9FA759B9B024069E19809BA9FB956BC30925EBAE192141926BDD23989D3DB05"
+    },
+    {
+      "path": "docs/assets/motion-model.js",
+      "sha256": "5110FE4CECBE65DF18AFD0D911E3C06241101CDC041220D0A1B08719A461D085"
+    },
+    {
+      "path": "docs/assets/ringing-model.js",
+      "sha256": "CB3EA1F5B5E3570C2CCA1804BAA415E615150A1CA44DFA36D6F5294F951351D5"
+    },
+    {
+      "path": "docs/assets/chemical-artifact-model.js",
+      "sha256": "BD51F04777FEC2C9F69B6E7FED9ECAEEE7C69A99F04C3D359CF387000EBF0B06"
+    },
+    {
+      "path": "docs/assets/field-distortion-model.js",
+      "sha256": "682FB9DDD2EBAEFD9E8230A086D4EB3B9B283E30403AE259E820FD39B46E2CBE"
+    },
+    {
+      "path": "docs/assets/shading-model.js",
+      "sha256": "44D45219CCA228483918C5616A5590F7160C4EB3F46B6D3BB5B18DB49B9B882A"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/t2-limits-model.js",
+      "sha256": "C5013DB430FF34822BD66BBD9866A96DC226BD797F15F8B2A074668121B01E92"
+    },
+    {
+      "path": "docs/assets/t1-fit-model.js",
+      "sha256": "76B3489CE66A269BD5DBE6F9B1A14F4CB7AF8E5AE5F1ABC65AD68137CD0A2CBA"
+    },
+    {
+      "path": "docs/assets/t2star-fit-model.js",
+      "sha256": "CFCB0666AD1DB386BE8BA47D0970F36F3D405D83CB912C95CDC9DF00D63517AA"
+    },
+    {
+      "path": "docs/assets/pdff-t1-model.js",
+      "sha256": "89E7B5CEE1E807045C0D9BB5BC9DBFD18F16809733359A2B42BD3F9D7406122C"
+    },
+    {
+      "path": "docs/assets/pdff-echo-model.js",
+      "sha256": "775074FD6B33BE9BA90711F254337F5EA3D142CC44F19F735668475A6C41A085"
+    },
+    {
+      "path": "docs/assets/complex-fat-fit-model.js",
+      "sha256": "FF6313DCD2B117E18A736236756D689DF3928B1F70BB2DCF25484878A39B756C"
+    },
+    {
+      "path": "docs/assets/contrast-concentration-model.js",
+      "sha256": "049A7B0707E5965BA36D89EBB8F97B174FE6839A56ADEB1750D29AB20CFDF0F3"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/inflow-rf-saturation-model.js",
+      "sha256": "82D9A34A28D265FC0B3F2FD098A8201492384217F91BA7E096F29C21997C1C2A"
+    },
+    {
+      "path": "docs/assets/hemorrhage-state-reading.js",
+      "sha256": "109FE246BD4808DE3C75047A2A3C082245529B1749E4292AFDE4D42810B6CB1A"
+    },
+    {
+      "path": "docs/assets/fid-spectrum-model.js",
+      "sha256": "86CC223D18789288F91CAD7CD74F58A0963A633743B6A85B23D1C7AD8DDE9E44"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "docs/assets/mrs-localization-model.js",
+      "sha256": "63AAAEECF1F9DB08AC9B53E8C78CCB001B0685BCA094CC997049C99E5C64397D"
+    },
+    {
+      "path": "docs/assets/mrs-field-distribution-model.js",
+      "sha256": "09E8275836A935DFC47F3E07FFCEB58B3301DB0446F5FA5C46A5BC312334AD44"
+    },
+    {
+      "path": "docs/assets/ecv-partition-model.js",
+      "sha256": "1FFBF91FFA38266C77671CF52B07D3468055873846D1E1CD502DBAD7B1B8F8AC"
+    },
+    {
+      "path": "docs/assets/finite-slice-rf-model.js",
+      "sha256": "85405A9BF179203C8A56B6741670A3F7CFCEE638E3DBCAA303E9C14075F9BD83"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "docs/assets/mre-motion-encoding-model.js",
+      "sha256": "FC5CEE4B610C663E6579BD65E6D38ED1875993EF68C49E6008FB7DE8D0DC75EE"
+    },
+    {
+      "path": "docs/assets/mre-inversion-model.js",
+      "sha256": "4E29430363D40B98711639A9E53A9A6D026CFC669538986D2BB44D6452AF3CF8"
+    },
+    {
+      "path": "docs/assets/qsm-dipole-model.js",
+      "sha256": "80049AB56CF24C7365951A568ABAEF9A13E0A38C5B5E9F0DB5DB094870071267"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/structure-evaluation-model.js",
+      "sha256": "E0247BC80B853642B1F06A256B70DF7DFB4350FAF53CA30758DC5598DB95F824"
+    },
+    {
+      "path": "docs/assets/processed-t2-model.js",
+      "sha256": "DD84D1963E51DD90944F58FDC92DF39A1024152D22F26FC1293A577F93A4A22C"
+    },
+    {
+      "path": "docs/assets/vendor-ai-reading.js",
+      "sha256": "73BA4B0E9D9DB95E0037253E97D0695F5A711DDFF977A3DE892E1F09773E73DC"
+    },
+    {
+      "path": "docs/assets/ensemble-noise-model.js",
+      "sha256": "08966AEEB3BBDC3B8ADF33FEA2C500F9942BC06D695E64149AB1744A7A9CE74E"
+    },
+    {
+      "path": "docs/assets/magic-angle-model.js",
+      "sha256": "48E20E24AEB8ED362FDB975BC4E13D10B8BCED9A43B5FE6FB0695775B780A0D4"
+    },
+    {
+      "path": "docs/assets/flow-mixture-model.js",
+      "sha256": "2DD2D294E3BCE4BC316C9F575777CBDE9C624D70F3AD63621711FC97E0FE6FD7"
+    },
+    {
+      "path": "docs/assets/blood-refocusing-reading.js",
+      "sha256": "F5CE9C2B296A56544E2AA5D38877E14E0EA4651FF1DDB14B20B0C30DF5617431"
+    },
+    {
+      "path": "docs/assets/phase-contrast-model.js",
+      "sha256": "A8CCF3DF70E9332767158BFD4A8A6352CC860A6CF14DB3C1F25BDDA4C13E3329"
+    },
+    {
+      "path": "docs/assets/linear-field-correction-model.js",
+      "sha256": "3C32A4CF9433582FE52309BFC16E8B3E2B79E90D34C3ECC06E7C81320DEF90D1"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "docs/assets/signed-subtraction-model.js",
+      "sha256": "FE48D3B61DBC8622F40BFE742B2A217E91CE76DBDA0841319942CAA04BFB201E"
+    },
+    {
+      "path": "docs/assets/dsc-rate-transform-model.js",
+      "sha256": "636EADF93B2D76BBDFBB5B7747FAC409A09B5E8BA491595B2088BF71C1945BDB"
+    }
+  ],
+  "sourceURL": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/dsc-rate-transform-reference.cjs",
+  "sourceStatus": 200,
+  "results": [
+    {
+      "width": 1920,
+      "file": "magic_angle_orientation.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "54.735610°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "50.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "20.000000 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.904837"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 정확 magic에서 방향 항은0이지만 R2=50s⁻¹과 유한한 T2가 남습니다."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 250,
+          "height": 241.0625
+        },
+        {
+          "id": "angleGraphic",
+          "width": 744,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "magic_angle_orientation.html",
+      "button": "exampleParallel",
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "0.000000°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "850.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "1.176471 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.182684"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 선택 방향의 이완률을 같은 TE에서 비교합니다. f의 부호를 양의 감쇠와 구별하세요."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 250,
+          "height": 241.0625
+        },
+        {
+          "id": "angleGraphic",
+          "width": 744,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "magic_angle_orientation.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "54.735610°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "50.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "20.000000 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.135335"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 정확 magic에서 방향 항은0이지만 R2=50s⁻¹과 유한한 T2가 남습니다."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 250,
+          "height": 241.0625
+        },
+        {
+          "id": "angleGraphic",
+          "width": 744,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "magic_angle_orientation.html",
+      "button": "examplePerpendicular",
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "90.000000°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "-1.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "250.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "4.000000 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 선택 방향의 이완률을 같은 TE에서 비교합니다. f의 부호를 양의 감쇠와 구별하세요."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 250,
+          "height": 241.0625
+        },
+        {
+          "id": "angleGraphic",
+          "width": 744,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X14-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "flow_velocity_mixture.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +10.000000 / −10.000000cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 0.214018rad / −v -0.214018rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000 rad"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "0.000000 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "복소 벡터의 합을 먼저 구한 뒤 크기/위상을 계산합니다. 개별 크기의 합과 평균속도만으로 이 합을 대체하지 않습니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "flow_velocity_mixture.html",
+      "button": "exampleCancel",
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +73.395609 / −73.395609cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 1.570796rad / −v -1.570796rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "정의 불가"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "0.000000 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "수치상 상쇄: 합의 방향이 없어 위상을 표시하지 않습니다. 각 집단의 가중 전 크기는1입니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "flow_velocity_mixture.html",
+      "button": "exampleUnequal",
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +73.395609 / −73.395609cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 1.570796rad / −v -1.570796rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796 rad"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "36.697805 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "복소 벡터의 합을 먼저 구한 뒤 크기/위상을 계산합니다. 개별 크기의 합과 평균속도만으로 이 합을 대체하지 않습니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "flow_velocity_mixture.html",
+      "button": "exampleSingle",
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +73.395609 / −73.395609cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 1.570796rad / −v -1.570796rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796 rad"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "73.395609 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "복소 벡터의 합을 먼저 구한 뒤 크기/위상을 계산합니다. 개별 크기의 합과 평균속도만으로 이 합을 대체하지 않습니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 340,
+          "height": 310
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 744,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X01-mixture-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "blood_refocusing_limits.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "T2 이완시간의 조건 의존성"
+        },
+        {
+          "id": "readingOutput",
+          "text": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "status",
+          "text": "측정 시료·물리량·획득 조건을 함께 읽습니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 세포막이 유지된 deoxyhemoglobin 혈액 시료"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 혈액 NMR · 0.19–1.4T · field/echo 간격 변화"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "Refocusing이 있어도 세포 주변 field gradient를 건너는 물의 확산에 따른 횡이완은 남을 수 있습니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 620,
+          "height": 256.546875
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "blood_refocusing_limits.html",
+      "button": "exampleOxy",
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "T2 이완시간의 조건 의존성"
+        },
+        {
+          "id": "readingOutput",
+          "text": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "status",
+          "text": "측정 시료·물리량·획득 조건을 함께 읽습니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 세포막이 유지된 oxyhemoglobin 혈액 시료"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 혈액 NMR · 0.19–1.4T · field/echo 간격 변화"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "OxyHb에서도 관찰된 작은 변화를 0으로 바꾸지 않습니다. 영상이 항상 밝다는 결론도 아닙니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 620,
+          "height": 256.546875
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "blood_refocusing_limits.html",
+      "button": "exampleLysate",
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "T2 이완시간의 조건 의존성"
+        },
+        {
+          "id": "readingOutput",
+          "text": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "status",
+          "text": "측정 시료·물리량·획득 조건을 함께 읽습니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 적혈구가 용해된 혈액 시료 · 구획 경계 변화"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 같은 원전의 혈액 NMR · 0.19–1.4T"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "이 실험의 조건 의존성이 사라졌다는 뜻입니다. T2가 무한대이거나 모든 횡이완이 없어졌다는 뜻은 아닙니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 620,
+          "height": 256.546875
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "blood_refocusing_limits.html",
+      "button": "exampleStorage",
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "철 저장 물질의 공간 분포와 linewidth 영상의 대응"
+        },
+        {
+          "id": "readingOutput",
+          "text": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "status",
+          "text": "GRE는 refocusing 방식과 T2* 조건이 다릅니다. 원전 열은 유지하고, 실제 TE/field·공간 분포·수신 조건을 추가 확인합니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 혈액을 주입한 쥐 뇌의 후기 혈종 · 조직/생화학 대조"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 대칭/비대칭 T2W SE의 linewidth 영상 · field/TE 수치는 초록에 미제시"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "두 철 저장 물질을 한 이름/한 공간 범위로 합치지 않습니다. 이 관찰을 GRE 한 장에서 물질별로 구분하는 진단기로 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 620,
+          "height": 256.546875
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X13-refocusing-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "phase_contrast_venc.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.978608mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=3.914432 / A1B=-3.914432 / ΔA1=-7.828865 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "-0.785398"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "0.785398"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "75.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 속도는 이 branch의 범위 안에서 일치합니다. 실제 잡음/분포/배경 오차는 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 744,
+          "height": 361.65625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 420,
+          "height": 326.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleCommon",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.978608mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=3.914432 / A1B=-3.914432 / ΔA1=-7.828865 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "1.308997"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "2.879793"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "75.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 속도는 이 branch의 범위 안에서 일치합니다. 실제 잡음/분포/배경 오차는 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 744,
+          "height": 361.65625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 420,
+          "height": 326.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleAlias",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=1.957216mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=7.828865 / A1B=-7.828865 / ΔA1=-15.657730 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "3.141593"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "3.141593"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "150.000000"
+        },
+        {
+          "id": "status",
+          "text": "속도 alias: 모형 정답과 읽은 속도가 다릅니다. 모형 속도가 변한 것이 아니라 위상차가2π 주기로 반복됩니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 744,
+          "height": 361.65625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 420,
+          "height": 326.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleRecover",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.489304mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=1.957216 / A1B=-1.957216 / ΔA1=-3.914432 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "-0.785398"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "0.785398"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "150.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 속도는 이 branch의 범위 안에서 일치합니다. 실제 잡음/분포/배경 오차는 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 744,
+          "height": 361.65625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 420,
+          "height": 326.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleBoundary",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.978608mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=3.914432 / A1B=-3.914432 / ΔA1=-7.828865 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "-1.570796"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "3.141593"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "150.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "-300.000000"
+        },
+        {
+          "id": "status",
+          "text": "±π/±VENC의 경계입니다. 두 부호는 같은 D를 주며 여기서는 +π/+VENC로 표시합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 744,
+          "height": 361.65625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 420,
+          "height": 326.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X03-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.942478"
+        },
+        {
+          "id": "status",
+          "text": "무보정: 균일 offset과 공간 기울기의 평균/퍼짐을 따로 확인하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": "exampleConstant",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "평균 주파수는0이지만 공간 기울기가 있으면 퍼짐은 남습니다. 상수 보정 전후의 |S|를 비교하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 2.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "직선 field를 정확히 제거했습니다. 모든 위치의 잔여 주파수0/동일 위상이며 고유 이완은 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": "exampleNull",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=0.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "상쇄 · 위상 미정"
+        },
+        {
+          "id": "status",
+          "text": "공간의 위상 차이로 복소합이 상쇄되었습니다. 평균 주파수만으로 크기를 판단하지 마세요. 여기서는 크기≤1e−8의 위상을 표시하지 않습니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X15-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "temporal_window_bolus.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 5 · 중심 10.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 9.000000…11.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.297954"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.297954"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "16"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "W=2초 / 간격=2초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 창의 겹침은0입니다."
+        }
+      ],
+      "tableRows": 16,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 372
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "temporal_window_bolus.html",
+      "button": "exampleWide",
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 5 · 중심 10.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 4.000000…16.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.238069"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.238069"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "16"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "83.333333"
+        },
+        {
+          "id": "status",
+          "text": "W=12초 / 간격=2초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 관측창은 서로 겹칩니다."
+        }
+      ],
+      "tableRows": 16,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 372
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "temporal_window_bolus.html",
+      "button": "exampleSparse",
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 2 · 중심 12.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 11.000000…13.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.276127"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.274472"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.274472"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "12.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "6"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "W=2초 / 간격=6초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 창의 겹침은0입니다."
+        }
+      ],
+      "tableRows": 6,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 372
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "temporal_window_bolus.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 0 · 중심 0.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 -6.000000…6.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.080966"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.238069"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "16"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "83.333333"
+        },
+        {
+          "id": "status",
+          "text": "W=12초 / 간격=2초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 관측창은 서로 겹칩니다."
+        }
+      ],
+      "tableRows": 16,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 744,
+          "height": 372
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X04-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "signed_subtraction_alignment.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "1.200000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "1.200000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "1.200000"
+        },
+        {
+          "id": "status",
+          "text": "이동0이므로 같은좌표의 신호를 뺍니다. 실제 환자의 정합/신호 스케일은 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 361.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "signed_subtraction_alignment.html",
+      "button": "exampleMotion",
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "-0.066667"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "2.400000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "-2.400000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "정렬하지 않은 후영상입니다. 고정ROI 차이는 위치 오차와 실제 모형 신호 변화가 섞인 값입니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 361.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "signed_subtraction_alignment.html",
+      "button": "exampleMixed",
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "0.033333"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "6.000000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "-2.400000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "status",
+          "text": "정렬하지 않은 후영상입니다. 고정ROI 차이는 위치 오차와 실제 모형 신호 변화가 섞인 값입니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 361.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "signed_subtraction_alignment.html",
+      "button": "exampleAlign",
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "status",
+          "text": "알고 있는 정수pixel 이동을 되돌렸습니다. 이 정확한 이동/같은 신호 스케일/FOV 안의 모형에서 고정ROI 차이는 실제 모형 증가와 같습니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 361.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X05-subtraction-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "dsc_signal_rate.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.406570"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.406570"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.122456"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.301194"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.496585"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.670320"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.165299"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.165299"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.014996"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.090718"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleWrong",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.592655"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.250000"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "-22.314355"
+        },
+        {
+          "id": "biasOutput",
+          "text": "-22.314355"
+        },
+        {
+          "id": "status",
+          "text": "입력 기준 배율이 실제모형과 다릅니다. 추정값에는ln(k)/TE초의 편향이 더해지며 음수가 되어도 숨기지 않습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleCorrect",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X06-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "magic_angle_orientation.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "54.735610°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "50.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "20.000000 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.904837"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 정확 magic에서 방향 항은0이지만 R2=50s⁻¹과 유한한 T2가 남습니다."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 280,
+          "height": 270
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "magic_angle_orientation.html",
+      "button": "exampleParallel",
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "0.000000°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "850.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "1.176471 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.182684"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 선택 방향의 이완률을 같은 TE에서 비교합니다. f의 부호를 양의 감쇠와 구별하세요."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 280,
+          "height": 270
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "magic_angle_orientation.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "54.735610°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "50.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "20.000000 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.135335"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 정확 magic에서 방향 항은0이지만 R2=50s⁻¹과 유한한 T2가 남습니다."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 280,
+          "height": 270
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "magic_angle_orientation.html",
+      "button": "examplePerpendicular",
+      "outputs": [
+        {
+          "id": "angleOutput",
+          "text": "90.000000°"
+        },
+        {
+          "id": "factorOutput",
+          "text": "-1.000000"
+        },
+        {
+          "id": "squaredOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "250.000000 s⁻¹"
+        },
+        {
+          "id": "t2Output",
+          "text": "4.000000 ms"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "교육용 R2=50+200f² 모형. 선택 방향의 이완률을 같은 TE에서 비교합니다. f의 부호를 양의 감쇠와 구별하세요."
+        }
+      ],
+      "tableRows": 243,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orientationGraphic",
+          "width": 280,
+          "height": 270
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 265
+        },
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X14-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "flow_velocity_mixture.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +10.000000 / −10.000000cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 0.214018rad / −v -0.214018rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000 rad"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "0.000000 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "복소 벡터의 합을 먼저 구한 뒤 크기/위상을 계산합니다. 개별 크기의 합과 평균속도만으로 이 합을 대체하지 않습니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 313,
+          "height": 285.375
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "flow_velocity_mixture.html",
+      "button": "exampleCancel",
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +73.395609 / −73.395609cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 1.570796rad / −v -1.570796rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "정의 불가"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "0.000000 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "수치상 상쇄: 합의 방향이 없어 위상을 표시하지 않습니다. 각 집단의 가중 전 크기는1입니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 313,
+          "height": 285.375
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "flow_velocity_mixture.html",
+      "button": "exampleUnequal",
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +73.395609 / −73.395609cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 1.570796rad / −v -1.570796rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796 rad"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "36.697805 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "복소 벡터의 합을 먼저 구한 뒤 크기/위상을 계산합니다. 개별 크기의 합과 평균속도만으로 이 합을 대체하지 않습니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 313,
+          "height": 285.375
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "flow_velocity_mixture.html",
+      "button": "exampleSingle",
+      "outputs": [
+        {
+          "id": "velocityOutput",
+          "text": "두 속도: +73.395609 / −73.395609cm/s. 고정 v90=73.395609cm/s"
+        },
+        {
+          "id": "memberPhaseOutput",
+          "text": "누적 위상: +v 1.570796rad / −v -1.570796rad. 끝 t=4ms"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796 rad"
+        },
+        {
+          "id": "scalarOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "meanVelocityOutput",
+          "text": "73.395609 cm/s"
+        },
+        {
+          "id": "status",
+          "text": "복소 벡터의 합을 먼저 구한 뒤 크기/위상을 계산합니다. 개별 크기의 합과 평균속도만으로 이 합을 대체하지 않습니다."
+        }
+      ],
+      "tableRows": 101,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "vectorGraphic",
+          "width": 313,
+          "height": 285.375
+        },
+        {
+          "id": "fractionGraphic",
+          "width": 313,
+          "height": 265
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X01-mixture-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "blood_refocusing_limits.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "T2 이완시간의 조건 의존성"
+        },
+        {
+          "id": "readingOutput",
+          "text": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "status",
+          "text": "측정 시료·물리량·획득 조건을 함께 읽습니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 세포막이 유지된 deoxyhemoglobin 혈액 시료"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 혈액 NMR · 0.19–1.4T · field/echo 간격 변화"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "Refocusing이 있어도 세포 주변 field gradient를 건너는 물의 확산에 따른 횡이완은 남을 수 있습니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 313,
+          "height": 129.515625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "blood_refocusing_limits.html",
+      "button": "exampleOxy",
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "T2 이완시간의 조건 의존성"
+        },
+        {
+          "id": "readingOutput",
+          "text": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "status",
+          "text": "측정 시료·물리량·획득 조건을 함께 읽습니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 세포막이 유지된 oxyhemoglobin 혈액 시료"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 혈액 NMR · 0.19–1.4T · field/echo 간격 변화"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "OxyHb에서도 관찰된 작은 변화를 0으로 바꾸지 않습니다. 영상이 항상 밝다는 결론도 아닙니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 313,
+          "height": 129.515625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "blood_refocusing_limits.html",
+      "button": "exampleLysate",
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "T2 이완시간의 조건 의존성"
+        },
+        {
+          "id": "readingOutput",
+          "text": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "status",
+          "text": "측정 시료·물리량·획득 조건을 함께 읽습니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 적혈구가 용해된 혈액 시료 · 구획 경계 변화"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 같은 원전의 혈액 NMR · 0.19–1.4T"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "이 실험의 조건 의존성이 사라졌다는 뜻입니다. T2가 무한대이거나 모든 횡이완이 없어졌다는 뜻은 아닙니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 313,
+          "height": 129.515625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "blood_refocusing_limits.html",
+      "button": "exampleStorage",
+      "outputs": [
+        {
+          "id": "quantityOutput",
+          "text": "철 저장 물질의 공간 분포와 linewidth 영상의 대응"
+        },
+        {
+          "id": "readingOutput",
+          "text": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "status",
+          "text": "GRE는 refocusing 방식과 T2* 조건이 다릅니다. 원전 열은 유지하고, 실제 TE/field·공간 분포·수신 조건을 추가 확인합니다."
+        },
+        {
+          "id": "sampleOutput",
+          "text": "시료: 혈액을 주입한 쥐 뇌의 후기 혈종 · 조직/생화학 대조"
+        },
+        {
+          "id": "acquisitionOutput",
+          "text": "획득: 대칭/비대칭 T2W SE의 linewidth 영상 · field/TE 수치는 초록에 미제시"
+        },
+        {
+          "id": "meaningOutput",
+          "text": "두 철 저장 물질을 한 이름/한 공간 범위로 합치지 않습니다. 이 관찰을 GRE 한 장에서 물질별로 구분하는 진단기로 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 4,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "materialGraphic",
+          "width": 313,
+          "height": 129.515625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X13-refocusing-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "phase_contrast_venc.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.978608mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=3.914432 / A1B=-3.914432 / ΔA1=-7.828865 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "-0.785398"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "0.785398"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "75.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 속도는 이 branch의 범위 안에서 일치합니다. 실제 잡음/분포/배경 오차는 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 313,
+          "height": 152.140625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 243.4375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleCommon",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.978608mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=3.914432 / A1B=-3.914432 / ΔA1=-7.828865 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "1.308997"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "2.879793"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "75.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 속도는 이 branch의 범위 안에서 일치합니다. 실제 잡음/분포/배경 오차는 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 313,
+          "height": 152.140625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 243.4375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleAlias",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=1.957216mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=7.828865 / A1B=-7.828865 / ΔA1=-15.657730 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "3.141593"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "3.141593"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "150.000000"
+        },
+        {
+          "id": "status",
+          "text": "속도 alias: 모형 정답과 읽은 속도가 다릅니다. 모형 속도가 변한 것이 아니라 위상차가2π 주기로 반복됩니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 313,
+          "height": 152.140625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 243.4375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleRecover",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.489304mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=1.957216 / A1B=-1.957216 / ΔA1=-3.914432 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "-0.785398"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "0.785398"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "150.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 속도는 이 branch의 범위 안에서 일치합니다. 실제 잡음/분포/배경 오차는 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 313,
+          "height": 152.140625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 243.4375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phase_contrast_venc.html",
+      "button": "exampleBoundary",
+      "outputs": [
+        {
+          "id": "gradientOutput",
+          "text": "G=0.978608mT/m · A:−→+ / B:+→−"
+        },
+        {
+          "id": "momentOutput",
+          "text": "A1A=3.914432 / A1B=-3.914432 / ΔA1=-7.828865 mT·ms²/m"
+        },
+        {
+          "id": "phaseAOutput",
+          "text": "1.570796"
+        },
+        {
+          "id": "phaseBOutput",
+          "text": "-1.570796"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "3.141593"
+        },
+        {
+          "id": "velocityOutput",
+          "text": "150.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "-300.000000"
+        },
+        {
+          "id": "status",
+          "text": "±π/±VENC의 경계입니다. 두 부호는 같은 D를 주며 여기서는 +π/+VENC로 표시합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "velocityGraphic",
+          "width": 313,
+          "height": 152.140625
+        },
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 243.4375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X03-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.942478"
+        },
+        {
+          "id": "status",
+          "text": "무보정: 균일 offset과 공간 기울기의 평균/퍼짐을 따로 확인하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": "exampleConstant",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "평균 주파수는0이지만 공간 기울기가 있으면 퍼짐은 남습니다. 상수 보정 전후의 |S|를 비교하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 2.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "직선 field를 정확히 제거했습니다. 모든 위치의 잔여 주파수0/동일 위상이며 고유 이완은 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": "exampleNull",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=0.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "상쇄 · 위상 미정"
+        },
+        {
+          "id": "status",
+          "text": "공간의 위상 차이로 복소합이 상쇄되었습니다. 평균 주파수만으로 크기를 판단하지 마세요. 여기서는 크기≤1e−8의 위상을 표시하지 않습니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X15-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "temporal_window_bolus.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 5 · 중심 10.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 9.000000…11.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.297954"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.297954"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "16"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "W=2초 / 간격=2초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 창의 겹침은0입니다."
+        }
+      ],
+      "tableRows": 16,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 156.5
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "temporal_window_bolus.html",
+      "button": "exampleWide",
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 5 · 중심 10.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 4.000000…16.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.238069"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.238069"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "16"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "83.333333"
+        },
+        {
+          "id": "status",
+          "text": "W=12초 / 간격=2초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 관측창은 서로 겹칩니다."
+        }
+      ],
+      "tableRows": 16,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 156.5
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "temporal_window_bolus.html",
+      "button": "exampleSparse",
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 2 · 중심 12.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 11.000000…13.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.276127"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.274472"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.274472"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "12.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "6"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "W=2초 / 간격=6초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 창의 겹침은0입니다."
+        }
+      ],
+      "tableRows": 6,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 156.5
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "temporal_window_bolus.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "frameOutput",
+          "text": "프레임 0 · 중심 0.000000초"
+        },
+        {
+          "id": "windowOutput",
+          "text": "전체 관측창 -6.000000…6.000000초"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "0.080966"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.238069"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "countOutput",
+          "text": "16"
+        },
+        {
+          "id": "overlapOutput",
+          "text": "83.333333"
+        },
+        {
+          "id": "status",
+          "text": "W=12초 / 간격=2초. 이 프레임은 중심의 순간값이 아니라 전체 창의 균일 평균입니다. 인접 관측창은 서로 겹칩니다."
+        }
+      ],
+      "tableRows": 16,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timeGraphic",
+          "width": 313,
+          "height": 156.5
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X04-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "signed_subtraction_alignment.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "1.200000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "1.200000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "1.200000"
+        },
+        {
+          "id": "status",
+          "text": "이동0이므로 같은좌표의 신호를 뺍니다. 실제 환자의 정합/신호 스케일은 이 모형에 없습니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 152.140625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "signed_subtraction_alignment.html",
+      "button": "exampleMotion",
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "-0.066667"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "2.400000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "-2.400000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "정렬하지 않은 후영상입니다. 고정ROI 차이는 위치 오차와 실제 모형 신호 변화가 섞인 값입니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 152.140625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "signed_subtraction_alignment.html",
+      "button": "exampleMixed",
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "0.033333"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "6.000000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "-2.400000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "status",
+          "text": "정렬하지 않은 후영상입니다. 고정ROI 차이는 위치 오차와 실제 모형 신호 변화가 섞인 값입니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 152.140625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "signed_subtraction_alignment.html",
+      "button": "exampleAlign",
+      "outputs": [
+        {
+          "id": "roiOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "positiveOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "negativeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "truthOutput",
+          "text": "3.600000"
+        },
+        {
+          "id": "status",
+          "text": "알고 있는 정수pixel 이동을 되돌렸습니다. 이 정확한 이동/같은 신호 스케일/FOV 안의 모형에서 고정ROI 차이는 실제 모형 증가와 같습니다."
+        }
+      ],
+      "tableRows": 128,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 152.140625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X05-subtraction-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "dsc_signal_rate.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.406570"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.406570"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.122456"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.301194"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.496585"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.670320"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.165299"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.165299"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.014996"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.090718"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleWrong",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.592655"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.250000"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "-22.314355"
+        },
+        {
+          "id": "biasOutput",
+          "text": "-22.314355"
+        },
+        {
+          "id": "status",
+          "text": "입력 기준 배율이 실제모형과 다릅니다. 추정값에는ln(k)/TE초의 편향이 더해지며 음수가 되어도 숨기지 않습니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "dsc_signal_rate.html",
+      "button": "exampleCorrect",
+      "outputs": [
+        {
+          "id": "trueBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "inputBaselineOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "signalOutput",
+          "text": "0.740818"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "trueRateOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "inferredOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "biasOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "기준과TE가 일치하는 단일지수 모형입니다. 신호비가TE에 따라 달라도 같은ΔR2*를 회수합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "ratioGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X06-physics.html",
+      "report": true
+    }
+  ]
+}

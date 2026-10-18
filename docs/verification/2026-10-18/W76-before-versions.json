@@ -1,0 +1,2105 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "manifests": [
+    "docs/verification/2026-10-15/B04-versions.json",
+    "docs/verification/2026-10-15/G01-final-versions.json",
+    "docs/verification/2026-10-15/G02-versions.json",
+    "docs/verification/2026-10-15/Q01-versions.json",
+    "docs/verification/2026-10-15/B00-versions.json",
+    "docs/verification/2026-10-15/C04-versions.json",
+    "docs/verification/2026-10-15/C05-versions.json",
+    "docs/verification/2026-10-15/G03-versions.json",
+    "docs/verification/2026-10-15/Q02-versions.json",
+    "docs/verification/2026-10-15/Q03-versions.json",
+    "docs/verification/2026-10-15/C06-versions.json",
+    "docs/verification/2026-10-15/C07-versions.json",
+    "docs/verification/2026-10-15/Q04-versions.json",
+    "docs/verification/2026-10-15/F01-versions.json",
+    "docs/verification/2026-10-15/F02-versions.json",
+    "docs/verification/2026-10-15/F03-versions.json",
+    "docs/verification/2026-10-15/F04-versions.json",
+    "docs/verification/2026-10-15/D01-versions.json",
+    "docs/verification/2026-10-15/D02-versions.json",
+    "docs/verification/2026-10-15/F03-water-versions.json",
+    "docs/verification/2026-10-16/D03-versions.json",
+    "docs/verification/2026-10-16/S01-versions.json",
+    "docs/verification/2026-10-16/S01-swi-versions.json",
+    "docs/verification/2026-10-16/C08-versions.json",
+    "docs/verification/2026-10-16/C08-contrast-versions.json",
+    "docs/verification/2026-10-16/Q05-versions.json",
+    "docs/verification/2026-10-16/Q06-versions.json",
+    "docs/verification/2026-10-17/Q07-versions.json",
+    "docs/verification/2026-10-17/A01-versions.json",
+    "docs/verification/2026-10-17/A02-versions.json",
+    "docs/verification/2026-10-17/A03-versions.json",
+    "docs/verification/2026-10-17/A04-versions.json",
+    "docs/verification/2026-10-17/A05-versions.json",
+    "docs/verification/2026-10-17/A06-versions.json",
+    "docs/verification/2026-10-17/M01-versions.json",
+    "docs/verification/2026-10-17/M01-limits-versions.json",
+    "docs/verification/2026-10-17/M02-versions.json",
+    "docs/verification/2026-10-17/M03-versions.json",
+    "docs/verification/2026-10-17/M04-versions.json",
+    "docs/verification/2026-10-17/M04-echo-versions.json",
+    "docs/verification/2026-10-17/M04-fit-versions.json",
+    "docs/verification/2026-10-17/X05-versions.json",
+    "docs/verification/2026-10-17/X01-versions.json",
+    "docs/verification/2026-10-17/X02-versions.json",
+    "docs/verification/2026-10-17/X13-versions.json",
+    "docs/verification/2026-10-17/N01-versions.json",
+    "docs/verification/2026-10-17/N02-versions.json",
+    "docs/verification/2026-10-17/N03-versions.json",
+    "docs/verification/2026-10-17/N03-field-versions.json",
+    "docs/verification/2026-10-17/M02-ecv-versions.json",
+    "docs/verification/2026-10-17/G02-rf-versions.json",
+    "docs/verification/2026-10-17/E01-versions.json",
+    "docs/verification/2026-10-17/E01-encoding-versions.json",
+    "docs/verification/2026-10-17/E02-versions.json",
+    "docs/verification/2026-10-17/S02-versions.json",
+    "docs/verification/2026-10-17/AI01-versions.json",
+    "docs/verification/2026-10-17/AI03-versions.json",
+    "docs/verification/2026-10-17/AI03-t2-versions.json",
+    "docs/verification/2026-10-17/AI02-versions.json",
+    "docs/verification/2026-10-17/AI03-noise-versions.json",
+    "docs/verification/2026-10-18/X14-versions.json",
+    "docs/verification/2026-10-18/X01-mixture-versions.json",
+    "docs/verification/2026-10-18/W69-versions.json",
+    "docs/verification/2026-10-18/X13-refocusing-versions.json",
+    "docs/verification/2026-10-18/X03-versions.json",
+    "docs/verification/2026-10-18/X15-versions.json",
+    "docs/verification/2026-10-18/X04-versions.json",
+    "docs/verification/2026-10-18/X05-subtraction-versions.json",
+    "docs/verification/2026-10-18/X06-versions.json"
+  ],
+  "files": [
+    {
+      "path": "docs/frequency_phase_encoding_visualization.html",
+      "sha256": "FB242406C53447B94266B6B21B8A8C193993470DA7747750D73A3BC710A9DB9B"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/spatial-encoding.test.cjs",
+      "sha256": "82A42417D3844628B4AB56E7A020531CAE5B0D1D2760E47EE3E6E926EAE39D7A"
+    },
+    {
+      "path": "tests/helpers/encoding-reference.cjs",
+      "sha256": "4C76B69C9B344D6A6A9AC2AA5A034D534C772B8C068E514F105AD07471DA9039"
+    },
+    {
+      "path": "tests/helpers/encoding-page-harness.cjs",
+      "sha256": "375DF146F426AF843D58911ADE202C0D19C8DFB4ADBF4274C5633751E7A301B3"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-numerical.cjs",
+      "sha256": "353547FAC2D2421F816EC03DE9DDC7FC7879C25A727DF3AF68FB1DABE9005B10"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-numerical.json",
+      "sha256": "C3CF5B991FD99D245FAC3F84908EBC2F71C8DF5958567199BC1AED61CB522CA1"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-browser-check.js",
+      "sha256": "D9F4393305CBAD128CC9546B7419AEBC8E6229E0ECB0D4AE7F05FF63D563EC52"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-browser-check.json",
+      "sha256": "450BD76031BB2F91BAF4AF27DE6001EC0896D589AEE3A8B647117564C4F2E4CB"
+    },
+    {
+      "path": "docs/fov_matrix_resolution.html",
+      "sha256": "852C7EDD155BB21CF633DBA9BB91C1371F443D934F0B96AC5D16697BA5360E81"
+    },
+    {
+      "path": "docs/assets/fov-resolution-model.js",
+      "sha256": "3540BBFDFD2FE0102626CE481A9023EB2B7C501E2782631E9506076E7A1D1FF0"
+    },
+    {
+      "path": "tests/helpers/fov-reference.cjs",
+      "sha256": "AC9FDF1785C8EA49F34B38AB148E732A1F4F3DBDDA8281F25A94920B867C4F52"
+    },
+    {
+      "path": "tests/fov-resolution.test.cjs",
+      "sha256": "A4ABCC92FE10ADBC2A95CB3CA627DA1BFBE1C4CEE6BD54ACF85A80F36D0AA042"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-display-reference.cjs",
+      "sha256": "1CE57C5EED1412FCB37247E73C43025B739B50798605EE9783E5AA5BA5CFDDDC"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-display-reference.json",
+      "sha256": "458C91E9E8316ECCB19BD79B7EE41F2AF4E2AEE14EB0D93C65A0896AE781FB7B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-browser-check.js",
+      "sha256": "6D02F9BC69F6F12922793D4F455CC8B0B35E319E93358347D476DC0CAB44D62F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-browser-check.json",
+      "sha256": "B64D5DD5DFD9BA0B0C9D8E75635C578AF41BC28257474FFF04B622FBF196E66D"
+    },
+    {
+      "path": "docs/slice_selection_partial_volume.html",
+      "sha256": "9C89EA95A03138350CA41049DA33F48339E89492BA9E24F2E3C7C34671BCE474"
+    },
+    {
+      "path": "docs/assets/slice-selection-model.js",
+      "sha256": "54C2DBDB22268EAFCC46075184B09DC6AA660FA0FED58FBDC547C190B728EB41"
+    },
+    {
+      "path": "tests/helpers/slice-reference.cjs",
+      "sha256": "B133BDB46B2CF5B5F23D7CE6479D39C5E84809BD6FA38C802B4F1C24CA328806"
+    },
+    {
+      "path": "tests/slice-selection.test.cjs",
+      "sha256": "6FC3204AD408231299AE4711F018D2F48F540A6C2343B0407EA35696CFB51E9A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-numerical.cjs",
+      "sha256": "7A26F686BEDE68EFAE89DB6A30E6E37A6B3764B078085BCAEB4A549E3937165C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-numerical.json",
+      "sha256": "DB6315E97B6F11D04D47BF1DB04309D2F7654D34FFD8FF00AD511C5545811A09"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-browser-check.js",
+      "sha256": "B43B23A56A32194E27F42CA247D3547681017F06F66BE0EEE62FF6DAA19D0526"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-browser-check.json",
+      "sha256": "D21F65253FC0F86392AD75AA37EE107820A263232DFAF24E6476C30F25463746"
+    },
+    {
+      "path": "docs/snr_cnr_averaging.html",
+      "sha256": "D0FEE7ACBAB4D6CE185B879F1E780A9006CA08323883D55D57B3B61CFD528516"
+    },
+    {
+      "path": "docs/assets/snr-averaging-model.js",
+      "sha256": "636E0004B60BD6CAB83552E0C77BD89D3E2478F9953477BF8A38522424FC92CD"
+    },
+    {
+      "path": "tests/helpers/noise-reference.cjs",
+      "sha256": "72A8387DA4EF7A74B6BD39166AD5678487BB753367FA66723D0DE8C756BF8CDD"
+    },
+    {
+      "path": "tests/snr-averaging.test.cjs",
+      "sha256": "7AB0EBDCB8C20A4B27E76FF75B33709FE093DF703D15F541D4FD25A815EF319B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-numerical.cjs",
+      "sha256": "7B280E2949841CA7BD702F0F0569454D79E2ED1B4860B058A578CF740508A321"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-numerical.json",
+      "sha256": "1463A73F5B3DB41C2D692DBC91A22A08AD6EADCF3F3B7B976DEFBC20297A988A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-browser-check.js",
+      "sha256": "2B5750BACA5CF14F1729BF140EBBD8183266556890D30DE68C63E94BBB93C5D1"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-browser-check.json",
+      "sha256": "5E8F2517B73F5BC7AC1815EFE09CE719490853B3312936E59D34D5B65A9A94AA"
+    },
+    {
+      "path": "docs/bicycle_wheel_precession_interactive.html",
+      "sha256": "168CEE7A4399E4AE404E882AF0860C1DB07595534E740104AF22E050DA1B59CC"
+    },
+    {
+      "path": "tests/helpers/wheel-page-harness.cjs",
+      "sha256": "FD1BC5E6C1D64F6FE91DEDF5CAF6083BCB8722719C8B4FEDE401AD121FE6CB5A"
+    },
+    {
+      "path": "tests/wheel-precession.test.cjs",
+      "sha256": "00C4CDCA894D26814DAC79022B135F8A37E23921F6487C66B34FE8273E8DB92D"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-numerical.cjs",
+      "sha256": "EBC64AEE9D12A35278676111D6336606444AB71E63005AC88C2B0D0107582C0F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-numerical.json",
+      "sha256": "0B4A193089A516B50E11B2E37631EFA49A985CF537044C92185DF85F74D51EFD"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-browser-check.js",
+      "sha256": "DBC5A1A942517970FDDB5CDD2CF2DD592C214A795AB300E67D9D528FC4D2BBC6"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-browser-check.json",
+      "sha256": "98CE5B26134977E51973431F51ABC42CA68B48EA593196F2A5ACE695B755F50D"
+    },
+    {
+      "path": "docs/inversion_recovery.html",
+      "sha256": "5B340DC6803799510371E4F6909882DBEC9A2E836EDC4DC154CC4A4C5A7BB8B1"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/helpers/ir-reference.cjs",
+      "sha256": "5843983A8800A62383D462F04F6B32B0E2C933EED02684890F5C6D521195BF29"
+    },
+    {
+      "path": "tests/inversion-recovery.test.cjs",
+      "sha256": "9C1C65EFD5C8BEEC2C56315F5B185D23F7104653DC3DDB405E3673E9792BB354"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-numerical.cjs",
+      "sha256": "0FE8A19A4F3B7A0D7520F9146830FE08B441BE053D9F3251EAC60C095ED8D15F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-numerical.json",
+      "sha256": "23C295D58FE93E40C9A0E12324DD44CB9B89DA840C0BFBDC72FB9AE5E9A66649"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-browser-check.js",
+      "sha256": "4CB8AC0C261D7E7B170ED2E4D5974CF893C3E893D01912035EDDA41AB793E54F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-browser-check.json",
+      "sha256": "5AB3AD28CA43D4BFA8F92EC29BE9E30A6B4471B4103D0F7194D0B4D2855EC5DD"
+    },
+    {
+      "path": "docs/fast_spin_echo.html",
+      "sha256": "F19552387270ED7B8AA5A350E2C124EB352B7E7DFD1920AAE99BA22B4C4D0648"
+    },
+    {
+      "path": "docs/assets/echo-train-model.js",
+      "sha256": "EBEED552028FA9C065AECC7B2554F539EA546970F7BAB6999A9F32CD64D20D41"
+    },
+    {
+      "path": "tests/helpers/echo-train-reference.cjs",
+      "sha256": "8DE32C959A4C0AC7FD6EF8636ED7CEA63B6EEF85B146FFC57CBD12EB82AECC87"
+    },
+    {
+      "path": "tests/echo-train.test.cjs",
+      "sha256": "F9D2AF4141FAFB010C5FDD156518DCFA17E7F01D398D2C793F14A98E8E836A60"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-numerical.cjs",
+      "sha256": "FBF7F8BC48917C1DC3E4602107EB7E67733D72CDDEF828632829F77CF072AF38"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-numerical.json",
+      "sha256": "C461D7573D6BD27FD80572FEC758ED3FF58DE13AC8A2253FB7E690B9BCAA15F3"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-browser-check.js",
+      "sha256": "A140C690EAA3210428CEC316C8D40CC43E15BDF142368CC6FEC5C30388209D41"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-browser-check.json",
+      "sha256": "B5250D2FD53AD63E394C5DC15EADDB3F15E1E7F5F6F6E2671FF67C9F718801C6"
+    },
+    {
+      "path": "docs/volume_2d_3d.html",
+      "sha256": "3A77B24E89837A41BEE5FB30D36CE15C6B1AE11887100AFA3E493B612F210BED"
+    },
+    {
+      "path": "docs/assets/volume-geometry-model.js",
+      "sha256": "5BA63E556BB3B6FC4B8D2D134B771D013F0507CDF985CA39AC7C8FCBB4C73FF3"
+    },
+    {
+      "path": "tests/helpers/volume-reference.cjs",
+      "sha256": "59952840BF33496BF352EC822DDDEE951E4B21A9D25CF8BCBF0551A9F8547B87"
+    },
+    {
+      "path": "tests/volume-geometry.test.cjs",
+      "sha256": "410B6F5AF2D23A368F9548B05B1542BBDEEEFEEF2242576D854BD3486E9BE4DD"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-numerical.cjs",
+      "sha256": "257C863200C39CA81EFED116F00C432E0F02CA22DFE7F4D20ACF06489C89BDD9"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-numerical.json",
+      "sha256": "949EAC74BEF711C84C0BEFD52B18CBF83E62D56A989240F7BDEBB562A8752D2A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-browser-check.js",
+      "sha256": "67F847F0A41F51E6A83F9E248664DB4D412E53C965991F485756878E1A83992F"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-browser-check.json",
+      "sha256": "C686B61E85A60660A54FFB34290E24F9A4BD526111C677D3179079EBD8BE6520"
+    },
+    {
+      "path": "docs/receiver_bandwidth.html",
+      "sha256": "785EF380C7D71FBF64D82CDBF4E84BE429FF4185C05923F2302F2D60872CA96C"
+    },
+    {
+      "path": "docs/assets/receiver-bandwidth-model.js",
+      "sha256": "964CE8EB3F80028F41ADA973E037BBB13E492799B4A9165A46043EE76CC8B789"
+    },
+    {
+      "path": "tests/helpers/bandwidth-reference.cjs",
+      "sha256": "EABE6CECFEA64787FE6EF8BADF36F7D15E69417AB3767329BD295357A850B91C"
+    },
+    {
+      "path": "tests/receiver-bandwidth.test.cjs",
+      "sha256": "97DE7B3B532D6C289CB2F8C2D81CDE41448C9A77CC4115C3FDB82A0D8BB4A3D4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-numerical.cjs",
+      "sha256": "AA10263F514DAFDCCD3F7FD548E0CC55A57A05E1CCC0F61CC386361D69E299E4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-numerical.json",
+      "sha256": "DA4ADC072B856549E99D0DE022E6659DFB99E272846BACA1762796EDB3ED84DA"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-browser-check.js",
+      "sha256": "E6BA6B09B1CC9D3CA93E758EFE595CB42BF57C06AA8633DE77D952E0B9E1BAC7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-browser-check.json",
+      "sha256": "3584E98B5F38F075068BE150A12AC18454D689C6522AD2C8268BDBA7EA6FBE08"
+    },
+    {
+      "path": "docs/scan_time.html",
+      "sha256": "F76B32F0005E8DCEF8D76A8336D28649329EE6A4CFE860B72CF423FD0F9AA777"
+    },
+    {
+      "path": "docs/assets/scan-time-model.js",
+      "sha256": "F83EF77B2F8BDEBA1D5A6A07508F84BBEF2A903333C2A6B2D58459A64B66A66E"
+    },
+    {
+      "path": "tests/scan-time.test.cjs",
+      "sha256": "B124A6159B3359AD520B7C4D3EB2E27960107A753698A1C5D3A3D1AB1FF03B0E"
+    },
+    {
+      "path": "tests/helpers/scan-time-reference.cjs",
+      "sha256": "B432A6AEE3446A621C376D57668EDA2BD0557820C320B57F3EEB9BCCB7B58B1C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q03-numerical.cjs",
+      "sha256": "22FD45A9C19EF9343B1CC50FA434CA5A5F6AC283C2C8A89D035C382C3326383E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q03-browser-check.js",
+      "sha256": "6965DFE88218AD45D6FE921458F85C45FB196324539655B443697F9F75F402EB"
+    },
+    {
+      "path": "docs/spoiled_gre.html",
+      "sha256": "F0B62178EDD1EFC29FFBBD29CFB6C3B8800D5F4BB9275E796D57799FDBD4F257"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "0D16E5812BE35FC2E57DC94477DB5EF413E09D0A287C04A3C0A075056C18E304"
+    },
+    {
+      "path": "tests/spoiled-gre.test.cjs",
+      "sha256": "5F3E1A0D8E2BADAD6CC158E74BA018D350060E6246FA616EB297FDE98B7D48E2"
+    },
+    {
+      "path": "tests/helpers/gre-reference.cjs",
+      "sha256": "7AF6532C4F015099EE94861F7A9DD01099947499C2A9EA900896A6B1A16A3772"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-numerical.cjs",
+      "sha256": "921044DB63250FA4F92CF82C097C48347A6BBDD53C9AC1178DDF27478EEC934A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-display-reference.cjs",
+      "sha256": "DE9D0C8DF7CA8F8C78C36A063EF56C44766DB40B122E2F76DBF6EFA4D778C07C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-browser-check.js",
+      "sha256": "356F2C7B84043A2AE534819CFA8162D0A711593EA0FC48EEF5F1537F54EFA8A9"
+    },
+    {
+      "path": "docs/epi_trajectory.html",
+      "sha256": "3CF9285A9DCAC2F357803416D4523C222425F7D2C9CD0576CBD04F7414027110"
+    },
+    {
+      "path": "docs/assets/epi-model.js",
+      "sha256": "6C5D5BFA3588DBF7559A6B1CC2ECAB4055BC5621EB5263DED7057FA6C0C51383"
+    },
+    {
+      "path": "tests/epi.test.cjs",
+      "sha256": "06D906704CB563C81009AFEA99D9E8F313D18B34F79446EA216DB744CF734379"
+    },
+    {
+      "path": "tests/helpers/epi-reference.cjs",
+      "sha256": "E1DF12C58058961D360C681AB40BD1F8E38954CC4F13A998A635523720B02CA4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C07-numerical.cjs",
+      "sha256": "678591D90E61AAB2FAAB3D7E61369738F5441E60A904142C80BDB57D3A93B448"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C07-browser-check.js",
+      "sha256": "6B5F289E8069DEB42F977AC39BBF460D0B9D18E290F2BF1E9F7BE9BE13C81963"
+    },
+    {
+      "path": "docs/parallel_imaging.html",
+      "sha256": "71F87A15897D01E275018FB0A136083B8DE1FD9CA6B19A9605C941477F6C0605"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "tests/parallel-imaging.test.cjs",
+      "sha256": "8B0305CF1BC02AF2035C101DA6105F02D62E5AD8F46B330038A50F10782F728F"
+    },
+    {
+      "path": "tests/helpers/parallel-reference.cjs",
+      "sha256": "3931D348C6F61817A283AC5BA6440478F15E3817B3814AC3EF59BBD0533F3BCE"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-numerical.cjs",
+      "sha256": "2C02D167EBB16CAC6D14E363EE7D52ED20D814B76E6488C27F3B41192F7B46AA"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-display-reference.cjs",
+      "sha256": "67040D46B233C0503B776F557EC1A368661C84F78CEDB5092692E2B5634F4055"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-browser-check.js",
+      "sha256": "75B643A64E1D1BF31E0CB790D750C8C9CE2D50307EF5337A29E53983F6B79F48"
+    },
+    {
+      "path": "docs/chemical_shift_ip_op.html",
+      "sha256": "93BE89D2D42DBD80B636C9CDE2FD9D343643BD57B6A4BBEDF0EEAC1FB4A01942"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "tests/chemical-shift.test.cjs",
+      "sha256": "A4D31B098FA8D89CF03C76293A1CF97FEA38CC887970E9F815B93AC6C08C9B35"
+    },
+    {
+      "path": "tests/helpers/chemical-reference.cjs",
+      "sha256": "D52AC25F6FFCC5E24BA6C650D69900D94DE05CA745E8302A5257D585C6F5E719"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-numerical.cjs",
+      "sha256": "43DC6EDE232B035AB0AF8651DFAF9E53319A30E2EBA3A1E6478E0A68C41BB7B7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-display-reference.cjs",
+      "sha256": "234AB17157C7E9BDA3863026A851917433504B765D6C5ECC32CE6C2E878475F4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-browser-check.js",
+      "sha256": "165652F52D44593F6C89CDA6728791106CB4D17E8FFF54DB63150B6F59D2BFFF"
+    },
+    {
+      "path": "docs/dixon_water_fat.html",
+      "sha256": "E4DCC13CB8B99E523602498A59E8EE0EC7B9AA4B242DB4433F3B44DFB481DF1D"
+    },
+    {
+      "path": "docs/assets/dixon-model.js",
+      "sha256": "388EE6DE7658C031F43E8A8F1611DC50219A2AB83B80B1481358DA2A1F547113"
+    },
+    {
+      "path": "tests/dixon.test.cjs",
+      "sha256": "D517BB7E984725B2F68F1CCE33ACDE2CEFE8C85CCD1BD7ECB467AA7F7F22DA04"
+    },
+    {
+      "path": "tests/helpers/dixon-reference.cjs",
+      "sha256": "8C4A20BF39AB71E640630EB94815F1A1CB1A405E80235BA7F867043F585DB4C6"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-numerical.cjs",
+      "sha256": "732EFB0B8321F2EA33ED5817F3BE5AC51909E427BB04E728A450BA63D5EFCE15"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-display-reference.cjs",
+      "sha256": "31CAA63180BF73D2001C683F5A7B4CDDE3351C6A8B311277F25463A657F14337"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-browser-check.js",
+      "sha256": "65763BFB228B6C3C8741AEA3CB8D1FAC2EAFD4797343D35EF9D9F3027CBD0532"
+    },
+    {
+      "path": "docs/spectral_fat_saturation.html",
+      "sha256": "A456A151C2257D26F50500171E7963E1B0A655094C487F4B1EAF1D4FC6DFD2D5"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "tests/spectral-saturation.test.cjs",
+      "sha256": "73FEB16C264D639A4CC44FDCAE4FF6345CDC05E880A595C31F23B357D476F20F"
+    },
+    {
+      "path": "tests/helpers/saturation-reference.cjs",
+      "sha256": "87403692B2DA55CEF853A32C150C60A1A5C685B2AC46B318EA7F57CC8DB89F86"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-numerical.cjs",
+      "sha256": "C17B235DAECB6081D79966D3A44BDB667E83FCCA5AC8D2FD3B6C0CF4CE4BB932"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-display-reference.cjs",
+      "sha256": "2655455BBCA8D1D7D81E80B58A14348C18223D2E35DA59BB5D9B8B9A18E5F685"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-browser-check.js",
+      "sha256": "0326B3F3A92A0D2D94AC549B958DB561E3CC08D6978D0C855075578120AC4CDF"
+    },
+    {
+      "path": "docs/fat_suppression_comparison.html",
+      "sha256": "5748F291B94EF3CED650C95B9DCD815AE8138D9BF9E7FCBCCCB28CF439D3C791"
+    },
+    {
+      "path": "docs/assets/fat-suppression-comparison.js",
+      "sha256": "404E5F429CC37F4CB4E42C02A6439916CF8C13EB87D4FCD4333204AAD8090E68"
+    },
+    {
+      "path": "tests/fat-suppression-comparison.test.cjs",
+      "sha256": "9A7D920CBB219099DF2B6CEEC714B252475357FE3C29952738EF754F8FD132C3"
+    },
+    {
+      "path": "tests/helpers/fat-comparison-reference.cjs",
+      "sha256": "000B830361ECC21EB1A735722E8C56CC9F8DABF36183BAA4B559DAC0A8FFDA72"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F04-numerical.cjs",
+      "sha256": "F96646CF0AAFBA1B1A66141132A1753F3BDF780066A807CEC94877A7761778E8"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F04-browser-check.js",
+      "sha256": "B35229000007A47B85A5EEC893FD6091EDDD227B0E1CDD3026797B71627EC239"
+    },
+    {
+      "path": "docs/diffusion_b_value.html",
+      "sha256": "CEDFE0AAF3BF4A728C3380299D7666C7FE10FBED0B893F8E7F9626DA8BC4A543"
+    },
+    {
+      "path": "docs/assets/diffusion-model.js",
+      "sha256": "0F6C54597E2FFC0357D482535511F924BD16F2EA2D89639EDE2A619111C06F84"
+    },
+    {
+      "path": "tests/diffusion.test.cjs",
+      "sha256": "F21B0615139949A710DDEC7312DE2E06E560E61408CC5BDF14B6DD11191FAFA5"
+    },
+    {
+      "path": "tests/helpers/diffusion-reference.cjs",
+      "sha256": "30E4F86B1B72351766C4810098987A9A4417C1D5E77634B471F6BA498C8887EC"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-numerical.cjs",
+      "sha256": "FFE152819795A3A1E0B30DE9415EA4FE760BA65DF7FE7E1145259E7F1FECB20A"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-display-reference.cjs",
+      "sha256": "90DED70907C4B9495C7A494A376199C9F91ACFF351DBA23DD775D235E54C6ED3"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-browser-check.js",
+      "sha256": "1D1D532F4EF2C8735B18B8BE2639263DE69F7CAC2A73DC421E64A9C0DFCE4D22"
+    },
+    {
+      "path": "docs/adc_fitting_shine_through.html",
+      "sha256": "22D9428CFE645CE2D98F561699782A5520B4B584FB4B03640850236DEFCF28DC"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "tests/adc-fit.test.cjs",
+      "sha256": "FA61BA37E96E070D1E02A36A7D4959F778EFC30943C3CEF2BEABFDB5C0DD0D3D"
+    },
+    {
+      "path": "tests/helpers/adc-reference.cjs",
+      "sha256": "A81A0126AFA23310AFF9176B74309D1E25CCE8C7E16B030229E9E79C26B94796"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-numerical.cjs",
+      "sha256": "DA222258C30076FD9EFC1A48BC122CDAA9B3672184345676B71A5CE0D29DB4D7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-display-reference.cjs",
+      "sha256": "B4E48BA72A78EA1342FC4965E442737EE07303AFB9D6BE9EFB042C4042A7C155"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-browser-check.js",
+      "sha256": "1F1DDA8F8785F1C22A80F9D5DB7D2791EC14B780DFE18C92EC39700731224A18"
+    },
+    {
+      "path": "docs/water_excitation.html",
+      "sha256": "B6D144384B29BC9B07471DFCB82078331144748E6AA280A0EAA9F5074BB85E11"
+    },
+    {
+      "path": "docs/assets/water-excitation-model.js",
+      "sha256": "B3189E425B8E156777A228646343A5DE1187F280AA1B46F207EEFC56B9660A29"
+    },
+    {
+      "path": "tests/helpers/water-excitation-reference.cjs",
+      "sha256": "30D90535271540D19DF3C538FB8AABECAAE9BA3270D49BC457AE39E726024208"
+    },
+    {
+      "path": "tests/water-excitation.test.cjs",
+      "sha256": "EACCD429BC66F82D5ABE7835D5237F13D2AEDDF399CE0084D10ADF64C822FFB6"
+    },
+    {
+      "path": "docs/dwi_epi_conditions.html",
+      "sha256": "2A572E94AB37D0DDC9D0DD667EB8F1E32DD7D3649B843AF146B4B0185430273E"
+    },
+    {
+      "path": "docs/assets/dwi-epi-model.js",
+      "sha256": "32A2AF2E7B98928A59179CC4C07AD8C8FF5BC9DBC5B4B9A00B66BA5370BB81BF"
+    },
+    {
+      "path": "tests/helpers/dwi-epi-reference.cjs",
+      "sha256": "DEF5F5B45D6C71FFF74AC11A6726FD97A4D5C0F942A203EE3BF3C929DB32D0AC"
+    },
+    {
+      "path": "tests/dwi-epi.test.cjs",
+      "sha256": "76193397D3766186B8FD863F4C33353D5114999B4A163B7C6F9FF1BC11EF8086"
+    },
+    {
+      "path": "docs/susceptibility_signal_phase.html",
+      "sha256": "3CA014A171712D79F4251C40A134330A19A5B342884FEEA9F08CC7A523C63C0E"
+    },
+    {
+      "path": "docs/assets/susceptibility-signal-model.js",
+      "sha256": "B1B84634ED64C6CDB33E75969906E30C565237A54628060CF22927FCCB4B98A3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "tests/helpers/susceptibility-reference.cjs",
+      "sha256": "E7F2711BA8228340E375F2115A9753D8D1C94AAC849D24CDB19B253AC37398BF"
+    },
+    {
+      "path": "tests/susceptibility-signal.test.cjs",
+      "sha256": "4939C8D546C1A6D215E45B5F536FEB31FAF7B9AECDC414E86DD6CB14A718B422"
+    },
+    {
+      "path": "docs/swi_mask_projection.html",
+      "sha256": "07E851ED05DA4A8668E2A045DC23595AEBE1248489D7341DE57EDEAD6C734265"
+    },
+    {
+      "path": "docs/assets/swi-processing-model.js",
+      "sha256": "3B29E31EB52001D199BF6F891C57BA7E13629B4664616791C52C782B28B29C9F"
+    },
+    {
+      "path": "tests/helpers/swi-reference.cjs",
+      "sha256": "48CF812401BC1B8D3E22B0B08CD21414556995395A605A2AD9FD81A5348B54A0"
+    },
+    {
+      "path": "tests/swi-processing.test.cjs",
+      "sha256": "0A2533D2496C0DB709B546B072E9C209FE4BED5FE709FAAA2457A6EC87B24726"
+    },
+    {
+      "path": "docs/balanced_ssfp.html",
+      "sha256": "96D5EA901DC96E9C09E97CBF409FCB26BBEAFD55D563E651F30AF17A1A1BD942"
+    },
+    {
+      "path": "docs/assets/bssfp-model.js",
+      "sha256": "252421E0B5CB8F69280EAF3A856E309BF8358B658B720C6DCBABC4EC15B03921"
+    },
+    {
+      "path": "tests/helpers/bssfp-reference.cjs",
+      "sha256": "02F0CEAB0D0E689B2684123B814F9202A677C5E191993BE5BCB1A4A5F41E52B9"
+    },
+    {
+      "path": "tests/bssfp.test.cjs",
+      "sha256": "B224D046C00E6A2FD631F3563AB09962E45230C059F303282F15CC3C92AAD8DF"
+    },
+    {
+      "path": "docs/bssfp_contrast_limits.html",
+      "sha256": "2692F539567D334EC770456CE3C3AA31765B8DE9556FF635F16DD73F6B8C862A"
+    },
+    {
+      "path": "docs/assets/bssfp-contrast-model.js",
+      "sha256": "23855C462A05EA01B4CCD7862EC340F378B2C9FD7CD36E8C2CE3D0CA8EC51267"
+    },
+    {
+      "path": "tests/bssfp-contrast.test.cjs",
+      "sha256": "3FF3F36250137D21FF44E62F3D9F598385C1553682D79CF540290EE2E50A36EA"
+    },
+    {
+      "path": "docs/partial_fourier_phase.html",
+      "sha256": "C9C2696CB97EDB009395FC48637CCA5FC2EB660D2AFAF5D982F70CF590E80E63"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "tests/helpers/partial-fourier-reference.cjs",
+      "sha256": "0E36BDF9074D73FA29180629337621F8FF458EF3F7CD5EEA91F53DDBAF75C4DF"
+    },
+    {
+      "path": "tests/partial-fourier.test.cjs",
+      "sha256": "50B44A84BEF52EF46EED9BC598842A6E30426806D44EB71EE8C9EACD66DB4DF5"
+    },
+    {
+      "path": "docs/compressed_sensing_sparsity.html",
+      "sha256": "BF75F079DB98AA201CCBD1833F4B88034B3663F887394AEB92B1979200646782"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "35938DCBBC78CEF3E6DFF6690C1ACFC9A6362965EB10EEEA86B04B1ACD9854E0"
+    },
+    {
+      "path": "tests/helpers/compressed-sensing-reference.cjs",
+      "sha256": "A225B384BDF80146185446AFAD23211193C4F7FD70B91A9ADBE504938B1D0772"
+    },
+    {
+      "path": "tests/compressed-sensing.test.cjs",
+      "sha256": "B24235E0B08452052A109DB5A2F6211ED290C901980A7F55322B248A23CB9A30"
+    },
+    {
+      "path": "docs/sms_slice_separation.html",
+      "sha256": "A6B40DB1E24817123AD6D81D7F165680A85C42EBC11869E1D8E47253F9728B88"
+    },
+    {
+      "path": "docs/assets/sms-model.js",
+      "sha256": "49D775402BA7A0071A89BD65CF7A71EF33F9217D44149171C663E4C544C1E923"
+    },
+    {
+      "path": "tests/helpers/sms-reference.cjs",
+      "sha256": "FA179075BB1EFEBE4B733C157A012AD8C3119071F105A61B7154B40B982B9D5C"
+    },
+    {
+      "path": "tests/sms.test.cjs",
+      "sha256": "14B078ED5F6AA6BE88EA8CC348902A51A37AAF7497F642E3F8B88B657D27DE9B"
+    },
+    {
+      "path": "docs/aliasing_fov.html",
+      "sha256": "4999E7A79537C2F3E6DBC10ADFCBAD58DC5A16AFF8C8C2753AA4ED12D1D2EC53"
+    },
+    {
+      "path": "docs/assets/aliasing-model.js",
+      "sha256": "A9FA759B9B024069E19809BA9FB956BC30925EBAE192141926BDD23989D3DB05"
+    },
+    {
+      "path": "tests/helpers/aliasing-reference.cjs",
+      "sha256": "4E11F532407662FBF176AEFC95B16468B88CFF8E2CDF198D2F71A5C73FEFB552"
+    },
+    {
+      "path": "tests/aliasing.test.cjs",
+      "sha256": "860F4922119CA0895FDE936C199A4354D99AC922AC37C4903D8AEF284E6DDE63"
+    },
+    {
+      "path": "docs/motion_ghosting.html",
+      "sha256": "652182544504DDE840D24A19BE05D30A5976A2D9078216B0F2C007A007181CEA"
+    },
+    {
+      "path": "docs/assets/motion-model.js",
+      "sha256": "5110FE4CECBE65DF18AFD0D911E3C06241101CDC041220D0A1B08719A461D085"
+    },
+    {
+      "path": "tests/helpers/motion-reference.cjs",
+      "sha256": "2396704C4850019F0383B5347979BA67865D31936751B4B9828FA58580EF5F33"
+    },
+    {
+      "path": "tests/motion.test.cjs",
+      "sha256": "727BF4B89989DFE9C7A86A907B09A9C9FF55E6B1A2FB1B1DF106CEF1AE499137"
+    },
+    {
+      "path": "docs/gibbs_ringing.html",
+      "sha256": "B34C756DA340FE331A7C23E4183CF195A954597F116E75932540087E345678DE"
+    },
+    {
+      "path": "docs/assets/ringing-model.js",
+      "sha256": "CB3EA1F5B5E3570C2CCA1804BAA415E615150A1CA44DFA36D6F5294F951351D5"
+    },
+    {
+      "path": "tests/helpers/ringing-reference.cjs",
+      "sha256": "988772AF560F813A9E073A1B33227B305D4111C31D9ED504F5FFAFC5BFA334B2"
+    },
+    {
+      "path": "tests/ringing.test.cjs",
+      "sha256": "DF76E109651BEE2BFEEA14F5FB435BB99E8B19C09DE1E649FB60F181745FDD94"
+    },
+    {
+      "path": "docs/chemical_shift_artifacts.html",
+      "sha256": "A955494292856F9B75B97396C1E0D2CEF63352DB1B7243B89017C27066359E13"
+    },
+    {
+      "path": "docs/assets/chemical-artifact-model.js",
+      "sha256": "BD51F04777FEC2C9F69B6E7FED9ECAEEE7C69A99F04C3D359CF387000EBF0B06"
+    },
+    {
+      "path": "tests/helpers/chemical-artifact-reference.cjs",
+      "sha256": "CBAEE341E4527346ED545699F54A45F9D3D1A69BDBC7E55FEEDC9509B4B8959C"
+    },
+    {
+      "path": "tests/chemical-artifact.test.cjs",
+      "sha256": "80A0F49AF207EB98043DC87FDF3ACB1E8F7F390A05BBA780E449FFFBEA977C6E"
+    },
+    {
+      "path": "docs/field_epi_distortion.html",
+      "sha256": "A5EFC3AADA6A8D5AE50B2B31CE54E6CBD919FB47BD1B4D3DB71489D65C7C88E8"
+    },
+    {
+      "path": "docs/assets/field-distortion-model.js",
+      "sha256": "682FB9DDD2EBAEFD9E8230A086D4EB3B9B283E30403AE259E820FD39B46E2CBE"
+    },
+    {
+      "path": "tests/helpers/field-distortion-reference.cjs",
+      "sha256": "047579AE2F6A2E540F97DF4380958307F7580BDE136DFF38ABC7ADBE3AD524A3"
+    },
+    {
+      "path": "tests/field-distortion.test.cjs",
+      "sha256": "284BE1C966728D442439F8823C91553591E8168C51076643B15B5EC684FE98E8"
+    },
+    {
+      "path": "docs/b0_b1_receive_shading.html",
+      "sha256": "0E26E0FBE06DADDA5DC2EC2B7A3B6DA0A6EA58BB13EF55E94C21D92E4BDDF506"
+    },
+    {
+      "path": "docs/assets/shading-model.js",
+      "sha256": "44D45219CCA228483918C5616A5590F7160C4EB3F46B6D3BB5B18DB49B9B882A"
+    },
+    {
+      "path": "tests/helpers/shading-reference.cjs",
+      "sha256": "F568E58522D56D606EE9989C8DDBD5B8FBF67120F6E4F682A0868A7E59490232"
+    },
+    {
+      "path": "tests/shading.test.cjs",
+      "sha256": "8FF103C61B3F57B4F876A6A088FF76D6B655174E416FFCC23873440627D68B3C"
+    },
+    {
+      "path": "docs/t2_mapping_basics.html",
+      "sha256": "7C02B09396DBFB254A4106E811991EB5CA26631742C6C5CAC1AEC36E2BD5BFDC"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "tests/helpers/t2-fit-reference.cjs",
+      "sha256": "149B3D60B7ABCA3ACB0D65463955E5791ADAE41317118BB60D3E1959E6070CF8"
+    },
+    {
+      "path": "tests/t2-fit.test.cjs",
+      "sha256": "042C32AD92129561C796869561DAA0C92F53035B6A8117EFA7DEAE00C2B89672"
+    },
+    {
+      "path": "docs/t2_mapping_limits.html",
+      "sha256": "9D34B7D9A949D40956BFF7B2F43995F53D59C5D0168FF4933FB9A362D56CE488"
+    },
+    {
+      "path": "docs/assets/t2-limits-model.js",
+      "sha256": "C5013DB430FF34822BD66BBD9866A96DC226BD797F15F8B2A074668121B01E92"
+    },
+    {
+      "path": "tests/fixtures/t2-noise-realizations.json",
+      "sha256": "5251FB31D51780191171E9BF0FE50532DC2EA1C4503A90DE60AF765B294AE329"
+    },
+    {
+      "path": "tests/helpers/t2-limits-reference.cjs",
+      "sha256": "EDD2137F66C240B3770D5C673DB3ADB036145C8632A7A6443510CD4D1703F350"
+    },
+    {
+      "path": "tests/t2-limits.test.cjs",
+      "sha256": "9A800FB98473AB3D055AE5E9A81477CB9E6D52AB004DBA2024CE7334B303F043"
+    },
+    {
+      "path": "docs/t1_mapping_ir.html",
+      "sha256": "48EFE6D50122D10E546072FCD46688697A43424BB7BA4C1CBBB6F9469D0BB5C8"
+    },
+    {
+      "path": "docs/assets/t1-fit-model.js",
+      "sha256": "76B3489CE66A269BD5DBE6F9B1A14F4CB7AF8E5AE5F1ABC65AD68137CD0A2CBA"
+    },
+    {
+      "path": "tests/helpers/t1-fit-reference.cjs",
+      "sha256": "D49182922B223DE7750A77F3CD90A28B4DAEB7E58C62F3E4F5844F12951250C0"
+    },
+    {
+      "path": "tests/t1-fit.test.cjs",
+      "sha256": "9DA24910CC142E8EB22823DE4B3C3B0B017E9B5F64FFA4C27B2C1ED629AEB3B2"
+    },
+    {
+      "path": "docs/t2star_mapping.html",
+      "sha256": "80E7FAE819D8EDDE2E7D5F80547A36DB75253083E3EB9D7FC6F3F87EE69A07CF"
+    },
+    {
+      "path": "docs/assets/t2star-fit-model.js",
+      "sha256": "CFCB0666AD1DB386BE8BA47D0970F36F3D405D83CB912C95CDC9DF00D63517AA"
+    },
+    {
+      "path": "tests/helpers/t2star-fit-reference.cjs",
+      "sha256": "AEB50FC41052E5958FFCB2AF13CFF8762697E94ED58CCFDC0CC43127E9CC74E5"
+    },
+    {
+      "path": "tests/t2star-fit.test.cjs",
+      "sha256": "EA02E8659D17F2B1B460E2F456C2D22C535D65FADBAACB3B3BB31887F9C743E0"
+    },
+    {
+      "path": "docs/pdff_t1_bias.html",
+      "sha256": "B5AAC37DF99498D1BCD34260589CBD626C32A90B498D891FB532504CACE400AD"
+    },
+    {
+      "path": "docs/assets/pdff-t1-model.js",
+      "sha256": "89E7B5CEE1E807045C0D9BB5BC9DBFD18F16809733359A2B42BD3F9D7406122C"
+    },
+    {
+      "path": "tests/helpers/pdff-t1-reference.cjs",
+      "sha256": "1D39240122342455A801BA9911468E477D765B857B36C37279C47A36656C3135"
+    },
+    {
+      "path": "tests/pdff-t1.test.cjs",
+      "sha256": "5BF7A6F6F5001CE12E1462A7C64744453120294AC717F7BC601131497FA47166"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-numerical.cjs",
+      "sha256": "51ABE77C693F52135D78E3EDC349ED688A3B5C580A7A1535A660815C1BE51568"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-numerical.json",
+      "sha256": "1EF24474405B8C7482A39DF8DE3F6652A6BA2453E6E595AE685E6EDAD752434F"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-display-reference.json",
+      "sha256": "3E7BC1B7DB18FEAECCC21B83DF18EA1B502E4C88D91ED63E4286C9F5B09C2EA7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-browser-check.js",
+      "sha256": "C5DFDBF67770451111A0CF587B1E96084D4015E6370CF0BAC3D52EE3611FE8E1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-browser-check.json",
+      "sha256": "623B7464C98F24581DBC10765438D94212AF266E9C8C32AE8777A6964944E4AB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-physics.md",
+      "sha256": "03E2C88DE0C80EEA83C6A3D6544C06D30D9E79B59D759A8BAEF767DCEFC7C1E3"
+    },
+    {
+      "path": "docs/pdff_echo_assumptions.html",
+      "sha256": "3AACA42EF6079AA9278E61FC38B782F67C4FA7B270898A95587C8333B3409BDF"
+    },
+    {
+      "path": "docs/assets/pdff-echo-model.js",
+      "sha256": "775074FD6B33BE9BA90711F254337F5EA3D142CC44F19F735668475A6C41A085"
+    },
+    {
+      "path": "tests/helpers/pdff-echo-reference.cjs",
+      "sha256": "5E4C66050409945C5CD122A23FC4C87B6B93AF6B153BF5B9AF9657773724348D"
+    },
+    {
+      "path": "tests/pdff-echo.test.cjs",
+      "sha256": "3EBA0184AA1BBC72EBB40771F8B78FCE3B8A438BCA8C13D13D862A3D31D1F5D5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-numerical.cjs",
+      "sha256": "C7A15988C16126CE2C75BEDAA67F46569790605CE1236F7B106C9D484BBFE066"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-numerical.json",
+      "sha256": "93F9CF5F58AFA3194F3B921366E077738B89C3805048D2D76B247D8D33C96F24"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-display-reference.json",
+      "sha256": "CE06879D1981588C0C3725C919782D554C53EE949C305E4B4852DEFFFE140D39"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-browser-check.js",
+      "sha256": "D2439EC01032565DA37DB4ED916DFAA5EF359F134F767602567EA691995D9287"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-browser-check.json",
+      "sha256": "5714F1CB615394E67083F7C80520059EE7339EA926F351950A6D42F21D161BEB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-physics.md",
+      "sha256": "222FBBDDEAD3005A64A7AD0DED9CA11A25C975ED05F4C9A84036DBD675E13452"
+    },
+    {
+      "path": "docs/complex_echo_water_fat_fit.html",
+      "sha256": "ED9F4D393A9121F8E05BB47B45F22B6F2C6E74B69E7D7C3CA47C3DAF214DB713"
+    },
+    {
+      "path": "docs/assets/complex-fat-fit-model.js",
+      "sha256": "FF6313DCD2B117E18A736236756D689DF3928B1F70BB2DCF25484878A39B756C"
+    },
+    {
+      "path": "tests/complex-fat-fit.test.cjs",
+      "sha256": "9FD14227E2DF99EF5291AC3D603B76DB40EC48C3ACA1612D331DE791BCBD521A"
+    },
+    {
+      "path": "tests/helpers/complex-fat-fit-reference.cjs",
+      "sha256": "A329D8C1A16CAC6055D66510D3D71AA321DA491BE00F09E3617A6B9110A302F7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-numerical.cjs",
+      "sha256": "4C641AA83871A7D642F71D06083741DE779114FE5DAE06AFB4A477B4CB97FBEF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-numerical.json",
+      "sha256": "B0A4D4209C150765A0664C80E7DA1A0CAAB79D3616A7FE70DDA0790BA81DC995"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-display-reference.json",
+      "sha256": "D8C46D965059A6DB11D2CD9C5681C046231567CBF043B59834F183FBA6A8E98C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-browser-check.js",
+      "sha256": "5E5CDFC5C294A2A1D68215ECF86550FEEEA6828135B7C46FFF3CEFB54D96B3FD"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-browser-check.json",
+      "sha256": "ED93156190E60D83EE1866D3F05DBC965CDD4A465A587F03A801AEB6C201CC5F"
+    },
+    {
+      "path": "docs/contrast_concentration_competition.html",
+      "sha256": "3B1B35A8DC14C9C4B552E4AD6C0827EC0D11F87BF6A76FCBF84D096E15D4507D"
+    },
+    {
+      "path": "docs/assets/contrast-concentration-model.js",
+      "sha256": "049A7B0707E5965BA36D89EBB8F97B174FE6839A56ADEB1750D29AB20CFDF0F3"
+    },
+    {
+      "path": "tests/contrast-concentration.test.cjs",
+      "sha256": "4F62264A8AC5484F4E012C08FA8F2067F9422BAE04AC1691D425844BF11A8060"
+    },
+    {
+      "path": "tests/helpers/contrast-concentration-reference.cjs",
+      "sha256": "141EF188AEFEF408560304670C069F2DC5B4264B98C04EDDEE004AB5F5756129"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-numerical.cjs",
+      "sha256": "B374736B2660BA3A8FD96A368F8DA2498872D8697005618A710B6096A0827A37"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-numerical.json",
+      "sha256": "50ED4ECAE73184AA3D5611273A5FED909FDBDD2DE0F8FD986B78C33776E2415A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-display-reference.json",
+      "sha256": "EFA46A95F26BE3B09CF2A48DEEB797213616E2523D7DAA2719EE82C6CCB25D02"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-browser-check.js",
+      "sha256": "13177CDEF127126059F56CD273C5B4CD90AFE159855858B9BDF4ECFCA1DB37C5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-browser-check.json",
+      "sha256": "1CFDAD60A1D9EA480DFA684FACC336D80A0AE81A9659526A3B6CE5F0E8723D43"
+    },
+    {
+      "path": "docs/flow_gradient_phase.html",
+      "sha256": "AD23EE083FFDCBC9106068FDBE4D693C032F646DAE38A258631848155920BDB4"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "tests/flow-gradient-phase.test.cjs",
+      "sha256": "D1D2AFCDD113456F4206C2037BF284CA1510CC6D827C4D55E2DD617B7E0F5B62"
+    },
+    {
+      "path": "tests/helpers/flow-gradient-phase-reference.cjs",
+      "sha256": "D9D2E2CC88EBE908B3F3627B4026641B66A0D007A3B74301B8E3AAC1151D5C56"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-numerical.cjs",
+      "sha256": "B4974F057B24FDFE684F1786305CA423E01E100505F444E55A59837105E8A1C9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-numerical.json",
+      "sha256": "026D35D16F1B167870EB747743BD7E0B379D3E0376B6B14F910C7AC4D112A68E"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-display-reference.json",
+      "sha256": "9B6287CB183DBF744B111EA7FDE45F6E7AA3174437A7895FAB0B69B5C2B3A75B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-browser-check.js",
+      "sha256": "9AF69E52B35263A2EBBB990C67F6E43FDBAF270927ABBEEE910B512B8340F614"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-browser-check.json",
+      "sha256": "C197745960FB4BEFEB7BBD187C69A7B6978B815198DB04A70CEF34A73C4FCA85"
+    },
+    {
+      "path": "docs/inflow_rf_saturation.html",
+      "sha256": "BB79DC18E05921A90265921CF724726474A3E0E35F640DD948C31DC383B482C4"
+    },
+    {
+      "path": "docs/assets/inflow-rf-saturation-model.js",
+      "sha256": "82D9A34A28D265FC0B3F2FD098A8201492384217F91BA7E096F29C21997C1C2A"
+    },
+    {
+      "path": "tests/inflow-rf-saturation.test.cjs",
+      "sha256": "2A053CDD4962A3C8308E6DBCAE066A105E9D6267B78E56000A2521C1C1952156"
+    },
+    {
+      "path": "tests/helpers/inflow-rf-saturation-reference.cjs",
+      "sha256": "CFADBE17F01EF3073BD456990AE20DFF02CAF0C2D93850479B1F8D3E3371DE49"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-numerical.cjs",
+      "sha256": "1A9E42BC1BCF5670161CF666815DB406734FB0316A87B5B195C2BCE62D8D8E9C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-numerical.json",
+      "sha256": "7274BF3C7793AC230E0C961F6DF278B4961B63A44B50D4021B7E34A2DB81862A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-display-reference.json",
+      "sha256": "85ABD54165DFEAA8CE44DFACEBE91AB695BF718C8BE23916F37FC075503F55BC"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-browser-check.js",
+      "sha256": "033A56631BEB38EBC843698CED174A6E436200C494970AFAE89797375248AEA0"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-browser-check.json",
+      "sha256": "A07DC536ED34725D85BF7A31797050B6C23A92717E4E7B37B733F39E60690E0E"
+    },
+    {
+      "path": "docs/hemorrhage_state_reading.html",
+      "sha256": "5585BA6372380DD376E826CDBDD90496AD6F2F94278BC6BBED6B22C2B03022D1"
+    },
+    {
+      "path": "docs/assets/hemorrhage-state-reading.js",
+      "sha256": "109FE246BD4808DE3C75047A2A3C082245529B1749E4292AFDE4D42810B6CB1A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-source-review.md",
+      "sha256": "D5876C9FE2D6B1964F4EC9C58E6989C8116D41A079C2532382C7EDBD0D367AE2"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-browser-check.js",
+      "sha256": "0DC33DC356BCD781CC07FE0265B2A7A44956261636E250CA0A8F5249AC287242"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-browser-check.json",
+      "sha256": "6E189B8B4B8205D8B62AEE2E794760B4A9586A4BCFDD8F68F486A45B8732875C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-viewport-check.js",
+      "sha256": "1FE107E61F1F6CF0E856130D54C169F3D1B1B207659775B445A9719437722D2E"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-viewport-check.json",
+      "sha256": "44489A9297FC70A20847730F85997C89035A88300CFFB24F097EB8EDD5183AD8"
+    },
+    {
+      "path": "docs/fid_spectrum.html",
+      "sha256": "C12CB7EB026B7FF113863C35D872E71C7A48D603C6A62E0E7A20EB9ADD8821FE"
+    },
+    {
+      "path": "docs/assets/fid-spectrum-model.js",
+      "sha256": "86CC223D18789288F91CAD7CD74F58A0963A633743B6A85B23D1C7AD8DDE9E44"
+    },
+    {
+      "path": "tests/helpers/fid-spectrum-reference.cjs",
+      "sha256": "E5A418BCF6B1E954EB9D2E90CA06821F8705737029CC9EDB9E34C569E0943960"
+    },
+    {
+      "path": "tests/fid-spectrum.test.cjs",
+      "sha256": "EBC62B8FC9B4262799F86655BC9FEF21DDD776F82CE4F785897F24F578D79B4C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-numerical.cjs",
+      "sha256": "5099C165B9325EB68E5D6834BE6A03AD9D0908A0895168EF51E3D35FB425179A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-numerical.json",
+      "sha256": "BB52C9E9ACF512A8A0EB789F78F31240EE561A85F45D65411942852AA6898D7D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-display-reference.json",
+      "sha256": "F8BEED1BE08A00F898D82A5C3EC451D2104BBC00E7E5383B57D984A4006593FF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-browser-check.js",
+      "sha256": "C8F92B76A61E8AFB7C48062C0E9D91E05326F60C80FC61D04D28DBA9278BADFB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-browser-check.json",
+      "sha256": "6FE28ECEB633B5352679B3FC4951542150CB4D6C04EF0CBA23F3A4C84F40952A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-physics.md",
+      "sha256": "8B07083C5A9931AF9E7E8877B5FC9C077CA9A94979D7B5B8EA7C0EF95ECB9F9E"
+    },
+    {
+      "path": "docs/spectral_peak_features.html",
+      "sha256": "9888E32BF2E684110E1604DB8A8E61E649BC9B15F08AE6C3806EC15BA683701E"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "tests/helpers/spectral-line-reference.cjs",
+      "sha256": "077911B082755ED508DF67B040C8A70A2B79C5CA107C87BA5753BE7D8B0369A8"
+    },
+    {
+      "path": "tests/spectral-line.test.cjs",
+      "sha256": "45386FE926E50715657E2433C52F4EFFD16EAF21FA6B167B29FC6824B86E46AE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-numerical.cjs",
+      "sha256": "6C193BAA722A864164641E708C9AF2A1E50A0DF91036BDE757061C9A12545E05"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-numerical.json",
+      "sha256": "35E4B38800D139E0D7F5ED1DC61A75C3B57E329E9A7E82D7436FBCAF54544445"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-display-reference.json",
+      "sha256": "037FD72D8121FE09FE0A3CA77C9EEDF4FF19711AFEC51CA548F668B9CE4329C1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-browser-check.js",
+      "sha256": "0195B35F33083005C9AE9FCDB5062CEA80EFA6A4D4AF2159A21251849D0DA34A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-browser-check.json",
+      "sha256": "693B2D6379F61478DC0A2A406E5385C0B564272E8F9CDFC76181380CF44449B1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-physics.md",
+      "sha256": "4D3CEF1485FB1123FA0E233E4B13A03EE7B96CA14DA5CAD87D35971AA0E67795"
+    },
+    {
+      "path": "docs/mrs_observation_volume.html",
+      "sha256": "2C70AA2610F57ACEDFB59BCCFCE5DF852F760C5B83820E5AA1CA36609DAB661C"
+    },
+    {
+      "path": "docs/assets/mrs-localization-model.js",
+      "sha256": "63AAAEECF1F9DB08AC9B53E8C78CCB001B0685BCA094CC997049C99E5C64397D"
+    },
+    {
+      "path": "tests/helpers/mrs-localization-reference.cjs",
+      "sha256": "1682FB766F312E5ABFECD8D982C7CEC34D3E65C5F4DF4DD433E018F6F9A25668"
+    },
+    {
+      "path": "tests/mrs-localization.test.cjs",
+      "sha256": "B7DD7F9C128BB3BE510BE9587B4C728B7F76DF2B2BB5430F7D48BB332244EA24"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-numerical.cjs",
+      "sha256": "EF25DD3CB1E79BCA6CAF2A6EDDBBBF0BE2A19EF3128904B3B9C2C27DC5B5AAB9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-numerical.json",
+      "sha256": "51DEBDB98034514F4B651F34662C35DB27BAD51F68E54FEDF189218DBC2425D5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-display-reference.json",
+      "sha256": "B629E97F67B95CA235A815F45B9E6652C653663441705B13A4D8A31C273397F3"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-browser-check.js",
+      "sha256": "DFFB2566FA6500B562B83C81E2CA48FAFEF856935D25EFA15C1443A7C18938A8"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-browser-check.json",
+      "sha256": "B37C160BF1A53F44A5A6281352FECC562C224138FF48ABCC1A52E78BC6676A87"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-physics.md",
+      "sha256": "51B5A764965430887B8E52D6F01567FB2B267D081FE81F144ECE2E35A49BFB54"
+    },
+    {
+      "path": "docs/mrs_field_linewidth.html",
+      "sha256": "483B16B05F47DAF401EE5B3784F6AD25CBEB2E78CC0A9B43F85E50F6A4AF8B26"
+    },
+    {
+      "path": "docs/assets/mrs-field-distribution-model.js",
+      "sha256": "09E8275836A935DFC47F3E07FFCEB58B3301DB0446F5FA5C46A5BC312334AD44"
+    },
+    {
+      "path": "tests/mrs-field-distribution.test.cjs",
+      "sha256": "C184E4386C006860FC6A8C4C7138610C5CC3D7FD771C3B22DB9C6201BDE1D575"
+    },
+    {
+      "path": "tests/helpers/mrs-field-distribution-reference.cjs",
+      "sha256": "32E1BD068AA71460707CFED762786DD30FF28A8884A839A94D9798380AD523E7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-numerical.cjs",
+      "sha256": "5A36AB4D60318BEF4091501F446922BCEA4774E5AAA9E19016ECDA660CF9804D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-numerical.json",
+      "sha256": "4EA6B12B43D38D6FF3C26911E2C9C601784267216DDBFA7C0212CADBA3EAA42B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-display-reference.json",
+      "sha256": "755593182341191F8B87AB539614478DCB96D562D2E53C5392A3F1FBAE3FD296"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-check.js",
+      "sha256": "1F5453E6BDD835BC36272CAA4F401771547A35437186034CFF5711AFB9F72213"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-check.json",
+      "sha256": "77683CD62E5394D0B784101AAB53008CF0273D91E47A594432B20CC43DFBF7BA"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-capture.js",
+      "sha256": "64F7D4FBDA55E4685F53F2695B7BB7D0836F6F25BC4AFC89A860BE0391C4B7B4"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-browser-capture.json",
+      "sha256": "BD704133D1681D86D7C9F8C127CC902574998A3DFB0019E3B49AED614B5FB21B"
+    },
+    {
+      "path": "docs/ecv_r1_partition.html",
+      "sha256": "5BB7BF6851813E64798EE3F607836A6F5C22A2F1C65D0D74C708A71860CCEA02"
+    },
+    {
+      "path": "docs/assets/ecv-partition-model.js",
+      "sha256": "1FFBF91FFA38266C77671CF52B07D3468055873846D1E1CD502DBAD7B1B8F8AC"
+    },
+    {
+      "path": "tests/ecv-partition.test.cjs",
+      "sha256": "60C793689B9BF512A54CB75B328DC5A907555399940B3084D70C1F2AB367D9BB"
+    },
+    {
+      "path": "tests/helpers/ecv-partition-reference.cjs",
+      "sha256": "4E4433B569FD294DD4D555642ADD5ED0926C8672FBBCDD7F7598577AB0C06D16"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-numerical.cjs",
+      "sha256": "1A85B5A815B35EEE29AEF42618C593F4A669C373859F12A4B0A4F8B45B3D7127"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-numerical.json",
+      "sha256": "DF86A103B2E3FDCAAF1B1AB7DE5115FF81CDFEC146F8133E6DCFD62F139A196C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-display-reference.json",
+      "sha256": "9FCC8AE09591D8CEE09AB3A1A49005FD3D70A881B617DE6871C216048C3EFF7A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-browser-check.js",
+      "sha256": "2341941C892F6E835BDF67800CA09369947D1964A2B039286104D78C97FA9D14"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-browser-check.json",
+      "sha256": "A2FA7095CC85B7BAC30726B5AE9A4B8B2631747E11E5D7A8228F70BAE74339CD"
+    },
+    {
+      "path": "docs/finite_rf_slice_profile.html",
+      "sha256": "26A3C858F7A2454543771CFE070A8C154571F75F01539DADAE1D3EB98DAC8861"
+    },
+    {
+      "path": "docs/assets/finite-slice-rf-model.js",
+      "sha256": "85405A9BF179203C8A56B6741670A3F7CFCEE638E3DBCAA303E9C14075F9BD83"
+    },
+    {
+      "path": "tests/finite-slice-rf.test.cjs",
+      "sha256": "2C6F691EC59A902A59CCC4D88BAE129C6CCDCC946A28DFB8D6D8665D22999CAD"
+    },
+    {
+      "path": "tests/helpers/finite-slice-rf-reference.cjs",
+      "sha256": "7D5791C13D06BD96AF4EA9AA8AF49996724EF30170529B340FA45EB1CF504005"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-numerical.cjs",
+      "sha256": "9EF9858E6A335A2788D3DCD132DFE82443BEA70E0D72DA42E631AAF7557DDDAF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-numerical.json",
+      "sha256": "32A812314D49D38E5DC06FEEBBB6226F988565EC3FA11BE825144996E3F2BEDB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-display-reference.json",
+      "sha256": "A8032DBAC679F5DF117399FEE64D30BE1B96453682C9D8444FBF95EF9D43FC64"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-browser-check.js",
+      "sha256": "10DA98E52110302EEEBD0D899E4976DDE6A1D42FC8D9042642B3C52B0D1BC870"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-browser-check.json",
+      "sha256": "AF112FA452FB4CF2B74E980942DF7AD61A2337593A078547B6F4B739364611BD"
+    },
+    {
+      "path": "docs/mre_shear_wave.html",
+      "sha256": "5D5A8502ACB8ED6F6C432375E83B74281BFC01070FF452C31F7AEB6E0036A915"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "tests/helpers/shear-wave-reference.cjs",
+      "sha256": "BF470EB290DADBCEA40B01C2126F1A1751AA88EC50F776C92A9472512EDA056C"
+    },
+    {
+      "path": "tests/shear-wave.test.cjs",
+      "sha256": "5FD9D5772ACB917490CB568536D36A9A3EE091897F682D41668999DB54E445AB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-numerical.cjs",
+      "sha256": "361E9F1737C4F2320EFBE8E2D2462D00E3BE33061E253096EFEB76A0655356A9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-numerical.json",
+      "sha256": "27093AC89E842293FD7CC48443C4E5B7EC9A5A343AE30E3F7EE9896229530623"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-display-reference.json",
+      "sha256": "A832FD8CD1BA5429B9595771B65EC839D77C01454AF05CC49E1D25FC7EE6B8C5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-browser-check.js",
+      "sha256": "3D5F33C6DDB2C8DCEF08807C30525B754A615CC2B984CC3CF5B3584F4088D4FF"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-browser-check.json",
+      "sha256": "2C82EB812B25CB039787BD1D21C425635B7CEE7A762891E3F4CC75E80CE5D679"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-physics.md",
+      "sha256": "656EDF8030956617FE8975F9F0892D0A65A30A2BF114FC2A88E9D7EEBFC6F11E"
+    },
+    {
+      "path": "docs/mre_motion_encoding.html",
+      "sha256": "8F7CBC5F44306E0DC5034A2341BBEFAF84893852A7D7A02914815A1CA0E29652"
+    },
+    {
+      "path": "docs/assets/mre-motion-encoding-model.js",
+      "sha256": "FC5CEE4B610C663E6579BD65E6D38ED1875993EF68C49E6008FB7DE8D0DC75EE"
+    },
+    {
+      "path": "tests/helpers/mre-motion-encoding-reference.cjs",
+      "sha256": "920AFF34802DB18F3DA3C7D0A59BFB6DCFBE05CC3B0D46F7E38A6E99CDDBF046"
+    },
+    {
+      "path": "tests/mre-motion-encoding.test.cjs",
+      "sha256": "6BF6431D70412A7EAEBD8A751DBB6D7B500B1AFC45E133299E6A3DD872A9C861"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-numerical.cjs",
+      "sha256": "5C8BCF68CA5EA4CB3BF34BE7614BD39CCC1FF34D751F462BB5385BFED9EEC634"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-numerical.json",
+      "sha256": "011C223738227DF045531373145913681695869CFEC8CC7681A94E9F83D11C2D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-display-reference.json",
+      "sha256": "56D869EF9047E822F7AEF2080A98B439FF14AA2C5628177B6C822CDD98846F0F"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-browser-check.js",
+      "sha256": "FA47ACCF857926BA54C05445EDEC906CE66BD5FFA14EB587969CABA43B9E563D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-browser-check.json",
+      "sha256": "E8AB25EFD4673F1EB3843394BF9F58A40A479D1A97A3FAE0309646207C92A557"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-physics.md",
+      "sha256": "F981CA8998C8C15A3412A793B4F7E3902C33B309562831D33400139349C1EBE4"
+    },
+    {
+      "path": "docs/mre_inversion_limits.html",
+      "sha256": "97CF513771E9C1B0DBE32CD4BD6F2558B883F27BF47899A9C57CD89F35F55C90"
+    },
+    {
+      "path": "docs/assets/mre-inversion-model.js",
+      "sha256": "4E29430363D40B98711639A9E53A9A6D026CFC669538986D2BB44D6452AF3CF8"
+    },
+    {
+      "path": "tests/helpers/mre-inversion-reference.cjs",
+      "sha256": "2FF343D8C47FA4BF27698DE3BBF0F101373563CC6FF904CE675027B8B6F98B3A"
+    },
+    {
+      "path": "tests/mre-inversion.test.cjs",
+      "sha256": "578CF7C08F7C8CD7B99234BAEF6C49073ADE5BE3E924FD2B6FF9A44415C1B024"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-numerical.cjs",
+      "sha256": "5CDB146C7C670CE68B3350DB987D023B8DF7C1C8CEFC09D048A8FC9A19C3BCEB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-numerical.json",
+      "sha256": "17187B277D1E361FF380ADB6B6387CB002D0C4A1652A4C3DA943DC42AF2CDA65"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-display-reference.json",
+      "sha256": "E2CB3D75EEDCE54B5873CA38572BC73028F91E7672FD512F4E2D8D417E43C206"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-browser-check.js",
+      "sha256": "0C56D7896DC2487DD6DDDAA86063EE0DDFEA79355264E5D51BD436211C4A1956"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-browser-check.json",
+      "sha256": "C09A4EBD48B45CD18EF5F86AC6C7594CF75D6DFF3C589927FEF5D98A853930CD"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-physics.md",
+      "sha256": "74DD640894C5344C26F8C24DDD4E18C69EBD9DFE2007F3B83EE7D67FC0839457"
+    },
+    {
+      "path": "docs/qsm_dipole_inverse.html",
+      "sha256": "192028DE8FBC7B2598F9A1BBC90E1DCAC8B5836434800C14605D86C84AE92601"
+    },
+    {
+      "path": "docs/assets/qsm-dipole-model.js",
+      "sha256": "80049AB56CF24C7365951A568ABAEF9A13E0A38C5B5E9F0DB5DB094870071267"
+    },
+    {
+      "path": "tests/helpers/qsm-dipole-reference.cjs",
+      "sha256": "C3AA99F3DB3A2A256DCD1AE443D07DEA2192510C3EECF61DE7363BAC8D59AF8C"
+    },
+    {
+      "path": "tests/qsm-dipole.test.cjs",
+      "sha256": "FDA92A60F79F3BA07799EB5DE34B250A37FD0BC1EB89A60468C8E9C7D012DF51"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-numerical.cjs",
+      "sha256": "EC989F4C506AFD0F0A93B21EFF76DDA8EB9D932DC772AA0527AEDB217BBAC345"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-numerical.json",
+      "sha256": "D8EA17231D5347F8B814049438F2813AFE764F58E71A5C13BD0BB172FF6B27DA"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-display-reference.json",
+      "sha256": "F74D39AEF0A639949C60923CEEB8DB40AB87523E326DF953E6E3421469E698F5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-browser-check.js",
+      "sha256": "2F663174E6FE3624A1A649BECAF664E321939B428D4C9D2052CC0258B49E1FCE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-browser-check.json",
+      "sha256": "D63D27D5C9CDD61678078FCC150909FAA03C26477280D91136586C2F5226374C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-physics.md",
+      "sha256": "18BFA5452393C3822EF36A5FBB00E25813C3D2D3E1A941DC88347B05F008F8DB"
+    },
+    {
+      "path": "docs/reconstruction_roles.html",
+      "sha256": "1D0BC099D48DCCD4120AE9FB399EFF7D44F6D038954FD5DE81FE0959C84D5791"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "tests/helpers/reconstruction-roles-reference.cjs",
+      "sha256": "DE46BFACB3F24FC42B72B1844FD8C97D035C8EAA8E59A1D3D30D920298F0CC69"
+    },
+    {
+      "path": "tests/helpers/reconstruction-roles-noise.json",
+      "sha256": "B85E14B0A52C6A433D9977FDC69EE59ACD501DD3217A8FBA7D47ED26EC0B2B37"
+    },
+    {
+      "path": "tests/reconstruction-roles.test.cjs",
+      "sha256": "49066B61BCFDFBE1005BD6ACC68B729653AC98EBF23AF93721CE91B7C580BD84"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-numerical.cjs",
+      "sha256": "3DF7D6057873ECB588A59D1E26F6C4CCBA3C6EB1F8D647A50B23467764957353"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-numerical.json",
+      "sha256": "043DE1703101ED59CEE946DD75D763686599918693D45A6296C41D031AEA4FD1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-display-reference.json",
+      "sha256": "B6AF9FA1D596F006084C963F4A326A1F98EBF95A731E16D259600D63C4D84E51"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-browser-check.js",
+      "sha256": "F421C8E3AF0A13F0773E1DFBA711A3B0791B9E25CF7B49A27198E6C0014217D5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-browser-check.json",
+      "sha256": "173CB3B0BD5F6E8AC784573E8B65FF2ADB334DF145393D8F2D9F296AC05953A5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-physics.md",
+      "sha256": "2EEB30ACD127485F39E1D4D22A4AD44FB5AE84BB85EE5AFF64503332EE8777BE"
+    },
+    {
+      "path": "docs/structure_texture_evaluation.html",
+      "sha256": "00C512D896BFC5D9C6F5C58A20DE3BD357A21DC76BF29814CCD29D28F0C61DE6"
+    },
+    {
+      "path": "docs/assets/structure-evaluation-model.js",
+      "sha256": "E0247BC80B853642B1F06A256B70DF7DFB4350FAF53CA30758DC5598DB95F824"
+    },
+    {
+      "path": "tests/structure-evaluation.test.cjs",
+      "sha256": "8F8A7351FEA42D2F7594C48A834773418ABA08C25C2F66624998A1EC3AB4BD4A"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-reference.cjs",
+      "sha256": "5EE54A4B42F2995AEB696D7D93D8871084B71D0D7B2C4EA78CB0E63869AB1781"
+    },
+    {
+      "path": "tests/helpers/structure-evaluation-noise.json",
+      "sha256": "39B56947C210394251869BAF923C8FF95B342F019057735CAD6EE972D6E5F3DA"
+    },
+    {
+      "path": "tests/helpers/kspace-fft-reference.cjs",
+      "sha256": "FF6BC1FA5C0836677A7C5FD90988AE275DAE0164BA2FF78FA8DA4782311DEA62"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-numerical.cjs",
+      "sha256": "573DEE25634AE5267D30C4B295220110A6A1CFCFEFCC30B419506FD5B6783E4B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-numerical.json",
+      "sha256": "88A3E2310C6269401CB3AECFCF10AEE5BED79505D6727A7CCEA2651D439658B7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-display-reference.json",
+      "sha256": "18E4BB28C3F229C008020F1D195F0A1C81A43570B3BA27051248667207A8FB9B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-browser-check.js",
+      "sha256": "C700FA908A15D06EE912E537A3E33BBC933B83FD095020F2A1D16A09B6183F0C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-browser-check.json",
+      "sha256": "B57645C349B2DD50823B474EF97A8E80DEBCA2205EDFCE14E32A5D634DAC8B93"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-physics.md",
+      "sha256": "C1D58E1F81CF7FE521207552BC7219FDAA1DD923719DFB332254ED91F9E6D318"
+    },
+    {
+      "path": "docs/processed_t2_mapping.html",
+      "sha256": "D12A42B717DC811A5CB66B04C2E4D37DB2874D90043650B34590DA612BCC88DB"
+    },
+    {
+      "path": "docs/assets/processed-t2-model.js",
+      "sha256": "DD84D1963E51DD90944F58FDC92DF39A1024152D22F26FC1293A577F93A4A22C"
+    },
+    {
+      "path": "tests/processed-t2.test.cjs",
+      "sha256": "EE21D38B40257CCAAE44F373A5E8FB1CD3B2B0966960552D4A1F0A3CEB92D21B"
+    },
+    {
+      "path": "tests/helpers/processed-t2-reference.cjs",
+      "sha256": "15897167B6C8A9102AFB47F37DA6B3A689CC136D921E5A447EC6CCF0A0A42608"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-numerical.cjs",
+      "sha256": "1D45ED291F693B208F44DB07C4C2F73DAD08C607ECD519B5C12E3F6FC7ADEF20"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-numerical.json",
+      "sha256": "583A5955237EC6661FE70B1AE695E1E9F3FF5BDB2F006021317834262865245D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-display-reference.json",
+      "sha256": "E66E8D8AAC0AE81431F1A344E33AA733CFD09F4A9B3542797F7E1F2D08B83DD5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-browser-check.js",
+      "sha256": "F97F2ABBB713FAD62AD4F902FFA5482C8B0347F34DA5ADD570AF218321D17F8D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-browser-check.json",
+      "sha256": "6A5270D146C8AA0A166C67239FA81F52677CD33370D2EBE0940E1081F51F914B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-physics.md",
+      "sha256": "26ACC855198435751A53CD79046DD0A74326B73DE7D745901FAD184713555E75"
+    },
+    {
+      "path": "docs/vendor_ai_reading.html",
+      "sha256": "0EC8B9FBCA1A922DEDC2FFD99E58AD4E7134A9400F4A71D68E74AD693D14F6BE"
+    },
+    {
+      "path": "docs/assets/vendor-ai-reading.js",
+      "sha256": "73BA4B0E9D9DB95E0037253E97D0695F5A711DDFF977A3DE892E1F09773E73DC"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-source-review.md",
+      "sha256": "36C0D2CA76AC08E1BE715EFFF68DF5D3D6049CFB53AFCF5552234526A9BECF44"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-browser-check.js",
+      "sha256": "DF6CB488778CF64E7CA64B2075A6EBB5CA1719AF6DC88DAAB96AE02EEB531C46"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-browser-check.json",
+      "sha256": "BE0EC64CDAF820E944F10A60E464E7601933AB97D44921E6C7CF619408FEA760"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-physics.md",
+      "sha256": "D3E52244C5A618ABCC145346A44509A1AA475909730997181840C802D80DB71B"
+    },
+    {
+      "path": "docs/reconstruction_noise_ensemble.html",
+      "sha256": "5BF43C5ABE8C6ACB2062AE81BB8F59A458C18ADE5C94DA497C296991BC32F068"
+    },
+    {
+      "path": "docs/assets/ensemble-noise-model.js",
+      "sha256": "08966AEEB3BBDC3B8ADF33FEA2C500F9942BC06D695E64149AB1744A7A9CE74E"
+    },
+    {
+      "path": "tests/ensemble-noise.test.cjs",
+      "sha256": "961B1A78DCC9EFB5AB64B52B8FFA4B7315D782CE581D97390BBC8C8B787B816A"
+    },
+    {
+      "path": "tests/helpers/ensemble-noise-reference.cjs",
+      "sha256": "EB5EF4401212398ED941F7A522A8597494F214D2BA0DCC1375D0F6C2FBBF70A8"
+    },
+    {
+      "path": "tests/helpers/ensemble-noise-input.json",
+      "sha256": "B2420B2D308E6CC6D996CC300C4A53227EDDCD2EE84F3E7F2DFA2E909CE29802"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-numerical.cjs",
+      "sha256": "BE87F14497665D23873F346AE2F7C9B259B0A1444F22C5C5549D46D9A45B0248"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-numerical.json",
+      "sha256": "A066858B6707F630E943229DBF521F23D3F166BD6993A6F36EF0E5FE722B6EE9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-display-reference.json",
+      "sha256": "DB7ACC17D5DD798F1DFD5A44DF65DA405E57D9E1EAF48EF6A8B17CAA707B0228"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-browser-check.js",
+      "sha256": "772D6063259D78FD511D2D437449D03268E32A5B03E15DE4A5D245D9C0BCD749"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-browser-check.json",
+      "sha256": "0F05C3919114DC772BDC43A013E47DB0BE941DF0067C26471745BBE82CF7D35B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-physics.md",
+      "sha256": "087B52866539A7A101DA3F0ED5E090AE0F8CEDDD42A284210C715961B583AE3F"
+    },
+    {
+      "path": "docs/magic_angle_orientation.html",
+      "sha256": "FB1AF208449225671A8D91E91AED3185C27C4B24677E4B986FDF5F774604630C"
+    },
+    {
+      "path": "docs/assets/magic-angle-model.js",
+      "sha256": "48E20E24AEB8ED362FDB975BC4E13D10B8BCED9A43B5FE6FB0695775B780A0D4"
+    },
+    {
+      "path": "tests/magic-angle.test.cjs",
+      "sha256": "4B939C8FFC63D7328FA17F18C06803743AB99435E754F7B2B34134CD3A6DC26C"
+    },
+    {
+      "path": "tests/helpers/magic-angle-reference.cjs",
+      "sha256": "B89DBB9CB11BCED0CE0FEF25D50BCD48D466E538A87998BCA213DE962F0EB552"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-numerical.cjs",
+      "sha256": "F5361EACA9C3EAB80201BB2043CF8425997E08B5AE8FAA59E2F6CE6B74B6926A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-numerical.json",
+      "sha256": "ED0DB1149D82EED392B3BB1F876B5E9C9F69B687CBCDB06E9E0E233479F848A6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-display-reference.json",
+      "sha256": "6A8647F3548907DDF0EB49798839456CDC837E52D77AFAC52335D849C25563D9"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-browser-check.js",
+      "sha256": "E3B6C96548C5176EA2AE2241B036A7F998F26C9B1F30B73304431E7203AC8A05"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-browser-check.json",
+      "sha256": "B583C310D938D33B2275498CF6616CBD951A0EB5F3B4EAA43D160B009D81531F"
+    },
+    {
+      "path": "docs/flow_velocity_mixture.html",
+      "sha256": "9FB1471DDFDE5E90A371500531F667CB7F77113BF71F741EA287070B0505344E"
+    },
+    {
+      "path": "docs/assets/flow-mixture-model.js",
+      "sha256": "2DD2D294E3BCE4BC316C9F575777CBDE9C624D70F3AD63621711FC97E0FE6FD7"
+    },
+    {
+      "path": "tests/flow-mixture.test.cjs",
+      "sha256": "ACFF4A066B4205D405161CDB50C7616371287E26FFFA09B0C59B21C648C5A217"
+    },
+    {
+      "path": "tests/helpers/flow-mixture-reference.cjs",
+      "sha256": "3D189478459FEE88885053393172CB58462226E0B0D0272F0F5796B539F8FE6A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-numerical.cjs",
+      "sha256": "A463C288CDAFDCF0393DC2523388C3F9268734F53C590CC12E44FF6F1EEEB0F4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-numerical.json",
+      "sha256": "208F0F857C58217DB97D7B5A5F87D2C8CBB5522658B7108E78D10CA22717C018"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-display-reference.json",
+      "sha256": "B7CF1C9B0049F971C1A1553E9BF3B4C29C68CD1B2544A06B3B0D4EA2BCEC3733"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-browser-check.js",
+      "sha256": "8A64CB7846D41D63EFBCEF4D03E900B028387C33093B6E7E7BEAB880537A4D37"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-browser-check.json",
+      "sha256": "40865CC31C70A4323C6CF1BEFA6CC8441BD137EFFB4C3AEAF2BFE721A8DA2E4D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-freeze.cjs",
+      "sha256": "D2322F59B3638E021E98A3171B00F3EFEC6BAAFD4017A1D81476C8260A841F86"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-final-audit.cjs",
+      "sha256": "438ED358C94BD800B7D58C6E23BEDEEA74FC9A38841005B3379A98CCAF9066AE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/checkpoint-W69-inputs.json",
+      "sha256": "1517C1051900F89C1CA0CC2AE45CE2673BDDD32219D8502E46C570F3ADFC8A55"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-before.js",
+      "sha256": "EF7D03FF0EF5E09C76419E7B7DDFA185D966C09651B3AB7D9F7078E2475F552C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-before.json",
+      "sha256": "F8FE016611A7A490A57CAB6431BF3EBD05534B17399539B2A8178C5A17FBEBD8"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-after.js",
+      "sha256": "BADF02E4B853831B886D8538B7DA5E9B952C3483C72776A6F2F7EFD5861E43A3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-after.json",
+      "sha256": "387250430CBD78179801FF142EF64F8202FB737F72EBABE3BC075DF0D2B6E56F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-audit.json",
+      "sha256": "AC666A700B5DE9F458F0ED7A908934E2024E7AF407E6AE8081F51FE3140B2B80"
+    },
+    {
+      "path": "docs/blood_refocusing_limits.html",
+      "sha256": "8B173E0F3BF0B1AA7EF2894464139518377C749629DB9B8D7BE12B078E914079"
+    },
+    {
+      "path": "docs/assets/blood-refocusing-reading.js",
+      "sha256": "F5CE9C2B296A56544E2AA5D38877E14E0EA4651FF1DDB14B20B0C30DF5617431"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-source-review.md",
+      "sha256": "35BAAC35DDE3FDD106FE8EE6D8E1BB7E9FE1863F11B9812C24785092E1F0DA93"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-display-reference.json",
+      "sha256": "2ECB901672C4F815092653712BDAC0EA3CA1BBBDDAA42AB3A3A542A0788F2024"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-browser-check.js",
+      "sha256": "6D89DD8416E1E684DDC21BA59E680A3F7C53408CAC1DCAE2E096CACE21E81871"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-browser-check.json",
+      "sha256": "E6A2AD734F4ECC89C9DA5C13DC372D6C3B3EDC76BBD31CBD7F7CD3757500293E"
+    },
+    {
+      "path": "docs/phase_contrast_venc.html",
+      "sha256": "DA6DF1335810F412F93CDB1B2516D3C6D3430CEA627F20C862A2F9B5E275F5A5"
+    },
+    {
+      "path": "docs/assets/phase-contrast-model.js",
+      "sha256": "A8CCF3DF70E9332767158BFD4A8A6352CC860A6CF14DB3C1F25BDDA4C13E3329"
+    },
+    {
+      "path": "tests/phase-contrast.test.cjs",
+      "sha256": "D8B4E81F1A5EB6CB4A4719EE436423EDC464539EAF21591CE05DCB799C71006E"
+    },
+    {
+      "path": "tests/helpers/phase-contrast-reference.cjs",
+      "sha256": "13A6EACBD64759EDCF35C5406197D24757CC735B244B6F1163792790B621C8A1"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-numerical.cjs",
+      "sha256": "0EF77BC78FB3D2A14A8CBC937E15569A278A8F2108957B171AE6DD362D0F1CD1"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-numerical.json",
+      "sha256": "0B287D2689122892B8B1208B8C313DEFCBCB287F839FDD17862012AD302CC79B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-display-reference.json",
+      "sha256": "4A388636FD75ECE4D60CE403CAF24EBC3B37A34D352BDAEAD7C7B54501550823"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-browser-check.js",
+      "sha256": "3C1127EE994D4BD4238A3E570C36F8C869A678194651F4B917867F4B696DD7B4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-browser-check.json",
+      "sha256": "4ACA049C12831C6BB6496FBFC652D40F3F5FFE5D01EEA1115A972444F9BAE636"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-mobile-graphic.js",
+      "sha256": "3A81B2E855D9B5E583D76A588E9C170E44612E8BBC27D418F04D39FDFCACABFE"
+    },
+    {
+      "path": "docs/linear_field_correction.html",
+      "sha256": "34EDBB625A3817EDB0CED330D794EE8719180C448EEC0B9C63482D7738518066"
+    },
+    {
+      "path": "docs/assets/linear-field-correction-model.js",
+      "sha256": "3C32A4CF9433582FE52309BFC16E8B3E2B79E90D34C3ECC06E7C81320DEF90D1"
+    },
+    {
+      "path": "tests/linear-field-correction.test.cjs",
+      "sha256": "DD95662CE4D0FAD481CE4EC44D57830086AC130717F418D5413C6539A09876B9"
+    },
+    {
+      "path": "tests/helpers/linear-field-correction-reference.cjs",
+      "sha256": "4E6511B60560496C269563353E88944F98945B56991E5E5C2368F15C0FF13FE4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-numerical.cjs",
+      "sha256": "86565E95AA6C40585A84120031434ACBCCB6C3E1F0A4FF2135223B11790A3AE4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-numerical.json",
+      "sha256": "C2281A30721A52790D04B54201C2CA7CCF9FF0F4A9A4829621A4447A6B32A765"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-display-reference.json",
+      "sha256": "EF0DB79C6F11FC5F5426DF6AD70A4A16268F247B08A0D68406556758D2CFD632"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-browser-check.js",
+      "sha256": "83B02EAD36FA645EC4FE23B470C4F7FD893A0DD1A6CA6967F74518C682AAEC7F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-browser-check.json",
+      "sha256": "6CC887A0E0332857F4181B30B6D9A0D2FEE46F8C75C7BF53DFECF998537B0EDE"
+    },
+    {
+      "path": "docs/temporal_window_bolus.html",
+      "sha256": "FCBB22EEC6D4CC9B8FA82C0905BB7FE3C1EE283D890E1BB817C102007B8945B0"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "tests/temporal-window.test.cjs",
+      "sha256": "57B885C22E963D7D25815303C53DEA98D2BAABC2A2C95B2E348D2D2B56F0AE1B"
+    },
+    {
+      "path": "tests/helpers/temporal-window-reference.cjs",
+      "sha256": "021236C1C96AD643A638CDD6904619750858B025DE53DF3DE85AE18BE65FAD35"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-numerical.cjs",
+      "sha256": "65F7ADEA6202E4F3BA571001425B443EAC59E06C48CC929D913B7736531A23BB"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-numerical.json",
+      "sha256": "72DB7AF6B5AF3A4288C44DEB2D0102A64D7C49019EEF0DE696EFF58FCEDB7442"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-display-reference.json",
+      "sha256": "E90157B8400F2BAA28E8AA45E3338672D61473C8A479BC9CEDB45961B3460218"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-browser-check.js",
+      "sha256": "3DE4CB6EA405417294794335D762F94BA9F8219EF3E73BBEC0DB427E44492301"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-browser-check.json",
+      "sha256": "74DC6B284534C4219371BBA52391798B9A942AAD99FFDE3AFAF49E3C5EBFE9EE"
+    },
+    {
+      "path": "docs/signed_subtraction_alignment.html",
+      "sha256": "FF27A5558628F6557405100484C7A456F5E8A33E174B4E7B6AA9FB7B0D60686B"
+    },
+    {
+      "path": "docs/assets/signed-subtraction-model.js",
+      "sha256": "FE48D3B61DBC8622F40BFE742B2A217E91CE76DBDA0841319942CAA04BFB201E"
+    },
+    {
+      "path": "tests/signed-subtraction.test.cjs",
+      "sha256": "7CA5609028D1131970FF5225A08F0399F3B1FD3DA95C4A906F7E78122F896855"
+    },
+    {
+      "path": "tests/helpers/signed-subtraction-reference.cjs",
+      "sha256": "5F9531A0497A2947D152AAFD584DF9A824851E4C91CD0FB794D4F37D536E0CCC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-numerical.cjs",
+      "sha256": "88B9128A920127B2602079C2F6272D16AA53E1C90F8D45530FB249A7066FB630"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-numerical.json",
+      "sha256": "224770D6BAC8460D76AC10521C213521481431CCD07F9CB8AF1AE5D97541A747"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-display-reference.json",
+      "sha256": "21DEDE7F6C39589DC3D64F62221D3D36E262BF665E2BC82010F1664CA08959FD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-browser-check.js",
+      "sha256": "41B221A019663C99593A228A368EB2ABE5ABDFACB7D6686B994988080471139F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-browser-check.json",
+      "sha256": "74E0783F99DCF33CCB4C1D6AF703E966C81BB7930A6BB1C7BC6553EC5870F19D"
+    },
+    {
+      "path": "docs/dsc_signal_rate.html",
+      "sha256": "B1566EDEE6608DC47EBED4F685A803CE7FEC9FACB0BAF8AC00FAEECF0DD01CB8"
+    },
+    {
+      "path": "docs/assets/dsc-rate-transform-model.js",
+      "sha256": "636EADF93B2D76BBDFBB5B7747FAC409A09B5E8BA491595B2088BF71C1945BDB"
+    },
+    {
+      "path": "tests/dsc-rate-transform.test.cjs",
+      "sha256": "68EAAE12CCF6C5DA30EC14F3D0EF4FF6A0560B9109AD02EC37EF61E5F6CF60FD"
+    },
+    {
+      "path": "tests/helpers/dsc-rate-transform-reference.cjs",
+      "sha256": "D462BD6EF639B442D8DEDA053B152566C9DA1698D35C429F5A84A11ECAED028A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-numerical.cjs",
+      "sha256": "95CC0921185AF25750E01142419C74E7BCF86FD3EE77798A51D76562B2128175"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-numerical.json",
+      "sha256": "C9EEE0DE2F119459D5D14E1B06AA5DFD8267A1FF104079A4E019C9A73628EADC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-display-reference.json",
+      "sha256": "FAC27576CBA33EFF6286AF0C79B1DCCACB18D39AEC1BD23ED418024B6BDCD3FD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-browser-check.js",
+      "sha256": "BCA304DB78D8B40ACAC00D24D64897F41E04B2D43CD6C98EE81A42576C450FDC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-browser-check.json",
+      "sha256": "936A3D665DA09882F3E65D637293B45B69DA956C5968CBFAEB876B7898F7FF47"
+    }
+  ]
+}

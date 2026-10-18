@@ -1,0 +1,1003 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 90,
+  "maxGraphicError": 4.977809425099622E-06,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.25,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.25,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.25,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.5,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.5,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.5,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.75,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.75,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.75,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 1,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 1,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 1,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0,
+        "b": 500
+      },
+      "rmsAdc": 3.5178606147046525E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0,
+        "b": 1000
+      },
+      "rmsAdc": 3.1246013563327116E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.25,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.25,
+        "b": 500
+      },
+      "rmsAdc": 6.707164269108034E-06,
+      "maxAbsAdc": 9.576476714645695E-06,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.25,
+        "b": 1000
+      },
+      "rmsAdc": 1.3382938792754596E-05,
+      "maxAbsAdc": 1.9530624505120385E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.5,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.5,
+        "b": 500
+      },
+      "rmsAdc": 8.911807371006735E-06,
+      "maxAbsAdc": 1.2424157870094088E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.5,
+        "b": 1000
+      },
+      "rmsAdc": 1.760418296475367E-05,
+      "maxAbsAdc": 2.4614654027351542E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.75,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.75,
+        "b": 500
+      },
+      "rmsAdc": 6.707164269108039E-06,
+      "maxAbsAdc": 9.57647671464613E-06,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.75,
+        "b": 1000
+      },
+      "rmsAdc": 1.3382938792754604E-05,
+      "maxAbsAdc": 1.953062450512082E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 1,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 1,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 1,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0,
+        "b": 500
+      },
+      "rmsAdc": 2.710505431213761E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0,
+        "b": 1000
+      },
+      "rmsAdc": 1.9545732629329692E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.25,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.25,
+        "b": 500
+      },
+      "rmsAdc": 1.3404261029542086E-05,
+      "maxAbsAdc": 1.963169652659377E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.25,
+        "b": 1000
+      },
+      "rmsAdc": 2.667188303399466E-05,
+      "maxAbsAdc": 4.017501225885814E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.5,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.5,
+        "b": 500
+      },
+      "rmsAdc": 1.774954353670913E-05,
+      "maxAbsAdc": 2.515409748840645E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.5,
+        "b": 1000
+      },
+      "rmsAdc": 3.464810450509073E-05,
+      "maxAbsAdc": 4.939829045119107E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.75,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.75,
+        "b": 500
+      },
+      "rmsAdc": 1.3404261029542085E-05,
+      "maxAbsAdc": 1.963169652659442E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.75,
+        "b": 1000
+      },
+      "rmsAdc": 2.6671883033994622E-05,
+      "maxAbsAdc": 4.017501225885879E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 1,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 1,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 1,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.25,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.25,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.25,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.5,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.5,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.5,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.75,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.75,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 0.75,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 1,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 1,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 0,
+        "fraction": 1,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0,
+        "b": 500
+      },
+      "rmsAdc": 3.5178606147046525E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0,
+        "b": 1000
+      },
+      "rmsAdc": 3.1246013563327116E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.25,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.25,
+        "b": 500
+      },
+      "rmsAdc": 6.707164269108034E-06,
+      "maxAbsAdc": 9.576476714645695E-06,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.25,
+        "b": 1000
+      },
+      "rmsAdc": 1.3382938792754596E-05,
+      "maxAbsAdc": 1.9530624505120385E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.5,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.5,
+        "b": 500
+      },
+      "rmsAdc": 8.911807371006735E-06,
+      "maxAbsAdc": 1.2424157870094088E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.5,
+        "b": 1000
+      },
+      "rmsAdc": 1.760418296475367E-05,
+      "maxAbsAdc": 2.4614654027351542E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.75,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.75,
+        "b": 500
+      },
+      "rmsAdc": 6.707164269108039E-06,
+      "maxAbsAdc": 9.57647671464613E-06,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 0.75,
+        "b": 1000
+      },
+      "rmsAdc": 1.3382938792754604E-05,
+      "maxAbsAdc": 1.953062450512082E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 1,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 1,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 45,
+        "fraction": 1,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0,
+        "b": 500
+      },
+      "rmsAdc": 2.710505431213761E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0,
+        "b": 1000
+      },
+      "rmsAdc": 1.9545732629329692E-19,
+      "maxAbsAdc": 6.505213034913027E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.25,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.25,
+        "b": 500
+      },
+      "rmsAdc": 1.3404261029542086E-05,
+      "maxAbsAdc": 1.963169652659377E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.25,
+        "b": 1000
+      },
+      "rmsAdc": 2.667188303399466E-05,
+      "maxAbsAdc": 4.017501225885814E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.5,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.5,
+        "b": 500
+      },
+      "rmsAdc": 1.774954353670913E-05,
+      "maxAbsAdc": 2.515409748840645E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.5,
+        "b": 1000
+      },
+      "rmsAdc": 3.464810450509073E-05,
+      "maxAbsAdc": 4.939829045119107E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.75,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.75,
+        "b": 500
+      },
+      "rmsAdc": 1.3404261029542085E-05,
+      "maxAbsAdc": 1.963169652659442E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 0.75,
+        "b": 1000
+      },
+      "rmsAdc": 2.6671883033994622E-05,
+      "maxAbsAdc": 4.017501225885879E-05,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 1,
+        "b": 0
+      },
+      "rmsAdc": null,
+      "maxAbsAdc": null,
+      "fitDefined": false
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 1,
+        "b": 500
+      },
+      "rmsAdc": 2.1759205004193796E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationDeg": 90,
+        "fraction": 1,
+        "b": 1000
+      },
+      "rmsAdc": 1.8691790795990328E-19,
+      "maxAbsAdc": 4.336808689942018E-19,
+      "fitDefined": true
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "scope": "W73 known 1D quadratic field, QR polynomial basis and finite coherent average; own report excluded",
+  "files": [
+    {
+      "path": "docs/polynomial_field_basis.html",
+      "sha256": "2FCD9EBA44DC10F473E950A08EA3C272C1B0660FA98BE5C7D978C85D4B80C456"
+    },
+    {
+      "path": "docs/assets/polynomial-field-model.js",
+      "sha256": "B517E86E3FFEBEBEBC32BB226592ADAF796AC767C98078D46F444C219B376774"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/polynomial-field.test.cjs",
+      "sha256": "E12FD888F9AB924E69AB0C8C06D69C70DCA36A4DD2395BE6F32BA3773CE69F67"
+    },
+    {
+      "path": "tests/helpers/polynomial-field-reference.cjs",
+      "sha256": "9B02B40AF06B2DF44B7C7F59C651D86120262052309EA5021E5074D503C41E40"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-numerical.cjs",
+      "sha256": "A60A3AE0C261042DEBC03CC0198D6CA55570AC8EBF15463B464D5384CD9F80A4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-numerical.json",
+      "sha256": "24C1D9B3C4D054A2D68C6D863FB65DB36E4A86A3501743BB7D028E74CD7A7402"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-display-reference.json",
+      "sha256": "5ADFA79DD1C342869D1BB60219EDBD6F1C90DD1CB601B8E85048D597958A5168"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-browser-check.js",
+      "sha256": "7B889A040452F5A9F9266719B042F789553845E0D591E9CE00BE60B189B46FD3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-browser-check.json",
+      "sha256": "95B5006B179C0A35901800B9A0A52BABD187E81E618930830BD7EC762E4286B5"
+    }
+  ]
+}

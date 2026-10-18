@@ -1,0 +1,17 @@
+{
+  "conditions": 48,
+  "combinations": 8,
+  "curveComparisons": 5808,
+  "max": {
+    "concentration": 7.016609515630989e-14,
+    "rate": 2.8033131371785203e-14,
+    "cumulative": 1.4016565685892601e-14,
+    "ode": 2.609024107869118e-15,
+    "odeConvergence": 3.7981553666077694e-14,
+    "conservation": 6.106226635438361e-16,
+    "quadratureConvergence": 1.3433698597964394e-14
+  },
+  "tolerance": 1e-8,
+  "failed": [],
+  "passed": true
+}

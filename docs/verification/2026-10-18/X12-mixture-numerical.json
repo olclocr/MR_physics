@@ -1,0 +1,19 @@
+{
+  "conditions": 45,
+  "angularPoints": 1665,
+  "uniqueFitDirections": 36,
+  "max": {
+    "diffusion": 1.0842021724855044e-18,
+    "signal": 3.885780586188048e-16,
+    "componentMetric": 1.1102230246251565e-16
+  },
+  "criteria": {
+    "diffusion": 1e-12,
+    "signal": 1e-8,
+    "componentMetric": 1e-8
+  },
+  "minFitDet": 6.999999999999999e-7,
+  "maxDisplayResidual": 0.00004939829045119118,
+  "failed": [],
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "conditions": 27,
+  "angularPoints": 999,
+  "axisPoints": 81,
+  "max": {
+    "diffusion": 4.336808689942018e-19,
+    "fa": 1.1736832802634057e-16,
+    "signal": 2.220446049250313e-16,
+    "ode": 1.0269562977782698e-14,
+    "odeConvergence": 1.5049073098793997e-13
+  },
+  "criteria": {
+    "diffusion": 1e-12,
+    "fa": 1e-8,
+    "signal": 1e-8,
+    "ode": 1e-8,
+    "odeConvergence": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

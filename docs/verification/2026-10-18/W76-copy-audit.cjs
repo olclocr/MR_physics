@@ -1,0 +1,9 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),root=path.resolve(__dirname,'../../..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8')),sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+const dir='docs/verification/2026-10-18/',frozen=read(dir+'W76-before-versions.json'),edits=read(dir+'W76-copy-edits.json').edits,changed=[],errors=[];
+for(const e of frozen.files){const b=fs.readFileSync(path.join(root,e.path)),current=sha(b);if(current===e.sha256)continue;const edit=edits.find(x=>x.path===e.path);if(!edit||sha(Buffer.from(b.toString('utf8').replace(edit.after,edit.before)))!==e.sha256)errors.push(e.path);else changed.push({path:e.path,before:e.sha256,after:current,kind:'Exact stated text replacement; all remaining bytes unchanged'});}
+const common=fs.readFileSync(path.join(root,'docs/assets/mr-physics-models.js'),'utf8'),model=fs.readFileSync(path.join(root,'docs/assets/linear-field-correction-model.js'),'utf8');
+if(!common.includes('function free(m, timeMs, offResHz = 0, t1Ms = Infinity, t2Ms = Infinity, m0 = 1)'))errors.push('Unexpected free defaults');
+if(!model.includes('P.free({x:1,y:0,z:0},timeMs,p[which])')||model.includes('hardPulse'))errors.push('Unexpected X15 free/RF call');
+const result={method:'Freeze active reviewed inputs; reconstruct exact previous HTML by reversing one documented text replacement; all other bytes equal',checkedFiles:frozen.files.length,unchanged:frozen.files.length-changed.length,changed,commonFreeDefaults:'T1/T2 Infinity',lessonCall:'P.free(initial unit transverse magnetization, timeMs, frequencyHz); no RF applied',newPhysicsModel:false,errors};
+fs.writeFileSync(path.join(__dirname,'W76-copy-audit.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));if(errors.length)process.exitCode=1;

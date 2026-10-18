@@ -1,0 +1,9 @@
+'use strict';const{test}=require('node:test'),assert=require('node:assert/strict'),M=require('../docs/assets/compartment-exchange-model.js'),R=require('./helpers/compartment-exchange-reference.cjs'),near=(a,b,t=1e-8)=>assert.ok(Math.abs(a-b)<=t,`${a} != ${b}`);
+test('single compartment closed solution matches independent convolution and event-split ODE with efflux conservation',()=>{
+ for(const ktransMin of [0,.1,.2,.4])for(const ve of [.2,.4])for(const timeMin of M.times){const o={ktransMin,ve,timeMin},a=M.calculate(o),b=R.calculate(o);near(a.kepMin,b.kepMin);if(b.halfLifeMin===null)assert.equal(a.halfLifeMin,null);else near(a.halfLifeMin,b.halfLifeMin);for(const[i,p]of a.curve.entries())for(const key of ['timeMin','plasma','tissue','ees','influx','efflux','entered','left','netRate'])near(p[key],b.curve[i][key]);const q=R.ode(ktransMin,ve,timeMin);near(a.current.tissue,q.tissue);near(a.current.left,q.left);near(a.current.entered-q.tissue-q.left,0);}
+});
+test('input switch preserves tissue continuity, distinct compartment concentrations, zero transfer and exponential washout',()=>{
+ const a=M.calculate(),b=M.calculate({ve:.4}),zero=M.calculate({ktransMin:0});near(b.kepMin,a.kepMin/2);near(b.halfLifeMin,a.halfLifeMin*2);assert.ok(b.current.tissue>a.current.tissue);assert.equal(zero.current.tissue,0);assert.equal(zero.peakTimeMin,null);assert.equal(zero.halfLifeMin,null);
+ for(const ktransMin of [.1,.2,.4])for(const ve of [.2,.4]){const r=M.calculate({ktransMin,ve,timeMin:1}),p=r.curve[20],q=r.curve[40];assert.equal(p.plasma,0);assert.equal(p.influx,0);near(p.ees,p.tissue/ve);near(q.tissue/p.tissue,Math.exp(-r.kepMin));assert.ok(p.tissue<=ve);for(const point of r.curve){assert.ok(point.tissue>=0&&point.ees<=1+1e-12);near(point.entered-point.left,point.tissue);}}
+ assert.throws(()=>M.calculate({ve:0}),RangeError);assert.throws(()=>M.calculate({timeMin:1.5}),RangeError);
+});

@@ -415,6 +415,36 @@
         "source": "X06-physics.md",
         "target": "X06-physics.html",
         "label": "X06 기본 · 신호비/ΔR2* 변환 검증"
+      },
+      {
+        "source": "W76-relaxation-wording.md",
+        "target": "W76-relaxation-wording.html",
+        "label": "W76 · 이완 가정 표현"
+      },
+      {
+        "source": "X15-basis-physics.md",
+        "target": "X15-basis-physics.html",
+        "label": "X15 후속 · 곡률/기저 검증"
+      },
+      {
+        "source": "X07-physics.md",
+        "target": "X07-physics.html",
+        "label": "X07 기본 · 구획입력/washout 검증"
+      },
+      {
+        "source": "X08-physics.md",
+        "target": "X08-physics.html",
+        "label": "X08 기본 · 표지도달/T1 검증"
+      },
+      {
+        "source": "X12-physics.md",
+        "target": "X12-physics.html",
+        "label": "X12 기본 · 방향/MD/FA 검증"
+      },
+      {
+        "source": "X12-mixture-physics.md",
+        "target": "X12-mixture-physics.html",
+        "label": "X12 후속 · 두성분/단일tensor 검증"
       }
     ]
   },

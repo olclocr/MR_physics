@@ -1,0 +1,21 @@
+{
+  "conditions": 36,
+  "combinations": 9,
+  "curvePoints": 2196,
+  "max": {
+    "magnetization": 2.220446049250313e-16,
+    "positionCm": 3.552713678800501e-15,
+    "arrivalSec": 0,
+    "ode": 1.837419105754634e-13,
+    "odeConvergence": 2.764677375921565e-12
+  },
+  "criteria": {
+    "magnetization": 1e-8,
+    "positionCm": 1e-10,
+    "arrivalSec": 1e-10,
+    "ode": 1e-8,
+    "odeConvergence": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

@@ -11,3 +11,13 @@
 추가 승인 예약은10월18일15:33/20:40,10월19일01:45/06:50한국시간이다. 저장된 예약 정의를 다시 확인하면서11:55의 기존 정의가 없는 것을 발견하여 같은 대화의 일회성 예약으로 등록했다. Windows보호는 마지막 예약 이후까지 연장했으며 완료 marker를 아직 만들지 않는다. [전체 게시 계획](../2026-10-17/publication-plan.md), [개발 재개 위치](../../learning-roadmap.md).
 
 게시 직전 실제Chrome155의 새8챕터/보고서84상태(1920/390px)와 모든 대표 예시를 다시 확인했다. JS오류/페이지 가로넘침0이며 [절차](publication-0630-browser-check.js)와 [결과](publication-0630-local-browser.json)를 보존한다. 모바일 실제 화면도 직접 확인했다. 이후 계산 파일 변경은 없다.
+
+## 실제 게시 결과
+
+main 6adf408756b0fa4e0b3ff68a473dd062fa98e5a5를 커밋·푸시했다. [Pages 배포39087225654](https://github.com/olclocr/MR_physics/actions/runs/39087225654)가success이고 Pages의built commit도 같았다. 예정06:30보다 지연된10:38에커밋/푸시했고10:39배포완료를확인했다.
+
+[공개 사이트](https://olclocr.github.io/MR_physics/)의8챕터/보고서84실제상태와 모든 대표 예시를1920/390px에서 확인했다. 게시 전 출력/표 행 수와 공개 출력이 일치했고 JS오류/가로넘침0이다. [공개 절차](publication-0630-public-browser.js), [결과](publication-0630-public-browser.json). GitHub의 독립 검산 원본 링크도HTTP200이다.
+
+[커밋 고정 지문 감사](publication-0630-fingerprints.json)는69manifest/624항목에서468개 바이트동일/156개UTF-8 CRLF→LF차이만 확인했고 내용 변경은0이다. [빈 검토 폴더 재현](publication-0630-fingerprint-replay.json)에서도156개 원본 바이트를 복원하여 기존SHA를 검증했다. 공개68개 계산자산의WebCrypto SHA-256도 해당commit blob과 모두 일치했다. 이 감사는 새 물리 검토를 의미하지 않는다.
+
+이후W76 개발을 재개한다. 마지막 예약은10월19일06:50한국시간이다. 이 실행 결과와 공개 화면은 다음 승인 체크포인트에 포함할 로컬 기록이다.

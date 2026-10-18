@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "scope": "W77 known positive tensor, directional normalized ADCFit attenuation and invariant MD/FA; own report excluded",
+  "files": [
+    {
+      "path": "docs/diffusion_tensor_direction.html",
+      "sha256": "B59F46D56EA5B3FC3C20381E027DA13AC191D7A2819324EB55E55AE14884CC29"
+    },
+    {
+      "path": "docs/assets/diffusion-tensor-model.js",
+      "sha256": "77729FC145306D3350E29D67946BB21C983C59CC725E2339BFF79A5886E2A366"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/diffusion-tensor.test.cjs",
+      "sha256": "E71450B917ABAF2DCC8EF9048B8C539D03C7D5117575223B3FA49554422BAFEE"
+    },
+    {
+      "path": "tests/helpers/diffusion-tensor-reference.cjs",
+      "sha256": "60C3EA9E9B0D5AE1DBC642F796484F81EC75D9E82BDCABA8BE57D5BF072666B8"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-numerical.cjs",
+      "sha256": "7F4A596B2F59539BD2DC7A500110E45657C054007702CD51E9DA86426BBF2B57"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-numerical.json",
+      "sha256": "3897D1BFD80E58DFDD95EF3FD751A137E3109F66E6731EDBEF69F57DA1767DDE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-display-reference.json",
+      "sha256": "7F3AF5A89D85DBF1B6A1945B22CB3972B5A18AD8C4158850DF82CC2E101C26D2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-browser-check.js",
+      "sha256": "BF1DDB90E5EE3C10B2E25DE230DE0E8E5A1B4F1F210A2AB40632C61E826B3000"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-browser-check.json",
+      "sha256": "5DA14BD0AC9CD7C3528A2F48172EDD5B2E9EF22D010C5AC902820333E5429BF0"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "results": [
+    {
+      "width": 1920,
+      "portal": true,
+      "predecessor": true,
+      "report": true
+    },
+    {
+      "width": 1920,
+      "id": "X06",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 1920,
+      "id": "X14",
+      "svgUnits": true,
+      "cssFontPixels": false
+    },
+    {
+      "width": 1920,
+      "id": "X15",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 1920,
+      "id": "X07",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 1920,
+      "id": "X08",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 1920,
+      "id": "X12",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 1920,
+      "id": "X12-mixture",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 390,
+      "portal": true,
+      "predecessor": true,
+      "report": true
+    },
+    {
+      "width": 390,
+      "id": "X06",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 390,
+      "id": "X14",
+      "svgUnits": true,
+      "cssFontPixels": false
+    },
+    {
+      "width": 390,
+      "id": "X15",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 390,
+      "id": "X07",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 390,
+      "id": "X08",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 390,
+      "id": "X12",
+      "svgUnits": true,
+      "cssFontPixels": true
+    },
+    {
+      "width": 390,
+      "id": "X12-mixture",
+      "svgUnits": true,
+      "cssFontPixels": true
+    }
+  ]
+}

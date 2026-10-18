@@ -1,0 +1,26 @@
+{
+  "conditions": 36,
+  "combinations": 12,
+  "fieldPoints": 14436,
+  "curvePoints": 4356,
+  "max": {
+    "coefficient": 4.973799150320701e-14,
+    "frequency": 1.8474111129762605e-13,
+    "complex": 1.4730439090726577e-12,
+    "magnitude": 1.4730439090726577e-12,
+    "phase": 1.2119749648320521e-12,
+    "ode": 3.108568957799207e-12,
+    "odeConvergence": 4.6545045595536294e-11
+  },
+  "criteria": {
+    "coefficient": 1e-9,
+    "frequency": 1e-9,
+    "complex": 1e-8,
+    "magnitude": 1e-8,
+    "phase": 1e-8,
+    "ode": 1e-8,
+    "odeConvergence": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

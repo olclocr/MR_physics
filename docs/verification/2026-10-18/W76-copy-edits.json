@@ -1,0 +1,19 @@
+{
+  "scope": "Excluded relaxation effects and explicit default time parameters; no calculation changes",
+  "edits": [
+    {
+      "path": "docs/linear_field_correction.html",
+      "before": "각 위치의 초기 M+=1, 고유T2=무한대, RF/T1/잡음/이동/수신 차이0입니다.",
+      "after": "각 위치의 초기 M+=1입니다. 관찰 동안 T1 회복과 고유T2 감쇠를 포함하지 않으며, 공통 자유진화 함수의 T1/T2 기본값은 무한대입니다. RF를 적용하지 않고 잡음·이동·수신 차이도 포함하지 않습니다. T1 시간을0으로 설정한다는 뜻이 아닙니다.",
+      "beforeSha256": "34EDBB625A3817EDB0CED330D794EE8719180C448EEC0B9C63482D7738518066",
+      "afterSha256": "1AF92C561315AB2C06C319110F772679FF33F4076221A956C3A491262C0AF0EA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-physics.md",
+      "before": "초기횡자화1·고유T2무한대·RF/T1/잡음/이동/수신 차이0이다.",
+      "after": "초기횡자화1이며 관찰 동안T1회복/고유T2감쇠를 포함하지 않는다(공통free의T1/T2기본값무한대). RF를 적용하지 않고 잡음/이동/수신 차이도 포함하지 않는다. T1시간0을 뜻하지 않는다.",
+      "beforeSha256": "FE908B6A344882B910138A7901696DF6969C2DA243D446AB48E72571C545E5E2",
+      "afterSha256": "B15F084FC50C712B7BCE4D1C34C167A70F784A4FEADCF951182378253488729B"
+    }
+  ]
+}

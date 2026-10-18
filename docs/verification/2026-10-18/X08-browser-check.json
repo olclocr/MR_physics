@@ -1,0 +1,877 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 72,
+  "maxGraphicError": 4.969947696054078E-06,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.606531,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 1
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.367879,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 2
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.135335,
+      "observed": 0.135335
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 3
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.049787,
+      "observed": 0.049787
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.731616,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 1
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.535261,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 2
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.286505,
+      "observed": 0.286505
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 3
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.153355,
+      "observed": 0.153355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.796703,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 1
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.634736,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 2
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.40289,
+      "observed": 0.40289
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 3
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.255729,
+      "observed": 0.255729
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 1,
+      "arrived": false,
+      "remaining": 0.606531,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 1
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.367879,
+      "observed": 0.367879
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 2
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.135335,
+      "observed": 0.135335
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 3
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.049787,
+      "observed": 0.049787
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 1,
+      "arrived": false,
+      "remaining": 0.731616,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 1
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.535261,
+      "observed": 0.535261
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 2
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.286505,
+      "observed": 0.286505
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 3
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.153355,
+      "observed": 0.153355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 1,
+      "arrived": false,
+      "remaining": 0.796703,
+      "observed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 1
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.634736,
+      "observed": 0.634736
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 2
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.40289,
+      "observed": 0.40289
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 3
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.255729,
+      "observed": 0.255729
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.606531,
+      "observed": 0.606531
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 1
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.367879,
+      "observed": 0.367879
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 2
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.135335,
+      "observed": 0.135335
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 3
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.049787,
+      "observed": 0.049787
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.731616,
+      "observed": 0.731616
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 1
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.535261,
+      "observed": 0.535261
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 2
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.286505,
+      "observed": 0.286505
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 3
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.153355,
+      "observed": 0.153355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.796703,
+      "observed": 0.796703
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 1
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.634736,
+      "observed": 0.634736
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 2
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.40289,
+      "observed": 0.40289
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 3
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.255729,
+      "observed": 0.255729
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.606531,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 1
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.367879,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 2
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.135335,
+      "observed": 0.135335
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1000,
+        "delaySec": 3
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.049787,
+      "observed": 0.049787
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.731616,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 1
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.535261,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 2
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.286505,
+      "observed": 0.286505
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 1600,
+        "delaySec": 3
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.153355,
+      "observed": 0.153355
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.796703,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 1
+      },
+      "arrivalSec": 2,
+      "arrived": false,
+      "remaining": 0.634736,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 2
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.40289,
+      "observed": 0.40289
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 10,
+        "t1Ms": 2200,
+        "delaySec": 3
+      },
+      "arrivalSec": 2,
+      "arrived": true,
+      "remaining": 0.255729,
+      "observed": 0.255729
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 1,
+      "arrived": false,
+      "remaining": 0.606531,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 1
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.367879,
+      "observed": 0.367879
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 2
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.135335,
+      "observed": 0.135335
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1000,
+        "delaySec": 3
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.049787,
+      "observed": 0.049787
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 1,
+      "arrived": false,
+      "remaining": 0.731616,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 1
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.535261,
+      "observed": 0.535261
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 2
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.286505,
+      "observed": 0.286505
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 1600,
+        "delaySec": 3
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.153355,
+      "observed": 0.153355
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 1,
+      "arrived": false,
+      "remaining": 0.796703,
+      "observed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 1
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.634736,
+      "observed": 0.634736
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 2
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.40289,
+      "observed": 0.40289
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 20,
+        "t1Ms": 2200,
+        "delaySec": 3
+      },
+      "arrivalSec": 1,
+      "arrived": true,
+      "remaining": 0.255729,
+      "observed": 0.255729
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.606531,
+      "observed": 0.606531
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 1
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.367879,
+      "observed": 0.367879
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 2
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.135335,
+      "observed": 0.135335
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1000,
+        "delaySec": 3
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.049787,
+      "observed": 0.049787
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.731616,
+      "observed": 0.731616
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 1
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.535261,
+      "observed": 0.535261
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 2
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.286505,
+      "observed": 0.286505
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 1600,
+        "delaySec": 3
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.153355,
+      "observed": 0.153355
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 0.5
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.796703,
+      "observed": 0.796703
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 1
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.634736,
+      "observed": 0.634736
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 2
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.40289,
+      "observed": 0.40289
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 40,
+        "t1Ms": 2200,
+        "delaySec": 3
+      },
+      "arrivalSec": 0.5,
+      "arrived": true,
+      "remaining": 0.255729,
+      "observed": 0.255729
+    }
+  ]
+}

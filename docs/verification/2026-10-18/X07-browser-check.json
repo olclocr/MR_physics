@@ -1,0 +1,1165 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 96,
+  "maxGraphicError": 4.9928006546906545E-06,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0.04424,
+      "ees": 0.221199,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0.078694,
+      "ees": 0.393469,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0.04773,
+      "ees": 0.238651,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0.017559,
+      "ees": 0.087795,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 0.00646,
+      "ees": 0.032298,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0.25,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0.047001,
+      "ees": 0.117503,
+      "kep": 0.25,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0.08848,
+      "ees": 0.221199,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0.068908,
+      "ees": 0.17227,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0.041795,
+      "ees": 0.104487,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0.02535,
+      "ees": 0.063375,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0.078694,
+      "ees": 0.393469,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0.126424,
+      "ees": 0.632121,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0.046509,
+      "ees": 0.232544,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0.006294,
+      "ees": 0.031471,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 0.000852,
+      "ees": 0.004259,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0.08848,
+      "ees": 0.221199,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0.157388,
+      "ees": 0.393469,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0.09546,
+      "ees": 0.238651,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0.035118,
+      "ees": 0.087795,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0.012919,
+      "ees": 0.032298,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 2,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0.126424,
+      "ees": 0.632121,
+      "kep": 2,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0.172933,
+      "ees": 0.864665,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0.023404,
+      "ees": 0.11702,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0.000429,
+      "ees": 0.002143,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 8E-06,
+      "ees": 3.9E-05,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0.157388,
+      "ees": 0.393469,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0.252848,
+      "ees": 0.632121,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0.093018,
+      "ees": 0.232544,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0.012589,
+      "ees": 0.031471,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0.001704,
+      "ees": 0.004259,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0.04424,
+      "ees": 0.221199,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0.078694,
+      "ees": 0.393469,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0.04773,
+      "ees": 0.238651,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0.017559,
+      "ees": 0.087795,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 0.00646,
+      "ees": 0.032298,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0.25,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0.047001,
+      "ees": 0.117503,
+      "kep": 0.25,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0.08848,
+      "ees": 0.221199,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0.068908,
+      "ees": 0.17227,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0.041795,
+      "ees": 0.104487,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.1,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0.02535,
+      "ees": 0.063375,
+      "kep": 0.25,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0.078694,
+      "ees": 0.393469,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0.126424,
+      "ees": 0.632121,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0.046509,
+      "ees": 0.232544,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0.006294,
+      "ees": 0.031471,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 0.000852,
+      "ees": 0.004259,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0.08848,
+      "ees": 0.221199,
+      "kep": 0.5,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0.157388,
+      "ees": 0.393469,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0.09546,
+      "ees": 0.238651,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0.035118,
+      "ees": 0.087795,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.2,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0.012919,
+      "ees": 0.032298,
+      "kep": 0.5,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 2,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 0.5
+      },
+      "tissue": 0.126424,
+      "ees": 0.632121,
+      "kep": 2,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 1
+      },
+      "tissue": 0.172933,
+      "ees": 0.864665,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 2
+      },
+      "tissue": 0.023404,
+      "ees": 0.11702,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 4
+      },
+      "tissue": 0.000429,
+      "ees": 0.002143,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.2,
+        "timeMin": 6
+      },
+      "tissue": 8E-06,
+      "ees": 3.9E-05,
+      "kep": 2,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 0
+      },
+      "tissue": 0,
+      "ees": 0,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 0.5
+      },
+      "tissue": 0.157388,
+      "ees": 0.393469,
+      "kep": 1,
+      "plasma": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 1
+      },
+      "tissue": 0.252848,
+      "ees": 0.632121,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 2
+      },
+      "tissue": 0.093018,
+      "ees": 0.232544,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 4
+      },
+      "tissue": 0.012589,
+      "ees": 0.031471,
+      "kep": 1,
+      "plasma": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "ktransMin": 0.4,
+        "ve": 0.4,
+        "timeMin": 6
+      },
+      "tissue": 0.001704,
+      "ees": 0.004259,
+      "kep": 1,
+      "plasma": 0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+(function(root,factory){const node=typeof module==='object'&&module.exports,api=factory(node?require('./adc-fit-model.js'):root.ADCFit);if(node)module.exports=api;else root.DiffusionTensor=api;})(typeof globalThis!=='undefined'?globalThis:this,function(ADC){
+ 'use strict';const defaults=Object.freeze({shape:'prolate',rotationDeg:0,b:1000}),spectra=Object.freeze({isotropic:Object.freeze([.0008,.0008,.0008]),prolate:Object.freeze([.0014,.0005,.0005]),oblate:Object.freeze([.0011,.0011,.0002])}),cache=new Map(),attenuationCache=new Map();
+ function signals(adc){const key=adc.toPrecision(16);if(!attenuationCache.has(key)){const r=ADC.calculate({diffusionMm2PerS:adc,t2Ms:80,sigma:0});attenuationCache.set(key,Object.freeze([0,500,1000].map(b=>r.curve[b/5].signal/r.s0)));}return attenuationCache.get(key);}
+ function calculate(options={}){
+  const o={...defaults,...options};if(!Object.hasOwn(spectra,o.shape)||![0,45,90].includes(o.rotationDeg)||![0,500,1000].includes(o.b))throw new RangeError('Unsupported known tensor state');const key=o.shape+'|'+o.rotationDeg;
+  if(!cache.has(key)){const eigenvalues=spectra[o.shape],a=o.rotationDeg*Math.PI/180,c=Math.cos(a),s=Math.sin(a),R=[[c,-s,0],[s,c,0],[0,0,1]],tensor=Array.from({length:3},(_,i)=>Object.freeze(Array.from({length:3},(_,j)=>eigenvalues.reduce((sum,v,k)=>sum+R[i][k]*v*R[j][k],0)))),md=tensor.reduce((sum,row,i)=>sum+row[i],0)/3;let norm=0,anisotropy=0;for(let i=0;i<3;i++)for(let j=0;j<3;j++){norm+=tensor[i][j]**2;anisotropy+=(tensor[i][j]-(i===j?md:0))**2;}const fa=Math.sqrt(1.5*anisotropy/norm),along=g=>{let adc=0;for(let i=0;i<3;i++)for(let j=0;j<3;j++)adc+=g[i]*tensor[i][j]*g[j];return{adc,signals:signals(adc)};};
+   const angular=Array.from({length:37},(_,j)=>{const thetaDeg=j*5,t=thetaDeg*Math.PI/180;return Object.freeze({thetaDeg,...along([Math.cos(t),Math.sin(t),0])});}),axes=[[1,0,0],[0,1,0],[0,0,1]].map((g,i)=>Object.freeze({axis:['X','Y','Z'][i],...along(g)}));cache.set(key,Object.freeze({eigenvalues,tensor:Object.freeze(tensor),md,fa,angular:Object.freeze(angular),axes:Object.freeze(axes),referenceSignals:signals(md)}));
+  }
+  const base=cache.get(key),index=[0,500,1000].indexOf(o.b);return{options:o,eigenvalues:base.eigenvalues,tensor:base.tensor,md:base.md,fa:base.fa,angular:base.angular.map(p=>({thetaDeg:p.thetaDeg,adc:p.adc,signal:p.signals[index]})),axes:base.axes.map(p=>({axis:p.axis,adc:p.adc,signal:p.signals[index]})),referenceSignal:base.referenceSignals[index]};
+ }
+ return{defaults,spectra,calculate};
+});

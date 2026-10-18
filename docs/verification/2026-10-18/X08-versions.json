@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "scope": "W75 instantaneous label/control recovery, SI packet transport and retained observation gate; own report excluded",
+  "files": [
+    {
+      "path": "docs/label_arrival_decay.html",
+      "sha256": "38BB489B66261B9E9379546531E7C71A8FD584BAA402A673682125EE30E34B07"
+    },
+    {
+      "path": "docs/assets/label-arrival-model.js",
+      "sha256": "BC3CF9987C377E336A03C4A42301C1B154B3A140570E766DE91ED4885B8B17B9"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/label-arrival.test.cjs",
+      "sha256": "5940D63EE4AD719A718F503CE7161B7BB3522E7784D60BAB1124B9E8E925D6A4"
+    },
+    {
+      "path": "tests/helpers/label-arrival-reference.cjs",
+      "sha256": "D05D46BBB02954D9455594490D0F95C97E67EE14856E14B22A3F8B03C539ABAE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-numerical.cjs",
+      "sha256": "8E5DCD09AC3887356FA13B08B94D300564C4778BD6D944F9A878B1A81B37E3DD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-numerical.json",
+      "sha256": "4299C6CA5D6A3B1A71AC0A2E8E605126A64CEB6FF07B959ECFC80FBDFD574A67"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-display-reference.json",
+      "sha256": "76F570363162A820FE445CA32587BEE2D1E05E9FC34CAF8C68B7DB846265B1D0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-browser-check.js",
+      "sha256": "1A69E66361A38EEAFC3970678C5547BBCE757AA1C51E9081CB2A2C46F4023AA4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-browser-check.json",
+      "sha256": "0C2D533A68C05EB8EEBEB99A2A4FF2E33DC7E19C19C09150B871B3B203673F14"
+    }
+  ]
+}

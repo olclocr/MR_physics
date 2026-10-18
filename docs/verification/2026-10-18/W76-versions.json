@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-18",
+  "scope": "W76 text-only clarification evidence; original X15 physical scope unchanged",
+  "files": [
+    {
+      "path": "docs/verification/2026-10-18/W76-before-versions.json",
+      "sha256": "D8ADCFF8C7FC736C411F1E821F1BFC87C7BD87A5CD4AC6BAFB17208ABA83BC3B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W76-copy-edits.json",
+      "sha256": "30E4FBF3547F4C441E7EB9D9EDBA2CFCDE4519514B9294BD126F9CA15E92C6A9"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W76-copy-audit.cjs",
+      "sha256": "43575CB8F3D02D4E205EE7D5FADDEF297B221470E8BA4AFFCCFE35DA736FA3B3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W76-copy-audit.json",
+      "sha256": "D0EBC4DC319C43FADC8CADBCF387A128F225DB760B6E744450C2BA2DFDC506A0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W76-browser-check.js",
+      "sha256": "4968E2260DD013BD63515CF0584EAD38E77E95C4727B3909C8F31341A5506EDF"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W76-browser-check.json",
+      "sha256": "B836BA4CF4ECDB92661171EC7761EF2B1979882A8A2EABB29418DCA285567053"
+    }
+  ]
+}

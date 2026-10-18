@@ -1,0 +1,17 @@
+{
+  "status": "Provisional numeric model; no lesson, browser or integrated physical signoff",
+  "conditions": 24,
+  "responsePoints": 5784,
+  "kernelPoints": 2904,
+  "max": {
+    "response": 1.9597323763775876e-11,
+    "kernel": 0,
+    "ode": 2.1593837828959295e-14,
+    "odeConvergence": 3.256319909897276e-13,
+    "quadratureConvergence": 1.8373635946034028e-11,
+    "peakTimeSec": 1.7763568394002505e-15
+  },
+  "tolerance": 1e-8,
+  "failed": [],
+  "passed": true
+}

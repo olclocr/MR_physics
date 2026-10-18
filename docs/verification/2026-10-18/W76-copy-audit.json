@@ -1,0 +1,17 @@
+{
+  "method": "Freeze active reviewed inputs; reconstruct exact previous HTML by reversing one documented text replacement; all other bytes equal",
+  "checkedFiles": 507,
+  "unchanged": 506,
+  "changed": [
+    {
+      "path": "docs/linear_field_correction.html",
+      "before": "34EDBB625A3817EDB0CED330D794EE8719180C448EEC0B9C63482D7738518066",
+      "after": "1AF92C561315AB2C06C319110F772679FF33F4076221A956C3A491262C0AF0EA",
+      "kind": "Exact stated text replacement; all remaining bytes unchanged"
+    }
+  ],
+  "commonFreeDefaults": "T1/T2 Infinity",
+  "lessonCall": "P.free(initial unit transverse magnetization, timeMs, frequencyHz); no RF applied",
+  "newPhysicsModel": false,
+  "errors": []
+}

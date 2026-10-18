@@ -1,6 +1,6 @@
 # 챕터별 물리적 정합성 검증 계획
 
-최종 갱신: **2026-10-17 (Asia/Seoul)**
+최종 갱신: **2026-10-18 (Asia/Seoul)**
 
 대상은 [학습 로드맵](learning-roadmap.md)의 모든 챕터와 확장 후보이다. 구현 후 내용의 물리적 정합성 검토를 개발 작업에 포함한다. 이 문서는 **검증할 계획과 진행 상태**이며, 표에 항목이 있다는 사실이 검증 통과를 뜻하지 않는다.
 
@@ -136,15 +136,15 @@
 | X04 | **전체 검토 중 / 직접 정의한 시간 평균/표본 모형 통과** — [W70](verification/2026-10-18/X04-physics.md). 독립 사건분할Simpson6조합/66프레임·132실제상태. 순간값/창평균·관측창/프레임간격·표본peak·범위밖baseline 확인. 실제농도/RF·k-space획득/재구성·환자bolus는 남음 |
 | X05 | **전체 검토 중 / 농도 기본·signed 뺄셈 부분 모형 통과** — [W58](verification/2026-10-17/X05-physics.md)의54조건·108상태와 [W71](verification/2026-10-18/X05-subtraction-physics.md)의18조건·36상태/실제canvas pixel. 농도/R1/R2*·signed차/ROI/전체보존을 각 범위에서 검토했다. [W69](verification/2026-10-18/W69-selected-row.md)는 표 표시만 수정. 실제약제/구획/동태·신호스케일/보간·환자정합/진단은 남음 |
 | X06 | **전체 검토 중 / 신호비·ΔR2* 변환 부분 모형 통과** — [W72](verification/2026-10-18/X06-physics.md). 독립초단위횡ODE/log편향의9조합/54조건·108실제상태. TEms/t초·신호비/변화율·기준입력/음의추정편향 확인. 실제농도/AIF/CBF/CBV/MTT·T1/누출/noise·환자진단은 남음 |
-| X07 | DCE의 신호 변환·약동학 변수·시간/농도 단위·Ktrans 의미 확인. 알려진 입력 곡선과 독립 fitting 및 모형 불일치 사례 |
-| X08 | ASL labeling·PLD·T1 decay·transit·혈류 정량의 전제 확인. 알려진 transit time/혈류를 가진 모형과 label/control 차이 비교 |
-| X09 | BOLD·hemodynamic response·task/rest·통계의 연결 확인. 뇌 활동과 BOLD를 동일시하지 않는지 검토하고 알려진 합성 시계열로 분석 확인 |
+| X07 | **전체 검토 중 / 알려진 입력의 단일 EES 구획 모형 통과** — [W74](verification/2026-10-18/X07-physics.md). 독립합성곱/입력종료분리ODE의48조건/96실제상태에서단위/부피기준·kep관계·보존과washout을확인했다. 실제신호변환/AIF·혈관항/환자fitting/임상해석은남음 |
+| X08 | **전체 검토 중 / 순간표지·동일T1·도착뒤보관 packet 모형 통과** — [W75](verification/2026-10-18/X08-physics.md). 독립SI운동학/회복ODE의36조건/72실제상태에서 도달/회복시계·정규화/이상적보관gate와실제PCASL PLD를구별했다. 실제label효율/표지기간·조직교환/혈류정량·임상은남음 |
+| X09 | **검토 중 / 계산 초안** — [W79](verification/2026-10-18/X09-physics.md). 직접정의한입력/지연kernel의순수계산과독립수치초안. 학습HTML/실제두화면/내용통합판정은미수행. 실제BOLD/신경활동·fMRI통계/활성화추론은남음 |
 | X10 | cine·gating·심장 위상·시간 해상도 확인. 박동과 움직임이 알려진 phantom에서 reconstruction phase와 temporal blur 비교 |
 | X11 | LGE·PSIR·TI null·mapping의 조건 확인. 독립 IR/Bloch 계산과 M01/M02 검증을 연결, 해석 범위와 임상 기준은 별도 근거 확인 |
-| X12 | tensor·FA·방향·tractography와 실제 신경 경로의 차이 확인. 알려진 tensor 및 crossing-fiber 모형으로 추정·실패 사례 비교 |
+| X12 | **전체 검토 중 / 알려진 양의 단일tensor 모형 통과** — [W77](verification/2026-10-18/X12-physics.md). 독립고유값/상대각/감쇠ODE의27조건/54실제상태에서 방향ADC/정규화신호·MD/FA/회전불변·scalar모양모호성을확인했다. [W78 두성분/제한fit](verification/2026-10-18/X12-mixture-physics.md)의같은위상/무교환신호혼합·제한xy맞춤도독립45조건/90실제상태로통과했다. 실제3D추정/성분복원/tractography·환자분류는남음 |
 | X13 | **전체 검토 중 / metHb와 oxy/deoxy/철 저장의 정성 근거 읽기 통과** — [W62](verification/2026-10-17/X13-physics.md)와 [W65](verification/2026-10-18/X13-refocusing-physics.md). H01–H06·R01–R08, 각각18/16실제상태. 구획/농도·이완시간/영상·refocusing/echo 간격·근거 수준을 구별했다. 정량·실제 GRE/SWI/환자 임상은 남음 |
 | X14 | **전체 검토 중 / 직접 정의한 각도/R2 모형 통과** — [W63](verification/2026-10-18/X14-physics.md). 독립 투영/atan근·횡RK4의18조건·36실제상태. 방향 항0/유한바닥·T2/TE·실제 조직값/모형 정의를 구별. 정렬 분포/다성분·환자/보편 TE 기준은 남음 |
-| X15 | **전체 검토 중 / 알려진1차원 field 보정 모형 통과** — [W68](verification/2026-10-18/X15-physics.md). 독립 격자 moment/기하급수·횡ODE의27조건/54실제상태. 평균/σ·공통 위상/크기·직선 투영/공간 상쇄를 구별했다. 실제 field 측정/고차·coil/장비 설정·RF/안전·gradient 성능은 남음 |
+| X15 | **전체 검토 중 / 알려진1차원 field 보정 모형 통과** — [W68](verification/2026-10-18/X15-physics.md). 독립 격자 moment/기하급수·횡ODE의27조건/54실제상태. 평균/σ·공통 위상/크기·직선 투영/공간 상쇄를 구별했다. [W76의T1효과 제외/시간값 표현](verification/2026-10-18/W76-relaxation-wording.md)을명확히했으며계산변경/새T1모형판정은없다. [W73 곡률/기저](verification/2026-10-18/X15-basis-physics.md)의알려진1차원2차field/QR기저모형도독립36조건/72실제상태로통과했다. 실제 field 측정/고차·coil/장비 설정·RF/안전·gradient 성능은 남음 |
 | X16 | force/torque·SAR·발열·소음·PNS 기전을 근거와 대조. 단순 모형의 단위/범위 검산. 실제 안전 조건은 최신 공식 문서·장비/implant 조건의 적용 범위 확인 |
 | X17 | QA 지표·측정법·phantom 조건 확인. 결함과 잡음이 알려진 phantom의 metric을 독립 계산하고 지표별 측정 범위 비교 |
 | X18 | MT·CEST·T1rho의 기전·모형·단위를 분리해 확인. 알려진 교환/회전좌표계 모형의 독립 적분과 특수/극한 조건 비교 |

@@ -1,0 +1,877 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 72,
+  "maxGraphicError": 4.998783850851396E-06,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "none",
+        "teMs": 0
+      },
+      "afterMeanHz": 30,
+      "afterStdHz": 23.093939,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "none",
+        "teMs": 5
+      },
+      "afterMeanHz": 30,
+      "afterStdHz": 23.093939,
+      "magnitude": 0.756828,
+      "phase": "-0.942478"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "none",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 30,
+      "afterStdHz": 23.093939,
+      "magnitude": 0,
+      "phase": "상쇄 · 위상 미정"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "constant",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.093939,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "constant",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.093939,
+      "magnitude": 0.756828,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "constant",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.093939,
+      "magnitude": 0,
+      "phase": "상쇄 · 위상 미정"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "linear",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "linear",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "linear",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "quadratic",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "quadratic",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "quadratic",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "none",
+        "teMs": 0
+      },
+      "afterMeanHz": 43.33325,
+      "afterStdHz": 25.991303,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "none",
+        "teMs": 5
+      },
+      "afterMeanHz": 43.33325,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.717881,
+      "phase": "-1.251111"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "none",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 43.33325,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.489033,
+      "phase": "-1.991850"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "constant",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 25.991303,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "constant",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.717881,
+      "phase": "0.110243"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "constant",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.489033,
+      "phase": "1.411536"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "linear",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 11.92551,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "linear",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 11.92551,
+      "magnitude": 0.931568,
+      "phase": "0.005821"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "linear",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 11.92551,
+      "magnitude": 0.62829,
+      "phase": "0.113958"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "quadratic",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "quadratic",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "quadratic",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "none",
+        "teMs": 0
+      },
+      "afterMeanHz": 56.666501,
+      "afterStdHz": 33.199416,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "none",
+        "teMs": 5
+      },
+      "afterMeanHz": 56.666501,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.614063,
+      "phase": "-1.518885"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "none",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 56.666501,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.399106,
+      "phase": "-2.933347"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "constant",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 33.199416,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "constant",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.614063,
+      "phase": "0.261345"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "constant",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.399106,
+      "phase": "1.517230"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "linear",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.851021,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "linear",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.851021,
+      "magnitude": 0.746888,
+      "phase": "0.052744"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "linear",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.851021,
+      "magnitude": 0.298458,
+      "phase": "1.481443"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "quadratic",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "quadratic",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 1920,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "quadratic",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "none",
+        "teMs": 0
+      },
+      "afterMeanHz": 30,
+      "afterStdHz": 23.093939,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "none",
+        "teMs": 5
+      },
+      "afterMeanHz": 30,
+      "afterStdHz": 23.093939,
+      "magnitude": 0.756828,
+      "phase": "-0.942478"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "none",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 30,
+      "afterStdHz": 23.093939,
+      "magnitude": 0,
+      "phase": "상쇄 · 위상 미정"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "constant",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.093939,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "constant",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.093939,
+      "magnitude": 0.756828,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "constant",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.093939,
+      "magnitude": 0,
+      "phase": "상쇄 · 위상 미정"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "linear",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "linear",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "linear",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "quadratic",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "quadratic",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0,
+        "basis": "quadratic",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "none",
+        "teMs": 0
+      },
+      "afterMeanHz": 43.33325,
+      "afterStdHz": 25.991303,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "none",
+        "teMs": 5
+      },
+      "afterMeanHz": 43.33325,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.717881,
+      "phase": "-1.251111"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "none",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 43.33325,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.489033,
+      "phase": "-1.991850"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "constant",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 25.991303,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "constant",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.717881,
+      "phase": "0.110243"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "constant",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 25.991303,
+      "magnitude": 0.489033,
+      "phase": "1.411536"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "linear",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 11.92551,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "linear",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 11.92551,
+      "magnitude": 0.931568,
+      "phase": "0.005821"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "linear",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 11.92551,
+      "magnitude": 0.62829,
+      "phase": "0.113958"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "quadratic",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "quadratic",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.1,
+        "basis": "quadratic",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "none",
+        "teMs": 0
+      },
+      "afterMeanHz": 56.666501,
+      "afterStdHz": 33.199416,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "none",
+        "teMs": 5
+      },
+      "afterMeanHz": 56.666501,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.614063,
+      "phase": "-1.518885"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "none",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 56.666501,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.399106,
+      "phase": "-2.933347"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "constant",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 33.199416,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "constant",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.614063,
+      "phase": "0.261345"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "constant",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 33.199416,
+      "magnitude": 0.399106,
+      "phase": "1.517230"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "linear",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.851021,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "linear",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.851021,
+      "magnitude": 0.746888,
+      "phase": "0.052744"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "linear",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 23.851021,
+      "magnitude": 0.298458,
+      "phase": "1.481443"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "quadratic",
+        "teMs": 0
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "quadratic",
+        "teMs": 5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    },
+    {
+      "width": 390,
+      "options": {
+        "curvatureHzMm2": 0.2,
+        "basis": "quadratic",
+        "teMs": 12.5
+      },
+      "afterMeanHz": 0,
+      "afterStdHz": 0,
+      "magnitude": 1,
+      "phase": "0.000000"
+    }
+  ]
+}

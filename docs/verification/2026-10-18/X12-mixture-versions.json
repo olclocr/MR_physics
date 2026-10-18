@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "6adf408756b0fa4e0b3ff68a473dd062fa98e5a5",
+  "scope": "W78 same-phase Gaussian mixture and restricted equal-weight log-ADC tensor projection; own report excluded",
+  "files": [
+    {
+      "path": "docs/diffusion_tensor_mixture.html",
+      "sha256": "0C374D1E202167C819B3475B280C48B085E1432C50946A0D4EE1406CDE6C7625"
+    },
+    {
+      "path": "docs/assets/diffusion-mixture-model.js",
+      "sha256": "5727B6D116918CE84181FFE84F6B1656DDC59F8AA125E99E49B2EE6905DAB0BD"
+    },
+    {
+      "path": "docs/assets/diffusion-tensor-model.js",
+      "sha256": "77729FC145306D3350E29D67946BB21C983C59CC725E2339BFF79A5886E2A366"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/diffusion-mixture.test.cjs",
+      "sha256": "6F4733AC6385099F715F6859B05EF0474F225958EA0D0325ADBC07971BCE27DE"
+    },
+    {
+      "path": "tests/helpers/diffusion-mixture-reference.cjs",
+      "sha256": "64678722DB858BBCAFB484CC04FCE95F70897066AF3AD4A481157B2812DD9241"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-numerical.cjs",
+      "sha256": "771D1B75A71778D09322183B67115971C6B339BA3D966ACBE21A26C577B8A20F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-numerical.json",
+      "sha256": "B2BD6D946BD0DAB3038CA5B343BA41BD25AAEF8A7C9B8E37D49EE1EC5F94244D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-display-reference.json",
+      "sha256": "7CC2C833D81480A68CE4BFBBA48A3DE3649637EDE2D1C31CDA1D654C25F9A465"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-browser-check.js",
+      "sha256": "F531182CC2F2472E96CA5BE1B8A82F94271CA4046B015A21654F87C5E9E6916C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-browser-check.json",
+      "sha256": "B4B067B9537FAF22869EBADA64EB19E632EED0054AB27619C606DDA3D6BCB14C"
+    }
+  ]
+}

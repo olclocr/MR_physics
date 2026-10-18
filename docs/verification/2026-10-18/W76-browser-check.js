@@ -1,0 +1,12 @@
+async(page)=>{
+const root='http://127.0.0.1:8877/docs/',folder='docs/verification/2026-10-18/',errors=[],results=[];await page.route(root+'**',route=>route.continue());page.on('pageerror',e=>errors.push(e.message));await page.goto(root);const old=await page.evaluate(async()=>await(await fetch('verification/2026-10-18/publication-0630-local-browser.json')).json());
+for(const width of [1920,390]){
+ await page.setViewportSize({width,height:width===390?844:1080});await page.goto(root+'linear_field_correction.html');const summary=page.locator('header details summary');await summary.focus();await page.keyboard.press('Enter');if(!await page.locator('header details').getAttribute('open')&&!await page.locator('header details').evaluate(e=>e.open))throw Error('Keyboard opening');
+ const assumption=page.locator('header details p').nth(1),text=await assumption.innerText();for(const s of ['T1 회복','T1/T2 기본값은 무한대','RF를 적용하지 않고','T1 시간을0으로 설정한다는 뜻이 아닙니다'])if(!text.includes(s))throw Error(s);
+ await assumption.scrollIntoViewIfNeeded();await page.screenshot({path:folder+'W76-assumptions-'+width+'.png'});
+ const buttons=await page.locator('button[id^="example"]').evaluateAll(es=>es.map(e=>e.id));for(const button of [null,...buttons]){if(button)await page.locator('#'+button).click();const outputs=await page.locator('output,[id$="Output"],#status').evaluateAll(es=>es.map(e=>({id:e.id,text:e.textContent.trim()}))),expected=old.results.find(e=>e.file==='linear_field_correction.html'&&e.width===width&&e.button===button);if(JSON.stringify(outputs)!==JSON.stringify(expected.outputs))throw Error('Output changed');results.push({width,button,outputs});}
+ for(const file of ['linear_field_correction.html','verification/2026-10-18/X15-physics.html','verification/2026-10-18/W76-relaxation-wording.html']){const response=await page.goto(root+file);await page.evaluate(()=>document.querySelectorAll('details').forEach(d=>d.open=true));if(response.status()!==200||await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Page '+file);if(file.includes('X15-physics')&&!await page.getByRole('link',{name:'변경영향/화면기록'}).count())throw Error('Report link');results.push({width,file,status:response.status(),overflow:false});}
+ await page.screenshot({path:folder+'W76-report-'+width+'.png'});
+}
+if(errors.length)throw Error(JSON.stringify(errors));return{browser:page.context().browser().version(),states:results.length,outputComparison:'All default/example metrics equal pre-edit publication fixture',keyboard:true,errors,results};
+}

@@ -1,0 +1,8 @@
+'use strict';const{test}=require('node:test'),assert=require('node:assert/strict'),M=require('../docs/assets/label-arrival-model.js'),R=require('./helpers/label-arrival-reference.cjs'),near=(a,b,t=1e-8)=>assert.ok(Math.abs(a-b)<=t,`${a} != ${b}`);
+test('label/control recovery and retained packet arrival match independent SI trajectory and scalar ODE',()=>{
+ for(const velocityCmS of [10,20,40])for(const t1Ms of [1000,1600,2200])for(const delaySec of M.delays){const o={velocityCmS,t1Ms,delaySec},a=M.calculate(o),b=R.calculate(o);near(a.arrivalSec,b.arrivalSec,1e-10);for(const[i,p]of a.curve.entries()){for(const k of ['timeSec','control','label','remaining','observed'])near(p[k],b.curve[i][k]);near(p.positionCm,b.curve[i].positionCm,1e-10);assert.equal(p.arrived,b.curve[i].arrived);}const q=R.ode(t1Ms,delaySec);near(a.current.label,q.label);near(a.current.remaining,q.remaining);}
+});
+test('difference decay starts at labeling; delayed arrival and T1 decay cannot identify flow in this retained packet model',()=>{
+ const base=M.calculate(),early=M.calculate({delaySec:.5}),boundary=M.calculate({delaySec:1}),late=M.calculate({delaySec:3}),long=M.calculate({t1Ms:2200});assert.equal(early.current.observed,0);assert.ok(early.current.remaining>0);assert.equal(boundary.current.arrived,true);near(boundary.current.observed,Math.exp(-1/1.6));assert.ok(late.current.observed<base.current.observed);assert.ok(long.current.observed>base.current.observed);assert.ok(Math.abs(base.current.observed-Math.exp(-(2-base.arrivalSec)/1.6))>.1);
+ for(const velocityCmS of [10,20,40])near(M.calculate({velocityCmS,delaySec:3}).current.observed,late.current.observed);assert.throws(()=>M.calculate({delaySec:0}),RangeError);
+});
