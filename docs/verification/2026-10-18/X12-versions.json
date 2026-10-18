@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/diffusion_tensor_direction.html",
-      "sha256": "B59F46D56EA5B3FC3C20381E027DA13AC191D7A2819324EB55E55AE14884CC29"
+      "sha256": "A8E4F8157E40DB28A103BBF14AD15A028AE88E7194961088D53E125C205359BC"
     },
     {
       "path": "docs/assets/diffusion-tensor-model.js",
@@ -46,6 +46,22 @@
     {
       "path": "docs/verification/2026-10-18/X12-browser-check.json",
       "sha256": "5DA14BD0AC9CD7C3528A2F48172EDD5B2E9EF22D010C5AC902820333E5429BF0"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "id": "W81",
+      "record": "docs/verification/2026-10-18/W81-readability.md",
+      "audit": "docs/verification/2026-10-18/W81-copy-audit.json",
+      "changes": [
+        {
+          "manifest": "docs/verification/2026-10-18/X12-versions.json",
+          "path": "docs/diffusion_tensor_direction.html",
+          "before": "B59F46D56EA5B3FC3C20381E027DA13AC191D7A2819324EB55E55AE14884CC29",
+          "after": "A8E4F8157E40DB28A103BBF14AD15A028AE88E7194961088D53E125C205359BC",
+          "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
+        }
+      ]
     }
   ]
 }

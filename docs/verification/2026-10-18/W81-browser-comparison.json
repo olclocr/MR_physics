@@ -1,0 +1,8 @@
+{
+  "states": 40,
+  "method": "Exact SHA-256 of JSON containing model result, every tbody cell and every SVG outerHTML; exact output text and row count comparison at each state",
+  "before": "W81-before-browser.json",
+  "after": "W81-browser-check.json",
+  "failures": [],
+  "passed": true
+}

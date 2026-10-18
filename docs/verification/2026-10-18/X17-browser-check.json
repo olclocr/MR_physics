@@ -1,0 +1,637 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 48,
+  "maxGraphicError": 2.842170943040401e-14,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "horizontal"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -80,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "edge"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "diagonal"
+      },
+      "deltaU": 80,
+      "deltaV": -80,
+      "known": 113.137085,
+      "converted": 113.137085,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "horizontal"
+      },
+      "deltaU": 81.6,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -81.6,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "edge"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "diagonal"
+      },
+      "deltaU": 83.2,
+      "deltaV": -83.2,
+      "known": 113.137085,
+      "converted": 117.662568,
+      "error": 4.525483
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "horizontal"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -83.2,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "edge"
+      },
+      "deltaU": 86.4,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 86.4,
+      "error": 6.4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "diagonal"
+      },
+      "deltaU": 86.4,
+      "deltaV": -86.4,
+      "known": 113.137085,
+      "converted": 122.188052,
+      "error": 9.050967
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "horizontal"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -40,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "edge"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "diagonal"
+      },
+      "deltaU": 80,
+      "deltaV": -40,
+      "known": 113.137085,
+      "converted": 113.137085,
+      "error": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "horizontal"
+      },
+      "deltaU": 81.6,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -40.8,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "edge"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "diagonal"
+      },
+      "deltaU": 83.2,
+      "deltaV": -41.6,
+      "known": 113.137085,
+      "converted": 117.662568,
+      "error": 4.525483
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "horizontal"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -41.6,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "edge"
+      },
+      "deltaU": 86.4,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 86.4,
+      "error": 6.4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "diagonal"
+      },
+      "deltaU": 86.4,
+      "deltaV": -43.2,
+      "known": 113.137085,
+      "converted": 122.188052,
+      "error": 9.050967
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "horizontal"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -80,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "edge"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0,
+        "segment": "diagonal"
+      },
+      "deltaU": 80,
+      "deltaV": -80,
+      "known": 113.137085,
+      "converted": 113.137085,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "horizontal"
+      },
+      "deltaU": 81.6,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -81.6,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "edge"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.02,
+        "segment": "diagonal"
+      },
+      "deltaU": 83.2,
+      "deltaV": -83.2,
+      "known": 113.137085,
+      "converted": 117.662568,
+      "error": 4.525483
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "horizontal"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -83.2,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "edge"
+      },
+      "deltaU": 86.4,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 86.4,
+      "error": 6.4
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "square",
+        "warp": 0.04,
+        "segment": "diagonal"
+      },
+      "deltaU": 86.4,
+      "deltaV": -86.4,
+      "known": 113.137085,
+      "converted": 122.188052,
+      "error": 9.050967
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "horizontal"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -40,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "edge"
+      },
+      "deltaU": 80,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 80,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0,
+        "segment": "diagonal"
+      },
+      "deltaU": 80,
+      "deltaV": -40,
+      "known": 113.137085,
+      "converted": 113.137085,
+      "error": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "horizontal"
+      },
+      "deltaU": 81.6,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -40.8,
+      "known": 80,
+      "converted": 81.6,
+      "error": 1.6
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "edge"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.02,
+        "segment": "diagonal"
+      },
+      "deltaU": 83.2,
+      "deltaV": -41.6,
+      "known": 113.137085,
+      "converted": 117.662568,
+      "error": 4.525483
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "horizontal"
+      },
+      "deltaU": 83.2,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "vertical"
+      },
+      "deltaU": 0,
+      "deltaV": -41.6,
+      "known": 80,
+      "converted": 83.2,
+      "error": 3.2
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "edge"
+      },
+      "deltaU": 86.4,
+      "deltaV": 0,
+      "known": 80,
+      "converted": 86.4,
+      "error": 6.4
+    },
+    {
+      "width": 390,
+      "options": {
+        "spacing": "rectangular",
+        "warp": 0.04,
+        "segment": "diagonal"
+      },
+      "deltaU": 86.4,
+      "deltaV": -43.2,
+      "known": 113.137085,
+      "converted": 122.188052,
+      "error": 9.050967
+    }
+  ]
+}

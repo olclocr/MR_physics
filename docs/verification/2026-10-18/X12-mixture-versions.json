@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/diffusion_tensor_mixture.html",
-      "sha256": "0C374D1E202167C819B3475B280C48B085E1432C50946A0D4EE1406CDE6C7625"
+      "sha256": "A2582FF946578DE2433DA09AFF58D7EC7BF9FA9744304A8C125ADABF06FFF944"
     },
     {
       "path": "docs/assets/diffusion-mixture-model.js",
@@ -50,6 +50,22 @@
     {
       "path": "docs/verification/2026-10-18/X12-mixture-browser-check.json",
       "sha256": "B4B067B9537FAF22869EBADA64EB19E632EED0054AB27619C606DDA3D6BCB14C"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "id": "W81",
+      "record": "docs/verification/2026-10-18/W81-readability.md",
+      "audit": "docs/verification/2026-10-18/W81-copy-audit.json",
+      "changes": [
+        {
+          "manifest": "docs/verification/2026-10-18/X12-mixture-versions.json",
+          "path": "docs/diffusion_tensor_mixture.html",
+          "before": "0C374D1E202167C819B3475B280C48B085E1432C50946A0D4EE1406CDE6C7625",
+          "after": "A2582FF946578DE2433DA09AFF58D7EC7BF9FA9744304A8C125ADABF06FFF944",
+          "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
+        }
+      ]
     }
   ]
 }

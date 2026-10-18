@@ -445,6 +445,21 @@
         "source": "X12-mixture-physics.md",
         "target": "X12-mixture-physics.html",
         "label": "X12 후속 · 두성분/단일tensor 검증"
+      },
+      {
+        "source": "X09-physics.md",
+        "target": "X09-physics.html",
+        "label": "X09 기본 · 입력/지연 반응 검증"
+      },
+      {
+        "source": "X17-physics.md",
+        "target": "X17-physics.html",
+        "label": "X17 기본 · 격자/영상 거리 검증"
+      },
+      {
+        "source": "W81-readability.md",
+        "target": "W81-readability.html",
+        "label": "W81 · 본문 공백/단위 읽기"
       }
     ]
   },

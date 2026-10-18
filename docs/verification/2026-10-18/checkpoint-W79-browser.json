@@ -1,0 +1,2388 @@
+{
+  "browser": "155.0.8059.82",
+  "pages": 170,
+  "states": 340,
+  "errors": [],
+  "results": [
+    {
+      "page": "adc_fitting_shine_through.html",
+      "width": 1920,
+      "title": "D02 · ADC fitting과 T2 shine-through",
+      "heading": "DWI가 밝을 때, ADC 기울기는 무엇을 더 알려줄까요?",
+      "overflow": false
+    },
+    {
+      "page": "aliasing_fov.html",
+      "width": 1920,
+      "title": "A01 · FOV와 wrap-around",
+      "heading": "FOV 밖의 신호는 어디에 나타날까요?",
+      "overflow": false
+    },
+    {
+      "page": "b0_b1_receive_shading.html",
+      "width": 1920,
+      "title": "A06 · B0·B1과 수신 감도의 밝기 변화",
+      "heading": "같은 밝기 불균일이면 원인도 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "balanced_ssfp.html",
+      "width": 1920,
+      "title": "C08 · Balanced SSFP와 주파수 응답",
+      "heading": "잔여 횡자화를 보존하면 주파수 응답이 왜 반복될까요?",
+      "overflow": false
+    },
+    {
+      "page": "bicycle_wheel_precession_interactive.html",
+      "width": 1920,
+      "title": "자전거 바퀴와 세차운동",
+      "heading": "자전거 바퀴와 세차운동",
+      "overflow": false
+    },
+    {
+      "page": "blood_refocusing_limits.html",
+      "width": 1920,
+      "title": "X13 후속 · 혈액 성분과 refocusing의 한계",
+      "heading": "180° refocusing이 있으면 혈액 성분의 영향도 모두 사라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "bssfp_contrast_limits.html",
+      "width": 1920,
+      "title": "C08 후속 · bSSFP 대비와 T2/T1 근사",
+      "heading": "신호를 T2/T1 비율만으로 정할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "chemical_shift_artifacts.html",
+      "width": 1920,
+      "title": "A04 · Chemical shift의 위치 이동과 상쇄",
+      "heading": "지방이 다른 위치에 보이는 것과 신호가 상쇄되는 것은 어떻게 다를까요?",
+      "overflow": false
+    },
+    {
+      "page": "chemical_shift_ip_op.html",
+      "width": 1920,
+      "title": "F01 · 물·지방의 IP와 OP",
+      "heading": "물과 지방은 언제 더해지고 언제 상쇄될까요?",
+      "overflow": false
+    },
+    {
+      "page": "compartment_input_washout.html",
+      "width": 1920,
+      "title": "X07 기본 · 단일 구획 입력과 washout",
+      "heading": "전달상수와 분포부피는 농도 곡선에 같은 영향을 줄까요?",
+      "overflow": false
+    },
+    {
+      "page": "complex_echo_water_fat_fit.html",
+      "width": 1920,
+      "title": "M04 후속 · 복소 echo에서 물과 지방 계수 추정",
+      "heading": "이미 분리된 물·지방 신호가 없으면 무엇을 맞춰야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "compressed_sensing_sparsity.html",
+      "width": 1920,
+      "title": "Q06 · 희소성·표본·벌점과 복원",
+      "heading": "덜 측정한 신호를 복원할 때 “희소하다”는 가정은 무엇을 더할까요?",
+      "overflow": false
+    },
+    {
+      "page": "contrast_concentration_competition.html",
+      "width": 1920,
+      "title": "X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁",
+      "heading": "조영 농도가 늘면 GRE 신호도 계속 커질까요?",
+      "overflow": false
+    },
+    {
+      "page": "contrast_weighting.html",
+      "width": 1920,
+      "title": "T1W · T2W · PDW 영상 대비 실험실",
+      "heading": "T1W · T2W · PDW 영상 대비 실험실",
+      "overflow": false
+    },
+    {
+      "page": "delayed_response_kernel.html",
+      "width": 1920,
+      "title": "X09 기본 · 입력과 지연 반응",
+      "heading": "입력이 끝난 뒤에도 반응이 남을 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "diffusion_b_value.html",
+      "width": 1920,
+      "title": "D01 · 확산 gradient와 b-value",
+      "heading": "위치를 되감는 gradient가 있어도 움직인 물은 왜 덜 모일까요?",
+      "overflow": false
+    },
+    {
+      "page": "diffusion_tensor_direction.html",
+      "width": 1920,
+      "title": "X12 기본 · 방향 확산과 MD/FA",
+      "heading": "같은 평균 확산이어도 방향별 신호는 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "diffusion_tensor_mixture.html",
+      "width": 1920,
+      "title": "X12 후속 · 두 성분과 단일tensor 곡선",
+      "heading": "두 확산 성분의 신호를 하나의tensor 곡선으로 설명할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "dixon_water_fat.html",
+      "width": 1920,
+      "title": "F02 · Dixon의 복소 분리와 field",
+      "heading": "두 echo로 물과 지방을 나눌 때 field도 알아야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "dsc_signal_rate.html",
+      "width": 1920,
+      "title": "X06 기본 · 신호비와 ΔR2* 변환",
+      "heading": "다른 TE의 신호 하강률을 그대로 비교해도 될까요?",
+      "overflow": false
+    },
+    {
+      "page": "dwi_epi_conditions.html",
+      "width": 1920,
+      "title": "D03 · DWI 신호와 EPI 위치 이동",
+      "heading": "b를 높이면 EPI 위치 이동도 커질까요?",
+      "overflow": false
+    },
+    {
+      "page": "ecv_r1_partition.html",
+      "width": 1920,
+      "title": "M02 후속 · R1 변화와 ECV 분배",
+      "heading": "T1의 전후 변화와 hematocrit는 ECV 계산에 어떻게 들어갈까요?",
+      "overflow": false
+    },
+    {
+      "page": "epi_trajectory.html",
+      "width": 1920,
+      "title": "C07 · EPI 경로와 echo spacing",
+      "heading": "여러 k-space 줄을 왕복하면 왜 위상 방향으로 더 밀릴까요?",
+      "overflow": false
+    },
+    {
+      "page": "fast_spin_echo.html",
+      "width": 1920,
+      "title": "C05 · Echo train과 k-space ordering",
+      "heading": "서로 다른 echo의 k-space를 모으면 무엇이 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "fat_suppression_comparison.html",
+      "width": 1920,
+      "title": "F04 · 지방억제의 선택 원리와 실패 비교",
+      "heading": "“지방억제”라는 결과가 같아도 실패 이유가 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "fid_spectrum.html",
+      "width": 1920,
+      "title": "N01 · 복소 FID에서 spectrum으로",
+      "heading": "한 줄의 시간 신호에 서로 다른 주파수가 함께 들어 있으면 어떻게 나눌까요?",
+      "overflow": false
+    },
+    {
+      "page": "field_epi_distortion.html",
+      "width": 1920,
+      "title": "A05 · 공간 field와 EPI 위치 왜곡",
+      "heading": "Field가 위치마다 다르면 EPI에서는 어디에 보일까요?",
+      "overflow": false
+    },
+    {
+      "page": "finite_rf_slice_profile.html",
+      "width": 1920,
+      "title": "G02 후속 · 유한 RF와 slice profile",
+      "heading": "유한 길이 RF로 고른 slice는 완전한 사각형일까요?",
+      "overflow": false
+    },
+    {
+      "page": "flow_gradient_phase.html",
+      "width": 1920,
+      "title": "X01 기본 · 등속 운동과 bipolar gradient 위상",
+      "heading": "정지한 spin을 다시 모은 gradient가 움직인 spin도 같은 위상으로 돌려놓을까요?",
+      "overflow": false
+    },
+    {
+      "page": "flow_velocity_mixture.html",
+      "width": 1920,
+      "title": "X01 후속 · 두 속도의 복소합과 신호 크기",
+      "heading": "각 spin의 크기가1이어도 더한 신호는 작아질 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "fov_matrix_resolution.html",
+      "width": 1920,
+      "title": "G01 · FOV와 matrix",
+      "heading": "표시 pixel이 작아지면 실제 정보도 늘어날까요?",
+      "overflow": false
+    },
+    {
+      "page": "frequency_phase_encoding_visualization.html",
+      "width": 1920,
+      "title": "Frequency / Phase Encoding Visualization",
+      "heading": "Frequency / Phase Encoding",
+      "overflow": false
+    },
+    {
+      "page": "gibbs_ringing.html",
+      "width": 1920,
+      "title": "A03 · 유한 k-space와 ringing",
+      "heading": "경계 옆의 줄무늬는 왜 생길까요?",
+      "overflow": false
+    },
+    {
+      "page": "hemorrhage_state_reading.html",
+      "width": 1920,
+      "title": "X13 기본 · Methemoglobin 상태와 시간 해석",
+      "heading": "T1W에서 밝은 methemoglobin을 출혈 날짜표로 읽어도 될까요?",
+      "overflow": false
+    },
+    {
+      "page": "index.html",
+      "width": 1920,
+      "title": "MR Physics Simulations",
+      "heading": "MR Physics Simulations",
+      "overflow": false
+    },
+    {
+      "page": "inflow_rf_saturation.html",
+      "width": 1920,
+      "title": "X02 기본 · Slab 유입과 반복 RF 포화",
+      "heading": "Slab에 새로 들어온 spin과 반복 RF를 겪은 spin은 같은 신호를 낼까요?",
+      "overflow": false
+    },
+    {
+      "page": "inversion_recovery.html",
+      "width": 1920,
+      "title": "C04 · IR·TI와 신호 null",
+      "heading": "특정 조직의 신호를 언제 0에 가깝게 만들까요?",
+      "overflow": false
+    },
+    {
+      "page": "kspace_inverse_fourier.html",
+      "width": 1920,
+      "title": "K-space / Inverse Fourier Transform",
+      "heading": "K-space / Inverse Fourier Transform",
+      "overflow": false
+    },
+    {
+      "page": "label_arrival_decay.html",
+      "width": 1920,
+      "title": "X08 기본 · 표지 도달과 T1 감쇠",
+      "heading": "작은 표지 차이를 읽을 때 도달과 감쇠를 어떻게 구별할까요?",
+      "overflow": false
+    },
+    {
+      "page": "linear_field_correction.html",
+      "width": 1920,
+      "title": "X15 기본 · 균일 offset과 선형 field 보정",
+      "heading": "평균 주파수를0에 맞추면 공간 퍼짐도 사라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "magic_angle_orientation.html",
+      "width": 1920,
+      "title": "X14 기본 · 방향과 magic angle",
+      "heading": "B0에 대한 방향만 바뀌어도 TE 신호가 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "motion_ghosting.html",
+      "width": 1920,
+      "title": "A02 · 움직임과 k-space ghost",
+      "heading": "서로 다른 순간의 k-space를 합치면 무엇이 보일까요?",
+      "overflow": false
+    },
+    {
+      "page": "mre_inversion_limits.html",
+      "width": 1920,
+      "title": "E02 기본 · 파동 역산과 표본·모형 오차",
+      "heading": "파동 모양이 조금만 달라도 역산한 탄성률은 크게 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "mre_motion_encoding.html",
+      "width": 1920,
+      "title": "E01 후속 · 변위와 MR 위상",
+      "heading": "작은 진동을 MR 위상으로 바꾸려면 무엇이 맞아야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "mre_shear_wave.html",
+      "width": 1920,
+      "title": "E01 기본 · Shear wave와 파장",
+      "heading": "파장이 길면 언제 더 큰 탄성률을 뜻할까요?",
+      "overflow": false
+    },
+    {
+      "page": "mrs_field_linewidth.html",
+      "width": 1920,
+      "title": "N03 후속 · voxel 내 field와 peak 폭",
+      "heading": "voxel 안의 field가 고르지 않으면 peak는 어떻게 바뀔까요?",
+      "overflow": false
+    },
+    {
+      "page": "mrs_observation_volume.html",
+      "width": 1920,
+      "title": "N03 기본 · 관측 공간과 spectrum의 혼합",
+      "heading": "화면의 voxel 테두리 안에 있는 신호만 spectrum에 들어올까요?",
+      "overflow": false
+    },
+    {
+      "page": "parallel_imaging.html",
+      "width": 1920,
+      "title": "Q04 · Coil 감도와 병렬 영상",
+      "heading": "겹쳐 보이는 두 위치를 coil 감도로 구별할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "partial_fourier_phase.html",
+      "width": 1920,
+      "title": "Q05 · Partial Fourier와 위상 가정",
+      "heading": "측정값을 맞춘 Partial Fourier 복원이 왜 틀릴 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "pdff_echo_assumptions.html",
+      "width": 1920,
+      "title": "M04 후속 · Echo 감쇠와 지방 spectrum",
+      "heading": "지방 밀도가 같은데 echo마다 신호 분율이 달라질 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "pdff_t1_bias.html",
+      "width": 1920,
+      "title": "M04 기본 · 신호 분율과 PDFF의 T1 가정",
+      "heading": "물·지방 영상을 나누면 신호 비율을 그대로 PDFF라고 부를 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "phase_contrast_venc.html",
+      "width": 1920,
+      "title": "X03 기본 · 두 획득의 위상차와 VENC",
+      "heading": "두 획득의 위상차가 같으면 속도도 하나로 정해질까요?",
+      "overflow": false
+    },
+    {
+      "page": "polynomial_field_basis.html",
+      "width": 1920,
+      "title": "X15 후속 · 곡률과 보정 basis",
+      "heading": "직선 보정 뒤 남은 휘어진 field는 무엇을 뜻할까요?",
+      "overflow": false
+    },
+    {
+      "page": "processed_t2_mapping.html",
+      "width": 1920,
+      "title": "AI03 정량 · 공간 처리와 T2 추정",
+      "heading": "각 echo를 같은 방법으로 처리해도 T2는 유지될까요?",
+      "overflow": false
+    },
+    {
+      "page": "proton_spin_mr_simulation.html",
+      "width": 1920,
+      "title": "양성자 스핀 MR 시뮬레이션",
+      "heading": "양성자 스핀 MR 시뮬레이션",
+      "overflow": false
+    },
+    {
+      "page": "proton_spin_rf_larmor_resonance.html",
+      "width": 1920,
+      "title": "양성자 순자화와 RF 라모어 공명",
+      "heading": "양성자 순자화와 RF 라모어 공명",
+      "overflow": false
+    },
+    {
+      "page": "qsm_dipole_inverse.html",
+      "width": 1920,
+      "title": "S02 기본 · Dipole field와 보이지 않는 성분",
+      "heading": "Field를 정확히 다시 만들면 자화율도 정확히 찾은 것일까요?",
+      "overflow": false
+    },
+    {
+      "page": "receiver_bandwidth.html",
+      "width": 1920,
+      "title": "Q02 · Receiver bandwidth",
+      "heading": "넓은 bandwidth는 무엇을 바꾸고 무엇을 고정할까요?",
+      "overflow": false
+    },
+    {
+      "page": "reconstruction_noise_ensemble.html",
+      "width": 1920,
+      "title": "AI03 반복 잡음 · 분산과 bias",
+      "heading": "출력의 표준편차가 작아지면 정보도 더 정확해질까요?",
+      "overflow": false
+    },
+    {
+      "page": "reconstruction_roles.html",
+      "width": 1920,
+      "title": "AI01 기본 · 재구성의 역할과 자료 일치",
+      "heading": "매끈해진 결과와 덜 찍은 자료의 복원은 같은 문제일까요?",
+      "overflow": false
+    },
+    {
+      "page": "scan_time.html",
+      "width": 1920,
+      "title": "Q03 · 검사 시간과 이벤트 수",
+      "heading": "어떤 이벤트를 세어야 검사 시간을 알 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "signed_subtraction_alignment.html",
+      "width": 1920,
+      "title": "X05 후속 · Signed subtraction과 공간 정합",
+      "heading": "뺄셈 영상의 양·음 경계가 모두 조영 변화일까요?",
+      "overflow": false
+    },
+    {
+      "page": "slice_selection_partial_volume.html",
+      "width": 1920,
+      "title": "G02 · Slice 선택과 부분 용적",
+      "heading": "어느 위치를 얼마나 두껍게 선택할까요?",
+      "overflow": false
+    },
+    {
+      "page": "sms_slice_separation.html",
+      "width": 1920,
+      "title": "Q07 · SMS와 slice 분리",
+      "heading": "겹친 두 slice를 어떻게 다시 나눌까요?",
+      "overflow": false
+    },
+    {
+      "page": "snr_cnr_averaging.html",
+      "width": 1920,
+      "title": "Q01 · SNR·CNR와 평균",
+      "heading": "평균하면 무엇이 더 잘 보일까요?",
+      "overflow": false
+    },
+    {
+      "page": "spectral_fat_saturation.html",
+      "width": 1920,
+      "title": "F03 · 주파수 선택과 fat saturation",
+      "heading": "지방 주파수에 RF를 맞췄는데 왜 억제가 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "spectral_peak_features.html",
+      "width": 1920,
+      "title": "N02 기본 · Peak 위치·면적·폭·TE",
+      "heading": "Peak가 낮아졌다면 성분의 양이 줄었다고 말할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "spin_ensemble_equilibrium.html",
+      "width": 1920,
+      "title": "스핀과 열평형 — 많은 핵에서 순자화는 어떻게 생기나?",
+      "heading": "많은 핵에서 순자화는 어떻게 생기나?",
+      "overflow": false
+    },
+    {
+      "page": "spin_gradient_echo.html",
+      "width": 1920,
+      "title": "SE와 GRE — 각각 무엇을 되돌리나?",
+      "heading": "SE와 GRE는 각각 무엇을 되돌리나?",
+      "overflow": false
+    },
+    {
+      "page": "spoiled_gre.html",
+      "width": 1920,
+      "title": "C06 · Spoiled GRE와 flip angle",
+      "heading": "짧은 TR에서는 왜 90°보다 작은 flip이 유리할까요?",
+      "overflow": false
+    },
+    {
+      "page": "structure_texture_evaluation.html",
+      "width": 1920,
+      "title": "AI03 기본 · 작은 구조와 질감 평가",
+      "heading": "전체 오차가 줄면 작은 구조와 질감도 보존될까요?",
+      "overflow": false
+    },
+    {
+      "page": "susceptibility_signal_phase.html",
+      "width": 1920,
+      "title": "S01 · 주파수분포와 GRE 신호·위상",
+      "heading": "위상이 달라지는 것과 신호가 사라지는 것은 같은가요?",
+      "overflow": false
+    },
+    {
+      "page": "swi_mask_projection.html",
+      "width": 1920,
+      "title": "S01 후속 · Phase mask와 minIP",
+      "heading": "위상 처리와 투영은 검게 보이는 범위를 어떻게 바꿀까요?",
+      "overflow": false
+    },
+    {
+      "page": "t1_mapping_ir.html",
+      "width": 1920,
+      "title": "M02 기본 · IR과 유한 TR의 T1 추정",
+      "heading": "회복 곡선이 같아도 어떤 식으로 맞추는지가 T1값을 바꿀까요?",
+      "overflow": false
+    },
+    {
+      "page": "t2_mapping_basics.html",
+      "width": 1920,
+      "title": "M01 · T2W 밝기와 T2 추정",
+      "heading": "밝은 T2W 신호와 긴 T2값은 같은 뜻일까요?",
+      "overflow": false
+    },
+    {
+      "page": "t2_mapping_limits.html",
+      "width": 1920,
+      "title": "M01 후속 · T2 fitting의 잡음과 모형 한계",
+      "heading": "작은 잔차와 긴 추정 T2는 무엇을 보장할까요?",
+      "overflow": false
+    },
+    {
+      "page": "t2_t2star_dephasing.html",
+      "width": 1920,
+      "title": "C03 · T2가 같아도 왜 더 빨리 신호가 줄어드나?",
+      "heading": "T2가 같아도 왜 더 빨리 신호가 줄어드나?",
+      "overflow": false
+    },
+    {
+      "page": "t2star_mapping.html",
+      "width": 1920,
+      "title": "M03 · T2*·R2*와 echo 범위",
+      "heading": "T2*와 R2*로 요약한 값은 echo 범위를 바꿔도 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "temporal_window_bolus.html",
+      "width": 1920,
+      "title": "X04 기본 · 관측창과 프레임 간격",
+      "heading": "프레임이 더 자주 나오면 bolus peak도 더 정확해질까요?",
+      "overflow": false
+    },
+    {
+      "page": "vendor_ai_reading.html",
+      "width": 1920,
+      "title": "AI02 · 벤더 공개 자료를 읽는 방법",
+      "heading": "같은 AI 재구성이라는 이름에서 무엇을 구별해야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "volume_2d_3d.html",
+      "width": 1920,
+      "title": "G03 · 2D slice와 3D partition",
+      "heading": "3D로 찍으면 언제나 좋은 재단면이 생길까요?",
+      "overflow": false
+    },
+    {
+      "page": "water_excitation.html",
+      "width": 1920,
+      "title": "F03 후속 · 두 RF의 water excitation",
+      "heading": "지방을 미리 지우는 대신 물만 횡축으로 보낼 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/index.html",
+      "width": 1920,
+      "title": "2026-10-14 과학 검증 기록",
+      "heading": "2026-10-14 과학 검증 기록",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/original-review.html",
+      "width": 1920,
+      "title": "MR Physics HTML 시뮬레이션 과학·교육 검증 — 수정 전 원본",
+      "heading": "MR Physics HTML 시뮬레이션 과학·교육 검증 — 수정 전 원본",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/fix-validation.html",
+      "width": 1920,
+      "title": "2026-10-14 수정 후 과학 검산",
+      "heading": "2026-10-14 수정 후 과학 검산",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/contrast-chapter.html",
+      "width": 1920,
+      "title": "C01 영상 대비 실험실 구현 검증",
+      "heading": "C01 영상 대비 실험실 구현 검증",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C01-physics.html",
+      "width": 1920,
+      "title": "C01 — 영상 대비 실험실 물리 검증",
+      "heading": "C01 — 영상 대비 실험실 물리 검증",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B02-physics.html",
+      "width": 1920,
+      "title": "B02 — RF 공명·flip angle 물리 검증",
+      "heading": "B02 — RF 공명·flip angle 물리 검증",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B03-physics.html",
+      "width": 1920,
+      "title": "B03 자화·이완·SE 통합 물리 검증 (W03)",
+      "heading": "B03 자화·이완·SE 통합 물리 검증 (W03)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B01-physics.html",
+      "width": 1920,
+      "title": "B01 스핀·ensemble·열평형 검증 (W04)",
+      "heading": "B01 스핀·ensemble·열평형 검증 (W04)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B04-physics.html",
+      "width": 1920,
+      "title": "B04 공간 부호화 통합 물리 검증 (W05)",
+      "heading": "B04 공간 부호화 통합 물리 검증 (W05)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C02-physics.html",
+      "width": 1920,
+      "title": "C02 SE/GRE 재위상화 검증 (W06)",
+      "heading": "C02 SE/GRE 재위상화 검증 (W06)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C03-physics.html",
+      "width": 1920,
+      "title": "C03 T2와 T2*·정적 탈위상 검증 (W07)",
+      "heading": "C03 T2와 T2*·정적 탈위상 검증 (W07)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B05-physics.html",
+      "width": 1920,
+      "title": "B05 k-space·역변환 통합 검증 (W08)",
+      "heading": "B05 k-space·역변환 통합 검증 (W08)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/G01-physics.html",
+      "width": 1920,
+      "title": "G01 FOV·matrix·해상도 계산 기반 (W09)",
+      "heading": "G01 FOV·matrix·해상도 계산 기반 (W09)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/G02-physics.html",
+      "width": 1920,
+      "title": "G02 Slice 선택·부분 용적 검증 (W10)",
+      "heading": "G02 Slice 선택·부분 용적 검증 (W10)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q01-physics.html",
+      "width": 1920,
+      "title": "Q01 SNR·CNR·NEX 검증 (W11)",
+      "heading": "Q01 SNR·CNR·NEX 검증 (W11)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B00-physics.html",
+      "width": 1920,
+      "title": "B00 고전적 세차 비유 검증 (W12)",
+      "heading": "B00 고전적 세차 비유 검증 (W12)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C04-physics.html",
+      "width": 1920,
+      "title": "C04 IR·TI·null 검증 (W13)",
+      "heading": "C04 IR·TI·null 검증 (W13)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C05-physics.html",
+      "width": 1920,
+      "title": "C05 Echo train·ordering 검증 (W14)",
+      "heading": "C05 Echo train·ordering 검증 (W14)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/G03-physics.html",
+      "width": 1920,
+      "title": "G03 2D/3D·voxel·MPR 검증 (W15)",
+      "heading": "G03 2D/3D·voxel·MPR 검증 (W15)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q02-physics.html",
+      "width": 1920,
+      "title": "Q02 Receiver BW·시간·이동 검증 (W16)",
+      "heading": "Q02 Receiver BW·시간·이동 검증 (W16)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q03-physics.html",
+      "width": 1920,
+      "title": "Q03 검사 시간·이벤트 수 검증 (W17)",
+      "heading": "Q03 검사 시간·이벤트 수 검증 (W17)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C06-physics.html",
+      "width": 1920,
+      "title": "C06 Spoiled GRE·flip angle 검증 (W18)",
+      "heading": "C06 Spoiled GRE·flip angle 검증 (W18)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C07-physics.html",
+      "width": 1920,
+      "title": "C07 EPI 경로·시간·PE 이동 검증 (W19)",
+      "heading": "C07 EPI 경로·시간·PE 이동 검증 (W19)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q04-physics.html",
+      "width": 1920,
+      "title": "Q04 감도·R2·g-factor 검증 (W20)",
+      "heading": "Q04 감도·R2·g-factor 검증 (W20)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F01-physics.html",
+      "width": 1920,
+      "title": "F01 물·지방·IP/OP 검증 (W21)",
+      "heading": "F01 물·지방·IP/OP 검증 (W21)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F02-physics.html",
+      "width": 1920,
+      "title": "F02 복소 분리·field·교환 모호성 검증 (W22)",
+      "heading": "F02 복소 분리·field·교환 모호성 검증 (W22)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F03-physics.html",
+      "width": 1920,
+      "title": "F03 선택 saturation·B0/B1 검증 (W23)",
+      "heading": "F03 선택 saturation·B0/B1 검증 (W23)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F04-physics.html",
+      "width": 1920,
+      "title": "F04 지방억제 원리·실패 비교 검증 (W24)",
+      "heading": "F04 지방억제 원리·실패 비교 검증 (W24)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/D01-physics.html",
+      "width": 1920,
+      "title": "D01 확산·gradient·b-value 검증 (W25)",
+      "heading": "D01 확산·gradient·b-value 검증 (W25)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/D02-physics.html",
+      "width": 1920,
+      "title": "D02 ADC fitting·T2 shine-through 검증 (W26)",
+      "heading": "D02 ADC fitting·T2 shine-through 검증 (W26)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F03-water-physics.html",
+      "width": 1920,
+      "title": "F03 후속 Water excitation 검증 (W27)",
+      "heading": "F03 후속 Water excitation 검증 (W27)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/D03-physics.html",
+      "width": 1920,
+      "title": "D03 DWI 신호·EPI 시간·위치 검증 (W28)",
+      "heading": "D03 DWI 신호·EPI 시간·위치 검증 (W28)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/S01-physics.html",
+      "width": 1920,
+      "title": "S01 주파수분포·GRE 신호/위상·blooming 검증 (W29)",
+      "heading": "S01 주파수분포·GRE 신호/위상·blooming 검증 (W29)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/S01-swi-physics.html",
+      "width": 1920,
+      "title": "S01 후속 phase mask·minIP 검증 (W29b)",
+      "heading": "S01 후속 phase mask·minIP 검증 (W29b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/C08-physics.html",
+      "width": 1920,
+      "title": "C08 bSSFP·잔여 횡자화·주파수 응답 검증 (W30)",
+      "heading": "C08 bSSFP·잔여 횡자화·주파수 응답 검증 (W30)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/C08-contrast-physics.html",
+      "width": 1920,
+      "title": "C08 후속 T2/T1 대비·짧은 TR 근사 검증 (W30b)",
+      "heading": "C08 후속 T2/T1 대비·짧은 TR 근사 검증 (W30b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/Q05-physics.html",
+      "width": 1920,
+      "title": "Q05 Partial Fourier·위상선 복원 검증 (W31)",
+      "heading": "Q05 Partial Fourier·위상선 복원 검증 (W31)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/Q06-physics.html",
+      "width": 1920,
+      "title": "Q06 Haar 희소성·표본·L1 벌점 검증 (W32)",
+      "heading": "Q06 Haar 희소성·표본·L1 벌점 검증 (W32)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/Q07-physics.html",
+      "width": 1920,
+      "title": "Q07 SMS · slice 분리 · CAIPI 검증 (W33)",
+      "heading": "Q07 SMS · slice 분리 · CAIPI 검증 (W33)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A01-physics.html",
+      "width": 1920,
+      "title": "A01 FOV · aliasing · zero filling 검증 (W34)",
+      "heading": "A01 FOV · aliasing · zero filling 검증 (W34)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A02-physics.html",
+      "width": 1920,
+      "title": "A02 움직임 · 획득 순서 · 이상적 gating 검증 (W35)",
+      "heading": "A02 움직임 · 획득 순서 · 이상적 gating 검증 (W35)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A03-physics.html",
+      "width": 1920,
+      "title": "A03 유한 k-space · ringing · Hann 검증 (W36)",
+      "heading": "A03 유한 k-space · ringing · Hann 검증 (W36)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A04-physics.html",
+      "width": 1920,
+      "title": "A04 Chemical shift 위치 이동 · 혼합 상쇄 검증 (W37)",
+      "heading": "A04 Chemical shift 위치 이동 · 혼합 상쇄 검증 (W37)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A05-physics.html",
+      "width": 1920,
+      "title": "A05 공간 field · EPI 위치 역합 검증 (W38)",
+      "heading": "A05 공간 field · EPI 위치 역합 검증 (W38)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A06-physics.html",
+      "width": 1920,
+      "title": "A06 B1 · 수신 gain · RF 중 B0 부분 모형 검증 (W39)",
+      "heading": "A06 B1 · 수신 gain · RF 중 B0 부분 모형 검증 (W39)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M01-physics.html",
+      "width": 1920,
+      "title": "M01 기본 · T2W 밝기와 T2 추정 검증 (W40)",
+      "heading": "M01 기본 · T2W 밝기와 T2 추정 검증 (W40)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M01-limits-physics.html",
+      "width": 1920,
+      "title": "M01 후속 · 잡음 바닥과 두 성분 fitting 검증 (W40b)",
+      "heading": "M01 후속 · 잡음 바닥과 두 성분 fitting 검증 (W40b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M02-physics.html",
+      "width": 1920,
+      "title": "M02 기본 · 유한 TR IR의 T1 추정 검증 (W41)",
+      "heading": "M02 기본 · 유한 TR IR의 T1 추정 검증 (W41)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M03-physics.html",
+      "width": 1920,
+      "title": "M03 T2* · R2* · Gaussian echo 범위 검증 (W42)",
+      "heading": "M03 T2* · R2* · Gaussian echo 범위 검증 (W42)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M04-physics.html",
+      "width": 1920,
+      "title": "M04 기본 · 신호 분율과 T1 bias 검증 (W43)",
+      "heading": "M04 기본 · 신호 분율과 T1 bias 검증 (W43)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M04-echo-physics.html",
+      "width": 1920,
+      "title": "M04 후속 · Echo 감쇠와 지방 spectrum 검증 (W43b)",
+      "heading": "M04 후속 · Echo 감쇠와 지방 spectrum 검증 (W43b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N01-physics.html",
+      "width": 1920,
+      "title": "N01 · 복소 FID와 spectrum 검증 (W44)",
+      "heading": "N01 · 복소 FID와 spectrum 검증 (W44)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N02-physics.html",
+      "width": 1920,
+      "title": "N02 기본 · Peak 위치·면적·폭·TE 검증 (W45)",
+      "heading": "N02 기본 · Peak 위치·면적·폭·TE 검증 (W45)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N03-physics.html",
+      "width": 1920,
+      "title": "N03 기본 · 관측 공간과 spectrum 혼합 검증 (W46)",
+      "heading": "N03 기본 · 관측 공간과 spectrum 혼합 검증 (W46)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/E01-physics.html",
+      "width": 1920,
+      "title": "E01 기본 · 균일 탄성 shear wave 검증 (W47)",
+      "heading": "E01 기본 · 균일 탄성 shear wave 검증 (W47)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/E01-encoding-physics.html",
+      "width": 1920,
+      "title": "E01 후속 · 변위와 MR 위상 검증 (W47b)",
+      "heading": "E01 후속 · 변위와 MR 위상 검증 (W47b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/E02-physics.html",
+      "width": 1920,
+      "title": "E02 기본 · 표본과 공간 오차의 국소 역산 검증 (W48)",
+      "heading": "E02 기본 · 표본과 공간 오차의 국소 역산 검증 (W48)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/S02-physics.html",
+      "width": 1920,
+      "title": "S02 기본 · 주기 dipole field와 역문제 검증 (W49)",
+      "heading": "S02 기본 · 주기 dipole field와 역문제 검증 (W49)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI01-physics.html",
+      "width": 1920,
+      "title": "AI01 기본 · 재구성 역할과 자료 일치 검증 (W50)",
+      "heading": "AI01 기본 · 재구성 역할과 자료 일치 검증 (W50)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI03-physics.html",
+      "width": 1920,
+      "title": "AI03 기본 · 작은 구조와 질감 평가 검증 (W51)",
+      "heading": "AI03 기본 · 작은 구조와 질감 평가 검증 (W51)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI03-t2-physics.html",
+      "width": 1920,
+      "title": "AI03 정량 · echo별 공간 처리와 T2 추정 (W51b)",
+      "heading": "AI03 정량 · echo별 공간 처리와 T2 추정 (W51b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI02-physics.html",
+      "width": 1920,
+      "title": "AI02 · 벤더 공개 자료 읽기 검토 (W52)",
+      "heading": "AI02 · 벤더 공개 자료 읽기 검토 (W52)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI03-noise-physics.html",
+      "width": 1920,
+      "title": "AI03 반복 잡음 · 평균/분산/공분산 검증 (W53)",
+      "heading": "AI03 반복 잡음 · 평균/분산/공분산 검증 (W53)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N03-field-physics.html",
+      "width": 1920,
+      "title": "N03 후속 · voxel 내 주파수 분포와 linewidth (W54)",
+      "heading": "N03 후속 · voxel 내 주파수 분포와 linewidth (W54)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M02-ecv-physics.html",
+      "width": 1920,
+      "title": "M02 후속 · R1 분배와 ECV 기본 모형 (W55)",
+      "heading": "M02 후속 · R1 분배와 ECV 기본 모형 (W55)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/G02-rf-physics.html",
+      "width": 1920,
+      "title": "G02 후속 · 유한 sinc RF와 slice profile (W56)",
+      "heading": "G02 후속 · 유한 sinc RF와 slice profile (W56)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M04-fit-physics.html",
+      "width": 1920,
+      "title": "M04 후속 · 알려진 모형의 복소 echo 성분 분리 (W57)",
+      "heading": "M04 후속 · 알려진 모형의 복소 echo 성분 분리 (W57)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X05-physics.html",
+      "width": 1920,
+      "title": "X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁 (W58)",
+      "heading": "X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁 (W58)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X01-physics.html",
+      "width": 1920,
+      "title": "X01 기본 · 등속 운동과 bipolar gradient 위상 (W60)",
+      "heading": "X01 기본 · 등속 운동과 bipolar gradient 위상 (W60)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X02-physics.html",
+      "width": 1920,
+      "title": "X02 기본 · Slab 유입과 반복 RF 포화 (W61)",
+      "heading": "X02 기본 · Slab 유입과 반복 RF 포화 (W61)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X13-physics.html",
+      "width": 1920,
+      "title": "X13 기본 · metHb 상태표와 시간 해석의 한계 (W62)",
+      "heading": "X13 기본 · metHb 상태표와 시간 해석의 한계 (W62)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X14-physics.html",
+      "width": 1920,
+      "title": "X14 기본 · 방향과 magic angle의 제한 모형 (W63)",
+      "heading": "X14 기본 · 방향과 magic angle의 제한 모형 (W63)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/publication-0105-fingerprints.html",
+      "width": 1920,
+      "title": "W67 · 게시 바이트와 로컬 검토 지문",
+      "heading": "W67 · 게시 바이트와 로컬 검토 지문",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X01-mixture-physics.html",
+      "width": 1920,
+      "title": "X01 후속 · 두 속도의 복소합과 신호 크기 (W64)",
+      "heading": "X01 후속 · 두 속도의 복소합과 신호 크기 (W64)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/W69-selected-row.html",
+      "width": 1920,
+      "title": "W69 · 고정 표 제목 아래의 선택 행 표시",
+      "heading": "W69 · 고정 표 제목 아래의 선택 행 표시",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X13-refocusing-physics.html",
+      "width": 1920,
+      "title": "X13 후속 · 혈액 성분과 refocusing 조건 (W65)",
+      "heading": "X13 후속 · 혈액 성분과 refocusing 조건 (W65)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X03-physics.html",
+      "width": 1920,
+      "title": "X03 기본 · 두 획득의 위상차와 VENC (W66)",
+      "heading": "X03 기본 · 두 획득의 위상차와 VENC (W66)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X15-physics.html",
+      "width": 1920,
+      "title": "X15 기본 · 균일 offset과 선형 field 보정 (W68)",
+      "heading": "X15 기본 · 균일 offset과 선형 field 보정 (W68)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X04-physics.html",
+      "width": 1920,
+      "title": "X04 기본 · 관측창과 프레임 간격 (W70)",
+      "heading": "X04 기본 · 관측창과 프레임 간격 (W70)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X05-subtraction-physics.html",
+      "width": 1920,
+      "title": "X05 후속 · Signed subtraction과 공간 정합 (W71)",
+      "heading": "X05 후속 · Signed subtraction과 공간 정합 (W71)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X06-physics.html",
+      "width": 1920,
+      "title": "X06 기본 · 신호비와 ΔR2* 변환 (W72)",
+      "heading": "X06 기본 · 신호비와 ΔR2* 변환 (W72)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/W76-relaxation-wording.html",
+      "width": 1920,
+      "title": "W76 · 제외한 이완 효과와 시간값 표현",
+      "heading": "W76 · 제외한 이완 효과와 시간값 표현",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X15-basis-physics.html",
+      "width": 1920,
+      "title": "X15 후속 · 곡률과 보정 basis (W73)",
+      "heading": "X15 후속 · 곡률과 보정 basis (W73)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X07-physics.html",
+      "width": 1920,
+      "title": "X07 기본 · 단일 구획의 입력과 washout (W74)",
+      "heading": "X07 기본 · 단일 구획의 입력과 washout (W74)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X08-physics.html",
+      "width": 1920,
+      "title": "X08 기본 · 순간 표지의 도달과 T1 감쇠 (W75)",
+      "heading": "X08 기본 · 순간 표지의 도달과 T1 감쇠 (W75)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X12-physics.html",
+      "width": 1920,
+      "title": "X12 기본 · 방향 확산과 MD/FA (W77)",
+      "heading": "X12 기본 · 방향 확산과 MD/FA (W77)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X12-mixture-physics.html",
+      "width": 1920,
+      "title": "X12 후속 · 두 성분과 단일tensor 곡선 (W78)",
+      "heading": "X12 후속 · 두 성분과 단일tensor 곡선 (W78)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X09-physics.html",
+      "width": 1920,
+      "title": "X09 기본 · 입력과 지연 반응 (W79)",
+      "heading": "X09 기본 · 입력과 지연 반응 (W79)",
+      "overflow": false
+    },
+    {
+      "page": "adc_fitting_shine_through.html",
+      "width": 390,
+      "title": "D02 · ADC fitting과 T2 shine-through",
+      "heading": "DWI가 밝을 때, ADC 기울기는 무엇을 더 알려줄까요?",
+      "overflow": false
+    },
+    {
+      "page": "aliasing_fov.html",
+      "width": 390,
+      "title": "A01 · FOV와 wrap-around",
+      "heading": "FOV 밖의 신호는 어디에 나타날까요?",
+      "overflow": false
+    },
+    {
+      "page": "b0_b1_receive_shading.html",
+      "width": 390,
+      "title": "A06 · B0·B1과 수신 감도의 밝기 변화",
+      "heading": "같은 밝기 불균일이면 원인도 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "balanced_ssfp.html",
+      "width": 390,
+      "title": "C08 · Balanced SSFP와 주파수 응답",
+      "heading": "잔여 횡자화를 보존하면 주파수 응답이 왜 반복될까요?",
+      "overflow": false
+    },
+    {
+      "page": "bicycle_wheel_precession_interactive.html",
+      "width": 390,
+      "title": "자전거 바퀴와 세차운동",
+      "heading": "자전거 바퀴와 세차운동",
+      "overflow": false
+    },
+    {
+      "page": "blood_refocusing_limits.html",
+      "width": 390,
+      "title": "X13 후속 · 혈액 성분과 refocusing의 한계",
+      "heading": "180° refocusing이 있으면 혈액 성분의 영향도 모두 사라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "bssfp_contrast_limits.html",
+      "width": 390,
+      "title": "C08 후속 · bSSFP 대비와 T2/T1 근사",
+      "heading": "신호를 T2/T1 비율만으로 정할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "chemical_shift_artifacts.html",
+      "width": 390,
+      "title": "A04 · Chemical shift의 위치 이동과 상쇄",
+      "heading": "지방이 다른 위치에 보이는 것과 신호가 상쇄되는 것은 어떻게 다를까요?",
+      "overflow": false
+    },
+    {
+      "page": "chemical_shift_ip_op.html",
+      "width": 390,
+      "title": "F01 · 물·지방의 IP와 OP",
+      "heading": "물과 지방은 언제 더해지고 언제 상쇄될까요?",
+      "overflow": false
+    },
+    {
+      "page": "compartment_input_washout.html",
+      "width": 390,
+      "title": "X07 기본 · 단일 구획 입력과 washout",
+      "heading": "전달상수와 분포부피는 농도 곡선에 같은 영향을 줄까요?",
+      "overflow": false
+    },
+    {
+      "page": "complex_echo_water_fat_fit.html",
+      "width": 390,
+      "title": "M04 후속 · 복소 echo에서 물과 지방 계수 추정",
+      "heading": "이미 분리된 물·지방 신호가 없으면 무엇을 맞춰야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "compressed_sensing_sparsity.html",
+      "width": 390,
+      "title": "Q06 · 희소성·표본·벌점과 복원",
+      "heading": "덜 측정한 신호를 복원할 때 “희소하다”는 가정은 무엇을 더할까요?",
+      "overflow": false
+    },
+    {
+      "page": "contrast_concentration_competition.html",
+      "width": 390,
+      "title": "X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁",
+      "heading": "조영 농도가 늘면 GRE 신호도 계속 커질까요?",
+      "overflow": false
+    },
+    {
+      "page": "contrast_weighting.html",
+      "width": 390,
+      "title": "T1W · T2W · PDW 영상 대비 실험실",
+      "heading": "T1W · T2W · PDW 영상 대비 실험실",
+      "overflow": false
+    },
+    {
+      "page": "delayed_response_kernel.html",
+      "width": 390,
+      "title": "X09 기본 · 입력과 지연 반응",
+      "heading": "입력이 끝난 뒤에도 반응이 남을 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "diffusion_b_value.html",
+      "width": 390,
+      "title": "D01 · 확산 gradient와 b-value",
+      "heading": "위치를 되감는 gradient가 있어도 움직인 물은 왜 덜 모일까요?",
+      "overflow": false
+    },
+    {
+      "page": "diffusion_tensor_direction.html",
+      "width": 390,
+      "title": "X12 기본 · 방향 확산과 MD/FA",
+      "heading": "같은 평균 확산이어도 방향별 신호는 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "diffusion_tensor_mixture.html",
+      "width": 390,
+      "title": "X12 후속 · 두 성분과 단일tensor 곡선",
+      "heading": "두 확산 성분의 신호를 하나의tensor 곡선으로 설명할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "dixon_water_fat.html",
+      "width": 390,
+      "title": "F02 · Dixon의 복소 분리와 field",
+      "heading": "두 echo로 물과 지방을 나눌 때 field도 알아야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "dsc_signal_rate.html",
+      "width": 390,
+      "title": "X06 기본 · 신호비와 ΔR2* 변환",
+      "heading": "다른 TE의 신호 하강률을 그대로 비교해도 될까요?",
+      "overflow": false
+    },
+    {
+      "page": "dwi_epi_conditions.html",
+      "width": 390,
+      "title": "D03 · DWI 신호와 EPI 위치 이동",
+      "heading": "b를 높이면 EPI 위치 이동도 커질까요?",
+      "overflow": false
+    },
+    {
+      "page": "ecv_r1_partition.html",
+      "width": 390,
+      "title": "M02 후속 · R1 변화와 ECV 분배",
+      "heading": "T1의 전후 변화와 hematocrit는 ECV 계산에 어떻게 들어갈까요?",
+      "overflow": false
+    },
+    {
+      "page": "epi_trajectory.html",
+      "width": 390,
+      "title": "C07 · EPI 경로와 echo spacing",
+      "heading": "여러 k-space 줄을 왕복하면 왜 위상 방향으로 더 밀릴까요?",
+      "overflow": false
+    },
+    {
+      "page": "fast_spin_echo.html",
+      "width": 390,
+      "title": "C05 · Echo train과 k-space ordering",
+      "heading": "서로 다른 echo의 k-space를 모으면 무엇이 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "fat_suppression_comparison.html",
+      "width": 390,
+      "title": "F04 · 지방억제의 선택 원리와 실패 비교",
+      "heading": "“지방억제”라는 결과가 같아도 실패 이유가 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "fid_spectrum.html",
+      "width": 390,
+      "title": "N01 · 복소 FID에서 spectrum으로",
+      "heading": "한 줄의 시간 신호에 서로 다른 주파수가 함께 들어 있으면 어떻게 나눌까요?",
+      "overflow": false
+    },
+    {
+      "page": "field_epi_distortion.html",
+      "width": 390,
+      "title": "A05 · 공간 field와 EPI 위치 왜곡",
+      "heading": "Field가 위치마다 다르면 EPI에서는 어디에 보일까요?",
+      "overflow": false
+    },
+    {
+      "page": "finite_rf_slice_profile.html",
+      "width": 390,
+      "title": "G02 후속 · 유한 RF와 slice profile",
+      "heading": "유한 길이 RF로 고른 slice는 완전한 사각형일까요?",
+      "overflow": false
+    },
+    {
+      "page": "flow_gradient_phase.html",
+      "width": 390,
+      "title": "X01 기본 · 등속 운동과 bipolar gradient 위상",
+      "heading": "정지한 spin을 다시 모은 gradient가 움직인 spin도 같은 위상으로 돌려놓을까요?",
+      "overflow": false
+    },
+    {
+      "page": "flow_velocity_mixture.html",
+      "width": 390,
+      "title": "X01 후속 · 두 속도의 복소합과 신호 크기",
+      "heading": "각 spin의 크기가1이어도 더한 신호는 작아질 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "fov_matrix_resolution.html",
+      "width": 390,
+      "title": "G01 · FOV와 matrix",
+      "heading": "표시 pixel이 작아지면 실제 정보도 늘어날까요?",
+      "overflow": false
+    },
+    {
+      "page": "frequency_phase_encoding_visualization.html",
+      "width": 390,
+      "title": "Frequency / Phase Encoding Visualization",
+      "heading": "Frequency / Phase Encoding",
+      "overflow": false
+    },
+    {
+      "page": "gibbs_ringing.html",
+      "width": 390,
+      "title": "A03 · 유한 k-space와 ringing",
+      "heading": "경계 옆의 줄무늬는 왜 생길까요?",
+      "overflow": false
+    },
+    {
+      "page": "hemorrhage_state_reading.html",
+      "width": 390,
+      "title": "X13 기본 · Methemoglobin 상태와 시간 해석",
+      "heading": "T1W에서 밝은 methemoglobin을 출혈 날짜표로 읽어도 될까요?",
+      "overflow": false
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "title": "MR Physics Simulations",
+      "heading": "MR Physics Simulations",
+      "overflow": false
+    },
+    {
+      "page": "inflow_rf_saturation.html",
+      "width": 390,
+      "title": "X02 기본 · Slab 유입과 반복 RF 포화",
+      "heading": "Slab에 새로 들어온 spin과 반복 RF를 겪은 spin은 같은 신호를 낼까요?",
+      "overflow": false
+    },
+    {
+      "page": "inversion_recovery.html",
+      "width": 390,
+      "title": "C04 · IR·TI와 신호 null",
+      "heading": "특정 조직의 신호를 언제 0에 가깝게 만들까요?",
+      "overflow": false
+    },
+    {
+      "page": "kspace_inverse_fourier.html",
+      "width": 390,
+      "title": "K-space / Inverse Fourier Transform",
+      "heading": "K-space / Inverse Fourier Transform",
+      "overflow": false
+    },
+    {
+      "page": "label_arrival_decay.html",
+      "width": 390,
+      "title": "X08 기본 · 표지 도달과 T1 감쇠",
+      "heading": "작은 표지 차이를 읽을 때 도달과 감쇠를 어떻게 구별할까요?",
+      "overflow": false
+    },
+    {
+      "page": "linear_field_correction.html",
+      "width": 390,
+      "title": "X15 기본 · 균일 offset과 선형 field 보정",
+      "heading": "평균 주파수를0에 맞추면 공간 퍼짐도 사라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "magic_angle_orientation.html",
+      "width": 390,
+      "title": "X14 기본 · 방향과 magic angle",
+      "heading": "B0에 대한 방향만 바뀌어도 TE 신호가 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "motion_ghosting.html",
+      "width": 390,
+      "title": "A02 · 움직임과 k-space ghost",
+      "heading": "서로 다른 순간의 k-space를 합치면 무엇이 보일까요?",
+      "overflow": false
+    },
+    {
+      "page": "mre_inversion_limits.html",
+      "width": 390,
+      "title": "E02 기본 · 파동 역산과 표본·모형 오차",
+      "heading": "파동 모양이 조금만 달라도 역산한 탄성률은 크게 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "mre_motion_encoding.html",
+      "width": 390,
+      "title": "E01 후속 · 변위와 MR 위상",
+      "heading": "작은 진동을 MR 위상으로 바꾸려면 무엇이 맞아야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "mre_shear_wave.html",
+      "width": 390,
+      "title": "E01 기본 · Shear wave와 파장",
+      "heading": "파장이 길면 언제 더 큰 탄성률을 뜻할까요?",
+      "overflow": false
+    },
+    {
+      "page": "mrs_field_linewidth.html",
+      "width": 390,
+      "title": "N03 후속 · voxel 내 field와 peak 폭",
+      "heading": "voxel 안의 field가 고르지 않으면 peak는 어떻게 바뀔까요?",
+      "overflow": false
+    },
+    {
+      "page": "mrs_observation_volume.html",
+      "width": 390,
+      "title": "N03 기본 · 관측 공간과 spectrum의 혼합",
+      "heading": "화면의 voxel 테두리 안에 있는 신호만 spectrum에 들어올까요?",
+      "overflow": false
+    },
+    {
+      "page": "parallel_imaging.html",
+      "width": 390,
+      "title": "Q04 · Coil 감도와 병렬 영상",
+      "heading": "겹쳐 보이는 두 위치를 coil 감도로 구별할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "partial_fourier_phase.html",
+      "width": 390,
+      "title": "Q05 · Partial Fourier와 위상 가정",
+      "heading": "측정값을 맞춘 Partial Fourier 복원이 왜 틀릴 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "pdff_echo_assumptions.html",
+      "width": 390,
+      "title": "M04 후속 · Echo 감쇠와 지방 spectrum",
+      "heading": "지방 밀도가 같은데 echo마다 신호 분율이 달라질 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "pdff_t1_bias.html",
+      "width": 390,
+      "title": "M04 기본 · 신호 분율과 PDFF의 T1 가정",
+      "heading": "물·지방 영상을 나누면 신호 비율을 그대로 PDFF라고 부를 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "phase_contrast_venc.html",
+      "width": 390,
+      "title": "X03 기본 · 두 획득의 위상차와 VENC",
+      "heading": "두 획득의 위상차가 같으면 속도도 하나로 정해질까요?",
+      "overflow": false
+    },
+    {
+      "page": "polynomial_field_basis.html",
+      "width": 390,
+      "title": "X15 후속 · 곡률과 보정 basis",
+      "heading": "직선 보정 뒤 남은 휘어진 field는 무엇을 뜻할까요?",
+      "overflow": false
+    },
+    {
+      "page": "processed_t2_mapping.html",
+      "width": 390,
+      "title": "AI03 정량 · 공간 처리와 T2 추정",
+      "heading": "각 echo를 같은 방법으로 처리해도 T2는 유지될까요?",
+      "overflow": false
+    },
+    {
+      "page": "proton_spin_mr_simulation.html",
+      "width": 390,
+      "title": "양성자 스핀 MR 시뮬레이션",
+      "heading": "양성자 스핀 MR 시뮬레이션",
+      "overflow": false
+    },
+    {
+      "page": "proton_spin_rf_larmor_resonance.html",
+      "width": 390,
+      "title": "양성자 순자화와 RF 라모어 공명",
+      "heading": "양성자 순자화와 RF 라모어 공명",
+      "overflow": false
+    },
+    {
+      "page": "qsm_dipole_inverse.html",
+      "width": 390,
+      "title": "S02 기본 · Dipole field와 보이지 않는 성분",
+      "heading": "Field를 정확히 다시 만들면 자화율도 정확히 찾은 것일까요?",
+      "overflow": false
+    },
+    {
+      "page": "receiver_bandwidth.html",
+      "width": 390,
+      "title": "Q02 · Receiver bandwidth",
+      "heading": "넓은 bandwidth는 무엇을 바꾸고 무엇을 고정할까요?",
+      "overflow": false
+    },
+    {
+      "page": "reconstruction_noise_ensemble.html",
+      "width": 390,
+      "title": "AI03 반복 잡음 · 분산과 bias",
+      "heading": "출력의 표준편차가 작아지면 정보도 더 정확해질까요?",
+      "overflow": false
+    },
+    {
+      "page": "reconstruction_roles.html",
+      "width": 390,
+      "title": "AI01 기본 · 재구성의 역할과 자료 일치",
+      "heading": "매끈해진 결과와 덜 찍은 자료의 복원은 같은 문제일까요?",
+      "overflow": false
+    },
+    {
+      "page": "scan_time.html",
+      "width": 390,
+      "title": "Q03 · 검사 시간과 이벤트 수",
+      "heading": "어떤 이벤트를 세어야 검사 시간을 알 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "signed_subtraction_alignment.html",
+      "width": 390,
+      "title": "X05 후속 · Signed subtraction과 공간 정합",
+      "heading": "뺄셈 영상의 양·음 경계가 모두 조영 변화일까요?",
+      "overflow": false
+    },
+    {
+      "page": "slice_selection_partial_volume.html",
+      "width": 390,
+      "title": "G02 · Slice 선택과 부분 용적",
+      "heading": "어느 위치를 얼마나 두껍게 선택할까요?",
+      "overflow": false
+    },
+    {
+      "page": "sms_slice_separation.html",
+      "width": 390,
+      "title": "Q07 · SMS와 slice 분리",
+      "heading": "겹친 두 slice를 어떻게 다시 나눌까요?",
+      "overflow": false
+    },
+    {
+      "page": "snr_cnr_averaging.html",
+      "width": 390,
+      "title": "Q01 · SNR·CNR와 평균",
+      "heading": "평균하면 무엇이 더 잘 보일까요?",
+      "overflow": false
+    },
+    {
+      "page": "spectral_fat_saturation.html",
+      "width": 390,
+      "title": "F03 · 주파수 선택과 fat saturation",
+      "heading": "지방 주파수에 RF를 맞췄는데 왜 억제가 달라질까요?",
+      "overflow": false
+    },
+    {
+      "page": "spectral_peak_features.html",
+      "width": 390,
+      "title": "N02 기본 · Peak 위치·면적·폭·TE",
+      "heading": "Peak가 낮아졌다면 성분의 양이 줄었다고 말할 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "spin_ensemble_equilibrium.html",
+      "width": 390,
+      "title": "스핀과 열평형 — 많은 핵에서 순자화는 어떻게 생기나?",
+      "heading": "많은 핵에서 순자화는 어떻게 생기나?",
+      "overflow": false
+    },
+    {
+      "page": "spin_gradient_echo.html",
+      "width": 390,
+      "title": "SE와 GRE — 각각 무엇을 되돌리나?",
+      "heading": "SE와 GRE는 각각 무엇을 되돌리나?",
+      "overflow": false
+    },
+    {
+      "page": "spoiled_gre.html",
+      "width": 390,
+      "title": "C06 · Spoiled GRE와 flip angle",
+      "heading": "짧은 TR에서는 왜 90°보다 작은 flip이 유리할까요?",
+      "overflow": false
+    },
+    {
+      "page": "structure_texture_evaluation.html",
+      "width": 390,
+      "title": "AI03 기본 · 작은 구조와 질감 평가",
+      "heading": "전체 오차가 줄면 작은 구조와 질감도 보존될까요?",
+      "overflow": false
+    },
+    {
+      "page": "susceptibility_signal_phase.html",
+      "width": 390,
+      "title": "S01 · 주파수분포와 GRE 신호·위상",
+      "heading": "위상이 달라지는 것과 신호가 사라지는 것은 같은가요?",
+      "overflow": false
+    },
+    {
+      "page": "swi_mask_projection.html",
+      "width": 390,
+      "title": "S01 후속 · Phase mask와 minIP",
+      "heading": "위상 처리와 투영은 검게 보이는 범위를 어떻게 바꿀까요?",
+      "overflow": false
+    },
+    {
+      "page": "t1_mapping_ir.html",
+      "width": 390,
+      "title": "M02 기본 · IR과 유한 TR의 T1 추정",
+      "heading": "회복 곡선이 같아도 어떤 식으로 맞추는지가 T1값을 바꿀까요?",
+      "overflow": false
+    },
+    {
+      "page": "t2_mapping_basics.html",
+      "width": 390,
+      "title": "M01 · T2W 밝기와 T2 추정",
+      "heading": "밝은 T2W 신호와 긴 T2값은 같은 뜻일까요?",
+      "overflow": false
+    },
+    {
+      "page": "t2_mapping_limits.html",
+      "width": 390,
+      "title": "M01 후속 · T2 fitting의 잡음과 모형 한계",
+      "heading": "작은 잔차와 긴 추정 T2는 무엇을 보장할까요?",
+      "overflow": false
+    },
+    {
+      "page": "t2_t2star_dephasing.html",
+      "width": 390,
+      "title": "C03 · T2가 같아도 왜 더 빨리 신호가 줄어드나?",
+      "heading": "T2가 같아도 왜 더 빨리 신호가 줄어드나?",
+      "overflow": false
+    },
+    {
+      "page": "t2star_mapping.html",
+      "width": 390,
+      "title": "M03 · T2*·R2*와 echo 범위",
+      "heading": "T2*와 R2*로 요약한 값은 echo 범위를 바꿔도 같을까요?",
+      "overflow": false
+    },
+    {
+      "page": "temporal_window_bolus.html",
+      "width": 390,
+      "title": "X04 기본 · 관측창과 프레임 간격",
+      "heading": "프레임이 더 자주 나오면 bolus peak도 더 정확해질까요?",
+      "overflow": false
+    },
+    {
+      "page": "vendor_ai_reading.html",
+      "width": 390,
+      "title": "AI02 · 벤더 공개 자료를 읽는 방법",
+      "heading": "같은 AI 재구성이라는 이름에서 무엇을 구별해야 할까요?",
+      "overflow": false
+    },
+    {
+      "page": "volume_2d_3d.html",
+      "width": 390,
+      "title": "G03 · 2D slice와 3D partition",
+      "heading": "3D로 찍으면 언제나 좋은 재단면이 생길까요?",
+      "overflow": false
+    },
+    {
+      "page": "water_excitation.html",
+      "width": 390,
+      "title": "F03 후속 · 두 RF의 water excitation",
+      "heading": "지방을 미리 지우는 대신 물만 횡축으로 보낼 수 있을까요?",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/index.html",
+      "width": 390,
+      "title": "2026-10-14 과학 검증 기록",
+      "heading": "2026-10-14 과학 검증 기록",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/original-review.html",
+      "width": 390,
+      "title": "MR Physics HTML 시뮬레이션 과학·교육 검증 — 수정 전 원본",
+      "heading": "MR Physics HTML 시뮬레이션 과학·교육 검증 — 수정 전 원본",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/fix-validation.html",
+      "width": 390,
+      "title": "2026-10-14 수정 후 과학 검산",
+      "heading": "2026-10-14 수정 후 과학 검산",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-14/contrast-chapter.html",
+      "width": 390,
+      "title": "C01 영상 대비 실험실 구현 검증",
+      "heading": "C01 영상 대비 실험실 구현 검증",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C01-physics.html",
+      "width": 390,
+      "title": "C01 — 영상 대비 실험실 물리 검증",
+      "heading": "C01 — 영상 대비 실험실 물리 검증",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B02-physics.html",
+      "width": 390,
+      "title": "B02 — RF 공명·flip angle 물리 검증",
+      "heading": "B02 — RF 공명·flip angle 물리 검증",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B03-physics.html",
+      "width": 390,
+      "title": "B03 자화·이완·SE 통합 물리 검증 (W03)",
+      "heading": "B03 자화·이완·SE 통합 물리 검증 (W03)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B01-physics.html",
+      "width": 390,
+      "title": "B01 스핀·ensemble·열평형 검증 (W04)",
+      "heading": "B01 스핀·ensemble·열평형 검증 (W04)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B04-physics.html",
+      "width": 390,
+      "title": "B04 공간 부호화 통합 물리 검증 (W05)",
+      "heading": "B04 공간 부호화 통합 물리 검증 (W05)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C02-physics.html",
+      "width": 390,
+      "title": "C02 SE/GRE 재위상화 검증 (W06)",
+      "heading": "C02 SE/GRE 재위상화 검증 (W06)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C03-physics.html",
+      "width": 390,
+      "title": "C03 T2와 T2*·정적 탈위상 검증 (W07)",
+      "heading": "C03 T2와 T2*·정적 탈위상 검증 (W07)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B05-physics.html",
+      "width": 390,
+      "title": "B05 k-space·역변환 통합 검증 (W08)",
+      "heading": "B05 k-space·역변환 통합 검증 (W08)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/G01-physics.html",
+      "width": 390,
+      "title": "G01 FOV·matrix·해상도 계산 기반 (W09)",
+      "heading": "G01 FOV·matrix·해상도 계산 기반 (W09)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/G02-physics.html",
+      "width": 390,
+      "title": "G02 Slice 선택·부분 용적 검증 (W10)",
+      "heading": "G02 Slice 선택·부분 용적 검증 (W10)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q01-physics.html",
+      "width": 390,
+      "title": "Q01 SNR·CNR·NEX 검증 (W11)",
+      "heading": "Q01 SNR·CNR·NEX 검증 (W11)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/B00-physics.html",
+      "width": 390,
+      "title": "B00 고전적 세차 비유 검증 (W12)",
+      "heading": "B00 고전적 세차 비유 검증 (W12)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C04-physics.html",
+      "width": 390,
+      "title": "C04 IR·TI·null 검증 (W13)",
+      "heading": "C04 IR·TI·null 검증 (W13)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C05-physics.html",
+      "width": 390,
+      "title": "C05 Echo train·ordering 검증 (W14)",
+      "heading": "C05 Echo train·ordering 검증 (W14)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/G03-physics.html",
+      "width": 390,
+      "title": "G03 2D/3D·voxel·MPR 검증 (W15)",
+      "heading": "G03 2D/3D·voxel·MPR 검증 (W15)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q02-physics.html",
+      "width": 390,
+      "title": "Q02 Receiver BW·시간·이동 검증 (W16)",
+      "heading": "Q02 Receiver BW·시간·이동 검증 (W16)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q03-physics.html",
+      "width": 390,
+      "title": "Q03 검사 시간·이벤트 수 검증 (W17)",
+      "heading": "Q03 검사 시간·이벤트 수 검증 (W17)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C06-physics.html",
+      "width": 390,
+      "title": "C06 Spoiled GRE·flip angle 검증 (W18)",
+      "heading": "C06 Spoiled GRE·flip angle 검증 (W18)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/C07-physics.html",
+      "width": 390,
+      "title": "C07 EPI 경로·시간·PE 이동 검증 (W19)",
+      "heading": "C07 EPI 경로·시간·PE 이동 검증 (W19)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/Q04-physics.html",
+      "width": 390,
+      "title": "Q04 감도·R2·g-factor 검증 (W20)",
+      "heading": "Q04 감도·R2·g-factor 검증 (W20)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F01-physics.html",
+      "width": 390,
+      "title": "F01 물·지방·IP/OP 검증 (W21)",
+      "heading": "F01 물·지방·IP/OP 검증 (W21)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F02-physics.html",
+      "width": 390,
+      "title": "F02 복소 분리·field·교환 모호성 검증 (W22)",
+      "heading": "F02 복소 분리·field·교환 모호성 검증 (W22)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F03-physics.html",
+      "width": 390,
+      "title": "F03 선택 saturation·B0/B1 검증 (W23)",
+      "heading": "F03 선택 saturation·B0/B1 검증 (W23)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F04-physics.html",
+      "width": 390,
+      "title": "F04 지방억제 원리·실패 비교 검증 (W24)",
+      "heading": "F04 지방억제 원리·실패 비교 검증 (W24)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/D01-physics.html",
+      "width": 390,
+      "title": "D01 확산·gradient·b-value 검증 (W25)",
+      "heading": "D01 확산·gradient·b-value 검증 (W25)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/D02-physics.html",
+      "width": 390,
+      "title": "D02 ADC fitting·T2 shine-through 검증 (W26)",
+      "heading": "D02 ADC fitting·T2 shine-through 검증 (W26)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-15/F03-water-physics.html",
+      "width": 390,
+      "title": "F03 후속 Water excitation 검증 (W27)",
+      "heading": "F03 후속 Water excitation 검증 (W27)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/D03-physics.html",
+      "width": 390,
+      "title": "D03 DWI 신호·EPI 시간·위치 검증 (W28)",
+      "heading": "D03 DWI 신호·EPI 시간·위치 검증 (W28)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/S01-physics.html",
+      "width": 390,
+      "title": "S01 주파수분포·GRE 신호/위상·blooming 검증 (W29)",
+      "heading": "S01 주파수분포·GRE 신호/위상·blooming 검증 (W29)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/S01-swi-physics.html",
+      "width": 390,
+      "title": "S01 후속 phase mask·minIP 검증 (W29b)",
+      "heading": "S01 후속 phase mask·minIP 검증 (W29b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/C08-physics.html",
+      "width": 390,
+      "title": "C08 bSSFP·잔여 횡자화·주파수 응답 검증 (W30)",
+      "heading": "C08 bSSFP·잔여 횡자화·주파수 응답 검증 (W30)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/C08-contrast-physics.html",
+      "width": 390,
+      "title": "C08 후속 T2/T1 대비·짧은 TR 근사 검증 (W30b)",
+      "heading": "C08 후속 T2/T1 대비·짧은 TR 근사 검증 (W30b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/Q05-physics.html",
+      "width": 390,
+      "title": "Q05 Partial Fourier·위상선 복원 검증 (W31)",
+      "heading": "Q05 Partial Fourier·위상선 복원 검증 (W31)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-16/Q06-physics.html",
+      "width": 390,
+      "title": "Q06 Haar 희소성·표본·L1 벌점 검증 (W32)",
+      "heading": "Q06 Haar 희소성·표본·L1 벌점 검증 (W32)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/Q07-physics.html",
+      "width": 390,
+      "title": "Q07 SMS · slice 분리 · CAIPI 검증 (W33)",
+      "heading": "Q07 SMS · slice 분리 · CAIPI 검증 (W33)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A01-physics.html",
+      "width": 390,
+      "title": "A01 FOV · aliasing · zero filling 검증 (W34)",
+      "heading": "A01 FOV · aliasing · zero filling 검증 (W34)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A02-physics.html",
+      "width": 390,
+      "title": "A02 움직임 · 획득 순서 · 이상적 gating 검증 (W35)",
+      "heading": "A02 움직임 · 획득 순서 · 이상적 gating 검증 (W35)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A03-physics.html",
+      "width": 390,
+      "title": "A03 유한 k-space · ringing · Hann 검증 (W36)",
+      "heading": "A03 유한 k-space · ringing · Hann 검증 (W36)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A04-physics.html",
+      "width": 390,
+      "title": "A04 Chemical shift 위치 이동 · 혼합 상쇄 검증 (W37)",
+      "heading": "A04 Chemical shift 위치 이동 · 혼합 상쇄 검증 (W37)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A05-physics.html",
+      "width": 390,
+      "title": "A05 공간 field · EPI 위치 역합 검증 (W38)",
+      "heading": "A05 공간 field · EPI 위치 역합 검증 (W38)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/A06-physics.html",
+      "width": 390,
+      "title": "A06 B1 · 수신 gain · RF 중 B0 부분 모형 검증 (W39)",
+      "heading": "A06 B1 · 수신 gain · RF 중 B0 부분 모형 검증 (W39)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M01-physics.html",
+      "width": 390,
+      "title": "M01 기본 · T2W 밝기와 T2 추정 검증 (W40)",
+      "heading": "M01 기본 · T2W 밝기와 T2 추정 검증 (W40)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M01-limits-physics.html",
+      "width": 390,
+      "title": "M01 후속 · 잡음 바닥과 두 성분 fitting 검증 (W40b)",
+      "heading": "M01 후속 · 잡음 바닥과 두 성분 fitting 검증 (W40b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M02-physics.html",
+      "width": 390,
+      "title": "M02 기본 · 유한 TR IR의 T1 추정 검증 (W41)",
+      "heading": "M02 기본 · 유한 TR IR의 T1 추정 검증 (W41)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M03-physics.html",
+      "width": 390,
+      "title": "M03 T2* · R2* · Gaussian echo 범위 검증 (W42)",
+      "heading": "M03 T2* · R2* · Gaussian echo 범위 검증 (W42)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M04-physics.html",
+      "width": 390,
+      "title": "M04 기본 · 신호 분율과 T1 bias 검증 (W43)",
+      "heading": "M04 기본 · 신호 분율과 T1 bias 검증 (W43)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M04-echo-physics.html",
+      "width": 390,
+      "title": "M04 후속 · Echo 감쇠와 지방 spectrum 검증 (W43b)",
+      "heading": "M04 후속 · Echo 감쇠와 지방 spectrum 검증 (W43b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N01-physics.html",
+      "width": 390,
+      "title": "N01 · 복소 FID와 spectrum 검증 (W44)",
+      "heading": "N01 · 복소 FID와 spectrum 검증 (W44)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N02-physics.html",
+      "width": 390,
+      "title": "N02 기본 · Peak 위치·면적·폭·TE 검증 (W45)",
+      "heading": "N02 기본 · Peak 위치·면적·폭·TE 검증 (W45)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N03-physics.html",
+      "width": 390,
+      "title": "N03 기본 · 관측 공간과 spectrum 혼합 검증 (W46)",
+      "heading": "N03 기본 · 관측 공간과 spectrum 혼합 검증 (W46)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/E01-physics.html",
+      "width": 390,
+      "title": "E01 기본 · 균일 탄성 shear wave 검증 (W47)",
+      "heading": "E01 기본 · 균일 탄성 shear wave 검증 (W47)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/E01-encoding-physics.html",
+      "width": 390,
+      "title": "E01 후속 · 변위와 MR 위상 검증 (W47b)",
+      "heading": "E01 후속 · 변위와 MR 위상 검증 (W47b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/E02-physics.html",
+      "width": 390,
+      "title": "E02 기본 · 표본과 공간 오차의 국소 역산 검증 (W48)",
+      "heading": "E02 기본 · 표본과 공간 오차의 국소 역산 검증 (W48)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/S02-physics.html",
+      "width": 390,
+      "title": "S02 기본 · 주기 dipole field와 역문제 검증 (W49)",
+      "heading": "S02 기본 · 주기 dipole field와 역문제 검증 (W49)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI01-physics.html",
+      "width": 390,
+      "title": "AI01 기본 · 재구성 역할과 자료 일치 검증 (W50)",
+      "heading": "AI01 기본 · 재구성 역할과 자료 일치 검증 (W50)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI03-physics.html",
+      "width": 390,
+      "title": "AI03 기본 · 작은 구조와 질감 평가 검증 (W51)",
+      "heading": "AI03 기본 · 작은 구조와 질감 평가 검증 (W51)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI03-t2-physics.html",
+      "width": 390,
+      "title": "AI03 정량 · echo별 공간 처리와 T2 추정 (W51b)",
+      "heading": "AI03 정량 · echo별 공간 처리와 T2 추정 (W51b)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI02-physics.html",
+      "width": 390,
+      "title": "AI02 · 벤더 공개 자료 읽기 검토 (W52)",
+      "heading": "AI02 · 벤더 공개 자료 읽기 검토 (W52)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/AI03-noise-physics.html",
+      "width": 390,
+      "title": "AI03 반복 잡음 · 평균/분산/공분산 검증 (W53)",
+      "heading": "AI03 반복 잡음 · 평균/분산/공분산 검증 (W53)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/N03-field-physics.html",
+      "width": 390,
+      "title": "N03 후속 · voxel 내 주파수 분포와 linewidth (W54)",
+      "heading": "N03 후속 · voxel 내 주파수 분포와 linewidth (W54)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M02-ecv-physics.html",
+      "width": 390,
+      "title": "M02 후속 · R1 분배와 ECV 기본 모형 (W55)",
+      "heading": "M02 후속 · R1 분배와 ECV 기본 모형 (W55)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/G02-rf-physics.html",
+      "width": 390,
+      "title": "G02 후속 · 유한 sinc RF와 slice profile (W56)",
+      "heading": "G02 후속 · 유한 sinc RF와 slice profile (W56)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/M04-fit-physics.html",
+      "width": 390,
+      "title": "M04 후속 · 알려진 모형의 복소 echo 성분 분리 (W57)",
+      "heading": "M04 후속 · 알려진 모형의 복소 echo 성분 분리 (W57)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X05-physics.html",
+      "width": 390,
+      "title": "X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁 (W58)",
+      "heading": "X05 기본 · 농도와 T1/T2*의 GRE 신호 경쟁 (W58)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X01-physics.html",
+      "width": 390,
+      "title": "X01 기본 · 등속 운동과 bipolar gradient 위상 (W60)",
+      "heading": "X01 기본 · 등속 운동과 bipolar gradient 위상 (W60)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X02-physics.html",
+      "width": 390,
+      "title": "X02 기본 · Slab 유입과 반복 RF 포화 (W61)",
+      "heading": "X02 기본 · Slab 유입과 반복 RF 포화 (W61)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-17/X13-physics.html",
+      "width": 390,
+      "title": "X13 기본 · metHb 상태표와 시간 해석의 한계 (W62)",
+      "heading": "X13 기본 · metHb 상태표와 시간 해석의 한계 (W62)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X14-physics.html",
+      "width": 390,
+      "title": "X14 기본 · 방향과 magic angle의 제한 모형 (W63)",
+      "heading": "X14 기본 · 방향과 magic angle의 제한 모형 (W63)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/publication-0105-fingerprints.html",
+      "width": 390,
+      "title": "W67 · 게시 바이트와 로컬 검토 지문",
+      "heading": "W67 · 게시 바이트와 로컬 검토 지문",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X01-mixture-physics.html",
+      "width": 390,
+      "title": "X01 후속 · 두 속도의 복소합과 신호 크기 (W64)",
+      "heading": "X01 후속 · 두 속도의 복소합과 신호 크기 (W64)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/W69-selected-row.html",
+      "width": 390,
+      "title": "W69 · 고정 표 제목 아래의 선택 행 표시",
+      "heading": "W69 · 고정 표 제목 아래의 선택 행 표시",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X13-refocusing-physics.html",
+      "width": 390,
+      "title": "X13 후속 · 혈액 성분과 refocusing 조건 (W65)",
+      "heading": "X13 후속 · 혈액 성분과 refocusing 조건 (W65)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X03-physics.html",
+      "width": 390,
+      "title": "X03 기본 · 두 획득의 위상차와 VENC (W66)",
+      "heading": "X03 기본 · 두 획득의 위상차와 VENC (W66)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X15-physics.html",
+      "width": 390,
+      "title": "X15 기본 · 균일 offset과 선형 field 보정 (W68)",
+      "heading": "X15 기본 · 균일 offset과 선형 field 보정 (W68)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X04-physics.html",
+      "width": 390,
+      "title": "X04 기본 · 관측창과 프레임 간격 (W70)",
+      "heading": "X04 기본 · 관측창과 프레임 간격 (W70)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X05-subtraction-physics.html",
+      "width": 390,
+      "title": "X05 후속 · Signed subtraction과 공간 정합 (W71)",
+      "heading": "X05 후속 · Signed subtraction과 공간 정합 (W71)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X06-physics.html",
+      "width": 390,
+      "title": "X06 기본 · 신호비와 ΔR2* 변환 (W72)",
+      "heading": "X06 기본 · 신호비와 ΔR2* 변환 (W72)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/W76-relaxation-wording.html",
+      "width": 390,
+      "title": "W76 · 제외한 이완 효과와 시간값 표현",
+      "heading": "W76 · 제외한 이완 효과와 시간값 표현",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X15-basis-physics.html",
+      "width": 390,
+      "title": "X15 후속 · 곡률과 보정 basis (W73)",
+      "heading": "X15 후속 · 곡률과 보정 basis (W73)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X07-physics.html",
+      "width": 390,
+      "title": "X07 기본 · 단일 구획의 입력과 washout (W74)",
+      "heading": "X07 기본 · 단일 구획의 입력과 washout (W74)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X08-physics.html",
+      "width": 390,
+      "title": "X08 기본 · 순간 표지의 도달과 T1 감쇠 (W75)",
+      "heading": "X08 기본 · 순간 표지의 도달과 T1 감쇠 (W75)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X12-physics.html",
+      "width": 390,
+      "title": "X12 기본 · 방향 확산과 MD/FA (W77)",
+      "heading": "X12 기본 · 방향 확산과 MD/FA (W77)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X12-mixture-physics.html",
+      "width": 390,
+      "title": "X12 후속 · 두 성분과 단일tensor 곡선 (W78)",
+      "heading": "X12 후속 · 두 성분과 단일tensor 곡선 (W78)",
+      "overflow": false
+    },
+    {
+      "page": "verification/2026-10-18/X09-physics.html",
+      "width": 390,
+      "title": "X09 기본 · 입력과 지연 반응 (W79)",
+      "heading": "X09 기본 · 입력과 지연 반응 (W79)",
+      "overflow": false
+    }
+  ]
+}

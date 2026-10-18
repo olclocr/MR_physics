@@ -19,3 +19,7 @@
 [실제Chrome 절차](X12-mixture-browser-check.js)와 [90상태 결과](X12-mixture-browser-check.json)는1920/390px에서45조건의5개수치·계수/성분정답·37×7표·혼합/fit신호와ADC잔차곡선을독립자료와대조했다. 최대SVG좌표4.98e−6 SVG좌표단위/기준1e−5,6자리수치/표는5.1e−7안이다. b0에서미정셀/문구·fit/잔차데이터선없음도확인했다. 키보드Home/End/Arrow/Enter·세예시/초기화·두문제양답·표가로/세로스크롤·viewBox/실제비율·중첩SVG없음/축11px이상을확인했고JS오류/페이지가로넘침0이다. [데스크톱](X12-mixture-base-1920.png),[모바일곡선](X12-mixture-graphics-390.png),[b0미정](X12-mixture-b0-390.png)을직접읽었다.
 
 설명/수식/단위·신호합뒤로그/ADC평균의차이·신호공간과ADC공간맞춤·36고유방향/180도중복·분율의의미·잔차0의비유일성·정답을대조했다. 잔차로실제성분수/섬유수/원인을유일하게추정하거나실제성분복원성능을통과시킨것이아니다. [대상버전](X12-mixture-versions.json), [전체회귀](W78-tests.txt), [통합 기록](checkpoint-W78-navigation.md).
+
+## W81 공백 편집
+
+[정적 본문 공백 편집 검증](W81-readability.md)에서 비공백 문자·태그/속성·script/style와 표시 데이터 불변을 확인했다. 기존 물리 판정을 보존하며 새 계산/내용 통과로 확대하지 않는다. 당시 문장 assertion은 과거 버전의 절차이며 최신 공백 버전은 W81 절차를 사용한다.

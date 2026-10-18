@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/polynomial_field_basis.html",
-      "sha256": "2FCD9EBA44DC10F473E950A08EA3C272C1B0660FA98BE5C7D978C85D4B80C456"
+      "sha256": "87C165A4763077A7275A50D0EF4AA0DEEFCD7C732A385EC4ECD97C7E003F01AB"
     },
     {
       "path": "docs/assets/polynomial-field-model.js",
@@ -46,6 +46,22 @@
     {
       "path": "docs/verification/2026-10-18/X15-basis-browser-check.json",
       "sha256": "95B5006B179C0A35901800B9A0A52BABD187E81E618930830BD7EC762E4286B5"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "id": "W81",
+      "record": "docs/verification/2026-10-18/W81-readability.md",
+      "audit": "docs/verification/2026-10-18/W81-copy-audit.json",
+      "changes": [
+        {
+          "manifest": "docs/verification/2026-10-18/X15-basis-versions.json",
+          "path": "docs/polynomial_field_basis.html",
+          "before": "2FCD9EBA44DC10F473E950A08EA3C272C1B0660FA98BE5C7D978C85D4B80C456",
+          "after": "87C165A4763077A7275A50D0EF4AA0DEEFCD7C732A385EC4ECD97C7E003F01AB",
+          "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
+        }
+      ]
     }
   ]
 }

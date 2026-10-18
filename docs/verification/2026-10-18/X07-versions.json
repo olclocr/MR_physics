@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/compartment_input_washout.html",
-      "sha256": "64114BB6CF2A335A8B9AABF03E29508B945E23BD3DEF81E5FC5DD8B167C69D8D"
+      "sha256": "3B0126A9D21A3995927DD4E548D16258E862C9989302AE13E7D9359737C01AF8"
     },
     {
       "path": "docs/assets/compartment-exchange-model.js",
@@ -42,6 +42,22 @@
     {
       "path": "docs/verification/2026-10-18/X07-browser-check.json",
       "sha256": "B5F714BD7C10056622226DBA124F2B15D5A625F432D2F72E7DEC308E87E3927F"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "id": "W81",
+      "record": "docs/verification/2026-10-18/W81-readability.md",
+      "audit": "docs/verification/2026-10-18/W81-copy-audit.json",
+      "changes": [
+        {
+          "manifest": "docs/verification/2026-10-18/X07-versions.json",
+          "path": "docs/compartment_input_washout.html",
+          "before": "64114BB6CF2A335A8B9AABF03E29508B945E23BD3DEF81E5FC5DD8B167C69D8D",
+          "after": "3B0126A9D21A3995927DD4E548D16258E862C9989302AE13E7D9359737C01AF8",
+          "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
+        }
+      ]
     }
   ]
 }

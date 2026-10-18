@@ -1,0 +1,67 @@
+{
+  "commit": "d7fb7ddfe31469425b6b42ee7fe598de8062dc62",
+  "manifests": [
+    "docs/verification/2026-10-18/X09-model-draft-versions.json"
+  ],
+  "method": "Compare commit manifests/blobs to SHA-confirmed review bytes; recorded CRLF byte offsets permit exact reconstruction from normalized UTF-8",
+  "counts": {
+    "exact": 6
+  },
+  "passed": true,
+  "files": [
+    {
+      "manifest": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+      "path": "docs/assets/delayed-response-model.js",
+      "status": "exact",
+      "reviewBytesSource": "published_hash_match",
+      "reviewedSha256": "2132AC5C2C9CAFC4964A062AD00BBA323CACC928A257330B7B7BA477AA930BBD",
+      "availableReviewSha256": null,
+      "publishedSha256": "2132AC5C2C9CAFC4964A062AD00BBA323CACC928A257330B7B7BA477AA930BBD"
+    },
+    {
+      "manifest": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+      "path": "tests/delayed-response.test.cjs",
+      "status": "exact",
+      "reviewBytesSource": "published_hash_match",
+      "reviewedSha256": "2F8CC9BE7ACD61A4281962BC36DC4E4CBADDD7B763ED3C27B1718E3F7CFF3870",
+      "availableReviewSha256": null,
+      "publishedSha256": "2F8CC9BE7ACD61A4281962BC36DC4E4CBADDD7B763ED3C27B1718E3F7CFF3870"
+    },
+    {
+      "manifest": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+      "path": "tests/helpers/delayed-response-reference.cjs",
+      "status": "exact",
+      "reviewBytesSource": "published_hash_match",
+      "reviewedSha256": "E42E45FE03EFD43C297E2B245676379B23F79DFC8958621EA971261F3E1DAB0F",
+      "availableReviewSha256": null,
+      "publishedSha256": "E42E45FE03EFD43C297E2B245676379B23F79DFC8958621EA971261F3E1DAB0F"
+    },
+    {
+      "manifest": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+      "path": "docs/verification/2026-10-18/X09-numerical.cjs",
+      "status": "exact",
+      "reviewBytesSource": "published_hash_match",
+      "reviewedSha256": "6D58E98ACC043D25571C53D94FA95E33492698389F9CCD80EF978F27304977ED",
+      "availableReviewSha256": null,
+      "publishedSha256": "6D58E98ACC043D25571C53D94FA95E33492698389F9CCD80EF978F27304977ED"
+    },
+    {
+      "manifest": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+      "path": "docs/verification/2026-10-18/X09-numerical.json",
+      "status": "exact",
+      "reviewBytesSource": "published_hash_match",
+      "reviewedSha256": "6BF25CA996EFEC2CD428F8BAA38021B91F8F2B61B1F6326E7600E612917A5E5D",
+      "availableReviewSha256": null,
+      "publishedSha256": "6BF25CA996EFEC2CD428F8BAA38021B91F8F2B61B1F6326E7600E612917A5E5D"
+    },
+    {
+      "manifest": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+      "path": "docs/verification/2026-10-18/X09-display-reference.json",
+      "status": "exact",
+      "reviewBytesSource": "published_hash_match",
+      "reviewedSha256": "CFD80052B6DC07E46CFC1E7DC4BF48AFC2A5EC62DB8363076E95B98A76471AB7",
+      "availableReviewSha256": null,
+      "publishedSha256": "CFD80052B6DC07E46CFC1E7DC4BF48AFC2A5EC62DB8363076E95B98A76471AB7"
+    }
+  ]
+}

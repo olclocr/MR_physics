@@ -19,3 +19,7 @@ Product는Rdiag(λ)Rᵀ와gᵀDg,행렬trace/등방성제거Frobenius비로MD/FA
 첫수치/DOM대조통과뒤스크린샷을직접읽어작은행렬이X열만먼저보이는배치를발견했다. 불필요한가로스크롤을없애고세열이한눈에들어오도록수정한뒤54상태를재검증했다. [최종데스크톱](X12-base-1920.png),[모바일행렬](X12-oblate-390.png),[모바일그림](X12-oblate-graphics-390.png),[같은FA/다른Z수치](X12-oblate-metrics-390.png)를직접읽었다. 수치계산변경은없다.
 
 3차원축/고유값·xy회전·b/ADC단위·정규화·FA쌍차이/Frobenius식의동치·설명/정답을검토했다. 한tensor의FA를실제교차성분/미세구조/질병이나tractography로확대하지않았다. [대상버전](X12-versions.json), [전체회귀](W77-tests.txt), [통합 기록](checkpoint-W77-navigation.md).
+
+## W81 공백 편집
+
+[정적 본문 공백 편집 검증](W81-readability.md)에서 비공백 문자·태그/속성·script/style와 표시 데이터 불변을 확인했다. 기존 물리 판정을 보존하며 새 계산/내용 통과로 확대하지 않는다. 당시 문장 assertion은 과거 버전의 절차이며 최신 공백 버전은 W81 절차를 사용한다.

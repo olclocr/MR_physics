@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/label_arrival_decay.html",
-      "sha256": "38BB489B66261B9E9379546531E7C71A8FD584BAA402A673682125EE30E34B07"
+      "sha256": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F"
     },
     {
       "path": "docs/assets/label-arrival-model.js",
@@ -46,6 +46,22 @@
     {
       "path": "docs/verification/2026-10-18/X08-browser-check.json",
       "sha256": "0C2D533A68C05EB8EEBEB99A2A4FF2E33DC7E19C19C09150B871B3B203673F14"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "id": "W81",
+      "record": "docs/verification/2026-10-18/W81-readability.md",
+      "audit": "docs/verification/2026-10-18/W81-copy-audit.json",
+      "changes": [
+        {
+          "manifest": "docs/verification/2026-10-18/X08-versions.json",
+          "path": "docs/label_arrival_decay.html",
+          "before": "38BB489B66261B9E9379546531E7C71A8FD584BAA402A673682125EE30E34B07",
+          "after": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F",
+          "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
+        }
+      ]
     }
   ]
 }

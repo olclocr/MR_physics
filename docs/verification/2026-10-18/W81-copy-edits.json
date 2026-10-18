@@ -1,0 +1,1138 @@
+{
+  "scope": "ASCII whitespace in static text nodes only; script/style/tags and non-whitespace characters preserved",
+  "files": [
+    {
+      "path": "docs/polynomial_field_basis.html",
+      "beforeSha256": "2FCD9EBA44DC10F473E950A08EA3C272C1B0660FA98BE5C7D978C85D4B80C456",
+      "afterSha256": "87C165A4763077A7275A50D0EF4AA0DEEFCD7C732A385EC4ECD97C7E003F01AB",
+      "edits": [
+        {
+          "beforeOffset": 1200,
+          "afterOffset": 1200,
+          "before": "의 후속입니다. 여기 field는 위치별 주파수 offset f(x)=30+2x+cx² Hz입니다. x는mm, 상수30은Hz, 기울기2는Hz/mm, 곡률계수c는Hz/mm²입니다. 실제 장비/조직 측정값은 없습니다.",
+          "after": "의 후속입니다. 여기 field는 위치별 주파수 offset f(x)=30+2x+cx² Hz입니다. x는 mm, 상수 30은 Hz, 기울기 2는 Hz/mm, 곡률계수 c는 Hz/mm²입니다. 실제 장비/조직 측정값은 없습니다."
+        },
+        {
+          "beforeOffset": 1326,
+          "afterOffset": 1333,
+          "before": "40mm 구간의401개 동일 가중 중점 xj=−20+(j+1/2)40/401mm를 사용합니다. 초기 M+=1이고 관찰 동안 T1 회복/고유T2 감쇠를 포함하지 않습니다. 공통 자유진화의 T1/T2 기본값은 무한대입니다. RF를 적용하지 않으며 잡음·이동·수신 차이도 포함하지 않습니다. 관찰 시간을TE라 부르지만 실제 echo 형성 과정은 계산하지 않습니다.",
+          "after": "40 mm 구간의 401개 동일 가중 중점 xj=−20+(j+1/2)40/401 mm를 사용합니다. 초기 M+=1이고 관찰 동안 T1 회복/고유 T2 감쇠를 포함하지 않습니다. 공통 자유진화의 T1/T2 기본값은 무한대입니다. RF를 적용하지 않으며 잡음·이동·수신 차이도 포함하지 않습니다. 관찰 시간을 TE라 부르지만 실제 echo 형성 과정은 계산하지 않습니다."
+        },
+        {
+          "beforeOffset": 1533,
+          "afterOffset": 1545,
+          "before": "선택한 기저의 최소제곱 다항식을 알려진 field에서 빼는 연산입니다. 실제3D coil field·전류·calibration·측정 자료나 안전 제약을 계산하지 않습니다. 1차원 x² 항은 실제 장비의 “2차 shim 전체”를 뜻하지 않습니다.",
+          "after": "선택한 기저의 최소제곱 다항식을 알려진 field에서 빼는 연산입니다. 실제 3D coil field·전류·calibration·측정 자료나 안전 제약을 계산하지 않습니다. 1차원 x² 항은 실제 장비의 “2차 shim 전체”를 뜻하지 않습니다."
+        },
+        {
+          "beforeOffset": 1753,
+          "afterOffset": 1766,
+          "before": "c0.1에서 직선까지 빼면 평균과 곡률은?",
+          "after": "c 0.1에서 직선까지 빼면 평균과 곡률은?"
+        },
+        {
+          "beforeOffset": 1805,
+          "afterOffset": 1819,
+          "before": "곡률0.1 · 상수+선형",
+          "after": "곡률 0.1 · 상수+선형"
+        },
+        {
+          "beforeOffset": 1836,
+          "afterOffset": 1851,
+          "before": "같은 field에서2차 항까지 포함하면?",
+          "after": "같은 field에서 2차 항까지 포함하면?"
+        },
+        {
+          "beforeOffset": 1921,
+          "afterOffset": 1937,
+          "before": "원래 직선이면2차 항도 꼭 필요할까요?",
+          "after": "원래 직선이면 2차 항도 꼭 필요할까요?"
+        },
+        {
+          "beforeOffset": 1969,
+          "afterOffset": 1986,
+          "before": "곡률0 · 상수+선형",
+          "after": "곡률 0 · 상수+선형"
+        },
+        {
+          "beforeOffset": 2758,
+          "afterOffset": 2776,
+          "before": "기본 c0.1/상수+선형/TE5ms. 세 모양은 같은401점과 가중1/401에서 구합니다.",
+          "after": "기본 c 0.1/상수+선형/TE 5 ms. 세 모양은 같은 401점과 가중 1/401에서 구합니다."
+        },
+        {
+          "beforeOffset": 3008,
+          "afterOffset": 3031,
+          "before": "회색: 원래 field · 주황 점선: 빼는 다항식 · 파랑: 잔여 field. x−20…20mm/주파수−100…180Hz 고정.401중점을 연결합니다.",
+          "after": "회색: 원래 field · 주황 점선: 빼는 다항식 · 파랑: 잔여 field. x −20…20 mm/주파수 −100…180 Hz 고정. 401중점을 연결합니다."
+        },
+        {
+          "beforeOffset": 3213,
+          "afterOffset": 3241,
+          "before": "회색: 보정 전 |S| · 파랑: 보정 후 |S| · 원: 선택TE.0…30ms/0…1 고정. 고유 이완 감쇠를 추가하지 않은 유한401점 평균입니다.",
+          "after": "회색: 보정 전 |S| · 파랑: 보정 후 |S| · 원: 선택 TE. 0…30 ms/0…1 고정. 고유 이완 감쇠를 추가하지 않은 유한 401점 평균입니다."
+        },
+        {
+          "beforeOffset": 3547,
+          "afterOffset": 3579,
+          "before": "선택TE의 보정 전 |S|",
+          "after": "선택 TE의 보정 전 |S|"
+        },
+        {
+          "beforeOffset": 3609,
+          "afterOffset": 3642,
+          "before": "선택TE의 보정 후 |S|",
+          "after": "선택 TE의 보정 후 |S|"
+        },
+        {
+          "beforeOffset": 3799,
+          "afterOffset": 3833,
+          "before": "σ는401점의 population 표준편차이며 FWHM/장비 허용값이 아닙니다. 복소합은 S(0)=1 기준입니다. |S|≤1e−8에서 위상을 표시하지 않는 수치 규칙을 사용합니다.",
+          "after": "σ는 401점의 population 표준편차이며 FWHM/장비 허용값이 아닙니다. 복소합은 S(0)=1 기준입니다. |S|≤1e−8에서 위상을 표시하지 않는 수치 규칙을 사용합니다."
+        },
+        {
+          "beforeOffset": 4711,
+          "afterOffset": 4746,
+          "before": "평균0이어도 곡률은 남습니다",
+          "after": "평균 0이어도 곡률은 남습니다"
+        },
+        {
+          "beforeOffset": 4734,
+          "afterOffset": 4770,
+          "before": "대칭 구간에서 직선 보정은 곡률의 평균까지 상수 항으로 흡수합니다. 그 결과 잔여 평균은0이지만, 가운데와 양 끝의 잔여 주파수는 서로 다릅니다. 같은 시각에 위상 차이가 생겨 복소합 크기도 줄 수 있습니다.",
+          "after": "대칭 구간에서 직선 보정은 곡률의 평균까지 상수 항으로 흡수합니다. 그 결과 잔여 평균은 0이지만, 가운데와 양 끝의 잔여 주파수는 서로 다릅니다. 같은 시각에 위상 차이가 생겨 복소합 크기도 줄 수 있습니다."
+        },
+        {
+          "beforeOffset": 4857,
+          "afterOffset": 4894,
+          "before": "여기 알려진 field는2차 다항식이므로2차 기저까지 허용하면 정확히 제거됩니다. 원래 직선(c0)은 선형 기저로 충분합니다. 더 큰 기저의 최소제곱 잔여 에너지가 줄어드는 성질과, 특정TE의 신호 크기/실제 임상 품질은 구별해야 합니다.",
+          "after": "여기 알려진 field는 2차 다항식이므로 2차 기저까지 허용하면 정확히 제거됩니다. 원래 직선(c 0)은 선형 기저로 충분합니다. 더 큰 기저의 최소제곱 잔여 에너지가 줄어드는 성질과, 특정 TE의 신호 크기/실제 임상 품질은 구별해야 합니다."
+        },
+        {
+          "beforeOffset": 5044,
+          "afterOffset": 5085,
+          "before": "보정 다항식 g(x)=β0+β1x+β2x²의 허용 항을 선택하고 Σ[f(xj)−g(xj)]²를 최소화합니다. 계산은 u=x/20의1/u/u²를 QR로 직교화합니다. 선형 기저에서는 g(x)=30+cμ2+2x, μ2=Σxj²/401입니다. 잔여는c(x²−μ2)이므로 평균0이어도 c≠0이면 분산c²(μ4−μ2²)가 남습니다.",
+          "after": "보정 다항식 g(x)=β0+β1x+β2x²의 허용 항을 선택하고 Σ[f(xj)−g(xj)]²를 최소화합니다. 계산은 u=x/20의 1/u/u²를 QR로 직교화합니다. 선형 기저에서는 g(x)=30+cμ2+2x, μ2=Σxj²/401입니다. 잔여는 c(x²−μ2)이므로 평균 0이어도 c≠0이면 분산 c²(μ4−μ2²)가 남습니다."
+        },
+        {
+          "beforeOffset": 5231,
+          "afterOffset": 5276,
+          "before": "S(t)=Σexp(−i2πrjt)/401, rj=f(xj)−g(xj), t는초입니다. μ4=Σxj⁴/401입니다. 두 이완시간의 기본값이 무한대인 공통free를 사용하므로 공간의 위상만 계산합니다. σ 하나만으로 모든TE의 복소합을 정할 수는 없습니다.",
+          "after": "S(t)=Σexp(−i2πrjt)/401, rj=f(xj)−g(xj), t는 초입니다. μ4=Σxj⁴/401입니다. 두 이완시간의 기본값이 무한대인 공통 free를 사용하므로 공간의 위상만 계산합니다. σ 하나만으로 모든 TE의 복소합을 정할 수는 없습니다."
+        },
+        {
+          "beforeOffset": 5444,
+          "afterOffset": 5492,
+          "before": "“선형 보정 뒤 평균0이면 모든 field 성분을 없앴다.”",
+          "after": "“선형 보정 뒤 평균 0이면 모든 field 성분을 없앴다.”"
+        },
+        {
+          "beforeOffset": 5481,
+          "afterOffset": 5530,
+          "before": " → c0.1의 잔여 곡선과 σ를 확인하세요.",
+          "after": " → c 0.1의 잔여 곡선과 σ를 확인하세요."
+        },
+        {
+          "beforeOffset": 5532,
+          "afterOffset": 5582,
+          "before": "c0.1에서 선형 보정 뒤 남은 field는?",
+          "after": "c 0.1에서 선형 보정 뒤 남은 field는?"
+        },
+        {
+          "beforeOffset": 5595,
+          "afterOffset": 5646,
+          "before": "평균0인 곡률 항이 남는다",
+          "after": "평균 0인 곡률 항이 남는다"
+        },
+        {
+          "beforeOffset": 5649,
+          "afterOffset": 5701,
+          "before": "모든 위치에서 반드시0이다",
+          "after": "모든 위치에서 반드시 0이다"
+        },
+        {
+          "beforeOffset": 5819,
+          "afterOffset": 5872,
+          "before": "실제3D장비의2차shim이면 언제나 같은 결과다",
+          "after": "실제 3D 장비의 2차 shim이면 언제나 같은 결과다"
+        },
+        {
+          "beforeOffset": 5884,
+          "afterOffset": 5941,
+          "before": "이번 알려진2차 다항식/동일가중/이완미포함 조건이다",
+          "after": "이번 알려진 2차 다항식/동일 가중/이완 미포함 조건이다"
+        },
+        {
+          "beforeOffset": 6127,
+          "afterOffset": 6187,
+          "before": "계수와 관찰 시간은 이 교육용 모형에서 직접 정의했습니다. 실제field map·임상 영상은 없습니다. ",
+          "after": "계수와 관찰 시간은 이 교육용 모형에서 직접 정의했습니다. 실제 field map·임상 영상은 없습니다. "
+        },
+        {
+          "beforeOffset": 6254,
+          "afterOffset": 6315,
+          "before": "Gruetter1993의 원논문 초록",
+          "after": "Gruetter 1993의 원논문 초록"
+        },
+        {
+          "beforeOffset": 6278,
+          "afterOffset": 6340,
+          "before": "에는 X/Y/Z 및 여러2차coil과 여섯projection이 구분되어 있습니다. ",
+          "after": "에는 X/Y/Z 및 여러 2차 coil과 여섯 projection이 구분되어 있습니다. "
+        },
+        {
+          "beforeOffset": 6411,
+          "afterOffset": 6476,
+          "before": "도 실제projection 측정을 안내합니다. 이 페이지의1차원 다항식은 해당coil 보정 알고리즘이나 성능을 구현하지 않습니다.",
+          "after": "도 실제 projection 측정을 안내합니다. 이 페이지의 1차원 다항식은 해당 coil 보정 알고리즘이나 성능을 구현하지 않습니다."
+        },
+        {
+          "beforeOffset": 6490,
+          "afterOffset": 6558,
+          "before": "실제3D측정·장비coil/전류제한·noise/ROI가중·고차항·RF/수신·이완·환자 안전/품질 최적화는 남아 있습니다. ",
+          "after": "실제 3D 측정·장비 coil/전류 제한·noise/ROI 가중·고차항·RF/수신·이완·환자 안전/품질 최적화는 남아 있습니다. "
+        }
+      ]
+    },
+    {
+      "path": "docs/compartment_input_washout.html",
+      "beforeSha256": "64114BB6CF2A335A8B9AABF03E29508B945E23BD3DEF81E5FC5DD8B167C69D8D",
+      "afterSha256": "3B0126A9D21A3995927DD4E548D16258E862C9989302AE13E7D9359737C01AF8",
+      "edits": [
+        {
+          "beforeOffset": 1220,
+          "afterOffset": 1220,
+          "before": "의 후속입니다. EES는 혈관 밖 세포외 공간입니다. ve는 조직 부피 중 EES의 비율이며0.2/0.4로 직접 정의합니다. 앞선 ECV 예시는 간질과 혈관 내 혈장을 따로 분리하지 않았습니다. 여기 ve는 EES만의 분율이며 혈관의 직접 기여 항을 제외하므로 ECV 예시와 같은 양으로 대입하지 않습니다. Ktrans와 kep의 단위는min⁻¹, kep=Ktrans/ve입니다. Ktrans를 모든 상황에서 혈류나 투과성 하나와 동일시하지 않습니다.",
+          "after": "의 후속입니다. EES는 혈관 밖 세포외 공간입니다. ve는 조직 부피 중 EES의 비율이며 0.2/0.4로 직접 정의합니다. 앞선 ECV 예시는 간질과 혈관 내 혈장을 따로 분리하지 않았습니다. 여기 ve는 EES만의 분율이며 혈관의 직접 기여 항을 제외하므로 ECV 예시와 같은 양으로 대입하지 않습니다. Ktrans와 kep의 단위는 min⁻¹, kep=Ktrans/ve입니다. Ktrans를 모든 상황에서 혈류나 투과성 하나와 동일시하지 않습니다."
+        },
+        {
+          "beforeOffset": 1479,
+          "afterOffset": 1481,
+          "before": "혈장 농도 Cp는0≤t",
+          "after": "혈장 농도 Cp는 0≤t"
+        },
+        {
+          "beforeOffset": 1492,
+          "afterOffset": 1495,
+          "before": "1분에1mmol/L,1분 이후0인 교육용 직사각 입력입니다. 모든 조작에서 같습니다. 실제 사람의 bolus/AIF나 주입법이 아닙니다. 혈장은 외부에서 주어진 입력으로 두며, 조직에서 돌아온 양으로 Cp를 다시 계산하지 않습니다. Ct는 ",
+          "after": "1분에 1 mmol/L, 1분 이후 0인 교육용 직사각 입력입니다. 모든 조작에서 같습니다. 실제 사람의 bolus/AIF나 주입법이 아닙니다. 혈장은 외부에서 주어진 입력으로 두며, 조직에서 돌아온 양으로 Cp를 다시 계산하지 않습니다. Ct는 "
+        },
+        {
+          "beforeOffset": 1684,
+          "afterOffset": 1691,
+          "before": "입니다. 단위는 모두mmol/L지만 분모 부피가 다릅니다. 혈관 내 농도의 직접 기여 항은0으로 둡니다.",
+          "after": "입니다. 단위는 모두 mmol/L지만 분모 부피가 다릅니다. 혈관 내 농도의 직접 기여 항은 0으로 둡니다."
+        },
+        {
+          "beforeOffset": 1749,
+          "afterOffset": 1758,
+          "before": "처음 Ct=0인 한 구획에서 유입률Ktrans Cp와 유출률kep Ct만 계산합니다. 시간은분, 유입/유출률은mmol/L조직/min, 누적량은mmol/L조직입니다. MRI 신호/TE·T1 가중·신호→농도 변환·실제AIF·환자 fitting은 계산하지 않습니다.",
+          "after": "처음 Ct=0인 한 구획에서 유입률 Ktrans Cp와 유출률 kep Ct만 계산합니다. 시간은 분, 유입/유출률은 mmol/L조직/min, 누적량은 mmol/L조직입니다. MRI 신호/TE·T1 가중·신호→농도 변환·실제 AIF·환자 fitting은 계산하지 않습니다."
+        },
+        {
+          "beforeOffset": 1978,
+          "afterOffset": 1993,
+          "before": "같은ve에서Ktrans를 키우면2분의Ct도 항상 클까요?",
+          "after": "같은 ve에서 Ktrans를 키우면 2분의 Ct도 항상 클까요?"
+        },
+        {
+          "beforeOffset": 2034,
+          "afterOffset": 2053,
+          "before": "Ktrans0.4 · ve0.2 · t2분",
+          "after": "Ktrans 0.4 · ve 0.2 · t 2분"
+        },
+        {
+          "beforeOffset": 2075,
+          "afterOffset": 2097,
+          "before": "Ktrans0.2에서ve만 두 배면 유출 속도는?",
+          "after": "Ktrans 0.2에서 ve만 두 배면 유출 속도는?"
+        },
+        {
+          "beforeOffset": 2129,
+          "afterOffset": 2153,
+          "before": "Ktrans0.2 · ve0.4 · t2분",
+          "after": "Ktrans 0.2 · ve 0.4 · t 2분"
+        },
+        {
+          "beforeOffset": 2170,
+          "afterOffset": 2197,
+          "before": "입력이 있어도 전달이0이면?",
+          "after": "입력이 있어도 전달이 0이면?"
+        },
+        {
+          "beforeOffset": 2210,
+          "afterOffset": 2238,
+          "before": "Ktrans0 · Cp가 있는 t0.5분",
+          "after": "Ktrans 0 · Cp가 있는 t 0.5분"
+        },
+        {
+          "beforeOffset": 2607,
+          "afterOffset": 2637,
+          "before": "EES 부피비 ve (단위없음)",
+          "after": "EES 부피비 ve (단위 없음)"
+        },
+        {
+          "beforeOffset": 2999,
+          "afterOffset": 3030,
+          "before": "기본Ktrans0.2/ve0.2/t2분. 곡선은0…6분을121점으로 표시합니다.1분의Cp/유입률은 내린 뒤의0을 사용하며 Ct/Ce는 연속입니다.",
+          "after": "기본 Ktrans 0.2/ve 0.2/t 2분. 곡선은 0…6분을 121점으로 표시합니다. 1분의 Cp/유입률은 내린 뒤의 0을 사용하며 Ct/Ce는 연속입니다."
+        },
+        {
+          "beforeOffset": 3290,
+          "afterOffset": 3330,
+          "before": "회색 점선:Cp · 주황:Ce(EES부피 기준) · 파랑:Ct(조직부피 기준).0…6분/0…1mmol/L 고정입니다.1분의 입력 하강을 수직선/내린 뒤의 채운 점으로 표시합니다.",
+          "after": "회색 점선: Cp · 주황: Ce(EES 부피 기준) · 파랑: Ct(조직 부피 기준). 0…6분/0…1 mmol/L 고정입니다. 1분의 입력 하강을 수직선/내린 뒤의 채운 점으로 표시합니다."
+        },
+        {
+          "beforeOffset": 3502,
+          "afterOffset": 3550,
+          "before": "파랑 점선:유입률 · 보라:유출률.0…6분/0…0.45mmol/L조직/min 고정입니다.1분 이후 유입은0이어도 유출과 잔류 농도는 남을 수 있습니다.",
+          "after": "파랑 점선: 유입률 · 보라: 유출률. 0…6분/0…0.45 mmol/L조직/min 고정입니다. 1분 이후 유입은 0이어도 유출과 잔류 농도는 남을 수 있습니다."
+        },
+        {
+          "beforeOffset": 3909,
+          "afterOffset": 3963,
+          "before": "선택t의 유입률 (mmol/L조직/min)",
+          "after": "선택 t의 유입률 (mmol/L조직/min)"
+        },
+        {
+          "beforeOffset": 3974,
+          "afterOffset": 4029,
+          "before": "선택t의 유출률 (mmol/L조직/min)",
+          "after": "선택 t의 유출률 (mmol/L조직/min)"
+        },
+        {
+          "beforeOffset": 4648,
+          "afterOffset": 4704,
+          "before": "입력이 있는 동안 유입과 유출이 동시에 일어납니다. 입력을 끊은 뒤 Ct는 남은 양에 비례해 감소합니다. 같은Ktrans에서ve가 커지면kep가 작아져 이후 감소가 느려집니다. 반대로Ktrans를 키우면 유입뿐 아니라kep도 커지므로 모든 시각의Ct가 커진다고 단정할 수 없습니다.",
+          "after": "입력이 있는 동안 유입과 유출이 동시에 일어납니다. 입력을 끊은 뒤 Ct는 남은 양에 비례해 감소합니다. 같은 Ktrans에서 ve가 커지면 kep가 작아져 이후 감소가 느려집니다. 반대로 Ktrans를 키우면 유입뿐 아니라 kep도 커지므로 모든 시각의 Ct가 커진다고 단정할 수 없습니다."
+        },
+        {
+          "beforeOffset": 4812,
+          "afterOffset": 4874,
+          "before": "이 모형에서 Ct=ve Ce입니다. 두 농도의 차이는 부피 기준의 차이입니다. 혈장과EES의 순간 농도가 항상 같다고 가정하지 않습니다.",
+          "after": "이 모형에서 Ct=ve Ce입니다. 두 농도의 차이는 부피 기준의 차이입니다. 혈장과 EES의 순간 농도가 항상 같다고 가정하지 않습니다."
+        },
+        {
+          "beforeOffset": 4938,
+          "afterOffset": 5001,
+          "before": "dCt/dt=Ktrans Cp−kep Ct, kep=Ktrans/ve입니다. Ct(t)=Ktrans∫₀ᵗCp(s)exp[−kep(t−s)]ds이며 시간은분입니다. 이 페이지에서는 Cp=1인 구간이1분이므로 Ct=ve[1−exp(−kep·min(t,1))]exp[−kep·max(t−1,0)]입니다. 수치적으로expm1을 사용합니다.",
+          "after": "dCt/dt=Ktrans Cp−kep Ct, kep=Ktrans/ve입니다. Ct(t)=Ktrans∫₀ᵗCp(s)exp[−kep(t−s)]ds이며 시간은 분입니다. 이 페이지에서는 Cp=1인 구간이 1분이므로 Ct=ve[1−exp(−kep·min(t,1))]exp[−kep·max(t−1,0)]입니다. 수치적으로 expm1을 사용합니다."
+        },
+        {
+          "beforeOffset": 5130,
+          "afterOffset": 5196,
+          "before": "누적유입Iin=Ktrans·min(t,1), 누적유출Iout=Iin−Ct로 표시합니다. 이는 같은 조직 부피 기준의 보존식입니다. 입력 종료 뒤 반감시간은ln2/kep이며Ktrans0에서는 유출과 증가가 모두0이므로 반감시간을 정하지 않습니다.",
+          "after": "누적 유입 Iin=Ktrans·min(t,1), 누적 유출 Iout=Iin−Ct로 표시합니다. 이는 같은 조직 부피 기준의 보존식입니다. 입력 종료 뒤 반감시간은 ln2/kep이며 Ktrans 0에서는 유출과 증가가 모두 0이므로 반감시간을 정하지 않습니다."
+        },
+        {
+          "beforeOffset": 5338,
+          "afterOffset": 5412,
+          "before": "“Cp가0이 되는 순간Ct도0이다.”",
+          "after": "“Cp가 0이 되는 순간 Ct도 0이다.”"
+        },
+        {
+          "beforeOffset": 5362,
+          "afterOffset": 5439,
+          "before": " → t1/2/4분의 유출률과 남은Ct를 비교하세요.",
+          "after": " → t 1/2/4분의 유출률과 남은 Ct를 비교하세요."
+        },
+        {
+          "beforeOffset": 5417,
+          "afterOffset": 5496,
+          "before": "같은Ktrans에서ve를0.2→0.4로 바꾸면?",
+          "after": "같은 Ktrans에서 ve를 0.2→0.4로 바꾸면?"
+        },
+        {
+          "beforeOffset": 5661,
+          "afterOffset": 5743,
+          "before": "Ktrans를 키우면 모든 시각의Ct가 커질까요?",
+          "after": "Ktrans를 키우면 모든 시각의 Ct가 커질까요?"
+        },
+        {
+          "beforeOffset": 6124,
+          "afterOffset": 6207,
+          "before": "Tofts등1999의 표준화 논문",
+          "after": "Tofts 등 1999의 표준화 논문"
+        },
+        {
+          "beforeOffset": 6146,
+          "afterOffset": 6231,
+          "before": "에서 변수의 단위와kep=Ktrans/ve, Ktrans의 조건부 의미를 확인했습니다. ",
+          "after": "에서 변수의 단위와 kep=Ktrans/ve, Ktrans의 조건부 의미를 확인했습니다. "
+        },
+        {
+          "beforeOffset": 6264,
+          "afterOffset": 6350,
+          "before": "Tofts와Kermode1991",
+          "after": "Tofts와 Kermode 1991"
+        },
+        {
+          "beforeOffset": 6338,
+          "afterOffset": 6426,
+          "before": "실제AIF/혈관항·혈류/투과성 분리·신호→농도·noise/fitting·용량/환자진단/임상cutoff는 미구현입니다. 임상 영상은 없습니다. ",
+          "after": "실제 AIF/혈관항·혈류/투과성 분리·신호→농도·noise/fitting·용량/환자 진단/임상 cutoff는 미구현입니다. 임상 영상은 없습니다. "
+        }
+      ]
+    },
+    {
+      "path": "docs/label_arrival_decay.html",
+      "beforeSha256": "38BB489B66261B9E9379546531E7C71A8FD584BAA402A673682125EE30E34B07",
+      "afterSha256": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F",
+      "edits": [
+        {
+          "beforeOffset": 1279,
+          "afterOffset": 1279,
+          "before": "을 연결합니다. 가상 경로 길이20cm와 속도10/20/40cm/s를 정의하므로 도달시간τ는2/1/0.5초입니다. 혈관 단면/유량이나 실제 환자 경로가 아닙니다.",
+          "after": "을 연결합니다. 가상 경로 길이 20 cm와 속도 10/20/40 cm/s를 정의하므로 도달시간 τ는 2/1/0.5초입니다. 혈관 단면/유량이나 실제 환자 경로가 아닙니다."
+        },
+        {
+          "beforeOffset": 1376,
+          "afterOffset": 1382,
+          "before": "t0에한packet의control Mz=+1, label Mz=−1을 직접 정합니다. RF 표지 과정을 계산하지 않습니다. 같은T1로회복시킨 뒤(control−label)/2를 초기차이1에 정규화합니다. Mz는평형자화1기준이며 두 상태의초기차이는2입니다. 회복은 이동 중에도 계속됩니다.",
+          "after": "t 0에 한 packet의 control Mz=+1, label Mz=−1을 직접 정합니다. RF 표지 과정을 계산하지 않습니다. 같은 T1로 회복시킨 뒤 (control−label)/2를 초기 차이 1에 정규화합니다. Mz는 평형자화 1 기준이며 두 상태의 초기 차이는 2입니다. 회복은 이동 중에도 계속됩니다."
+        },
+        {
+          "beforeOffset": 1543,
+          "afterOffset": 1564,
+          "before": "도착 전 관찰 위치의 값은0, 도착 순간부터는그packet을그곳에보관해남은차이를봅니다. 이동전후T1은같고조직교환/유출·표지기간/효율·읽기pulse/잡음은포함하지않습니다. 원의크기는위치표시이며관찰영역/voxel부피나표지량을뜻하지않습니다.",
+          "after": "도착 전 관찰 위치의 값은 0, 도착 순간부터는 그 packet을 그곳에 보관해 남은 차이를 봅니다. 이동 전후 T1은 같고 조직 교환/유출·표지 기간/효율·읽기 pulse/잡음은 포함하지 않습니다. 원의 크기는 위치 표시이며 관찰 영역/voxel 부피나 표지량을 뜻하지 않습니다."
+        },
+        {
+          "beforeOffset": 1708,
+          "afterOffset": 1755,
+          "before": "의시간입니다. 실제PCASL의PLD는유한표지pulse train이끝난뒤부터이며이t와그대로같지않습니다. 실제ASL의차영상/CBF를계산하지않고,관찰값을혈류량으로바꾸지않습니다. T1값도이모형의교육용선택값입니다.",
+          "after": "의 시간입니다. 실제 PCASL의 PLD는 유한 표지 pulse train이 끝난 뒤부터이며 이 t와 그대로 같지 않습니다. 실제 ASL의 차영상/CBF를 계산하지 않고, 관찰값을 혈류량으로 바꾸지 않습니다. T1값도 이 모형의 교육용 선택값입니다."
+        },
+        {
+          "beforeOffset": 1953,
+          "afterOffset": 2025,
+          "before": "τ1초 · t0.5초",
+          "after": "τ 1초 · t 0.5초"
+        },
+        {
+          "beforeOffset": 1982,
+          "afterOffset": 2056,
+          "before": "이미 도착한 같은시각에T1만 짧아지면?",
+          "after": "이미 도착한 같은 시각에 T1만 짧아지면?"
+        },
+        {
+          "beforeOffset": 2029,
+          "afterOffset": 2105,
+          "before": "T1 1000ms · t2초",
+          "after": "T1 1000 ms · t 2초"
+        },
+        {
+          "beforeOffset": 2062,
+          "afterOffset": 2140,
+          "before": "더 오래 기다리면 관찰차이가 항상 클까요?",
+          "after": "더 오래 기다리면 관찰 차이가 항상 클까요?"
+        },
+        {
+          "beforeOffset": 2110,
+          "afterOffset": 2189,
+          "before": "T1 1600ms · t3초",
+          "after": "T1 1600 ms · t 3초"
+        },
+        {
+          "beforeOffset": 2429,
+          "afterOffset": 2510,
+          "before": "같은packet에 적용할T1 (ms)",
+          "after": "같은 packet에 적용할 T1 (ms)"
+        },
+        {
+          "beforeOffset": 2794,
+          "afterOffset": 2877,
+          "before": "기본20cm/s/T1 1600ms/t2초. 도착 경계t=τ는도착으로정합니다. 이이상적step규칙은유한길이혈액bolus/voxel충전을구현하지않습니다.",
+          "after": "기본 20 cm/s/T1 1600 ms/t 2초. 도착 경계 t=τ는 도착으로 정합니다. 이 이상적 step 규칙은 유한 길이 혈액 bolus/voxel 충전을 구현하지 않습니다."
+        },
+        {
+          "beforeOffset": 3054,
+          "afterOffset": 3154,
+          "before": "파란 원:packet 위치 · 초록 상자:정의한 관찰 위치. 도착 뒤 보관하는 규칙으로원이20cm에서머뭅니다. 실제 혈류가 멈추는 과정의 모형은 아닙니다.",
+          "after": "파란 원: packet 위치 · 초록 상자: 정의한 관찰 위치. 도착 뒤 보관하는 규칙으로 원이 20 cm에서 머뭅니다. 실제 혈류가 멈추는 과정의 모형은 아닙니다."
+        },
+        {
+          "beforeOffset": 3270,
+          "afterOffset": 3376,
+          "before": "회색:packet에 남은 차이 · 파랑:관찰위치의 값 · 원:선택t.0…3초/초기차이1기준0…1고정입니다. 도착 순간의이상적gate는수직선·위쪽채운점/아래쪽빈점으로표시합니다.",
+          "after": "회색: packet에 남은 차이 · 파랑: 관찰 위치의 값 · 원: 선택 t. 0…3초/초기 차이 1 기준 0…1 고정입니다. 도착 순간의 이상적 gate는 수직선·위쪽 채운 점/아래쪽 빈 점으로 표시합니다."
+        },
+        {
+          "beforeOffset": 3448,
+          "afterOffset": 3573,
+          "before": "선택t의 위치 (cm)",
+          "after": "선택 t의 위치 (cm)"
+        },
+        {
+          "beforeOffset": 3504,
+          "afterOffset": 3630,
+          "before": "Control Mz (평형1기준)",
+          "after": "Control Mz (평형 1 기준)"
+        },
+        {
+          "beforeOffset": 3565,
+          "afterOffset": 3693,
+          "before": "Label Mz (평형1기준)",
+          "after": "Label Mz (평형 1 기준)"
+        },
+        {
+          "beforeOffset": 3622,
+          "afterOffset": 3752,
+          "before": "Packet에 남은 정규화차이",
+          "after": "Packet에 남은 정규화 차이"
+        },
+        {
+          "beforeOffset": 3737,
+          "afterOffset": 3868,
+          "before": "관찰 위치의 정규화차이",
+          "after": "관찰 위치의 정규화 차이"
+        },
+        {
+          "beforeOffset": 4336,
+          "afterOffset": 4468,
+          "before": "동일T1과고정된관찰시간에서는packet에남은차이가속도와무관합니다. 속도는그차이를관찰위치에서볼수있는지결정합니다. 이미모두도착한뒤라면더오래기다릴수록남은차이는작아집니다.",
+          "after": "동일 T1과 고정된 관찰시간에서는 packet에 남은 차이가 속도와 무관합니다. 속도는 그 차이를 관찰 위치에서 볼 수 있는지 결정합니다. 이미 모두 도착한 뒤라면 더 오래 기다릴수록 남은 차이는 작아집니다."
+        },
+        {
+          "beforeOffset": 4434,
+          "afterOffset": 4591,
+          "before": "이번도식은한packet을보관하는규칙만다룹니다. 실제ASL에서는표지기간/분포·혈관과조직의교환/서로다른T1·읽기와잡음등이관여합니다. 작은차이를혈류감소하나로판정하는모형으로확대하지않습니다.",
+          "after": "이번 도식은 한 packet을 보관하는 규칙만 다룹니다. 실제 ASL에서는 표지 기간/분포·혈관과 조직의 교환/서로 다른 T1·읽기와 잡음 등이 관여합니다. 작은 차이를 혈류 감소 하나로 판정하는 모형으로 확대하지 않습니다."
+        },
+        {
+          "beforeOffset": 4557,
+          "afterOffset": 4738,
+          "before": "수식 · Control/label 회복과 도착gate",
+          "after": "수식 · Control/label 회복과 도착 gate"
+        },
+        {
+          "beforeOffset": 4599,
+          "afterOffset": 4781,
+          "before": "Control Mz=1, Label Mz=1−2exp(−t/T1)이므로 정규화차이D(t)=(Control−Label)/2=exp(−t/T1)입니다. 공통relax에서t는ms,T1도ms로맞춥니다. 도달시간τ=20/v는초이며표/그림의t도초입니다.",
+          "after": "Control Mz=1, Label Mz=1−2exp(−t/T1)이므로 정규화 차이 D(t)=(Control−Label)/2=exp(−t/T1)입니다. 공통 relax에서 t는 ms, T1도 ms로 맞춥니다. 도달시간 τ=20/v는 초이며 표/그림의 t도 초입니다."
+        },
+        {
+          "beforeOffset": 4741,
+          "afterOffset": 4936,
+          "before": "관찰값O(t)=0(t&lt;τ), O(t)=D(t)(t≥τ)로정합니다. t=τ에관찰규칙이점프해도packet의Mz와남은D는연속입니다. exp[−(t−τ)/T1]로도착때부터새로계산하면이동중회복을누락합니다.",
+          "after": "관찰값 O(t)=0(t&lt;τ), O(t)=D(t)(t≥τ)로 정합니다. t=τ에 관찰 규칙이 점프해도 packet의 Mz와 남은 D는 연속입니다. exp[−(t−τ)/T1]로 도착 때부터 새로 계산하면 이동 중 회복을 누락합니다."
+        },
+        {
+          "beforeOffset": 4925,
+          "afterOffset": 5138,
+          "before": "“관찰값0이면 표지가 완전히 사라졌다.”",
+          "after": "“관찰값 0이면 표지가 완전히 사라졌다.”"
+        },
+        {
+          "beforeOffset": 4951,
+          "afterOffset": 5165,
+          "before": " → τ1초/t0.5초의위치와남은차이를비교하세요.",
+          "after": " → τ 1초/t 0.5초의 위치와 남은 차이를 비교하세요."
+        },
+        {
+          "beforeOffset": 5004,
+          "afterOffset": 5224,
+          "before": "같은t/T1에서 도착이 늦은packet의 남은차이는?",
+          "after": "같은 t/T1에서 도착이 늦은 packet의 남은 차이는?"
+        },
+        {
+          "beforeOffset": 5068,
+          "afterOffset": 5291,
+          "before": "이동 중에도 표지 직후부터 같은시간만큼 회복한다",
+          "after": "이동 중에도 표지 직후부터 같은 시간만큼 회복한다"
+        },
+        {
+          "beforeOffset": 5248,
+          "afterOffset": 5472,
+          "before": "같은packet이이미도착한뒤 t2→3초로늘리면?",
+          "after": "같은 packet이 이미 도착한 뒤 t 2→3초로 늘리면?"
+        },
+        {
+          "beforeOffset": 5307,
+          "afterOffset": 5537,
+          "before": "이모형의관찰차이는항상더커진다",
+          "after": "이 모형의 관찰 차이는 항상 더 커진다"
+        },
+        {
+          "beforeOffset": 5361,
+          "afterOffset": 5597,
+          "before": "추가T1회복으로정규화차이가작아진다",
+          "after": "추가 T1 회복으로 정규화 차이가 작아진다"
+        },
+        {
+          "beforeOffset": 5476,
+          "afterOffset": 5717,
+          "before": "학습 후: 표지packet의길이·교환·도착후T1이달라지면이곡선을그대로쓸수있을까요?",
+          "after": "학습 후: 표지 packet의 길이·교환·도착 후 T1이 달라지면 이 곡선을 그대로 쓸 수 있을까요?"
+        },
+        {
+          "beforeOffset": 5640,
+          "afterOffset": 5892,
+          "before": "Alsop등2015 합의문",
+          "after": "Alsop 등 2015 합의문"
+        },
+        {
+          "beforeOffset": 5658,
+          "afterOffset": 5912,
+          "before": "의소개와표지/영상사이시간절은짧은지연의미도달·긴지연의T1감쇠및PCASL PLD의시간기준을구별합니다. 여기수치/순간packet/보관규칙은직접정의했으며해당논문의획득/혈류정량/권고설정을구현하지않습니다.",
+          "after": "의 소개와 표지/영상 사이 시간 절은 짧은 지연의 미도달·긴 지연의 T1 감쇠 및 PCASL PLD의 시간 기준을 구별합니다. 여기 수치/순간 packet/보관 규칙은 직접 정의했으며 해당 논문의 획득/혈류 정량/권고 설정을 구현하지 않습니다."
+        },
+        {
+          "beforeOffset": 5773,
+          "afterOffset": 6055,
+          "before": "실제ASLpulse sequence·유한표지/효율·혈관/조직교환·유량/CBF·환자진단/임상PLD권고는미구현입니다. 임상 영상은없습니다. ",
+          "after": "실제 ASL pulse sequence·유한 표지/효율·혈관/조직 교환·유량/CBF·환자 진단/임상 PLD 권고는 미구현입니다. 임상 영상은 없습니다. "
+        }
+      ]
+    },
+    {
+      "path": "docs/diffusion_tensor_direction.html",
+      "beforeSha256": "B59F46D56EA5B3FC3C20381E027DA13AC191D7A2819324EB55E55AE14884CC29",
+      "afterSha256": "A8E4F8157E40DB28A103BBF14AD15A028AE88E7194961088D53E125C205359BC",
+      "edits": [
+        {
+          "beforeOffset": 1043,
+          "afterOffset": 1043,
+          "before": "X12 기본 · 알려진 단일 확산tensor의 전진 신호",
+          "after": "X12 기본 · 알려진 단일 확산 tensor의 전진 신호"
+        },
+        {
+          "beforeOffset": 1207,
+          "afterOffset": 1208,
+          "before": "목표: 방향ADC/평균MD·실험실축/회전불변FA·scalar요약/전체tensor를구별합니다.",
+          "after": "목표: 방향 ADC/평균 MD·실험실 축/회전불변 FA·scalar 요약/전체 tensor를 구별합니다."
+        },
+        {
+          "beforeOffset": 1370,
+          "afterOffset": 1378,
+          "before": "를 방향에 따라 확장합니다. 시간에 따라 D가 변하지 않는 단일 Gaussian 모형으로 정합니다. g는 길이1인 측정 방향, x/y/z는 고정된 실험실 축입니다. tensor D는 방향별 확산을3×3행렬로 정리한 모형입니다. λ1/λ2/λ3는모형자체의세축에서정의한양의확산값입니다.",
+          "after": "를 방향에 따라 확장합니다. 시간에 따라 D가 변하지 않는 단일 Gaussian 모형으로 정합니다. g는 길이 1인 측정 방향, x/y/z는 고정된 실험실 축입니다. tensor D는 방향별 확산을 3×3 행렬로 정리한 모형입니다. λ1/λ2/λ3는 모형 자체의 세 축에서 정의한 양의 확산값입니다."
+        },
+        {
+          "beforeOffset": 1534,
+          "afterOffset": 1552,
+          "before": "세모형의λ는(0.8,0.8,0.8),(1.4,0.5,0.5),(1.1,1.1,0.2)×10⁻³mm²/s입니다. 직접정의한교육값이며특정조직값이아닙니다. 모두MD0.8×10⁻³이고뒤두모형은FA도같지만고유값의모양이다릅니다. 회전은z축주위의xy회전0/45/90도만다룹니다.",
+          "after": "세 모형의 λ는 (0.8,0.8,0.8),(1.4,0.5,0.5),(1.1,1.1,0.2)×10⁻³mm²/s입니다. 직접 정의한 교육값이며 특정 조직값이 아닙니다. 모두 MD 0.8×10⁻³이고 뒤 두 모형은 FA도 같지만 고유값의 모양이 다릅니다. 회전은 z축 주위의 xy 회전 0/45/90도만 다룹니다."
+        },
+        {
+          "beforeOffset": 1689,
+          "afterOffset": 1731,
+          "before": "방향ADC=gᵀDg, 신호비S/S0=exp(−bADC)입니다. b는s/mm²,ADC는mm²/s여서지수는단위없습니다. 같은방향별b0기준S0로나누고잡음0/동일TE·T2가중을상쇄한신호비만비교합니다. 표와ADC그림은읽기쉽게10⁻³mm²/s단위로표시합니다.",
+          "after": "방향 ADC=gᵀDg, 신호비 S/S0=exp(−bADC)입니다. b는 s/mm², ADC는 mm²/s여서 지수는 단위 없습니다. 같은 방향별 b0 기준 S0로 나누고 잡음 0/동일 TE·T2 가중을 상쇄한 신호비만 비교합니다. 표와 ADC 그림은 읽기 쉽게 10⁻³mm²/s 단위로 표시합니다."
+        },
+        {
+          "beforeOffset": 1834,
+          "afterOffset": 1903,
+          "before": "MD/FA는여기",
+          "after": "MD/FA는 여기"
+        },
+        {
+          "beforeOffset": 1845,
+          "afterOffset": 1915,
+          "before": "알려진D에서계산한모형정답",
+          "after": "알려진 D에서 계산한 모형 정답"
+        },
+        {
+          "beforeOffset": 1862,
+          "afterOffset": 1936,
+          "before": "입니다. 신호에서tensor를추정하지않습니다. b0만선택해도모형정답은알려져있지만그신호만으로추정할수있다는뜻이아닙니다. 실제미세구조/교차성분·잡음/fitting·tractography/환자분류는포함하지않습니다.",
+          "after": "입니다. 신호에서 tensor를 추정하지 않습니다. b0만 선택해도 모형 정답은 알려져 있지만 그 신호만으로 추정할 수 있다는 뜻이 아닙니다. 실제 미세구조/교차 성분·잡음/fitting·tractography/환자 분류는 포함하지 않습니다."
+        },
+        {
+          "beforeOffset": 2061,
+          "afterOffset": 2155,
+          "before": "같은MD의등방성모형은방향신호가어떤가요?",
+          "after": "같은 MD의 등방성 모형은 방향 신호가 어떤가요?"
+        },
+        {
+          "beforeOffset": 2112,
+          "afterOffset": 2212,
+          "before": "세값 같음 · b1000",
+          "after": "세 값 같음 · b 1000"
+        },
+        {
+          "beforeOffset": 2143,
+          "afterOffset": 2245,
+          "before": "한축큰모형을45도돌리면MD/FA와신호는?",
+          "after": "한 축 큰 모형을 45도 돌리면 MD/FA와 신호는?"
+        },
+        {
+          "beforeOffset": 2192,
+          "afterOffset": 2301,
+          "before": "같은고유값 · 회전45도",
+          "after": "같은 고유값 · 회전 45도"
+        },
+        {
+          "beforeOffset": 2223,
+          "afterOffset": 2334,
+          "before": "같은MD/FA인데고유값모양도같을까요?",
+          "after": "같은 MD/FA인데 고유값 모양도 같을까요?"
+        },
+        {
+          "beforeOffset": 2270,
+          "afterOffset": 2385,
+          "before": "두값 큰 모형 · b1000",
+          "after": "두 값 큰 모형 · b 1000"
+        },
+        {
+          "beforeOffset": 2359,
+          "afterOffset": 2476,
+          "before": "알려진tensor와측정b",
+          "after": "알려진 tensor와 측정 b"
+        },
+        {
+          "beforeOffset": 2424,
+          "afterOffset": 2544,
+          "before": "정의한고유값 모양",
+          "after": "정의한 고유값 모양"
+        },
+        {
+          "beforeOffset": 2687,
+          "afterOffset": 2808,
+          "before": "모형의xy회전 (도)",
+          "after": "모형의 xy 회전 (도)"
+        },
+        {
+          "beforeOffset": 3010,
+          "afterOffset": 3133,
+          "before": "기본한값큼/회전0/b1000. xy의두고유값이같으면이회전으로xy모양은변하지않습니다.",
+          "after": "기본 한 값 큼/회전 0/b 1000. xy의 두 고유값이 같으면 이 회전으로 xy 모양은 변하지 않습니다."
+        },
+        {
+          "beforeOffset": 3372,
+          "afterOffset": 3509,
+          "before": "측정방향과정규화신호",
+          "after": "측정 방향과 정규화 신호"
+        },
+        {
+          "beforeOffset": 3503,
+          "afterOffset": 3643,
+          "before": "파랑:현재tensor의방향ADC · 회색점선:같은MD의등방성기준. g=(cosθ,sinθ,0),θ0…180도/5도간격37점입니다. y0…1.5×10⁻³mm²/s고정입니다. Z방향은이xy그림에없으며아래수치로따로봅니다.",
+          "after": "파랑: 현재 tensor의 방향 ADC · 회색 점선: 같은 MD의 등방성 기준. g=(cosθ,sinθ,0), θ 0…180도/5도 간격 37점입니다. y 0…1.5×10⁻³mm²/s 고정입니다. Z 방향은 이 xy 그림에 없으며 아래 수치로 따로 봅니다."
+        },
+        {
+          "beforeOffset": 3744,
+          "afterOffset": 3908,
+          "before": "파랑:현재S/S0 · 회색점선:같은MD의등방성S/S0.0…1고정이며0도/90도의원은X/Y측정입니다. 곡선의방향은실제신경섬유의경로를그린것이아닙니다.",
+          "after": "파랑: 현재 S/S0 · 회색 점선: 같은 MD의 등방성 S/S0. 0…1 고정이며 0도/90도의 원은 X/Y 측정입니다. 곡선의 방향은 실제 신경섬유의 경로를 그린 것이 아닙니다."
+        },
+        {
+          "beforeOffset": 3911,
+          "afterOffset": 4095,
+          "before": "모형 정답 FA (단위없음)",
+          "after": "모형 정답 FA (단위 없음)"
+        },
+        {
+          "beforeOffset": 3964,
+          "afterOffset": 4149,
+          "before": "X방향 S/S0",
+          "after": "X 방향 S/S0"
+        },
+        {
+          "beforeOffset": 4015,
+          "afterOffset": 4201,
+          "before": "Y방향 S/S0",
+          "after": "Y 방향 S/S0"
+        },
+        {
+          "beforeOffset": 4066,
+          "afterOffset": 4253,
+          "before": "Z방향 S/S0",
+          "after": "Z 방향 S/S0"
+        },
+        {
+          "beforeOffset": 4214,
+          "afterOffset": 4402,
+          "before": "xy방향 원표",
+          "after": "xy 방향 원표"
+        },
+        {
+          "beforeOffset": 4514,
+          "afterOffset": 4703,
+          "before": "평균과이방성은전체모양을요약합니다",
+          "after": "평균과 이방성은 전체 모양을 요약합니다"
+        },
+        {
+          "beforeOffset": 4539,
+          "afterOffset": 4732,
+          "before": "회전은실험실축에서본성분과방향신호를바꾸지만고유값·MD·FA는바꾸지않습니다. 같은MD의등방성/이방성모형은방향신호가다를수있고,같은MD/FA인두모형도고유값세개가다를수있습니다.",
+          "after": "회전은 실험실 축에서 본 성분과 방향 신호를 바꾸지만 고유값·MD·FA는 바꾸지 않습니다. 같은 MD의 등방성/이방성 모형은 방향 신호가 다를 수 있고, 같은 MD/FA인 두 모형도 고유값 세 개가 다를 수 있습니다."
+        },
+        {
+          "beforeOffset": 4639,
+          "afterOffset": 4860,
+          "before": "두값큰모형은xy방향에서신호가일정해도Z와는다릅니다. xy평면만보고3차원등방성이라고단정하지마세요. FA는한개수치이며세부모양/여러성분/실제섬유경로를유일하게정하지않습니다.",
+          "after": "두 값 큰 모형은 xy 방향에서 신호가 일정해도 Z와는 다릅니다. xy 평면만 보고 3차원 등방성이라고 단정하지 마세요. FA는 한 개 수치이며 세부 모양/여러 성분/실제 섬유 경로를 유일하게 정하지 않습니다."
+        },
+        {
+          "beforeOffset": 4752,
+          "afterOffset": 4999,
+          "before": "수식 · 회전·방향ADC·MD/FA",
+          "after": "수식 · 회전·방향 ADC·MD/FA"
+        },
+        {
+          "beforeOffset": 4784,
+          "afterOffset": 5032,
+          "before": "D=Rdiag(λ1,λ2,λ3)Rᵀ, R은z축주위회전행렬입니다. ADC(θ)=λ1cos²(θ−α)+λ2sin²(θ−α),Z방향ADC=λ3입니다. MD=trace(D)/3=(λ1+λ2+λ3)/3입니다.",
+          "after": "D=Rdiag(λ1,λ2,λ3)Rᵀ, R은 z축 주위 회전행렬입니다. ADC(θ)=λ1cos²(θ−α)+λ2sin²(θ−α), Z 방향 ADC=λ3입니다. MD=trace(D)/3=(λ1+λ2+λ3)/3입니다."
+        },
+        {
+          "beforeOffset": 4902,
+          "afterOffset": 5156,
+          "before": "FA=√[(3/2)Σ(λi−MD)²/Σλi²]이며여기의양의고유값에서는0…1범위입니다. 계산은같은값인등방성제거행렬의Frobenius비를사용하고독립검산은고유값쌍차이식으로대조합니다. FA0은단일tensor의등방성을뜻하며생물학적구조가없다는판정이아닙니다.",
+          "after": "FA=√[(3/2)Σ(λi−MD)²/Σλi²]이며 여기의 양의 고유값에서는 0…1 범위입니다. 계산은 같은 값인 등방성 제거 행렬의 Frobenius 비를 사용하고 독립 검산은 고유값 쌍 차이식으로 대조합니다. FA 0은 단일 tensor의 등방성을 뜻하며 생물학적 구조가 없다는 판정이 아닙니다."
+        },
+        {
+          "beforeOffset": 5111,
+          "afterOffset": 5394,
+          "before": "“같은FA이면같은방향/구조다.”",
+          "after": "“같은 FA이면 같은 방향/구조다.”"
+        },
+        {
+          "beforeOffset": 5132,
+          "afterOffset": 5418,
+          "before": " → 회전45도와두값큰모형의세축신호를비교하세요.",
+          "after": " → 회전 45도와 두 값 큰 모형의 세 축 신호를 비교하세요."
+        },
+        {
+          "beforeOffset": 5184,
+          "afterOffset": 5479,
+          "before": "같은고유값을45도회전하면?",
+          "after": "같은 고유값을 45도 회전하면?"
+        },
+        {
+          "beforeOffset": 5234,
+          "afterOffset": 5532,
+          "before": "MD/FA는같고실험실방향신호는달라질수있다",
+          "after": "MD/FA는 같고 실험실 방향 신호는 달라질 수 있다"
+        },
+        {
+          "beforeOffset": 5294,
+          "afterOffset": 5599,
+          "before": "FA도반드시달라진다",
+          "after": "FA도 반드시 달라진다"
+        },
+        {
+          "beforeOffset": 5372,
+          "afterOffset": 5679,
+          "before": "답을선택해이유를확인하세요.",
+          "after": "답을 선택해 이유를 확인하세요."
+        },
+        {
+          "beforeOffset": 5394,
+          "afterOffset": 5704,
+          "before": "두모형의MD와FA가같으면세고유값도같을까요?",
+          "after": "두 모형의 MD와 FA가 같으면 세 고유값도 같을까요?"
+        },
+        {
+          "beforeOffset": 5450,
+          "afterOffset": 5767,
+          "before": "항상같다 · 두요약이전체tensor를정한다",
+          "after": "항상 같다 · 두 요약이 전체 tensor를 정한다"
+        },
+        {
+          "beforeOffset": 5512,
+          "afterOffset": 5834,
+          "before": "아니다 · 한값큼/두값큼모형의λ와Z신호를비교한다",
+          "after": "아니다 · 한 값 큼/두 값 큼 모형의 λ와 Z 신호를 비교한다"
+        },
+        {
+          "beforeOffset": 5605,
+          "afterOffset": 5936,
+          "before": "답을선택해이유를확인하세요.",
+          "after": "답을 선택해 이유를 확인하세요."
+        },
+        {
+          "beforeOffset": 5632,
+          "afterOffset": 5966,
+          "before": "학습후:실제잡음/복수성분/서로교차하는확산방향이있으면한tensor로설명할수있을까요?",
+          "after": "학습 후: 실제 잡음/복수 성분/서로 교차하는 확산 방향이 있으면 한 tensor로 설명할 수 있을까요?"
+        },
+        {
+          "beforeOffset": 5718,
+          "afterOffset": 6065,
+          "before": "범위와출처",
+          "after": "범위와 출처"
+        },
+        {
+          "beforeOffset": 5782,
+          "afterOffset": 6130,
+          "before": "Basser/Pierpaoli1996",
+          "after": "Basser/Pierpaoli 1996"
+        },
+        {
+          "beforeOffset": 5806,
+          "afterOffset": 6155,
+          "before": "의초록에서등방/이방분리와회전불변요약을확인했습니다. ",
+          "after": "의 초록에서 등방/이방 분리와 회전불변 요약을 확인했습니다. "
+        },
+        {
+          "beforeOffset": 5940,
+          "afterOffset": 6295,
+          "before": "DIPY공식정의",
+          "after": "DIPY 공식 정의"
+        },
+        {
+          "beforeOffset": 5952,
+          "afterOffset": 6309,
+          "before": "의MD/FA와TensorFit.predict신호식을대조했습니다. 이페이지는DIPY를호출하지않으며입력고유값은직접정의한교육값입니다.",
+          "after": "의 MD/FA와 TensorFit.predict 신호식을 대조했습니다. 이 페이지는 DIPY를 호출하지 않으며 입력 고유값은 직접 정의한 교육값입니다."
+        },
+        {
+          "beforeOffset": 6030,
+          "afterOffset": 6400,
+          "before": "실제tensor추정·잡음/교차성분/확산시간효과·tractography/환자분류는미구현입니다. 임상영상은없습니다. ",
+          "after": "실제 tensor 추정·잡음/교차 성분/확산시간 효과·tractography/환자 분류는 미구현입니다. 임상 영상은 없습니다. "
+        },
+        {
+          "beforeOffset": 6144,
+          "afterOffset": 6522,
+          "before": "독립검산·실제화면·내용검증",
+          "after": "독립 검산·실제 화면·내용 검증"
+        }
+      ]
+    },
+    {
+      "path": "docs/diffusion_tensor_mixture.html",
+      "beforeSha256": "0C374D1E202167C819B3475B280C48B085E1432C50946A0D4EE1406CDE6C7625",
+      "afterSha256": "A2582FF946578DE2433DA09AFF58D7EC7BF9FA9744304A8C125ADABF06FFF944",
+      "edits": [
+        {
+          "beforeOffset": 855,
+          "afterOffset": 855,
+          "before": "두 확산 성분의 신호를 하나의tensor 곡선으로 설명할 수 있을까요?",
+          "after": "두 확산 성분의 신호를 하나의 tensor 곡선으로 설명할 수 있을까요?"
+        },
+        {
+          "beforeOffset": 902,
+          "afterOffset": 903,
+          "before": "두 성분의 신호를 더한 뒤 로그를 취하는 것은 확산값을 먼저 평균하는 것과 다릅니다. 같은 방향 자료에서 단일tensor 형태가 남기는 잔차를 살펴봅니다.",
+          "after": "두 성분의 신호를 더한 뒤 로그를 취하는 것은 확산값을 먼저 평균하는 것과 다릅니다. 같은 방향 자료에서 단일 tensor 형태가 남기는 잔차를 살펴봅니다."
+        },
+        {
+          "beforeOffset": 995,
+          "afterOffset": 997,
+          "before": "목표: 신호 혼합/ADC 평균·제한한 단일tensor 형태/잔차·모형 부족/실제 구조 추론을 구별합니다.",
+          "after": "목표: 신호 혼합/ADC 평균·제한한 단일 tensor 형태/잔차·모형 부족/실제 구조 추론을 구별합니다."
+        },
+        {
+          "beforeOffset": 1150,
+          "afterOffset": 1153,
+          "before": "알려진 단일tensor",
+          "after": "알려진 단일 tensor"
+        },
+        {
+          "beforeOffset": 1166,
+          "afterOffset": 1170,
+          "before": "의 후속입니다. 두 성분은 각각 λ=(1.4,0.5,0.5)×10⁻³mm²/s입니다. A의xy회전은0도, B는0/45/90도로 직접 정의합니다. 같은 단일 Gaussian 모형이고 성분 간 교환·위상차·잡음은 없습니다.",
+          "after": "의 후속입니다. 두 성분은 각각 λ=(1.4,0.5,0.5)×10⁻³mm²/s입니다. A의 xy 회전은 0도, B는 0/45/90도로 직접 정의합니다. 같은 단일 Gaussian 모형이고 성분 간 교환·위상차·잡음은 없습니다."
+        },
+        {
+          "beforeOffset": 1316,
+          "afterOffset": 1324,
+          "before": "이며0/0.25/0.5/0.75/1로 바꿉니다. 실제 섬유 수나 조직 부피 분율로 해석하지 않습니다. 같은S0 기준에서 Smix=fSA+(1−f)SB입니다. b&gt;0일 때 ADCapp=−ln(Smix)/b로 정의합니다. b0에서는 나눗셈을 하지 않아 ADC/fit/잔차를 정하지 않습니다.",
+          "after": "이며 0/0.25/0.5/0.75/1로 바꿉니다. 실제 섬유 수나 조직 부피 분율로 해석하지 않습니다. 같은 S0 기준에서 Smix=fSA+(1−f)SB입니다. b&gt;0일 때 ADCapp=−ln(Smix)/b로 정의합니다. b0에서는 나눗셈을 하지 않아 ADC/fit/잔차를 정하지 않습니다."
+        },
+        {
+          "beforeOffset": 1486,
+          "afterOffset": 1496,
+          "before": "xy방향0…175도를5도 간격으로 표본화한36개 방향에서 ADC공간의 제곱오차를 최소화합니다. 단일tensor의xy형태는 a0+aCcos2θ+aSsin2θ입니다. 180도는0도와 같은 표시점이므로fit에 중복하지 않습니다. 이는 ",
+          "after": "xy 방향 0…175도를 5도 간격으로 표본화한 36개 방향에서 ADC 공간의 제곱오차를 최소화합니다. 단일 tensor의 xy 형태는 a0+aCcos2θ+aSsin2θ입니다. 180도는 0도와 같은 표시점이므로 fit에 중복하지 않습니다. 이는 "
+        },
+        {
+          "beforeOffset": 1634,
+          "afterOffset": 1654,
+          "before": "이며 일반3D tensor 추정이나 실제 성분 복원은 아닙니다.",
+          "after": "이며 일반 3D tensor 추정이나 실제 성분 복원은 아닙니다."
+        },
+        {
+          "beforeOffset": 1676,
+          "afterOffset": 1697,
+          "before": "표와 잔차의 ADC는10⁻³mm²/s 단위로 표시합니다. 신호비는b0기준1입니다. 잔차의 크기는 임상 허용값·잡음 수준·질병 기준이 아닙니다.",
+          "after": "표와 잔차의 ADC는 10⁻³mm²/s 단위로 표시합니다. 신호비는 b0 기준 1입니다. 잔차의 크기는 임상 허용값·잡음 수준·질병 기준이 아닙니다."
+        },
+        {
+          "beforeOffset": 1881,
+          "afterOffset": 1906,
+          "before": "같은방향 · 50:50",
+          "after": "같은 방향 · 50:50"
+        },
+        {
+          "beforeOffset": 1911,
+          "afterOffset": 1937,
+          "before": "서로90도인 성분을 똑같이 섞으면?",
+          "after": "서로 90도인 성분을 똑같이 섞으면?"
+        },
+        {
+          "beforeOffset": 2024,
+          "afterOffset": 2051,
+          "before": "A만100% · b1000",
+          "after": "A만 100% · b 1000"
+        },
+        {
+          "beforeOffset": 2112,
+          "afterOffset": 2141,
+          "before": "두 성분과 측정b",
+          "after": "두 성분과 측정 b"
+        },
+        {
+          "beforeOffset": 2178,
+          "afterOffset": 2208,
+          "before": "A/B의xy 분리각 (도)",
+          "after": "A/B의 xy 분리각 (도)"
+        },
+        {
+          "beforeOffset": 2352,
+          "afterOffset": 2383,
+          "before": "A의b0 신호분율 f",
+          "after": "A의 b0 신호 분율 f"
+        },
+        {
+          "beforeOffset": 2775,
+          "afterOffset": 2808,
+          "before": "기본분리각90도/f0.5/b1000. 같은 조건에서b500도 비교해 보세요. 겉보기ADC와잔차는b에따라달라질수있습니다.",
+          "after": "기본 분리각 90도/f 0.5/b 1000. 같은 조건에서 b 500도 비교해 보세요. 겉보기 ADC와 잔차는 b에 따라 달라질 수 있습니다."
+        },
+        {
+          "beforeOffset": 2938,
+          "afterOffset": 2984,
+          "before": "혼합 신호와 단일tensor 형태",
+          "after": "혼합 신호와 단일 tensor 형태"
+        },
+        {
+          "beforeOffset": 3081,
+          "afterOffset": 3128,
+          "before": "파랑:혼합 신호비Smix · 주황점선:ADC공간 최소제곱을 신호로 돌린 곡선. θ0…180도/신호비0…1고정입니다. b0에서는 주황fit을 정하지 않습니다.",
+          "after": "파랑: 혼합 신호비 Smix · 주황 점선: ADC 공간 최소제곱을 신호로 돌린 곡선. θ 0…180도/신호비 0…1 고정입니다. b0에서는 주황 fit을 정하지 않습니다."
+        },
+        {
+          "beforeOffset": 3294,
+          "afterOffset": 3350,
+          "before": "파랑:ADCapp−ADCfit · 회색:0. 잔차−0.1…+0.1×10⁻³mm²/s고정입니다. b0에서는 잔차가 미정이며0으로 그리지 않습니다.",
+          "after": "파랑: ADCapp−ADCfit · 회색: 0. 잔차 −0.1…+0.1×10⁻³mm²/s 고정입니다. b0에서는 잔차가 미정이며 0으로 그리지 않습니다."
+        },
+        {
+          "beforeOffset": 3402,
+          "afterOffset": 3463,
+          "before": "ADC잔차 RMS (10⁻³mm²/s)",
+          "after": "ADC 잔차 RMS (10⁻³mm²/s)"
+        },
+        {
+          "beforeOffset": 3462,
+          "afterOffset": 3524,
+          "before": "최대 |ADC잔차| (10⁻³mm²/s)",
+          "after": "최대 |ADC 잔차| (10⁻³mm²/s)"
+        },
+        {
+          "beforeOffset": 4171,
+          "afterOffset": 4234,
+          "before": "단일tensor의xy방향ADC는 상수와2θ의sin/cos 모양만 가집니다. 서로 다른 두 성분의 신호를 먼저 더하고 로그를 취하면 이 모양만으로 설명되지 않는 변화가 생길 수 있습니다. 기본90도/50:50의 더 복잡한 방향 패턴을 확인하세요.",
+          "after": "단일 tensor의 xy 방향 ADC는 상수와 2θ의 sin/cos 모양만 가집니다. 서로 다른 두 성분의 신호를 먼저 더하고 로그를 취하면 이 모양만으로 설명되지 않는 변화가 생길 수 있습니다. 기본 90도/50:50의 더 복잡한 방향 패턴을 확인하세요."
+        },
+        {
+          "beforeOffset": 4314,
+          "afterOffset": 4384,
+          "before": "같은방향의두성분이나한성분만있는경우에는잔차가0입니다. 따라서 잔차0으로 실제 성분 수1개를 증명하지 못합니다. 반대로 실제 자료의 잔차는 잡음·운동·다른 모형 불일치에서도 생길 수 있어 교차 섬유 하나로 원인을 단정하지 않습니다.",
+          "after": "같은 방향의 두 성분이나 한 성분만 있는 경우에는 잔차가 0입니다. 따라서 잔차 0으로 실제 성분 수 1개를 증명하지 못합니다. 반대로 실제 자료의 잔차는 잡음·운동·다른 모형 불일치에서도 생길 수 있어 교차 섬유 하나로 원인을 단정하지 않습니다."
+        },
+        {
+          "beforeOffset": 4463,
+          "afterOffset": 4544,
+          "before": "수식 · 신호합과 ADC공간 최소제곱",
+          "after": "수식 · 신호합과 ADC 공간 최소제곱"
+        },
+        {
+          "beforeOffset": 4496,
+          "afterOffset": 4578,
+          "before": "각 성분Si=exp(−b gᵀDi g)이고 Smix=fSA+(1−f)SB입니다. 일반적으로−ln(Smix)/b는 f(gᵀDAg)+(1−f)(gᵀDBg)와 같지 않습니다.",
+          "after": "각 성분 Si=exp(−b gᵀDi g)이고 Smix=fSA+(1−f)SB입니다. 일반적으로 −ln(Smix)/b는 f(gᵀDAg)+(1−f)(gᵀDBg)와 같지 않습니다."
+        },
+        {
+          "beforeOffset": 4597,
+          "afterOffset": 4681,
+          "before": "36개 동일 가중 방향에서 a0=평균(ADCapp), aC=2평균(ADCapp cos2θ), aS=2평균(ADCapp sin2θ)입니다. ADCfit=a0+aCcos2θ+aSsin2θ이며Dxx=a0+aC,Dyy=a0−aC,Dxy=aS에 해당합니다. RMS도36개 고유방향에서 구합니다. 여기서는 신호공간의 제곱오차를 최소화하지 않습니다.",
+          "after": "36개 동일 가중 방향에서 a0=평균(ADCapp), aC=2평균(ADCapp cos2θ), aS=2평균(ADCapp sin2θ)입니다. ADCfit=a0+aCcos2θ+aSsin2θ이며 Dxx=a0+aC, Dyy=a0−aC, Dxy=aS에 해당합니다. RMS도 36개 고유 방향에서 구합니다. 여기서는 신호 공간의 제곱오차를 최소화하지 않습니다."
+        },
+        {
+          "beforeOffset": 4857,
+          "afterOffset": 4947,
+          "before": "“잔차0이면한개의섬유만있다.”",
+          "after": "“잔차 0이면 한 개의 섬유만 있다.”"
+        },
+        {
+          "beforeOffset": 4877,
+          "afterOffset": 4972,
+          "before": " → 같은방향50:50과A만100%를 비교하세요.",
+          "after": " → 같은 방향 50:50과 A만 100%를 비교하세요."
+        },
+        {
+          "beforeOffset": 4930,
+          "afterOffset": 5029,
+          "before": "b0에서 ADCapp와fit을 구할 수 있나요?",
+          "after": "b0에서 ADCapp와 fit을 구할 수 있나요?"
+        },
+        {
+          "beforeOffset": 4990,
+          "afterOffset": 5090,
+          "before": "아니다 · 이정의에서−ln(Smix)/b를계산하지않는다",
+          "after": "아니다 · 이 정의에서 −ln(Smix)/b를 계산하지 않는다"
+        },
+        {
+          "beforeOffset": 5056,
+          "afterOffset": 5160,
+          "before": "모두0으로정하면확산이없다는뜻이다",
+          "after": "모두 0으로 정하면 확산이 없다는 뜻이다"
+        },
+        {
+          "beforeOffset": 5164,
+          "afterOffset": 5273,
+          "before": "잔차0이면 성분 수1개가 증명되나요?",
+          "after": "잔차 0이면 성분 수 1개가 증명되나요?"
+        },
+        {
+          "beforeOffset": 5217,
+          "afterOffset": 5328,
+          "before": "그렇다 · 두성분이면반드시잔차가있다",
+          "after": "그렇다 · 두 성분이면 반드시 잔차가 있다"
+        },
+        {
+          "beforeOffset": 5275,
+          "afterOffset": 5390,
+          "before": "아니다 · 같은방향의두성분도같은곡선을만든다",
+          "after": "아니다 · 같은 방향의 두 성분도 같은 곡선을 만든다"
+        },
+        {
+          "beforeOffset": 5395,
+          "afterOffset": 5516,
+          "before": "학습 후: 실제자료에서 잡음·교환·방향분포가 있으면 이잔차만으로어떤원인을정할수있을까요?",
+          "after": "학습 후: 실제 자료에서 잡음·교환·방향 분포가 있으면 이 잔차만으로 어떤 원인을 정할 수 있을까요?"
+        },
+        {
+          "beforeOffset": 5562,
+          "afterOffset": 5691,
+          "before": "Tuch등2002 원논문 초록",
+          "after": "Tuch 등 2002 원논문 초록"
+        },
+        {
+          "beforeOffset": 5582,
+          "afterOffset": 5713,
+          "before": "은 단일tensor를 벗어나는 방향 패턴과 Gaussian 혼합의 맥락을 다룹니다. 이 페이지는 해당 연구의 성분 복원·최적화·환자 결과를 재현하지 않습니다. 계수/각도/분율은 직접 정의한 교육값입니다.",
+          "after": "은 단일 tensor를 벗어나는 방향 패턴과 Gaussian 혼합의 맥락을 다룹니다. 이 페이지는 해당 연구의 성분 복원·최적화·환자 결과를 재현하지 않습니다. 계수/각도/분율은 직접 정의한 교육값입니다."
+        },
+        {
+          "beforeOffset": 5702,
+          "afterOffset": 5834,
+          "before": "실제성분수/섬유수·조직분율·미세구조/교환·tractography/환자진단은미구현입니다. 임상영상은없습니다. ",
+          "after": "실제 성분 수/섬유 수·조직 분율·미세구조/교환·tractography/환자 진단은 미구현입니다. 임상 영상은 없습니다. "
+        },
+        {
+          "beforeOffset": 5821,
+          "afterOffset": 5961,
+          "before": "독립검산·실제화면·내용검증",
+          "after": "독립 검산·실제 화면·내용 검증"
+        }
+      ]
+    }
+  ]
+}

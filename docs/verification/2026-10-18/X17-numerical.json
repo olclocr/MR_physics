@@ -1,0 +1,13 @@
+{
+  "conditions": 24,
+  "pointComparisons": 600,
+  "max": {
+    "coordinateMm": 3.552713678800501e-15,
+    "pixelIndex": 1.4210854715202004e-14,
+    "distanceMm": 1.4210854715202004e-14,
+    "percent": 1.8207657603852567e-14
+  },
+  "tolerance": 1e-10,
+  "failed": [],
+  "passed": true
+}

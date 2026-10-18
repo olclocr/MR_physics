@@ -1,0 +1,97 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 10,
+  "results": [
+    {
+      "width": 1920,
+      "file": "polynomial_field_basis.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_washout.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "label_arrival_decay.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_direction.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_mixture.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "polynomial_field_basis.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_washout.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "label_arrival_decay.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_direction.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_mixture.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    }
+  ]
+}

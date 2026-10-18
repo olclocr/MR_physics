@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "d7fb7ddfe31469425b6b42ee7fe598de8062dc62",
+  "scope": "W80 known 2D grid, fractional pixel coordinates, radial warp and axis-specific physical distances; own report excluded",
+  "files": [
+    {
+      "path": "docs/phantom_grid_distance.html",
+      "sha256": "B4D5810A21BA66062AF6697B90E28D7C4CB1869EC04C3634EE0760DE49940AA4"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/phantom-geometry.test.cjs",
+      "sha256": "50C0132985F2937D291CDDF74C14D05086A23A9861C2836DB25ACCADA2698730"
+    },
+    {
+      "path": "tests/helpers/phantom-geometry-reference.cjs",
+      "sha256": "83FA46AFDABEEB75F3BDF212D4D8456D3745427C523C7D2531983EC6B36A39F5"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-numerical.cjs",
+      "sha256": "DBC77412122227C2398E3AEC20EE9383ADBFB196B04C69832FB00F9D0D4AAB05"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-numerical.json",
+      "sha256": "7BE16B5D0F4953B7A84525917C9009201B3F8C8A63531F1749AAC1434D10970E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-display-reference.json",
+      "sha256": "CDA838F69B53B379E40D059F7F142852FDE7518032CD9E764D628CC6A9F3F009"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-browser-check.js",
+      "sha256": "76C61C78752B22896D0CD7AF70AE0FCEAA34A0AEB6296E2FAF1727D29B79A40E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-browser-check.json",
+      "sha256": "707C71795EB3419EE2314748B9E5C5B47EC2C076C35C7ED2F2E74B162E742DDB"
+    }
+  ]
+}

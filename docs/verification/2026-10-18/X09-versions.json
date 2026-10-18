@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "d7fb7ddfe31469425b6b42ee7fe598de8062dc62",
+  "scope": "W79 known rectangular input and directly defined normalized causal gamma convolution; own report excluded",
+  "supersedesDraft": "docs/verification/2026-10-18/X09-model-draft-versions.json",
+  "files": [
+    {
+      "path": "docs/delayed_response_kernel.html",
+      "sha256": "A23523BDACE99395B8CAF8233060B9B1165FF2D788CD303FCF8F4E5C0CBED9DF"
+    },
+    {
+      "path": "docs/assets/delayed-response-model.js",
+      "sha256": "2132AC5C2C9CAFC4964A062AD00BBA323CACC928A257330B7B7BA477AA930BBD"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/delayed-response.test.cjs",
+      "sha256": "2F8CC9BE7ACD61A4281962BC36DC4E4CBADDD7B763ED3C27B1718E3F7CFF3870"
+    },
+    {
+      "path": "tests/helpers/delayed-response-reference.cjs",
+      "sha256": "E42E45FE03EFD43C297E2B245676379B23F79DFC8958621EA971261F3E1DAB0F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-numerical.cjs",
+      "sha256": "3F5C2C89CF4AB6AF80D4A6E29FE1FE696813DE7A80445A781162126E7EA0794E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-numerical.json",
+      "sha256": "5AB9CD9F03936EECF998D57DF52B043D4D513F7D3EC4775DD9B58931775D7C40"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-display-reference.json",
+      "sha256": "CFD80052B6DC07E46CFC1E7DC4BF48AFC2A5EC62DB8363076E95B98A76471AB7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-browser-check.js",
+      "sha256": "E0E46EE4F6C98E5AC286F0183DF63F2CD5BB831DEB393BEE87195CAC8977870C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-browser-check.json",
+      "sha256": "F136A0F596BE5FEF7BCCA15B9B1D22D1BC180B6C778473B905940FFFAB42FD8E"
+    }
+  ]
+}

@@ -17,3 +17,7 @@ Gruetter1993의 [출판사 초록](https://onlinelibrary.wiley.com/doi/10.1002/m
 [실제Chrome절차](X15-basis-browser-check.js)와 [72상태결과](X15-basis-browser-check.json)는1920/390px에서36조건의metrics·401×4/121×7표·3주파수곡선/2크기곡선·선택표시를독립자료와대조했다. 키보드Home/End/Arrow·초기화·세예시·두문제양답·표가로스크롤·선택행sticky제목회피를확인했다. 그림viewBox/실제종횡비와11px이상축글자/겹친SVG없음도확인했다. [데스크톱](X15-basis-base-1920.png)·[모바일그림](X15-basis-graphics-390.png)·[모바일수치](X15-basis-metrics-390.png)를직접읽었다. JS오류/페이지가로넘침0이다.
 
 검산기초회는상대모듈경로오류로계산전에중단됐다. 경로를고친뒤독립계산과시험을실행했으며실패실행을통과근거로사용하지않았다. 최초PDF주소는기관안내로이동한상태라접근한출판사초록과기관안내만근거로구별했다. 실제측정/3Dcoil·제약/고차항·환자해석은미검증으로남긴다. [대상버전](X15-basis-versions.json), [통합기록](checkpoint-W73-navigation.md).
+
+## W81 공백 편집
+
+[정적 본문 공백 편집 검증](W81-readability.md)에서 비공백 문자·태그/속성·script/style와 표시 데이터 불변을 확인했다. 기존 물리 판정을 보존하며 새 계산/내용 통과로 확대하지 않는다. 당시 문장 assertion은 과거 버전의 절차이며 최신 공백 버전은 W81 절차를 사용한다.

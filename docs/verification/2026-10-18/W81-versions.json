@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "d7fb7ddfe31469425b6b42ee7fe598de8062dc62",
+  "scope": "W81 static-text ASCII whitespace only; no new physical signoff",
+  "files": [
+    {
+      "path": "docs/polynomial_field_basis.html",
+      "sha256": "87C165A4763077A7275A50D0EF4AA0DEEFCD7C732A385EC4ECD97C7E003F01AB"
+    },
+    {
+      "path": "docs/compartment_input_washout.html",
+      "sha256": "3B0126A9D21A3995927DD4E548D16258E862C9989302AE13E7D9359737C01AF8"
+    },
+    {
+      "path": "docs/label_arrival_decay.html",
+      "sha256": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F"
+    },
+    {
+      "path": "docs/diffusion_tensor_direction.html",
+      "sha256": "A8E4F8157E40DB28A103BBF14AD15A028AE88E7194961088D53E125C205359BC"
+    },
+    {
+      "path": "docs/diffusion_tensor_mixture.html",
+      "sha256": "A2582FF946578DE2433DA09AFF58D7EC7BF9FA9744304A8C125ADABF06FFF944"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-before-versions.json",
+      "sha256": "1FCED1CB11A206502D29CE6543CA4EB4882A5BF23306CE7F3CE9B78A6F9D6720"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-copy-edits.json",
+      "sha256": "3EEC1895FB514FEA6740CE53C10398888B338C010FE35EB78BF4BA3175BF3C92"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-copy-audit.cjs",
+      "sha256": "E30EB4097819ABB6E95FBE0DA85AC06C16FC19D4EF194D60171FA970C7457640"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-copy-audit.json",
+      "sha256": "D134C285A0BDD94A6DA9DCE98E617AE4B5E45AEBA05AB593A3F27158F559A7CB"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-browser-check.js",
+      "sha256": "9531B1963054AEB1F7159ED4BDEBFFBE40E70BF2309017DA74D98862F4C99A4B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-before-browser.json",
+      "sha256": "8AE9448D3B41B7603F505486FD8A86BDC214FCAFD1E4F839FACFC8F72C90ED58"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-browser-check.json",
+      "sha256": "8AE9448D3B41B7603F505486FD8A86BDC214FCAFD1E4F839FACFC8F72C90ED58"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-browser-comparison.json",
+      "sha256": "3FB7FF1377220ED73C50FF201307D480D431758CE65376207408B4A5C310C3C3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-reading-browser.js",
+      "sha256": "E6EAAEA7FB2D8E44E0D6C46575771B968E2B2D21B4A22B16F77DE544E3937772"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-reading-browser.json",
+      "sha256": "6BD199D385CEEF39FD27BC520DEFE937B2D6C85048CF0D56EDD98ED9646A48D6"
+    }
+  ]
+}
