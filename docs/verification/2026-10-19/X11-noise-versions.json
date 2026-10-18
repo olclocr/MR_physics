@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W110 exact prescribed phase/sensitivity and noiseless reference; fixed circular complex Gaussian ensemble, conditional linear real noise variance; shared Q01 random/stats and IR assets unchanged; no actual coil map/PSIR/patient SNR; own report excluded",
+  "files": [
+    {
+      "path": "docs/ir_normalization_noise.html",
+      "sha256": "D24536919640C0E2B87A076A1CB0BEA965035D238C773F8846DC84A8F3ED2FA8"
+    },
+    {
+      "path": "docs/assets/ir-normalization-noise-model.js",
+      "sha256": "2121811A959A6D4A0846861B856FD6195759A53D2FB4715E3B3FCF2791B5F21B"
+    },
+    {
+      "path": "docs/assets/ir-phase-reference-model.js",
+      "sha256": "9D5A0546F7EA68199A803E85C7A6F3F0B782F2C8580E29D0BBE02065BF4BDB27"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/snr-averaging-model.js",
+      "sha256": "636E0004B60BD6CAB83552E0C77BD89D3E2478F9953477BF8A38522424FC92CD"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/ir-normalization-noise.test.cjs",
+      "sha256": "229B037734284B2B2EE560D2FB0641D140B8FC3C991F2A299CE96A2F8C72C5E1"
+    },
+    {
+      "path": "tests/helpers/ir-normalization-noise-reference.cjs",
+      "sha256": "C5FC567DB062FA7491DC66A5D84E7AE04B9D3DC851288B657D7106E3A23BEA3C"
+    },
+    {
+      "path": "tests/helpers/ir-phase-reference.cjs",
+      "sha256": "A481F04AF3BA2850D178D174C4643177B350595E8805FAF7EEFDEDB34A6B8563"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-noise-numerical.cjs",
+      "sha256": "FE2B46A3EC66EF818EE3306246617744F28B2A9E91CA7689E1A1BC7C796FF944"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-noise-numerical.json",
+      "sha256": "655D83B688185B223779918C95EF6B6A9765676E4375BD0CC6A4BCE55A6DBC7C"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-noise-display-reference.json",
+      "sha256": "C91D48D14858B3D685C193A4B84A932F79C2DD77DEB68343BF6FAAAE3FCD1831"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-noise-browser-check.js",
+      "sha256": "57117F8E4E8FB86B17015BB846BAF92B99A45948026E981A8BC69BCA72885D47"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-noise-browser-check.json",
+      "sha256": "8AB4174A4525BC95C6303542243AE1E3064B6F250165760DE75C637E58B5F673"
+    }
+  ]
+}

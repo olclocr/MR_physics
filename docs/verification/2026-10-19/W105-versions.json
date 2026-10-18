@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W105 reviewed12 lessons; edited10 static-text ASCII whitespace only; no new physical signoff; own report excluded",
+  "files": [
+    {
+      "path": "docs/induced_dipole_energy.html",
+      "sha256": "22B5759D5228DA8C17B0D1BAEEC90AAB56E1B457302F7578B338D387F1D6F3EA"
+    },
+    {
+      "path": "docs/label_train_arrival.html",
+      "sha256": "1CAC64FA8B8D2784FEF5FC10D3ECC4438B6441477677C1BA3F911FD6C43E9E24"
+    },
+    {
+      "path": "docs/signal_window_log.html",
+      "sha256": "98369056694DFD6EE9CA9078E1BBFC575E802D69F13C355AE70F5D047796E8F0"
+    },
+    {
+      "path": "docs/absorbed_power_energy.html",
+      "sha256": "93C8D7C017686F918DB283C543F0BABA68C7DED85D99BA10006B33AE597E2443"
+    },
+    {
+      "path": "docs/saturating_dipole_work.html",
+      "sha256": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F"
+    },
+    {
+      "path": "docs/label_postarrival_outflow.html",
+      "sha256": "8FC16F04868494F0B6A6256EBA11F23D8C24528AF5A3B769B6A6742A3FF0F915"
+    },
+    {
+      "path": "docs/rigid_transform_order.html",
+      "sha256": "6BEF9649B0C30CBE8CCE258AC693CD76334C09C89547D9072BAAEBFBAFEE8226"
+    },
+    {
+      "path": "docs/thermal_input_timing.html",
+      "sha256": "AD448246438DCE5E47802FE73F5F91DE05F91900657BC40ED25C6023D35E7866"
+    },
+    {
+      "path": "docs/compartment_input_scale.html",
+      "sha256": "16AD5B5A9E01D3633CDDAA65F3BC4F13AAE4FB0132E8CB2B2EB6ECEAADEB23E4"
+    },
+    {
+      "path": "docs/vascular_ees_components.html",
+      "sha256": "E5F6E3C95CC911586E47492441D2ED8F07BAA2DF8C3454EBE8B407EAD91E3F0C"
+    },
+    {
+      "path": "docs/axis_scale_area.html",
+      "sha256": "254BF3E07EACDD4CD03766FDA97A0231CBE5C4F7705A7B6FAB6C30744E7B88C5"
+    },
+    {
+      "path": "docs/assumed_pixel_spacing.html",
+      "sha256": "F526970AEDCEB366C58AB0D65CF468DDBC7409740750EB9B819075C689AA73DE"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-before-versions.json",
+      "sha256": "E25E318F86CBC9045E1E40412F6C7B8B9DD5ECACD0063CB9100A597398423B36"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "sha256": "15EA7390C39556F29E18E12F942CA86EFDB5A98221934E1DB4047D167C33FF34"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-copy-audit.cjs",
+      "sha256": "9567ADBAC95C8E4DE6208B7A1A8EA95CB317BE647EF619BC4836F5986FC4E242"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "sha256": "14F69746A9D510CFF0A619EE7EF68C87F35F2B05C5BB930437A6055A67E266AE"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-browser-check.js",
+      "sha256": "863C90DFACEAEFE191A125CD2086782BF154E2B91D90E93C4E1890C71E7FBFB4"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-before-browser.json",
+      "sha256": "848D0101562AE020C021577D61981558064F4567F38BA159DA8F4E70B9EE21F7"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-browser-check.json",
+      "sha256": "FC4AFDD739D208C68A786A5941A101A29EEC628EE1E1D0A78F246F2AF73B6855"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-browser-comparison.json",
+      "sha256": "9BF3266D67658B32988351096B558D91626526004D33F632E0CB7FB4515BCB4B"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-reading-browser.js",
+      "sha256": "00639D56A2C7CE1C9AD1FF2C0D16656315870179FC5E2D3073EE132FC16B2A9A"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-reading-browser.json",
+      "sha256": "BD63D136BC15AF9290F605D4037AABE771360401496F0F3C7C5A71EB15F6EA45"
+    }
+  ],
+  "contentRevisions": [
+    {
+      "task": "W109",
+      "proof": "docs/verification/2026-10-19/W109-saturation-clarity.md",
+      "audit": "docs/verification/2026-10-19/W109-edit-audit.json",
+      "scope": "Separate prescribed moment/field constants and dimensionless field ratio; no numerical model changes"
+    }
+  ]
+}

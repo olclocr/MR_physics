@@ -1,0 +1,2 @@
+### Error
+Error: {"width":390,"options":{"exchangeRate":0,"saturationRate":0,"timeSec":0},"errors":["SVG text outside"],"graphicError":0.0000018181820706786311,"modelError":1.1102230246251565e-15,"outputs":["1.000000","1.000000","0.000000","0.000000","0.000000","0.000000"],"rows":301}

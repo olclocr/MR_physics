@@ -1,0 +1,6 @@
+{
+  "states": 16,
+  "method": "Exact SHA-256 of full model/all table cells/SVG outerHTML plus exact output text/row count; independent graphic/numerical checks rerun separately",
+  "failures": [],
+  "passed": true
+}

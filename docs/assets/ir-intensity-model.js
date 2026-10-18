@@ -1,0 +1,7 @@
+(function(root,factory){const api=factory(typeof module==='object'&&module.exports?require('./ir-phase-reference-model.js'):root.IRPhaseReference);if(typeof module==='object'&&module.exports)module.exports=api;else root.IRIntensity=api;})(typeof globalThis!=='undefined'?globalThis:this,function(IR){
+ 'use strict';const defaults=Object.freeze({tiMs:400,gain:2,referenceFactor:1});
+ function calculate(options={}){const o={...defaults,...options};if(![400,700,1000].includes(o.tiMs)||![.5,1,2].includes(o.gain)||![.8,1].includes(o.referenceFactor))throw new RangeError('Unsupported IR intensity state');const base=IR.calculate({t1Ms:1000,tiMs:o.tiMs,errorDeg:0});
+ function transform(p){const signal={re:o.gain*p.signal.re,im:o.gain*p.signal.im},reference={re:o.gain*o.referenceFactor*p.reference.re,im:o.gain*o.referenceFactor*p.reference.im},referenceMagnitude=Math.hypot(reference.re,reference.im),phaseOnly={re:(signal.re*reference.re+signal.im*reference.im)/referenceMagnitude,im:(signal.im*reference.re-signal.re*reference.im)/referenceMagnitude},normalized={re:phaseOnly.re/referenceMagnitude,im:phaseOnly.im/referenceMagnitude};return{tiMs:p.tiMs,mz:p.mz,signal,reference,referenceMagnitude,phaseOnly,normalized,magnitude:Math.hypot(signal.re,signal.im),normalizationError:normalized.re-p.mz};}
+ return{options:o,t1Ms:1000,phaseDeg:base.phaseDeg,nullMs:base.nullMs,current:transform(base.current),curve:base.curve.map(transform)};}
+ return{defaults,calculate};
+});

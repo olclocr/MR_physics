@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/phantom_rigid_distance.html",
-      "sha256": "FA55D01FCBAC2366A35D5901810665259268E1CEC21572813E5D64C1F3431BA6"
+      "sha256": "F852C2202D530C5466BB2BBF3375466BF34880D66285558AAC182AD92966E89E"
     },
     {
       "path": "docs/assets/phantom-rigid-model.js",
@@ -66,6 +66,11 @@
     {
       "task": "W103",
       "proof": "docs/verification/2026-10-18/checkpoint-W103-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W104",
+      "proof": "docs/verification/2026-10-19/checkpoint-W104-versions.json",
       "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]

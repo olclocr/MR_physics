@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/assumed_pixel_spacing.html",
-      "sha256": "5D49FF318BC1AD7081956983480FE0B87F6EA24686E02BACEA31E32F86301CAA"
+      "sha256": "F526970AEDCEB366C58AB0D65CF468DDBC7409740750EB9B819075C689AA73DE"
     },
     {
       "path": "docs/assets/assumed-spacing-model.js",
@@ -46,6 +46,21 @@
     {
       "path": "docs/verification/2026-10-18/X17-spacing-browser-check.json",
       "sha256": "2EB83103BC827BE2C1D882D6D7B81F9F13DFC31CD0CCF438CA92D8566AC93063"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W104",
+      "proof": "docs/verification/2026-10-19/checkpoint-W104-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

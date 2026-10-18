@@ -1,0 +1,28 @@
+{
+  "conditions": 36,
+  "conditionCurvePoints": 10836,
+  "uniqueCurvePoints": 2709,
+  "initialStateChecks": 108,
+  "max": {
+    "matrixExponential": 4.4825254619240695e-15,
+    "ode": 3.9968028886505635e-14,
+    "odeConvergence": 5.966338534335591e-13,
+    "exchangeCancellation": 5.551115123125783e-17,
+    "zeroSaturation": 2.220446049250313e-16,
+    "zeroExchange": 1.3877787807814457e-17,
+    "composition": 2.220446049250313e-16,
+    "positivityViolation": 2.220446049250313e-16
+  },
+  "tolerances": {
+    "matrixExponential": 1e-9,
+    "ode": 1e-9,
+    "odeConvergence": 1e-9,
+    "exchangeCancellation": 1e-9,
+    "zeroSaturation": 1e-9,
+    "zeroExchange": 1e-9,
+    "composition": 1e-9,
+    "positivityViolation": 1e-9
+  },
+  "failed": [],
+  "passed": true
+}

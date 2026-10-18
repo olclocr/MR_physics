@@ -1,0 +1,6 @@
+{
+  "method": "static HTML href/src outside script blocks",
+  "htmlFiles": 224,
+  "localReferences": 6637,
+  "errors": []
+}

@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/label_postarrival_outflow.html",
-      "sha256": "35ED2CBA325E321187840EC9CE42468DB35FDB9B204B60CBF3924FB3D417D215"
+      "sha256": "8FC16F04868494F0B6A6256EBA11F23D8C24528AF5A3B769B6A6742A3FF0F915"
     },
     {
       "path": "docs/assets/label-outflow-model.js",
@@ -54,6 +54,14 @@
     {
       "path": "docs/verification/2026-10-18/X08-outflow-browser-check.json",
       "sha256": "579ED662947F6868359A619A9035DEEDD91C244F33A30C3670A77BA3F264ECE4"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

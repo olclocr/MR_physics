@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/rigid_transform_order.html",
-      "sha256": "27F2A69D5BB66D814B58E98D59DE5549E1E1482C1C8A1034CCB142280CF320FE"
+      "sha256": "6BEF9649B0C30CBE8CCE258AC693CD76334C09C89547D9072BAAEBFBAFEE8226"
     },
     {
       "path": "docs/assets/rigid-order-model.js",
@@ -71,6 +71,14 @@
       "task": "W103",
       "proof": "docs/verification/2026-10-18/checkpoint-W103-versions.json",
       "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

@@ -1,0 +1,718 @@
+{
+  "observedAtUTC": "2026-10-18T16:58:35.648Z",
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 64,
+  "maxGraphicError": 2.3305801732931286E-12,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "horizontal"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "vertical"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "edge"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.75851616472501,
+      "error": 0.6214311748774151,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "horizontal"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "vertical"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "edge"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "diagonal"
+      },
+      "length": 113.75851616472501,
+      "error": 0.6214311748774151,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "horizontal"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "vertical"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "edge"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "diagonal"
+      },
+      "length": 114.0175425099138,
+      "error": 0.8804575200662015,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "horizontal"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "vertical"
+      },
+      "length": 78.89233169326408,
+      "error": -1.107668306735917,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "edge"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 1920,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "diagonal"
+      },
+      "length": 111.8257573191436,
+      "error": -1.3113276707039887,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.25,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 0.7905694150420949
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.5,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 0.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "edge"
+      },
+      "length": 80,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 0,
+        "shiftMm": 0.75,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "error": 0,
+      "maxError": 0.3535533905932738
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "horizontal"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "vertical"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "edge"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.75851616472501,
+      "error": 0.6214311748774151,
+      "maxError": 1.118033988749895
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "horizontal"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "vertical"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "edge"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.25,
+        "segment": "diagonal"
+      },
+      "length": 113.75851616472501,
+      "error": 0.6214311748774151,
+      "maxError": 0.8642703934814396
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "horizontal"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "vertical"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "edge"
+      },
+      "length": 80.62257748298549,
+      "error": 0.6225774829854913,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.5,
+        "segment": "diagonal"
+      },
+      "length": 114.0175425099138,
+      "error": 0.8804575200662015,
+      "maxError": 0.930979406735746
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "horizontal"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "vertical"
+      },
+      "length": 78.89233169326408,
+      "error": -1.107668306735917,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "edge"
+      },
+      "length": 79.75587752636166,
+      "error": -0.24412247363834183,
+      "maxError": 1.023923117430383
+    },
+    {
+      "width": 390,
+      "options": {
+        "angleDeg": 30,
+        "shiftMm": 0.75,
+        "segment": "diagonal"
+      },
+      "length": 111.8257573191436,
+      "error": -1.3113276707039887,
+      "maxError": 1.023923117430383
+    }
+  ]
+}

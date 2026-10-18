@@ -1,0 +1,1349 @@
+{
+  "stage": "before",
+  "fingerprints": [
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0
+      },
+      "model": "b575ca1e5cb8292e1da9bfc627c6224bef072958122b63095f48656cc7e24408",
+      "table": "2f11341e888f46bd52fddd9343aafd1a08b2cc96e6a9549e922433922961871d",
+      "svg": "7fd8f772e7f251850c65398fdb2096cbd1d092370a916ac96ee897d814914240",
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0.5
+      },
+      "model": "7b99cfdf4156dd89cb0df09f8422b6cf566968196c75f0587442ee4b3fe611d2",
+      "table": "2e5a89dc18fddba25329eaf23395d467690668cff93609c899596a855ca5fdd2",
+      "svg": "d79d867f7283005e6595558f3331b6e42043199c376701427e554db3e44b1084",
+      "outputs": [
+        "1.000000",
+        "0.208156",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1
+      },
+      "model": "12c0198bd66d4b3fc0b373fd1f71d460609ff3305c95e486d76d8d153892aebd",
+      "table": "dfa0a69d787a6f3420b3bdd381423f9cd44a600b98d2c3f67b41e9ac3e25fd50",
+      "svg": "f64cb6f417c78a1595bde8cf7702a1e09f03b13bd2a040f3fcda1fd3be11546d",
+      "outputs": [
+        "1.000000",
+        "0.168732",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1.2
+      },
+      "model": "b1c54494ef433cc6a344cf8f6bda503e8d3c3927c5b6cad6ce187ff1ebc7d736",
+      "table": "29b35b477481ef324ff349a44b70320d8d736a215fb550ddf88647331452a0b7",
+      "svg": "6b686b0e66efb3ac490f8009862332ef8090e68f889e17dc7937d804362e116d",
+      "outputs": [
+        "1.000000",
+        "0.319416",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 2
+      },
+      "model": "a5e22d2dd1132b930f9841489e5a775603691e58e08960f608a0bab0cd09f55b",
+      "table": "be0e56aedc4c63fef46a3c040f1751b02f4cb74574b28be673fa74e79da30b34",
+      "svg": "4636a59db2d1fe24abb72580b82f8fddf8e11202699331071c73ce551083a2da",
+      "outputs": [
+        "1.000000",
+        "0.694194",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 4
+      },
+      "model": "f3cf71fd7fbd18cb31635af709502a9d596af0a4a11b81b976deff14b07a687c",
+      "table": "fe0802d3a43e0f499ede91295bc68db8b8d1f041967b0d266763adf3ded24914",
+      "svg": "809b750db9b216756eb9615c6abb64d51a630e68bf36ee41928573680a0eb5c8",
+      "outputs": [
+        "1.000000",
+        "0.958614",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0
+      },
+      "model": "11cbaaae9d64aae623ae7892432aa9bedd7fef2427b251cc9b294d9a316a82a1",
+      "table": "d5e6cdd0835672ea66bb718f033449569c0dfd6cbe0d929de2f473cdcca4259a",
+      "svg": "6b3bd419f5b31eb1eb2b2aba65c12338c53cc9bfc18ca105d4563bb65df2b386",
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0.5
+      },
+      "model": "0dea83c60482e607d941e06031155d86d5febb25c7598c2e341214e36612b4cc",
+      "table": "da317ff4a3041d06929684741af910a6cbb4f050daeea379e859d61922dddb9b",
+      "svg": "39373cd09178f108b879c16f7f5182e9fe5efa432fb2bac0ccf1454054efc548",
+      "outputs": [
+        "0.988936",
+        "0.260034",
+        "-0.025381",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1
+      },
+      "model": "0d87344b20271ad4b7e0f7ce24369a2765387db0f1943181d69beecb3d7f28df",
+      "table": "e0d7de591c87b6a78fcdc0560a645791119fa04fa7efaf050f004a5f224a4633",
+      "svg": "591e2a8d331717456a7f94877c777904177bb3b043c8cafa1a8ede7ec901bf7c",
+      "outputs": [
+        "0.978624",
+        "0.230502",
+        "-0.016030",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1.2
+      },
+      "model": "4c708e22cc6b5182996306d0b6cfe6b370f6f8df695753f659b9e35e3735717b",
+      "table": "f0e29dcf30c27e7b6e665f750c9804c46f2ee8350c39deb5f37ff62d9f80b89e",
+      "svg": "f3f16424db6a64f060331e5088e07323753e599d2f1ebc7d68683b373a90fe1b",
+      "outputs": [
+        "0.976699",
+        "0.427991",
+        "-0.004134",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 2
+      },
+      "model": "19233a38612624a93abcb4c7fd2cd8e70913149bcce4929f7c8359e24c8c4645",
+      "table": "63df24cb74733d556461250d8f61c166a28510d0661361c96825a9fcb3a1e6ce",
+      "svg": "ff9d96390db829f6b6234b5a5ee8b1ac738e3d395a0d1c5b2de4e5cdbe453baa",
+      "outputs": [
+        "0.981552",
+        "0.822764",
+        "0.010509",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 4
+      },
+      "model": "802cb299e953ade2bc2f6e7fb54ef78531c480fdc206c7001d1c49e2036322b2",
+      "table": "df243704a4183c99b66bbeaede1521f3d6f997af85c271b6fd20516c151b9dfe",
+      "svg": "047adc1efbfd621b9a96307d38c61afa7e0ca2428052003c4cc5bae9d46b51c3",
+      "outputs": [
+        "0.996200",
+        "0.989047",
+        "0.003442",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0
+      },
+      "model": "396e620c0cc6ef3afeecac9440f92176d44c8e9e5ab17cb61b5f33d3dfeb4ac0",
+      "table": "4600af59f605133ca6efdd91efdf3a516d9c992ced45aabfcf8b65e1a1662791",
+      "svg": "6474c2c214a25ec242936c63984f22f958ab2e06c3e8d027ce879ac6c5b37fe4",
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0.5
+      },
+      "model": "1aa6be12613d08bbeed1c2dfb845c2f6b9bba23367eaf96cf676777dce8499b5",
+      "table": "4c4c84a47cc0de2b0b8b3de8a56d3723b77744c1b32989c9eb179c45c7fb44aa",
+      "svg": "4b59877ded412a3a55adeff36a04bb512e1af481ee815766bda023228b3f39a5",
+      "outputs": [
+        "0.962542",
+        "0.379638",
+        "-0.079122",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1
+      },
+      "model": "e9367e6ad744bc67da612626c1653b09f270939abd8590166abead7c99d10ca2",
+      "table": "27437d1d75cd6c8d8a4e7f071be737b85b3c3a76d8a8b0d7de825b272421ddc3",
+      "svg": "932683e710d361cb6f194f909153ba75467fd5d192b3128208fa3cf1a8e510f5",
+      "outputs": [
+        "0.931732",
+        "0.359812",
+        "-0.046116",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1.2
+      },
+      "model": "a92fa7f4d593ab03a9dcf8755d057c9e6abd945a0d15bdeb3c9731ddc3615732",
+      "table": "7c538b749f9263927bcad556aaf3fe0e7d5899eb33a6231dc2c61b884af51e2f",
+      "svg": "65cde7fc6a3e324f4eb7968c382d1f7d46ca7b27eb2083f640eccbce413f8497",
+      "outputs": [
+        "0.928954",
+        "0.627385",
+        "0.010732",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 2
+      },
+      "model": "a008e087ffe45c102da8eea57f17f2589f0cfecd416f972ec5bbde42690bdf09",
+      "table": "74659f14b15fd08d23cfe0cbca467e4771863a359d0c279cefc18d092b3ab0be",
+      "svg": "e6a6daf1099da8cddfeeabd705967984c33ee3db8c3f5d67b35d1e3dc8e50877",
+      "outputs": [
+        "0.957878",
+        "0.934565",
+        "0.037460",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 4
+      },
+      "model": "a5a3eebbe2fc0aa1a3a1ff58b5fa649354b723d8b6152aecbd3281d4142e1845",
+      "table": "83f4c3bfb5082d8728fd6ff3c31def0a8ce4dfd31907642f2f6e2784062b048d",
+      "svg": "aab0d9094c679d2e857bc241ddb4f4d1fcf07364b98cba631e3b3e8641099075",
+      "outputs": [
+        "0.994016",
+        "0.993977",
+        "0.005976",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0
+      },
+      "model": "b575ca1e5cb8292e1da9bfc627c6224bef072958122b63095f48656cc7e24408",
+      "table": "2f11341e888f46bd52fddd9343aafd1a08b2cc96e6a9549e922433922961871d",
+      "svg": "0a460e2a6be2e06b27542e75a2953098cc74b2017f44defb857dfdd1618328ee",
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0.5
+      },
+      "model": "7b99cfdf4156dd89cb0df09f8422b6cf566968196c75f0587442ee4b3fe611d2",
+      "table": "2e5a89dc18fddba25329eaf23395d467690668cff93609c899596a855ca5fdd2",
+      "svg": "2f06f82be85d25ccc83426ac632a9327f66a7a869f5f87f78543dbe9fe2b4252",
+      "outputs": [
+        "1.000000",
+        "0.208156",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1
+      },
+      "model": "12c0198bd66d4b3fc0b373fd1f71d460609ff3305c95e486d76d8d153892aebd",
+      "table": "dfa0a69d787a6f3420b3bdd381423f9cd44a600b98d2c3f67b41e9ac3e25fd50",
+      "svg": "5514a60428fa3e85b2c62a5aa1af9206915160a2163d155cf7eb3625aa999ed7",
+      "outputs": [
+        "1.000000",
+        "0.168732",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1.2
+      },
+      "model": "b1c54494ef433cc6a344cf8f6bda503e8d3c3927c5b6cad6ce187ff1ebc7d736",
+      "table": "29b35b477481ef324ff349a44b70320d8d736a215fb550ddf88647331452a0b7",
+      "svg": "c0192c0436e88d65734666f06e201c0b628261c095944f205a0dd57cfe25aa42",
+      "outputs": [
+        "1.000000",
+        "0.319416",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 2
+      },
+      "model": "a5e22d2dd1132b930f9841489e5a775603691e58e08960f608a0bab0cd09f55b",
+      "table": "be0e56aedc4c63fef46a3c040f1751b02f4cb74574b28be673fa74e79da30b34",
+      "svg": "29c64d3bb891f95d2dc83a97d23b87ef80c028e467a83260c2b324845d1ed048",
+      "outputs": [
+        "1.000000",
+        "0.694194",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 4
+      },
+      "model": "f3cf71fd7fbd18cb31635af709502a9d596af0a4a11b81b976deff14b07a687c",
+      "table": "fe0802d3a43e0f499ede91295bc68db8b8d1f041967b0d266763adf3ded24914",
+      "svg": "23eaf389b156a195fbd011fd71d47720638ce552d4323251dcfd3603a5cf9ab9",
+      "outputs": [
+        "1.000000",
+        "0.958614",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0
+      },
+      "model": "11cbaaae9d64aae623ae7892432aa9bedd7fef2427b251cc9b294d9a316a82a1",
+      "table": "d5e6cdd0835672ea66bb718f033449569c0dfd6cbe0d929de2f473cdcca4259a",
+      "svg": "30ffafc63960c5c64a139f13db6567192edf64fb580a17454be0a3422e8987f3",
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0.5
+      },
+      "model": "0dea83c60482e607d941e06031155d86d5febb25c7598c2e341214e36612b4cc",
+      "table": "da317ff4a3041d06929684741af910a6cbb4f050daeea379e859d61922dddb9b",
+      "svg": "74547da55466d824a03d556bc69dd9dcabab25c91f72cbf66a725e41348569f0",
+      "outputs": [
+        "0.988936",
+        "0.260034",
+        "-0.025381",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1
+      },
+      "model": "0d87344b20271ad4b7e0f7ce24369a2765387db0f1943181d69beecb3d7f28df",
+      "table": "e0d7de591c87b6a78fcdc0560a645791119fa04fa7efaf050f004a5f224a4633",
+      "svg": "a5c0824cf22c66425fbd7f0250cb96b3ff1e1446182cdc18f20c0627f2c927cf",
+      "outputs": [
+        "0.978624",
+        "0.230502",
+        "-0.016030",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1.2
+      },
+      "model": "4c708e22cc6b5182996306d0b6cfe6b370f6f8df695753f659b9e35e3735717b",
+      "table": "f0e29dcf30c27e7b6e665f750c9804c46f2ee8350c39deb5f37ff62d9f80b89e",
+      "svg": "78644859a65c5d362c9261c9c0ffdb3cb16fda28029a0dbb753915c0f8695b44",
+      "outputs": [
+        "0.976699",
+        "0.427991",
+        "-0.004134",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 2
+      },
+      "model": "19233a38612624a93abcb4c7fd2cd8e70913149bcce4929f7c8359e24c8c4645",
+      "table": "63df24cb74733d556461250d8f61c166a28510d0661361c96825a9fcb3a1e6ce",
+      "svg": "099128b64781bab145e9d7b4eea70d149e29ec918f5a3aee984078db9a2cf723",
+      "outputs": [
+        "0.981552",
+        "0.822764",
+        "0.010509",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 4
+      },
+      "model": "802cb299e953ade2bc2f6e7fb54ef78531c480fdc206c7001d1c49e2036322b2",
+      "table": "df243704a4183c99b66bbeaede1521f3d6f997af85c271b6fd20516c151b9dfe",
+      "svg": "662680114e77f9e3b8a0e82cd96d9cacee794a04ce8013b393571c6aad5569b3",
+      "outputs": [
+        "0.996200",
+        "0.989047",
+        "0.003442",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0
+      },
+      "model": "396e620c0cc6ef3afeecac9440f92176d44c8e9e5ab17cb61b5f33d3dfeb4ac0",
+      "table": "4600af59f605133ca6efdd91efdf3a516d9c992ced45aabfcf8b65e1a1662791",
+      "svg": "14173fd5ae547f1f8e98fbe045a486afa79e63381be68317ae0d5cab558ebfe4",
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0.5
+      },
+      "model": "1aa6be12613d08bbeed1c2dfb845c2f6b9bba23367eaf96cf676777dce8499b5",
+      "table": "4c4c84a47cc0de2b0b8b3de8a56d3723b77744c1b32989c9eb179c45c7fb44aa",
+      "svg": "644836eaf4fea9f6bb74b8720eb97a183c8eb3384aac86e558d8a61f49970bd2",
+      "outputs": [
+        "0.962542",
+        "0.379638",
+        "-0.079122",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1
+      },
+      "model": "e9367e6ad744bc67da612626c1653b09f270939abd8590166abead7c99d10ca2",
+      "table": "27437d1d75cd6c8d8a4e7f071be737b85b3c3a76d8a8b0d7de825b272421ddc3",
+      "svg": "d91132df325ea6cf80d19ce8c80b0f7cf70b4025960889d1044e202fead82754",
+      "outputs": [
+        "0.931732",
+        "0.359812",
+        "-0.046116",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1.2
+      },
+      "model": "a92fa7f4d593ab03a9dcf8755d057c9e6abd945a0d15bdeb3c9731ddc3615732",
+      "table": "7c538b749f9263927bcad556aaf3fe0e7d5899eb33a6231dc2c61b884af51e2f",
+      "svg": "6c5d5c46925680765778e07155bfcec7326d9d111424b6b1af8a11ecf9bd6e79",
+      "outputs": [
+        "0.928954",
+        "0.627385",
+        "0.010732",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 2
+      },
+      "model": "a008e087ffe45c102da8eea57f17f2589f0cfecd416f972ec5bbde42690bdf09",
+      "table": "74659f14b15fd08d23cfe0cbca467e4771863a359d0c279cefc18d092b3ab0be",
+      "svg": "bab0df42e569ee015d0d19cec14ed2a7ede2454b19aad1bee2373d4d3c088713",
+      "outputs": [
+        "0.957878",
+        "0.934565",
+        "0.037460",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 4
+      },
+      "model": "a5a3eebbe2fc0aa1a3a1ff58b5fa649354b723d8b6152aecbd3281d4142e1845",
+      "table": "83f4c3bfb5082d8728fd6ff3c31def0a8ce4dfd31907642f2f6e2784062b048d",
+      "svg": "816b31cf7a1c7d81537ffd9214bff6f08a086f8def9c3491c8b9269e5e1f7a56",
+      "outputs": [
+        "0.994016",
+        "0.993977",
+        "0.005976",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ]
+    }
+  ],
+  "observedAtUTC": "2026-10-18T18:34:50.167Z",
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 36,
+  "maxGraphicError": 0.000004997600413503278,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.208156",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.168732",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1.2
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.319416",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 2
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.694194",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 4
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.958614",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.988936",
+        "0.260034",
+        "-0.025381",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.978624",
+        "0.230502",
+        "-0.016030",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1.2
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.976699",
+        "0.427991",
+        "-0.004134",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 2
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.981552",
+        "0.822764",
+        "0.010509",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 4
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.996200",
+        "0.989047",
+        "0.003442",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.962542",
+        "0.379638",
+        "-0.079122",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.931732",
+        "0.359812",
+        "-0.046116",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1.2
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.928954",
+        "0.627385",
+        "0.010732",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 2
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.957878",
+        "0.934565",
+        "0.037460",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 4
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.994016",
+        "0.993977",
+        "0.005976",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.208156",
+        "0.000000",
+        "5.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.168732",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 1.2
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.319416",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 2
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.694194",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "timeSec": 4
+      },
+      "errors": [],
+      "graphicError": 0.0000049914421538233,
+      "modelError": 1.4432899320127035e-15,
+      "outputs": [
+        "1.000000",
+        "0.958614",
+        "0.000000",
+        "0.000000",
+        "없음 (항상1)",
+        "1.000000"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.988936",
+        "0.260034",
+        "-0.025381",
+        "5.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.978624",
+        "0.230502",
+        "-0.016030",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 1.2
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.976699",
+        "0.427991",
+        "-0.004134",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 2
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.981552",
+        "0.822764",
+        "0.010509",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "timeSec": 4
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 7.993605777301127e-15,
+      "outputs": [
+        "0.996200",
+        "0.989047",
+        "0.003442",
+        "0.000000",
+        "1.299913",
+        "0.976501"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.962542",
+        "0.379638",
+        "-0.079122",
+        "5.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.931732",
+        "0.359812",
+        "-0.046116",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 1.2
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.928954",
+        "0.627385",
+        "0.010732",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 2
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.957878",
+        "0.934565",
+        "0.037460",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "timeSec": 4
+      },
+      "errors": [],
+      "graphicError": 0.000004997600413503278,
+      "modelError": 2.581268532253489e-15,
+      "outputs": [
+        "0.994016",
+        "0.993977",
+        "0.005976",
+        "0.000000",
+        "1.147541",
+        "0.928662"
+      ],
+      "rows": 401
+    }
+  ]
+}

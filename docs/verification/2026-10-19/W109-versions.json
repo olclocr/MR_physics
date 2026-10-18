@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W109 two static coefficient/scale explanation clarifications, old numerical model and actual16 displays preserved; own report excluded",
+  "files": [
+    {
+      "path": "docs/saturating_dipole_work.html",
+      "sha256": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F"
+    },
+    {
+      "path": "docs/assets/saturating-dipole-model.js",
+      "sha256": "6C3CA007518C72046EDE6403E05B1DEDE65C5BFEF230775DFA94F76C88C83C86"
+    },
+    {
+      "path": "docs/assets/induced-dipole-model.js",
+      "sha256": "686C62F7DBE80ECE25FC9D38EC1BB5F136FB930F6B5A1250D05E6C56711B6981"
+    },
+    {
+      "path": "docs/assets/magnetic-dipole-model.js",
+      "sha256": "F971E3813C428D8F9F796F7F1F241C2C138D82BBE6761D545583E60B1D8AEE2A"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/saturating-dipole.test.cjs",
+      "sha256": "31C586362FA03D1B41AB622EB2AED139485DCCF1163549A145821399FAEF6376"
+    },
+    {
+      "path": "tests/helpers/saturating-dipole-reference.cjs",
+      "sha256": "8C32254A4BCB1BF872C61DA2F12FFDEB1692E9239E9C2BF6E590CC18803D17C2"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-before-versions.json",
+      "sha256": "A16F6504FBED9DDDCB6D2D0545F548FF9B9023F60702BE3E8AA0D62CD45008D2"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-copy-edits.json",
+      "sha256": "D5E4F648D775A962E81DA5C9DC08F182A2F8B69FA18902E89B1A63F8D1973C1D"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-edit-audit.cjs",
+      "sha256": "9EE980B75E69B3C0DC8212829E2400B48CF5156BED067AF5F5698D58250BF125"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-edit-audit.json",
+      "sha256": "81C9FBB53B096391AE6F5DB6E216E3B92DA1DD98414D78837A7E82774EC56AA6"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-before-browser.js",
+      "sha256": "8A8F10A33ADEAAB934A3622367F0D18A7FB85FACF1562E11B41B0B00CB316E8F"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-before-browser.json",
+      "sha256": "5E56B88E78889D8F55E1A6B6192F58CCAAC38D331FD548C4805FE6956963FD17"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-saturation-numerical.cjs",
+      "sha256": "72F424FB5781A445D127B50157E7F5DC6878FBFB7F177D56BEA69746144F67D8"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-saturation-numerical.json",
+      "sha256": "BB693C548DE756E1387C8BDD6CCCCA3F4C450A9887A3C4FBE82316E000664722"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-saturation-display-reference.json",
+      "sha256": "AF08D192E2A528DE969C33C78C17770EA973E395896BCC2F915EE559FE578A90"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-browser-check.js",
+      "sha256": "F98557FCEA2C65B39BE57CB9FF8D87C7A0902823C7939200E48799A37C88A54C"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-browser-check.json",
+      "sha256": "6E28F98BC3964B2BE6B16B66BFF548678807B4F1874AC1902DA95EF3CA83A1F0"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-browser-comparison.json",
+      "sha256": "9D02F450EEFE488C6FE7E73DA6150E7E0E3E348413F0AF33FD28CE8A6226A60F"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/thermal_input_timing.html",
-      "sha256": "CF931660E1579D063479B4C369F3BC42B6CF8C41F7D7CF86247B68E63DE6C21B"
+      "sha256": "AD448246438DCE5E47802FE73F5F91DE05F91900657BC40ED25C6023D35E7866"
     },
     {
       "path": "docs/assets/thermal-loss-model.js",
@@ -50,6 +50,14 @@
     {
       "path": "docs/verification/2026-10-18/X16-thermal-browser-check.json",
       "sha256": "1255771250D6BF39773F6208CA6CB1AC8A99463493F81DEF53639CFBFC238804"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

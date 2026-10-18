@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W112 two IR pages, only two SVG text y coordinates per page; model/table/other drawing bytes preserved; own report excluded",
+  "files": [
+    {
+      "path": "docs/ir_phase_reference.html",
+      "sha256": "1CB01FCE22255A6A5EC19CF2448B92420AEF89B7EC12C810EEE1A941E3129D75"
+    },
+    {
+      "path": "docs/ir_intensity_normalization.html",
+      "sha256": "7937A5F52B2243E0F9C9304DB01A9C059A64CFEEAF401E3E3DFEC6F4A42EDC61"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-before-versions.json",
+      "sha256": "3179DD5DF79F0330E9DAA84F372922A0000616001D9D8D14D56300FCB43D1267"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-copy-edits.json",
+      "sha256": "9B1B1257AAC66D09BDAB650B7703F912177109F533E248234AE3730C9CF33C18"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-edit-audit.cjs",
+      "sha256": "46BC321410ADA8995274CBE4303755644FE714A7357D0AD3FEB6A9DC1FDAAF43"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-edit-audit.json",
+      "sha256": "5F8882A7F79362727B50332E2C3A0D8186E6B8E1E75640B71F851D2C8A315A95"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-before-phase-browser.js",
+      "sha256": "5170FB39AD773CE8D0DAE1003859E33DF7108103875604B32A2A9B2F5216DFB4"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-before-phase-browser.json",
+      "sha256": "F13D4DD60D1412601BAF54C54DC77B49EEEB33BB3D7C18C335F8FDA65F5C31D4"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-before-intensity-browser.js",
+      "sha256": "37CCF5B3D904A9C2ED1482C822277D8DC989050E6C09804E15777E97220382E6"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-before-intensity-browser.json",
+      "sha256": "F4A200AABA6116413F8E839E6FCAF6913AFF2A32600619D06E4CA34254B79C34"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-after-phase-browser.js",
+      "sha256": "5315E4367B17028EFA53FC41EC7687459EEB8C808B492369AF61C293076BACD0"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-after-phase-browser.json",
+      "sha256": "F1B43F99381DA83B93C047A57911E1D586501F76A8A6ADB552291F29DB539853"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-after-intensity-browser.js",
+      "sha256": "BA77F5999E6D9C121037F6C8CC14C4BAAFBD33517883E51716FD35B29DAF7166"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-after-intensity-browser.json",
+      "sha256": "D4BD285F04C636C7469F109CBF7F8292B11271F6B9C6730609F7D9EC82EDA735"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-browser-comparison.json",
+      "sha256": "36DE462AD4B6FFDEB38DFC1CE7FBFBFB6100147153AFF5871D2D20081BBDB3E9"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W110",
+      "proof": "docs/verification/2026-10-19/W110-manifest-updates.json",
+      "scope": "One successor link; prior complete file SHA reconstructed"
+    }
+  ]
+}

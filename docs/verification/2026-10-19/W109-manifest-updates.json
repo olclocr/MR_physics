@@ -1,0 +1,16 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-18/X16-saturation-versions.json",
+    "path": "docs/saturating_dipole_work.html",
+    "before": "A1D6FFA91DC5F7F026CF2A9D7EE00CF013AB4339E813C15A58E7D3430ABD0EE2",
+    "after": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F",
+    "reason": "W109 two static explanation literals; exact reverse restores previous bytes; model/table/SVG preserved"
+  },
+  {
+    "manifest": "docs/verification/2026-10-19/W105-versions.json",
+    "path": "docs/saturating_dipole_work.html",
+    "before": "A1D6FFA91DC5F7F026CF2A9D7EE00CF013AB4339E813C15A58E7D3430ABD0EE2",
+    "after": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F",
+    "reason": "W109 two static explanation literals; exact reverse restores previous bytes; model/table/SVG preserved"
+  }
+]

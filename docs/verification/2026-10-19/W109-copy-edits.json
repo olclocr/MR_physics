@@ -1,0 +1,16 @@
+{
+  "path": "docs/saturating_dipole_work.html",
+  "beforeSha256": "A1D6FFA91DC5F7F026CF2A9D7EE00CF013AB4339E813C15A58E7D3430ABD0EE2",
+  "afterSha256": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F",
+  "edits": [
+    {
+      "before": "선형 μ(B)=αB, α=.001A·m²/T와 포화 예시 μ(B)=μsat tanh(B/Bc), μsat=.001A·m²/Bc=1 T를 직접 정의합니다.",
+      "after": "선형 μ(B)=αB에서 α=.001 A·m²/T입니다. 포화 예시는 μ(B)=μsat tanh(B/Bc)이며, 포화 모멘트 μsat=.001 A·m²와 장 척도 Bc=1 T를 각각 직접 정의합니다."
+    },
+    {
+      "before": "B/Bc≪1에서 tanh(B/Bc)≈B/Bc이며 1 T/Bc1 T는 이 극한이 아닙니다.",
+      "after": "B/Bc≪1에서 tanh(B/Bc)≈B/Bc입니다. 여기 Bc=1 T이므로 B=1 T에서는 B/Bc=1이며 작은 장 극한이 아닙니다."
+    }
+  ],
+  "scope": "Two static explanation literals only; separate independent constants and explicit dimensionless field ratio; code/constants/input/table/SVG preserved"
+}

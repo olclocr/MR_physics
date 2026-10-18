@@ -1,0 +1,9 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-15/F03-versions.json",
+    "path": "docs/spectral_fat_saturation.html",
+    "before": "A456A151C2257D26F50500171E7963E1B0A655094C487F4B1EAF1D4FC6DFD2D5",
+    "after": "C535D6F991642A2F96954B56B8AAAF6C9882E43BE3D0593C1CA7AD9ED4B6F78D",
+    "reason": "W107 successor navigation only; remove one link to recover exact previous bytes"
+  }
+]

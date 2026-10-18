@@ -1,0 +1,1454 @@
+{
+  "observedAtUTC": "2026-10-18T17:51:11.778Z",
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 72,
+  "maxGraphicError": 0.000004999176979936237,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.100000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "0.683940",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.068394"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "0.567668",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.056767"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "0.501239",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.050124"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.500000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "0.208156",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.104078"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "0.168732",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.084366"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "0.166667",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.083333"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.100000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "0.996426",
+        "0.714350",
+        "0.003574",
+        "-0.014104",
+        "0.003574",
+        "0.071435"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "0.991299",
+        "0.631803",
+        "0.008701",
+        "-0.017975",
+        "0.008701",
+        "0.063180"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "0.982233",
+        "0.596862",
+        "0.017767",
+        "-0.019269",
+        "0.017767",
+        "0.059686"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.500000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "0.988936",
+        "0.260034",
+        "0.011064",
+        "-0.036445",
+        "0.011064",
+        "0.130017"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "0.978624",
+        "0.230502",
+        "0.021376",
+        "-0.037406",
+        "0.021376",
+        "0.115251"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "0.965138",
+        "0.228116",
+        "0.034862",
+        "-0.036851",
+        "0.034862",
+        "0.114058"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.100000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "0.988506",
+        "0.780970",
+        "0.011494",
+        "-0.041507",
+        "0.011494",
+        "0.078097"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "0.975415",
+        "0.745352",
+        "0.024585",
+        "-0.046013",
+        "0.024585",
+        "0.074535"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "0.957061",
+        "0.728987",
+        "0.042939",
+        "-0.045615",
+        "0.042939",
+        "0.072899"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.500000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "0.962542",
+        "0.379638",
+        "0.037458",
+        "-0.116581",
+        "0.037458",
+        "0.189819"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "0.931732",
+        "0.359812",
+        "0.068268",
+        "-0.114384",
+        "0.068268",
+        "0.179906"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 1920,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "0.895426",
+        "0.349028",
+        "0.104574",
+        "-0.109280",
+        "0.104574",
+        "0.174514"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 0,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.0000018181820706786311,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.100000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "0.683940",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.068394"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "0.567668",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.056767"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 1,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004986577806675996,
+      "modelError": 1.1102230246251565e-15,
+      "outputs": [
+        "1.000000",
+        "0.501239",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.050124"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.500000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "0.208156",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.104078"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "0.168732",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.084366"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0,
+        "saturationRate": 5,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004978069341632363,
+      "modelError": 2.886579864025407e-15,
+      "outputs": [
+        "1.000000",
+        "0.166667",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.083333"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 0,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.00000181818212752205,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.100000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "0.996426",
+        "0.714350",
+        "0.003574",
+        "-0.014104",
+        "0.003574",
+        "0.071435"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "0.991299",
+        "0.631803",
+        "0.008701",
+        "-0.017975",
+        "0.008701",
+        "0.063180"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 1,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004999176979936237,
+      "modelError": 1.6306400674181987e-15,
+      "outputs": [
+        "0.982233",
+        "0.596862",
+        "0.017767",
+        "-0.019269",
+        "0.017767",
+        "0.059686"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.500000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "0.988936",
+        "0.260034",
+        "0.011064",
+        "-0.036445",
+        "0.011064",
+        "0.130017"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "0.978624",
+        "0.230502",
+        "0.021376",
+        "-0.037406",
+        "0.021376",
+        "0.115251"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 0.5,
+        "saturationRate": 5,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004991910145690781,
+      "modelError": 3.490263633665336e-15,
+      "outputs": [
+        "0.965138",
+        "0.228116",
+        "0.034862",
+        "-0.036851",
+        "0.034862",
+        "0.114058"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 0,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.0000018181821843654689,
+      "modelError": 1.9984014443252818e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.100000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "0.988506",
+        "0.780970",
+        "0.011494",
+        "-0.041507",
+        "0.011494",
+        "0.078097"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "0.975415",
+        "0.745352",
+        "0.024585",
+        "-0.046013",
+        "0.024585",
+        "0.074535"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 1,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004988680743167606,
+      "modelError": 2.7478019859472624e-15,
+      "outputs": [
+        "0.957061",
+        "0.728987",
+        "0.042939",
+        "-0.045615",
+        "0.042939",
+        "0.072899"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 0
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.500000"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 0.5
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "0.962542",
+        "0.379638",
+        "0.037458",
+        "-0.116581",
+        "0.037458",
+        "0.189819"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 1
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "0.931732",
+        "0.359812",
+        "0.068268",
+        "-0.114384",
+        "0.068268",
+        "0.179906"
+      ],
+      "rows": 301
+    },
+    {
+      "width": 390,
+      "options": {
+        "exchangeRate": 2,
+        "saturationRate": 5,
+        "timeSec": 3
+      },
+      "errors": [],
+      "graphicError": 0.000004986351626712349,
+      "modelError": 4.4825254619240695e-15,
+      "outputs": [
+        "0.895426",
+        "0.349028",
+        "0.104574",
+        "-0.109280",
+        "0.104574",
+        "0.174514"
+      ],
+      "rows": 301
+    }
+  ]
+}

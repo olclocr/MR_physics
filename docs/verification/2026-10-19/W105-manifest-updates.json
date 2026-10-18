@@ -1,0 +1,72 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-18/X06-window-versions.json",
+    "path": "docs/signal_window_log.html",
+    "before": "266AA6492D2EDA3460961B76E70A27519FDBC187CEFBA736B95C286B9616D2E6",
+    "after": "98369056694DFD6EE9CA9078E1BBFC575E802D69F13C355AE70F5D047796E8F0",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X16-power-versions.json",
+    "path": "docs/absorbed_power_energy.html",
+    "before": "2CE789988BC80ED039D9686C80BF022FA4D8BE1A53CCB9CE994D08BEF77633B5",
+    "after": "93C8D7C017686F918DB283C543F0BABA68C7DED85D99BA10006B33AE597E2443",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X16-saturation-versions.json",
+    "path": "docs/saturating_dipole_work.html",
+    "before": "47B03C52060F94B5FA1AEF03434009074AF2C4582D0714A3F7DE843D3944A907",
+    "after": "A1D6FFA91DC5F7F026CF2A9D7EE00CF013AB4339E813C15A58E7D3430ABD0EE2",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X08-outflow-versions.json",
+    "path": "docs/label_postarrival_outflow.html",
+    "before": "35ED2CBA325E321187840EC9CE42468DB35FDB9B204B60CBF3924FB3D417D215",
+    "after": "8FC16F04868494F0B6A6256EBA11F23D8C24528AF5A3B769B6A6742A3FF0F915",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X17-order-versions.json",
+    "path": "docs/rigid_transform_order.html",
+    "before": "27F2A69D5BB66D814B58E98D59DE5549E1E1482C1C8A1034CCB142280CF320FE",
+    "after": "6BEF9649B0C30CBE8CCE258AC693CD76334C09C89547D9072BAAEBFBAFEE8226",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X16-thermal-versions.json",
+    "path": "docs/thermal_input_timing.html",
+    "before": "CF931660E1579D063479B4C369F3BC42B6CF8C41F7D7CF86247B68E63DE6C21B",
+    "after": "AD448246438DCE5E47802FE73F5F91DE05F91900657BC40ED25C6023D35E7866",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X07-scale-versions.json",
+    "path": "docs/compartment_input_scale.html",
+    "before": "F48FEE093F84DEC652497CDFB5372CDC5C05F6DC1A597105FC60F6242B251C62",
+    "after": "16AD5B5A9E01D3633CDDAA65F3BC4F13AAE4FB0132E8CB2B2EB6ECEAADEB23E4",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X07-vascular-versions.json",
+    "path": "docs/vascular_ees_components.html",
+    "before": "00DE6722FD4743A4FDE72612D653851714A1DB5AE2E20731E921238C8C20726A",
+    "after": "E5F6E3C95CC911586E47492441D2ED8F07BAA2DF8C3454EBE8B407EAD91E3F0C",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X17-scale-versions.json",
+    "path": "docs/axis_scale_area.html",
+    "before": "F4CA6FAB3E52AB33018A91F90D195566266B0808C35A8A59B77B9CE158C00F4B",
+    "after": "254BF3E07EACDD4CD03766FDA97A0231CBE5C4F7705A7B6FAB6C30744E7B88C5",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X17-spacing-versions.json",
+    "path": "docs/assumed_pixel_spacing.html",
+    "before": "AE4FC7EA08857F4F61C72289EED50C7BC7C382CFA9DA6F589DBD34C94E774033",
+    "after": "F526970AEDCEB366C58AB0D65CF468DDBC7409740750EB9B819075C689AA73DE",
+    "reason": "W105 static whitespace only; exact reverse spans in W105-copy-edits.json"
+  }
+]

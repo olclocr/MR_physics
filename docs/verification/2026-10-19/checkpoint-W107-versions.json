@@ -1,0 +1,919 @@
+{
+  "checkedManifests": 105,
+  "checkedEntries": 1085,
+  "navigationProof": "docs/verification/2026-10-19/W107-manifest-updates.json",
+  "navigationFiles": [
+    {
+      "path": "README.md",
+      "sha256": "6C315E125D3636AC81DC147ECB28FCBD37949E11EB53283EED800836E60A08DD"
+    },
+    {
+      "path": "docs/learning-roadmap.md",
+      "sha256": "C71986AB0FF394E168FDA1E63CC2E5A22B1795DC5D06E4D839DFBB3B15BA2F90"
+    },
+    {
+      "path": "docs/physics-validation-plan.md",
+      "sha256": "C7E6D140FF328CB9426655C914B51BCAC72073D5B812C986735A4250B27252C8"
+    },
+    {
+      "path": "scripts/validation-reports.json",
+      "sha256": "54D182F9127D57117B7015AE7A2C07EA9BE1FD532B1D16478D6415D0433D7B6A"
+    },
+    {
+      "path": "docs/absorbed_power_energy.html",
+      "sha256": "93C8D7C017686F918DB283C543F0BABA68C7DED85D99BA10006B33AE597E2443"
+    },
+    {
+      "path": "docs/adc_fitting_shine_through.html",
+      "sha256": "95159483D8859E7AC272DE39E0C5555228833F5C78BAF3A073B1D198D08041C4"
+    },
+    {
+      "path": "docs/aliasing_fov.html",
+      "sha256": "4999E7A79537C2F3E6DBC10ADFCBAD58DC5A16AFF8C8C2753AA4ED12D1D2EC53"
+    },
+    {
+      "path": "docs/assumed_pixel_spacing.html",
+      "sha256": "F526970AEDCEB366C58AB0D65CF468DDBC7409740750EB9B819075C689AA73DE"
+    },
+    {
+      "path": "docs/axis_scale_area.html",
+      "sha256": "254BF3E07EACDD4CD03766FDA97A0231CBE5C4F7705A7B6FAB6C30744E7B88C5"
+    },
+    {
+      "path": "docs/b0_b1_receive_shading.html",
+      "sha256": "0E26E0FBE06DADDA5DC2EC2B7A3B6DA0A6EA58BB13EF55E94C21D92E4BDDF506"
+    },
+    {
+      "path": "docs/balanced_ssfp.html",
+      "sha256": "96D5EA901DC96E9C09E97CBF409FCB26BBEAFD55D563E651F30AF17A1A1BD942"
+    },
+    {
+      "path": "docs/bicycle_wheel_precession_interactive.html",
+      "sha256": "168CEE7A4399E4AE404E882AF0860C1DB07595534E740104AF22E050DA1B59CC"
+    },
+    {
+      "path": "docs/blood_refocusing_limits.html",
+      "sha256": "8B173E0F3BF0B1AA7EF2894464139518377C749629DB9B8D7BE12B078E914079"
+    },
+    {
+      "path": "docs/bssfp_contrast_limits.html",
+      "sha256": "2692F539567D334EC770456CE3C3AA31765B8DE9556FF635F16DD73F6B8C862A"
+    },
+    {
+      "path": "docs/chemical_shift_artifacts.html",
+      "sha256": "A955494292856F9B75B97396C1E0D2CEF63352DB1B7243B89017C27066359E13"
+    },
+    {
+      "path": "docs/chemical_shift_ip_op.html",
+      "sha256": "93BE89D2D42DBD80B636C9CDE2FD9D343643BD57B6A4BBEDF0EEAC1FB4A01942"
+    },
+    {
+      "path": "docs/compartment_input_scale.html",
+      "sha256": "16AD5B5A9E01D3633CDDAA65F3BC4F13AAE4FB0132E8CB2B2EB6ECEAADEB23E4"
+    },
+    {
+      "path": "docs/compartment_input_washout.html",
+      "sha256": "1BAB5CBB38873DEA888B422F06CB19432E14A1FDFB11E9893B7D573017500AD9"
+    },
+    {
+      "path": "docs/complex_echo_water_fat_fit.html",
+      "sha256": "ED9F4D393A9121F8E05BB47B45F22B6F2C6E74B69E7D7C3CA47C3DAF214DB713"
+    },
+    {
+      "path": "docs/compressed_sensing_sparsity.html",
+      "sha256": "BF75F079DB98AA201CCBD1833F4B88034B3663F887394AEB92B1979200646782"
+    },
+    {
+      "path": "docs/contrast_concentration_competition.html",
+      "sha256": "3B1B35A8DC14C9C4B552E4AD6C0827EC0D11F87BF6A76FCBF84D096E15D4507D"
+    },
+    {
+      "path": "docs/contrast_weighting.html",
+      "sha256": "831DD65267DE3F46A3B49CDC58CF2406D1E66948E2CF628FE2786A7B27C34953"
+    },
+    {
+      "path": "docs/delayed_response_kernel.html",
+      "sha256": "09DB170A8FC0B3F9F63EB72C0EC704ED8813B792289C4BBB279188753CD34D55"
+    },
+    {
+      "path": "docs/diffusion_b_value.html",
+      "sha256": "0F8ED31FD4EA3E379D819376975433859B56F353D46EF15F30E7B2880734718B"
+    },
+    {
+      "path": "docs/diffusion_tensor_direction.html",
+      "sha256": "A8E4F8157E40DB28A103BBF14AD15A028AE88E7194961088D53E125C205359BC"
+    },
+    {
+      "path": "docs/diffusion_tensor_mixture.html",
+      "sha256": "A2582FF946578DE2433DA09AFF58D7EC7BF9FA9744304A8C125ADABF06FFF944"
+    },
+    {
+      "path": "docs/dixon_water_fat.html",
+      "sha256": "E4DCC13CB8B99E523602498A59E8EE0EC7B9AA4B242DB4433F3B44DFB481DF1D"
+    },
+    {
+      "path": "docs/dsc_signal_rate.html",
+      "sha256": "DDFD0683D55ACF9D658B7362A112BE258A1AE792DD01495A111BD7C3FAF0B242"
+    },
+    {
+      "path": "docs/dwi_epi_conditions.html",
+      "sha256": "2A572E94AB37D0DDC9D0DD667EB8F1E32DD7D3649B843AF146B4B0185430273E"
+    },
+    {
+      "path": "docs/ecv_r1_partition.html",
+      "sha256": "2D6F9A928BE6EBD458C5FFE60BB1F8DDF4918BD521F7F37270A604D1B43700A5"
+    },
+    {
+      "path": "docs/epi_trajectory.html",
+      "sha256": "3CF9285A9DCAC2F357803416D4523C222425F7D2C9CD0576CBD04F7414027110"
+    },
+    {
+      "path": "docs/fast_spin_echo.html",
+      "sha256": "F19552387270ED7B8AA5A350E2C124EB352B7E7DFD1920AAE99BA22B4C4D0648"
+    },
+    {
+      "path": "docs/fat_suppression_comparison.html",
+      "sha256": "5748F291B94EF3CED650C95B9DCD815AE8138D9BF9E7FCBCCCB28CF439D3C791"
+    },
+    {
+      "path": "docs/fid_spectrum.html",
+      "sha256": "C12CB7EB026B7FF113863C35D872E71C7A48D603C6A62E0E7A20EB9ADD8821FE"
+    },
+    {
+      "path": "docs/field_epi_distortion.html",
+      "sha256": "A5EFC3AADA6A8D5AE50B2B31CE54E6CBD919FB47BD1B4D3DB71489D65C7C88E8"
+    },
+    {
+      "path": "docs/finite_rf_slice_profile.html",
+      "sha256": "26A3C858F7A2454543771CFE070A8C154571F75F01539DADAE1D3EB98DAC8861"
+    },
+    {
+      "path": "docs/flow_gradient_phase.html",
+      "sha256": "3B14A170991FAA4AC730254225A796C346278E259534E51DCC6E23937CE3086F"
+    },
+    {
+      "path": "docs/flow_velocity_mixture.html",
+      "sha256": "9FB1471DDFDE5E90A371500531F667CB7F77113BF71F741EA287070B0505344E"
+    },
+    {
+      "path": "docs/fov_matrix_resolution.html",
+      "sha256": "DC0BD895FDC75BF608B5AD2FB9B64D8E5C92558C1616EC7CCE6AE4992488D034"
+    },
+    {
+      "path": "docs/frequency_phase_encoding_visualization.html",
+      "sha256": "FB242406C53447B94266B6B21B8A8C193993470DA7747750D73A3BC710A9DB9B"
+    },
+    {
+      "path": "docs/gibbs_ringing.html",
+      "sha256": "B34C756DA340FE331A7C23E4183CF195A954597F116E75932540087E345678DE"
+    },
+    {
+      "path": "docs/gradient_first_moment.html",
+      "sha256": "F761906B56FE4ECD6D124321009339BC723993E41729A888BDDC1B258C1BB7EB"
+    },
+    {
+      "path": "docs/gradient_second_moment.html",
+      "sha256": "86F591D615EA9CB7A2DB67023C5D074817E3246D07C8F54A0180C2DA7187FE11"
+    },
+    {
+      "path": "docs/hemorrhage_state_reading.html",
+      "sha256": "5585BA6372380DD376E826CDBDD90496AD6F2F94278BC6BBED6B22C2B03022D1"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "5D3F8E7E6B778696330603CA8AD62D32AFF2257CDC82C664EA59725560CAE4CC"
+    },
+    {
+      "path": "docs/induced_dipole_energy.html",
+      "sha256": "22B5759D5228DA8C17B0D1BAEEC90AAB56E1B457302F7578B338D387F1D6F3EA"
+    },
+    {
+      "path": "docs/inflow_rf_saturation.html",
+      "sha256": "202314C38B84090966B06ED55B446365DF94F84AA663B0E9F054F87A1F3A88A1"
+    },
+    {
+      "path": "docs/inversion_recovery.html",
+      "sha256": "69FF73959E7C7C04F6D49C581A4811F6955614AFF0400B9A04E4A23013AD7F01"
+    },
+    {
+      "path": "docs/ir_intensity_normalization.html",
+      "sha256": "0344D23C5122A7F5A98B7A8F10AED0A4F97EA62D5911177B666F8A81B31BA080"
+    },
+    {
+      "path": "docs/ir_phase_reference.html",
+      "sha256": "6C7B341D4C5FA26E25755B8DE90717EA30D2D91302971B2CD13F5DCCF8EC2F70"
+    },
+    {
+      "path": "docs/kspace_inverse_fourier.html",
+      "sha256": "9BB45567068DF9E66CFBC94B6B77C0B0D8A3219C5EF0BF8F71614676AABA7AB5"
+    },
+    {
+      "path": "docs/label_arrival_decay.html",
+      "sha256": "3909C8970E1CFE819B3F1BC73F188746F5787CC6AB20481974678FF3A43A6067"
+    },
+    {
+      "path": "docs/label_postarrival_outflow.html",
+      "sha256": "8FC16F04868494F0B6A6256EBA11F23D8C24528AF5A3B769B6A6742A3FF0F915"
+    },
+    {
+      "path": "docs/label_train_arrival.html",
+      "sha256": "1CAC64FA8B8D2784FEF5FC10D3ECC4438B6441477677C1BA3F911FD6C43E9E24"
+    },
+    {
+      "path": "docs/linear_field_correction.html",
+      "sha256": "32C2E4EF327306CC3A5992006E3409BA53F2AA0A06072C492931663300B68078"
+    },
+    {
+      "path": "docs/magic_angle_orientation.html",
+      "sha256": "FB1AF208449225671A8D91E91AED3185C27C4B24677E4B986FDF5F774604630C"
+    },
+    {
+      "path": "docs/magnetic_dipole_force_torque.html",
+      "sha256": "C73CD8F05069607C1C8B80E49FA66C58F004ADFFAB4415F2FD017014E7884787"
+    },
+    {
+      "path": "docs/motion_ghosting.html",
+      "sha256": "B5FD1D13053CFA1D46B5B12E72A31D60DA26AF1F53C6A0BD2AC9218C23225418"
+    },
+    {
+      "path": "docs/mre_inversion_limits.html",
+      "sha256": "97CF513771E9C1B0DBE32CD4BD6F2558B883F27BF47899A9C57CD89F35F55C90"
+    },
+    {
+      "path": "docs/mre_motion_encoding.html",
+      "sha256": "8F7CBC5F44306E0DC5034A2341BBEFAF84893852A7D7A02914815A1CA0E29652"
+    },
+    {
+      "path": "docs/mre_shear_wave.html",
+      "sha256": "5D5A8502ACB8ED6F6C432375E83B74281BFC01070FF452C31F7AEB6E0036A915"
+    },
+    {
+      "path": "docs/mrs_field_linewidth.html",
+      "sha256": "483B16B05F47DAF401EE5B3784F6AD25CBEB2E78CC0A9B43F85E50F6A4AF8B26"
+    },
+    {
+      "path": "docs/mrs_observation_volume.html",
+      "sha256": "2C70AA2610F57ACEDFB59BCCFCE5DF852F760C5B83820E5AA1CA36609DAB661C"
+    },
+    {
+      "path": "docs/parallel_imaging.html",
+      "sha256": "71F87A15897D01E275018FB0A136083B8DE1FD9CA6B19A9605C941477F6C0605"
+    },
+    {
+      "path": "docs/partial_fourier_phase.html",
+      "sha256": "C9C2696CB97EDB009395FC48637CCA5FC2EB660D2AFAF5D982F70CF590E80E63"
+    },
+    {
+      "path": "docs/pdff_echo_assumptions.html",
+      "sha256": "3AACA42EF6079AA9278E61FC38B782F67C4FA7B270898A95587C8333B3409BDF"
+    },
+    {
+      "path": "docs/pdff_t1_bias.html",
+      "sha256": "B5AAC37DF99498D1BCD34260589CBD626C32A90B498D891FB532504CACE400AD"
+    },
+    {
+      "path": "docs/periodic_motion_window.html",
+      "sha256": "5FF95027D7B7162C2D23F663D7434A236906E3DA50B940437361C5D27D828E89"
+    },
+    {
+      "path": "docs/phantom_grid_distance.html",
+      "sha256": "8B016D842F4DDBCC6910E4B3371D357C9BE533E95D442CE054B9A78137D49BFD"
+    },
+    {
+      "path": "docs/phantom_rigid_distance.html",
+      "sha256": "F852C2202D530C5466BB2BBF3375466BF34880D66285558AAC182AD92966E89E"
+    },
+    {
+      "path": "docs/phase_contrast_venc.html",
+      "sha256": "83E91570D3937757DB5B98F5A4979698051E4C146FF87ECE26D54B3D7643AE50"
+    },
+    {
+      "path": "docs/pixel_center_quantization.html",
+      "sha256": "C1D7B50A887180F35F6E5286DAC62BF9F0A62FC8C6BB6DFC6D709C0D4FF2DC65"
+    },
+    {
+      "path": "docs/polynomial_field_basis.html",
+      "sha256": "87C165A4763077A7275A50D0EF4AA0DEEFCD7C732A385EC4ECD97C7E003F01AB"
+    },
+    {
+      "path": "docs/processed_t2_mapping.html",
+      "sha256": "D12A42B717DC811A5CB66B04C2E4D37DB2874D90043650B34590DA612BCC88DB"
+    },
+    {
+      "path": "docs/proton_spin_mr_simulation.html",
+      "sha256": "B4C1F5700794D3EB959DA47F34E5DF68457EABEF41F45D224525CD09AC36B9E6"
+    },
+    {
+      "path": "docs/proton_spin_rf_larmor_resonance.html",
+      "sha256": "E26A07904D344ACCA01BC17AAA72FED5148AC3196ECC74546B5B183EAB18916A"
+    },
+    {
+      "path": "docs/qsm_dipole_inverse.html",
+      "sha256": "192028DE8FBC7B2598F9A1BBC90E1DCAC8B5836434800C14605D86C84AE92601"
+    },
+    {
+      "path": "docs/receiver_bandwidth.html",
+      "sha256": "785EF380C7D71FBF64D82CDBF4E84BE429FF4185C05923F2302F2D60872CA96C"
+    },
+    {
+      "path": "docs/reconstruction_noise_ensemble.html",
+      "sha256": "5BF43C5ABE8C6ACB2062AE81BB8F59A458C18ADE5C94DA497C296991BC32F068"
+    },
+    {
+      "path": "docs/reconstruction_roles.html",
+      "sha256": "1D0BC099D48DCCD4120AE9FB399EFF7D44F6D038954FD5DE81FE0959C84D5791"
+    },
+    {
+      "path": "docs/response_overlap.html",
+      "sha256": "1C8FDCE35D367EF07FEC34D3E280A92FFE007E0E74C94EB2A32715B2B40B02ED"
+    },
+    {
+      "path": "docs/rigid_transform_order.html",
+      "sha256": "6BEF9649B0C30CBE8CCE258AC693CD76334C09C89547D9072BAAEBFBAFEE8226"
+    },
+    {
+      "path": "docs/saturating_dipole_work.html",
+      "sha256": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F"
+    },
+    {
+      "path": "docs/scan_time.html",
+      "sha256": "F76B32F0005E8DCEF8D76A8336D28649329EE6A4CFE860B72CF423FD0F9AA777"
+    },
+    {
+      "path": "docs/signal_window_log.html",
+      "sha256": "98369056694DFD6EE9CA9078E1BBFC575E802D69F13C355AE70F5D047796E8F0"
+    },
+    {
+      "path": "docs/signed_subtraction_alignment.html",
+      "sha256": "FF27A5558628F6557405100484C7A456F5E8A33E174B4E7B6AA9FB7B0D60686B"
+    },
+    {
+      "path": "docs/slice_selection_partial_volume.html",
+      "sha256": "9C89EA95A03138350CA41049DA33F48339E89492BA9E24F2E3C7C34671BCE474"
+    },
+    {
+      "path": "docs/sms_slice_separation.html",
+      "sha256": "A6B40DB1E24817123AD6D81D7F165680A85C42EBC11869E1D8E47253F9728B88"
+    },
+    {
+      "path": "docs/snr_cnr_averaging.html",
+      "sha256": "D0FEE7ACBAB4D6CE185B879F1E780A9006CA08323883D55D57B3B61CFD528516"
+    },
+    {
+      "path": "docs/spectral_fat_saturation.html",
+      "sha256": "C535D6F991642A2F96954B56B8AAAF6C9882E43BE3D0593C1CA7AD9ED4B6F78D"
+    },
+    {
+      "path": "docs/spectral_peak_features.html",
+      "sha256": "9888E32BF2E684110E1604DB8A8E61E649BC9B15F08AE6C3806EC15BA683701E"
+    },
+    {
+      "path": "docs/spin_ensemble_equilibrium.html",
+      "sha256": "C8AB1C8A28BB48880CC6586A9CC1B6BF54D7F682C5EF8F2775F0E8ED3BB56532"
+    },
+    {
+      "path": "docs/spin_gradient_echo.html",
+      "sha256": "7540D5EEA250EE3E0C3BA6F9B9B0E2952D3A921D7FFE3001B9C1159AA717E56C"
+    },
+    {
+      "path": "docs/spoiled_gre.html",
+      "sha256": "F0B62178EDD1EFC29FFBBD29CFB6C3B8800D5F4BB9275E796D57799FDBD4F257"
+    },
+    {
+      "path": "docs/structure_texture_evaluation.html",
+      "sha256": "00C512D896BFC5D9C6F5C58A20DE3BD357A21DC76BF29814CCD29D28F0C61DE6"
+    },
+    {
+      "path": "docs/susceptibility_signal_phase.html",
+      "sha256": "3CA014A171712D79F4251C40A134330A19A5B342884FEEA9F08CC7A523C63C0E"
+    },
+    {
+      "path": "docs/swi_mask_projection.html",
+      "sha256": "07E851ED05DA4A8668E2A045DC23595AEBE1248489D7341DE57EDEAD6C734265"
+    },
+    {
+      "path": "docs/t1_mapping_ir.html",
+      "sha256": "48EFE6D50122D10E546072FCD46688697A43424BB7BA4C1CBBB6F9469D0BB5C8"
+    },
+    {
+      "path": "docs/t2_mapping_basics.html",
+      "sha256": "7C02B09396DBFB254A4106E811991EB5CA26631742C6C5CAC1AEC36E2BD5BFDC"
+    },
+    {
+      "path": "docs/t2_mapping_limits.html",
+      "sha256": "9D34B7D9A949D40956BFF7B2F43995F53D59C5D0168FF4933FB9A362D56CE488"
+    },
+    {
+      "path": "docs/t2_t2star_dephasing.html",
+      "sha256": "29305F7A3CCE55170040960346D21BAA481BC31E4758C59B82FD8D24C2072377"
+    },
+    {
+      "path": "docs/t2star_mapping.html",
+      "sha256": "80E7FAE819D8EDDE2E7D5F80547A36DB75253083E3EB9D7FC6F3F87EE69A07CF"
+    },
+    {
+      "path": "docs/temporal_window_bolus.html",
+      "sha256": "B088957068C0AEDA04C81CD0876B3BC0D883F51A4A592A9E33D1250691E0C4F1"
+    },
+    {
+      "path": "docs/thermal_input_timing.html",
+      "sha256": "AD448246438DCE5E47802FE73F5F91DE05F91900657BC40ED25C6023D35E7866"
+    },
+    {
+      "path": "docs/translation_fit_residual.html",
+      "sha256": "E877E906C6245190B6564D9CBEC6A07178421511D04952E31D81F5C51293B07D"
+    },
+    {
+      "path": "docs/two_pool_saturation_transfer.html",
+      "sha256": "6426BB6C824C19619F80044F1FB9595ED23BFD759BCC65FAEEB6FB3169C34DE1"
+    },
+    {
+      "path": "docs/vascular_ees_components.html",
+      "sha256": "E5F6E3C95CC911586E47492441D2ED8F07BAA2DF8C3454EBE8B407EAD91E3F0C"
+    },
+    {
+      "path": "docs/vendor_ai_reading.html",
+      "sha256": "0EC8B9FBCA1A922DEDC2FFD99E58AD4E7134A9400F4A71D68E74AD693D14F6BE"
+    },
+    {
+      "path": "docs/volume_2d_3d.html",
+      "sha256": "3A77B24E89837A41BEE5FB30D36CE15C6B1AE11887100AFA3E493B612F210BED"
+    },
+    {
+      "path": "docs/water_excitation.html",
+      "sha256": "B6D144384B29BC9B07471DFCB82078331144748E6AA280A0EAA9F5074BB85E11"
+    },
+    {
+      "path": "docs/verification/2026-10-14/index.html",
+      "sha256": "8510D7D135096CFFCDB7C7F39789C2728FFC21ABBBA69968F7FE49B7035B1835"
+    },
+    {
+      "path": "docs/verification/2026-10-14/original-review.html",
+      "sha256": "68F9BA82EAA831DCAC41C7D7C307B2401E21AFDBB8871B22394261A2D86986F3"
+    },
+    {
+      "path": "docs/verification/2026-10-14/fix-validation.html",
+      "sha256": "17CC12D948F96CE06AF022C4E2F9389F0C3AF23E9F31489B5E2529C2D381D2D3"
+    },
+    {
+      "path": "docs/verification/2026-10-14/contrast-chapter.html",
+      "sha256": "1B8A8F3593096DDA21A464C75D2CE7C7892BEBE7ADEE8EC680D7ACBEEE3AB77E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C01-physics.html",
+      "sha256": "3D65E7662CF4CF2BACA56DA3BD8E9B4FC63DE590F7C64AABF7AB1980971D71D4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B02-physics.html",
+      "sha256": "B7D117ECCA4312F1CDD6C0F9857AD4DAF8846D18A40F1F5F084D38217D706769"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B03-physics.html",
+      "sha256": "1B6FAE4FA025458D5DB119542687A56D648E199373120B26E7CEC6C81AF87C3B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-physics.html",
+      "sha256": "4A7A17554441C4207FB550488ADD3B031798108ED832EDB861E2EAA8CFBE073B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-physics.html",
+      "sha256": "16BAC694A41A5B0353A20B73C66956D5340428BA386EF392E34BBDEAA099946E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C02-physics.html",
+      "sha256": "B60493BA39618FFB0927EAC4D802C1DAF64F002D3766248360927D7721B34218"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C03-physics.html",
+      "sha256": "D336B7179052E50A025DCDB8FDCBCF5DDABBBA1E546387CA196A59CC789289A6"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B05-physics.html",
+      "sha256": "A3F71F36126327702EF227D121C3F1074B49B588FFA31137D5DD38B6CD32B436"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-physics.html",
+      "sha256": "978D79DA8A059DC54B31330F667E1CFDCBC074F290CE75D2D41600F626DD5A37"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-physics.html",
+      "sha256": "AF37FA411E2983F914F8DA477F436BF70777EED4E7321EE53B5BC3CA815C78B1"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-physics.html",
+      "sha256": "FED0B2E6E00758E2F570DDD3CB303A7FB85EBB49F7EF7CBCE766AEBEABB9381E"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-physics.html",
+      "sha256": "A849D1A570CE34F88B38FE5B9C07D9BE194ACD6D3291392C4F8ABAE54C716770"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-physics.html",
+      "sha256": "EFC08FA6E14A7599D5F7F864F368CD55AF5C88CA027253000F79E71FCE771969"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-physics.html",
+      "sha256": "0814443ED03D642FB126489F60943C4DE0A15D495A0D39E1454C692ADCA0057B"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-physics.html",
+      "sha256": "1D5DD26BF6141266660FA8E962F81BBC0638B128690880454D4EBCA5A43DAC12"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-physics.html",
+      "sha256": "86B88B1E317AAABC631882C8530209D488E5C0D550BEB9F8321ADF103374E148"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q03-physics.html",
+      "sha256": "D9C21ADA18C6757C09A22B629309D33DBCF8C574945DC98F965C1D1B1DABAED7"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-physics.html",
+      "sha256": "E034962C1841E70B5742A23B15828A219C9C71952F05AD29AAE8DA1AD2604225"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C07-physics.html",
+      "sha256": "78C6F9107A58DA7FF1356349524AD7138CF161E714BDF982D72C86449E58E063"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-physics.html",
+      "sha256": "D38CB325F0AF5663A5FA9C5A205CB59012E3A782756D42D68519F2867D178E26"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-physics.html",
+      "sha256": "F71273F4CCAA2F569CD14A50109E256E82804EFFFAA792BAB468756F51D8F6DF"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-physics.html",
+      "sha256": "FB4E21476B781E65484775F9A8F4FB14B24373E66E27D48A5C6A96823CBA3B53"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-physics.html",
+      "sha256": "079D18182A3AC109ABC4BFF2D0C4B7C0DB90DB6F4F4FC30D5625B92C0262469D"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F04-physics.html",
+      "sha256": "373C4D492491B756509876F27662B1EEADE65B179A8E99076CC60F768F2B3A1C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-physics.html",
+      "sha256": "C5656FB5930B37BA7637C981956494C8D5222223CACB7AECF07E1FC2E44A800C"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-physics.html",
+      "sha256": "03A9C73270F10605695599F4C4C37985A4D5A4EE0129AB7868AC0F19F84C0362"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-water-physics.html",
+      "sha256": "953819B71CCFCF492017FF6EBF0B44F56F7C8AC145EB6B97EAA641011F17BD12"
+    },
+    {
+      "path": "docs/verification/2026-10-16/D03-physics.html",
+      "sha256": "BBDFD38CE9C4F4542D63797E55865BD3E3D7DF50F3412D78B53D362B57D3C6FD"
+    },
+    {
+      "path": "docs/verification/2026-10-16/S01-physics.html",
+      "sha256": "03F2C1BA9517A275D5D6AE68315A57A21072300A4AE51D2C27958A0C7EF662F9"
+    },
+    {
+      "path": "docs/verification/2026-10-16/S01-swi-physics.html",
+      "sha256": "4DD33164AB0A724095F67E5DC10EC372ED8A8F8BC96FD526EA42833604369BDA"
+    },
+    {
+      "path": "docs/verification/2026-10-16/C08-physics.html",
+      "sha256": "8D541D68BD3984DF75204561432A037F5A7910FA6B4C3F6981FA0390DCF583EE"
+    },
+    {
+      "path": "docs/verification/2026-10-16/C08-contrast-physics.html",
+      "sha256": "D1C64C1D33DF2465F5AE191D68A469D7E0177E49B12F1B818918DC0CAAF93020"
+    },
+    {
+      "path": "docs/verification/2026-10-16/Q05-physics.html",
+      "sha256": "614B111BC6B9865E80F1761C050DEDAC87237F56E83E9A42E533F9394270E4EA"
+    },
+    {
+      "path": "docs/verification/2026-10-16/Q06-physics.html",
+      "sha256": "25CAA8202CE6E96ED741B952C72A64AF3A29BE640B9B9BE5069B4BAA76FD09C2"
+    },
+    {
+      "path": "docs/verification/2026-10-17/Q07-physics.html",
+      "sha256": "C71CA535B2CF4DEF48537C770A06F2F3F5778960A5F5ED72ACC4C005DDB0AF78"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A01-physics.html",
+      "sha256": "3DF27102575D860BF03F128BD7B867454E5879E36636192DADCB395B8BAC80F5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A02-physics.html",
+      "sha256": "C5DBA5EF571C49D785D8BE049CFF9B0E9E5DC13C80E76E0F9314C15886A83AF4"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A03-physics.html",
+      "sha256": "A2F01E8B2706345A9164E3929A32B8BC954E3836899EFBD4E9EDFFE652D4393A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A04-physics.html",
+      "sha256": "3A43ED731767560EBD4F621E44725FB9C1EC2791920499E2F717C6E2206D9463"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A05-physics.html",
+      "sha256": "20EABBF01C05C8C1F737D1B764D396C2F0B5A588A38B76D568082FA299394683"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A06-physics.html",
+      "sha256": "2B68459B006228139DCDB44F066CD4242D03434A3C39A05BA09E9DCF838217BE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M01-physics.html",
+      "sha256": "4CF1F85FC6372C69F87A25F3DEF56BAE5C5180E15490AB4CDD893E2D481990EE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M01-limits-physics.html",
+      "sha256": "00E26A000778D4B5071C29BF1432E8CE0B5679AAB1E2274ECD1AF7322876163A"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-physics.html",
+      "sha256": "B25427C72D1ADEAE481A78221624676D96A7535FBABA6DBD250DC94375AA170D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M03-physics.html",
+      "sha256": "81AB2B3D06F1D2CF34FCED7B7727D19B4A58CAF3328360F466910DFF28C618BE"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-physics.html",
+      "sha256": "1674DA79C1BF550045AA143758C3CAABB27C86145D5E9969F24C3AF4BC040BA5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-physics.html",
+      "sha256": "9446590A9D360000D1FF72D0611272A7D018C20BDC9B7C3BFBA2583072E0AA8C"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-physics.html",
+      "sha256": "103843884DD1FE1BB43A4A4DD87DF73FB020BF0D7E024C85479EFDC29EF1BF60"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-physics.html",
+      "sha256": "59C09CC0536BD30BA38E62753164676C050B5697DA58C74FEB06CE2E843C91CB"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-physics.html",
+      "sha256": "E2D352E5FEC7F230303BA5DB711CCBA23C2375BC76B0E19CAB6E34E16171C18E"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-physics.html",
+      "sha256": "807B09825F3E690589FCDDD39E337E2D03DE8EA2F6EF7CB4DD7B45FFE2D54032"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-physics.html",
+      "sha256": "6ADA07E748C44934C33E988ED60FB85D876F6AD826C89A6936B76DB90A1D2570"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-physics.html",
+      "sha256": "09F163C65D1DFE90CEB935CE0C6B3F9371CFB74FA1A72684C54AEEFAAB0B97A4"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-physics.html",
+      "sha256": "07BB111C9023CD708B936C8AC34FF0A88444328BE4F72C835934FEE8A8210E04"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-physics.html",
+      "sha256": "3C0D762C53AEC78C0364E8E5811CF42A020E0D4ECD8864CB7043658A4A2AB59B"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-physics.html",
+      "sha256": "32AA082003CA5B1BC26C565E5D1172860C40BE65C25D7E717AA73CF48F124606"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-physics.html",
+      "sha256": "5B76811DA237AA3C8B8EFE70322052C8E08EF500488A5931A2EC773803755D48"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-physics.html",
+      "sha256": "A190DC820693D471345E4509A2D9095A93D832D5CD259719B6B0E49093ECB645"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-physics.html",
+      "sha256": "30033825BE74C8657C523BA516E455DE4CA577BA795C01B17DBED84254241C20"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-physics.html",
+      "sha256": "BC6751F5030941FD9841913A5E3B190F720B43B21FB16668E501121697A5022E"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-physics.html",
+      "sha256": "16E8F663D83C28A682ECA84479A0A59A6F3F88F246B48453C1F1ECEEF08D5103"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-physics.html",
+      "sha256": "B7810F5111E2C99FF266C8973039463472486848210A1C8BE84B1704747D1585"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-physics.html",
+      "sha256": "CB0CAEAD47E4315D1350DDCE5C8F47B2E9078E7D1CB68CAF6B0413B6D340609F"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-physics.html",
+      "sha256": "3DBE4DE83211B718CF68F9B78957D2F520DF45C5AA46DE1CFF6ED40EBE2F96E0"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-physics.html",
+      "sha256": "DBA8CF9CA5574518A16AA9B11E4EB544541DABE2C54EE0508A4259C780ABD560"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-physics.html",
+      "sha256": "6E1AD6346894CE3197CF9E0AE99F8953F7B6405F0F328A1ED9028758BC5B3B5D"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-physics.html",
+      "sha256": "9432E4D0634D928A3A54F207F60F22F440B0C7A3B319F4CAD674D838F51629C2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-physics.html",
+      "sha256": "EBE68C935F7ED363ACFEC33E08A04B0861A2A41E908815ECED20C0795F7FF5F2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/publication-0105-fingerprints.html",
+      "sha256": "2995076CD0E2F72502D7BEF266641BC7A4A7DE98C76D918BD0F22A9A278F0F5F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-physics.html",
+      "sha256": "C14EB49C50466743BF85136831D63ADB240E7A13D05007E38CA1D57038E76908"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-selected-row.html",
+      "sha256": "C81B79BEEF71D89BF61BA374FAD4149352D214807B6B95B9CF5BCE54D164C289"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-physics.html",
+      "sha256": "6984C459EC03A7F9EB192EADC750373FE42536595E92D690AC0397EAE3F8EB56"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-physics.html",
+      "sha256": "75171B166DC1BF736BAB46526C275FF3FFAE8E6B20B2C537EBC5E7F931BF380E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-physics.html",
+      "sha256": "18513D54E80A375F2A0F9A06740502224FE8EDA2E1C164745D57451456A5922E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-physics.html",
+      "sha256": "9F4ADCBEE5E17CCA30F4F6E87C86A68C2FBBA755254A0EF4A2BAED6D2C2CC3D7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-physics.html",
+      "sha256": "7D32CAB246D8C3B3AC3615AD8AC5F063B9E937180E4C22E8A4D943FDB23B067D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-physics.html",
+      "sha256": "E7A39B50B66D987E45DB4A4AD92CBC72E5FB2CC9E76777EE0D15DDCAB723D392"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W76-relaxation-wording.html",
+      "sha256": "51E0E8D632D096CB7258BE9FCFE27F708AF75E771CEB3EB0FA66A9E2DCC37BA0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-physics.html",
+      "sha256": "11277A8F18EE0C3D22BD12791277BCC059B5BF7D2824610CC8FAC91BD2824A93"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-physics.html",
+      "sha256": "06589662B92740B6B81ADD987102F3FC1C9C2D591E42AB70BB4EA09833D9EA4D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-physics.html",
+      "sha256": "DBCB4EFD59FD4C59DF3E440BC4D36F2C54A2D97FD0C69F3479CF9DE8A3724A3B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-physics.html",
+      "sha256": "E11C4820455CF7406A678D3087A27682A60503F8595E336F2AD262AB4C7B40BF"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-physics.html",
+      "sha256": "F710EA82BD58DD758CE4AA49B0DBBFB1A9A411E1534D0D1CE03046C06FAB0625"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-physics.html",
+      "sha256": "F05E0024128975F118EC90144075502BAD3A5514B61AA3158859F15CFCF5DDCE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-physics.html",
+      "sha256": "DB959F91B502A689493375151D6AB2FE47123BCF4DBDE2C2D30B4B62BFA0E715"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-readability.html",
+      "sha256": "8BF8E6080CDD11F775D78806AB282E417BB69F1ED536EB511F25298E5D105A35"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X10-physics.html",
+      "sha256": "754D60F147932FCE9ED9D09206B71CEFD1556CCC07217E99261832E9B6DA7FBD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-compensation-physics.html",
+      "sha256": "1395BAC4EC7EAF465C89A2467DEE459D0DD3943ADBC4575DF74E82C3EA3A7C65"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-overlap-physics.html",
+      "sha256": "8109B549684EBADA41E68550E1E7103DC747D917DF995F9A1D53D2914B0AF85B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-readability.html",
+      "sha256": "155FA93C369E8413F1E517100F49D4B16FA566F64A4133E6E1460CF961B07B73"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-physics.html",
+      "sha256": "1ADA84D13E3AB7B53EC4950FDD8CE8E0AB2B4E5648A12D164F02677DD9F80311"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-acceleration-physics.html",
+      "sha256": "C0A80CD110011CFEBD07EFB89E35BCAEA1B5A55BADC4566B68F5F1CDB59ECFE6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-rigid-physics.html",
+      "sha256": "FC7D9417948A518056096338369AA731A50CAEE41F5E6CE33A5F9F6D920B8122"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-relaxation-clarity.html",
+      "sha256": "EBEE7DEB7D929B039A57A1825282489808A8989EB0F7D73721BBDB56FA4ABE6F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-induced-physics.html",
+      "sha256": "2DBF5A53B9682C54B74510EBE29A328059097E15F56421FFD007CD085ABFE78E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-train-physics.html",
+      "sha256": "E5C8433CB86ECD51FB02D209F9060DF1F400EF585F0493B9136A5DFCC7AF804A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-window-physics.html",
+      "sha256": "9AE47B260A2E8370DFE0C787DDAA8CCA332C89C648CB704438DD19229C0BC12E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-power-physics.html",
+      "sha256": "21F0BDAA917A4D2B7C1042DFBEBC9D76EC82FAA85CAB02E31F55EDE07B80E62E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-physics.html",
+      "sha256": "171C80A549768AA50DA422179B1942198B9420A49646CE15C306C0ABD4BB3248"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-outflow-physics.html",
+      "sha256": "AC471493323CEC0CDDB81F075ADACD1A1E797DA905706CC5E07F103E04AD5F57"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-order-physics.html",
+      "sha256": "2C7FE3258F04BEE5921E50F1BE432CE370FC6CB80BB16AF17D6C6A0FD14B4E1B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-thermal-physics.html",
+      "sha256": "155FCD35C34F274945D383F1D4B365A21671B7B9C0BCF10EF51C2BE9DD032F3D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-scale-physics.html",
+      "sha256": "64CAA6CF9F70A342E320A2910373951DBD17BF779DD3E666C68863DECA716E0E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-vascular-physics.html",
+      "sha256": "46837F4AB8C4DF851161220C3316B04F4EB2306791057635606C7483DAFA1106"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-scale-physics.html",
+      "sha256": "6522B9D796FCD1042E5D776DE9819DC539CADEC046A658E34C3649A7A9120B0C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-spacing-physics.html",
+      "sha256": "F3B45A91CDA97CCCB03310497062F6F1A5FB42E20A89D27FC67024CEB3F86278"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-physics.html",
+      "sha256": "F09D6CFB399660AAE36F26DDF7BDC8338792B5DD04643CCA613231366CA2BBB6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-residual-physics.html",
+      "sha256": "9FB99E03CBD79F725788DC68236C52346EB56C371C8278100A3AA21CCA4BFF95"
+    },
+    {
+      "path": "docs/verification/2026-10-19/publication-0145.html",
+      "sha256": "415432F0D3859770B89DE9F3A5E0C0206EBE9604590B3849DFD237F5A7C8BAE5"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X17-quantization-physics.html",
+      "sha256": "35C99668FFA3E290818E52C7658C4A166C7C7D7C8A23D12CE64F7B677A0F9307"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-readability.html",
+      "sha256": "84C5C72AA6B05EBF177234AA2C145A91B3A204F621E130FA4C45DB8EFB18E9D8"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-saturation-clarity.html",
+      "sha256": "2EA7C72CD0621B9B703C334CF4E179DDB3C30A0441D07F254E232D58CD299F0E"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-physics.html",
+      "sha256": "D3F9F1203E9BA7CCB5B9B0FAA241FBDCA5329345B579FA343C4B54049913ECE4"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-physics.html",
+      "sha256": "1EF98CE1417FA70EC429B3E474BF95D3C1F6381B651D29E1B7DEB9AFBFAD8FC0"
+    }
+  ]
+}

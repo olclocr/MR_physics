@@ -577,6 +577,56 @@
         "source": "publication-0145.md",
         "target": "publication-0145.html",
         "label": "01:45 예약 게시 체크포인트"
+      },
+      {
+        "source": "X17-quantization-physics.md",
+        "target": "X17-quantization-physics.html",
+        "label": "X17 후속 · Pixel 중심 양자화/길이 검증"
+      },
+      {
+        "source": "W105-readability.md",
+        "target": "W105-readability.html",
+        "label": "W105 · 후속 챕터 정적 공백/모바일 읽기"
+      },
+      {
+        "source": "W109-saturation-clarity.md",
+        "target": "W109-saturation-clarity.html",
+        "label": "W109 · 포화 모멘트/장 척도 설명 복구"
+      },
+      {
+        "source": "X11-intensity-physics.md",
+        "target": "X11-intensity-physics.html",
+        "label": "X11 후속 · 위상 보정/강도 정규화 검증"
+      },
+      {
+        "source": "X18-transfer-physics.md",
+        "target": "X18-transfer-physics.html",
+        "label": "X18 기본 · 두 풀의 포화 전달 검증"
+      },
+      {
+        "source": "W112-svg-margins.md",
+        "target": "W112-svg-margins.html",
+        "label": "W112 · IR 두 페이지의 SVG 문자 여백"
+      },
+      {
+        "source": "X18-release-physics.md",
+        "target": "X18-release-physics.html",
+        "label": "X18 후속 · 포화 종료와 회복 검증"
+      },
+      {
+        "source": "X11-noise-physics.md",
+        "target": "X11-noise-physics.html",
+        "label": "X11 후속 · 감도 정규화/잡음 분산 검증"
+      },
+      {
+        "source": "X18-rates-physics.md",
+        "target": "X18-rates-physics.html",
+        "label": "X18 후속 · 서로 다른 고유 R1/결합 모드 검증"
+      },
+      {
+        "source": "publication-0650.md",
+        "target": "publication-0650.html",
+        "label": "06:50 최종 예약 게시 체크포인트"
       }
     ]
   },

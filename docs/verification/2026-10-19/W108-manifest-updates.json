@@ -1,0 +1,9 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-19/X18-transfer-versions.json",
+    "path": "docs/two_pool_saturation_transfer.html",
+    "before": "6426BB6C824C19619F80044F1FB9595ED23BFD759BCC65FAEEB6FB3169C34DE1",
+    "after": "576B9EBEF122D21961A51F654BACF6DFA51154E68BA9598045A8904B3E91B8FF",
+    "reason": "W108 successor navigation only; remove one link to recover exact previous bytes"
+  }
+]

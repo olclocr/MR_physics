@@ -1,0 +1,23 @@
+{
+  "observedAtUTC": "2026-10-18T18:29:47.345Z",
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "results": [
+    {
+      "width": 1920,
+      "portal": true,
+      "predecessor": true,
+      "report": true,
+      "compactReportMenu": true,
+      "return": true
+    },
+    {
+      "width": 390,
+      "portal": true,
+      "predecessor": true,
+      "report": true,
+      "compactReportMenu": true,
+      "return": true
+    }
+  ]
+}

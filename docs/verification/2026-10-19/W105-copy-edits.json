@@ -1,0 +1,963 @@
+{
+  "scope": "Proposed ASCII whitespace in static text nodes only; protected script/style/tags and non-whitespace characters preserved; applied only after before-browser capture",
+  "files": [
+    {
+      "path": "docs/induced_dipole_energy.html",
+      "beforeSha256": "22B5759D5228DA8C17B0D1BAEEC90AAB56E1B457302F7578B338D387F1D6F3EA",
+      "afterSha256": "22B5759D5228DA8C17B0D1BAEEC90AAB56E1B457302F7578B338D387F1D6F3EA",
+      "edits": []
+    },
+    {
+      "path": "docs/label_train_arrival.html",
+      "beforeSha256": "1CAC64FA8B8D2784FEF5FC10D3ECC4438B6441477677C1BA3F911FD6C43E9E24",
+      "afterSha256": "1CAC64FA8B8D2784FEF5FC10D3ECC4438B6441477677C1BA3F911FD6C43E9E24",
+      "edits": []
+    },
+    {
+      "path": "docs/signal_window_log.html",
+      "beforeSha256": "266AA6492D2EDA3460961B76E70A27519FDBC187CEFBA736B95C286B9616D2E6",
+      "afterSha256": "98369056694DFD6EE9CA9078E1BBFC575E802D69F13C355AE70F5D047796E8F0",
+      "edits": [
+        {
+          "beforeOffset": 1226,
+          "afterOffset": 1226,
+          "before": " S(t)=exp[−TE·(30+ΔR(t))], 올바른 기준 S0=exp(−30TE)에서 q(t)=S/S0=exp(−TEΔR(t))입니다. 횡진폭은 1로 정규화하고 ΔR(t)=40sin²(πt/20)s⁻¹을 0&lt;t&lt;20초에 직접 정의합니다. 밖에서는 ΔR=0/q=1로 이어집니다. 임상에서 측정한 곡선이나 조직값이 아닙니다.",
+          "after": " S(t)=exp[−TE·(30+ΔR(t))], 올바른 기준 S0=exp(−30 TE)에서 q(t)=S/S0=exp(−TEΔR(t))입니다. 횡진폭은 1로 정규화하고 ΔR(t)=40sin²(πt/20)s⁻¹을 0&lt;t&lt;20초에 직접 정의합니다. 밖에서는 ΔR=0/q=1로 이어집니다. 임상에서 측정한 곡선이나 조직값이 아닙니다."
+        },
+        {
+          "beforeOffset": 1803,
+          "afterOffset": 1804,
+          "before": "같은 12초 창에서 TE만 60ms로 늘리면?",
+          "after": "같은 12초 창에서 TE만 60 ms로 늘리면?"
+        },
+        {
+          "beforeOffset": 2593,
+          "afterOffset": 2595,
+          "before": "기본: TE 30ms / W 12초 / 중심 10초. 올바른 같은 기준 신호를 사용하며 잡음·기준 배율 오류·T1 가중 변화는 포함하지 않습니다. 긴 W와 긴 TE는 다른 조작입니다.",
+          "after": "기본: TE 30 ms / W 12초 / 중심 10초. 올바른 같은 기준 신호를 사용하며 잡음·기준 배율 오류·T1 가중 변화는 포함하지 않습니다. 긴 W와 긴 TE는 다른 조작입니다."
+        },
+        {
+          "beforeOffset": 3124,
+          "afterOffset": 3127,
+          "before": "회색 점선: 순간 ΔR · 주황 점선: 먼저 log 변환한 변화율 평균 Rmean · 파랑 실선: 신호 평균 뒤 log로 구한 Reff. 각 점은 선택 중심입니다. 시간 0–30초·변화율 0–42s⁻¹의 고정 축입니다. 파랑이 주황보다 크지 않은지 비교하세요.",
+          "after": "회색 점선: 순간 ΔR · 주황 점선: 먼저 log 변환한 변화율 평균 Rmean · 파랑 실선: 신호 평균 뒤 log로 구한 Reff. 각 점은 선택 중심입니다. 시간 0–30초·변화율 0–42 s⁻¹의 고정 축입니다. 파랑이 주황보다 크지 않은지 비교하세요."
+        },
+        {
+          "beforeOffset": 5988,
+          "afterOffset": 5992,
+          "before": "을 바탕으로, 직접 정의한 양의 scalar 곡선에 균일 평균을 적용했습니다. W/TE/변화율 모양·native30/peak40s⁻¹는 교육용 선택이며 환자 자료나 최적 획득값이 아닙니다.",
+          "after": "을 바탕으로, 직접 정의한 양의 scalar 곡선에 균일 평균을 적용했습니다. W/TE/변화율 모양·native30/peak40 s⁻¹는 교육용 선택이며 환자 자료나 최적 획득값이 아닙니다."
+        }
+      ]
+    },
+    {
+      "path": "docs/absorbed_power_energy.html",
+      "beforeSha256": "2CE789988BC80ED039D9686C80BF022FA4D8BE1A53CCB9CE994D08BEF77633B5",
+      "afterSha256": "93C8D7C017686F918DB283C543F0BABA68C7DED85D99BA10006B33AE597E2443",
+      "edits": [
+        {
+          "beforeOffset": 1495,
+          "afterOffset": 1495,
+          "before": "주기 1초의 각 시작에서 duty×1초 동안 Pon=1/2W를 흡수하고 나머지는 0W입니다. duty는 .25/.5/1이며 전체 기간 T는 10/20초의 정수 주기입니다. 평균은 선택 기간 전체에서 구합니다. 시작 포함·on끝 제외이고 T에서 모두 종료합니다. 1W=1J/s이므로 파워를 시간에 대해 적분하면 에너지 J입니다.",
+          "after": "주기 1초의 각 시작에서 duty×1초 동안 Pon=1/2 W를 흡수하고 나머지는 0 W입니다. duty는 .25/.5/1이며 전체 기간 T는 10/20초의 정수 주기입니다. 평균은 선택 기간 전체에서 구합니다. 시작 포함·on 끝 제외이고 T에서 모두 종료합니다. 1 W=1 J/s이므로 파워를 시간에 대해 적분하면 에너지 J입니다."
+        },
+        {
+          "beforeOffset": 1684,
+          "afterOffset": 1689,
+          "before": "질량 m=1kg·일정 비열 c=4000J/(kg·K)는 직접 정한 교육용 값입니다. 흡수 에너지가 모두 균일 내부 열에너지로 남고 다른 일·열손실·상변화는 없다고 가정합니다. 환자 체온이나 특정 재질의 값을 나타내지 않습니다.",
+          "after": "질량 m=1 kg·일정 비열 c=4000 J/(kg·K)는 직접 정한 교육용 값입니다. 흡수 에너지가 모두 균일 내부 열에너지로 남고 다른 일·열손실·상변화는 없다고 가정합니다. 환자 체온이나 특정 재질의 값을 나타내지 않습니다."
+        },
+        {
+          "beforeOffset": 1900,
+          "afterOffset": 1907,
+          "before": "기본 평균 1W를 유지하고 기간을 10초로 줄이면?",
+          "after": "기본 평균 1 W를 유지하고 기간을 10초로 줄이면?"
+        },
+        {
+          "beforeOffset": 1954,
+          "afterOffset": 1962,
+          "before": "2W · duty .5 · 10초",
+          "after": "2 W · duty .5 · 10초"
+        },
+        {
+          "beforeOffset": 1990,
+          "afterOffset": 1999,
+          "before": "기본 2W/duty .5를 연속 1W로 바꾸면?",
+          "after": "기본 2 W/duty .5를 연속 1 W로 바꾸면?"
+        },
+        {
+          "beforeOffset": 2047,
+          "afterOffset": 2058,
+          "before": "1W · duty 1 · 20초",
+          "after": "1 W · duty 1 · 20초"
+        },
+        {
+          "beforeOffset": 2082,
+          "afterOffset": 2094,
+          "before": "첫 예제와 같은 에너지 10J를 더 긴 기간에 흡수하면?",
+          "after": "첫 예제와 같은 에너지 10 J를 더 긴 기간에 흡수하면?"
+        },
+        {
+          "beforeOffset": 2144,
+          "afterOffset": 2157,
+          "before": "1W · duty .5 · 20초",
+          "after": "1 W · duty .5 · 20초"
+        },
+        {
+          "beforeOffset": 2770,
+          "afterOffset": 2784,
+          "before": "기본: Pon 2W / duty .5 / T 20초. 주기 1초·m 1kg·c 4000J/(kg·K)는 고정입니다. 파워가 0인 부분에서도 누적 에너지와 모형 온도 변화는 그대로 남습니다.",
+          "after": "기본: Pon 2 W / duty .5 / T 20초. 주기 1초·m 1 kg·c 4000 J/(kg·K)는 고정입니다. 파워가 0인 부분에서도 누적 에너지와 모형 온도 변화는 그대로 남습니다."
+        },
+        {
+          "beforeOffset": 3057,
+          "afterOffset": 3074,
+          "before": "파랑 step: 첫 2초의 주어진 Pabs · 회색 점선: 선택 기간 평균 Pavg. 주기 1초, 파워 0–2.2W의 고정 축입니다. duty 1은 연속 흡수이며 이 확대도에는 전체 종료 시각 10/20초를 표시하지 않습니다.",
+          "after": "파랑 step: 첫 2초의 주어진 Pabs · 회색 점선: 선택 기간 평균 Pavg. 주기 1초, 파워 0–2.2 W의 고정 축입니다. duty 1은 연속 흡수이며 이 확대도에는 전체 종료 시각 10/20초를 표시하지 않습니다."
+        },
+        {
+          "beforeOffset": 3310,
+          "afterOffset": 3328,
+          "before": "파랑 실선: 실제 사각열의 누적 에너지 E · 회색 점선: Pavg를 연속 적용한 누적 에너지. 세로선/원은 T의 종료점입니다. 정수 주기 끝의 에너지는 같아도 주기 안의 경로는 다릅니다. 시간 0–20초·에너지 0–42J의 고정 축입니다.",
+          "after": "파랑 실선: 실제 사각열의 누적 에너지 E · 회색 점선: Pavg를 연속 적용한 누적 에너지. 세로선/원은 T의 종료점입니다. 정수 주기 끝의 에너지는 같아도 주기 안의 경로는 다릅니다. 시간 0–20초·에너지 0–42 J의 고정 축입니다."
+        },
+        {
+          "beforeOffset": 4479,
+          "afterOffset": 4498,
+          "before": "이 모형의 ΔT는 E/(mc)이며 1K=1000mK입니다. 열손실·전도·관류·체온조절과 국소 분포가 없으므로 실제 환자 온도/화상을 예측하지 않습니다. Pavg/m의 단위는 W/kg이지만 실제 장비의 SAR 추정이나 안전 한계를 계산한 값은 아닙니다. 평균 기간은 여기 선택한 10/20초 전체입니다.",
+          "after": "이 모형의 ΔT는 E/(mc)이며 1 K=1000mK입니다. 열손실·전도·관류·체온조절과 국소 분포가 없으므로 실제 환자 온도/화상을 예측하지 않습니다. Pavg/m의 단위는 W/kg이지만 실제 장비의 SAR 추정이나 안전 한계를 계산한 값은 아닙니다. 평균 기간은 여기 선택한 10/20초 전체입니다."
+        }
+      ]
+    },
+    {
+      "path": "docs/saturating_dipole_work.html",
+      "beforeSha256": "47B03C52060F94B5FA1AEF03434009074AF2C4582D0714A3F7DE843D3944A907",
+      "afterSha256": "A1D6FFA91DC5F7F026CF2A9D7EE00CF013AB4339E813C15A58E7D3430ABD0EE2",
+      "edits": [
+        {
+          "beforeOffset": 1186,
+          "afterOffset": 1186,
+          "before": "선형 μ(B)=αB, α=.001A·m²/T와 포화 예시 μ(B)=μsat tanh(B/Bc), μsat=.001A·m²/Bc=1T를 직접 정의합니다. B→0의 기울기만 α=μsat/Bc로 같습니다. B=1T는 B/Bc=1이므로 작은 장 근사가 아닙니다. 이 함수/계수는 실제 재질 fitting·원자/온도·장비의 값이 아닙니다.",
+          "after": "선형 μ(B)=αB, α=.001A·m²/T와 포화 예시 μ(B)=μsat tanh(B/Bc), μsat=.001A·m²/Bc=1 T를 직접 정의합니다. B→0의 기울기만 α=μsat/Bc로 같습니다. B=1 T는 B/Bc=1이므로 작은 장 근사가 아닙니다. 이 함수/계수는 실제 재질 fitting·원자/온도·장비의 값이 아닙니다."
+        },
+        {
+          "beforeOffset": 1377,
+          "afterOffset": 1379,
+          "before": "두 모멘트는 +z로 정렬하고 x=0의 국소 Bz(x)=B0+Gx를 가정합니다. G는0/1T/m, B0는1/3T입니다. 가역·즉시 응답의 기계적 유효 위치 에너지를 Ueff=−∫₀ᴮμ(b)db, 기준 Ueff(0T)=0으로 정의합니다. 자기장 전체의 저장 에너지·흡수 열에너지·미시적 내부 에너지와 구별합니다.",
+          "after": "두 모멘트는 +z로 정렬하고 x=0의 국소 Bz(x)=B0+Gx를 가정합니다. G는 0/1 T/m, B0는 1/3 T입니다. 가역·즉시 응답의 기계적 유효 위치 에너지를 Ueff=−∫₀ᴮμ(b)db, 기준 Ueff(0 T)=0으로 정의합니다. 자기장 전체의 저장 에너지·흡수 열에너지·미시적 내부 에너지와 구별합니다."
+        },
+        {
+          "beforeOffset": 1830,
+          "afterOffset": 1837,
+          "before": "기본3T에서 선형 응답으로 바꾸면 모멘트/힘/면적은?",
+          "after": "기본 3 T에서 선형 응답으로 바꾸면 모멘트/힘/면적은?"
+        },
+        {
+          "beforeOffset": 1886,
+          "afterOffset": 1895,
+          "before": "선형 · B 3T · G 1T/m",
+          "after": "선형 · B 3 T · G 1 T/m"
+        },
+        {
+          "beforeOffset": 1922,
+          "afterOffset": 1933,
+          "before": "초기 기울기가 같다면 B=1T의 값도 같을까요?",
+          "after": "초기 기울기가 같다면 B=1 T의 값도 같을까요?"
+        },
+        {
+          "beforeOffset": 1972,
+          "afterOffset": 1984,
+          "before": "포화 예시 · B 1T",
+          "after": "포화 예시 · B 1 T"
+        },
+        {
+          "beforeOffset": 2002,
+          "afterOffset": 2015,
+          "before": "G만0으로 만들면 응답/유효 에너지도 사라질까요?",
+          "after": "G만 0으로 만들면 응답/유효 에너지도 사라질까요?"
+        },
+        {
+          "beforeOffset": 2057,
+          "afterOffset": 2071,
+          "before": "포화 예시 · B 3T · G 0",
+          "after": "포화 예시 · B 3 T · G 0"
+        },
+        {
+          "beforeOffset": 2708,
+          "afterOffset": 2723,
+          "before": "기본: 포화 예시 / B0 3T / G 1T/m. 그림의 가로축 B는 응답을 살피는 장 값입니다. 실제 물체의 이동 경로나3D MRI 장 분포가 아닙니다.",
+          "after": "기본: 포화 예시 / B0 3 T / G 1 T/m. 그림의 가로축 B는 응답을 살피는 장 값입니다. 실제 물체의 이동 경로나 3D MRI 장 분포가 아닙니다."
+        },
+        {
+          "beforeOffset": 2833,
+          "afterOffset": 2851,
+          "before": "현재 모멘트와 0T부터의 응답 면적",
+          "after": "현재 모멘트와 0 T부터의 응답 면적"
+        },
+        {
+          "beforeOffset": 2981,
+          "afterOffset": 3000,
+          "before": "파랑: 선택 μ(B) · 옅은 면적: 0T부터 B0까지의 양의 일 적분 −Ueff. 실제 그린 다각형은 .02T 표본의 사다리꼴 근사이며 숫자 지표는 모형의 적분값입니다. B 0–3.2T·모멘트 0–3.4mA·m²의 고정 축입니다.",
+          "after": "파랑: 선택 μ(B) · 옅은 면적: 0 T부터 B0까지의 양의 일 적분 −Ueff. 실제 그린 다각형은 .02 T 표본의 사다리꼴 근사이며 숫자 지표는 모형의 적분값입니다. B 0–3.2 T·모멘트 0–3.4mA·m²의 고정 축입니다."
+        },
+        {
+          "beforeOffset": 3236,
+          "afterOffset": 3258,
+          "before": "파랑 실선: Ueff=−∫μdb · 붉은 점선: 비교용 −μ(B)B/2. 선형에서는 겹치지만 포화 예시에서는 다릅니다. 두 점은 선택 B0입니다. B 0–3.2T·에너지 −5.4–0mJ의 고정 축입니다. 붉은 값은 비선형의 올바른 위치 에너지로 쓰지 않습니다.",
+          "after": "파랑 실선: Ueff=−∫μdb · 붉은 점선: 비교용 −μ(B)B/2. 선형에서는 겹치지만 포화 예시에서는 다릅니다. 두 점은 선택 B0입니다. B 0–3.2 T·에너지 −5.4–0mJ의 고정 축입니다. 붉은 값은 비선형의 올바른 위치 에너지로 쓰지 않습니다."
+        },
+        {
+          "beforeOffset": 3952,
+          "afterOffset": 3975,
+          "before": "161점, .02T 간격. μ/F/U 표시는 SI의1000배입니다. 0.02T 행은 초기 기울기 근처를 읽는 참고점이며 B0 조작은1/3T입니다.",
+          "after": "161점, .02 T 간격. μ/F/U 표시는 SI의 1000배입니다. 0.02 T 행은 초기 기울기 근처를 읽는 참고점이며 B0 조작은 1/3 T입니다."
+        },
+        {
+          "beforeOffset": 4275,
+          "afterOffset": 4303,
+          "before": "선형 μ=αB의 응답 아래 면적은 삼각형이므로 μ(B)B/2입니다. 휘어진 응답에서는 전체 곡선 아래 면적을 구해야 합니다. 현재 모멘트만으로 과거0T부터의 응답 전체를 삼각형으로 바꿀 수 없습니다.",
+          "after": "선형 μ=αB의 응답 아래 면적은 삼각형이므로 μ(B)B/2입니다. 휘어진 응답에서는 전체 곡선 아래 면적을 구해야 합니다. 현재 모멘트만으로 과거 0 T부터의 응답 전체를 삼각형으로 바꿀 수 없습니다."
+        },
+        {
+          "beforeOffset": 4524,
+          "afterOffset": 4554,
+          "before": "G0에서는 힘0이어도 선택 B의 모멘트와 Ueff는 남습니다. 여기의 Ueff 기준은0T이고, 실제 물체를 어느 경로로 이동시켰는지 또는 안전한지를 계산한 값이 아닙니다.",
+          "after": "G0에서는 힘 0이어도 선택 B의 모멘트와 Ueff는 남습니다. 여기의 Ueff 기준은 0 T이고, 실제 물체를 어느 경로로 이동시켰는지 또는 안전한지를 계산한 값이 아닙니다."
+        },
+        {
+          "beforeOffset": 4816,
+          "afterOffset": 4849,
+          "before": "A·m²×T=J, A·m²×T/m=N입니다. μ/F/U 표시는 각각 mA·m²/mN/mJ로 SI값의1000배입니다. B/Bc≪1에서 tanh(B/Bc)≈B/Bc이며1T/Bc1T는 이 극한이 아닙니다. 모형의 포화는 가역 응답의 제한값이며 RF 포화 pulse나 히스테리시스를 뜻하지 않습니다.",
+          "after": "A·m²×T=J, A·m²×T/m=N입니다. μ/F/U 표시는 각각 mA·m²/mN/mJ로 SI값의 1000배입니다. B/Bc≪1에서 tanh(B/Bc)≈B/Bc이며 1 T/Bc1 T는 이 극한이 아닙니다. 모형의 포화는 가역 응답의 제한값이며 RF 포화 pulse나 히스테리시스를 뜻하지 않습니다."
+        },
+        {
+          "beforeOffset": 5093,
+          "afterOffset": 5130,
+          "before": " →1T/3T의 두 응답과 전체 면적을 비교하세요.",
+          "after": " →1 T/3 T의 두 응답과 전체 면적을 비교하세요."
+        },
+        {
+          "beforeOffset": 5381,
+          "afterOffset": 5420,
+          "before": "같은 B0에서 G만0으로 만들면?",
+          "after": "같은 B0에서 G만 0으로 만들면?"
+        },
+        {
+          "beforeOffset": 5434,
+          "afterOffset": 5474,
+          "before": "힘은0이지만 모멘트와 Ueff는 남는다",
+          "after": "힘은 0이지만 모멘트와 Ueff는 남는다"
+        },
+        {
+          "beforeOffset": 5492,
+          "afterOffset": 5533,
+          "before": "모멘트·힘·Ueff가 모두0이 된다",
+          "after": "모멘트·힘·Ueff가 모두 0이 된다"
+        }
+      ]
+    },
+    {
+      "path": "docs/label_postarrival_outflow.html",
+      "beforeSha256": "35ED2CBA325E321187840EC9CE42468DB35FDB9B204B60CBF3924FB3D417D215",
+      "afterSha256": "8FC16F04868494F0B6A6256EBA11F23D8C24528AF5A3B769B6A6742A3FF0F915",
+      "edits": [
+        {
+          "beforeOffset": 2025,
+          "afterOffset": 2025,
+          "before": "같은 절대3초에 더 일찍 도착하면 반드시 R이 더 클까요?",
+          "after": "같은 절대 3초에 더 일찍 도착하면 반드시 R이 더 클까요?"
+        }
+      ]
+    },
+    {
+      "path": "docs/rigid_transform_order.html",
+      "beforeSha256": "27F2A69D5BB66D814B58E98D59DE5549E1E1482C1C8A1034CCB142280CF320FE",
+      "afterSha256": "6BEF9649B0C30CBE8CCE258AC693CD76334C09C89547D9072BAAEBFBAFEE8226",
+      "edits": [
+        {
+          "beforeOffset": 1423,
+          "afterOffset": 1423,
+          "before": "의 알려진 5×5 격자(20mm 간격)를 그대로 사용합니다. 물리 x는 오른쪽, y는 위쪽이고 (0,0) 원점을 고정합니다. R은 원점 중심 반시계 θ=0/30/90도 회전, T는 +x로 d=0/5mm 평행이동입니다.",
+          "after": "의 알려진 5×5 격자(20 mm 간격)를 그대로 사용합니다. 물리 x는 오른쪽, y는 위쪽이고 (0,0) 원점을 고정합니다. R은 원점 중심 반시계 θ=0/30/90도 회전, T는 +x로 d=0/5 mm 평행이동입니다."
+        },
+        {
+          "beforeOffset": 1684,
+          "afterOffset": 1686,
+          "before": "128×128mm FOV·Δx=1mm/Δy=1또는2mm에서 물리 좌표를 먼저 변환한 뒤 u=(X+64)/Δx−.5, v=(64−Y)/Δy−.5로 환산합니다. Pixel Spacing은 (Δy,Δx) 순서입니다. u/v는 분수 pixel 중심 좌표이며 반올림하지 않습니다. 점 ID r/c는 원래 점의 이름으로 현재 pixel 행/열과 다릅니다.",
+          "after": "128×128 mm FOV·Δx=1 mm/Δy=1또는 2 mm에서 물리 좌표를 먼저 변환한 뒤 u=(X+64)/Δx−.5, v=(64−Y)/Δy−.5로 환산합니다. Pixel Spacing은 (Δy,Δx) 순서입니다. u/v는 분수 pixel 중심 좌표이며 반올림하지 않습니다. 점 ID r/c는 원래 점의 이름으로 현재 pixel 행/열과 다릅니다."
+        },
+        {
+          "beforeOffset": 1966,
+          "afterOffset": 1972,
+          "before": "회전만0으로 만들면 두 순서는?",
+          "after": "회전만 0으로 만들면 두 순서는?"
+        },
+        {
+          "beforeOffset": 2014,
+          "afterOffset": 2021,
+          "before": "θ 0도 · d 5mm",
+          "after": "θ 0도 · d 5 mm"
+        },
+        {
+          "beforeOffset": 2044,
+          "afterOffset": 2052,
+          "before": "이동만0으로 만들면?",
+          "after": "이동만 0으로 만들면?"
+        },
+        {
+          "beforeOffset": 2083,
+          "afterOffset": 2092,
+          "before": "θ 30도 · d 0mm",
+          "after": "θ 30도 · d 0 mm"
+        },
+        {
+          "beforeOffset": 2114,
+          "afterOffset": 2124,
+          "before": "원점 주위90도 회전과5mm 이동의 순서를 바꾸면?",
+          "after": "원점 주위 90도 회전과 5 mm 이동의 순서를 바꾸면?"
+        },
+        {
+          "beforeOffset": 2170,
+          "afterOffset": 2183,
+          "before": "θ 90도 · d 5mm",
+          "after": "θ 90도 · d 5 mm"
+        },
+        {
+          "beforeOffset": 3104,
+          "afterOffset": 3118,
+          "before": "기본: θ30도 / d5mm / 간격(2,1) / 중심 가로. 두 그림의 물리 축척과 FOV는 같습니다. 비등방 pixel 좌표 자체를 같은 각도로 회전하지 않습니다.",
+          "after": "기본: θ30도 / d5 mm / 간격(2,1) / 중심 가로. 두 그림의 물리 축척과 FOV는 같습니다. 비등방 pixel 좌표 자체를 같은 각도로 회전하지 않습니다."
+        },
+        {
+          "beforeOffset": 4879,
+          "afterOffset": 4894,
+          "before": "d0 또는 θ0이면 차이가0입니다. 기본30도/5mm에서는 두 순서가 다르고90도/5mm의 차이는5√2mm입니다. 길이가 같다는 것만으로 최종 위치나 변환 순서가 같은지 판정할 수 없습니다.",
+          "after": "d0 또는 θ0이면 차이가 0입니다. 기본 30도/5 mm에서는 두 순서가 다르고 90도/5 mm의 차이는 5√2 mm입니다. 길이가 같다는 것만으로 최종 위치나 변환 순서가 같은지 판정할 수 없습니다."
+        },
+        {
+          "beforeOffset": 5375,
+          "afterOffset": 5397,
+          "before": "pB−pA=Rb−b이고 크기는2d sin(θ/2)입니다(여기0≤θ≤90도). 두 순서에서 점쌍 차이는 R(p₂−p₁)이고 RᵀR=I이므로 길이가 보존됩니다. 회전은 항상 고정 원점 주위로 적용합니다.",
+          "after": "pB−pA=Rb−b이고 크기는 2d sin(θ/2)입니다(여기 0≤θ≤90도). 두 순서에서 점쌍 차이는 R(p₂−p₁)이고 RᵀR=I이므로 길이가 보존됩니다. 회전은 항상 고정 원점 주위로 적용합니다."
+        },
+        {
+          "beforeOffset": 5647,
+          "afterOffset": 5671,
+          "before": "기본30도/5mm에서 두 순서의 결과는?",
+          "after": "기본 30도/5 mm에서 두 순서의 결과는?"
+        },
+        {
+          "beforeOffset": 5886,
+          "afterOffset": 5912,
+          "before": "이번 허용 범위에서 이동0 또는 회전0이면?",
+          "after": "이번 허용 범위에서 이동 0 또는 회전 0이면?"
+        },
+        {
+          "beforeOffset": 5944,
+          "afterOffset": 5972,
+          "before": "두 순서의 차이가0이 된다",
+          "after": "두 순서의 차이가 0이 된다"
+        },
+        {
+          "beforeOffset": 5994,
+          "afterOffset": 6023,
+          "before": "순서 차이가 항상5mm로 남는다",
+          "after": "순서 차이가 항상 5 mm로 남는다"
+        },
+        {
+          "beforeOffset": 6444,
+          "afterOffset": 6475,
+          "before": "를 배경으로 사용합니다. 여기25점/2D 원점/행렬은 직접 정한 교육 예시입니다. 실제 DICOM 등록 파일/4×4 환자 좌표를 계산한 결과가 아닙니다.",
+          "after": "를 배경으로 사용합니다. 여기 25점/2D 원점/행렬은 직접 정한 교육 예시입니다. 실제 DICOM 등록 파일/4×4 환자 좌표를 계산한 결과가 아닙니다."
+        }
+      ]
+    },
+    {
+      "path": "docs/thermal_input_timing.html",
+      "beforeSha256": "CF931660E1579D063479B4C369F3BC42B6CF8C41F7D7CF86247B68E63DE6C21B",
+      "afterSha256": "AD448246438DCE5E47802FE73F5F91DE05F91900657BC40ED25C6023D35E7866",
+      "edits": [
+        {
+          "beforeOffset": 1239,
+          "afterOffset": 1239,
+          "before": "를20초 중 앞[0,10)초 또는 뒤[10,20)초에 연속1/2W 적용합니다. 총 흡수 에너지는10/20J, 전체20초 평균은.5/1W로 시점과 무관합니다. 실제 RF/B1에서 흡수 파워를 구하는 계산은 없습니다.",
+          "after": "를 20초 중 앞[0,10)초 또는 뒤[10,20)초에 연속 1/2 W 적용합니다. 총 흡수 에너지는 10/20 J, 전체 20초 평균은.5/1 W로 시점과 무관합니다. 실제 RF/B1에서 흡수 파워를 구하는 계산은 없습니다."
+        },
+        {
+          "beforeOffset": 1365,
+          "afterOffset": 1372,
+          "before": "이번 페이지는 새 교육용 열용량 C=10J/K를 직접 정합니다. 이전 페이지의4000J/K와 다른 값이며 실제 물체/인체의 열용량이 아닙니다. 고정된 주위 온도에 대한 ΔT의 초기값은0입니다. 절대 체온은 정하지 않습니다.",
+          "after": "이번 페이지는 새 교육용 열용량 C=10 J/K를 직접 정합니다. 이전 페이지의 4000 J/K와 다른 값이며 실제 물체/인체의 열용량이 아닙니다. 고정된 주위 온도에 대한 ΔT의 초기 값은 0입니다. 절대 체온은 정하지 않습니다."
+        },
+        {
+          "beforeOffset": 1496,
+          "afterOffset": 1508,
+          "before": "주위로 전달되는 파워를 Ploss=HΔT, H=0/.5/1W/K로 정의합니다. 균일한 단일 온도·일정C/H·고정 주위를 가정하며 공간별 온도/전도·관류·체온조절을 계산하지 않습니다. H0은 열손실이 없는 극한입니다. 관찰 시각은 항상20초이고 곡선은40초까지 보여줍니다.",
+          "after": "주위로 전달되는 파워를 Ploss=HΔT, H=0/.5/1 W/K로 정의합니다. 균일한 단일 온도·일정 C/H·고정 주위를 가정하며 공간별 온도/전도·관류·체온조절을 계산하지 않습니다. H 0은 열손실이 없는 극한입니다. 관찰 시각은 항상 20초이고 곡선은 40초까지 보여줍니다."
+        },
+        {
+          "beforeOffset": 1737,
+          "afterOffset": 1754,
+          "before": "기본 앞10초의 입력을 뒤10초로 옮기면20초의 ΔT는?",
+          "after": "기본 앞 10초의 입력을 뒤 10초로 옮기면 20초의 ΔT는?"
+        },
+        {
+          "beforeOffset": 1793,
+          "afterOffset": 1813,
+          "before": "뒤10초 · P 2W · H .5",
+          "after": "뒤 10초 · P 2 W · H .5"
+        },
+        {
+          "beforeOffset": 1829,
+          "afterOffset": 1851,
+          "before": "열손실만0으로 만들면 입력 시점에 따라 달라질까요?",
+          "after": "열손실만 0으로 만들면 입력 시점에 따라 달라질까요?"
+        },
+        {
+          "beforeOffset": 1884,
+          "afterOffset": 1907,
+          "before": "앞10초 · P 2W · H 0",
+          "after": "앞 10초 · P 2 W · H 0"
+        },
+        {
+          "beforeOffset": 1919,
+          "afterOffset": 1944,
+          "before": "같은 앞10초 입력에서 H를1W/K로 늘리면?",
+          "after": "같은 앞 10초 입력에서 H를 1 W/K로 늘리면?"
+        },
+        {
+          "beforeOffset": 1971,
+          "afterOffset": 1999,
+          "before": "앞10초 · P 2W · H 1",
+          "after": "앞 10초 · P 2 W · H 1"
+        },
+        {
+          "beforeOffset": 2626,
+          "afterOffset": 2656,
+          "before": "기본: 앞10초 / P2W / H.5W/K. C10J/K·관찰20초·주위 고정입니다. 모든 값은 직접 정한 교육용 모형이며 환자 온도/화상이나 안전성을 추정하지 않습니다.",
+          "after": "기본: 앞 10초 / P2 W / H.5 W/K. C10 J/K·관찰 20초·주위 고정입니다. 모든 값은 직접 정한 교육용 모형이며 환자 온도/화상이나 안전성을 추정하지 않습니다."
+        },
+        {
+          "beforeOffset": 2907,
+          "afterOffset": 2942,
+          "before": "파랑 실선: 주위 대비 ΔT · 옅은 영역: 흡수 입력 구간 · 세로선/파랑 점:20초 관찰 · 빈 주황 원: 입력 종료/처음 최고점. 시간0–40초·온도 변화0–2.2K의 고정 축입니다. H0에서는 최고점 뒤 평탄한 값이 유지됩니다.",
+          "after": "파랑 실선: 주위 대비 ΔT · 옅은 영역: 흡수 입력 구간 · 세로선/파랑 점:20초 관찰 · 빈 주황 원: 입력 종료/처음 최고점. 시간 0–40초·온도 변화 0–2.2 K의 고정 축입니다. H0에서는 최고점 뒤 평탄한 값이 유지됩니다."
+        },
+        {
+          "beforeOffset": 3169,
+          "afterOffset": 3207,
+          "before": "회색 점선: 누적 흡수E · 파랑 실선: 현재 저장 CΔT · 주황 점선: 주위로 전달한 누적 손실. 항상 E=CΔT+손실입니다. 시간0–40초·에너지0–22J의 고정 축입니다.20초의 세 값은 점으로 표시합니다.",
+          "after": "회색 점선: 누적 흡수E · 파랑 실선: 현재 저장 CΔT · 주황 점선: 주위로 전달한 누적 손실. 항상 E=CΔT+손실입니다. 시간 0–40초·에너지 0–22 J의 고정 축입니다. 20초의 세 값은 점으로 표시합니다."
+        },
+        {
+          "beforeOffset": 3548,
+          "afterOffset": 3590,
+          "before": "전체20초 평균 입력 (W)",
+          "after": "전체 20초 평균 입력 (W)"
+        },
+        {
+          "beforeOffset": 3804,
+          "afterOffset": 3847,
+          "before": "표에서20초 보기",
+          "after": "표에서 20초 보기"
+        },
+        {
+          "beforeOffset": 3974,
+          "afterOffset": 4018,
+          "before": "0…40초, .1초 간격401점.20초 행은 파랑, 입력 종료/최고점 행은 주황 테두리입니다. H0에서는 이후 같은 최고값이 계속됩니다.",
+          "after": "0…40초, .1초 간격 401점.20초 행은 파랑, 입력 종료/최고점 행은 주황 테두리입니다. H0에서는 이후 같은 최고값이 계속됩니다."
+        },
+        {
+          "beforeOffset": 4312,
+          "afterOffset": 4357,
+          "before": "앞10초의 입력은 관찰20초까지 더 오래 열을 잃습니다. H&gt;0에서 뒤10초 입력보다 마지막 ΔT가 낮아도 총 흡수 에너지가 더 작아서가 아닙니다. 주위로 전달한 양이 더 큽니다. 입력 구간이 같고 모형 계수가 같다면 두 시점의 처음 최고 ΔT는 같습니다.",
+          "after": "앞 10초의 입력은 관찰 20초까지 더 오래 열을 잃습니다. H&gt;0에서 뒤 10초 입력보다 마지막 ΔT가 낮아도 총 흡수 에너지가 더 작아서가 아닙니다. 주위로 전달한 양이 더 큽니다. 입력 구간이 같고 모형 계수가 같다면 두 시점의 처음 최고 ΔT는 같습니다."
+        },
+        {
+          "beforeOffset": 4465,
+          "afterOffset": 4513,
+          "before": "H0에서는 주위로 전달하는 파워가0이므로 같은E에 같은ΔT=E/C가 남습니다. H&gt;0에서 입력이 꺼져도 ΔT는 즉시0이 되지 않고 연속적으로 줄어듭니다. 꺼지는 순간 바뀌는 것은 온도 자체가 아니라 그 시간 변화율입니다.",
+          "after": "H0에서는 주위로 전달하는 파워가 0이므로 같은E에 같은 ΔT=E/C가 남습니다. H&gt;0에서 입력이 꺼져도 ΔT는 즉시 0이 되지 않고 연속적으로 줄어듭니다. 꺼지는 순간 바뀌는 것은 온도 자체가 아니라 그 시간 변화율입니다."
+        },
+        {
+          "beforeOffset": 4886,
+          "afterOffset": 4937,
+          "before": "입력 시작s0, 길이10초에 대해 u=clamp(t−s0,0,10), v=max(0,t−s0−10)이라 두면 H&gt;0에서 ΔT=(P/H)[1−exp(−Hu/C)]exp(−Hv/C)입니다. H0에서는ΔT=Pu/C입니다. 온도는K, 에너지는J로 표시하며 이전 페이지의 mK와 구별하세요.",
+          "after": "입력 시작s0, 길이 10초에 대해 u=clamp(t−s0,0,10), v=max(0,t−s0−10)이라 두면 H&gt;0에서 ΔT=(P/H)[1−exp(−Hu/C)]exp(−Hv/C)입니다. H0에서는 ΔT=Pu/C입니다. 온도는K, 에너지는J로 표시하며 이전 페이지의 mK와 구별하세요."
+        },
+        {
+          "beforeOffset": 5118,
+          "afterOffset": 5171,
+          "before": "“총 흡수E가 같으니 어느 시각의ΔT도 같다.”",
+          "after": "“총 흡수E가 같으니 어느 시각의 ΔT도 같다.”"
+        },
+        {
+          "beforeOffset": 5205,
+          "afterOffset": 5259,
+          "before": "같은E를 앞10초에 넣었을 때20초의ΔT가 더 낮은 이유는?",
+          "after": "같은E를 앞 10초에 넣었을 때 20초의 ΔT가 더 낮은 이유는?"
+        },
+        {
+          "beforeOffset": 5507,
+          "afterOffset": 5564,
+          "before": "앞 입력은 언제나 더 낮은 마지막ΔT를 갖는다",
+          "after": "앞 입력은 언제나 더 낮은 마지막 ΔT를 갖는다"
+        },
+        {
+          "beforeOffset": 5571,
+          "afterOffset": 5629,
+          "before": "열손실이 없어20초에 같은ΔT=E/C가 남는다",
+          "after": "열손실이 없어 20초에 같은 ΔT=E/C가 남는다"
+        }
+      ]
+    },
+    {
+      "path": "docs/compartment_input_scale.html",
+      "beforeSha256": "F48FEE093F84DEC652497CDFB5372CDC5C05F6DC1A597105FC60F6242B251C62",
+      "afterSha256": "16AD5B5A9E01D3633CDDAA65F3BC4F13AAE4FB0132E8CB2B2EB6ECEAADEB23E4",
+      "edits": [
+        {
+          "beforeOffset": 1083,
+          "afterOffset": 1083,
+          "before": "목표: 입력 크기/조직 응답·같은 비율/다른 계수·Ct와Ce의 부피 기준을 구별합니다.",
+          "after": "목표: 입력 크기/조직 응답·같은 비율/다른 계수·Ct와 Ce의 부피 기준을 구별합니다."
+        },
+        {
+          "beforeOffset": 1240,
+          "afterOffset": 1241,
+          "before": "의 dCt/dt=Ktrans Cp−kepCt, kep=Ktrans/ve, Ct0=0을 사용합니다. Cp=f mM를[0,5)초에 직접 정의하고 이후0입니다. f=.5/1/2이며 실제 AIF/주입량/환자 농도가 아닙니다. 혈관 직접 기여 항·MRI 신호 변환·잡음은 제외합니다.",
+          "after": "의 dCt/dt=Ktrans Cp−kepCt, kep=Ktrans/ve, Ct0=0을 사용합니다. Cp=f mM를 [0,5)초에 직접 정의하고 이후 0입니다. f=.5/1/2이며 실제 AIF/주입량/환자 농도가 아닙니다. 혈관 직접 기여 항·MRI 신호 변환·잡음은 제외합니다."
+        },
+        {
+          "beforeOffset": 1543,
+          "afterOffset": 1546,
+          "before": "기준f1의 Ktrans=.01s⁻¹/ve=.2와 비교합니다. 고정형은 f를 바꾸어도 두 계수를 유지합니다. 보상형은 Ktrans=.01/f s⁻¹, ve=.2/f로 함께 바꿉니다. 두 유형의 kep는 항상.05s⁻¹입니다. 이 페이지의 시간은초이며 기존 챕터의분과 구별합니다. 공통 계산에는 시간/60분·Ktrans×60min⁻¹·입력기간5/60분으로 변환합니다.",
+          "after": "기준f1의 Ktrans=.01 s⁻¹/ve=.2와 비교합니다. 고정형은 f를 바꾸어도 두 계수를 유지합니다. 보상형은 Ktrans=.01/f s⁻¹, ve=.2/f로 함께 바꿉니다. 두 유형의 kep는 항상.05 s⁻¹입니다. 이 페이지의 시간은 초이며 기존 챕터의분과 구별합니다. 공통 계산에는 시간/60분·Ktrans×60min⁻¹·입력기간 5/60분으로 변환합니다."
+        },
+        {
+          "beforeOffset": 1836,
+          "afterOffset": 1843,
+          "before": "같은 f2에서 계수를 고정하면 기준Ct와 같을까요?",
+          "after": "같은 f2에서 계수를 고정하면 기준 Ct와 같을까요?"
+        },
+        {
+          "beforeOffset": 1925,
+          "afterOffset": 1933,
+          "before": "보상형f2를f.5로 바꾸면 Ct와Ktrans/ve는?",
+          "after": "보상형f2를f.5로 바꾸면 Ct와 Ktrans/ve는?"
+        },
+        {
+          "beforeOffset": 2014,
+          "afterOffset": 2023,
+          "before": "입력이 끝나는 정확한5초에 Cp와Ct는?",
+          "after": "입력이 끝나는 정확한 5초에 Cp와 Ct는?"
+        },
+        {
+          "beforeOffset": 2810,
+          "afterOffset": 2821,
+          "before": "기본: 보상형 / f2 / t10초. 기준 회색 곡선은 언제나f1/Ktrans.01s⁻¹/ve.2입니다. 계수는 직접 선택한 전진 모형 값이며 환자 fitting의 결과가 아닙니다.",
+          "after": "기본: 보상형 / f2 / t10초. 기준 회색 곡선은 언제나f1/Ktrans .01 s⁻¹/ve .2입니다. 계수는 직접 선택한 전진 모형 값이며 환자 fitting의 결과가 아닙니다."
+        },
+        {
+          "beforeOffset": 3093,
+          "afterOffset": 3107,
+          "before": "파랑: 선택 Cp=f mM · 회색 점선: 기준 Cp1mM. 시간0–20초·농도0–2.2mM의 고정 축입니다.5초 직전 값은 빈 원, 정확히5초의 값0은 채운 점입니다. 선택 시각은 파랑 점/세로선입니다.",
+          "after": "파랑: 선택 Cp=f mM · 회색 점선: 기준 Cp1 mM. 시간 0–20초·농도 0–2.2 mM의 고정 축입니다. 5초 직전 값은 빈 원, 정확히 5초의 값 0은 채운 점입니다. 선택 시각은 파랑 점/세로선입니다."
+        },
+        {
+          "beforeOffset": 3332,
+          "afterOffset": 3353,
+          "before": "파랑 실선: 선택 Ct · 회색 점선/빈 원: 기준f1의 Ct. 겹치면 같은 Ct 곡선이지만 계수까지 같은 것은 아닙니다. 시간0–20초·조직 부피 기준0–.1mM의 고정 축입니다. 입력종료5초에서Ct는 연속입니다.",
+          "after": "파랑 실선: 선택 Ct · 회색 점선/빈 원: 기준f1의 Ct. 겹치면 같은 Ct 곡선이지만 계수까지 같은 것은 아닙니다. 시간 0–20초·조직 부피 기준 0–.1 mM의 고정 축입니다. 입력 종료 5초에서 Ct는 연속입니다."
+        },
+        {
+          "beforeOffset": 4230,
+          "afterOffset": 4257,
+          "before": "0…20초, .1초 간격201점. 농도/누적량은mM, 유입/유출률은조직 부피 기준mM/s입니다. 누적 유입−누적 유출=현재 Ct입니다. 선택 행은파랑입니다.",
+          "after": "0…20초, .1초 간격 201점. 농도/누적량은mM, 유입/유출률은조직 부피 기준mM/s입니다. 누적 유입−누적 유출=현재 Ct입니다. 선택 행은파랑입니다."
+        },
+        {
+          "beforeOffset": 4592,
+          "afterOffset": 4620,
+          "before": "보상형에서는 f가 커질수록 Cp는 커지고 Ktrans와ve는 작아집니다. Ktrans Cp와kep가 모두 기준과 같으므로 Ct의 미분방정식/초기값이 같아 전체Ct도 같습니다. kep가 같다는 것만으로 Ktrans와ve를 각각 같은 값으로 정할 수는 없습니다.",
+          "after": "보상형에서는 f가 커질수록 Cp는 커지고 Ktrans와 ve는 작아집니다. Ktrans Cp와 kep가 모두 기준과 같으므로 Ct의 미분방정식/초기 값이 같아 전체 Ct도 같습니다. kep가 같다는 것만으로 Ktrans와 ve를 각각 같은 값으로 정할 수는 없습니다."
+        },
+        {
+          "beforeOffset": 4857,
+          "afterOffset": 4890,
+          "before": "같은 Ct여도 ve가 다르면Ce=Ct/ve는달라집니다. 또한 입력종료 뒤Cp가 0이어도 남아 있는Ct는 연속적으로 washout합니다. 한 시각의Cp와 과거 입력의 누적 응답을 혼동하지 마세요.",
+          "after": "같은 Ct여도 ve가 다르면 Ce=Ct/ve는달라집니다. 또한 입력 종료 뒤 Cp가 0이어도 남아 있는 Ct는 연속적으로 washout합니다. 한 시각의 Cp와 과거 입력의 누적 응답을 혼동하지 마세요."
+        },
+        {
+          "beforeOffset": 5019,
+          "afterOffset": 5057,
+          "before": "기준 Cp0(t)에 대해 보상형 Cp=fCp0, Ktrans=K0/f, ve=ve0/f이면 kep=(K0/f)/(ve0/f)=K0/ve0입니다. dCt/dt=(K0/f)fCp0−kepCt=K0Cp0−kepCt가 되어 기준과 같습니다. 이는 알려진 함수 형태/잡음 없는 단일 구획/입력 배율만의 불확실성이라는 제한에서 유도한 예입니다.",
+          "after": "기준 Cp0(t)에 대해 보상형 Cp=fCp0, Ktrans=K0/f, ve=ve 0/f이면 kep=(K0/f)/(ve 0/f)=K0/ve 0입니다. dCt/dt=(K0/f)fCp0−kepCt=K0Cp0−kepCt가 되어 기준과 같습니다. 이는 알려진 함수 형태/잡음 없는 단일 구획/입력 배율만의 불확실성이라는 제한에서 유도한 예입니다."
+        },
+        {
+          "beforeOffset": 5212,
+          "afterOffset": 5253,
+          "before": "Ct(t)=Ktrans∫₀ᵗCp(s)exp[−kep(t−s)]ds입니다. Ktrans/kep는s⁻¹, t는초, 농도는mM이며 Ct는조직 부피 기준입니다. 공통 함수의min 단위로 바꿀 때 s⁻¹값에60을 곱하고 시간과입력기간은60으로 나눕니다. 실제 신호→농도/AIF 추정이나 fitting은 수행하지 않습니다.",
+          "after": "Ct(t)=Ktrans∫₀ᵗCp(s)exp[−kep(t−s)]ds입니다. Ktrans/kep는s⁻¹, t는초, 농도는mM이며 Ct는 조직 부피 기준입니다. 공통 함수의min 단위로 바꿀 때 s⁻¹값에 60을 곱하고 시간과입력기간은 60으로 나눕니다. 실제 신호→농도/AIF 추정이나 fitting은 수행하지 않습니다."
+        },
+        {
+          "beforeOffset": 5458,
+          "afterOffset": 5502,
+          "before": "“Ct가 겹쳤으니 선택한Ktrans와ve도같다.”",
+          "after": "“Ct가 겹쳤으니 선택한 Ktrans와 ve도같다.”"
+        },
+        {
+          "beforeOffset": 5613,
+          "afterOffset": 5659,
+          "before": "서로 다른Cp/Ktrans/ve 조합에서도 나올 수 있다",
+          "after": "서로 다른 Cp/Ktrans/ve 조합에서도 나올 수 있다"
+        },
+        {
+          "beforeOffset": 5801,
+          "afterOffset": 5848,
+          "before": "같은 Ct인데ve가 다르면Ce는?",
+          "after": "같은 Ct인데 ve가 다르면 Ce는?"
+        },
+        {
+          "beforeOffset": 5912,
+          "afterOffset": 5961,
+          "before": "EES 부피 기준Ce=Ct/ve이므로 달라질 수 있다",
+          "after": "EES 부피 기준 Ce=Ct/ve이므로 달라질 수 있다"
+        },
+        {
+          "beforeOffset": 6369,
+          "afterOffset": 6419,
+          "before": "실제 MR 신호/농도변환·측정AIF/혈관 직접항·잡음/환자fitting·혈류/투과성 분리·진단/프로토콜은 미구현입니다. 임상 영상은 없습니다. ",
+          "after": "실제 MR 신호/농도 변환·측정AIF/혈관 직접항·잡음/환자 fitting·혈류/투과성 분리·진단/프로토콜은 미구현입니다. 임상 영상은 없습니다. "
+        }
+      ]
+    },
+    {
+      "path": "docs/vascular_ees_components.html",
+      "beforeSha256": "00DE6722FD4743A4FDE72612D653851714A1DB5AE2E20731E921238C8C20726A",
+      "afterSha256": "E5F6E3C95CC911586E47492441D2ED8F07BAA2DF8C3454EBE8B407EAD91E3F0C",
+      "edits": [
+        {
+          "beforeOffset": 1172,
+          "afterOffset": 1172,
+          "before": "알려진 혈장 입력 Cp=1mM를[0,5)초에 직접 정의하고 이후0입니다. ve=.2, 혈장 부피분율 vp=0/.05/.1, Ktrans=0/.01s⁻¹를 선택합니다. 모든 값은 교육용이며 실제 AIF/주입량/환자 계수가 아닙니다.",
+          "after": "알려진 혈장 입력 Cp=1 mM를 [0,5)초에 직접 정의하고 이후 0입니다. ve=.2, 혈장 부피분율 vp=0/.05/.1, Ktrans=0/.01 s⁻¹를 선택합니다. 모든 값은 교육용이며 실제 AIF/주입량/환자 계수가 아닙니다."
+        },
+        {
+          "beforeOffset": 1533,
+          "afterOffset": 1537,
+          "before": "Cp는혈장 부피 기준, T/V/전체Ct는조직 부피 기준 농도이며 단위는mM=mmol/L입니다. EES 자체 부피 기준 Ce=T/ve도 따로 표시합니다. 혈관 항이 있으면 입력 시작0초의 전체Ct(0)=vpCp(0)이지만 EES 기여T(0)는0입니다. 실제 MRI신호/농도변환·AIF 측정·환자fitting/진단은 계산하지 않습니다.",
+          "after": "Cp는 혈장 부피 기준, T/V/전체 Ct는 조직 부피 기준 농도이며 단위는 mM=mmol/L입니다. EES 자체 부피 기준 Ce=T/ve도 따로 표시합니다. 혈관 항이 있으면 입력 시작 0초의 전체 Ct(0)=vpCp(0)이지만 EES 기여 T(0)는 0입니다. 실제 MRI 신호/농도 변환·AIF 측정·환자 fitting/진단은 계산하지 않습니다."
+        },
+        {
+          "beforeOffset": 1808,
+          "afterOffset": 1823,
+          "before": "입력이 끝나는 정확한5초에 전체Ct는 어떻게 바뀔까요?",
+          "after": "입력이 끝나는 정확한 5초에 전체 Ct는 어떻게 바뀔까요?"
+        },
+        {
+          "beforeOffset": 1906,
+          "afterOffset": 1923,
+          "before": "vp만0으로 만들면 입력 종료의 점프는?",
+          "after": "vp만 0으로 만들면 입력 종료의 점프는?"
+        },
+        {
+          "beforeOffset": 2001,
+          "afterOffset": 2019,
+          "before": "Ktrans가0이어도 전체Ct가 남을 수 있을까요?",
+          "after": "Ktrans가 0이어도 전체 Ct가 남을 수 있을까요?"
+        },
+        {
+          "beforeOffset": 2741,
+          "afterOffset": 2761,
+          "before": "기본: vp.1 / Ktrans.01s⁻¹ / t2초. ve.2·입력 Cp1mM/[0,5)초는 고정입니다. 시간은초이며 공통 구획 계산에만 분 단위로 변환합니다. vp와ve는 서로 다른 부피분율입니다.",
+          "after": "기본: vp .1 / Ktrans .01 s⁻¹ / t2초. ve .2·입력 Cp1 mM/[0,5)초는 고정입니다. 시간은 초이며 공통 구획 계산에만 분 단위로 변환합니다. vp와 ve는 서로 다른 부피분율입니다."
+        },
+        {
+          "beforeOffset": 3039,
+          "afterOffset": 3066,
+          "before": "회색: 같은 Cp1mM 입력.5초 직전은 빈 원, 정확히5초 이후는0의 채운 점입니다. 선택 시각은파랑 점/세로선입니다. 시간0–20초·혈장 농도0–1.1mM의 고정 축입니다.",
+          "after": "회색: 같은 Cp1 mM 입력.5초 직전은 빈 원, 정확히 5초 이후는 0의 채운 점입니다. 선택 시각은파랑 점/세로선입니다. 시간 0–20초·혈장 농도 0–1.1 mM의 고정 축입니다."
+        },
+        {
+          "beforeOffset": 3267,
+          "afterOffset": 3300,
+          "before": "파랑 실선: 전체Ct · 회색 점선: 혈관V=vpCp · 주황 실선: EES 기여T.5초 직전 전체Ct는 빈 파랑 원, 정확히5초의 값은 채운 점입니다. 시간0–20초·조직 부피 기준0–.16mM의 고정 축입니다. 표에는5초의 우측 포함값을 적고 그림은좌극한도 따로 그립니다.",
+          "after": "파랑 실선: 전체 Ct · 회색 점선: 혈관V=vpCp · 주황 실선: EES 기여 T.5초 직전 전체 Ct는 빈 파랑 원, 정확히 5초의 값은 채운 점입니다. 시간 0–20초·조직 부피 기준 0–.16 mM의 고정 축입니다. 표에는 5초의 우측 포함값을 적고 그림은좌극한도 따로 그립니다."
+        },
+        {
+          "beforeOffset": 3778,
+          "afterOffset": 3819,
+          "before": "5초 직전/직후 전체Ct 차이 (mM)",
+          "after": "5초 직전/직후 전체 Ct 차이 (mM)"
+        },
+        {
+          "beforeOffset": 4105,
+          "afterOffset": 4147,
+          "before": "201점, .1초 간격. 농도/누적량은mM, EES 교환률은조직 부피 기준mM/s입니다. EES 누적 유입−누적 유출=T이며 전체Ct와 구별합니다.5초 행은 Cp/V=0인 우측 포함값입니다.",
+          "after": "201점, .1초 간격. 농도/누적량은mM, EES 교환률은조직 부피 기준mM/s입니다. EES 누적 유입−누적 유출=T이며 전체 Ct와 구별합니다. 5초 행은 Cp/V=0인 우측 포함값입니다."
+        },
+        {
+          "beforeOffset": 4348,
+          "afterOffset": 4392,
+          "before": "EES 누적유입",
+          "after": "EES 누적 유입"
+        },
+        {
+          "beforeOffset": 4365,
+          "afterOffset": 4410,
+          "before": "EES 누적유출",
+          "after": "EES 누적 유출"
+        },
+        {
+          "beforeOffset": 4498,
+          "afterOffset": 4544,
+          "before": "V=vpCp는 주어진 혈장 입력을 직접 따라갑니다. 입력종료5초에서Cp가1에서0으로 바뀌면 V도 vp mM만큼 즉시 줄어듭니다. 반면T는 이전 유입이 누적된 상태이므로 연속적으로 남아 washout합니다. 전체Ct의 점프는 그때 사라진 혈관 직접항입니다.",
+          "after": "V=vpCp는 주어진 혈장 입력을 직접 따라갑니다. 입력 종료 5초에서 Cp가 1에서 0으로 바뀌면 V도 vp mM만큼 즉시 줄어듭니다. 반면T는 이전 유입이 누적된 상태이므로 연속적으로 남아 washout합니다. 전체 Ct의 점프는 그때 사라진 혈관 직접항입니다."
+        },
+        {
+          "beforeOffset": 4647,
+          "afterOffset": 4699,
+          "before": "Ktrans0이면 EES로 들어가는 항이0이라T/Ce는0이지만, vp&gt;0이고Cp&gt;0이면 전체Ct=vpCp는0이 아닙니다. 이는 이전 혈관항 없는 모형과 모순이 아닙니다. 전체와 EES 기여의 정의가 다릅니다. 실제 밝기/혈류/투과성이나 질병을 이 값으로 단정하지 않습니다.",
+          "after": "Ktrans 0이면 EES로 들어가는 항이 0이라T/Ce는 0이지만, vp&gt;0이고 Cp&gt;0이면 전체 Ct=vpCp는 0이 아닙니다. 이는 이전 혈관항 없는 모형과 모순이 아닙니다. 전체와 EES 기여의 정의가 다릅니다. 실제 밝기/혈류/투과성이나 질병을 이 값으로 단정하지 않습니다."
+        },
+        {
+          "beforeOffset": 4812,
+          "afterOffset": 4870,
+          "before": "vp0에서는 전체Ct와T가 겹치고 입력 종료에서 점프가 없습니다.5초 직전/직후의한계값 차이와4.9초/5초 같은 서로 다른 표본의차이를 구별하세요. 후자에는 그동안의 EES 변화도 섞입니다.",
+          "after": "vp 0에서는 전체 Ct와T가 겹치고 입력 종료에서 점프가 없습니다. 5초 직전/직후의 한계값 차이와 4.9초/5초 같은 서로 다른 표본의차이를 구별하세요. 후자에는 그동안의 EES 변화도 섞입니다."
+        },
+        {
+          "beforeOffset": 4969,
+          "afterOffset": 5032,
+          "before": "V(t)=vpCp(t), T(t)=Ktrans∫₀ᵗCp(s)exp[−kep(t−s)]ds, Ct=V+T, Ce=T/ve입니다. kep=Ktrans/ve이며여기 시간은초, Ktrans/kep는s⁻¹입니다. 공통함수에는 Ktrans×60min⁻¹·t/60분·입력기간5/60분을 넣습니다.",
+          "after": "V(t)=vpCp(t), T(t)=Ktrans∫₀ᵗCp(s)exp[−kep(t−s)]ds, Ct=V+T, Ce=T/ve입니다. kep=Ktrans/ve이며 여기 시간은 초, Ktrans/kep는s⁻¹입니다. 공통 함수에는 Ktrans×60min⁻¹·t/60분·입력기간 5/60분을 넣습니다."
+        },
+        {
+          "beforeOffset": 5134,
+          "afterOffset": 5201,
+          "before": "직사각 입력에서 T(5⁻)=T(5), V(5⁻)=vp·1mM이며 V(5)=0이므로 Ct(5⁻)−Ct(5)=vp·1mM입니다. 입력Cp를 주어진 저장소로 두었으므로 EES 누적 유입/유출 보존을 전체혈관 저장소의 질량 보존으로 확대하지 않습니다.",
+          "after": "직사각 입력에서 T(5⁻)=T(5), V(5⁻)=vp·1 mM이며 V(5)=0이므로 Ct(5⁻)−Ct(5)=vp·1 mM입니다. 입력 Cp를 주어진 저장소로 두었으므로 EES 누적 유입/유출 보존을 전체 혈관 저장소의 질량 보존으로 확대하지 않습니다."
+        },
+        {
+          "beforeOffset": 5342,
+          "afterOffset": 5413,
+          "before": "“전체Ct가 입력과 함께 떨어졌으니 EES도 순간적으로 모두 비워졌다.”",
+          "after": "“전체 Ct가 입력과 함께 떨어졌으니 EES도 순간적으로 모두 비워졌다.”"
+        },
+        {
+          "beforeOffset": 5434,
+          "afterOffset": 5506,
+          "before": "입력 종료5초에서 즉시 사라지는 기여는?",
+          "after": "입력 종료 5초에서 즉시 사라지는 기여는?"
+        },
+        {
+          "beforeOffset": 5554,
+          "afterOffset": 5627,
+          "before": "축적된 EES 기여가 항상 즉시0이 되는 것이다",
+          "after": "축적된 EES 기여가 항상 즉시 0이 되는 것이다"
+        },
+        {
+          "beforeOffset": 5675,
+          "afterOffset": 5749,
+          "before": "Ktrans0, vp.1, t2초의 이번 모형은?",
+          "after": "Ktrans 0, vp .1, t2초의 이번 모형은?"
+        },
+        {
+          "beforeOffset": 5734,
+          "afterOffset": 5810,
+          "before": "이전 EES 모형처럼 전체Ct도 반드시0이다",
+          "after": "이전 EES 모형처럼 전체 Ct도 반드시 0이다"
+        },
+        {
+          "beforeOffset": 5796,
+          "afterOffset": 5874,
+          "before": "EES 기여0이어도 혈관 직접항으로 전체Ct가 남는다",
+          "after": "EES 기여 0이어도 혈관 직접항으로 전체 Ct가 남는다"
+        },
+        {
+          "beforeOffset": 5921,
+          "afterOffset": 6001,
+          "before": "학습 후: 실제 입력의 유한 상승/하강이나 MRI신호 변환을 포함하면 이 날카로운 점프가 그대로 보일까요?",
+          "after": "학습 후: 실제 입력의 유한 상승/하강이나 MRI 신호 변환을 포함하면 이 날카로운 점프가 그대로 보일까요?"
+        },
+        {
+          "beforeOffset": 6266,
+          "afterOffset": 6347,
+          "before": "실제 MR 신호/농도변환·AIF 측정·혈류/투과성 분리·환자fitting/진단/투여·프로토콜은 미구현입니다. 임상 영상은 없습니다. ",
+          "after": "실제 MR 신호/농도 변환·AIF 측정·혈류/투과성 분리·환자 fitting/진단/투여·프로토콜은 미구현입니다. 임상 영상은 없습니다. "
+        }
+      ]
+    },
+    {
+      "path": "docs/axis_scale_area.html",
+      "beforeSha256": "F4CA6FAB3E52AB33018A91F90D195566266B0808C35A8A59B77B9CE158C00F4B",
+      "afterSha256": "254BF3E07EACDD4CD03766FDA97A0231CBE5C4F7705A7B6FAB6C30744E7B88C5",
+      "edits": [
+        {
+          "beforeOffset": 1250,
+          "afterOffset": 1250,
+          "before": "는20mm 간격이며 x는오른쪽, y는위쪽입니다. 먼저 S=diag(sx,sy)로 원점에서 축별 배율을 적용하고, 그 결과를 같은 원점에서 반시계 θ=0/30도로 회전합니다. 최종 좌표는 RSp입니다. 평행이동은 없습니다.",
+          "after": "는 20 mm 간격이며 x는오른쪽, y는위쪽입니다. 먼저 S=diag(sx,sy)로 원점에서 축별 배율을 적용하고, 그 결과를 같은 원점에서 반시계 θ=0/30도로 회전합니다. 최종 좌표는 RSp입니다. 평행이동은 없습니다."
+        },
+        {
+          "beforeOffset": 1505,
+          "afterOffset": 1507,
+          "before": "FOV128×128mm·pixel 간격(행 Δy2,열 Δx1)mm는고정입니다. 물리 변환 뒤 u=(X+64)/Δx−.5, v=(64−Y)/Δy−.5로 환산하고 반올림하지 않습니다. 같은 물리 축척으로 그리며 비등방 pixel 좌표 자체를 회전하지 않습니다. 점 ID는 원래 점 이름이고 현재 pixel 행/열과 다릅니다.",
+          "after": "FOV128×128 mm·pixel 간격(행 Δy 2,열 Δx 1)mm는 고정입니다. 물리 변환 뒤 u=(X+64)/Δx−.5, v=(64−Y)/Δy−.5로 환산하고 반올림하지 않습니다. 같은 물리 축척으로 그리며 비등방 pixel 좌표 자체를 회전하지 않습니다. 점 ID는 원래 점 이름이고 현재 pixel 행/열과 다릅니다."
+        },
+        {
+          "beforeOffset": 1865,
+          "afterOffset": 1871,
+          "before": "회전만0으로 만들면 길이/면적은?",
+          "after": "회전만 0으로 만들면 길이/면적은?"
+        },
+        {
+          "beforeOffset": 1948,
+          "afterOffset": 1955,
+          "before": "배율이1인 강체 회전과 비교하세요.",
+          "after": "배율이 1인 강체 회전과 비교하세요."
+        },
+        {
+          "beforeOffset": 1992,
+          "afterOffset": 2000,
+          "before": "배율1 · 가로 · θ30도",
+          "after": "배율 1 · 가로 · θ30도"
+        },
+        {
+          "beforeOffset": 3313,
+          "afterOffset": 3322,
+          "before": "회색 빈 원: 원래 위치 · 옅은 선: 각 점의 변위 · 파랑 원: 원래 점 · 주황 네모: 변환된 점. 굵은 선/P·Q는 같은 원래 두 점입니다. 옅은 면은 바깥 네 모서리의 다각형이며 점 사이가 실제 조직/영상으로 채워졌다는 뜻이 아닙니다. X/Y는같은 mm 축척입니다. 교육용 기하 도식이며 임상 영상이 아닙니다.",
+          "after": "회색 빈 원: 원래 위치 · 옅은 선: 각 점의 변위 · 파랑 원: 원래 점 · 주황 네모: 변환된 점. 굵은 선/P·Q는 같은 원래 두 점입니다. 옅은 면은 바깥 네 모서리의 다각형이며 점 사이가 실제 조직/영상으로 채워졌다는 뜻이 아닙니다. X/Y는 같은 mm 축척입니다. 교육용 기하 도식이며 임상 영상이 아닙니다."
+        },
+        {
+          "beforeOffset": 4184,
+          "afterOffset": 4194,
+          "before": "25개 알려진 점. x/y/X/Y는mm, u/v는pixel 중심 좌표입니다. 간격은행2/열1mm로고정이며 P/Q 행은파랑/주황 배경입니다.",
+          "after": "25개 알려진 점. x/y/X/Y는mm, u/v는 pixel 중심 좌표입니다. 간격은 행 2/열 1 mm로 고정이며 P/Q 행은파랑/주황 배경입니다."
+        },
+        {
+          "beforeOffset": 4489,
+          "afterOffset": 4505,
+          "before": "면적비1은 길이비1을 보장하지 않습니다",
+          "after": "면적비 1은 길이비 1을 보장하지 않습니다"
+        },
+        {
+          "beforeOffset": 4518,
+          "afterOffset": 4536,
+          "before": "이번 양의 배율에서 면적비는 sx sy입니다. 같은 면적 예시는1.02×(1/1.02)=1이지만 가로 길이비1.02, 세로 길이비1/1.02입니다. 원래80mm 가로는81.6mm, 세로는약78.431373mm로바뀝니다. 한 숫자인 면적만으로 모든 방향의 길이를 판단할 수 없습니다.",
+          "after": "이번 양의 배율에서 면적비는 sx sy입니다. 같은 면적 예시는 1.02×(1/1.02)=1이지만 가로 길이비 1.02, 세로 길이비 1/1.02입니다. 원래 80 mm 가로는 81.6 mm, 세로는약 78.431373 mm로바뀝니다. 한 숫자인 면적만으로 모든 방향의 길이를 판단할 수 없습니다."
+        },
+        {
+          "beforeOffset": 5425,
+          "afterOffset": 5452,
+          "before": "면적비1이므로 둘 다80mm다",
+          "after": "면적비 1이므로 둘 다 80 mm다"
+        },
+        {
+          "beforeOffset": 6186,
+          "afterOffset": 6216,
+          "before": "를 배경으로 사용합니다. 여기25점/2D 행렬/배율은직접 정한 예시이며 실제 DICOM 등록 파일이나 환자 좌표를 처리하지 않습니다.",
+          "after": "를 배경으로 사용합니다. 여기 25점/2D 행렬/배율은 직접 정한 예시이며 실제 DICOM 등록 파일이나 환자 좌표를 처리하지 않습니다."
+        }
+      ]
+    },
+    {
+      "path": "docs/assumed_pixel_spacing.html",
+      "beforeSha256": "AE4FC7EA08857F4F61C72289EED50C7BC7C382CFA9DA6F589DBD34C94E774033",
+      "afterSha256": "F526970AEDCEB366C58AB0D65CF468DDBC7409740750EB9B819075C689AA73DE",
+      "edits": [
+        {
+          "beforeOffset": 1329,
+          "afterOffset": 1329,
+          "before": "는20mm 간격이고 변형은0입니다. 실제 열 간격 Δx=1mm, 행 간격 Δy=2mm, 128열×64행, FOV128×128mm입니다. x는오른쪽, y는위쪽이고 u는오른쪽, v는아래로 증가합니다.",
+          "after": "는 20 mm 간격이고 변형은 0입니다. 실제 열 간격 Δx=1 mm, 행 간격 Δy=2 mm, 128열×64행, FOV128×128 mm입니다. x는오른쪽, y는위쪽이고 u는오른쪽, v는아래로 증가합니다."
+        },
+        {
+          "beforeOffset": 1818,
+          "afterOffset": 1824,
+          "before": "기본 세로80mm를 정확한 간격으로 환산하면?",
+          "after": "기본 세로 80 mm를 정확한 간격으로 환산하면?"
+        },
+        {
+          "beforeOffset": 1988,
+          "afterOffset": 1996,
+          "before": "열 간격만2mm로 잘못 가정하면?",
+          "after": "열 간격만 2 mm로 잘못 가정하면?"
+        },
+        {
+          "beforeOffset": 2709,
+          "afterOffset": 2719,
+          "before": "기본: 가정(1,1) / 중심 세로. 실제 간격은행2/열1mm로고정입니다. 모든 점의 u/v와 원래 ID는바꾸지 않습니다. 두 그림은 중심을(0,0)으로맞추고 같은 고정 mm 축척으로 표시합니다.",
+          "after": "기본: 가정(1,1) / 중심 세로. 실제 간격은 행 2/열 1 mm로 고정입니다. 모든 점의 u/v와 원래 ID는바꾸지 않습니다. 두 그림은 중심을(0,0)으로맞추고 같은 고정 mm 축척으로 표시합니다."
+        },
+        {
+          "beforeOffset": 3187,
+          "afterOffset": 3202,
+          "before": "파랑 원: 정답 · 주황 네모: 가정 환산 · P/Q와굵은 선: 같은 원래 두 점. 옅은 사각형은128열×64행을 각 간격으로 환산한 영상 범위입니다. 고정 X/Y±128mm의 같은 축척이며, 실제 범위와 잘못 환산한 범위를 구별합니다. 교육용 좌표 도식이며 임상 영상이 아닙니다.",
+          "after": "파랑 원: 정답 · 주황 네모: 가정 환산 · P/Q와 굵은 선: 같은 원래 두 점. 옅은 사각형은 128열×64행을 각 간격으로 환산한 영상 범위입니다. 고정 X/Y±128 mm의 같은 축척이며, 실제 범위와 잘못 환산한 범위를 구별합니다. 교육용 좌표 도식이며 임상 영상이 아닙니다."
+        },
+        {
+          "beforeOffset": 4031,
+          "afterOffset": 4049,
+          "before": "25개 알려진 점. 정답/가정 x/y는mm, 모든 조건의 u/v는같은 분수 pixel 중심 좌표입니다. P/Q 행은파랑/주황 배경입니다.",
+          "after": "25개 알려진 점. 정답/가정 x/y는mm, 모든 조건의 u/v는 같은 분수 pixel 중심 좌표입니다. P/Q 행은파랑/주황 배경입니다."
+        },
+        {
+          "beforeOffset": 4342,
+          "afterOffset": 4361,
+          "before": "중심 세로 선분은 Δu0/Δv−40pixel입니다. 실제 행 간격2mm이면80mm지만 행 간격1mm로가정하면40mm입니다. 점 좌표는 정확해도 환산된 길이는 틀릴 수 있습니다.",
+          "after": "중심 세로 선분은 Δu0/Δv−40pixel입니다. 실제 행 간격 2 mm이면 80 mm지만 행 간격 1 mm로 가정하면 40 mm입니다. 점 좌표는 정확해도 환산된 길이는 틀릴 수 있습니다."
+        },
+        {
+          "beforeOffset": 4447,
+          "afterOffset": 4475,
+          "before": "같은(1,1) 가정에서 중심 가로는 Δu80/Δv0이라80mm로맞습니다. 한 방향의 길이가 맞는다는 이유로 다른 방향이나 전체 기하도 맞다고 결론내릴 수 없습니다. 대각선에는 두 축 간격이 함께 작용합니다.",
+          "after": "같은(1,1) 가정에서 중심 가로는 Δu80/Δv0이라 80 mm로맞습니다. 한 방향의 길이가 맞는다는 이유로 다른 방향이나 전체 기하도 맞다고 결론내릴 수 없습니다. 대각선에는 두 축 간격이 함께 작용합니다."
+        },
+        {
+          "beforeOffset": 4569,
+          "afterOffset": 4599,
+          "before": "가정 간격을 바꾸면 고정 행/열 수의 환산 영상 범위도 바뀝니다. 정확한 범위128×128mm가(1,1) 가정에서는128×64mm, (2,2) 가정에서는256×128mm로환산됩니다. 실제 물체가 변형된 결과와 단위 환산만 잘못한 결과를 구별하세요.",
+          "after": "가정 간격을 바꾸면 고정 행/열 수의 환산 영상 범위도 바뀝니다. 정확한 범위 128×128 mm가(1,1) 가정에서는 128×64 mm, (2,2) 가정에서는 256×128 mm로환산됩니다. 실제 물체가 변형된 결과와 단위 환산만 잘못한 결과를 구별하세요."
+        },
+        {
+          "beforeOffset": 4759,
+          "afterOffset": 4795,
+          "before": "L가정=√[(ΔuΔx가정)²+(ΔvΔy가정)²]입니다. 이번 실제 간격의 정답은 L참=√[(Δu×1mm)²+(Δv×2mm)²]입니다. 방향에따라 길이비가 달라지며 단순히 한 숫자로 모든 방향을 보정하지 않습니다.",
+          "after": "L가정=√[(ΔuΔx가정)²+(ΔvΔy가정)²]입니다. 이번 실제 간격의 정답은 L참=√[(Δu×1 mm)²+(Δv×2 mm)²]입니다. 방향에따라 길이비가 달라지며 단순히 한 숫자로 모든 방향을 보정하지 않습니다."
+        },
+        {
+          "beforeOffset": 5174,
+          "afterOffset": 5212,
+          "before": "세로 좌표 차이40pixel을 실제 행 간격2mm로 환산하면?",
+          "after": "세로 좌표 차이 40pixel을 실제 행 간격 2 mm로 환산하면?"
+        },
+        {
+          "beforeOffset": 5243,
+          "afterOffset": 5284,
+          "before": "열 간격1mm를 써서40mm다",
+          "after": "열 간격 1 mm를 써서 40 mm다"
+        },
+        {
+          "beforeOffset": 5300,
+          "afterOffset": 5345,
+          "before": "행 간격2mm를 써서80mm다",
+          "after": "행 간격 2 mm를 써서 80 mm다"
+        },
+        {
+          "beforeOffset": 5410,
+          "afterOffset": 5459,
+          "before": "가정(1,1)에서 가로80mm가 맞으면?",
+          "after": "가정(1,1)에서 가로 80 mm가 맞으면?"
+        },
+        {
+          "beforeOffset": 5897,
+          "afterOffset": 5948,
+          "before": "를 배경으로 사용합니다. 정답과 가정 값/25점은직접 정한 교육 예시입니다. 실제 DICOM metadata를 탐지/변경하지 않습니다.",
+          "after": "를 배경으로 사용합니다. 정답과 가정 값/25점은 직접 정한 교육 예시입니다. 실제 DICOM metadata를 탐지/변경하지 않습니다."
+        }
+      ]
+    }
+  ]
+}

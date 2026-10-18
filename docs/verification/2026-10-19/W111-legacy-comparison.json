@@ -1,0 +1,43 @@
+{
+  "beforeStates": 108,
+  "afterStates": 108,
+  "comparisons": [
+    {
+      "name": "transfer",
+      "states": 72,
+      "modelTableSvgOutputsIdentical": true
+    },
+    {
+      "name": "release",
+      "states": 36,
+      "modelTableSvgOutputsIdentical": true
+    }
+  ],
+  "numeric": [
+    {
+      "before": "docs/verification/2026-10-19/X18-transfer-numerical.json",
+      "after": "docs/verification/2026-10-19/W111-legacy-transfer-numerical.json",
+      "sha256": "ab6db750d55fea198898d80964442a2276ac06a6d8e00fac7b860903409d9850",
+      "identical": true
+    },
+    {
+      "before": "docs/verification/2026-10-19/X18-transfer-display-reference.json",
+      "after": "docs/verification/2026-10-19/W111-legacy-transfer-display-reference.json",
+      "sha256": "0c490fd4d4810afbae58487d8360626a4cf9d0ca43a3b6df978aebe654a5227a",
+      "identical": true
+    },
+    {
+      "before": "docs/verification/2026-10-19/X18-release-numerical.json",
+      "after": "docs/verification/2026-10-19/W111-legacy-release-numerical.json",
+      "sha256": "c93b48d66a0091b5d500b0363cb96bd2168d9e5b367cca417ce6d3833dad8f95",
+      "identical": true
+    },
+    {
+      "before": "docs/verification/2026-10-19/X18-release-display-reference.json",
+      "after": "docs/verification/2026-10-19/W111-legacy-release-display-reference.json",
+      "sha256": "5910c676ec2f71675166a35f8a376f4b134607a7dace009c95f2d0cb3a7fb196",
+      "identical": true
+    }
+  ],
+  "passed": true
+}

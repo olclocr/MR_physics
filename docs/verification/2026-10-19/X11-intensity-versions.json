@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W106 prescribed positive gain/reference contrast and exact phase; common IR reused unchanged; no actual coil map/noise/PSIR/clinical reconstruction; own report excluded",
+  "files": [
+    {
+      "path": "docs/ir_intensity_normalization.html",
+      "sha256": "7937A5F52B2243E0F9C9304DB01A9C059A64CFEEAF401E3E3DFEC6F4A42EDC61"
+    },
+    {
+      "path": "docs/assets/ir-intensity-model.js",
+      "sha256": "44CC6AA704FF25D6CCDF795224A3A903F7A45789E1F9FD304FA72F01519ADD4D"
+    },
+    {
+      "path": "docs/assets/ir-phase-reference-model.js",
+      "sha256": "9D5A0546F7EA68199A803E85C7A6F3F0B782F2C8580E29D0BBE02065BF4BDB27"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/ir-intensity.test.cjs",
+      "sha256": "F719CF257AC31A292DD473877611125282DE854DB177401EA2D8A5FAC15CC915"
+    },
+    {
+      "path": "tests/helpers/ir-intensity-reference.cjs",
+      "sha256": "2D6BD16745208E7DE8C071C6DB4F2FFEC6DB82A6D0F2E406B9B270C6729F4BD7"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-numerical.cjs",
+      "sha256": "77554FA06A69DD8C94753946322115A3A19D01523AEBBEE15D8C47AAD3438DDF"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-numerical.json",
+      "sha256": "47113849E2C799F68AAE73E41E74058884BC036AD845268B1B06C23285B4466F"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-display-reference.json",
+      "sha256": "C8C70F8ECE6DC903C09299E0F6D42EC40F6DD89BC5B3EACEF59E7493A926B872"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-browser-check.js",
+      "sha256": "F3142FABDE3A53B104E4FBB768776279EEAC9CDDA237E5856B786C0E21317020"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-browser-check.json",
+      "sha256": "6B508396EFCE4CD9FFBA2A639EA2BEFEB860B20AC417E90C22C670C15F812B04"
+    }
+  ],
+  "presentationRevisions": [
+    {
+      "task": "W112",
+      "proof": "docs/verification/2026-10-19/W112-svg-margins.md",
+      "audit": "docs/verification/2026-10-19/W112-edit-audit.json",
+      "scope": "Only two SVG title y positions; calculations/table and all other SVG bytes preserved"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W110",
+      "proof": "docs/verification/2026-10-19/W110-manifest-updates.json",
+      "scope": "One successor link; prior complete file SHA reconstructed"
+    }
+  ]
+}

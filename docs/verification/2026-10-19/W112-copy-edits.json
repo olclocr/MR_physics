@@ -1,0 +1,32 @@
+[
+  {
+    "path": "docs/ir_phase_reference.html",
+    "beforeSha256": "6C7B341D4C5FA26E25755B8DE90717EA30D2D91302971B2CD13F5DCCF8EC2F70",
+    "afterSha256": "1CB01FCE22255A6A5EC19CF2448B92420AEF89B7EC12C810EEE1A941E3129D75",
+    "changes": [
+      {
+        "before": "<text x=\"320\" y=\"635\">실수 Re</text>",
+        "after": "<text x=\"320\" y=\"628\">실수 Re</text>"
+      },
+      {
+        "before": "<text x=\"95\" y=\"20\">M0=1 기준 값</text>",
+        "after": "<text x=\"95\" y=\"35\">M0=1 기준 값</text>"
+      }
+    ]
+  },
+  {
+    "path": "docs/ir_intensity_normalization.html",
+    "beforeSha256": "0344D23C5122A7F5A98B7A8F10AED0A4F97EA62D5911177B666F8A81B31BA080",
+    "afterSha256": "F665266C7BD9F8E819287A84EA05A8E2F2C07B064E2B7591BC72A35D00194FE7",
+    "changes": [
+      {
+        "before": "<text x=\"320\" y=\"635\">실수 Re</text>",
+        "after": "<text x=\"320\" y=\"628\">실수 Re</text>"
+      },
+      {
+        "before": "<text x=\"95\" y=\"20\">무차원 값</text>",
+        "after": "<text x=\"95\" y=\"35\">무차원 값</text>"
+      }
+    ]
+  }
+]

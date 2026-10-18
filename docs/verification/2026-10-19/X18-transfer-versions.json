@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W107 positive two-pool longitudinal exchange/relaxation with a prescribed solute loss rate; fixed equilibria/R1; no actual RF/MT-CEST spectrum/clinical inference; own report excluded",
+  "files": [
+    {
+      "path": "docs/two_pool_saturation_transfer.html",
+      "sha256": "576B9EBEF122D21961A51F654BACF6DFA51154E68BA9598045A8904B3E91B8FF"
+    },
+    {
+      "path": "docs/assets/two-pool-transfer-model.js",
+      "sha256": "6C6A1E482F1F9CE15147F91CA41219FBF16199926A1C0190F38D3D44E6427D8C"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/two-pool-transfer.test.cjs",
+      "sha256": "A2BE875BA53A7B4897680965F12EEC52971A2AC85AD61C2FFC295E1EBD6B0AEE"
+    },
+    {
+      "path": "tests/helpers/two-pool-reference.cjs",
+      "sha256": "98F6FD9B5E0791077D9A5C5ECA305AD255850F49F3F74203A93D98911B5A8C92"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-numerical.cjs",
+      "sha256": "F6588DEDDF55BCA1683ED5E85F871DF2A0B418F3A3ACCF987E1E721693F20F56"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-numerical.json",
+      "sha256": "AB6DB750D55FEA198898D80964442A2276AC06A6D8E00FAC7B860903409D9850"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-display-reference.json",
+      "sha256": "0C490FD4D4810AFBAE58487D8360626A4CF9D0CA43A3B6DF978AEBE654A5227A"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-browser-check.js",
+      "sha256": "FD70136B9AD148EFE1D2D5C1E16DA80A7C6945CC76BDEA49D724206F9F494441"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-browser-check.json",
+      "sha256": "8E713941CA52DC63CC89E4091C9BA002983C7190C49994BBE1BFF86B00ADCAFD"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W108",
+      "proof": "docs/verification/2026-10-19/W108-manifest-updates.json",
+      "scope": "One successor link with exact prior-byte reconstruction"
+    }
+  ],
+  "physicsRevisions": [
+    {
+      "task": "W111",
+      "proof": "docs/verification/2026-10-19/X18-rates-physics.md",
+      "audit": "docs/verification/2026-10-19/W111-api-audit.json",
+      "scope": "Optional solute R1 with unchanged defaults; independent old values and108 full before/after display fingerprints identical"
+    }
+  ]
+}

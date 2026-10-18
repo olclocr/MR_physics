@@ -1,0 +1,21 @@
+{
+  "conditions": 8,
+  "curvePoints": 1288,
+  "max": {
+    "moment": 2.168404344971009e-19,
+    "energy": 1.0742275124986378e-15,
+    "force": 2.731557384796912e-13,
+    "quadratureConvergence": 1.6103004346623706e-14,
+    "derivativeConvergence": 7.917386364575396e-13
+  },
+  "tolerances": {
+    "moment": 1e-12,
+    "energy": 1e-12,
+    "force": 1e-10,
+    "quadratureConvergence": 1e-12,
+    "derivativeConvergence": 1e-10
+  },
+  "shadedPolygonAreaToleranceMj": 0.0001,
+  "failed": [],
+  "passed": true
+}

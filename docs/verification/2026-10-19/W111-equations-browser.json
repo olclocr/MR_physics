@@ -1,0 +1,16 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "results": [
+    {
+      "width": 1920,
+      "units": true,
+      "mathExpanded": true
+    },
+    {
+      "width": 390,
+      "units": true,
+      "mathExpanded": true
+    }
+  ]
+}

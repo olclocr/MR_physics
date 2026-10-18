@@ -1,0 +1,654 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 16,
+  "maxGraphicError": 0.0000049799362500380084,
+  "maxAreaErrorMj": 0.000033003411951337824,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 0.001,
+      "energy": -0.0005000000000000001,
+      "force": 0,
+      "areaErrorMj": 6.666662777377041e-10,
+      "sha256": "5303D4F7BFA5BA9305F85F41A76F810324873ED9DCDC321522655885E49881F2",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=1T에서 μ=1.000000mA·m², 힘=0.000000mN입니다. Ueff=-0.500000mJ와 비교용 절반 곱 -0.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 0.001,
+      "energy": -0.0005000000000000001,
+      "force": 0.001,
+      "areaErrorMj": 6.666662777377041e-10,
+      "sha256": "8BA6FEA64B55C159146AE05C42EA2E1407745B8D80BE3919295FFF6FBBE23DF0",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=1T에서 μ=1.000000mA·m², 힘=1.000000mN입니다. Ueff=-0.500000mJ와 비교용 절반 곱 -0.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 0.003,
+      "energy": -0.004500000000000001,
+      "force": 0,
+      "areaErrorMj": 1.7500054738661674e-9,
+      "sha256": "830639688A6EC42F82290F0F713DAF003F8F1A16E7D394E8276F6FE1807C7948",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=0.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 0.003,
+      "energy": -0.004500000000000001,
+      "force": 0.003,
+      "areaErrorMj": 1.7500054738661674e-9,
+      "sha256": "DDE7338AAE0B801DC81094F2A5B817F8C545CF01F74BF754C575BBC778F2E31A",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=3.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 0.0007615941559557648,
+      "energy": -0.0004337808304830402,
+      "force": 0,
+      "areaErrorMj": 0.00001934356637406376,
+      "sha256": "D2F8945482720899870EBE23A5822DC8401422AB414CA4CC0BE0741C1AA576A4",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.000000mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 0.0007615941559557648,
+      "energy": -0.0004337808304830402,
+      "force": 0.0007615941559557648,
+      "areaErrorMj": 0.00001934356637406376,
+      "sha256": "49A9388BB4AAD44D76CD61C6E441F333278896A59D0F08BBF17E83283BAFECA1",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.761594mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 0.0009950547536867304,
+      "energy": -0.002309328504578621,
+      "force": 0,
+      "areaErrorMj": 0.000033003411951337824,
+      "sha256": "2584A7A1089C0DED2D62A0396FD697606CF3B25CC2C31A46883B36E6023581E6",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.000000mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 0.0009950547536867304,
+      "energy": -0.002309328504578621,
+      "force": 0.0009950547536867304,
+      "areaErrorMj": 0.000033003411951337824,
+      "sha256": "4FCF261525698707AADC920C95C7E34B62026A182211E6E78092B0AAD8F3B337",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.995055mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 0.001,
+      "energy": -0.0005000000000000001,
+      "force": 0,
+      "areaErrorMj": 6.666662777377041e-10,
+      "sha256": "DEAF9CEAC853607F74C8CD05BEBAD55730872CADBE9D8B0AC16C98BB95094F98",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=1T에서 μ=1.000000mA·m², 힘=0.000000mN입니다. Ueff=-0.500000mJ와 비교용 절반 곱 -0.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 0.001,
+      "energy": -0.0005000000000000001,
+      "force": 0.001,
+      "areaErrorMj": 6.666662777377041e-10,
+      "sha256": "B34F9890267D65EE1FC0834C2467166DE081C0C99ADFA57CEA68BC8E8C263058",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=1T에서 μ=1.000000mA·m², 힘=1.000000mN입니다. Ueff=-0.500000mJ와 비교용 절반 곱 -0.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 0.003,
+      "energy": -0.004500000000000001,
+      "force": 0,
+      "areaErrorMj": 1.7500054738661674e-9,
+      "sha256": "393CB27595AF85B06FDAF129217ACC853888C628A47A1DC5B9AD0C330A8EDD2D",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=0.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 0.003,
+      "energy": -0.004500000000000001,
+      "force": 0.003,
+      "areaErrorMj": 1.7500054738661674e-9,
+      "sha256": "EB0996BC6EC0BC7ECBA72BF343242011310248ED3BEBD515FECE79F28356D6E1",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=3.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 0.0007615941559557648,
+      "energy": -0.0004337808304830402,
+      "force": 0,
+      "areaErrorMj": 0.00001934356637406376,
+      "sha256": "179281B8D4F6ABE6159DA808FCEC44E01C28A5A971B0F834C3BB2D03BE7153E6",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.000000mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 0.0007615941559557648,
+      "energy": -0.0004337808304830402,
+      "force": 0.0007615941559557648,
+      "areaErrorMj": 0.00001934356637406376,
+      "sha256": "38BDF4608C5F94170B98E8F5962450D8E5C3E317695976F2583DAB6002957862",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.761594mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 0.0009950547536867304,
+      "energy": -0.002309328504578621,
+      "force": 0,
+      "areaErrorMj": 0.000033003411951337824,
+      "sha256": "107C9281E8EA9BAA8580C77A4D20BD034DCFFDC35706A05224E235F2F767B107",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.000000mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "saturating",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 0.0009950547536867304,
+      "energy": -0.002309328504578621,
+      "force": 0.0009950547536867304,
+      "areaErrorMj": 0.000033003411951337824,
+      "sha256": "1021C8C6F922DB8D3A1171C2FD253C1B1F46E833C2CA83AD32A6CAA96E86369E",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.995055mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "rows": 161
+    }
+  ]
+}

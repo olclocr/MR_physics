@@ -1,0 +1,30 @@
+{
+  "conditions": 18,
+  "conditionCurvePoints": 3618,
+  "uniqueCurvePoints": 1206,
+  "method": "RK4 1000/2000 steps; exact 30 degree coefficients; pivoted 2x2 solve Q*N=S; analytic gain/reference identities",
+  "max": {
+    "magnetization": 7.338574192772285e-14,
+    "complex": 1.4699352846037073e-13,
+    "magnitude": 1.467714838554457e-13,
+    "referenceMagnitude": 2.220446049250313e-16,
+    "normalizationError": 1.84297022087776e-14,
+    "odeConvergence": 6.861178292183467e-14,
+    "gainIdentity": 2.220446049250313e-16,
+    "referenceIdentity": 2.220446049250313e-16,
+    "imaginaryZero": 1.3877787807814457e-16
+  },
+  "tolerances": {
+    "magnetization": 1e-10,
+    "complex": 1e-10,
+    "magnitude": 1e-10,
+    "referenceMagnitude": 1e-10,
+    "normalizationError": 1e-10,
+    "odeConvergence": 1e-10,
+    "gainIdentity": 1e-10,
+    "referenceIdentity": 1e-10,
+    "imaginaryZero": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

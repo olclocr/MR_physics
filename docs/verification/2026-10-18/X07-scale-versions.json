@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/compartment_input_scale.html",
-      "sha256": "F48FEE093F84DEC652497CDFB5372CDC5C05F6DC1A597105FC60F6242B251C62"
+      "sha256": "16AD5B5A9E01D3633CDDAA65F3BC4F13AAE4FB0132E8CB2B2EB6ECEAADEB23E4"
     },
     {
       "path": "docs/compartment_input_washout.html",
@@ -121,6 +121,14 @@
       "task": "W99",
       "proof": "docs/verification/2026-10-18/checkpoint-W99-versions.json",
       "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

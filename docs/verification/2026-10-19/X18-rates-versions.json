@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W111 optional solute R1/shared independent reference, exact default preservation, unequal intrinsic/coupled longitudinal rates; no actual RF/MT-CEST/clinical inference; own report excluded",
+  "files": [
+    {
+      "path": "docs/two_pool_relaxation_rates.html",
+      "sha256": "3CB368027E248547D8950D7490D3E050314B9DA3D5140B7E8D88FB0810DC5F8A"
+    },
+    {
+      "path": "docs/assets/two-pool-relaxation-rates-model.js",
+      "sha256": "3E8507A7AB127C25A76AE3AB79576A4E04A793C60453E6E505B301BA262A3D1E"
+    },
+    {
+      "path": "docs/assets/two-pool-transfer-model.js",
+      "sha256": "6C6A1E482F1F9CE15147F91CA41219FBF16199926A1C0190F38D3D44E6427D8C"
+    },
+    {
+      "path": "docs/assets/two-pool-release-model.js",
+      "sha256": "DF72CE699B369CE502483E8FA813444940A5CC630956C6CDC4D09FC62766A7A9"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/two-pool-relaxation-rates.test.cjs",
+      "sha256": "20A8E579E6B6F6C16D474BEF3A4B25BAB665718BD94AC29498B6AF55726D7AE2"
+    },
+    {
+      "path": "tests/two-pool-transfer.test.cjs",
+      "sha256": "A2BE875BA53A7B4897680965F12EEC52971A2AC85AD61C2FFC295E1EBD6B0AEE"
+    },
+    {
+      "path": "tests/two-pool-release.test.cjs",
+      "sha256": "75F80535ED6F77CA67AE35330748F3E266AE72F180E77E2FA3E10BFF7DA9518C"
+    },
+    {
+      "path": "tests/helpers/two-pool-relaxation-rates-reference.cjs",
+      "sha256": "F3DC7A11F979C7267BC42D8B8D9578434093DC75C7B8D73699E09421B8E62514"
+    },
+    {
+      "path": "tests/helpers/two-pool-reference.cjs",
+      "sha256": "98F6FD9B5E0791077D9A5C5ECA305AD255850F49F3F74203A93D98911B5A8C92"
+    },
+    {
+      "path": "tests/helpers/two-pool-release-reference.cjs",
+      "sha256": "49024E33F7C20024569AA8F5F0E5B93A97F6917FB79F83D726A5037B37A706DC"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-rates-numerical.cjs",
+      "sha256": "951BE2AE984165EAF6CFF67A8AEEB8E3D5BA960F04ECAD6B2312D9BB5FA0DC4F"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-rates-numerical.json",
+      "sha256": "136C2A71422C007A9A06A3E8CEB851AEA9ACF6109E1119DCA583F6AE0AE11A93"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-rates-display-reference.json",
+      "sha256": "AC1DD9871003D8100872007819236CF6BFB7CE6D3474818E2CAC5EB979B29FDF"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-rates-browser-check.js",
+      "sha256": "7CEE88AC0628C27C26FB21A79AAB869F0CAB2DF1B2F302E6994AE8768D200D22"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-rates-browser-check.json",
+      "sha256": "9C37853657C08BF0C18BE55E3E3B97C5D45DAA786A0F926F56E9B80A13B32077"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-before-versions.json",
+      "sha256": "5B22D9AE8ADA701ED48DCFAA279991AE779923E6FEAAB2BCB6580DB411EADAFD"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-api-edits.json",
+      "sha256": "9EA21FE505686E4911BF052953263D622D2D837FB13B5E78D1220C6992959658"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-api-audit.cjs",
+      "sha256": "52BFCA4242F34B1C5F48E4FD1CA646CCAC24579D29444C4A638E0FD2EB5D266C"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-api-audit.json",
+      "sha256": "8462DF05C72AEE96B37414939BD91E6481FE3CC0EFAACC7A5D8E34B00C3FE4E9"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-comparison.json",
+      "sha256": "23A43C57047875306E39354C10C7457528C8E648E25A4CE1DBEAFC265951BEDB"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-equations-browser.js",
+      "sha256": "5877B6B2EE74B275A917E347EDD311D681FC05E903282E41A0648A277D1D760C"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-equations-browser.json",
+      "sha256": "08DD9A4F80693FAA272AEACFDD7CA051B2F8FAC39E9CB2BFE4F3A7900DD49A9B"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-before-transfer-browser.js",
+      "sha256": "E239DE3C7BAAD8AD3623CF0D3B508B8839A04F7E0A83EDE16C6A4E7F47640287"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-before-transfer-browser.json",
+      "sha256": "29F4761C662BA9A8B1FB9731CCF8178B8ACBA686EEA80220A40C992899BA7989"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-before-release-browser.js",
+      "sha256": "52DC1173FE463BA1D7A2BC037BA1F8276F578437FF5C5B51E8D841E70A71111D"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-before-release-browser.json",
+      "sha256": "640ABAD2A60FABD487E51EA52FA4C937CEF66988BACBE9EEFC8C67D5C99B2664"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-after-transfer-browser.js",
+      "sha256": "93A8C864DE9F80E9E6D5A5EDCF4AD3319A7CE09B3045E398DC4A335418DC10E3"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-after-transfer-browser.json",
+      "sha256": "88253CF091BBCD26B3F9B0A20438C1E25A80E483902FA46E998425D13108D839"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-after-release-browser.js",
+      "sha256": "65A5078BBC0109FC44673BCD14FADA3B754014EFF667318F0BBC1C67481A2996"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-after-release-browser.json",
+      "sha256": "2E939B3240C6A82710C1BE9DB6E5FB62C545EDA840906B9A2860BFA0B7173199"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-transfer-numerical.cjs",
+      "sha256": "2B1B96769E5789EA98E8C4A1BD6C8A2CB98DE09289ADE2519E106C973A7317A2"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-transfer-numerical.json",
+      "sha256": "AB6DB750D55FEA198898D80964442A2276AC06A6D8E00FAC7B860903409D9850"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-transfer-display-reference.json",
+      "sha256": "0C490FD4D4810AFBAE58487D8360626A4CF9D0CA43A3B6DF978AEBE654A5227A"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-release-numerical.cjs",
+      "sha256": "B60710E7187E70CB98198C8273B03932E4879EE0C98FE10CAC3325DB049C33DF"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-release-numerical.json",
+      "sha256": "C93B48D66A0091B5D500B0363CB96BD2168D9E5B367CCA417CE6D3833DAD8F95"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W111-legacy-release-display-reference.json",
+      "sha256": "5910C676EC2F71675166A35F8A376F4B134607A7DACE009C95F2D0CB3A7FB196"
+    }
+  ]
+}

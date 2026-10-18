@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "docs/spectral_fat_saturation.html",
-      "sha256": "A456A151C2257D26F50500171E7963E1B0A655094C487F4B1EAF1D4FC6DFD2D5"
+      "sha256": "C535D6F991642A2F96954B56B8AAAF6C9882E43BE3D0593C1CA7AD9ED4B6F78D"
     },
     {
       "path": "docs/assets/spectral-saturation-model.js",
@@ -43,5 +43,12 @@
       "sha256": "0326B3F3A92A0D2D94AC549B958DB561E3CC08D6978D0C855075578120AC4CDF"
     }
   ],
-  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json",
+  "navigationRevisions": [
+    {
+      "task": "W107",
+      "proof": "docs/verification/2026-10-19/W107-manifest-updates.json",
+      "scope": "One successor link with exact prior-byte reconstruction"
+    }
+  ]
 }

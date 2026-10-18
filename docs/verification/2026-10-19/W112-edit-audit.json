@@ -1,0 +1,22 @@
+{
+  "checkedEntries": 1085,
+  "unchangedEntries": 1083,
+  "changedEntries": 2,
+  "changed": [
+    {
+      "manifest": "docs/verification/2026-10-18/X11-phase-versions.json",
+      "path": "docs/ir_phase_reference.html",
+      "before": "6C7B341D4C5FA26E25755B8DE90717EA30D2D91302971B2CD13F5DCCF8EC2F70",
+      "after": "1CB01FCE22255A6A5EC19CF2448B92420AEF89B7EC12C810EEE1A941E3129D75"
+    },
+    {
+      "manifest": "docs/verification/2026-10-19/X11-intensity-versions.json",
+      "path": "docs/ir_intensity_normalization.html",
+      "before": "0344D23C5122A7F5A98B7A8F10AED0A4F97EA62D5911177B666F8A81B31BA080",
+      "after": "F665266C7BD9F8E819287A84EA05A8E2F2C07B064E2B7591BC72A35D00194FE7"
+    }
+  ],
+  "method": "Exactly two SVG text y literals per page; reverse reconstructs prior complete file SHA-256; all other current manifest input bytes identical",
+  "errors": [],
+  "passed": true
+}

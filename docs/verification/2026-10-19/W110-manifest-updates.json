@@ -1,0 +1,16 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-19/X11-intensity-versions.json",
+    "path": "docs/ir_intensity_normalization.html",
+    "before": "F665266C7BD9F8E819287A84EA05A8E2F2C07B064E2B7591BC72A35D00194FE7",
+    "after": "7937A5F52B2243E0F9C9304DB01A9C059A64CFEEAF401E3E3DFEC6F4A42EDC61",
+    "reason": "W110 successor navigation only; one-link removal restores exact previous bytes"
+  },
+  {
+    "manifest": "docs/verification/2026-10-19/W112-versions.json",
+    "path": "docs/ir_intensity_normalization.html",
+    "before": "F665266C7BD9F8E819287A84EA05A8E2F2C07B064E2B7591BC72A35D00194FE7",
+    "after": "7937A5F52B2243E0F9C9304DB01A9C059A64CFEEAF401E3E3DFEC6F4A42EDC61",
+    "reason": "W110 successor navigation only; one-link removal restores exact previous bytes"
+  }
+]

@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/vascular_ees_components.html",
-      "sha256": "00DE6722FD4743A4FDE72612D653851714A1DB5AE2E20731E921238C8C20726A"
+      "sha256": "E5F6E3C95CC911586E47492441D2ED8F07BAA2DF8C3454EBE8B407EAD91E3F0C"
     },
     {
       "path": "docs/assets/vascular-compartment-model.js",
@@ -58,6 +58,14 @@
     {
       "path": "docs/verification/2026-10-18/X07-vascular-browser-check.json",
       "sha256": "DE80B6EA9CF1233353938B7FBF9D9BF3ED550A2DA88DC4BCAA2551910B817195"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

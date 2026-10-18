@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/saturating_dipole_work.html",
-      "sha256": "47B03C52060F94B5FA1AEF03434009074AF2C4582D0714A3F7DE843D3944A907"
+      "sha256": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F"
     },
     {
       "path": "docs/assets/saturating-dipole-model.js",
@@ -54,6 +54,22 @@
     {
       "path": "docs/verification/2026-10-18/X16-saturation-browser-check.json",
       "sha256": "6D69EEA5ED1E6B2F6E576FDB675188184BA0E3F19823496B2C433F13240F00A6"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
+    }
+  ],
+  "contentRevisions": [
+    {
+      "task": "W109",
+      "proof": "docs/verification/2026-10-19/W109-saturation-clarity.md",
+      "audit": "docs/verification/2026-10-19/W109-edit-audit.json",
+      "scope": "Separate prescribed moment/field constants and dimensionless field ratio; no numerical model changes"
     }
   ]
 }

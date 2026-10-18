@@ -1,0 +1,2701 @@
+{
+  "states": 126,
+  "beforeOutsideStates": 63,
+  "afterOutsideStates": 0,
+  "method": "Full model/table/output equality; SVG exact equality after reversing only two reviewed title y positions per page",
+  "passed": true,
+  "comparisons": [
+    {
+      "name": "phase",
+      "states": [
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 0
+          },
+          "model": "aac6dc00e9b0834186cb7395da5cfd8c6a5bf7f22c125550aee934ea5c7157d5",
+          "table": "e9c150ab2bb5d9194b51de0a0d5ae8c469dfbf73af1ff7aad5bd7cec8e0eb777",
+          "svgWithReversedTitlePositions": "4a0da8e0c46b9a7dd206d6d1cb352b90b9380b1ca05b0b415693e892017d580d",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "-0.026834",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 60
+          },
+          "model": "f0d8fe4f620249681c8a2cfe45d8ecaf4b0ce2c5d1d2abb7fb1caa0008864433",
+          "table": "1008138e90406046afdda15af328773491c3946ae501041207cfb2e43d10f52b",
+          "svgWithReversedTitlePositions": "f7b07ea15538266d28d4d6506f650fbf9ecf43ec4398a81b4477a98d352360c4",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "-0.013417",
+            "0.023239",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 90
+          },
+          "model": "a9df0b35a7e5077fa654c89143819d544fa771c823c6cda00246ad1f9adb90cd",
+          "table": "f2e83fc98490663e17337b33f7e150c9b972d7bed77d2583d39e180ae30ac0dd",
+          "svgWithReversedTitlePositions": "1d53238b1bc58d2b3368f7c161095c3c757746fbfd44e1673c25701e178bf3d7",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "0.000000",
+            "0.026834",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 120
+          },
+          "model": "de806a5b0eaeda7c445969376be17baf710ba551412a23f915d925a08da348e7",
+          "table": "4e776bcb3399c4ad340eac48987a4d71194155d158e296ca040f27439e4371df",
+          "svgWithReversedTitlePositions": "aa56233004b74b0dc612543dc2e54509c9edef15ece2ec21c428c67203e46e4c",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "0.013417",
+            "0.023239",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 180
+          },
+          "model": "b2e38f53338fa04bc99f5ccce9f9a16a1503bca4f7fb2e9ca69abe40c1541017",
+          "table": "a679504d564aad0504450f27ab1c19d72b2ec29907b1da9869cd9b79dc3c0e2b",
+          "svgWithReversedTitlePositions": "3990904a0e110926467fe0dc119823058e70662401359a0258219a8f3c0ff8d6",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "0.026834",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 0
+          },
+          "model": "ada01a089ef53c543547067978e7186674c831e8396e47b69f083924eaf8ffb1",
+          "table": "095e2d171f23cb104b706a5406cb8efbed98e0e8387ce3aacc5a0f6aa4516d5f",
+          "svgWithReversedTitlePositions": "307786b26ca0820dd9e277786eecec640156635bf1e25f11e722074d9d055955",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "0.377194",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 60
+          },
+          "model": "256f6f9e0da2b6dc200f4af798aabf9efbdfe640413a1f2f4aa6d4d571e492e0",
+          "table": "0e0d6dc64c81d252614bb4d4187210b494516b950e87dc1e9ce31a7a153cf09f",
+          "svgWithReversedTitlePositions": "908b9658e7fce607a659bb63fd2963dc8088b44d4c6d692f0712dd60c32d0006",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "0.188597",
+            "-0.326659",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 90
+          },
+          "model": "be63d890ffed668a258ffb57b051d30397bdaa3fca532c50f787e031e5e640f3",
+          "table": "38a39eadf8aea04ca94e082ace16989a14c7d6a1125752e90516d67f7f76343a",
+          "svgWithReversedTitlePositions": "b02f58ccf68bc9c12f03607d257a92f220bd819acb01a2ecf63d48c8f590fd01",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "0.000000",
+            "-0.377194",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 120
+          },
+          "model": "70e3c03bdf87a2f5e9f66a9631c828a0957944570cf694b9f7d13b123c9b70aa",
+          "table": "e65080263821a1d1975b930197623f07941cf6eb87a9659a9417d18818c31d80",
+          "svgWithReversedTitlePositions": "43f46a9cd54cac2b78761eb8af01bccdc7c2960575c11469afd3a0e522077fe0",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "-0.188597",
+            "-0.326659",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 180
+          },
+          "model": "d45cd6508611c84b4e0db023bc9c07b7682e726a7c77686696321084a9ff2083",
+          "table": "ec0d1f56b88a7540692f4b76ab66da7ebe9fb067b22fd8a6db130b285b86b13a",
+          "svgWithReversedTitlePositions": "072b892d2659512efe34c7a54bb6b69bbe8e27e9e075b06bfc2edf6d0b3cd5c1",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "-0.377194",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 0
+          },
+          "model": "707f29860bbd1534363abdd8230ba1bf54b7d038fcfdc71e418db22d37f69eee",
+          "table": "5f67294e10f3a3f08f790f02312ff140af476a3d86daf56ab706f1309f13a1a0",
+          "svgWithReversedTitlePositions": "b18a519bf1363bb3239819eea87f628447cd577afc3819ea2a077e6524d2f8bd",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "0.622249",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 60
+          },
+          "model": "b91f540611e126bac617210466936afe6572c3e13e3733b95f49987965c6c04e",
+          "table": "56f1e9d6abe9ce50b9c4bd878131bcf1b1ab22e189e2acd6c0e9b249382628fc",
+          "svgWithReversedTitlePositions": "94dae8180d500f3c0777fa5e307252a66cebd0c0c95a8dbc7935962deb016147",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "0.311124",
+            "-0.538883",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 90
+          },
+          "model": "e211cc4eeb95a4703bcea9ae089d94f4e826f9b6e4ee7637d927777555dddfad",
+          "table": "864b9d13a9a3e8ff39880da33b0d113dd0fa5bd977e0bb1530053418754d406e",
+          "svgWithReversedTitlePositions": "2d436aac86b523fd70ee720489e341e6e12525e555a6c352338639389255bc9a",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "0.000000",
+            "-0.622249",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 120
+          },
+          "model": "55a1f59030c3ae2c12e8a0f0e17f9ed917771d4d672f73f75691171797bcd000",
+          "table": "6097f87a684774f25b0dbc170205d85b912ae3a6e021038ce1ec7ba21c02cd47",
+          "svgWithReversedTitlePositions": "5430a29a98d5e6cbf6204447fc243adc93b50e7fae44959013d78a1105863e02",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "-0.311124",
+            "-0.538883",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 180
+          },
+          "model": "eb0a014183eae1b39125b225856903272cc42204a89ab7a2e9d0c39fa4cfcf29",
+          "table": "4bfd54e3a1b47930c01ea8e07bca989b412f2b7a10ddedb388c842094dc7862c",
+          "svgWithReversedTitlePositions": "afa5c80a49597c7532d01e6ffbd24d1646fb5d1889d8cc2f07295865f8a71d4c",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "-0.622249",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 0
+          },
+          "model": "cc97367c0f52995cdf870d1820905a51a482fcbfe85840d67d5f70566740d99e",
+          "table": "4dddd5659062f2b033ba0bb19e2238cf0a4d40b553de02f80c7bebaec3a5e87b",
+          "svgWithReversedTitlePositions": "3943baa355b178e72ea14cb65e1781f7735718320b9c275225f3aa036fc2aacf",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.340640",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 60
+          },
+          "model": "5f902baefafa6b66193a427300a9caf303800d567ad22599db9360d3852f1a91",
+          "table": "efeb97f34feb4607fe77f4f13a368285d26ba729aa2fdb76734f5c7c729d2926",
+          "svgWithReversedTitlePositions": "370d06077f609eb34921ca0ebb623514daca45c813614f2bea287b920466afe0",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.170320",
+            "0.295003",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 90
+          },
+          "model": "8bcdc173e94f350e0adf6918c19f2e1ed09ca2ddb8f841693540b2fee4fc8158",
+          "table": "bc4a8e96127a192a8a3885bc2e3d7e8937fc830096f8f8219fc09f6ee8558aea",
+          "svgWithReversedTitlePositions": "705c057e5edc82c6af1a0a5f8d6fdbf0a80daa69640191dcf552f2d2f449e590",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "0.000000",
+            "0.340640",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 120
+          },
+          "model": "d3bc38cb377d0594d21f6ff230850e7febece8600c99e2e3b83e985bbe8a4813",
+          "table": "855bf4830827e98ce2b55045b1d52597691d736be1fabd6c48273eda22c83d74",
+          "svgWithReversedTitlePositions": "b454b376d21cfd222557ee05dab2ca369940a46b2c9bd89bcce5beecc032d3d1",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "0.170320",
+            "0.295003",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 180
+          },
+          "model": "272a84ada5f781f28f343561b0e8f6387b5afdb4d429a2fcc4fec77b3660a2ce",
+          "table": "ae80679eb7ee5da0609f0a6180338fcc3391c7544b414318dd67d23e39d151e6",
+          "svgWithReversedTitlePositions": "751c96b94fb8541b4a614b525197232838a152367d6b1d1bc289bc6aa2e2bdd0",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "0.340640",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 0
+          },
+          "model": "ad8eed0293516a6df9e14fc4b9c283ed816c0d56caec61aff1b9510fe2e677c6",
+          "table": "72ddaf482ea75d7ca084762ea98a580d8703bc09a779de70c5aae6b138040c9d",
+          "svgWithReversedTitlePositions": "244ca9cd47a2a3ef23a66b1b45fa8d3e623eda746f812e32f80023e595f72d04",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.006829",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 60
+          },
+          "model": "b3a885b4dd4dedc18d2bc5daadb539cab37a51059223a904f445414a2ba375ea",
+          "table": "37ef63a8964f89950e86bde0f4e590eb2743947c706fd9cf2e0af76f11f3f704",
+          "svgWithReversedTitlePositions": "2945862eba85bca83b1566c9e38917054b871578dfd120c5872bf8a230ada9cc",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.003415",
+            "-0.005914",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 90
+          },
+          "model": "71bd699ead60da538e07f5931ce16a01e1f560246cb52d22300ec57a854ded26",
+          "table": "6d6f5d9133dae9fe2c64cdb3b2cb11dbdf1df593cee20e539e0f3c6cb20799d5",
+          "svgWithReversedTitlePositions": "d380ffa4b670370d9fa375fc5e3fc7bb0fa44e672c4823100c0ef22eea3040ca",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.000000",
+            "-0.006829",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 120
+          },
+          "model": "d91e25364115ff67a60de3bf894e7dd0a7e0139a2b3549d7efd553a58ff58c55",
+          "table": "4de05cc9b33b35d24469f61694e4df94b6ba93f83de8f3eb485f100b72180c3f",
+          "svgWithReversedTitlePositions": "70ba9562e60d298632f80e08f12b60d02addade559120d2abf6c0de957a8c67d",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "-0.003415",
+            "-0.005914",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 180
+          },
+          "model": "2ac4b40624117ee741ed2534ac99ddfac0f17a1dfdf200996b9a6f7d8d5933a6",
+          "table": "cfef18f9cdf8f32e91a6b0194561cea986d482d3f3afcb94b78c037c7ac7cb36",
+          "svgWithReversedTitlePositions": "3adf578d3211663726fe4f681f0e352a7194d65987f37b81875e3c14937c8345",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "-0.006829",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 0
+          },
+          "model": "b1e56f866b0aee34703695050eb21ecdf1175bd32f013b3a277f843eba65ccad",
+          "table": "0ae57924a843f3a11280873d01732ec454ed373d87d2df4c5875ef1f9e6cc6ba",
+          "svgWithReversedTitlePositions": "0ff7610bfe8eb90baf492022d1ede79788c95814e80a685cbfee0aac9c0dd2e6",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.264241",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 60
+          },
+          "model": "b6ba3ecdb92fa30b5566bad9c016042b67302127006c40a9cd0cbca25392b7ae",
+          "table": "00985cf488c2ba03443ba19763a04a9c96c09bef6504c28c93259dbd296f3f95",
+          "svgWithReversedTitlePositions": "aa86dcf253e396b6942fac2af4793cfcc8dba3b551621c1021677e6bec200d6b",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.132121",
+            "-0.228840",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 90
+          },
+          "model": "abbab7599e60bfd7d20d8b2505993de79c87be0ed1090a0c8d2d7a8984b85f74",
+          "table": "d178f6af059818d237b9962534bb19d36ba6130c7016288887681cd079824b34",
+          "svgWithReversedTitlePositions": "c2b6c0a4fc25ebb22dabd2839a70c2c56c13ae7af9212a522c5a64cc16129db7",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.000000",
+            "-0.264241",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 120
+          },
+          "model": "21f33ef56e4e38a2699c3c47fc10cf147ad7e18fd60af5849fc6aca697eb3fdd",
+          "table": "9e542b3faa54435878b2b75e165bf0eba6e733a700af5fecd51956861a3ddb39",
+          "svgWithReversedTitlePositions": "a6b8635bb6cf0edb6d3adadf8b99a4a20e3a9ca91467fd0787c266c214b10cf5",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "-0.132121",
+            "-0.228840",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 180
+          },
+          "model": "147be56cd5d09559b79a3abb79a795049d78f20946a665a79f52c82e371848cf",
+          "table": "a539dd09b7d4cd5e15758021240f3697bd292b6448e2e8bc16775c6c0784aa09",
+          "svgWithReversedTitlePositions": "a58377ced34fc30c43be334ce51c6f291918ca235e3f5f63900be9abec946e90",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "-0.264241",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 0
+          },
+          "model": "d79f7f3d00770f5865466bb9dc808c9691786b0e6bfa6552023ca7a0f2dd624d",
+          "table": "6e496eb0d1680bf6c7fe87db09afd896e827d66007d373dec11803f6905a75e4",
+          "svgWithReversedTitlePositions": "e935cfd0664897321cc80e5f279825e3f91a486ba9c0fb0bb4f486278b97a303",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "-0.502955",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 60
+          },
+          "model": "3e3421c8147e33024f1740b0c67a967dab2bff65fa1e67096ce33ca4c950031b",
+          "table": "6d3a096992c4f54f8b4a7bb1b5ed9642b24b22e150f6a06dd42793770c612dea",
+          "svgWithReversedTitlePositions": "b6d86a2a74ed51cc6b67e8e68e21b217bf69fe6529d5a74927e5dbf33b5d4ac3",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "-0.251477",
+            "0.435571",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 90
+          },
+          "model": "26f4d105b4266a36edf90682ce9eb9af94baf9e4258a117d671a4c6550ffcae9",
+          "table": "4bc34a24b3f537374ce59fc99d16b02c38875ba83601b98b4d38a8ad44137a25",
+          "svgWithReversedTitlePositions": "0887102b7d8e20eb2955ae05a2469b325afc5efa111f734b453a25c2c88d0d75",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "0.000000",
+            "0.502955",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 120
+          },
+          "model": "b21ff9d58e66b4195e43efcf8e2a06a84ef7b7b6a5606c3aceafdea3e2713b60",
+          "table": "1e65f230e03bc5a0116fcafa08314f9fd1aab99dbe226e03ddd6e300857ed675",
+          "svgWithReversedTitlePositions": "d6600305252a9e0ea3bdea49a1eae0f9abc9fab65d93e5b640e906dc8737cf0c",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "0.251477",
+            "0.435571",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 180
+          },
+          "model": "03d2b027aa701e1d2b7e70f889d9360e40cd2eefd4bea2f04c5079bb6d1f41f3",
+          "table": "9e781db22270032906380a20ecc678721f06c73cad45e6bf7cf26715b0df0687",
+          "svgWithReversedTitlePositions": "868a99282c88b89172cb307f6755420d23cab15e37a076921c7e75848c1b041f",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "0.502955",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 0
+          },
+          "model": "45f945062c2553a07c47db0da58e61a78a09b7a9ae024d8207e56244a7de3ccd",
+          "table": "b442cdc95daf2c2b009e4a71c635cb3a655a4b080fc5da533fbcda58c115f170",
+          "svgWithReversedTitlePositions": "05b9042f6259bd7366f57db4cddc7a992efedf635cc2852c28e08b0503285c4b",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "-0.213061",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 60
+          },
+          "model": "d0c8ef55bcb7b4e36baf40adcbe7a35b2c296bd051a2c35ade7952a13f58e669",
+          "table": "405b72dc0ee3f72d339d58d94ff1ba87a30d135e5308b73a67d97665aea12609",
+          "svgWithReversedTitlePositions": "25e6537a33715537a75241137cd6ad268c574211503684f70ea140683df2d0e3",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "-0.106531",
+            "0.184517",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 90
+          },
+          "model": "7ee0470c17e9f53803e4666f3d5ef5ab670e65f07476be8757b37efe580eb6a2",
+          "table": "321c24d4071e910af53201f11d0905d5311f593a4da1936dc3320ab8558fb454",
+          "svgWithReversedTitlePositions": "b2196222533831c2a3aefa7a177f9c9a49fbea8297cc0ae82af384bc27a70f95",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "0.000000",
+            "0.213061",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 120
+          },
+          "model": "0e63378d17c6d3d63675bb8c5e4df0dadbcf8b996c9b1d39b049ccf7772a9e87",
+          "table": "a51a92cafd1f1de3d4a218e7268cdc7e6a2d9149c36411d86887814e737f6329",
+          "svgWithReversedTitlePositions": "a0d3f33b843f380f50d24a9383cc28903a2a22fff1f96e484fcd4df0c61b10f9",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "0.106531",
+            "0.184517",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 180
+          },
+          "model": "dfbc880893dfeab9c838781a5534c684aabb34b3aedf3d20f2aa2abbada37032",
+          "table": "e9791735cb905e43687f9f900eff351c6dac4a82f0d273c7876cc2336122f6ba",
+          "svgWithReversedTitlePositions": "1f997e9abb242636eb74d083eacc5eea0124cbe723d1e4183df177ce9ca82c3a",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "0.213061",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 0
+          },
+          "model": "72d5f40d412cee1c7a34b6e90f3ee4bc9f2ea4b8f02247bcae684ad494ffaa4b",
+          "table": "6920f9a082c598095566655ddce4a2347636f400e82b46f3fe0c8703676ee333",
+          "svgWithReversedTitlePositions": "35c50f306276781ff98d2036adf641dd909a4bc0e6c1c601b5bb241c57f29a52",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "0.020917",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 60
+          },
+          "model": "c409b8db52bd2ceb4021c95506e4c4ed0ab2ea59e798e2fcd73db224e2eeb068",
+          "table": "596dfde8db9ba9aeecf07c46dc83e281f83ff65cec27a87038992e05d4b03ba6",
+          "svgWithReversedTitlePositions": "dbda232e65657849904e521aee6fdc701aee5e9b5bbae9d850e0194eb8359291",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "0.010458",
+            "-0.018114",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 90
+          },
+          "model": "bb64c77807527a44325ef5c9bd53197254d32aef77e45aa8a70a5a28f0777ea0",
+          "table": "ec846dccf24060710ed719207009f5f24f50084073553e132edda05c3807ceae",
+          "svgWithReversedTitlePositions": "1cdcabb4adac6e7612622cdcb19962092844938a10ae215a7e6d9f1be2496ca8",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "0.000000",
+            "-0.020917",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 120
+          },
+          "model": "ea870d95a62068176e37e98cba66733d511cccc1508f1cbbc38a66c9225c7e6c",
+          "table": "a8801202a47ae13852540821b43d8b7f0556eb396390514c7462864420b2636d",
+          "svgWithReversedTitlePositions": "ef8899ad177e44036b136ac8bbb32548ca54c1510c3b1d5da1d14809fad125d9",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "-0.010458",
+            "-0.018114",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 180
+          },
+          "model": "8c80424c5679eaf02bc8b3faf0e299a7e8a52f3643fe4ac3504ad2cd313cd1c6",
+          "table": "38497ea951f6b81f4ef3921c65e048db341159ac31f6ecf1a705ff16bd687672",
+          "svgWithReversedTitlePositions": "050e47f68dab0c2f77eb54a6dcdf3c58c715d49a4c519a75736c9859c3c33ee6",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "-0.020917",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 0
+          },
+          "model": "aac6dc00e9b0834186cb7395da5cfd8c6a5bf7f22c125550aee934ea5c7157d5",
+          "table": "e9c150ab2bb5d9194b51de0a0d5ae8c469dfbf73af1ff7aad5bd7cec8e0eb777",
+          "svgWithReversedTitlePositions": "7e0e15f2e887ae90fb612a5be641050a760293b9a95296b450f090d60ef8a0e0",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "-0.026834",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 60
+          },
+          "model": "f0d8fe4f620249681c8a2cfe45d8ecaf4b0ce2c5d1d2abb7fb1caa0008864433",
+          "table": "1008138e90406046afdda15af328773491c3946ae501041207cfb2e43d10f52b",
+          "svgWithReversedTitlePositions": "c083f6f9a3e6efd261fffd3a0910018d38aabdf3716ccb404a540c36caec9e6a",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "-0.013417",
+            "0.023239",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 90
+          },
+          "model": "a9df0b35a7e5077fa654c89143819d544fa771c823c6cda00246ad1f9adb90cd",
+          "table": "f2e83fc98490663e17337b33f7e150c9b972d7bed77d2583d39e180ae30ac0dd",
+          "svgWithReversedTitlePositions": "0a9fa53303deeae5362e638bd8be0a3fecd7d58e8a98fcce82899b93dcd0a291",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "0.000000",
+            "0.026834",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 120
+          },
+          "model": "de806a5b0eaeda7c445969376be17baf710ba551412a23f915d925a08da348e7",
+          "table": "4e776bcb3399c4ad340eac48987a4d71194155d158e296ca040f27439e4371df",
+          "svgWithReversedTitlePositions": "b83fd48165ecaa13aa5c30e304905e82eb14bed6029866c9a516be6f5a855866",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "0.013417",
+            "0.023239",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 400,
+            "errorDeg": 180
+          },
+          "model": "b2e38f53338fa04bc99f5ccce9f9a16a1503bca4f7fb2e9ca69abe40c1541017",
+          "table": "a679504d564aad0504450f27ab1c19d72b2ec29907b1da9869cd9b79dc3c0e2b",
+          "svgWithReversedTitlePositions": "6efaf34913a39722578bd59959be2bfef16f6ef3e89f7fc2124f1e702d553606",
+          "outputs": [
+            "-0.026834",
+            "0.026834",
+            "0.026834",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 0
+          },
+          "model": "ada01a089ef53c543547067978e7186674c831e8396e47b69f083924eaf8ffb1",
+          "table": "095e2d171f23cb104b706a5406cb8efbed98e0e8387ce3aacc5a0f6aa4516d5f",
+          "svgWithReversedTitlePositions": "c459c383338452a0d6cb008598efa0fa7457dc4aadbe8f30f356aa6bc64350c9",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "0.377194",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 60
+          },
+          "model": "256f6f9e0da2b6dc200f4af798aabf9efbdfe640413a1f2f4aa6d4d571e492e0",
+          "table": "0e0d6dc64c81d252614bb4d4187210b494516b950e87dc1e9ce31a7a153cf09f",
+          "svgWithReversedTitlePositions": "39c77f8e12fe43104032330539a0a1349c386f78de696146467c4cc4c45b4c48",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "0.188597",
+            "-0.326659",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 90
+          },
+          "model": "be63d890ffed668a258ffb57b051d30397bdaa3fca532c50f787e031e5e640f3",
+          "table": "38a39eadf8aea04ca94e082ace16989a14c7d6a1125752e90516d67f7f76343a",
+          "svgWithReversedTitlePositions": "cfb046a212f28f6e1f98c34eca55c8b8be84285fd81ee7dc4834489983d5ed63",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "0.000000",
+            "-0.377194",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 120
+          },
+          "model": "70e3c03bdf87a2f5e9f66a9631c828a0957944570cf694b9f7d13b123c9b70aa",
+          "table": "e65080263821a1d1975b930197623f07941cf6eb87a9659a9417d18818c31d80",
+          "svgWithReversedTitlePositions": "52e2a6e2412106301d8b43f423d2fe16b8583323664b79fa355c0a80d24e7707",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "-0.188597",
+            "-0.326659",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 700,
+            "errorDeg": 180
+          },
+          "model": "d45cd6508611c84b4e0db023bc9c07b7682e726a7c77686696321084a9ff2083",
+          "table": "ec0d1f56b88a7540692f4b76ab66da7ebe9fb067b22fd8a6db130b285b86b13a",
+          "svgWithReversedTitlePositions": "b563a189a35b8828446766385237e620f94552ad57302355cc003c7566141923",
+          "outputs": [
+            "0.377194",
+            "0.377194",
+            "-0.377194",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 0
+          },
+          "model": "707f29860bbd1534363abdd8230ba1bf54b7d038fcfdc71e418db22d37f69eee",
+          "table": "5f67294e10f3a3f08f790f02312ff140af476a3d86daf56ab706f1309f13a1a0",
+          "svgWithReversedTitlePositions": "d64a6e085f62fbb43981a002322a47e2234d0ee686b5205de0b978df770c3b3d",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "0.622249",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 60
+          },
+          "model": "b91f540611e126bac617210466936afe6572c3e13e3733b95f49987965c6c04e",
+          "table": "56f1e9d6abe9ce50b9c4bd878131bcf1b1ab22e189e2acd6c0e9b249382628fc",
+          "svgWithReversedTitlePositions": "21cadd5e0e3b0ecc56b45b4d06aaf8b179eede00df68d7399836f3bc5d95d83f",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "0.311124",
+            "-0.538883",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 90
+          },
+          "model": "e211cc4eeb95a4703bcea9ae089d94f4e826f9b6e4ee7637d927777555dddfad",
+          "table": "864b9d13a9a3e8ff39880da33b0d113dd0fa5bd977e0bb1530053418754d406e",
+          "svgWithReversedTitlePositions": "8311ec72be8f1b51a13fd9dad780fcfc203acf02416fe6ed8d1478d10077b186",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "0.000000",
+            "-0.622249",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 120
+          },
+          "model": "55a1f59030c3ae2c12e8a0f0e17f9ed917771d4d672f73f75691171797bcd000",
+          "table": "6097f87a684774f25b0dbc170205d85b912ae3a6e021038ce1ec7ba21c02cd47",
+          "svgWithReversedTitlePositions": "ec6ea54f8370040e03cc2c79edc63fed5ab04a4870200693e78e4af0cc0446f2",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "-0.311124",
+            "-0.538883",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 600,
+            "tiMs": 1000,
+            "errorDeg": 180
+          },
+          "model": "eb0a014183eae1b39125b225856903272cc42204a89ab7a2e9d0c39fa4cfcf29",
+          "table": "4bfd54e3a1b47930c01ea8e07bca989b412f2b7a10ddedb388c842094dc7862c",
+          "svgWithReversedTitlePositions": "d86cca1cc1a4f895cfb643f8d1b1dd8ae728aa14d43e96bd38f306e3ce3563dc",
+          "outputs": [
+            "0.622249",
+            "0.622249",
+            "-0.622249",
+            "0.000000",
+            "415.888308"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 0
+          },
+          "model": "cc97367c0f52995cdf870d1820905a51a482fcbfe85840d67d5f70566740d99e",
+          "table": "4dddd5659062f2b033ba0bb19e2238cf0a4d40b553de02f80c7bebaec3a5e87b",
+          "svgWithReversedTitlePositions": "e946eb7e842d00bc7ce72780e804095c812827cdd59fa2c9bf49be2ac7c5da09",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.340640",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 60
+          },
+          "model": "5f902baefafa6b66193a427300a9caf303800d567ad22599db9360d3852f1a91",
+          "table": "efeb97f34feb4607fe77f4f13a368285d26ba729aa2fdb76734f5c7c729d2926",
+          "svgWithReversedTitlePositions": "b3f69e90cde78565d324cc0f15579cac7787d0754954be0f742dc422a3bea587",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.170320",
+            "0.295003",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 90
+          },
+          "model": "8bcdc173e94f350e0adf6918c19f2e1ed09ca2ddb8f841693540b2fee4fc8158",
+          "table": "bc4a8e96127a192a8a3885bc2e3d7e8937fc830096f8f8219fc09f6ee8558aea",
+          "svgWithReversedTitlePositions": "708d90037f7e91216743e054d4891fd03980842b0295b5dfc5b98fbd2ef98316",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "0.000000",
+            "0.340640",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 120
+          },
+          "model": "d3bc38cb377d0594d21f6ff230850e7febece8600c99e2e3b83e985bbe8a4813",
+          "table": "855bf4830827e98ce2b55045b1d52597691d736be1fabd6c48273eda22c83d74",
+          "svgWithReversedTitlePositions": "93a3031201704488e6bafbb262ad9170c2a56cd445592affc59424615317fdd1",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "0.170320",
+            "0.295003",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 400,
+            "errorDeg": 180
+          },
+          "model": "272a84ada5f781f28f343561b0e8f6387b5afdb4d429a2fcc4fec77b3660a2ce",
+          "table": "ae80679eb7ee5da0609f0a6180338fcc3391c7544b414318dd67d23e39d151e6",
+          "svgWithReversedTitlePositions": "8b14890bbd5f316a1631cdcda024ed76cad472539ae126440242b5f52c5e32d9",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "0.340640",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 0
+          },
+          "model": "ad8eed0293516a6df9e14fc4b9c283ed816c0d56caec61aff1b9510fe2e677c6",
+          "table": "72ddaf482ea75d7ca084762ea98a580d8703bc09a779de70c5aae6b138040c9d",
+          "svgWithReversedTitlePositions": "8efa6a096eeca95b8603314e4ac57e8e925b2fea45d8a4afe2354946a47b6314",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.006829",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 60
+          },
+          "model": "b3a885b4dd4dedc18d2bc5daadb539cab37a51059223a904f445414a2ba375ea",
+          "table": "37ef63a8964f89950e86bde0f4e590eb2743947c706fd9cf2e0af76f11f3f704",
+          "svgWithReversedTitlePositions": "fe21a778fb1126cce420962c03e8b3222e93cbd7348d1317ce6a00061bca8479",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.003415",
+            "-0.005914",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 90
+          },
+          "model": "71bd699ead60da538e07f5931ce16a01e1f560246cb52d22300ec57a854ded26",
+          "table": "6d6f5d9133dae9fe2c64cdb3b2cb11dbdf1df593cee20e539e0f3c6cb20799d5",
+          "svgWithReversedTitlePositions": "21e0b3da5389d668700344e64a71306aeb2e2006bf965a9f4e8724276a669651",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.000000",
+            "-0.006829",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 120
+          },
+          "model": "d91e25364115ff67a60de3bf894e7dd0a7e0139a2b3549d7efd553a58ff58c55",
+          "table": "4de05cc9b33b35d24469f61694e4df94b6ba93f83de8f3eb485f100b72180c3f",
+          "svgWithReversedTitlePositions": "ba90f0feffbecb01b8927bc39114a61b89e3baf66d659067a7e869c73ce189ab",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "-0.003415",
+            "-0.005914",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 700,
+            "errorDeg": 180
+          },
+          "model": "2ac4b40624117ee741ed2534ac99ddfac0f17a1dfdf200996b9a6f7d8d5933a6",
+          "table": "cfef18f9cdf8f32e91a6b0194561cea986d482d3f3afcb94b78c037c7ac7cb36",
+          "svgWithReversedTitlePositions": "e1a96c496cd0ec9196bb54aa1557b60ee985b98726ac00d05d85b8d20d4fac1c",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "-0.006829",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 0
+          },
+          "model": "b1e56f866b0aee34703695050eb21ecdf1175bd32f013b3a277f843eba65ccad",
+          "table": "0ae57924a843f3a11280873d01732ec454ed373d87d2df4c5875ef1f9e6cc6ba",
+          "svgWithReversedTitlePositions": "b2e8130d5963d72fc652231ef2a3edae7f9658d5625cf78e73d05eaef1221a46",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.264241",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 60
+          },
+          "model": "b6ba3ecdb92fa30b5566bad9c016042b67302127006c40a9cd0cbca25392b7ae",
+          "table": "00985cf488c2ba03443ba19763a04a9c96c09bef6504c28c93259dbd296f3f95",
+          "svgWithReversedTitlePositions": "b151383e0643a6129a4a61c4d834ec9fc175ec5ffb272003b3eff756015c2a9f",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.132121",
+            "-0.228840",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 90
+          },
+          "model": "abbab7599e60bfd7d20d8b2505993de79c87be0ed1090a0c8d2d7a8984b85f74",
+          "table": "d178f6af059818d237b9962534bb19d36ba6130c7016288887681cd079824b34",
+          "svgWithReversedTitlePositions": "0a361b164701c1d83f2bcb438b44b77bee6e15706a6aa82357f3aee55b2ad2c5",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.000000",
+            "-0.264241",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 120
+          },
+          "model": "21f33ef56e4e38a2699c3c47fc10cf147ad7e18fd60af5849fc6aca697eb3fdd",
+          "table": "9e542b3faa54435878b2b75e165bf0eba6e733a700af5fecd51956861a3ddb39",
+          "svgWithReversedTitlePositions": "bff70a4687962cdf4c237861daba286780506dfc68d2b7a204dea2b188540700",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "-0.132121",
+            "-0.228840",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1000,
+            "tiMs": 1000,
+            "errorDeg": 180
+          },
+          "model": "147be56cd5d09559b79a3abb79a795049d78f20946a665a79f52c82e371848cf",
+          "table": "a539dd09b7d4cd5e15758021240f3697bd292b6448e2e8bc16775c6c0784aa09",
+          "svgWithReversedTitlePositions": "027514b899565de59e40ccecae6c0f4e5dcae6edf53408e147b3a1dfd28bdd41",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "-0.264241",
+            "0.000000",
+            "693.147181"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 0
+          },
+          "model": "d79f7f3d00770f5865466bb9dc808c9691786b0e6bfa6552023ca7a0f2dd624d",
+          "table": "6e496eb0d1680bf6c7fe87db09afd896e827d66007d373dec11803f6905a75e4",
+          "svgWithReversedTitlePositions": "835b28a2bf67e90f3f30382a326fd9f1bcd4feec90e24e5fc41817e1a0fda276",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "-0.502955",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 60
+          },
+          "model": "3e3421c8147e33024f1740b0c67a967dab2bff65fa1e67096ce33ca4c950031b",
+          "table": "6d3a096992c4f54f8b4a7bb1b5ed9642b24b22e150f6a06dd42793770c612dea",
+          "svgWithReversedTitlePositions": "8513c3917bb86ed88df57959e391122c1192cb730da91a3a7fc742f2db97bca9",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "-0.251477",
+            "0.435571",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 90
+          },
+          "model": "26f4d105b4266a36edf90682ce9eb9af94baf9e4258a117d671a4c6550ffcae9",
+          "table": "4bc34a24b3f537374ce59fc99d16b02c38875ba83601b98b4d38a8ad44137a25",
+          "svgWithReversedTitlePositions": "6f175a7a49de59486fef374f57d00f51487d376aa2f0c3472701b3645c42beb2",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "0.000000",
+            "0.502955",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 120
+          },
+          "model": "b21ff9d58e66b4195e43efcf8e2a06a84ef7b7b6a5606c3aceafdea3e2713b60",
+          "table": "1e65f230e03bc5a0116fcafa08314f9fd1aab99dbe226e03ddd6e300857ed675",
+          "svgWithReversedTitlePositions": "5c0aa748a8ca801adf3451ed1512268f0ea6be7b3898b758dfc1ea677e26485f",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "0.251477",
+            "0.435571",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 400,
+            "errorDeg": 180
+          },
+          "model": "03d2b027aa701e1d2b7e70f889d9360e40cd2eefd4bea2f04c5079bb6d1f41f3",
+          "table": "9e781db22270032906380a20ecc678721f06c73cad45e6bf7cf26715b0df0687",
+          "svgWithReversedTitlePositions": "e52bc3033d9d61f6b55beddb982dffba6f103f9e5013e737a8d7f8d412396f59",
+          "outputs": [
+            "-0.502955",
+            "0.502955",
+            "0.502955",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 0
+          },
+          "model": "45f945062c2553a07c47db0da58e61a78a09b7a9ae024d8207e56244a7de3ccd",
+          "table": "b442cdc95daf2c2b009e4a71c635cb3a655a4b080fc5da533fbcda58c115f170",
+          "svgWithReversedTitlePositions": "ca7d03a8b5f68add1f00eefa3e414874ed751869fcbb2a63fe3b804041b8fab8",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "-0.213061",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 60
+          },
+          "model": "d0c8ef55bcb7b4e36baf40adcbe7a35b2c296bd051a2c35ade7952a13f58e669",
+          "table": "405b72dc0ee3f72d339d58d94ff1ba87a30d135e5308b73a67d97665aea12609",
+          "svgWithReversedTitlePositions": "c6561ef880a889683205c34e289fb56f0fcd61f056108c93d5085ad742a03465",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "-0.106531",
+            "0.184517",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 90
+          },
+          "model": "7ee0470c17e9f53803e4666f3d5ef5ab670e65f07476be8757b37efe580eb6a2",
+          "table": "321c24d4071e910af53201f11d0905d5311f593a4da1936dc3320ab8558fb454",
+          "svgWithReversedTitlePositions": "86e7da92d736b5e16c0c4e5842348f407fdb536e4c20c640bf9dc408a9e7b652",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "0.000000",
+            "0.213061",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 120
+          },
+          "model": "0e63378d17c6d3d63675bb8c5e4df0dadbcf8b996c9b1d39b049ccf7772a9e87",
+          "table": "a51a92cafd1f1de3d4a218e7268cdc7e6a2d9149c36411d86887814e737f6329",
+          "svgWithReversedTitlePositions": "2e9ab4e087f7b473d1138512e0c3845abe38c99b85448d83ef9be5aafd486fbc",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "0.106531",
+            "0.184517",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 700,
+            "errorDeg": 180
+          },
+          "model": "dfbc880893dfeab9c838781a5534c684aabb34b3aedf3d20f2aa2abbada37032",
+          "table": "e9791735cb905e43687f9f900eff351c6dac4a82f0d273c7876cc2336122f6ba",
+          "svgWithReversedTitlePositions": "e2e74dbe1b5205440372d5d076cdd37a14723aede2eb59e4b7dac95bd22f23ab",
+          "outputs": [
+            "-0.213061",
+            "0.213061",
+            "0.213061",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 0
+          },
+          "model": "72d5f40d412cee1c7a34b6e90f3ee4bc9f2ea4b8f02247bcae684ad494ffaa4b",
+          "table": "6920f9a082c598095566655ddce4a2347636f400e82b46f3fe0c8703676ee333",
+          "svgWithReversedTitlePositions": "a40999baa922d9089be1aa5873fcdac59cfb1ce8813bd6ca6c2bd3dc3b132055",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "0.020917",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 60
+          },
+          "model": "c409b8db52bd2ceb4021c95506e4c4ed0ab2ea59e798e2fcd73db224e2eeb068",
+          "table": "596dfde8db9ba9aeecf07c46dc83e281f83ff65cec27a87038992e05d4b03ba6",
+          "svgWithReversedTitlePositions": "dce2291e2ac2a5971ece1937feb0a641aad7b7c5f2ea2bda0801bade3f10e93b",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "0.010458",
+            "-0.018114",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 90
+          },
+          "model": "bb64c77807527a44325ef5c9bd53197254d32aef77e45aa8a70a5a28f0777ea0",
+          "table": "ec846dccf24060710ed719207009f5f24f50084073553e132edda05c3807ceae",
+          "svgWithReversedTitlePositions": "2f56fcdfb4e60d51085bdce35a83ce035470f963306793df1b9f8ba1531fca1c",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "0.000000",
+            "-0.020917",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 120
+          },
+          "model": "ea870d95a62068176e37e98cba66733d511cccc1508f1cbbc38a66c9225c7e6c",
+          "table": "a8801202a47ae13852540821b43d8b7f0556eb396390514c7462864420b2636d",
+          "svgWithReversedTitlePositions": "902f6e49305c8dbf233cdd6b9434cb8d3d05ed7f5db851c76be66730b36a4cf7",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "-0.010458",
+            "-0.018114",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "t1Ms": 1400,
+            "tiMs": 1000,
+            "errorDeg": 180
+          },
+          "model": "8c80424c5679eaf02bc8b3faf0e299a7e8a52f3643fe4ac3504ad2cd313cd1c6",
+          "table": "38497ea951f6b81f4ef3921c65e048db341159ac31f6ecf1a705ff16bd687672",
+          "svgWithReversedTitlePositions": "51b4a0f72742cbf84879a73518fdab093f668218fa771b7371dc0789dbd30c5f",
+          "outputs": [
+            "0.020917",
+            "0.020917",
+            "-0.020917",
+            "0.000000",
+            "970.406053"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        }
+      ]
+    },
+    {
+      "name": "intensity",
+      "states": [
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 400,
+            "gain": 0.5,
+            "referenceFactor": 0.8
+          },
+          "model": "1975a53d8f18c090e6b3fd9d14d6582cbb5f435c36ce97b4861145603319faae",
+          "table": "ece4b844ea3d36c51b37ede9dc51f7205100c39f1c6824e08a7781f6cf2630f8",
+          "svgWithReversedTitlePositions": "b011d1d4539c1d7df02aeac5a07c67c2a185d525678588af0e50360fd3aee96d",
+          "outputs": [
+            "-0.340640",
+            "0.170320",
+            "-0.170320",
+            "0.400000",
+            "-0.425800",
+            "-0.085160"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 400,
+            "gain": 0.5,
+            "referenceFactor": 1
+          },
+          "model": "cd4d9cf4303826216b2b23aad5278696ebf66971a0901e99038975b4215df45f",
+          "table": "cc811cf237b10945af7ac5ffe7fa830b8140773904a037ca62ebd25584730aa4",
+          "svgWithReversedTitlePositions": "be9d4e556b1c6b0f2a747c05618bc229fc598c8bb7f9d4a86b5c260bcecb0720",
+          "outputs": [
+            "-0.340640",
+            "0.170320",
+            "-0.170320",
+            "0.500000",
+            "-0.340640",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 400,
+            "gain": 1,
+            "referenceFactor": 0.8
+          },
+          "model": "852af08ffdd394922e040a5ae4647349ffd58b0a2e4eb862623577724508a0de",
+          "table": "904b3ec4f371912ff85a161c3f3844be1fcbb507c7a38132818e4a8a95d5d88f",
+          "svgWithReversedTitlePositions": "2ae449da83dff5df15251b0b03add039fdcab48c5c32cd27ee5ed2ade1c9de52",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.340640",
+            "0.800000",
+            "-0.425800",
+            "-0.085160"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 400,
+            "gain": 1,
+            "referenceFactor": 1
+          },
+          "model": "3d9baece7abb151e47d7ef2d613b20e3e7fd04e546a195630307d17c515355cc",
+          "table": "fb025001d538e2277357e61f05d3edceecc244e243a8fad496ec4203612c72fb",
+          "svgWithReversedTitlePositions": "000ec0a2b1ecce6727a44c99645e692a302a1964dd01059a328c3ca67dbbb16a",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.340640",
+            "1.000000",
+            "-0.340640",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 400,
+            "gain": 2,
+            "referenceFactor": 0.8
+          },
+          "model": "23e520c09eae2160e1dde67486b8f201907d1dc18a04fcb3a7585e5582a5ad45",
+          "table": "ad569c6e736a3c76248f031068c44da8760d706f5472c51560b0fa5e04f2f09a",
+          "svgWithReversedTitlePositions": "25450dffb16c724d3aaacc08ffb12ff19cb258ccb5764217f273d665519c999e",
+          "outputs": [
+            "-0.340640",
+            "0.681280",
+            "-0.681280",
+            "1.600000",
+            "-0.425800",
+            "-0.085160"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 400,
+            "gain": 2,
+            "referenceFactor": 1
+          },
+          "model": "2b266b8eeb29a09ac5b93d86ecf0e230325ce0b1cf44d645fa426720097d3481",
+          "table": "ddccdbeaed008e9ebf03a45fe7def4d58313fd66e8ea04879dd36145f5ee1cdf",
+          "svgWithReversedTitlePositions": "73f3972273496305195517631a616444964e68141e77e08a29d861ccbf867ef6",
+          "outputs": [
+            "-0.340640",
+            "0.681280",
+            "-0.681280",
+            "2.000000",
+            "-0.340640",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 700,
+            "gain": 0.5,
+            "referenceFactor": 0.8
+          },
+          "model": "da25afa11b9649d78d89d71ff732f6315c915f611505f2fc26d664222e063d38",
+          "table": "aee526fac940881d5c578d49d1096df8da2af3480f3864037eb5bf62f5d2d5a7",
+          "svgWithReversedTitlePositions": "efcd15b14b0a39e48104c682f144e421a574728159f6f0945a4606ef57b09ac7",
+          "outputs": [
+            "0.006829",
+            "0.003415",
+            "0.003415",
+            "0.400000",
+            "0.008537",
+            "0.001707"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 700,
+            "gain": 0.5,
+            "referenceFactor": 1
+          },
+          "model": "d8aed40b826c4a2416856a202f7d3daae8dc6af7556bd832692cd86fd6576fe9",
+          "table": "5e6a18a2d14f31501cb6e243551c5e2bac36234cc7c8f0daa965f9a50f51dae1",
+          "svgWithReversedTitlePositions": "a5054a90a5e382f761999997107cdbb221bdc0e35481a01ac10698d4691cd46e",
+          "outputs": [
+            "0.006829",
+            "0.003415",
+            "0.003415",
+            "0.500000",
+            "0.006829",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 700,
+            "gain": 1,
+            "referenceFactor": 0.8
+          },
+          "model": "9abdfb5ea465bd534ab2d8330bac65cad7199ba3647026583e472b1fc985aaf5",
+          "table": "e13581b713d0c53a72c31f4493933ea05e3090ada1db07be701d1bbda29a7f9f",
+          "svgWithReversedTitlePositions": "fc0b1bb672b1a4c71ff9569ade8d0772b374b95c8cf648ea72fb3376be46b6df",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.006829",
+            "0.800000",
+            "0.008537",
+            "0.001707"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 700,
+            "gain": 1,
+            "referenceFactor": 1
+          },
+          "model": "88eb9c13fb23540037a8a0007c9134077d3c4164c1af5a000c04cad26d7ef574",
+          "table": "87ca3b900de07aa5c4316f3c27d40a3d08c0708ebbcc9926fdb4c0213e173f59",
+          "svgWithReversedTitlePositions": "43360ebb78207ae646af0674057c1e240c9958eab82ddb972d2153356f93dedd",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.006829",
+            "1.000000",
+            "0.006829",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 700,
+            "gain": 2,
+            "referenceFactor": 0.8
+          },
+          "model": "1eedcd4a35b3f34fb822fc8e2b82f211e75171bbb065abbc2584871bbc4c7221",
+          "table": "36a40bc1261b60fd92b9ddc9ac00c2e96e24dafc354720015c49a68f1554714a",
+          "svgWithReversedTitlePositions": "ceea23b9fdfdf79e8cf0a439973adee0cad3658ef626da2fd86602a4ca7484f2",
+          "outputs": [
+            "0.006829",
+            "0.013659",
+            "0.013659",
+            "1.600000",
+            "0.008537",
+            "0.001707"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 700,
+            "gain": 2,
+            "referenceFactor": 1
+          },
+          "model": "f08cf81eea45957c54dc4c3fd7b75e36f56fa2cc3ee97172c997a0a9144e85c9",
+          "table": "c9643890e0bc7e9ef9e5c54cba0fe8311b558cc1bff646b5c3493cc64c3816fa",
+          "svgWithReversedTitlePositions": "2587458df88240ee7ff4e341a39aa61d484c2c21ff8e9c6765b41a842757b055",
+          "outputs": [
+            "0.006829",
+            "0.013659",
+            "0.013659",
+            "2.000000",
+            "0.006829",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 1000,
+            "gain": 0.5,
+            "referenceFactor": 0.8
+          },
+          "model": "ef5293670ca60ea158d9f9d4f6d1ae32540f875859dd310bcbcada2cad834d57",
+          "table": "b0872670032753d636ea9d411dd6bef16038bca3929ef3a0856de337f8bc5452",
+          "svgWithReversedTitlePositions": "80ed7e415dd99dc641ce0f1d72ac898f17a41511d692f0989ba24daecaf07c34",
+          "outputs": [
+            "0.264241",
+            "0.132121",
+            "0.132121",
+            "0.400000",
+            "0.330301",
+            "0.066060"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 1000,
+            "gain": 0.5,
+            "referenceFactor": 1
+          },
+          "model": "c81f45fd719e0e8f4a62116b7ebef99a43c5d13298599f9b543966afdc1c5cff",
+          "table": "4d071df0ed1eec407a2280526d71ebc41d287bc3020f1019c4877151eff54632",
+          "svgWithReversedTitlePositions": "5c1f91cb61167fe5c7f98f93e8df7aae4d75f589e2e7e8f40b5383fb7f3236d0",
+          "outputs": [
+            "0.264241",
+            "0.132121",
+            "0.132121",
+            "0.500000",
+            "0.264241",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 1000,
+            "gain": 1,
+            "referenceFactor": 0.8
+          },
+          "model": "521347eff53b288a0e86c45d8f37dcdb0337a0da245ee7fccc60e5ead4c1f81c",
+          "table": "6024226f9f86b5f65ea2b0d0b2d7b2863680fafbc311b79718dec40139b7473b",
+          "svgWithReversedTitlePositions": "dd3215fc97d3a35fe46735a5b41fc34ae331d1e5f8b079b4700b27d5c4b8fdfd",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.264241",
+            "0.800000",
+            "0.330301",
+            "0.066060"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 1000,
+            "gain": 1,
+            "referenceFactor": 1
+          },
+          "model": "1368e9cb4d5635647cfd8d79eb2aa97ff6344e6f6c2fc934ec3c3e09c8d85de0",
+          "table": "b5dc24be2f7d111188b9ec5f8c7f2c1a5939f2cb3f3efaf93be0183ed6e7068d",
+          "svgWithReversedTitlePositions": "623119278554121ddd31e000251f32461f13f6f119f773b9492f757add8839aa",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.264241",
+            "1.000000",
+            "0.264241",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 1000,
+            "gain": 2,
+            "referenceFactor": 0.8
+          },
+          "model": "04ddc216d4a7b7d7429efd7965fe903dea8bb6eb0201718e10d3ff4cbcdca37c",
+          "table": "017d6eeb3e1a58b4efe7ff74467a43e2fea91add0d48b335d5354996813c64a7",
+          "svgWithReversedTitlePositions": "d56c61d126d08e3a1b07c58594307aac3c25b4a965d0af42cfbf87e5be998720",
+          "outputs": [
+            "0.264241",
+            "0.528482",
+            "0.528482",
+            "1.600000",
+            "0.330301",
+            "0.066060"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 1920,
+          "options": {
+            "tiMs": 1000,
+            "gain": 2,
+            "referenceFactor": 1
+          },
+          "model": "a598310e74e5164b6239cd43006ce42659fd655968f5208de4eb114a2d806e1a",
+          "table": "e42ae561055e558681143dbf9c47e98691750d09160d26a53c305345bb65b18f",
+          "svgWithReversedTitlePositions": "00210be28803f7f505a1e70c500f524630bac66c9b2b64c82e41669bbfa7e765",
+          "outputs": [
+            "0.264241",
+            "0.528482",
+            "0.528482",
+            "2.000000",
+            "0.264241",
+            "0.000000"
+          ],
+          "beforeOutside": 0,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 400,
+            "gain": 0.5,
+            "referenceFactor": 0.8
+          },
+          "model": "1975a53d8f18c090e6b3fd9d14d6582cbb5f435c36ce97b4861145603319faae",
+          "table": "ece4b844ea3d36c51b37ede9dc51f7205100c39f1c6824e08a7781f6cf2630f8",
+          "svgWithReversedTitlePositions": "c5808e5887027e575346cbb95fd646cc346ed9b7c0466026eccbbd7f8bc07a84",
+          "outputs": [
+            "-0.340640",
+            "0.170320",
+            "-0.170320",
+            "0.400000",
+            "-0.425800",
+            "-0.085160"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 400,
+            "gain": 0.5,
+            "referenceFactor": 1
+          },
+          "model": "cd4d9cf4303826216b2b23aad5278696ebf66971a0901e99038975b4215df45f",
+          "table": "cc811cf237b10945af7ac5ffe7fa830b8140773904a037ca62ebd25584730aa4",
+          "svgWithReversedTitlePositions": "b7e197973af48bccb9df3481161978f5a74a80493256c91b78f883612ff74cdd",
+          "outputs": [
+            "-0.340640",
+            "0.170320",
+            "-0.170320",
+            "0.500000",
+            "-0.340640",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 400,
+            "gain": 1,
+            "referenceFactor": 0.8
+          },
+          "model": "852af08ffdd394922e040a5ae4647349ffd58b0a2e4eb862623577724508a0de",
+          "table": "904b3ec4f371912ff85a161c3f3844be1fcbb507c7a38132818e4a8a95d5d88f",
+          "svgWithReversedTitlePositions": "1f39b0b47a4ff9ce08a3e9f20e58c8baf3130434f2a3f874458147cdd1f23390",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.340640",
+            "0.800000",
+            "-0.425800",
+            "-0.085160"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 400,
+            "gain": 1,
+            "referenceFactor": 1
+          },
+          "model": "3d9baece7abb151e47d7ef2d613b20e3e7fd04e546a195630307d17c515355cc",
+          "table": "fb025001d538e2277357e61f05d3edceecc244e243a8fad496ec4203612c72fb",
+          "svgWithReversedTitlePositions": "3a780d8f46dee374ec6ecb87bfecbb29b1706bfc4cf6b58da8498bb1a3a337d7",
+          "outputs": [
+            "-0.340640",
+            "0.340640",
+            "-0.340640",
+            "1.000000",
+            "-0.340640",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 400,
+            "gain": 2,
+            "referenceFactor": 0.8
+          },
+          "model": "23e520c09eae2160e1dde67486b8f201907d1dc18a04fcb3a7585e5582a5ad45",
+          "table": "ad569c6e736a3c76248f031068c44da8760d706f5472c51560b0fa5e04f2f09a",
+          "svgWithReversedTitlePositions": "327c2a70f3e70ebcf220e750afb8d159a79cd709b00492776a34ad09288f87e7",
+          "outputs": [
+            "-0.340640",
+            "0.681280",
+            "-0.681280",
+            "1.600000",
+            "-0.425800",
+            "-0.085160"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 400,
+            "gain": 2,
+            "referenceFactor": 1
+          },
+          "model": "2b266b8eeb29a09ac5b93d86ecf0e230325ce0b1cf44d645fa426720097d3481",
+          "table": "ddccdbeaed008e9ebf03a45fe7def4d58313fd66e8ea04879dd36145f5ee1cdf",
+          "svgWithReversedTitlePositions": "fbe6462887ef5c464fdd9fbcc10168e23efb113a76298ee8a3bb758149c4c9c5",
+          "outputs": [
+            "-0.340640",
+            "0.681280",
+            "-0.681280",
+            "2.000000",
+            "-0.340640",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 700,
+            "gain": 0.5,
+            "referenceFactor": 0.8
+          },
+          "model": "da25afa11b9649d78d89d71ff732f6315c915f611505f2fc26d664222e063d38",
+          "table": "aee526fac940881d5c578d49d1096df8da2af3480f3864037eb5bf62f5d2d5a7",
+          "svgWithReversedTitlePositions": "3d020f6145671d59d3eb2a3df277d01cc241114fd56bcf7a621a63e7945ac800",
+          "outputs": [
+            "0.006829",
+            "0.003415",
+            "0.003415",
+            "0.400000",
+            "0.008537",
+            "0.001707"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 700,
+            "gain": 0.5,
+            "referenceFactor": 1
+          },
+          "model": "d8aed40b826c4a2416856a202f7d3daae8dc6af7556bd832692cd86fd6576fe9",
+          "table": "5e6a18a2d14f31501cb6e243551c5e2bac36234cc7c8f0daa965f9a50f51dae1",
+          "svgWithReversedTitlePositions": "f3698d449ef013c0c3dd2600ac035d61e220d7365110d4698456bc896e683a53",
+          "outputs": [
+            "0.006829",
+            "0.003415",
+            "0.003415",
+            "0.500000",
+            "0.006829",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 700,
+            "gain": 1,
+            "referenceFactor": 0.8
+          },
+          "model": "9abdfb5ea465bd534ab2d8330bac65cad7199ba3647026583e472b1fc985aaf5",
+          "table": "e13581b713d0c53a72c31f4493933ea05e3090ada1db07be701d1bbda29a7f9f",
+          "svgWithReversedTitlePositions": "e0eb43f33264f75a3227f38502a06285b96eef8b327c2fd38202e5f235a0581c",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.006829",
+            "0.800000",
+            "0.008537",
+            "0.001707"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 700,
+            "gain": 1,
+            "referenceFactor": 1
+          },
+          "model": "88eb9c13fb23540037a8a0007c9134077d3c4164c1af5a000c04cad26d7ef574",
+          "table": "87ca3b900de07aa5c4316f3c27d40a3d08c0708ebbcc9926fdb4c0213e173f59",
+          "svgWithReversedTitlePositions": "b250ae088c1a5e3b7d05dd5c2e2342b1258f961ac55ee46427e7a3a9372f2ec4",
+          "outputs": [
+            "0.006829",
+            "0.006829",
+            "0.006829",
+            "1.000000",
+            "0.006829",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 700,
+            "gain": 2,
+            "referenceFactor": 0.8
+          },
+          "model": "1eedcd4a35b3f34fb822fc8e2b82f211e75171bbb065abbc2584871bbc4c7221",
+          "table": "36a40bc1261b60fd92b9ddc9ac00c2e96e24dafc354720015c49a68f1554714a",
+          "svgWithReversedTitlePositions": "ad8ea9ff4a6dc9178e1202a678e813bfd033813523489be9cc5d62d2ec3fa8c3",
+          "outputs": [
+            "0.006829",
+            "0.013659",
+            "0.013659",
+            "1.600000",
+            "0.008537",
+            "0.001707"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 700,
+            "gain": 2,
+            "referenceFactor": 1
+          },
+          "model": "f08cf81eea45957c54dc4c3fd7b75e36f56fa2cc3ee97172c997a0a9144e85c9",
+          "table": "c9643890e0bc7e9ef9e5c54cba0fe8311b558cc1bff646b5c3493cc64c3816fa",
+          "svgWithReversedTitlePositions": "611d37e2fbefff42e64692f44f2620341a9d879dd4642464fd2cd83d08797a1d",
+          "outputs": [
+            "0.006829",
+            "0.013659",
+            "0.013659",
+            "2.000000",
+            "0.006829",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 1000,
+            "gain": 0.5,
+            "referenceFactor": 0.8
+          },
+          "model": "ef5293670ca60ea158d9f9d4f6d1ae32540f875859dd310bcbcada2cad834d57",
+          "table": "b0872670032753d636ea9d411dd6bef16038bca3929ef3a0856de337f8bc5452",
+          "svgWithReversedTitlePositions": "4ad96a683fee78c2bb1fe16e4c5150ceccd29bdc1ac16b959b28a734a6f5c89f",
+          "outputs": [
+            "0.264241",
+            "0.132121",
+            "0.132121",
+            "0.400000",
+            "0.330301",
+            "0.066060"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 1000,
+            "gain": 0.5,
+            "referenceFactor": 1
+          },
+          "model": "c81f45fd719e0e8f4a62116b7ebef99a43c5d13298599f9b543966afdc1c5cff",
+          "table": "4d071df0ed1eec407a2280526d71ebc41d287bc3020f1019c4877151eff54632",
+          "svgWithReversedTitlePositions": "bcf65750d0ee8c27f0b2cbd36d316f0387bdb1c52721f0754b82baa3e23c0f9d",
+          "outputs": [
+            "0.264241",
+            "0.132121",
+            "0.132121",
+            "0.500000",
+            "0.264241",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 1000,
+            "gain": 1,
+            "referenceFactor": 0.8
+          },
+          "model": "521347eff53b288a0e86c45d8f37dcdb0337a0da245ee7fccc60e5ead4c1f81c",
+          "table": "6024226f9f86b5f65ea2b0d0b2d7b2863680fafbc311b79718dec40139b7473b",
+          "svgWithReversedTitlePositions": "16f1695d4ce3927a8634713a6c647942c95ffd01712aeb59a9e45b51205eea2b",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.264241",
+            "0.800000",
+            "0.330301",
+            "0.066060"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 1000,
+            "gain": 1,
+            "referenceFactor": 1
+          },
+          "model": "1368e9cb4d5635647cfd8d79eb2aa97ff6344e6f6c2fc934ec3c3e09c8d85de0",
+          "table": "b5dc24be2f7d111188b9ec5f8c7f2c1a5939f2cb3f3efaf93be0183ed6e7068d",
+          "svgWithReversedTitlePositions": "c86f19e8f00ba711f1dbeecb55007bb7fe7bae2c0274f35532bf837d277f4eb5",
+          "outputs": [
+            "0.264241",
+            "0.264241",
+            "0.264241",
+            "1.000000",
+            "0.264241",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 1000,
+            "gain": 2,
+            "referenceFactor": 0.8
+          },
+          "model": "04ddc216d4a7b7d7429efd7965fe903dea8bb6eb0201718e10d3ff4cbcdca37c",
+          "table": "017d6eeb3e1a58b4efe7ff74467a43e2fea91add0d48b335d5354996813c64a7",
+          "svgWithReversedTitlePositions": "9cf5f82d8617d773a2f05763360b20fe868f2a69d3d9eb530b1700bc838b6133",
+          "outputs": [
+            "0.264241",
+            "0.528482",
+            "0.528482",
+            "1.600000",
+            "0.330301",
+            "0.066060"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        },
+        {
+          "width": 390,
+          "options": {
+            "tiMs": 1000,
+            "gain": 2,
+            "referenceFactor": 1
+          },
+          "model": "a598310e74e5164b6239cd43006ce42659fd655968f5208de4eb114a2d806e1a",
+          "table": "e42ae561055e558681143dbf9c47e98691750d09160d26a53c305345bb65b18f",
+          "svgWithReversedTitlePositions": "77ff1f43f7a48fb838b27ad36897c92c2560ba20d6b5a476e4bd34ac7ecfd703",
+          "outputs": [
+            "0.264241",
+            "0.528482",
+            "0.528482",
+            "2.000000",
+            "0.264241",
+            "0.000000"
+          ],
+          "beforeOutside": 2,
+          "afterOutside": 0,
+          "equal": true
+        }
+      ]
+    }
+  ]
+}

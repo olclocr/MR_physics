@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/ir_phase_reference.html",
-      "sha256": "E5F39E93A5CEDD27636199C62C1CC9799BE9417A5F7B46FECEF5C8D3F3AA72F4"
+      "sha256": "1CB01FCE22255A6A5EC19CF2448B92420AEF89B7EC12C810EEE1A941E3129D75"
     },
     {
       "path": "docs/assets/ir-phase-reference-model.js",
@@ -46,6 +46,21 @@
     {
       "path": "docs/verification/2026-10-18/X11-phase-browser-check.json",
       "sha256": "35DC2BA7970841720CC407BD9DC9B6766D27CB296B7047C280315895A7C62896"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W106",
+      "proof": "docs/verification/2026-10-19/W106-manifest-updates.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "presentationRevisions": [
+    {
+      "task": "W112",
+      "proof": "docs/verification/2026-10-19/W112-svg-margins.md",
+      "audit": "docs/verification/2026-10-19/W112-edit-audit.json",
+      "scope": "Only two SVG title y positions; calculations/table and all other SVG bytes preserved"
     }
   ]
 }

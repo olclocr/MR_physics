@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/axis_scale_area.html",
-      "sha256": "F4CA6FAB3E52AB33018A91F90D195566266B0808C35A8A59B77B9CE158C00F4B"
+      "sha256": "254BF3E07EACDD4CD03766FDA97A0231CBE5C4F7705A7B6FAB6C30744E7B88C5"
     },
     {
       "path": "docs/assets/axis-scale-model.js",
@@ -50,6 +50,14 @@
     {
       "path": "docs/verification/2026-10-18/X17-scale-browser-check.json",
       "sha256": "8E89C6F9A5F0079DF1A24528C44DD6C8EA72CF53155E1E92C95BA35437CA6D14"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

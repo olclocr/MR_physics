@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/signal_window_log.html",
-      "sha256": "266AA6492D2EDA3460961B76E70A27519FDBC187CEFBA736B95C286B9616D2E6"
+      "sha256": "98369056694DFD6EE9CA9078E1BBFC575E802D69F13C355AE70F5D047796E8F0"
     },
     {
       "path": "docs/assets/window-log-model.js",
@@ -58,6 +58,14 @@
     {
       "path": "docs/verification/2026-10-18/X06-window-browser-check.json",
       "sha256": "8B784184DC3C3762FEBA81DAB818EE41EE8491288752447EE5153CC2E2FD80EA"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

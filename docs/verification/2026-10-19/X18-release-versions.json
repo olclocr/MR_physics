@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "34b9105bd1cfe6423273ea2a28df2d6f8262d075",
+  "scope": "W108 finite prescribed solute saturation, event-composed shared propagation, continuous states/water slope, delayed water minimum; no actual RF/MT-CEST/clinical inference; own report excluded",
+  "files": [
+    {
+      "path": "docs/two_pool_saturation_release.html",
+      "sha256": "83EAEE6DFA7FDC5F958FEBA02F0F6B2E7F1342998946B54C5FD9438C77F5DA0F"
+    },
+    {
+      "path": "docs/assets/two-pool-release-model.js",
+      "sha256": "DF72CE699B369CE502483E8FA813444940A5CC630956C6CDC4D09FC62766A7A9"
+    },
+    {
+      "path": "docs/assets/two-pool-transfer-model.js",
+      "sha256": "6C6A1E482F1F9CE15147F91CA41219FBF16199926A1C0190F38D3D44E6427D8C"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/two-pool-release.test.cjs",
+      "sha256": "75F80535ED6F77CA67AE35330748F3E266AE72F180E77E2FA3E10BFF7DA9518C"
+    },
+    {
+      "path": "tests/helpers/two-pool-release-reference.cjs",
+      "sha256": "49024E33F7C20024569AA8F5F0E5B93A97F6917FB79F83D726A5037B37A706DC"
+    },
+    {
+      "path": "tests/helpers/two-pool-reference.cjs",
+      "sha256": "98F6FD9B5E0791077D9A5C5ECA305AD255850F49F3F74203A93D98911B5A8C92"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-release-numerical.cjs",
+      "sha256": "649C95BD9041F5038644F55C2D466221E9739EBC9F3D342DB18F70DDE38598C3"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-release-numerical.json",
+      "sha256": "C93B48D66A0091B5D500B0363CB96BD2168D9E5B367CCA417CE6D3833DAD8F95"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-release-display-reference.json",
+      "sha256": "5910C676EC2F71675166A35F8A376F4B134607A7DACE009C95F2D0CB3A7FB196"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-release-browser-check.js",
+      "sha256": "80084E7E5240FF2A5D59F1CA470B03BC29D67ED2BCB0E0CA44654F06A83C8B43"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-release-browser-check.json",
+      "sha256": "0A5712E3AD0812D6B5651CDD5B6641A085BC917A1F252751AC4F9C16F7BDF03A"
+    }
+  ],
+  "physicsRevisions": [
+    {
+      "task": "W111",
+      "proof": "docs/verification/2026-10-19/X18-rates-physics.md",
+      "audit": "docs/verification/2026-10-19/W111-api-audit.json",
+      "scope": "Optional solute R1 with unchanged defaults; independent old values and108 full before/after display fingerprints identical"
+    }
+  ]
+}

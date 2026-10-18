@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/absorbed_power_energy.html",
-      "sha256": "2CE789988BC80ED039D9686C80BF022FA4D8BE1A53CCB9CE994D08BEF77633B5"
+      "sha256": "93C8D7C017686F918DB283C543F0BABA68C7DED85D99BA10006B33AE597E2443"
     },
     {
       "path": "docs/assets/absorbed-power-model.js",
@@ -49,6 +49,14 @@
       "task": "W97",
       "proof": "docs/verification/2026-10-18/checkpoint-W97-versions.json",
       "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W105",
+      "proof": "docs/verification/2026-10-19/W105-copy-audit.json",
+      "edits": "docs/verification/2026-10-19/W105-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "conditions": 12,
+  "conditionalSamples": 24000,
+  "uniqueComplexNoisePairs": 2000,
+  "seed": 1479618894,
+  "seedHex": "0x5831314e",
+  "replicas": 2000,
+  "sigma": 0.02,
+  "method": "Independent BigInt xorshift32, Box-Muller, RK4 recovery, complex 2x2 solve, compensated two-pass statistics and interval-search histograms; fixed seed selected before statistical results",
+  "max": {
+    "randomBank": 0,
+    "magnetization": 1.4988010832439613e-15,
+    "complex": 3.1086244689504383e-15,
+    "errorValues": 2.220446049250313e-16,
+    "statistics": 4.6629367034256575e-15,
+    "expected": 2.9976021664879227e-15,
+    "gainIdentity": 0,
+    "histogramCounts": 0,
+    "meanStandardErrors": 0.3426017840129128,
+    "sdRelative": 0.0055290716636478
+  },
+  "tolerances": {
+    "randomBank": 1e-10,
+    "magnetization": 1e-10,
+    "complex": 1e-10,
+    "errorValues": 1e-10,
+    "statistics": 1e-10,
+    "expected": 1e-10,
+    "gainIdentity": 1e-10,
+    "histogramCounts": 0,
+    "meanStandardErrors": 4.5,
+    "sdRelative": 0.08
+  },
+  "failed": [],
+  "passed": true
+}

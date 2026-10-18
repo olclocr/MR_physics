@@ -1,0 +1,40 @@
+{
+  "conditions": 18,
+  "conditionCurvePoints": 7218,
+  "uniqueCurvePoints": 1203,
+  "minimumReference": "Independent two eigenmode coefficients and analytic logarithmic extremum time; product uses derivative bisection",
+  "max": {
+    "matrixExponential": 2.581268532253489e-15,
+    "ode": 3.589489816491209e-14,
+    "odeConvergence": 5.412371939517158e-13,
+    "minimumTimeSec": 7.993605777301127e-15,
+    "minimumWater": 3.3306690738754696e-16,
+    "minimumDerivative": 1.3877787807814457e-17,
+    "minimumBoundViolation": 0,
+    "modeIdentity": 4.440892098500626e-16,
+    "stateContinuity": 6.938893903907228e-18,
+    "waterSlopeContinuity": 0,
+    "soluteSlopeJump": 0,
+    "exchangeCancellation": 5.551115123125783e-17,
+    "totalRecovery": 4.440892098500626e-16,
+    "positivityViolation": 0
+  },
+  "tolerances": {
+    "matrixExponential": 1e-9,
+    "ode": 1e-9,
+    "odeConvergence": 1e-9,
+    "minimumTimeSec": 1e-9,
+    "minimumWater": 1e-9,
+    "minimumDerivative": 1e-9,
+    "minimumBoundViolation": 1e-9,
+    "modeIdentity": 1e-9,
+    "stateContinuity": 1e-9,
+    "waterSlopeContinuity": 1e-9,
+    "soluteSlopeJump": 1e-9,
+    "exchangeCancellation": 1e-9,
+    "totalRecovery": 1e-9,
+    "positivityViolation": 1e-9
+  },
+  "failed": [],
+  "passed": true
+}

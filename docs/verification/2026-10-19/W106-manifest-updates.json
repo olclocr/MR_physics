@@ -1,0 +1,9 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-18/X11-phase-versions.json",
+    "path": "docs/ir_phase_reference.html",
+    "before": "E5F39E93A5CEDD27636199C62C1CC9799BE9417A5F7B46FECEF5C8D3F3AA72F4",
+    "after": "6C7B341D4C5FA26E25755B8DE90717EA30D2D91302971B2CD13F5DCCF8EC2F70",
+    "reason": "W106 successor navigation only; exact previous bytes reconstructed by removing one link"
+  }
+]

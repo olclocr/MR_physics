@@ -1,0 +1,34 @@
+[
+  [
+    "pixel_center_quantization.html",
+    "2026-10-19/X17-quantization-physics.html"
+  ],
+  [
+    "ir_intensity_normalization.html",
+    "2026-10-19/X11-intensity-physics.html"
+  ],
+  [
+    "two_pool_saturation_transfer.html",
+    "2026-10-19/X18-transfer-physics.html"
+  ],
+  [
+    "two_pool_saturation_release.html",
+    "2026-10-19/X18-release-physics.html"
+  ],
+  [
+    "ir_normalization_noise.html",
+    "2026-10-19/X11-noise-physics.html"
+  ],
+  [
+    "two_pool_relaxation_rates.html",
+    "2026-10-19/X18-rates-physics.html"
+  ],
+  [
+    "ir_phase_reference.html",
+    "2026-10-18/X11-phase-physics.html"
+  ],
+  [
+    "saturating_dipole_work.html",
+    "2026-10-18/X16-saturation-physics.html"
+  ]
+]

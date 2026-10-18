@@ -21,3 +21,7 @@ Ueff(0T)=0, Ueff=−∫₀ᴮμ(b)db=−μsatBc ln cosh(B/Bc), Fx=μ(B0)G다. �
 [Chrome 절차](X16-saturation-browser-check.js)·[16개 상태](X16-saturation-browser-check.json)는1920/390px의8조건에서5지표·161×6원표·세 곡선/선택점·53/153점 응답 다각형을 독립 자료와 대조했다. 출력5.1e−7·SVG1e−5 viewBox 단위 기준, 최대 그래픽 차4.980e−6이다. 실제 그린 다각형의 shoelace 면적을 축 단위로 환산한 최대 차이는3.301e−5mJ로 사전1e−4mJ 이내다. 이는 표본 사다리꼴 근사이며 해석적 work 값과 같은 정밀도라고 표시하지 않았다. 720×340비율·11CSSpx 이상 글자·중첩 SVG 없음·Home/End/Arrow/Enter·세 예제/초기화·선택 행/전체 열·두 문제 양답/피드백을 확인했다. JS 오류/페이지 가로 넘침0이다.
 
 [데스크톱](X16-saturation-base-1920.png), [포화 모바일](X16-saturation-base-plots-390.png), [선형](X16-saturation-linear-plots-390.png), [1T 비교](X16-saturation-one-plots-390.png)를 직접 읽었다. 포화 응답/다른 면적·절반 곱의 분리, 선형 두 에너지의 겹침, 같은 초기 기울기와 다른1T 모멘트가 원표/본문과 일치했다. 임상 영상은 없다. [대상13개 입력](X16-saturation-versions.json)·[전체222개 시험](W94-tests.txt)·[통합 기록](checkpoint-W94-navigation.md). 실제 재질/동역학/안전·외부 전문가 검토는 미시행이다.
+
+## W109 설명 보강 (2026-10-19)
+
+두 독립 상수 μsat=.001 A·m²와 Bc=1 T를 slash 나열 대신 각각 명시하고 B/Bc=1 설명을 분리했다. [두 리터럴/독립 수치 재실행/16개 전후 실제 상태의 모델·표·SVG 보존](../2026-10-19/W109-saturation-clarity.md)을 확인했다. 기존 모형/계수/입력값/판정 범위와 외부 전문가 검토 미시행은 유지한다.

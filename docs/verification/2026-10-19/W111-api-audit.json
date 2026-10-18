@@ -1,0 +1,46 @@
+{
+  "checkedEntries": 1126,
+  "unchangedEntries": 1121,
+  "apiEntries": 4,
+  "navigationEntries": 1,
+  "changed": [
+    {
+      "manifest": "docs/verification/2026-10-19/X18-transfer-versions.json",
+      "path": "docs/assets/two-pool-transfer-model.js",
+      "before": "8ED7961C8FD6518125190BB2ED459657817053DDC4C2A75DC15B2D49E6DAF508",
+      "after": "6C6A1E482F1F9CE15147F91CA41219FBF16199926A1C0190F38D3D44E6427D8C",
+      "kind": "optional solute R1 API/reference extension"
+    },
+    {
+      "manifest": "docs/verification/2026-10-19/X18-transfer-versions.json",
+      "path": "tests/helpers/two-pool-reference.cjs",
+      "before": "00618D1BDC7F1D67732A55D55BEF757B5D89D80ED693586894F37A64962C1613",
+      "after": "98F6FD9B5E0791077D9A5C5ECA305AD255850F49F3F74203A93D98911B5A8C92",
+      "kind": "optional solute R1 API/reference extension"
+    },
+    {
+      "manifest": "docs/verification/2026-10-19/X18-release-versions.json",
+      "path": "docs/two_pool_saturation_release.html",
+      "before": "9D1F275B2047BA447D653B98D18569FC1ACC62D3DC297C32131130B1DC109CED",
+      "after": "83EAEE6DFA7FDC5F958FEBA02F0F6B2E7F1342998946B54C5FD9438C77F5DA0F",
+      "kind": "one successor navigation link"
+    },
+    {
+      "manifest": "docs/verification/2026-10-19/X18-release-versions.json",
+      "path": "docs/assets/two-pool-transfer-model.js",
+      "before": "8ED7961C8FD6518125190BB2ED459657817053DDC4C2A75DC15B2D49E6DAF508",
+      "after": "6C6A1E482F1F9CE15147F91CA41219FBF16199926A1C0190F38D3D44E6427D8C",
+      "kind": "optional solute R1 API/reference extension"
+    },
+    {
+      "manifest": "docs/verification/2026-10-19/X18-release-versions.json",
+      "path": "tests/helpers/two-pool-reference.cjs",
+      "before": "00618D1BDC7F1D67732A55D55BEF757B5D89D80ED693586894F37A64962C1613",
+      "after": "98F6FD9B5E0791077D9A5C5ECA305AD255850F49F3F74203A93D98911B5A8C92",
+      "kind": "optional solute R1 API/reference extension"
+    }
+  ],
+  "method": "Every previous manifest input compared; exact reversal of eight reviewed API/reference literals and one successor link recovers previous complete file bytes; numerical and real-browser preservation recorded separately",
+  "errors": [],
+  "passed": true
+}
