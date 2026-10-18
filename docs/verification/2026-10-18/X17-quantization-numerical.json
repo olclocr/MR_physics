@@ -1,0 +1,25 @@
+{
+  "conditions": 32,
+  "points": 800,
+  "pairChecks": 9600,
+  "max": {
+    "coordinateMm": 1.0658141036401503e-14,
+    "pixel": 1.4210854715202004e-14,
+    "integer": 0,
+    "lengthMm": 2.842170943040401e-14,
+    "metricMm": 4.218847493575595e-15,
+    "pointBoundViolationMm": 3.552713678800501e-15,
+    "pairBoundViolationMm": 0
+  },
+  "tolerances": {
+    "coordinateMm": 1e-10,
+    "pixel": 1e-10,
+    "integer": 0,
+    "lengthMm": 1e-10,
+    "metricMm": 1e-10,
+    "pointBoundViolationMm": 1e-10,
+    "pairBoundViolationMm": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

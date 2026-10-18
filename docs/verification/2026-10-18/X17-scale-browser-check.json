@@ -1,0 +1,782 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 64,
+  "maxGraphicError": 1.1368683772161603E-13,
+  "maxPolygonAreaErrorMm2": 1.8189894035458565E-12,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 113.1370849898476,
+      "lengthRatio": 0.9999999999999999,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 114.2740565482822,
+      "lengthRatio": 1.0100495037373167,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 114.2740565482822,
+      "lengthRatio": 1.0100495037373167,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 78.4,
+      "lengthRatio": 0.9800000000000001,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 112.01142798839768,
+      "lengthRatio": 0.9900505037623081,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 78.4,
+      "lengthRatio": 0.9800000000000001,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 112.01142798839768,
+      "lengthRatio": 0.9900505037623081,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 78.4313725490196,
+      "lengthRatio": 0.980392156862745,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.181448126109,
+      "lengthRatio": 1.0003921184310642,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 78.4313725490196,
+      "lengthRatio": 0.980392156862745,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 1920,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 113.18144812610902,
+      "lengthRatio": 1.0003921184310642,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.13708498984761,
+      "lengthRatio": 1,
+      "area": 6400,
+      "areaRatio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "unit",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 113.1370849898476,
+      "lengthRatio": 0.9999999999999999,
+      "area": 6399.999999999998,
+      "areaRatio": 0.9999999999999997
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 114.2740565482822,
+      "lengthRatio": 1.0100495037373167,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "x",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 114.2740565482822,
+      "lengthRatio": 1.0100495037373167,
+      "area": 6528,
+      "areaRatio": 1.02
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 78.4,
+      "lengthRatio": 0.9800000000000001,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 112.01142798839768,
+      "lengthRatio": 0.9900505037623081,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 78.4,
+      "lengthRatio": 0.9800000000000001,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 80,
+      "lengthRatio": 1,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "y",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 112.01142798839768,
+      "lengthRatio": 0.9900505037623081,
+      "area": 6272,
+      "areaRatio": 0.98
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "vertical"
+      },
+      "length": 78.4313725490196,
+      "lengthRatio": 0.980392156862745,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 0,
+        "segment": "diagonal"
+      },
+      "length": 113.181448126109,
+      "lengthRatio": 1.0003921184310642,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "horizontal"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "vertical"
+      },
+      "length": 78.4313725490196,
+      "lengthRatio": 0.980392156862745,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "edge"
+      },
+      "length": 81.6,
+      "lengthRatio": 1.02,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    },
+    {
+      "width": 390,
+      "options": {
+        "scale": "sameArea",
+        "angleDeg": 30,
+        "segment": "diagonal"
+      },
+      "length": 113.18144812610902,
+      "lengthRatio": 1.0003921184310642,
+      "area": 6399.999999999999,
+      "areaRatio": 0.9999999999999999
+    }
+  ]
+}

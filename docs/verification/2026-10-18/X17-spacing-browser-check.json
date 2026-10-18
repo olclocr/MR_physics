@@ -1,0 +1,253 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 24,
+  "maxGraphicError": 0,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "square",
+        "segment": "horizontal"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "square",
+        "segment": "vertical"
+      },
+      "truth": 80,
+      "assumed": 40,
+      "ratio": 0.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "square",
+        "segment": "edge"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "square",
+        "segment": "diagonal"
+      },
+      "truth": 113.13708498984761,
+      "assumed": 89.44271909999159,
+      "ratio": 0.7905694150420949
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "correct",
+        "segment": "horizontal"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "correct",
+        "segment": "vertical"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "correct",
+        "segment": "edge"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "correct",
+        "segment": "diagonal"
+      },
+      "truth": 113.13708498984761,
+      "assumed": 113.13708498984761,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "wide",
+        "segment": "horizontal"
+      },
+      "truth": 80,
+      "assumed": 160,
+      "ratio": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "wide",
+        "segment": "vertical"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "wide",
+        "segment": "edge"
+      },
+      "truth": 80,
+      "assumed": 160,
+      "ratio": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "assumed": "wide",
+        "segment": "diagonal"
+      },
+      "truth": 113.13708498984761,
+      "assumed": 178.88543819998318,
+      "ratio": 1.5811388300841898
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "square",
+        "segment": "horizontal"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "square",
+        "segment": "vertical"
+      },
+      "truth": 80,
+      "assumed": 40,
+      "ratio": 0.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "square",
+        "segment": "edge"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "square",
+        "segment": "diagonal"
+      },
+      "truth": 113.13708498984761,
+      "assumed": 89.44271909999159,
+      "ratio": 0.7905694150420949
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "correct",
+        "segment": "horizontal"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "correct",
+        "segment": "vertical"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "correct",
+        "segment": "edge"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "correct",
+        "segment": "diagonal"
+      },
+      "truth": 113.13708498984761,
+      "assumed": 113.13708498984761,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "wide",
+        "segment": "horizontal"
+      },
+      "truth": 80,
+      "assumed": 160,
+      "ratio": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "wide",
+        "segment": "vertical"
+      },
+      "truth": 80,
+      "assumed": 80,
+      "ratio": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "wide",
+        "segment": "edge"
+      },
+      "truth": 80,
+      "assumed": 160,
+      "ratio": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "assumed": "wide",
+        "segment": "diagonal"
+      },
+      "truth": 113.13708498984761,
+      "assumed": 178.88543819998318,
+      "ratio": 1.5811388300841898
+    }
+  ]
+}

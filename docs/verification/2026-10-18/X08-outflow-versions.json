@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W95 normalized packet survival only after arrival and common T1 recovery; no actual ASL/CBF/exchange/clinical estimate; own report excluded",
+  "files": [
+    {
+      "path": "docs/label_postarrival_outflow.html",
+      "sha256": "35ED2CBA325E321187840EC9CE42468DB35FDB9B204B60CBF3924FB3D417D215"
+    },
+    {
+      "path": "docs/assets/label-outflow-model.js",
+      "sha256": "3532C65A36ABD66281EA12F5BF6D10E7D8DC2B908853654D427B0AE98567411B"
+    },
+    {
+      "path": "docs/assets/label-train-model.js",
+      "sha256": "F9C792E9F22B1875DD5F7CB2658E1A22097A3C50BD07376C93032DAAE783D968"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/label-outflow.test.cjs",
+      "sha256": "250B2A019E9651A34FA6F0B63B0D8F770CF88252FBD78B87D97227A3BAAE21C0"
+    },
+    {
+      "path": "tests/helpers/label-outflow-reference.cjs",
+      "sha256": "1513EC36B6F70A7F16FFE5BFBF394F595C58185414FC4DE455BF0A38E20173F4"
+    },
+    {
+      "path": "tests/helpers/periodic-window-reference.cjs",
+      "sha256": "5B80AB902F8A1864C315BA77FF9D4B72C39A6C19A14E2542955109682E27113C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-outflow-numerical.cjs",
+      "sha256": "156F637172D0F7EF8D115E313BBCDB11F15C50CAAA488F2C1F0CDE98A707CE58"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-outflow-numerical.json",
+      "sha256": "4BFD40B837DE145E5BB816DF8FBE4969F922E8729731909ED9646463DE09749D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-outflow-display-reference.json",
+      "sha256": "75D6C100EA288F019183D4ED5FF7733BCAFBA7B2371F03DB28F9D89DF92B5497"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-outflow-browser-check.js",
+      "sha256": "B9B0552BB97C8E956BD34C50087E412583649F3654622945BE1317EA5E850A24"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-outflow-browser-check.json",
+      "sha256": "579ED662947F6868359A619A9035DEEDD91C244F33A30C3670A77BA3F264ECE4"
+    }
+  ]
+}

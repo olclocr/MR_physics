@@ -1,0 +1,301 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 24,
+  "maxGraphicError": 0.000004998395553457158,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "timing": "early",
+        "onPowerW": 1,
+        "lossWPerK": 0
+      },
+      "temperatureK": 0.9999999999999997,
+      "absorbedJ": 10,
+      "storedJ": 9.999999999999996,
+      "lostJ": 3.552713678800501e-15
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "early",
+        "onPowerW": 1,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 0.4773024370823816,
+      "absorbedJ": 10,
+      "storedJ": 4.7730243708238165,
+      "lostJ": 5.2269756291761835
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "early",
+        "onPowerW": 1,
+        "lossWPerK": 1
+      },
+      "temperatureK": 0.2325441579348296,
+      "absorbedJ": 10,
+      "storedJ": 2.325441579348296,
+      "lostJ": 7.674558420651704
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "early",
+        "onPowerW": 2,
+        "lossWPerK": 0
+      },
+      "temperatureK": 1.9999999999999993,
+      "absorbedJ": 20,
+      "storedJ": 19.999999999999993,
+      "lostJ": 7.105427357601002e-15
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "early",
+        "onPowerW": 2,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 0.9546048741647633,
+      "absorbedJ": 20,
+      "storedJ": 9.546048741647633,
+      "lostJ": 10.453951258352367
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "early",
+        "onPowerW": 2,
+        "lossWPerK": 1
+      },
+      "temperatureK": 0.4650883158696592,
+      "absorbedJ": 20,
+      "storedJ": 4.650883158696592,
+      "lostJ": 15.349116841303408
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "late",
+        "onPowerW": 1,
+        "lossWPerK": 0
+      },
+      "temperatureK": 0.9999999999999997,
+      "absorbedJ": 10,
+      "storedJ": 9.999999999999996,
+      "lostJ": 3.552713678800501e-15
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "late",
+        "onPowerW": 1,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 0.7869386805747329,
+      "absorbedJ": 10,
+      "storedJ": 7.869386805747329,
+      "lostJ": 2.130613194252671
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "late",
+        "onPowerW": 1,
+        "lossWPerK": 1
+      },
+      "temperatureK": 0.6321205588285572,
+      "absorbedJ": 10,
+      "storedJ": 6.321205588285572,
+      "lostJ": 3.678794411714428
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "late",
+        "onPowerW": 2,
+        "lossWPerK": 0
+      },
+      "temperatureK": 1.9999999999999993,
+      "absorbedJ": 20,
+      "storedJ": 19.999999999999993,
+      "lostJ": 7.105427357601002e-15
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "late",
+        "onPowerW": 2,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 1.5738773611494659,
+      "absorbedJ": 20,
+      "storedJ": 15.738773611494658,
+      "lostJ": 4.261226388505342
+    },
+    {
+      "width": 1920,
+      "options": {
+        "timing": "late",
+        "onPowerW": 2,
+        "lossWPerK": 1
+      },
+      "temperatureK": 1.2642411176571144,
+      "absorbedJ": 20,
+      "storedJ": 12.642411176571144,
+      "lostJ": 7.357588823428856
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "early",
+        "onPowerW": 1,
+        "lossWPerK": 0
+      },
+      "temperatureK": 0.9999999999999997,
+      "absorbedJ": 10,
+      "storedJ": 9.999999999999996,
+      "lostJ": 3.552713678800501e-15
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "early",
+        "onPowerW": 1,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 0.4773024370823816,
+      "absorbedJ": 10,
+      "storedJ": 4.7730243708238165,
+      "lostJ": 5.2269756291761835
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "early",
+        "onPowerW": 1,
+        "lossWPerK": 1
+      },
+      "temperatureK": 0.2325441579348296,
+      "absorbedJ": 10,
+      "storedJ": 2.325441579348296,
+      "lostJ": 7.674558420651704
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "early",
+        "onPowerW": 2,
+        "lossWPerK": 0
+      },
+      "temperatureK": 1.9999999999999993,
+      "absorbedJ": 20,
+      "storedJ": 19.999999999999993,
+      "lostJ": 7.105427357601002e-15
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "early",
+        "onPowerW": 2,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 0.9546048741647633,
+      "absorbedJ": 20,
+      "storedJ": 9.546048741647633,
+      "lostJ": 10.453951258352367
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "early",
+        "onPowerW": 2,
+        "lossWPerK": 1
+      },
+      "temperatureK": 0.4650883158696592,
+      "absorbedJ": 20,
+      "storedJ": 4.650883158696592,
+      "lostJ": 15.349116841303408
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "late",
+        "onPowerW": 1,
+        "lossWPerK": 0
+      },
+      "temperatureK": 0.9999999999999997,
+      "absorbedJ": 10,
+      "storedJ": 9.999999999999996,
+      "lostJ": 3.552713678800501e-15
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "late",
+        "onPowerW": 1,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 0.7869386805747329,
+      "absorbedJ": 10,
+      "storedJ": 7.869386805747329,
+      "lostJ": 2.130613194252671
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "late",
+        "onPowerW": 1,
+        "lossWPerK": 1
+      },
+      "temperatureK": 0.6321205588285572,
+      "absorbedJ": 10,
+      "storedJ": 6.321205588285572,
+      "lostJ": 3.678794411714428
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "late",
+        "onPowerW": 2,
+        "lossWPerK": 0
+      },
+      "temperatureK": 1.9999999999999993,
+      "absorbedJ": 20,
+      "storedJ": 19.999999999999993,
+      "lostJ": 7.105427357601002e-15
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "late",
+        "onPowerW": 2,
+        "lossWPerK": 0.5
+      },
+      "temperatureK": 1.5738773611494659,
+      "absorbedJ": 20,
+      "storedJ": 15.738773611494658,
+      "lostJ": 4.261226388505342
+    },
+    {
+      "width": 390,
+      "options": {
+        "timing": "late",
+        "onPowerW": 2,
+        "lossWPerK": 1
+      },
+      "temperatureK": 1.2642411176571144,
+      "absorbedJ": 20,
+      "storedJ": 12.642411176571144,
+      "lostJ": 7.357588823428856
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 24,
+  "maxGraphicError": 0.000004285714311436095,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.25,
+        "durationSec": 10
+      },
+      "averagePowerW": 0.25,
+      "energyJ": 2.5,
+      "deltaTMk": 0.625
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.25,
+        "durationSec": 20
+      },
+      "averagePowerW": 0.25,
+      "energyJ": 5,
+      "deltaTMk": 1.25
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.5,
+        "durationSec": 10
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 5,
+      "deltaTMk": 1.25
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.5,
+        "durationSec": 20
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 1,
+        "duty": 1,
+        "durationSec": 10
+      },
+      "averagePowerW": 1,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 1,
+        "duty": 1,
+        "durationSec": 20
+      },
+      "averagePowerW": 1,
+      "energyJ": 20,
+      "deltaTMk": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.25,
+        "durationSec": 10
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 5,
+      "deltaTMk": 1.25
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.25,
+        "durationSec": 20
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.5,
+        "durationSec": 10
+      },
+      "averagePowerW": 1,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.5,
+        "durationSec": 20
+      },
+      "averagePowerW": 1,
+      "energyJ": 20,
+      "deltaTMk": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 2,
+        "duty": 1,
+        "durationSec": 10
+      },
+      "averagePowerW": 2,
+      "energyJ": 20,
+      "deltaTMk": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "onPowerW": 2,
+        "duty": 1,
+        "durationSec": 20
+      },
+      "averagePowerW": 2,
+      "energyJ": 40,
+      "deltaTMk": 10
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.25,
+        "durationSec": 10
+      },
+      "averagePowerW": 0.25,
+      "energyJ": 2.5,
+      "deltaTMk": 0.625
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.25,
+        "durationSec": 20
+      },
+      "averagePowerW": 0.25,
+      "energyJ": 5,
+      "deltaTMk": 1.25
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.5,
+        "durationSec": 10
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 5,
+      "deltaTMk": 1.25
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 1,
+        "duty": 0.5,
+        "durationSec": 20
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 1,
+        "duty": 1,
+        "durationSec": 10
+      },
+      "averagePowerW": 1,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 1,
+        "duty": 1,
+        "durationSec": 20
+      },
+      "averagePowerW": 1,
+      "energyJ": 20,
+      "deltaTMk": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.25,
+        "durationSec": 10
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 5,
+      "deltaTMk": 1.25
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.25,
+        "durationSec": 20
+      },
+      "averagePowerW": 0.5,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.5,
+        "durationSec": 10
+      },
+      "averagePowerW": 1,
+      "energyJ": 10,
+      "deltaTMk": 2.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 2,
+        "duty": 0.5,
+        "durationSec": 20
+      },
+      "averagePowerW": 1,
+      "energyJ": 20,
+      "deltaTMk": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 2,
+        "duty": 1,
+        "durationSec": 10
+      },
+      "averagePowerW": 2,
+      "energyJ": 20,
+      "deltaTMk": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "onPowerW": 2,
+        "duty": 1,
+        "durationSec": 20
+      },
+      "averagePowerW": 2,
+      "energyJ": 40,
+      "deltaTMk": 10
+    }
+  ]
+}

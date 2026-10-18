@@ -510,6 +510,73 @@
         "source": "X08-train-physics.md",
         "target": "X08-train-physics.html",
         "label": "X08 후속 · 유한 방출/도달/T1 검증"
+      },
+      {
+        "source": "X06-window-physics.md",
+        "target": "X06-window-physics.html",
+        "label": "X06 후속 · 신호 평균/log 순서 검증"
+      },
+      {
+        "source": "X16-power-physics.md",
+        "target": "X16-power-physics.html",
+        "label": "X16 후속 · 흡수 파워/에너지 검증"
+      },
+      {
+        "source": "X16-saturation-physics.md",
+        "target": "X16-saturation-physics.html",
+        "label": "X16 후속 · 가역 포화 응답/일 적분 검증"
+      },
+      {
+        "source": "X08-outflow-physics.md",
+        "target": "X08-outflow-physics.html",
+        "label": "X08 후속 · 도착 뒤 유출/차이량 검증"
+      },
+      {
+        "source": "X17-order-physics.md",
+        "target": "X17-order-physics.html",
+        "label": "X17 후속 · 회전/이동 순서 검증"
+      },
+      {
+        "source": "X16-thermal-physics.md",
+        "target": "X16-thermal-physics.html",
+        "label": "X16 후속 · 열손실/입력 시점 검증"
+      },
+      {
+        "source": "X07-scale-physics.md",
+        "target": "X07-scale-physics.html",
+        "label": "X07 후속 · 입력 크기/구획 계수 검증"
+      },
+      {
+        "source": "X07-vascular-physics.md",
+        "target": "X07-vascular-physics.html",
+        "label": "X07 후속 · 혈관/EES 기여 검증"
+      },
+      {
+        "source": "X17-scale-physics.md",
+        "target": "X17-scale-physics.html",
+        "label": "X17 후속 · 축별 배율/길이/면적 검증"
+      },
+      {
+        "source": "X17-spacing-physics.md",
+        "target": "X17-spacing-physics.html",
+        "label": "X17 후속 · 정확한 좌표/가정 간격 검증"
+      },
+      {
+        "source": "X11-phase-physics.md",
+        "target": "X11-phase-physics.html",
+        "label": "X11 기본 · IR 복소 신호/참조 투영 검증"
+      },
+      {
+        "source": "X17-residual-physics.md",
+        "target": "X17-residual-physics.html",
+        "label": "X17 후속 · 이동 적합 잔차/정답 오차 검증"
+      }
+    ],
+    "2026-10-19": [
+      {
+        "source": "publication-0145.md",
+        "target": "publication-0145.html",
+        "label": "01:45 예약 게시 체크포인트"
       }
     ]
   },

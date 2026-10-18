@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W100 prescribed axis scales followed by origin rotation, known-grid distances and area; no actual image fitting/resampling/scanner QA; own reports excluded",
+  "files": [
+    {
+      "path": "docs/axis_scale_area.html",
+      "sha256": "F4CA6FAB3E52AB33018A91F90D195566266B0808C35A8A59B77B9CE158C00F4B"
+    },
+    {
+      "path": "docs/assets/axis-scale-model.js",
+      "sha256": "242BDBAD6C1D78E69BD399983782FEC3C00326F37DE4BD79462D8E3E46BA6F8F"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/axis-scale.test.cjs",
+      "sha256": "8869611A43EEE0D8762728C6A151473DF13C9ED853B9C9FE67F5CF526A7639E0"
+    },
+    {
+      "path": "tests/helpers/axis-scale-reference.cjs",
+      "sha256": "4F673B721171D5192A3C73DCEF1230F9821F9A064C79DA44611F0BB7BB7C2047"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-scale-numerical.cjs",
+      "sha256": "058DB5C5032583DBDAD9167B2535AD0EA129569500A22F326C15EA6ECB015B4A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-scale-numerical.json",
+      "sha256": "CF19EB26CBA62CCD4A6C60B999E4C64D90399F5988DD1ED3EB911D4B7CEE4AFA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-scale-display-reference.json",
+      "sha256": "27FAC8EC539A643345D70C0B3809C84B1A397AD52BD3D915F8967883375F39C4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-scale-browser-check.js",
+      "sha256": "811D9D522B9E041BA96E2F1E96ADFD6B41506644D8E6BED19CC57AA93FBF16C4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-scale-browser-check.json",
+      "sha256": "8E89C6F9A5F0079DF1A24528C44DD6C8EA72CF53155E1E92C95BA35437CA6D14"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W93 prescribed absorbed power and no-loss uniform thermal model; no actual RF/B1 absorption, scanner SAR or patient temperature/safety; own report excluded",
+  "files": [
+    {
+      "path": "docs/absorbed_power_energy.html",
+      "sha256": "2CE789988BC80ED039D9686C80BF022FA4D8BE1A53CCB9CE994D08BEF77633B5"
+    },
+    {
+      "path": "docs/assets/absorbed-power-model.js",
+      "sha256": "22ABF490139CA503CCE5ACCA6B93966347B996DD0541AE4D79293ABA9C025352"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/absorbed-power.test.cjs",
+      "sha256": "077419C7680810FDBDBE7C5E39277388EAB148A4856B6B7B93EF5E17A9080A61"
+    },
+    {
+      "path": "tests/helpers/absorbed-power-reference.cjs",
+      "sha256": "851522D25021FBF61B59A6A38F8BED1ACB1A839AA3CA2D7E9D432EFB8D3A1219"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-power-numerical.cjs",
+      "sha256": "6D9BBF9AF79950DFF4A7FF34CA71EDA2E42F3C423A363D0B7673FF97BFB2AED0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-power-numerical.json",
+      "sha256": "56D3031B0B8AA8B6B42139418919407AA1938CDFE3F0C8E2CBF4361F6D8158CC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-power-display-reference.json",
+      "sha256": "CB6FEBB738D073C398DED7685BB1E1BF4C8F027FF97E2630759119D379C0CFEE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-power-browser-check.js",
+      "sha256": "55EB66B5A53CEDB995720E9BA94F8FA2222360902123BF608D427AA076477C65"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-power-browser-check.json",
+      "sha256": "117C12B458447E14EF5D3F7BCEBF4867C4B1303EA3795762F2E9BCBF67514584"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W97",
+      "proof": "docs/verification/2026-10-18/checkpoint-W97-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
+}

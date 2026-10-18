@@ -1,0 +1,21 @@
+{
+  "conditions": 12,
+  "points": 300,
+  "pairChecks": 3600,
+  "max": {
+    "coordinateMm": 0,
+    "pixel": 0,
+    "lengthMm": 0,
+    "pairSquaredMm2": 0,
+    "invariance": 0
+  },
+  "tolerances": {
+    "coordinateMm": 1e-10,
+    "pixel": 1e-10,
+    "lengthMm": 1e-10,
+    "pairSquaredMm2": 1e-8,
+    "invariance": 0
+  },
+  "failed": [],
+  "passed": true
+}

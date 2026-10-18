@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W96 prescribed two-dimensional rigid composition order with known points; no actual registration/fitting/interpolation/QA; own report excluded",
+  "files": [
+    {
+      "path": "docs/rigid_transform_order.html",
+      "sha256": "27F2A69D5BB66D814B58E98D59DE5549E1E1482C1C8A1034CCB142280CF320FE"
+    },
+    {
+      "path": "docs/assets/rigid-order-model.js",
+      "sha256": "B7CDF2F7CC1A1E03727BB377EB0D446A51D845AD82874E67FD196CFF37B5C763"
+    },
+    {
+      "path": "docs/assets/phantom-rigid-model.js",
+      "sha256": "0A1E29C0EA766E361812AFAC7CC1814EA1035BCD538B584677F48009449C3189"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/rigid-order.test.cjs",
+      "sha256": "1417F766B70080CEDF96F1BC44158C3D4D66BD51DB1207DB4025F6A4E993E2AE"
+    },
+    {
+      "path": "tests/helpers/rigid-order-reference.cjs",
+      "sha256": "11DC5CEC89D86225F1A4EE840F3F461F9E02218C416E617429B145B533587F2F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-order-numerical.cjs",
+      "sha256": "FA9C18DEBA37C7BA89B482DE30ACD69E15A5201C05180506BDA7F9C69D7BD666"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-order-numerical.json",
+      "sha256": "2604E4134C7D2D80D23DF6BF6E917869E71C417D30113851F8EDDFFF444445F6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-order-display-reference.json",
+      "sha256": "3CCB0C9132C55E011AD45238FAF56E0EF1EEAAC974FFD5FBA26D7782A22D7EEA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-order-browser-check.js",
+      "sha256": "0035A0E49560DCA6CE9C0CF507B135EC0D4D13A558964897C6C24F33843B48F4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-order-browser-check.json",
+      "sha256": "431F0C2DD3BDAC8F51AF7001DA79F2D64E5C8072815E2D07B27CD521CA230BC3"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W100",
+      "proof": "docs/verification/2026-10-18/checkpoint-W100-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W101",
+      "proof": "docs/verification/2026-10-18/checkpoint-W101-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W103",
+      "proof": "docs/verification/2026-10-18/checkpoint-W103-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
+}

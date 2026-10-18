@@ -1,0 +1,661 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 54,
+  "maxGraphicError": 0.000004999321063792195,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 2,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9983679666594424,
+      "meanRate": 0.16368356916534027,
+      "effectiveRate": 0.1633366557737339,
+      "gap": 0.0003469133916063627
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 2,
+        "centerSec": 10
+      },
+      "meanRatio": 0.6725209219166489,
+      "meanRate": 39.67263286166931,
+      "effectiveRate": 39.67220573333423,
+      "gap": 0.00042712833507607684
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 2,
+        "centerSec": 20
+      },
+      "meanRatio": 0.998367966659443,
+      "meanRate": 0.16368356916534071,
+      "effectiveRate": 0.16333665577366718,
+      "gap": 0.0003469133916735312
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 6,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9861873444139804,
+      "meanRate": 1.4160630866586026,
+      "effectiveRate": 1.3908937951412519,
+      "gap": 0.0251692915173507
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 6,
+        "centerSec": 10
+      },
+      "meanRatio": 0.6897896869537004,
+      "meanRate": 37.1678738266828,
+      "effectiveRate": 37.13685293686317,
+      "gap": 0.03102088981962936
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 6,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9861873444139808,
+      "meanRate": 1.416063086658603,
+      "effectiveRate": 1.3908937951412068,
+      "gap": 0.02516929151739622
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 12,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9543311408668941,
+      "meanRate": 4.954488475728956,
+      "effectiveRate": 4.674455993490262,
+      "gap": 0.2800324822386946
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 12,
+        "centerSec": 10
+      },
+      "meanRatio": 0.7426549788605952,
+      "meanRate": 30.09102304854209,
+      "effectiveRate": 29.752370434729325,
+      "gap": 0.3386526138127657
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "windowSec": 12,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9543311408668941,
+      "meanRate": 4.954488475728953,
+      "effectiveRate": 4.674455993490262,
+      "gap": 0.28003248223869104
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 2,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9951325135208973,
+      "meanRate": 0.16368356916534027,
+      "effectiveRate": 0.16264570910494852,
+      "gap": 0.0010378600603917487
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 2,
+        "centerSec": 10
+      },
+      "meanRatio": 0.3041785248680821,
+      "meanRate": 39.67263286166931,
+      "effectiveRate": 39.671349902862076,
+      "gap": 0.0012829588072307274
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 2,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9951325135208977,
+      "meanRate": 0.16368356916534071,
+      "effectiveRate": 0.16264570910493367,
+      "gap": 0.001037860060407042
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 6,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9605313513190133,
+      "meanRate": 1.4160630866586026,
+      "effectiveRate": 1.3422885560857285,
+      "gap": 0.07377453057287409
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 6,
+        "centerSec": 10
+      },
+      "meanRatio": 0.3288286984865417,
+      "meanRate": 37.1678738266828,
+      "effectiveRate": 37.07394457024535,
+      "gap": 0.09392925643744832
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 6,
+        "centerSec": 20
+      },
+      "meanRatio": 0.960531351319014,
+      "meanRate": 1.416063086658603,
+      "effectiveRate": 1.3422885560857054,
+      "gap": 0.07377453057289762
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 12,
+        "centerSec": 0
+      },
+      "meanRatio": 0.8823231876858599,
+      "meanRate": 4.954488475728956,
+      "effectiveRate": 4.1732288048417026,
+      "gap": 0.7812596708872537
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 12,
+        "centerSec": 10
+      },
+      "meanRatio": 0.41823347305549946,
+      "meanRate": 30.09102304854209,
+      "effectiveRate": 29.057181813585988,
+      "gap": 1.0338412349561032
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "windowSec": 12,
+        "centerSec": 20
+      },
+      "meanRatio": 0.8823231876858606,
+      "meanRate": 4.954488475728953,
+      "effectiveRate": 4.173228804841677,
+      "gap": 0.7812596708872759
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 2,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9903498762119116,
+      "meanRate": 0.16368356916534027,
+      "effectiveRate": 0.16161646621924972,
+      "gap": 0.0020671029460905543
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 2,
+        "centerSec": 10
+      },
+      "meanRatio": 0.09253172365647867,
+      "meanRate": 39.67263286166931,
+      "effectiveRate": 39.67006224686909,
+      "gap": 0.002570614800220028
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 2,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9903498762119115,
+      "meanRate": 0.16368356916534071,
+      "effectiveRate": 0.1616164662192516,
+      "gap": 0.002067102946089111
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 6,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9264314299062436,
+      "meanRate": 1.4160630866586026,
+      "effectiveRate": 1.2735874301792598,
+      "gap": 0.1424756564793428
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 6,
+        "centerSec": 10
+      },
+      "meanRatio": 0.10875536017914798,
+      "meanRate": 37.1678738266828,
+      "effectiveRate": 36.97757202040579,
+      "gap": 0.19030180627701299
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 6,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9264314299062433,
+      "meanRate": 1.416063086658603,
+      "effectiveRate": 1.2735874301792658,
+      "gap": 0.14247565647933724
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 12,
+        "centerSec": 0
+      },
+      "meanRatio": 0.8079716263121742,
+      "meanRate": 4.954488475728956,
+      "effectiveRate": 3.553805617131675,
+      "gap": 1.400682858597281
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 12,
+        "centerSec": 10
+      },
+      "meanRatio": 0.18643942290369966,
+      "meanRate": 30.09102304854209,
+      "effectiveRate": 27.994148380472417,
+      "gap": 2.096874668069674
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "windowSec": 12,
+        "centerSec": 20
+      },
+      "meanRatio": 0.8079716263121753,
+      "meanRate": 4.954488475728953,
+      "effectiveRate": 3.5538056171316526,
+      "gap": 1.4006828585973001
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 2,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9983679666594424,
+      "meanRate": 0.16368356916534027,
+      "effectiveRate": 0.1633366557737339,
+      "gap": 0.0003469133916063627
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 2,
+        "centerSec": 10
+      },
+      "meanRatio": 0.6725209219166489,
+      "meanRate": 39.67263286166931,
+      "effectiveRate": 39.67220573333423,
+      "gap": 0.00042712833507607684
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 2,
+        "centerSec": 20
+      },
+      "meanRatio": 0.998367966659443,
+      "meanRate": 0.16368356916534071,
+      "effectiveRate": 0.16333665577366718,
+      "gap": 0.0003469133916735312
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 6,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9861873444139804,
+      "meanRate": 1.4160630866586026,
+      "effectiveRate": 1.3908937951412519,
+      "gap": 0.0251692915173507
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 6,
+        "centerSec": 10
+      },
+      "meanRatio": 0.6897896869537004,
+      "meanRate": 37.1678738266828,
+      "effectiveRate": 37.13685293686317,
+      "gap": 0.03102088981962936
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 6,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9861873444139808,
+      "meanRate": 1.416063086658603,
+      "effectiveRate": 1.3908937951412068,
+      "gap": 0.02516929151739622
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 12,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9543311408668941,
+      "meanRate": 4.954488475728956,
+      "effectiveRate": 4.674455993490262,
+      "gap": 0.2800324822386946
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 12,
+        "centerSec": 10
+      },
+      "meanRatio": 0.7426549788605952,
+      "meanRate": 30.09102304854209,
+      "effectiveRate": 29.752370434729325,
+      "gap": 0.3386526138127657
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "windowSec": 12,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9543311408668941,
+      "meanRate": 4.954488475728953,
+      "effectiveRate": 4.674455993490262,
+      "gap": 0.28003248223869104
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 2,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9951325135208973,
+      "meanRate": 0.16368356916534027,
+      "effectiveRate": 0.16264570910494852,
+      "gap": 0.0010378600603917487
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 2,
+        "centerSec": 10
+      },
+      "meanRatio": 0.3041785248680821,
+      "meanRate": 39.67263286166931,
+      "effectiveRate": 39.671349902862076,
+      "gap": 0.0012829588072307274
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 2,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9951325135208977,
+      "meanRate": 0.16368356916534071,
+      "effectiveRate": 0.16264570910493367,
+      "gap": 0.001037860060407042
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 6,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9605313513190133,
+      "meanRate": 1.4160630866586026,
+      "effectiveRate": 1.3422885560857285,
+      "gap": 0.07377453057287409
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 6,
+        "centerSec": 10
+      },
+      "meanRatio": 0.3288286984865417,
+      "meanRate": 37.1678738266828,
+      "effectiveRate": 37.07394457024535,
+      "gap": 0.09392925643744832
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 6,
+        "centerSec": 20
+      },
+      "meanRatio": 0.960531351319014,
+      "meanRate": 1.416063086658603,
+      "effectiveRate": 1.3422885560857054,
+      "gap": 0.07377453057289762
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 12,
+        "centerSec": 0
+      },
+      "meanRatio": 0.8823231876858599,
+      "meanRate": 4.954488475728956,
+      "effectiveRate": 4.1732288048417026,
+      "gap": 0.7812596708872537
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 12,
+        "centerSec": 10
+      },
+      "meanRatio": 0.41823347305549946,
+      "meanRate": 30.09102304854209,
+      "effectiveRate": 29.057181813585988,
+      "gap": 1.0338412349561032
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "windowSec": 12,
+        "centerSec": 20
+      },
+      "meanRatio": 0.8823231876858606,
+      "meanRate": 4.954488475728953,
+      "effectiveRate": 4.173228804841677,
+      "gap": 0.7812596708872759
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 2,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9903498762119116,
+      "meanRate": 0.16368356916534027,
+      "effectiveRate": 0.16161646621924972,
+      "gap": 0.0020671029460905543
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 2,
+        "centerSec": 10
+      },
+      "meanRatio": 0.09253172365647867,
+      "meanRate": 39.67263286166931,
+      "effectiveRate": 39.67006224686909,
+      "gap": 0.002570614800220028
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 2,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9903498762119115,
+      "meanRate": 0.16368356916534071,
+      "effectiveRate": 0.1616164662192516,
+      "gap": 0.002067102946089111
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 6,
+        "centerSec": 0
+      },
+      "meanRatio": 0.9264314299062436,
+      "meanRate": 1.4160630866586026,
+      "effectiveRate": 1.2735874301792598,
+      "gap": 0.1424756564793428
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 6,
+        "centerSec": 10
+      },
+      "meanRatio": 0.10875536017914798,
+      "meanRate": 37.1678738266828,
+      "effectiveRate": 36.97757202040579,
+      "gap": 0.19030180627701299
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 6,
+        "centerSec": 20
+      },
+      "meanRatio": 0.9264314299062433,
+      "meanRate": 1.416063086658603,
+      "effectiveRate": 1.2735874301792658,
+      "gap": 0.14247565647933724
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 12,
+        "centerSec": 0
+      },
+      "meanRatio": 0.8079716263121742,
+      "meanRate": 4.954488475728956,
+      "effectiveRate": 3.553805617131675,
+      "gap": 1.400682858597281
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 12,
+        "centerSec": 10
+      },
+      "meanRatio": 0.18643942290369966,
+      "meanRate": 30.09102304854209,
+      "effectiveRate": 27.994148380472417,
+      "gap": 2.096874668069674
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "windowSec": 12,
+        "centerSec": 20
+      },
+      "meanRatio": 0.8079716263121753,
+      "meanRate": 4.954488475728953,
+      "effectiveRate": 3.5538056171316526,
+      "gap": 1.4006828585973001
+    }
+  ]
+}

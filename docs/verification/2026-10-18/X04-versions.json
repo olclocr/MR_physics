@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/temporal_window_bolus.html",
-      "sha256": "677320E2E945388A5A14DE14B1BCF7B5CFC98CC6EAB296F80C3ADBC00FDA0154"
+      "sha256": "B088957068C0AEDA04C81CD0876B3BC0D883F51A4A592A9E33D1250691E0C4F1"
     },
     {
       "path": "docs/assets/temporal-window-model.js",
@@ -50,6 +50,13 @@
       "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
       "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
       "scope": "Static text ASCII whitespace; no new physical signoff"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W92",
+      "proof": "docs/verification/2026-10-18/checkpoint-W92-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

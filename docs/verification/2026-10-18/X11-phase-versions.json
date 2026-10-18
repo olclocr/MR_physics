@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W102 ideal full-recovery IR and prescribed unit phase reference projection; no actual PSIR acquisition/estimation/coil/noise/clinical TI; own reports excluded",
+  "files": [
+    {
+      "path": "docs/ir_phase_reference.html",
+      "sha256": "E5F39E93A5CEDD27636199C62C1CC9799BE9417A5F7B46FECEF5C8D3F3AA72F4"
+    },
+    {
+      "path": "docs/assets/ir-phase-reference-model.js",
+      "sha256": "9D5A0546F7EA68199A803E85C7A6F3F0B782F2C8580E29D0BBE02065BF4BDB27"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/ir-phase-reference.test.cjs",
+      "sha256": "4415BDCD394AAF99F22719F451D8412A2280241089754A5E4C4A1FB947D55D09"
+    },
+    {
+      "path": "tests/helpers/ir-phase-reference.cjs",
+      "sha256": "A481F04AF3BA2850D178D174C4643177B350595E8805FAF7EEFDEDB34A6B8563"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-numerical.cjs",
+      "sha256": "E5758A77A226BF245CCDB25293A11349993BB12B1333358DEA952523AA3165F7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-numerical.json",
+      "sha256": "E04AA108DC1CDC9F3AF4BCF87FC17580FE0AB7AB9212F4473499BF0037F8056A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-display-reference.json",
+      "sha256": "81F1BDF506EC9E25D9308C8CC70C92B7412FA30130D18F85FEF95D58D1EE0024"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-browser-check.js",
+      "sha256": "93590CC6D4E57F1BAD3CB548E08F2A5DA6EB83E29952C960CE136B896D913006"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-browser-check.json",
+      "sha256": "35DC2BA7970841720CC407BD9DC9B6766D27CB296B7047C280315895A7C62896"
+    }
+  ]
+}

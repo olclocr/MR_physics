@@ -1,0 +1,20 @@
+{
+  "combinations": 6,
+  "conditions": 30,
+  "curvePoints": 1206,
+  "displayCurvePoints": 1212,
+  "max": {
+    "concentration": 1.942890293094024e-16,
+    "rate": 1.734723475976807e-18,
+    "cumulative": 4.163336342344337e-17,
+    "quadratureConvergence": 2.220446049250313e-16,
+    "ode": 1.3877787807814457e-16,
+    "odeConvergence": 1.0408340855860843e-16,
+    "jump": 6.938893903907228e-18,
+    "eesContinuity": 0,
+    "conservation": 1.734723475976807e-16
+  },
+  "tolerance": 1e-8,
+  "failed": [],
+  "passed": true
+}

@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "docs/inversion_recovery.html",
-      "sha256": "7BDBF23884ECB863CE165E9401268816F5841138C85427222D18945F5192347A"
+      "sha256": "69FF73959E7C7C04F6D49C581A4811F6955614AFF0400B9A04E4A23013AD7F01"
     },
     {
       "path": "docs/assets/inversion-recovery-model.js",
@@ -39,5 +39,12 @@
       "sha256": "5AB3AD28CA43D4BFA8F92EC29BE9E30A6B4471B4103D0F7194D0B4D2855EC5DD"
     }
   ],
-  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json",
+  "navigationRevisions": [
+    {
+      "task": "W102",
+      "proof": "docs/verification/2026-10-18/checkpoint-W102-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
 }

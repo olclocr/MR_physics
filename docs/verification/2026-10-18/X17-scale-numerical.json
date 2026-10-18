@@ -1,0 +1,28 @@
+{
+  "conditions": 32,
+  "points": 800,
+  "pairChecks": 9600,
+  "max": {
+    "coordinateMm": 1.0658141036401503e-14,
+    "pixel": 1.4210854715202004e-14,
+    "lengthMm": 2.842170943040401e-14,
+    "inverseMm": 1.4210854715202004e-14,
+    "pairSquaredMm2": 3.637978807091713e-12,
+    "areaMm2": 1.8189894035458565e-12,
+    "ratio": 3.3306690738754696e-16,
+    "boundMm": 1.4210854715202004e-14
+  },
+  "maxAbsoluteCoordinateMm": 55.33383647440509,
+  "tolerances": {
+    "coordinateMm": 1e-10,
+    "pixel": 1e-10,
+    "lengthMm": 1e-10,
+    "inverseMm": 1e-10,
+    "pairSquaredMm2": 1e-8,
+    "areaMm2": 1e-8,
+    "ratio": 1e-10,
+    "boundMm": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

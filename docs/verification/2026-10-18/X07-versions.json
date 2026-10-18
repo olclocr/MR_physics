@@ -5,11 +5,11 @@
   "files": [
     {
       "path": "docs/compartment_input_washout.html",
-      "sha256": "3B0126A9D21A3995927DD4E548D16258E862C9989302AE13E7D9359737C01AF8"
+      "sha256": "1BAB5CBB38873DEA888B422F06CB19432E14A1FDFB11E9893B7D573017500AD9"
     },
     {
       "path": "docs/assets/compartment-exchange-model.js",
-      "sha256": "2FCCE0D25060FD02A2F3980F8E4900F02F15E3B9B160E09B55247369D827E224"
+      "sha256": "6BC0E902D65DD780614DC983A33B573511A9E526F7DBCFB907B4B472C15EC997"
     },
     {
       "path": "docs/assets/ir-lesson.css",
@@ -58,6 +58,27 @@
           "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
         }
       ]
+    }
+  ],
+  "physicsRevisions": [
+    {
+      "task": "W98",
+      "proof": "docs/verification/2026-10-18/X07-common-regression.json",
+      "beforeSha256": "2FCCE0D25060FD02A2F3980F8E4900F02F15E3B9B160E09B55247369D827E224",
+      "afterSha256": "6BC0E902D65DD780614DC983A33B573511A9E526F7DBCFB907B4B472C15EC997",
+      "scope": "New validated duration/amplitude API; exact 48 legacy models and 96 actual state fingerprints, independent legacy numerical revalidation"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W98",
+      "proof": "docs/verification/2026-10-18/checkpoint-W98-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W99",
+      "proof": "docs/verification/2026-10-18/checkpoint-W99-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

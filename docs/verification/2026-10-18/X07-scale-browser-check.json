@@ -1,0 +1,793 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 60,
+  "maxGraphicError": 0.000004999229844315778,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.009516258196404035,
+      "baseline": 0.01903251639280807,
+      "ees": 0.04758129098202017
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.022119921692859496,
+      "baseline": 0.04423984338571899,
+      "ees": 0.11059960846429748
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.01722701233587714,
+      "baseline": 0.03445402467175428,
+      "ees": 0.08613506167938569
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.010448711156957235,
+      "baseline": 0.02089742231391447,
+      "ees": 0.05224355578478617
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.09516258196404034
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.22119921692859495
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.17227012335877137
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.10448711156957234
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.03806503278561614,
+      "baseline": 0.01903251639280807,
+      "ees": 0.1903251639280807
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.08847968677143798,
+      "baseline": 0.04423984338571899,
+      "ees": 0.4423984338571899
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.06890804934350855,
+      "baseline": 0.03445402467175428,
+      "ees": 0.34454024671754274
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.04179484462782894,
+      "baseline": 0.02089742231391447,
+      "ees": 0.20897422313914468
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 0
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 2
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.04758129098202017
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 5
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.11059960846429748
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 10
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.08613506167938569
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 20
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.05224355578478617
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.09516258196404034
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.22119921692859495
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.17227012335877137
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.10448711156957234
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 0
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 2
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.1903251639280807
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 5
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.4423984338571899
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 10
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.34454024671754274
+    },
+    {
+      "width": 1920,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 20
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.20897422313914468
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.009516258196404035,
+      "baseline": 0.01903251639280807,
+      "ees": 0.04758129098202017
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.022119921692859496,
+      "baseline": 0.04423984338571899,
+      "ees": 0.11059960846429748
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.01722701233587714,
+      "baseline": 0.03445402467175428,
+      "ees": 0.08613506167938569
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 0.5,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.010448711156957235,
+      "baseline": 0.02089742231391447,
+      "ees": 0.05224355578478617
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.09516258196404034
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.22119921692859495
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.17227012335877137
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 1,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.10448711156957234
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.03806503278561614,
+      "baseline": 0.01903251639280807,
+      "ees": 0.1903251639280807
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.08847968677143798,
+      "baseline": 0.04423984338571899,
+      "ees": 0.4423984338571899
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.06890804934350855,
+      "baseline": 0.03445402467175428,
+      "ees": 0.34454024671754274
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "fixed",
+        "inputFactor": 2,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.04179484462782894,
+      "baseline": 0.02089742231391447,
+      "ees": 0.20897422313914468
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 0
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 2
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.04758129098202017
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 5
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.11059960846429748
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 10
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.08613506167938569
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 0.5,
+        "timeSec": 20
+      },
+      "ktrans": 0.02,
+      "ve": 0.4,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.05224355578478617
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 0
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 2
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.09516258196404034
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 5
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.22119921692859495
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 10
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.17227012335877137
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 1,
+        "timeSec": 20
+      },
+      "ktrans": 0.01,
+      "ve": 0.2,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.10448711156957234
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 0
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0,
+      "baseline": 0,
+      "ees": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 2
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.01903251639280807,
+      "baseline": 0.01903251639280807,
+      "ees": 0.1903251639280807
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 5
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.04423984338571899,
+      "baseline": 0.04423984338571899,
+      "ees": 0.4423984338571899
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 10
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.03445402467175428,
+      "baseline": 0.03445402467175428,
+      "ees": 0.34454024671754274
+    },
+    {
+      "width": 390,
+      "options": {
+        "mode": "compensated",
+        "inputFactor": 2,
+        "timeSec": 20
+      },
+      "ktrans": 0.005,
+      "ve": 0.1,
+      "tissue": 0.02089742231391447,
+      "baseline": 0.02089742231391447,
+      "ees": 0.20897422313914468
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/dsc_signal_rate.html",
-      "sha256": "7F4A34A732893AFA1D990D1800C88DF170C2D07F9EBF1D6D0C59DEE93161D150"
+      "sha256": "DDFD0683D55ACF9D658B7362A112BE258A1AE792DD01495A111BD7C3FAF0B242"
     },
     {
       "path": "docs/assets/dsc-rate-transform-model.js",
@@ -62,6 +62,13 @@
       "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
       "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
       "scope": "Static text ASCII whitespace; no new physical signoff"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W92",
+      "proof": "docs/verification/2026-10-18/checkpoint-W92-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/label_train_arrival.html",
-      "sha256": "AB65CDB6FBB90152DC9CDEFC20E0885537B42EDF9485BC18B15D7A3911A5A38E"
+      "sha256": "1CAC64FA8B8D2784FEF5FC10D3ECC4438B6441477677C1BA3F911FD6C43E9E24"
     },
     {
       "path": "docs/assets/label-train-model.js",
@@ -50,6 +50,13 @@
     {
       "path": "docs/verification/2026-10-18/X08-train-browser-check.json",
       "sha256": "AFF76FF665613D17714FFB852D3FB7588B5E8098AE12149741EB56481E598F59"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W95",
+      "proof": "docs/verification/2026-10-18/checkpoint-W95-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

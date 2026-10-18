@@ -1,0 +1,15 @@
+{
+  "task": "W98",
+  "scope": "Rectangular input duration/amplitude extension; W74 defaults and min-based lesson preserved",
+  "beforeSourceSha256": "2FCCE0D25060FD02A2F3980F8E4900F02F15E3B9B160E09B55247369D827E224",
+  "afterSourceSha256": "6BC0E902D65DD780614DC983A33B573511A9E526F7DBCFB907B4B472C15EC997",
+  "nodeModels": 48,
+  "exactNodeModels": 48,
+  "beforeStates": 96,
+  "afterStates": 96,
+  "exactStateFingerprints": 96,
+  "changedStates": [],
+  "independentLegacyNumericalPassed": true,
+  "failures": [],
+  "passed": true
+}

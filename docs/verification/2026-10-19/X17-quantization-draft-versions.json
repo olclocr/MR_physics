@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W104 INCOMPLETE model/independent numerical draft; HTML/browser/content signoff not performed; not a completed lesson",
+  "files": [
+    {
+      "path": "docs/assets/pixel-quantization-model.js",
+      "sha256": "47E045697F58BAC4D6AA6F96802A49C00B9AB60936E544473C57F947151D52F0"
+    },
+    {
+      "path": "docs/assets/phantom-rigid-model.js",
+      "sha256": "0A1E29C0EA766E361812AFAC7CC1814EA1035BCD538B584677F48009449C3189"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "tests/pixel-quantization.test.cjs",
+      "sha256": "61A2A01D9926E68FD7B00023B409AE0ED751D4215E8A46105420BD4F6E059ED8"
+    },
+    {
+      "path": "tests/helpers/pixel-quantization-reference.cjs",
+      "sha256": "15CF067AF47777F94FB5C47396E3203500A0A98E7EFCC14A9ACCF5B5290F4FF6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-quantization-numerical.cjs",
+      "sha256": "4B61D18784D84211D8ED5DFC7E66E62148F121757342B7155E941D0CE0B2E2F3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-quantization-numerical.json",
+      "sha256": "D83D51F56CADE4976C41B7693DB1C0850D2F30D852943C087F6C31239660C6E8"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-quantization-display-reference.json",
+      "sha256": "E1DD9D0FF334451A894AE36FD14D4B380B191BAF16F3F8BA70994A4402BECAD9"
+    }
+  ]
+}

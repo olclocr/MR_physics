@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W98 defined input/parameter scale plus common API extension and exact legacy model/display preservation; no actual AIF/fitting/clinical estimate; own reports excluded",
+  "files": [
+    {
+      "path": "docs/compartment_input_scale.html",
+      "sha256": "F48FEE093F84DEC652497CDFB5372CDC5C05F6DC1A597105FC60F6242B251C62"
+    },
+    {
+      "path": "docs/compartment_input_washout.html",
+      "sha256": "1BAB5CBB38873DEA888B422F06CB19432E14A1FDFB11E9893B7D573017500AD9"
+    },
+    {
+      "path": "docs/assets/compartment-scale-model.js",
+      "sha256": "41A9F9F9E36B7717B3EAA62BBEBC5C8F50F897CFA1CD0B378E53704D5A701795"
+    },
+    {
+      "path": "docs/assets/compartment-exchange-model.js",
+      "sha256": "6BC0E902D65DD780614DC983A33B573511A9E526F7DBCFB907B4B472C15EC997"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/compartment-scale.test.cjs",
+      "sha256": "1D3CA35F06CD35FCB9023507AB1CCD000727036C97445732B15EF4AEB301E15A"
+    },
+    {
+      "path": "tests/helpers/compartment-scale-reference.cjs",
+      "sha256": "F2D3BACC57FD1D5B98C813DE28CF18BC0EC4128A9D99246D49C6994631744D04"
+    },
+    {
+      "path": "tests/helpers/periodic-window-reference.cjs",
+      "sha256": "5B80AB902F8A1864C315BA77FF9D4B72C39A6C19A14E2542955109682E27113C"
+    },
+    {
+      "path": "tests/compartment-exchange.test.cjs",
+      "sha256": "7ED5596EFB816A1F59344CF9F151A474CC05CEC5073F9A7E37EF687FB822340A"
+    },
+    {
+      "path": "tests/helpers/compartment-exchange-reference.cjs",
+      "sha256": "8F577A79B17E765B097EDDD6BA69C5EFAA83B5D724250E6DCAD0E1E91A5E8F82"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-scale-numerical.cjs",
+      "sha256": "22A7D931CAB22A457861BA64F28131280BAF4605D3E36C97C51CA2DA2F118362"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-scale-numerical.json",
+      "sha256": "EF2FD11D677238A3842F4F05725BE2992E7252F50A32F7A17F440A4D42319533"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-scale-display-reference.json",
+      "sha256": "B858B3FFBEBF558FEC34F6B7003A3213CB125474CA3B7CD0C1F13B734FC4EDE3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-scale-browser-check.js",
+      "sha256": "A98EDC4327A9545981C4638220162029E81F759B7F0173119BCE73694447F38F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-scale-browser-check.json",
+      "sha256": "88CBDECE3DDE816A45B01FA9F096EC88668083937A7078CDC457C58EE1BA2A17"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-before-source.js",
+      "sha256": "2FCCE0D25060FD02A2F3980F8E4900F02F15E3B9B160E09B55247369D827E224"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-before-model.json",
+      "sha256": "747AB39701055DDC3B1F28AEECC04AF5D2BAEC9612282D95C3AA6849789F86BE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-after-model.json",
+      "sha256": "A5D78C790D9B43D82CF7F322AE977F50E05BAE944F0DDA55E10DDF13A3EED501"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-before-browser.js",
+      "sha256": "99F8E8BA6BB75DC653B741BFC93768997E919D736EFE0F1864C8681376C68746"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-before-browser.json",
+      "sha256": "41BA3538C4574DE498103BDE9E803B8F018CF751FC3C435BEEC1FA1011F27BB6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-after-browser.js",
+      "sha256": "FD29E214F40E95843594B89A2547520E0E3ECAFCD2E212B451BFD91722EDC8F1"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-after-browser.json",
+      "sha256": "41BA3538C4574DE498103BDE9E803B8F018CF751FC3C435BEEC1FA1011F27BB6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-numerical.cjs",
+      "sha256": "A7DE53BC69CB7D4A8994580DE83DC404DE021CE409E3FA90638B08F57AC07B11"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-numerical.json",
+      "sha256": "071675FAB49B55FA39C6605D7838AF84A9954880247BC8990D1C0EBAB14825DD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-display-reference.json",
+      "sha256": "4B7BADEFC42A67C857608712CF52A19F0BF2A53FED0513F9BE497C711B7E4EB9"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-regression.cjs",
+      "sha256": "910A00E1C7DF60DAC10428853CCBBB881954CE9638BE3B2EE9A2254FC5C114EF"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-common-regression.json",
+      "sha256": "072B4431C724DBA4EDB78B31CF7B4B49E1DE32DA45D59F0D32FF3218889E0AF7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-display-reference.json",
+      "sha256": "4B7BADEFC42A67C857608712CF52A19F0BF2A53FED0513F9BE497C711B7E4EB9"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W99",
+      "proof": "docs/verification/2026-10-18/checkpoint-W99-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
+}

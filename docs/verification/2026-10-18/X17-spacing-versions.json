@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W101 exact fixed pixel coordinates with assumed spacing and directional length/FOV errors; no metadata manipulation/calibration/scanner QA; own reports excluded",
+  "files": [
+    {
+      "path": "docs/assumed_pixel_spacing.html",
+      "sha256": "5D49FF318BC1AD7081956983480FE0B87F6EA24686E02BACEA31E32F86301CAA"
+    },
+    {
+      "path": "docs/assets/assumed-spacing-model.js",
+      "sha256": "4E7E3ECD46DA92F9140E6FA3E018AD09FEF3D7464AD3D90A318B419A4DB84C54"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/assumed-spacing.test.cjs",
+      "sha256": "BD7C86910DFE151752B7560BBFEEAD6D4FD38333E75EF039A41C50A165A3F10F"
+    },
+    {
+      "path": "tests/helpers/assumed-spacing-reference.cjs",
+      "sha256": "5AAA2FDA25B51AEF1CF7EACAD03217D6921EE6181E3E70493B520B3542AB39D0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-spacing-numerical.cjs",
+      "sha256": "639B637788F9B8CD32CF991F8377C2196EDBC4A55985C99B14924223375C1648"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-spacing-numerical.json",
+      "sha256": "9E8B1A9DF57616DC20C030F0EF6E4D319913E9502951D74DAE25268A36E15ADA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-spacing-display-reference.json",
+      "sha256": "9B8B0141E7C5D160939FCEF0D3AF187235CAC012418D25233FCA0C3F52344791"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-spacing-browser-check.js",
+      "sha256": "A1DE4993EA8B4B0C3C33FCFC53679CA7FCFB7A1F215CF77088844B6D243DCC55"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-spacing-browser-check.json",
+      "sha256": "2EB83103BC827BE2C1D882D6D7B81F9F13DFC31CD0CCF438CA92D8566AC93063"
+    }
+  ]
+}

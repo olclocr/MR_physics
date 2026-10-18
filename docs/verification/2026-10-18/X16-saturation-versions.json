@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W94 prescribed reversible tanh response and work integral; no actual material/thermal/hysteretic dynamics or safety; own report excluded",
+  "files": [
+    {
+      "path": "docs/saturating_dipole_work.html",
+      "sha256": "47B03C52060F94B5FA1AEF03434009074AF2C4582D0714A3F7DE843D3944A907"
+    },
+    {
+      "path": "docs/assets/saturating-dipole-model.js",
+      "sha256": "6C3CA007518C72046EDE6403E05B1DEDE65C5BFEF230775DFA94F76C88C83C86"
+    },
+    {
+      "path": "docs/assets/induced-dipole-model.js",
+      "sha256": "686C62F7DBE80ECE25FC9D38EC1BB5F136FB930F6B5A1250D05E6C56711B6981"
+    },
+    {
+      "path": "docs/assets/magnetic-dipole-model.js",
+      "sha256": "F971E3813C428D8F9F796F7F1F241C2C138D82BBE6761D545583E60B1D8AEE2A"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/saturating-dipole.test.cjs",
+      "sha256": "31C586362FA03D1B41AB622EB2AED139485DCCF1163549A145821399FAEF6376"
+    },
+    {
+      "path": "tests/helpers/saturating-dipole-reference.cjs",
+      "sha256": "8C32254A4BCB1BF872C61DA2F12FFDEB1692E9239E9C2BF6E590CC18803D17C2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-numerical.cjs",
+      "sha256": "A102AA05BD70D6F06A541050B607C30A6999B6859647B03377D7C37BAE39A5F3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-numerical.json",
+      "sha256": "BB693C548DE756E1387C8BDD6CCCCA3F4C450A9887A3C4FBE82316E000664722"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-display-reference.json",
+      "sha256": "AF08D192E2A528DE969C33C78C17770EA973E395896BCC2F915EE559FE578A90"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-browser-check.js",
+      "sha256": "967D72FF9731161722688133C9BB955DF460539129B22619EBAC2C3382292710"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-browser-check.json",
+      "sha256": "6D69EEA5ED1E6B2F6E576FDB675188184BA0E3F19823496B2C433F13240F00A6"
+    }
+  ]
+}

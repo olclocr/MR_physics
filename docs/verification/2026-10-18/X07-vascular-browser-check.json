@@ -1,0 +1,733 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 60,
+  "maxGraphicError": 0.000004993613401893526,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 0
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 2
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 0
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 2
+      },
+      "vascular": 0,
+      "eesContribution": 0.01903251639280807,
+      "total": 0.01903251639280807,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0.04423984338571899,
+      "total": 0.04423984338571899,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0.03445402467175428,
+      "total": 0.03445402467175428,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0.02089742231391447,
+      "total": 0.02089742231391447,
+      "jump": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 0
+      },
+      "vascular": 0.05,
+      "eesContribution": 0,
+      "total": 0.05,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 2
+      },
+      "vascular": 0.05,
+      "eesContribution": 0,
+      "total": 0.05,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 0
+      },
+      "vascular": 0.05,
+      "eesContribution": 0,
+      "total": 0.05,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 2
+      },
+      "vascular": 0.05,
+      "eesContribution": 0.01903251639280807,
+      "total": 0.06903251639280808,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0.04423984338571899,
+      "total": 0.04423984338571899,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0.03445402467175428,
+      "total": 0.03445402467175428,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0.02089742231391447,
+      "total": 0.02089742231391447,
+      "jump": 0.05
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 0
+      },
+      "vascular": 0.1,
+      "eesContribution": 0,
+      "total": 0.1,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 2
+      },
+      "vascular": 0.1,
+      "eesContribution": 0,
+      "total": 0.1,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 0
+      },
+      "vascular": 0.1,
+      "eesContribution": 0,
+      "total": 0.1,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 2
+      },
+      "vascular": 0.1,
+      "eesContribution": 0.01903251639280807,
+      "total": 0.11903251639280807,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0.04423984338571899,
+      "total": 0.04423984338571899,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0.03445402467175428,
+      "total": 0.03445402467175428,
+      "jump": 0.1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0.02089742231391447,
+      "total": 0.02089742231391447,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 0
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 2
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 0
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 2
+      },
+      "vascular": 0,
+      "eesContribution": 0.01903251639280807,
+      "total": 0.01903251639280807,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0.04423984338571899,
+      "total": 0.04423984338571899,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0.03445402467175428,
+      "total": 0.03445402467175428,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0,
+        "ktransSec": 0.01,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0.02089742231391447,
+      "total": 0.02089742231391447,
+      "jump": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 0
+      },
+      "vascular": 0.05,
+      "eesContribution": 0,
+      "total": 0.05,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 2
+      },
+      "vascular": 0.05,
+      "eesContribution": 0,
+      "total": 0.05,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 0
+      },
+      "vascular": 0.05,
+      "eesContribution": 0,
+      "total": 0.05,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 2
+      },
+      "vascular": 0.05,
+      "eesContribution": 0.01903251639280807,
+      "total": 0.06903251639280808,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0.04423984338571899,
+      "total": 0.04423984338571899,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0.03445402467175428,
+      "total": 0.03445402467175428,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.05,
+        "ktransSec": 0.01,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0.02089742231391447,
+      "total": 0.02089742231391447,
+      "jump": 0.05
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 0
+      },
+      "vascular": 0.1,
+      "eesContribution": 0,
+      "total": 0.1,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 2
+      },
+      "vascular": 0.1,
+      "eesContribution": 0,
+      "total": 0.1,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0,
+      "total": 0,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 0
+      },
+      "vascular": 0.1,
+      "eesContribution": 0,
+      "total": 0.1,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 2
+      },
+      "vascular": 0.1,
+      "eesContribution": 0.01903251639280807,
+      "total": 0.11903251639280807,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 5
+      },
+      "vascular": 0,
+      "eesContribution": 0.04423984338571899,
+      "total": 0.04423984338571899,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 10
+      },
+      "vascular": 0,
+      "eesContribution": 0.03445402467175428,
+      "total": 0.03445402467175428,
+      "jump": 0.1
+    },
+    {
+      "width": 390,
+      "options": {
+        "plasmaFraction": 0.1,
+        "ktransSec": 0.01,
+        "timeSec": 20
+      },
+      "vascular": 0,
+      "eesContribution": 0.02089742231391447,
+      "total": 0.02089742231391447,
+      "jump": 0.1
+    }
+  ]
+}

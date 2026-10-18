@@ -1,0 +1,247 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 18,
+  "maxGraphicError": 3.979039320256561E-13,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 0,
+        "scatterMm": 0
+      },
+      "fit": {
+        "xMm": 5,
+        "yMm": 0
+      },
+      "residual": 0,
+      "truthError": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 0,
+        "scatterMm": 0.5
+      },
+      "fit": {
+        "xMm": 5,
+        "yMm": 0
+      },
+      "residual": 0.5,
+      "truthError": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 0,
+        "scatterMm": 1
+      },
+      "fit": {
+        "xMm": 5.000000000000001,
+        "yMm": 8.526512829121202E-16
+      },
+      "residual": 1,
+      "truthError": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 1,
+        "scatterMm": 0
+      },
+      "fit": {
+        "xMm": 6,
+        "yMm": 0
+      },
+      "residual": 0,
+      "truthError": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 1,
+        "scatterMm": 0.5
+      },
+      "fit": {
+        "xMm": 6,
+        "yMm": 0
+      },
+      "residual": 0.5,
+      "truthError": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 1,
+        "scatterMm": 1
+      },
+      "fit": {
+        "xMm": 6.000000000000001,
+        "yMm": 8.526512829121202E-16
+      },
+      "residual": 1,
+      "truthError": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 3,
+        "scatterMm": 0
+      },
+      "fit": {
+        "xMm": 8,
+        "yMm": 0
+      },
+      "residual": 0,
+      "truthError": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 3,
+        "scatterMm": 0.5
+      },
+      "fit": {
+        "xMm": 8.000000000000002,
+        "yMm": 0
+      },
+      "residual": 0.5,
+      "truthError": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "biasMm": 3,
+        "scatterMm": 1
+      },
+      "fit": {
+        "xMm": 8,
+        "yMm": 8.526512829121202E-16
+      },
+      "residual": 1,
+      "truthError": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 0,
+        "scatterMm": 0
+      },
+      "fit": {
+        "xMm": 5,
+        "yMm": 0
+      },
+      "residual": 0,
+      "truthError": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 0,
+        "scatterMm": 0.5
+      },
+      "fit": {
+        "xMm": 5,
+        "yMm": 0
+      },
+      "residual": 0.5,
+      "truthError": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 0,
+        "scatterMm": 1
+      },
+      "fit": {
+        "xMm": 5.000000000000001,
+        "yMm": 8.526512829121202E-16
+      },
+      "residual": 1,
+      "truthError": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 1,
+        "scatterMm": 0
+      },
+      "fit": {
+        "xMm": 6,
+        "yMm": 0
+      },
+      "residual": 0,
+      "truthError": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 1,
+        "scatterMm": 0.5
+      },
+      "fit": {
+        "xMm": 6,
+        "yMm": 0
+      },
+      "residual": 0.5,
+      "truthError": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 1,
+        "scatterMm": 1
+      },
+      "fit": {
+        "xMm": 6.000000000000001,
+        "yMm": 8.526512829121202E-16
+      },
+      "residual": 1,
+      "truthError": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 3,
+        "scatterMm": 0
+      },
+      "fit": {
+        "xMm": 8,
+        "yMm": 0
+      },
+      "residual": 0,
+      "truthError": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 3,
+        "scatterMm": 0.5
+      },
+      "fit": {
+        "xMm": 8.000000000000002,
+        "yMm": 0
+      },
+      "residual": 0.5,
+      "truthError": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "biasMm": 3,
+        "scatterMm": 1
+      },
+      "fit": {
+        "xMm": 8,
+        "yMm": 8.526512829121202E-16
+      },
+      "residual": 1,
+      "truthError": 3
+    }
+  ]
+}

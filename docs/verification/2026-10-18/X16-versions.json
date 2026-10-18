@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/magnetic_dipole_force_torque.html",
-      "sha256": "3943FDF255AC4433131E753954E833FDFDF1A98549AE49F23571679E9A869863"
+      "sha256": "C73CD8F05069607C1C8B80E49FA66C58F004ADFFAB4415F2FD017014E7884787"
     },
     {
       "path": "docs/assets/magnetic-dipole-model.js",
@@ -52,6 +52,16 @@
     {
       "task": "W90",
       "proof": "docs/verification/2026-10-18/checkpoint-W90-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W93",
+      "proof": "docs/verification/2026-10-18/checkpoint-W93-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W94",
+      "proof": "docs/verification/2026-10-18/checkpoint-W94-versions.json",
       "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]

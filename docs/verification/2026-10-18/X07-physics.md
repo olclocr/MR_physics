@@ -23,3 +23,7 @@ Tofts등1999 [원저자의 표준화 논문 초록](https://pubmed.ncbi.nlm.nih.
 ## W81 공백 편집
 
 [정적 본문 공백 편집 검증](W81-readability.md)에서 비공백 문자·태그/속성·script/style와 표시 데이터 불변을 확인했다. 기존 물리 판정을 보존하며 새 계산/내용 통과로 확대하지 않는다. 당시 문장 assertion은 과거 버전의 절차이며 최신 공백 버전은 W81 절차를 사용한다.
+
+## W98 공통 함수 확장과 기존 범위 보존
+
+[W98 기록](X07-scale-physics.md)에서 사각 입력의 기간/크기를 지정하는 공통 API를 추가했다. W74의 기본1분/1mM·분단위 API/계산 결과는 바꾸지 않았다. [전후48개 전체모델·96개 실제 상태의 모델/출력/표/SVG 지문](X07-common-regression.json)이 정확히 같고, [독립 수치 재검증](X07-common-numerical.json)도 원래1e−8을 통과했다. 기존 대상 범위 판정을 보존하며 새로운 입력 크기/기간의 범위는 W98에서 별도로 검토했다. 현재 X07 manifest는 공통 자산의 전후 SHA와 이 근거를 physicsRevisions로 기록한다. 실제AIF/환자fitting·임상 정량/외부 전문가 검토는 미시행이다.

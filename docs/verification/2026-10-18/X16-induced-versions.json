@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/induced_dipole_energy.html",
-      "sha256": "458D5B4E0384575B7769E0E67EB05AA878C2A577496BB6A5119AA7773E408A43"
+      "sha256": "22B5759D5228DA8C17B0D1BAEEC90AAB56E1B457302F7578B338D387F1D6F3EA"
     },
     {
       "path": "docs/assets/induced-dipole-model.js",
@@ -50,6 +50,18 @@
     {
       "path": "docs/verification/2026-10-18/X16-induced-browser-check.json",
       "sha256": "FDF555B8B1AAC05DE9592BA3B5AC04DD080C63F936BF6C7943CAE9DD18AB4D90"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W93",
+      "proof": "docs/verification/2026-10-18/checkpoint-W93-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W94",
+      "proof": "docs/verification/2026-10-18/checkpoint-W94-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

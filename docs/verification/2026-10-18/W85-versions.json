@@ -17,11 +17,11 @@
     },
     {
       "path": "docs/temporal_window_bolus.html",
-      "sha256": "677320E2E945388A5A14DE14B1BCF7B5CFC98CC6EAB296F80C3ADBC00FDA0154"
+      "sha256": "B088957068C0AEDA04C81CD0876B3BC0D883F51A4A592A9E33D1250691E0C4F1"
     },
     {
       "path": "docs/dsc_signal_rate.html",
-      "sha256": "7F4A34A732893AFA1D990D1800C88DF170C2D07F9EBF1D6D0C59DEE93161D150"
+      "sha256": "DDFD0683D55ACF9D658B7362A112BE258A1AE792DD01495A111BD7C3FAF0B242"
     },
     {
       "path": "docs/assets/ir-lesson.css",
@@ -82,6 +82,11 @@
     {
       "task": "W90",
       "proof": "docs/verification/2026-10-18/checkpoint-W90-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W92",
+      "proof": "docs/verification/2026-10-18/checkpoint-W92-versions.json",
       "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ],

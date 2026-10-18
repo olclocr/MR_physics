@@ -1,0 +1,18 @@
+{
+  "conditions": 48,
+  "originalPoints": 1200,
+  "transformedPoints": 2400,
+  "pairChecks": 28800,
+  "max": {
+    "coordinateMm": 1.4210854715202004e-14,
+    "pixel": 1.4210854715202004e-14,
+    "lengthMm": 2.842170943040401e-14,
+    "orderDifferenceMm": 8.881784197001252e-16,
+    "inverseMm": 1.4210854715202004e-14,
+    "pairSquaredMm2": 1.8189894035458565e-12
+  },
+  "maxAbsoluteCoordinateMm": 59.64101615137754,
+  "tolerance": 1e-10,
+  "failed": [],
+  "passed": true
+}

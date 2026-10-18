@@ -121,13 +121,14 @@
 | X13 | [Methemoglobin 상태](hemorrhage_state_reading.html), [혈액 성분과 refocusing](blood_refocusing_limits.html) | [MetHb 세 상태](verification/2026-10-17/X13-physics.md)·[oxy/deoxy/철 저장의 조건부 근거 읽기](verification/2026-10-18/X13-refocusing-physics.md) 통과. 정량/실제 GRE/SWI·환자 날짜/진단은 남음 |
 | X14 | [방향과 magic angle](magic_angle_orientation.html) | [직접 정의한 R2/유한 감쇠 모형 통과](verification/2026-10-18/X14-physics.md). 실제 조직/정렬 분포·다성분·보편 TE 기준/진단은 남음 |
 | X15 | [상수/선형 보정](linear_field_correction.html), [곡률과 보정 기저](polynomial_field_basis.html) | [직선](verification/2026-10-18/X15-physics.md)·[알려진2차/401점 모형](verification/2026-10-18/X15-basis-physics.md) 통과. 실제 측정/3Dcoil·제약/고차항·장비/RF/안전은 남음 |
+| X11 | [IR 복소 신호와 위상 참조](ir_phase_reference.html) | [완전 회복/단위 참조 투영 모형](verification/2026-10-18/X11-phase-physics.md) 통과. 실제 PSIR 참조 획득/추정·coil/강도 정규화·LGE/임상TI/환자 재구성은 남음 |
 | X05 | [농도와 GRE 신호](contrast_concentration_competition.html), [Signed subtraction과 정합](signed_subtraction_alignment.html) | [농도 기본](verification/2026-10-17/X05-physics.md)·[정수pixel 뺄셈 모형](verification/2026-10-18/X05-subtraction-physics.md) 통과. 실제 약제/동태·신호 스케일/보간·환자 정합/진단은 남음 |
-| X06 | [신호비와 ΔR2* 변환](dsc_signal_rate.html) | [단일 지수/기준 입력 모형 통과](verification/2026-10-18/X06-physics.md). 농도/AIF/CBF/CBV/MTT·T1/누출/noise·환자 해석은 남음 |
-| X07 | [단일 구획 입력과 washout](compartment_input_washout.html) | [직사각 입력/단일 EES 모형 통과](verification/2026-10-18/X07-physics.md). 실제AIF/혈관항·신호변환/환자fitting/임상은 남음 |
-| X08 | [순간 표지](label_arrival_decay.html), [유한 방출/도달과 T1](label_train_arrival.html) | [순간 모형](verification/2026-10-18/X08-physics.md)·[총량1/유한 방출/같은 T1/보관 모형](verification/2026-10-18/X08-train-physics.md) 통과. 실제 RF 표지/효율·PCASL PLD·교환/ASL읽기/CBF/임상은 남음 |
+| X06 | [신호비/변화율](dsc_signal_rate.html), [신호 평균/log 순서](signal_window_log.html) | [단일 지수/기준 입력](verification/2026-10-18/X06-physics.md)·[양의 scalar 평균/변환 순서](verification/2026-10-18/X06-window-physics.md) 모형 통과. 실제 복소 획득/농도/AIF/CBF/CBV/MTT·T1/누출/noise·환자 해석은 남음 |
+| X07 | [단일 구획 입력/washout](compartment_input_washout.html), [입력 크기/계수](compartment_input_scale.html), [혈관/EES 기여](vascular_ees_components.html) | [단일 EES](verification/2026-10-18/X07-physics.md)·[스케일/공통 API 보존](verification/2026-10-18/X07-scale-physics.md)·[혈관/EES 성분과 경계](verification/2026-10-18/X07-vascular-physics.md)의 지정 모형 통과. 실제AIF·신호변환/환자fitting/임상은 남음 |
+| X08 | [순간 표지](label_arrival_decay.html), [유한 방출/도달과 T1](label_train_arrival.html), [도착 뒤 유출/차이량](label_postarrival_outflow.html) | [순간 모형](verification/2026-10-18/X08-physics.md)·[총량1/유한 방출/같은 T1/보관 모형](verification/2026-10-18/X08-train-physics.md) 통과. [도착 뒤 지수 유출/같은 T1](verification/2026-10-18/X08-outflow-physics.md)도 통과. 실제 RF 표지/효율·PCASL PLD·생리적 교환/ASL읽기/CBF/임상은 남음 |
 | X10 | [주기 운동과 관찰 시간창](periodic_motion_window.html) | [직접 정의한 양의 1D 단면 평균 모형 통과](verification/2026-10-18/X10-physics.md). 실제 MR cine·복소 신호/재구성·gating/부정맥·심장 기능은 남음 |
-| X16 | [고정 dipole의 힘과 torque](magnetic_dipole_force_torque.html), [고정/선형 유도 모멘트와 에너지](induced_dipole_energy.html) | [고정 모형](verification/2026-10-18/X16-physics.md)·[지정 가역 선형 응답/유효 에너지](verification/2026-10-18/X16-induced-physics.md) 모형 통과. 실제 재질/물체·3D 장·안전 시험/implant 조건·SAR/발열·소음/PNS는 남음 |
-| X17 | [알려진 격자와 영상 거리](phantom_grid_distance.html), [강체 이동과 거리 불변](phantom_rigid_distance.html) | [2D 점 좌표/축별 간격](verification/2026-10-18/X17-physics.md)·[지정 강체 변환/거리 불변](verification/2026-10-18/X17-rigid-physics.md) 모형 통과. 실제 획득/점 검출·SNR/균일도/ghosting·장비 QA 합격 판정은 남음 |
+| X16 | [고정 dipole의 힘과 torque](magnetic_dipole_force_torque.html), [고정/선형 유도 모멘트와 에너지](induced_dipole_energy.html), [가역 포화/일 적분](saturating_dipole_work.html), [흡수 파워/에너지](absorbed_power_energy.html), [선형 열손실/입력 시점](thermal_input_timing.html) | [고정 모형](verification/2026-10-18/X16-physics.md)·[지정 가역 선형 응답/유효 에너지](verification/2026-10-18/X16-induced-physics.md) 모형 통과. [주어진 흡수 파워/열손실 없는 모형](verification/2026-10-18/X16-power-physics.md)도 통과. [지정 가역 tanh/선형 응답의 일 적분](verification/2026-10-18/X16-saturation-physics.md)도 통과. [새 균일 열용량/선형 손실의 입력 시점](verification/2026-10-18/X16-thermal-physics.md)도 통과. 실제 재질/이력/시간 응답·3D 장·안전 시험/implant 조건·RF 흡수/장비SAR/국소 발열·소음/PNS는 남음 |
+| X17 | [알려진 격자와 영상 거리](phantom_grid_distance.html), [강체 이동과 거리 불변](phantom_rigid_distance.html), [회전/이동 순서](rigid_transform_order.html), [축별 배율/길이/면적](axis_scale_area.html), [정확한 좌표/가정 간격](assumed_pixel_spacing.html), [적합 잔차/정답 오차](translation_fit_residual.html) | [2D 점 좌표/축별 간격](verification/2026-10-18/X17-physics.md)·[지정 강체 변환/거리 불변](verification/2026-10-18/X17-rigid-physics.md)·[순서/원점의48조건 모형](verification/2026-10-18/X17-order-physics.md) 통과. [배율/길이/면적의32조건 모형](verification/2026-10-18/X17-scale-physics.md)도 통과. [정확한 좌표/가정 간격12조건 모형](verification/2026-10-18/X17-spacing-physics.md)도 통과. [이동 적합/정답 오차9조건](verification/2026-10-18/X17-residual-physics.md)도 통과. 실제 획득/점 검출·SNR/균일도/ghosting·영상 정합/장비 QA 합격 판정은 남음 |
 | X09 | [입력과 지연 반응](delayed_response_kernel.html), [두 입력의 반응 겹침](response_overlap.html) | [단일 입력](verification/2026-10-18/X09-physics.md)·[두 입력의 선형 합](verification/2026-10-18/X09-overlap-physics.md) 모형 통과. 산소화/BOLD 기전·실제 HRF/사건 수 추정·fMRI 통계/활성화 추론은 남음 |
 | X12 | [방향 확산과MD/FA](diffusion_tensor_direction.html), [두성분/제한fit](diffusion_tensor_mixture.html) | [알려진단일tensor](verification/2026-10-18/X12-physics.md)·[두Gaussian/xy맞춤](verification/2026-10-18/X12-mixture-physics.md) 모형 통과. 실제3D추정/성분복원/조직분율/tractography·환자분류는 남음 |
 
@@ -162,7 +163,7 @@
 
 ## 개발 순서와 실행 대기열
 
-**다음 실행 항목: W92.** 공개 Pages의 저장소 코드 링크404 복구 W59를 W56보다 먼저 마쳤다. 별도 주제 지정 없이 “개발 진행해”라는 요청을 받으면 아래에서 진행 중인 항목을 재개하거나, 선행 조건을 충족한 가장 앞의 미완료 항목을 실행한다. 완료 후 이 문장·행의 상태·결과 링크를 함께 갱신한다. 작업 상태와 챕터의 구현/물리 검증 상태는 별개다.
+**다음 실행 항목: W104.** 공개 Pages의 저장소 코드 링크404 복구 W59를 W56보다 먼저 마쳤다. 별도 주제 지정 없이 “개발 진행해”라는 요청을 받으면 아래에서 진행 중인 항목을 재개하거나, 선행 조건을 충족한 가장 앞의 미완료 항목을 실행한다. 완료 후 이 문장·행의 상태·결과 링크를 함께 갱신한다. 작업 상태와 챕터의 구현/물리 검증 상태는 별개다.
 
 2026-10-15 계획 검토 당시에는 **전체 24개 중 23개 통과, 보고서 파일 누락으로 1개 실패**했다. 원인은 [계획 검토 기록](verification/2026-10-15/development-plan-review.md)에 보존한다. 이후 W00에서 보고서 목록·링크·생성을 복구했다. 현재 근거와 시험·화면 결과는 [W00 완료 기록](verification/2026-10-15/W00-report-recovery.md)에 있다. 과거 시험 결과와 현재 검증을 구별한다.
 
@@ -270,10 +271,22 @@
 | W89 | X15 기본·관찰 시간/이완 제외 문구 명확화 | W85, W76 | 완료 — [세 문구·8개 전후 상태·실제 조건/표시 보존](verification/2026-10-18/W89-relaxation-clarity.md) |
 | W90 | X16 후속·고정/유도 dipole와 장 의존성 | W86 | 완료 — [독립8조건·16개 실제 상태·내용 판정](verification/2026-10-18/X16-induced-physics.md) |
 | W91 | X08 후속·유한 표지 입력과 도달/감쇠 겹침 | W75, W79 | 완료 — [독립40조건·80개 실제 상태·내용 판정](verification/2026-10-18/X08-train-physics.md) |
-| W92 | X06 후속·양의 신호 시간 평균과 log 변환 순서 | W70, W72 | 진행 중 |
-| W93 | X16 후속·정의한 흡수 파워와 에너지/평균률 | W86, W02 | 미착수 |
-| W94 | X16 후속·지정한 가역 포화 응답과 일 적분 | W90 | 미착수 |
-| W95 | X08 후속·도달 뒤 유출과 체류 차이량 | W91 | 미착수 |
+| W92 | X06 후속·양의 신호 시간 평균과 log 변환 순서 | W70, W72 | 완료 — [독립27조건·54개 실제 상태·내용 판정](verification/2026-10-18/X06-window-physics.md) |
+| W93 | X16 후속·정의한 흡수 파워와 에너지/평균률 | W86, W02 | 완료 — [독립12조건·24개 실제 상태·내용 판정](verification/2026-10-18/X16-power-physics.md) |
+| W94 | X16 후속·지정한 가역 포화 응답과 일 적분 | W90 | 완료 — [독립8조건·16개 실제 상태·내용 판정](verification/2026-10-18/X16-saturation-physics.md) |
+| W95 | X08 후속·도달 뒤 유출과 체류 차이량 | W91 | 완료 — [독립24조건·48개 실제 상태·내용 판정](verification/2026-10-18/X08-outflow-physics.md) |
+| W96 | X17 후속·회전과 평행이동 순서/회전 중심 | W88 | 완료 — [독립48조건·96개 실제 상태·내용 판정](verification/2026-10-18/X17-order-physics.md) |
+| W97 | X16 후속·열손실과 같은 에너지의 입력 시점 | W93 | 완료 — [독립12조건·24개 실제 상태·내용 판정](verification/2026-10-18/X16-thermal-physics.md) |
+| W98 | X07 후속·입력 크기와 구획 계수의 구별 가능성 | W74 | 완료 — [새30조건/60개 실제 상태·기존96개 전후 지문 보존](verification/2026-10-18/X07-scale-physics.md) |
+| W99 | X07 후속·혈관 항과 EES 항의 시간 응답 | W74, W98 | 완료 — [독립30조건·60개 실제 상태·경계/성분 판정](verification/2026-10-18/X07-vascular-physics.md) |
+| W100 | X17 후속·축별 배율과 길이/면적의 구별 | W96 | 완료 — [독립32조건·64개 실제 상태·모든 점쌍/면적](verification/2026-10-18/X17-scale-physics.md) |
+| W101 | X17 후속·정확한 점 좌표와 잘못 가정한 pixel 간격 | W80, W96 | 완료 — [독립12조건·24개 실제 상태·환산/방향 반례](verification/2026-10-18/X17-spacing-physics.md) |
+| W102 | X11 기본·IR 복소 신호와 위상 참조 투영 | W13, W02 | 완료 — [독립45조건·90개 실제 상태·위상/부호/투영](verification/2026-10-18/X11-phase-physics.md) |
+| W103 | X17 후속·이동 적합 잔차와 알려진 위치 오차 | W96, Q01 | 완료 — [독립9조건·18개 실제 상태·정상방정식/정답 오차](verification/2026-10-18/X17-residual-physics.md) |
+| W104 | X17 후속·최근접 pixel 중심 양자화와 거리 | W101, W88 | 진행 중 |
+| W105 | 후속 챕터의 한국어 띄어쓰기와 모바일 읽기 보강 | W101 | 미착수 |
+| W106 | X11 후속·위상 보정과 강도 정규화의 가정 | W102 | 미착수 |
+| W107 | X18 기본·주어진 두 풀의 종자화 포화 전달 | B03, F03 | 미착수 |
 
 W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을 누락하지 않고 C02의 선행 기반을 마련하며, B00의 전면 보강 때문에 핵심 경로를 중단하지 않는다. 다만 어느 페이지에서든 확인된 핵심 오류는 표 순서보다 먼저 수정한다.
 
@@ -521,6 +534,54 @@ W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을
 
 - 같은혈장입력Cp1mmol/L(0≤t<1분)/이후0에서Ktrans0/.1/.2/.4min⁻¹·ve.2/.4의8조합을비교한다. 초기Ct0/혈관직접항0,조직부피기준Ct와EES부피기준Ce=Ct/ve·kep=Ktrans/ve를구별한다. 선택t0/.5/1/2/4/6분의48조건·121시간점이다. 구간별지수해와독립합성곱/입력종료event분리ODE·유출누적적분으로농도/률/보존1e−8을검산한다. 빠른교환/큰분포부피/전달0의세관찰·실제두화면·표/곡선/경계/키보드/정답·전체회귀를확인한다. 혈관항/실제AIF/신호→농도/환자fitting·임상cutoff는분리하며기전을유일하게진단하는모형으로확대하지않는다.
 
+**W107 — X18 “다른 풀의 종자화 포화가 물 풀에도 전달될까?”**
+
+- 직접 정한 두 풀의 정규화 종자화 w/s를 M0w=1/M0s=.1, R1w=R1s=1s⁻¹로 둔다. 교환 s→w의 k0/.5/2s⁻¹와 w→s의 .1k를 짝지어 평형 detailed balance를 유지한다. s의 주어진 포화율 W0/1/5s⁻¹·관찰0/.5/1/3초의36조건에서 w′=(1−w)−.1kw+ks, s′=(.1−s)+.1kw−ks−Ws를 비교한다. 기본k.5/W5/t1초, 초기평형(1,.1)이다. 교환0/포화0 극한·교환 항 합0·열린 회복/포화 저장소·단위/정규화가 관찰 목표다. 독립 affine2×2 행렬지수와 분리 RK4/평형/양성/수렴을 사전1e−9로 검산하고 고정 축/원표/실제 두 화면/문제로 확인한다. 착수 때 Bloch-McConnell/포화 전달 원전을 읽고 longitudinal 두 풀의 부분 모형으로 한정한다. 실제 RF주파수/B1→포화율·직접 물 포화/MT/CEST spectrum·임상 APT 수치/환자 진단은 제외한다.
+
+**W106 — X11 “위상 보정만 하면 강도도 균일해질까?”**
+
+- T1 1000ms·완전 회복 IR의 TI400/700/1000ms, 공통 감도A.5/1/2, 참조의 알려진 회복계수r.8/1의18조건을 정의한다. S=A Mz exp(iφ), raw 참조Q=A r exp(iφ), φ30도/정확한 위상을 고정하고 위상만 제거한 Re(SQ*/|Q|)=A Mz와 이를 참조 크기로 나눈 Mz/r을 비교한다. 목표는 위상 보정/강도 정규화·공통 감도/참조 대비·가정의 조건부 정확도다. 기존 W102 IR 자화를 재사용하고 독립 복소 곱/회복 ODE와 A/r 극한을 사전1e−10로 검산한다. 고정 축/원표/실제 두 화면/문제로 확인하며 착수 때 Kellman2002 강도 정규화 원문을 다시 확인한다. 실제 coil map/잡음/참조 추정/PSIR 획득·조영제/임상TI/환자 재구성은 제외한다.
+
+**W105 — 최근 후속 챕터의 한국어 띄어쓰기/모바일 읽기**
+
+- W90–W101의 새12개 학습 HTML을 대상으로 붙어 있는 조사/단위 설명/영문 기호 주변 한국어 정적 텍스트를 검토하고 의미를 바꾸지 않는 공백 편집만 적용한다. 작업 시작 때 파일/리터럴 교체 목록과 이전 SHA를 고정한다. script/style/태그/속성/계산/입력값/정답 의미를 바꾸지 않고 역치환·비공백 동일성·전후 실제 브라우저 대표 상태의 전체 모델/표/SVG 지문을 확인한다. 새 본문/설계 개편은 별도 작업으로 남긴다. 실제1920/390의 확장 문단/모형 가정/문제 읽기와 가로 넘침을 확인하고 전체 시험/manifest 변경 근거를 기록한다. 물리 판정은 새 통과를 부여하지 않고 기존 대상 버전의 의미 보존 범위로 한정한다.
+
+**W104 — X17 “정확한 좌표를 pixel 중심으로 반올림해도 거리가 같을까?”**
+
+- 알려진25점의 강체 회전0/30도와 x/y 공통 이동0/.25/.5/.75mm, 고정 pixel 간격(행2,열1)mm·네 선분의32조건에서 분수 좌표와 최근접 pixel 중심 좌표를 비교한다. 좌표 반올림은 floor(u+.5)/floor(v+.5), 정확한 반 pixel은큰 정수 쪽으로 정한다. 목표는 좌표 양자화/물리 길이·축별 간격·길이 오차의 방향 의존성이다. 독립 정수/유리수 경계 판정·물리 역환산·각 점 오차≤√(1²+2²)/2mm와 두 점 길이 오차≤√5mm·사전1e−10mm를 검산한다. 고정 축/전체 원표/실제 두 화면/키보드/문제로 확인한다. 실제영상 보간/점 검출/장비QA 허용 기준/환자 계측은 제외한다.
+
+**W103 — X17 “적합 잔차가 작으면 알려진 이동도 정확할까?”**
+
+- 알려진25점·실제 이동(5,0)mm에 공통 x편향0/1/3mm와 결정론적 오차 a(cos(2πj/25),sin(2πj/25)), a0/.5/1mm를 더한9조건을 비교한다. 이동 적합값은 평균 좌표차, 적합 후 RMS 잔차와 알려진 실제 이동의 오차를 따로 표시한다. 목표는 잔차/정답 오차·공통 편향/평균0 산포·다른 검증 자료의 필요성이다. 독립 정상방정식/목적함수 최소화·알려진 정답·좌표/잔차1e−10mm를 검산하고 고정 축/전체 원표/실제 두 화면/문제로 확인한다. 착수 때 등록 오차 원전을 읽고 이 결정론적 이동 전용 반례를 일반 FRE/TRE 통계 정리로 확대하지 않는다. 실제영상 fitting/장비QA 허용 기준/환자 등록은 제외한다.
+
+**W102 — X11 “위상 참조가 틀리면 IR 신호의 부호도 달라질까?”**
+
+- 완전 회복 뒤 이상적 inversion의 Mz=1−2exp(−TI/T1)을 사용한다. T1 600/1000/1400ms·TI400/700/1000ms·주어진 참조 위상오차0/60/90/120/180도의45조건을 비교한다. S=Mz exp(iφ), 단위 참조R=exp[i(φ+ε)], φ30도에서 |S|와 Re(SR*)를 독립 복소 곱/공통 회전·회복/삼각식으로1e−10 검산한다. 참조오차90도 투영0/90도초과 부호 반전·magnitude의 부호 소실을 고정 축/원표/실제 두 화면/문제로 확인한다. 착수 때 PSIR 원전과 가정을 읽으며 주어진 위상 참조의 수학적 투영이라는 부분 범위를 유지한다. 실제 PSIR 획득/참조 추정·조영제/LGE 조직진단/임상TI·noise/환자 재구성은 제외한다.
+
+**W101 — X17 “점 위치가 정확해도 잘못된 간격으로 재면 길이가 맞을까?”**
+
+- 알려진 격자/warp0·실제 간격(행2,열1)mm를 고정한다. 측정에 가정한 간격(1,1)/(2,1)/(2,2)mm·네 선분의12조건에서 같은 pixel 좌표의 길이 환산을 비교한다. 정확한 좌표/잘못된 스케일·행/열 순서·가로/세로/대각 길이 차이를 독립 물리 길이/축별 pixel식과1e−10mm로 검산한다. 고정 물리/픽셀 도식·원표/실제 두 화면/문제를 확인하며 실제 DICOM metadata 탐지/변경·장비QA 허용 기준/환자 계측은 제외한다.
+
+**W100 — X17 “면적이 같으면 모든 선분 길이도 같을까?”**
+
+- 알려진25점에 축별 배율 S를 적용한 뒤 원점 회전 R을 적용한다. 배율 unit(1,1)/x(1.02,1)/y(1,.98)/같은면적(1.02,1/1.02), 회전0/30도·네 선분의32조건에서 강체와 배율·면적 보존/길이 보존을 구별한다. 간격(2,1)mm를 고정하고 독립 행렬/모든 점쌍·최소/최대 배율 길이 경계/모서리 shoelace 면적과det S를 검산한다. 사전 좌표/길이1e−10mm·면적1e−8mm², 고정 물리축/전체 좌표표/실제 두 화면/문제를 확인한다. 배율은 장비 오차 실측/QA 허용 기준/환자 왜곡이 아닌 직접 정한 예시이며 실제영상 fitting/보간은 제외한다.
+
+**W99 — X07 “입력과 함께 즉시 변하는 항도 같은 구획 washout일까?”**
+
+- 알려진 Cp1mM on[0,5)초·ve.2를 두고 vp0/.05/.1·Ktrans0/.01s⁻¹·t0/2/5/10/20초의30조건에서 Ct=vpCp+EES 항을 비교한다. 입력종료에서 혈관 항의 불연속과 EES 항의 연속 washout을 구별한다. 독립 사건분할 convolution/구획 ODE와 vp0/Ktrans0 극한·단위/부피기준·사전1e−8/고정 축/전체 표/실제 두 화면/문제를 확인한다. 착수 때 확장 구획 원전과 가정을 읽으며 실제 MR 신호변환/AIF 측정/환자fitting/진단은 제외한다.
+
+**W98 — X07 “같은 구획 곡선이면 입력과 계수도 같을까?”**
+
+- 알려진 사각 입력 Cp=f mM on[0,5)초, f.5/1/2를 직접 정의한다. 기준 Ktrans.01s⁻¹/ve.2와 보상형 Ktrans=.01/f·ve=.2/f를 비교한다. 두 유형×f3×관찰0/2/5/10/20초의30조건에서 kep와 Ct=Ktrans∫Cp exp(−kep·age)를 독립 적분/구획 ODE·정확한 스케일 불변으로 검산한다. 보상형에서는 Cp/Ktrans/ve가 달라도 kep/Ct가 같을 수 있음을 고정 축/원표/실제 두 화면/문제로 확인한다. 사전1e−8·질량/단위/입력종료를 검토하며 실제 신호변환/AIF 측정/환자fitting·진단/프로토콜은 제외한다.
+
+**W97 — X16 “같은 에너지를 일찍/늦게 흡수하면 마지막 온도 변화도 같을까?”**
+
+- 직접 선택한 단일 균일 열용량 C10J/K와 주위 대비 ΔT0=0을 둔다. 흡수 파워1/2W를20초 중 앞10초/뒤10초에 적용하고 열손실계수 H0/.5/1W/K의12조건에서 같은E와 다른 종료 ΔT를 비교한다. C dΔT/dt=Pabs−HΔT와 흡수E=남은 CΔT+누적 손실을 독립 경계 분리 ODE/닫힌 지수·H0 극한으로1e−8 검산한다. 고정 축/전체 표/실제 두 화면/문제로 입력 시점·열손실·온도/에너지 구별을 확인한다. 열용량/계수는 새 교육용 선택이며 실제 환자/물체/국소 발열·관류/전자기 흡수/안전 판정은 제외한다.
+
+**W96 — X17 “회전과 평행이동의 순서를 바꾸어도 같은 격자일까?”**
+
+- W88의 알려진25점과 공통 회전을 재사용한다. 반시계0/30/90도·+x이동0/5mm·정사각/직사각 pixel spacing·네 선분의48조건에서 R(p)+b와 R(p+b)를 비교한다. 원점 회전과 이동 순서·바뀐 점 위치/보존된 모든 쌍의 거리를 구별한다. 독립 복소 좌표/동차행렬과 순서 차이 |b−Rb|=2|b|sin(θ/2)를 검산하고 이동0/회전0 극한·1e−10mm·고정물리축/좌표표/실제 두 화면/문제를 확인한다. 실제 영상 registration fitting/보간/장비 QA·환자 정합은 제외한다.
+
 **W95 — X08 “같이 도달했어도 오래 머무르면 차이가 같을까?”**
 
 - W91의 총 초기 차이량1/D균일 방출·D1초/T1 1.6초를 유지하고 δ.5/1초·도착 뒤 체류 시간상수 Tout1/2/무한대초·t1/2/3/4초의24조건을 비교한다. 도착 뒤에만 exp[−(t−s−δ)/Tout]로 남는 초기량 가중치와 T1까지 적용한 현재 차이를 각각 적분한다. 독립 packet 구적/경계 분리 유입-유출-회복 ODE·Tout 무한대에서 W91 일치·사전1e−8/고정 축/전체 표/실제 두 화면/문제를 확인한다. 조직 교환/생리학적 체류분포·실제 ASL/CBF/환자 추정은 제외하며 단순 유출과 회복의 곱을 임상 정량 모형으로 표현하지 않는다.
@@ -722,7 +783,7 @@ W00–W12는 기존 검증을 새 교육으로 이어가는 묶음이다. B01을
 
 ## 현재 작업의 재개 메모
 
-W92 진행 중 (2026-10-18). 양의 scalar 신호비 평균/log 순서를 [계획](verification/2026-10-18/X06-window-physics.md)에 따라 구현한다. W91은 [통합 기록](verification/2026-10-18/checkpoint-W91-navigation.md)으로 마감했다. 실제 복소 k-space/영상 획득·관류/환자 추정은 제외한다.
+W104 진행 중 (2026-10-18). 분수 좌표의 최근접 pixel 중심 양자화를 [계획](verification/2026-10-18/X17-quantization-physics.md)에 따라 구현한다. W103은 [통합 기록](verification/2026-10-18/checkpoint-W103-navigation.md)으로 마감했다. 실제 영상 보간/점 검출/QA/환자 계측은 제외한다.
 
 ## 작업 기록
 
@@ -892,3 +953,31 @@ MRIQuestions는 주제 선택과 질문 발굴의 참고 자료이며 원문·�
 | 2026-10-18 | W90 X16 고정/유도 모멘트와 유효 에너지 | [독립8조건·16개 실제 상태·378개 통합 상태](verification/2026-10-18/X16-induced-physics.md). 현재 모멘트/응답 전체·상호작용/유효 위치 에너지·면적/힘을 구별. 전체214개 시험 통과. 다음W91, 후속W92/W93/W94 |
 
 | 2026-10-18 | W91 X08 총량1/유한 방출과 도달/T1 | [독립40조건·80개 실제 상태·382개 통합 상태](verification/2026-10-18/X08-train-physics.md). 각 packet의 회복 시계·도달/남은 차이량·절대시각/실제PLD 구별. 전체216개 시험 통과. 다음W92, 후속W93/W94/W95 |
+
+| 2026-10-18 | 20:40 예약 게시 완료 | [실제 결과](verification/2026-10-18/publication-2040.md). main 4bb4235 Pages success/built, 공개82개 상태·102개 파일 바이트 일치. 실제 커밋 2026-10-18T20:43:32+09:00와 예약을 구별. W82–W91 완료/W92 수치 초안, 이후 W92 HTML 개발 재개 |
+
+| 2026-10-18 | W92 X06 양의 신호 평균/log 순서 | [독립27조건·54개 실제 상태·386개 통합 상태](verification/2026-10-18/X06-window-physics.md). 같은 기준·TE/경과시간·변화율 평균/신호 평균 뒤 변환 구별. 전체218개 시험 통과. 다음W93, 후속W94/W95/W96 |
+
+| 2026-10-18 | W93 X16 주어진 흡수 파워/에너지 | [독립12조건·24개 실제 상태·390개 통합 상태](verification/2026-10-18/X16-power-physics.md). duty/평균률·시간 적분/전체E·열용량/모형ΔT를 구별. 전체220개 시험 통과. 다음W94, 후속W95/W96/W97 |
+
+| 2026-10-18 | W94 X16 가역 포화 응답/일 적분 | [독립8조건·16개 실제 상태·394개 통합 상태](verification/2026-10-18/X16-saturation-physics.md). 같은 초기 기울기/다른 큰장 응답·힘/응답 면적·선형½ 범위를 구별. 전체222개 시험 통과. 다음W95, 후속W96/W97/W98 |
+
+| 2026-10-18 | W95 X08 도착 뒤 유출/현재 차이량 | [독립24조건·48개 실제 상태·398개 통합 상태](verification/2026-10-18/X08-outflow-physics.md). 누적 도달/현재 체류·유출/회복·제한된 지연 비교를 구별. 전체224개 시험 통과. 다음W96, 후속W97/W98/W99 |
+
+| 2026-10-18 | W96 X17 회전/이동 순서 | [독립48조건·96개 실제 상태·402개 통합 상태](verification/2026-10-18/X17-order-physics.md). 같은 원점/다른 순서·현재 위치/보존 길이·물리/pixel 좌표를 구별. 전체226개 시험 통과. 다음W97, 후속W98/W99/W100 |
+
+| 2026-10-18 | W97 X16 선형 열손실/입력 시점 | [독립12조건·24개 실제 상태·406개 통합 상태](verification/2026-10-18/X16-thermal-physics.md). 같은E/다른 마지막ΔT·현재 저장/주위 전달·H0 보존을 구별. 전체228개 시험 통과. 다음W98, 후속W99/W100/W101 |
+
+| 2026-10-18 | W98 X07 입력/계수 스케일·공통 API | [새30조건/60개 실제 상태·기존48모델/96개 전후 지문·410개 통합 상태](verification/2026-10-18/X07-scale-physics.md). 같은Ct/다른입력·계수/농도 분모, 기존 범위 보존. 전체230개 시험 통과. 다음W99, 후속W100/W101/W102 |
+
+| 2026-10-18 | W99 X07 혈관/EES 기여 | [독립30조건·60개 실제 상태·414개 통합 상태](verification/2026-10-18/X07-vascular-physics.md). 전체/성분·부피 기준·입력종료의 점프/연속을 구별. 전체232개 시험 통과. 다음W100, 후속W101/W102/W103 |
+
+| 2026-10-18 | W100 X17 축별 배율/길이/면적 | [독립32조건·64개 실제 상태·418개 통합 상태](verification/2026-10-18/X17-scale-physics.md). 면적 보존/길이 보존·배율/회전·고정 축/다각형을 구별. 전체234개 시험 통과. 다음W101, 후속W102/W103/W104 |
+
+| 2026-10-18 | W101 X17 정확한 좌표/가정 간격 | [독립12조건·24개 실제 상태·422개 통합 상태](verification/2026-10-18/X17-spacing-physics.md). 같은 좌표/다른 환산·행열/방향·두 FOV를 구별. 전체236개 시험 통과. 다음W102, 후속W103/W104/W105 |
+
+| 2026-10-18 | W102 X11 IR 복소 신호/참조 투영 | [독립45조건·90개 실제 상태·426개 통합 상태](verification/2026-10-18/X11-phase-physics.md). magnitude/부호·투영0/실제null·참조 오차와 회복을 구별. 전체238개 시험 통과. 다음W103, 후속W104/W105/W106 |
+
+| 2026-10-18 | W103 X17 이동 적합 잔차/정답 오차 | [독립9조건·18개 실제 상태·430개 통합 상태](verification/2026-10-18/X17-residual-physics.md). 공통 편향/평균0 산포·잔차/정답 오차·알려진 정답의 필요성을 구별. 전체240개 시험 통과. 다음W104, 후속W105/W106/W107 |
+
+| 2026-10-19 | 01:45 예약 게시 진행 중 | [범위](verification/2026-10-19/publication-0145.md). W92–W103 완료/W104 수치 초안을 구별. 전체242개 시험/게시 전122개 실제 상태 통과. 실제 배포 확인 전 게시 완료로 표시하지 않음 |

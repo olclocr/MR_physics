@@ -1,0 +1,4642 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 122,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "file": "signal_window_log.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.418233"
+        },
+        {
+          "id": "meanOutput",
+          "text": "30.091023"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "29.057182"
+        },
+        {
+          "id": "gapOutput",
+          "text": "1.033841"
+        },
+        {
+          "id": "instantOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 10.000000초, 전체 창 [4.000000, 16.000000]초입니다. 변화율 평균 30.091023와 신호 평균 뒤 29.057182s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "signal_window_log.html",
+      "button": "exampleNarrow",
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.304179"
+        },
+        {
+          "id": "meanOutput",
+          "text": "39.672633"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "39.671350"
+        },
+        {
+          "id": "gapOutput",
+          "text": "0.001283"
+        },
+        {
+          "id": "instantOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 10.000000초, 전체 창 [9.000000, 11.000000]초입니다. 변화율 평균 39.672633와 신호 평균 뒤 39.671350s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "signal_window_log.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.186439"
+        },
+        {
+          "id": "meanOutput",
+          "text": "30.091023"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "27.994148"
+        },
+        {
+          "id": "gapOutput",
+          "text": "2.096875"
+        },
+        {
+          "id": "instantOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 10.000000초, 전체 창 [4.000000, 16.000000]초입니다. 변화율 평균 30.091023와 신호 평균 뒤 27.994148s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "signal_window_log.html",
+      "button": "exampleEdge",
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.882323"
+        },
+        {
+          "id": "meanOutput",
+          "text": "4.954488"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "4.173229"
+        },
+        {
+          "id": "gapOutput",
+          "text": "0.781260"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 0.000000초, 전체 창 [-6.000000, 6.000000]초입니다. 변화율 평균 4.954488와 신호 평균 뒤 4.173229s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X06-window-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "absorbed_power_energy.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 20초의 평균 1.000000W, 에너지 20.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=5.000000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "absorbed_power_energy.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "2.500000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 10초의 평균 1.000000W, 에너지 10.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=2.500000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "absorbed_power_energy.html",
+      "button": "exampleContinuous",
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 20초의 평균 1.000000W, 에너지 20.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=5.000000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "absorbed_power_energy.html",
+      "button": "exampleSameEnergy",
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "2.500000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 20초의 평균 0.500000W, 에너지 10.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=2.500000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X16-power-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.995055mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=3.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleOne",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.761594mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.000000mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X16-saturation-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "label_postarrival_outflow.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "0.232544"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.052089"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.767456"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 0.232544, 자화 차이 0.052089입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_postarrival_outflow.html",
+      "button": "exampleRetained",
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 1.000000, 자화 차이 0.213040입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_postarrival_outflow.html",
+      "button": "exampleSlow",
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "0.477302"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.104318"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.522698"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 0.477302, 자화 차이 0.104318입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_postarrival_outflow.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "0.141045"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.031594"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.858955"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 0.141045, 자화 차이 0.031594입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X08-outflow-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "rigid_transform_order.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "2.588190"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (5.000000, 0.000000)mm, B에서 (4.330127, 2.500000)mm입니다. 모든 같은 점의 B−A=(-0.669873, 2.500000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "rigid_transform_order.html",
+      "button": "exampleNoRotation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (5.000000, 0.000000)mm, B에서 (5.000000, 0.000000)mm입니다. 모든 같은 점의 B−A=(0.000000, 0.000000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "rigid_transform_order.html",
+      "button": "exampleNoShift",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (0.000000, 0.000000)mm, B에서 (0.000000, 0.000000)mm입니다. 모든 같은 점의 B−A=(0.000000, 0.000000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "rigid_transform_order.html",
+      "button": "exampleQuarter",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "7.071068"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (5.000000, 0.000000)mm, B에서 (0.000000, 5.000000)mm입니다. 모든 같은 점의 B−A=(-5.000000, 5.000000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X17-order-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "thermal_input_timing.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "0.954605"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "9.546049"
+        },
+        {
+          "id": "lostOutput",
+          "text": "10.453951"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "1.573877"
+        },
+        {
+          "id": "status",
+          "text": "입력 [0, 10)초, 관찰20초입니다. 흡수 20.000000J = 저장 9.546049J + 주위 전달 10.453951J입니다. 모형 ΔT는 0.954605K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "thermal_input_timing.html",
+      "button": "exampleLate",
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "1.573877"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "15.738774"
+        },
+        {
+          "id": "lostOutput",
+          "text": "4.261226"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "1.573877"
+        },
+        {
+          "id": "status",
+          "text": "입력 [10, 20)초, 관찰20초입니다. 흡수 20.000000J = 저장 15.738774J + 주위 전달 4.261226J입니다. 모형 ΔT는 1.573877K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "thermal_input_timing.html",
+      "button": "exampleNoLoss",
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "lostOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 [0, 10)초, 관찰20초입니다. 흡수 20.000000J = 저장 20.000000J + 주위 전달 0.000000J입니다. 모형 ΔT는 2.000000K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "thermal_input_timing.html",
+      "button": "exampleFaster",
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "0.465088"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "4.650883"
+        },
+        {
+          "id": "lostOutput",
+          "text": "15.349117"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "1.264241"
+        },
+        {
+          "id": "status",
+          "text": "입력 [0, 10)초, 관찰20초입니다. 흡수 20.000000J = 저장 4.650883J + 주위 전달 15.349117J입니다. 모형 ΔT는 0.465088K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X16-thermal-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_scale.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.005000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.344540"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "보상형 f=2, t=10초입니다. Ct=0.034454mM/조직, 기준Ct=0.034454mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_scale.html",
+      "button": "exampleFixed",
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.010000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.200000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.068908"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.344540"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "status",
+          "text": "고정형 f=2, t=10초입니다. Ct=0.068908mM/조직, 기준Ct=0.034454mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_scale.html",
+      "button": "exampleLow",
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.020000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.400000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.086135"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "보상형 f=0.5, t=10초입니다. Ct=0.034454mM/조직, 기준Ct=0.034454mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_scale.html",
+      "button": "exampleStop",
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.005000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.442398"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "보상형 f=2, t=5초입니다. Ct=0.044240mM/조직, 기준Ct=0.044240mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X07-scale-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "vascular_ees_components.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.019033"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.119033"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.095163"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "status",
+          "text": "t=2초의 전체Ct 0.119033 = 혈관 0.100000 + EES 기여 0.019033mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.144240 / 0.044240mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "componentGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "vascular_ees_components.html",
+      "button": "exampleStop",
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.221199"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "status",
+          "text": "t=5초의 전체Ct 0.044240 = 혈관 0.000000 + EES 기여 0.044240mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.144240 / 0.044240mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "componentGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "vascular_ees_components.html",
+      "button": "exampleNoVascular",
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.019033"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.019033"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.095163"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "t=2초의 전체Ct 0.019033 = 혈관 0.000000 + EES 기여 0.019033mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.044240 / 0.044240mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "componentGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "vascular_ees_components.html",
+      "button": "exampleNoTransfer",
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "status",
+          "text": "t=2초의 전체Ct 0.100000 = 혈관 0.100000 + EES 기여 0.000000mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.100000 / 0.000000mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "componentGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X07-vascular-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "axis_scale_area.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "1.020000"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.020000 / sy=0.980392, 선택 길이 차이 1.600000mm입니다. 면적비 1.000000와 길이비 1.020000를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "axis_scale_area.html",
+      "button": "exampleVertical",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "78.431373"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "0.980392"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.020000 / sy=0.980392, 선택 길이 차이 -1.568627mm입니다. 면적비 1.000000와 길이비 0.980392를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "axis_scale_area.html",
+      "button": "exampleNoRotation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "1.020000"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.020000 / sy=0.980392, 선택 길이 차이 1.600000mm입니다. 면적비 1.000000와 길이비 1.020000를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "axis_scale_area.html",
+      "button": "exampleUnit",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.000000 / sy=1.000000, 선택 길이 차이 0.000000mm입니다. 면적비 1.000000와 길이비 1.000000를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X17-scale-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "assumed_pixel_spacing.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=0.000000 / Δv=-40.000000pixel에서 정답 80.000000mm, 환산 40.000000mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "assumed_pixel_spacing.html",
+      "button": "exampleCorrect",
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=0.000000 / Δv=-40.000000pixel에서 정답 80.000000mm, 환산 80.000000mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "assumed_pixel_spacing.html",
+      "button": "exampleHorizontal",
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=80.000000 / Δv=0.000000pixel에서 정답 80.000000mm, 환산 80.000000mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "assumed_pixel_spacing.html",
+      "button": "exampleWide",
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "113.137085"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "178.885438"
+        },
+        {
+          "id": "errorOutput",
+          "text": "65.748353"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.581139"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=80.000000 / Δv=-40.000000pixel에서 정답 113.137085mm, 환산 178.885438mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X17-spacing-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 -0.340640입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": "exampleQuarter",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.000000입니다. ε90도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": "exampleFlip",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.170320"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.295003"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.170320입니다. ε120도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": "exampleRecovered",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 1000ms의 Mz 0.264241 / magnitude 0.264241 / 참조 제거 실수부 0.264241입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X11-phase-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "translation_fit_residual.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(8.000000,0.000000)mm입니다. 잔차 RMS 0.000000mm와 정답 이동 오차 3.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "translation_fit_residual.html",
+      "button": "exampleScatter",
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(5.000000,0.000000)mm입니다. 잔차 RMS 1.000000mm와 정답 이동 오차 0.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "translation_fit_residual.html",
+      "button": "exampleBoth",
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "3.162278"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(8.000000,0.000000)mm입니다. 잔차 RMS 1.000000mm와 정답 이동 오차 3.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "translation_fit_residual.html",
+      "button": "examplePerfect",
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(5.000000,0.000000)mm입니다. 잔차 RMS 0.000000mm와 정답 이동 오차 0.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X17-residual-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "signal_window_log.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.418233"
+        },
+        {
+          "id": "meanOutput",
+          "text": "30.091023"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "29.057182"
+        },
+        {
+          "id": "gapOutput",
+          "text": "1.033841"
+        },
+        {
+          "id": "instantOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 10.000000초, 전체 창 [4.000000, 16.000000]초입니다. 변화율 평균 30.091023와 신호 평균 뒤 29.057182s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "signal_window_log.html",
+      "button": "exampleNarrow",
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.304179"
+        },
+        {
+          "id": "meanOutput",
+          "text": "39.672633"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "39.671350"
+        },
+        {
+          "id": "gapOutput",
+          "text": "0.001283"
+        },
+        {
+          "id": "instantOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 10.000000초, 전체 창 [9.000000, 11.000000]초입니다. 변화율 평균 39.672633와 신호 평균 뒤 39.671350s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "signal_window_log.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.186439"
+        },
+        {
+          "id": "meanOutput",
+          "text": "30.091023"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "27.994148"
+        },
+        {
+          "id": "gapOutput",
+          "text": "2.096875"
+        },
+        {
+          "id": "instantOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 10.000000초, 전체 창 [4.000000, 16.000000]초입니다. 변화율 평균 30.091023와 신호 평균 뒤 27.994148s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "signal_window_log.html",
+      "button": "exampleEdge",
+      "outputs": [
+        {
+          "id": "ratioOutput",
+          "text": "0.882323"
+        },
+        {
+          "id": "meanOutput",
+          "text": "4.954488"
+        },
+        {
+          "id": "effectiveOutput",
+          "text": "4.173229"
+        },
+        {
+          "id": "gapOutput",
+          "text": "0.781260"
+        },
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 중심 0.000000초, 전체 창 [-6.000000, 6.000000]초입니다. 변화율 평균 4.954488와 신호 평균 뒤 4.173229s⁻¹를 비교합니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X06-window-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "absorbed_power_energy.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 20초의 평균 1.000000W, 에너지 20.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=5.000000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "absorbed_power_energy.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "2.500000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 10초의 평균 1.000000W, 에너지 10.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=2.500000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "absorbed_power_energy.html",
+      "button": "exampleContinuous",
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 20초의 평균 1.000000W, 에너지 20.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=5.000000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "absorbed_power_energy.html",
+      "button": "exampleSameEnergy",
+      "outputs": [
+        {
+          "id": "averageOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "rateOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "temperatureOutput",
+          "text": "2.500000"
+        },
+        {
+          "id": "onTimeOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "status",
+          "text": "전체 20초의 평균 0.500000W, 에너지 10.000000J입니다. m=1kg·c=4000J/(kg·K)의 열손실 없는 모형 ΔT=2.500000mK입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "powerGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X16-power-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.995055mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=3.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleOne",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.761594mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.000000mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X16-saturation-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "label_postarrival_outflow.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "0.232544"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.052089"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.767456"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 0.232544, 자화 차이 0.052089입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_postarrival_outflow.html",
+      "button": "exampleRetained",
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 1.000000, 자화 차이 0.213040입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_postarrival_outflow.html",
+      "button": "exampleSlow",
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "0.477302"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.104318"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.522698"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 0.477302, 자화 차이 0.104318입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_postarrival_outflow.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "presentOutput",
+          "text": "0.141045"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.031594"
+        },
+        {
+          "id": "departedOutput",
+          "text": "0.858955"
+        },
+        {
+          "id": "retainedOutput",
+          "text": "0.213040"
+        },
+        {
+          "id": "status",
+          "text": "t=3.000000초에서 누적 도달 1.000000, 현재 체류 0.141045, 자화 차이 0.031594입니다. T1은 방출부터, 유출은 도착 뒤부터 작용합니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X08-outflow-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "rigid_transform_order.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "2.588190"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (5.000000, 0.000000)mm, B에서 (4.330127, 2.500000)mm입니다. 모든 같은 점의 B−A=(-0.669873, 2.500000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "rigid_transform_order.html",
+      "button": "exampleNoRotation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (5.000000, 0.000000)mm, B에서 (5.000000, 0.000000)mm입니다. 모든 같은 점의 B−A=(0.000000, 0.000000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "rigid_transform_order.html",
+      "button": "exampleNoShift",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (0.000000, 0.000000)mm, B에서 (0.000000, 0.000000)mm입니다. 모든 같은 점의 B−A=(0.000000, 0.000000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "rigid_transform_order.html",
+      "button": "exampleQuarter",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthAOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthBOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthDifferenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "positionDifferenceOutput",
+          "text": "7.071068"
+        },
+        {
+          "id": "status",
+          "text": "원래 중심점은 A에서 (5.000000, 0.000000)mm, B에서 (0.000000, 5.000000)mm입니다. 모든 같은 점의 B−A=(-5.000000, 5.000000)mm입니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "orderAGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "orderBGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X17-order-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "thermal_input_timing.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "0.954605"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "9.546049"
+        },
+        {
+          "id": "lostOutput",
+          "text": "10.453951"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "1.573877"
+        },
+        {
+          "id": "status",
+          "text": "입력 [0, 10)초, 관찰20초입니다. 흡수 20.000000J = 저장 9.546049J + 주위 전달 10.453951J입니다. 모형 ΔT는 0.954605K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "thermal_input_timing.html",
+      "button": "exampleLate",
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "1.573877"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "15.738774"
+        },
+        {
+          "id": "lostOutput",
+          "text": "4.261226"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "1.573877"
+        },
+        {
+          "id": "status",
+          "text": "입력 [10, 20)초, 관찰20초입니다. 흡수 20.000000J = 저장 15.738774J + 주위 전달 4.261226J입니다. 모형 ΔT는 1.573877K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "thermal_input_timing.html",
+      "button": "exampleNoLoss",
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "lostOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 [0, 10)초, 관찰20초입니다. 흡수 20.000000J = 저장 20.000000J + 주위 전달 0.000000J입니다. 모형 ΔT는 2.000000K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "thermal_input_timing.html",
+      "button": "exampleFaster",
+      "outputs": [
+        {
+          "id": "temperatureOutput",
+          "text": "0.465088"
+        },
+        {
+          "id": "absorbedOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "storedOutput",
+          "text": "4.650883"
+        },
+        {
+          "id": "lostOutput",
+          "text": "15.349117"
+        },
+        {
+          "id": "averageOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "1.264241"
+        },
+        {
+          "id": "status",
+          "text": "입력 [0, 10)초, 관찰20초입니다. 흡수 20.000000J = 저장 4.650883J + 주위 전달 15.349117J입니다. 모형 ΔT는 0.465088K입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "temperatureGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X16-thermal-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_scale.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.005000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.344540"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "보상형 f=2, t=10초입니다. Ct=0.034454mM/조직, 기준Ct=0.034454mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_scale.html",
+      "button": "exampleFixed",
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.010000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.200000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.068908"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.344540"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "status",
+          "text": "고정형 f=2, t=10초입니다. Ct=0.068908mM/조직, 기준Ct=0.034454mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_scale.html",
+      "button": "exampleLow",
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.020000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.400000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.086135"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.034454"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "보상형 f=0.5, t=10초입니다. Ct=0.034454mM/조직, 기준Ct=0.034454mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_scale.html",
+      "button": "exampleStop",
+      "outputs": [
+        {
+          "id": "transferOutput",
+          "text": "0.005000"
+        },
+        {
+          "id": "volumeOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.442398"
+        },
+        {
+          "id": "baselineOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "differenceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "보상형 f=2, t=5초입니다. Ct=0.044240mM/조직, 기준Ct=0.044240mM/조직입니다. 두 계수와 부피 기준을 따로 비교하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "tissueGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X07-scale-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "vascular_ees_components.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.019033"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.119033"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.095163"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "status",
+          "text": "t=2초의 전체Ct 0.119033 = 혈관 0.100000 + EES 기여 0.019033mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.144240 / 0.044240mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "componentGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "vascular_ees_components.html",
+      "button": "exampleStop",
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.044240"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.221199"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "status",
+          "text": "t=5초의 전체Ct 0.044240 = 혈관 0.000000 + EES 기여 0.044240mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.144240 / 0.044240mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "componentGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "vascular_ees_components.html",
+      "button": "exampleNoVascular",
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.019033"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.019033"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.095163"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "t=2초의 전체Ct 0.019033 = 혈관 0.000000 + EES 기여 0.019033mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.044240 / 0.044240mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "componentGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "vascular_ees_components.html",
+      "button": "exampleNoTransfer",
+      "outputs": [
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "vascularOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "eesContributionOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "totalOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "jumpOutput",
+          "text": "0.100000"
+        },
+        {
+          "id": "status",
+          "text": "t=2초의 전체Ct 0.100000 = 혈관 0.100000 + EES 기여 0.000000mM(조직 부피 기준)입니다.5초 직전/직후 전체Ct는 0.100000 / 0.000000mM입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "componentGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X07-vascular-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "axis_scale_area.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "1.020000"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.020000 / sy=0.980392, 선택 길이 차이 1.600000mm입니다. 면적비 1.000000와 길이비 1.020000를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "axis_scale_area.html",
+      "button": "exampleVertical",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "78.431373"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "0.980392"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.020000 / sy=0.980392, 선택 길이 차이 -1.568627mm입니다. 면적비 1.000000와 길이비 0.980392를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "axis_scale_area.html",
+      "button": "exampleNoRotation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "1.020000"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.020000 / sy=0.980392, 선택 길이 차이 1.600000mm입니다. 면적비 1.000000와 길이비 1.020000를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "axis_scale_area.html",
+      "button": "exampleUnit",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "originalAreaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6400.000000"
+        },
+        {
+          "id": "areaRatioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "sx=1.000000 / sy=1.000000, 선택 길이 차이 0.000000mm입니다. 면적비 1.000000와 길이비 1.000000를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "originalGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "transformedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X17-scale-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "assumed_pixel_spacing.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "40.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=0.000000 / Δv=-40.000000pixel에서 정답 80.000000mm, 환산 40.000000mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "assumed_pixel_spacing.html",
+      "button": "exampleCorrect",
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=0.000000 / Δv=-40.000000pixel에서 정답 80.000000mm, 환산 80.000000mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "assumed_pixel_spacing.html",
+      "button": "exampleHorizontal",
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=80.000000 / Δv=0.000000pixel에서 정답 80.000000mm, 환산 80.000000mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "assumed_pixel_spacing.html",
+      "button": "exampleWide",
+      "outputs": [
+        {
+          "id": "trueOutput",
+          "text": "113.137085"
+        },
+        {
+          "id": "assumedOutput",
+          "text": "178.885438"
+        },
+        {
+          "id": "errorOutput",
+          "text": "65.748353"
+        },
+        {
+          "id": "ratioOutput",
+          "text": "1.581139"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "같은 Δu=80.000000 / Δv=-40.000000pixel에서 정답 113.137085mm, 환산 178.885438mm입니다. 좌표와 간격 가정을 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "trueGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "assumedGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X17-spacing-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 -0.340640입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": "exampleQuarter",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.000000입니다. ε90도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": "exampleFlip",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.170320"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.295003"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.170320입니다. ε120도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": "exampleRecovered",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 1000ms의 Mz 0.264241 / magnitude 0.264241 / 참조 제거 실수부 0.264241입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X11-phase-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "translation_fit_residual.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(8.000000,0.000000)mm입니다. 잔차 RMS 0.000000mm와 정답 이동 오차 3.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "translation_fit_residual.html",
+      "button": "exampleScatter",
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(5.000000,0.000000)mm입니다. 잔차 RMS 1.000000mm와 정답 이동 오차 0.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "translation_fit_residual.html",
+      "button": "exampleBoth",
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "3.162278"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(8.000000,0.000000)mm입니다. 잔차 RMS 1.000000mm와 정답 이동 오차 3.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "translation_fit_residual.html",
+      "button": "examplePerfect",
+      "outputs": [
+        {
+          "id": "fitXOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "fitYOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "residualOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "truthErrorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "실제 이동(5,0)mm / 적합(5.000000,0.000000)mm입니다. 잔차 RMS 0.000000mm와 정답 이동 오차 0.000000mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X17-residual-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "publication-0145.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "publication-0145.html",
+      "report": true
+    }
+  ]
+}

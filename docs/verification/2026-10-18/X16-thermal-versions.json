@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W97 prescribed uniform heat capacity/linear thermal loss and input timing; no real MRI absorption/patient temperature or safety; own report excluded",
+  "files": [
+    {
+      "path": "docs/thermal_input_timing.html",
+      "sha256": "CF931660E1579D063479B4C369F3BC42B6CF8C41F7D7CF86247B68E63DE6C21B"
+    },
+    {
+      "path": "docs/assets/thermal-loss-model.js",
+      "sha256": "44C766BBEAE90EFEC48FB9EDC22488E7A404EBDBA1AC6FA97C652D142BF58826"
+    },
+    {
+      "path": "docs/assets/absorbed-power-model.js",
+      "sha256": "22ABF490139CA503CCE5ACCA6B93966347B996DD0541AE4D79293ABA9C025352"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/thermal-loss.test.cjs",
+      "sha256": "358A2AE319EF2767B67C095828CBBAB171A0F5624FB14E30A17A8E550497C4CE"
+    },
+    {
+      "path": "tests/helpers/thermal-loss-reference.cjs",
+      "sha256": "A1C35C35D6F03625A7628CEE341F07B034ACF1476BB63741D6A2FC3ACEEF6226"
+    },
+    {
+      "path": "tests/helpers/periodic-window-reference.cjs",
+      "sha256": "5B80AB902F8A1864C315BA77FF9D4B72C39A6C19A14E2542955109682E27113C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-thermal-numerical.cjs",
+      "sha256": "1B7973DA5BCB1708E531F27D2284E627F50C6088C7298893A6D0894320E3B8C9"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-thermal-numerical.json",
+      "sha256": "3A91DDB51F4C1CBD5559E434E8CD14468D64363B99D2981CBC28E6066ADC4494"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-thermal-display-reference.json",
+      "sha256": "91D9D4C28E332EC89DAE962E2FC559FA421B927172A2A5B6F047055E2ACECAEB"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-thermal-browser-check.js",
+      "sha256": "85DE33318C79F14993FEC5AA042048715067A8A050F7FD290C44CBC2F2E86A2E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-thermal-browser-check.json",
+      "sha256": "1255771250D6BF39773F6208CA6CB1AC8A99463493F81DEF53639CFBFC238804"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "conditions": 45,
+  "curvePoints": 9045,
+  "max": {
+    "magnetization": 2.4491519923230953e-13,
+    "complex": 2.4513724383723456e-13,
+    "magnitude": 2.4502622153477205e-13,
+    "projection": 2.1249668691325496e-13,
+    "odeConvergence": 2.2948309919001986e-13,
+    "nullMs": 7.958078640513122e-13,
+    "angleIdentity": 3.3306690738754696e-16
+  },
+  "tolerances": {
+    "magnetization": 1e-10,
+    "complex": 1e-10,
+    "magnitude": 1e-10,
+    "projection": 1e-10,
+    "odeConvergence": 1e-10,
+    "nullMs": 0.000001,
+    "angleIdentity": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

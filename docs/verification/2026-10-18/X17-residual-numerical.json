@@ -1,0 +1,23 @@
+{
+  "conditions": 9,
+  "points": 225,
+  "objectivePerturbations": 27,
+  "max": {
+    "coordinateMm": 7.105427357601002e-15,
+    "fitMm": 2.6645352591003757e-15,
+    "metricMm": 2.6645352591003757e-15,
+    "normalEquationMm": 3.907985046680551e-14,
+    "objectiveMm2": 8.881784197001252e-15,
+    "minimumIdentityMm2": 1.5631940186722204e-13
+  },
+  "tolerances": {
+    "coordinateMm": 1e-10,
+    "fitMm": 1e-10,
+    "metricMm": 1e-10,
+    "normalEquationMm": 1e-10,
+    "objectiveMm2": 1e-8,
+    "minimumIdentityMm2": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

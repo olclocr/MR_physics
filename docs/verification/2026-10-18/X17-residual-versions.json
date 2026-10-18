@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W103 translation-only deterministic bias/scatter counterexample, fitting residual and known error; no general FRE/TRE theorem/image fitting/QA; own reports excluded",
+  "files": [
+    {
+      "path": "docs/translation_fit_residual.html",
+      "sha256": "E877E906C6245190B6564D9CBEC6A07178421511D04952E31D81F5C51293B07D"
+    },
+    {
+      "path": "docs/assets/translation-residual-model.js",
+      "sha256": "8B4843031BB4AF36FC70FB8868051EC3ED6125C54EA1B6F701C82246D30B3746"
+    },
+    {
+      "path": "docs/assets/phantom-rigid-model.js",
+      "sha256": "0A1E29C0EA766E361812AFAC7CC1814EA1035BCD538B584677F48009449C3189"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/translation-residual.test.cjs",
+      "sha256": "C5FF0861DF6B4DF992EC9A9E2694D72A3FA37FBD49CB1613FC1C2F1DBFE84AC4"
+    },
+    {
+      "path": "tests/helpers/translation-residual-reference.cjs",
+      "sha256": "AD8F5F5CA6607B3CA765DEF88A7DDAF3AB1E27D922E0B45FEDA301C2655413B6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-residual-numerical.cjs",
+      "sha256": "1FEC6070D28594121268973CD6117509AEAAA2AA9B23D0172B2398322CCB15EF"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-residual-numerical.json",
+      "sha256": "38079D62AF08B58D7EAD6AD405DB78B7AF0C5C71507177A4BC124C32FD9318BF"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-residual-display-reference.json",
+      "sha256": "212C8A8ABADE90E8886F9423FE90F4A6053BF9BFAE644C0A12F4F0075F5DF2E7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-residual-browser-check.js",
+      "sha256": "963FC6C347311DFF2FD3637F74870AE5CE5E6B33AAB529830DAE614444194D0B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-residual-browser-check.json",
+      "sha256": "0E3931FA9DEACA75CB09BF9581A08CF7DC5A390637699C97B0157D4D4B42C11E"
+    }
+  ]
+}

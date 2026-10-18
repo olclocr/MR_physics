@@ -1,0 +1,589 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 48,
+  "maxGraphicError": 0.0000049954990402056865,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 1
+      },
+      "arrived": 0.5,
+      "present": 0.39346934028736674,
+      "remaining": 0.2504388686697181,
+      "departed": 0.10653065971263326
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.3834004995642037,
+      "remaining": 0.1604459114779336,
+      "departed": 0.6165995004357963
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.14104516152453114,
+      "remaining": 0.03159367320878374,
+      "departed": 0.8589548384754688
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.05188761520158027,
+      "remaining": 0.006221163117395474,
+      "departed": 0.9481123847984197
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 1
+      },
+      "arrived": 0.5,
+      "present": 0.4423984338571899,
+      "remaining": 0.2797809860161185,
+      "departed": 0.05760156614281009
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.6128684606607807,
+      "remaining": 0.25024598794835173,
+      "departed": 0.3871315393392193
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.3717235117616492,
+      "remaining": 0.08124297743396025,
+      "departed": 0.6282764882383508
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.22546170681949002,
+      "remaining": 0.026375733079473922,
+      "departed": 0.77453829318051
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 1
+      },
+      "arrived": 0.5,
+      "present": 0.5,
+      "remaining": 0.3141667206842424,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.3980106106540803,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.21303972802441853,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.11403194915364748,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 1
+      },
+      "arrived": 0,
+      "present": 0,
+      "remaining": 0,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.6321205588285577,
+      "remaining": 0.2645305870505389,
+      "departed": 0.36787944117144233
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.23254415793482958,
+      "remaining": 0.05208916103887052,
+      "departed": 0.7674558420651705
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.08554821486874872,
+      "remaining": 0.01025696396014503,
+      "departed": 0.9144517851312512
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 1
+      },
+      "arrived": 0,
+      "present": 0,
+      "remaining": 0,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.7869386805747335,
+      "remaining": 0.3213222089498179,
+      "departed": 0.21306131942526652
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.4773024370823821,
+      "remaining": 0.10431804795259364,
+      "departed": 0.5226975629176178
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.2894985620460249,
+      "remaining": 0.03386711165781615,
+      "departed": 0.7105014379539751
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 1
+      },
+      "arrived": 0,
+      "present": 0,
+      "remaining": 0,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.3980106106540803,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.21303972802441853,
+      "departed": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.11403194915364748,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 1
+      },
+      "arrived": 0.5,
+      "present": 0.39346934028736674,
+      "remaining": 0.2504388686697181,
+      "departed": 0.10653065971263326
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.3834004995642037,
+      "remaining": 0.1604459114779336,
+      "departed": 0.6165995004357963
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.14104516152453114,
+      "remaining": 0.03159367320878374,
+      "departed": 0.8589548384754688
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 1,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.05188761520158027,
+      "remaining": 0.006221163117395474,
+      "departed": 0.9481123847984197
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 1
+      },
+      "arrived": 0.5,
+      "present": 0.4423984338571899,
+      "remaining": 0.2797809860161185,
+      "departed": 0.05760156614281009
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.6128684606607807,
+      "remaining": 0.25024598794835173,
+      "departed": 0.3871315393392193
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.3717235117616492,
+      "remaining": 0.08124297743396025,
+      "departed": 0.6282764882383508
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": 2,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.22546170681949002,
+      "remaining": 0.026375733079473922,
+      "departed": 0.77453829318051
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 1
+      },
+      "arrived": 0.5,
+      "present": 0.5,
+      "remaining": 0.3141667206842424,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.3980106106540803,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.21303972802441853,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 0.5,
+        "outflowSec": "infinite",
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.11403194915364748,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 1
+      },
+      "arrived": 0,
+      "present": 0,
+      "remaining": 0,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.6321205588285577,
+      "remaining": 0.2645305870505389,
+      "departed": 0.36787944117144233
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.23254415793482958,
+      "remaining": 0.05208916103887052,
+      "departed": 0.7674558420651705
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 1,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.08554821486874872,
+      "remaining": 0.01025696396014503,
+      "departed": 0.9144517851312512
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 1
+      },
+      "arrived": 0,
+      "present": 0,
+      "remaining": 0,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 0.7869386805747335,
+      "remaining": 0.3213222089498179,
+      "departed": 0.21306131942526652
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 0.4773024370823821,
+      "remaining": 0.10431804795259364,
+      "departed": 0.5226975629176178
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": 2,
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 0.2894985620460249,
+      "remaining": 0.03386711165781615,
+      "departed": 0.7105014379539751
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 1
+      },
+      "arrived": 0,
+      "present": 0,
+      "remaining": 0,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 2
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.3980106106540803,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 3
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.21303972802441853,
+      "departed": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "transitSec": 1,
+        "outflowSec": "infinite",
+        "timeSec": 4
+      },
+      "arrived": 1,
+      "present": 1,
+      "remaining": 0.11403194915364748,
+      "departed": 0
+    }
+  ]
+}

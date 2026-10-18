@@ -1,0 +1,26 @@
+{
+  "conditions": 12,
+  "curvePoints": 4812,
+  "max": {
+    "temperatureK": 1.7763568394002505e-15,
+    "energyJ": 1.7763568394002505e-14,
+    "powerW": 1.3322676295501878e-15,
+    "quadratureConvergence": 1.7763568394002505e-14,
+    "odeTemperatureK": 1.4699352846037073e-13,
+    "odeEnergyJ": 1.1013412404281553e-12,
+    "odeConvergence": 1.3979928326079971e-12,
+    "conservationJ": 0
+  },
+  "tolerances": {
+    "temperatureK": 1e-8,
+    "energyJ": 1e-8,
+    "powerW": 1e-12,
+    "quadratureConvergence": 1e-8,
+    "odeTemperatureK": 1e-8,
+    "odeEnergyJ": 1e-8,
+    "odeConvergence": 1e-8,
+    "conservationJ": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4bb423517c38b05f120e27ef90766d6c3608eee0",
+  "scope": "W92 positive scalar time average and log order, fixed correct baseline; supersedes numerical-only X06-window-draft-versions; no actual complex MRI acquisition/perfusion; own report excluded",
+  "files": [
+    {
+      "path": "docs/signal_window_log.html",
+      "sha256": "266AA6492D2EDA3460961B76E70A27519FDBC187CEFBA736B95C286B9616D2E6"
+    },
+    {
+      "path": "docs/assets/window-log-model.js",
+      "sha256": "4BF034449C874CF72C6177C1A912C5800E08A52116AAB25BE52A3D8C8D2FBD91"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/window-log.test.cjs",
+      "sha256": "EDA7342653350392DDECA4310AE7BD484FBBE519F39DC244EC5EAAD2DC31F1AC"
+    },
+    {
+      "path": "tests/helpers/window-log-reference.cjs",
+      "sha256": "9022E3E548E60AAA0650A679B30D676A3F60D0A42A0EBDEA3275F243811E0DB3"
+    },
+    {
+      "path": "tests/helpers/periodic-window-reference.cjs",
+      "sha256": "5B80AB902F8A1864C315BA77FF9D4B72C39A6C19A14E2542955109682E27113C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-window-numerical.cjs",
+      "sha256": "B9E5BDEDFAFFAB6E457A77277BB6527AF8F806491C30A9B7FC0E06F2F43E0B11"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-window-numerical.json",
+      "sha256": "98FC3B19B2B498B9A9788EDC7BCD6548ADB5DEF9945C9F6E5BF586EF40F8B43C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-window-display-reference.json",
+      "sha256": "7EF0968614B467BB512C739DC275153EEF5E5E3721159DB31511BC77A30F7607"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-window-browser-check.js",
+      "sha256": "D1FCBB44EB141ECD6D2B322399F76DE2B686357ED4A089999F0EBCC62E437763"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-window-browser-check.json",
+      "sha256": "8B784184DC3C3762FEBA81DAB818EE41EE8491288752447EE5153CC2E2FD80EA"
+    }
+  ]
+}

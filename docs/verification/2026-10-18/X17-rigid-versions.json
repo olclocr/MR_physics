@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/phantom_rigid_distance.html",
-      "sha256": "F702F32A219742B5D99E1AC5A14722509DEC98642EEC7EAFA0AAC505DC50FA88"
+      "sha256": "FA55D01FCBAC2366A35D5901810665259268E1CEC21572813E5D64C1F3431BA6"
     },
     {
       "path": "docs/assets/phantom-rigid-model.js",
@@ -50,6 +50,23 @@
     {
       "path": "docs/verification/2026-10-18/X17-rigid-browser-check.json",
       "sha256": "C1C2583235945DCD9E7B7D66CAD12E8DCD23AA12B8504B6557221203E803D09F"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W96",
+      "proof": "docs/verification/2026-10-18/checkpoint-W96-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W100",
+      "proof": "docs/verification/2026-10-18/checkpoint-W100-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W103",
+      "proof": "docs/verification/2026-10-18/checkpoint-W103-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }
