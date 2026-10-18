@@ -1,0 +1,3658 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "https://olclocr.github.io/MR_physics/",
+  "commit": "8e6420c88f6ed1fdca77e57a0be8d88d7ba317e6",
+  "states": 88,
+  "errors": [],
+  "outputMismatches": [],
+  "publicBytes": [
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "BFE97AD0AB37E41953FDA86D8415AB22D9B61E1AED6101C3DCA4D6180F75121C"
+    },
+    {
+      "path": "docs/assets/fov-resolution-model.js",
+      "sha256": "3540BBFDFD2FE0102626CE481A9023EB2B7C501E2782631E9506076E7A1D1FF0"
+    },
+    {
+      "path": "docs/assets/slice-selection-model.js",
+      "sha256": "54C2DBDB22268EAFCC46075184B09DC6AA660FA0FED58FBDC547C190B728EB41"
+    },
+    {
+      "path": "docs/assets/snr-averaging-model.js",
+      "sha256": "636E0004B60BD6CAB83552E0C77BD89D3E2478F9953477BF8A38522424FC92CD"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "docs/assets/echo-train-model.js",
+      "sha256": "EBEED552028FA9C065AECC7B2554F539EA546970F7BAB6999A9F32CD64D20D41"
+    },
+    {
+      "path": "docs/assets/volume-geometry-model.js",
+      "sha256": "5BA63E556BB3B6FC4B8D2D134B771D013F0507CDF985CA39AC7C8FCBB4C73FF3"
+    },
+    {
+      "path": "docs/assets/receiver-bandwidth-model.js",
+      "sha256": "964CE8EB3F80028F41ADA973E037BBB13E492799B4A9165A46043EE76CC8B789"
+    },
+    {
+      "path": "docs/assets/scan-time-model.js",
+      "sha256": "F83EF77B2F8BDEBA1D5A6A07508F84BBEF2A903333C2A6B2D58459A64B66A66E"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "8B4732F9CF17ED15A0D7F30E5348643D0BA2EC1D710D69B4711F2768A67BEDDE"
+    },
+    {
+      "path": "docs/assets/epi-model.js",
+      "sha256": "6C5D5BFA3588DBF7559A6B1CC2ECAB4055BC5621EB5263DED7057FA6C0C51383"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/dixon-model.js",
+      "sha256": "388EE6DE7658C031F43E8A8F1611DC50219A2AB83B80B1481358DA2A1F547113"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "docs/assets/fat-suppression-comparison.js",
+      "sha256": "404E5F429CC37F4CB4E42C02A6439916CF8C13EB87D4FCD4333204AAD8090E68"
+    },
+    {
+      "path": "docs/assets/diffusion-model.js",
+      "sha256": "0F6C54597E2FFC0357D482535511F924BD16F2EA2D89639EDE2A619111C06F84"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "docs/assets/water-excitation-model.js",
+      "sha256": "B3189E425B8E156777A228646343A5DE1187F280AA1B46F207EEFC56B9660A29"
+    },
+    {
+      "path": "docs/assets/dwi-epi-model.js",
+      "sha256": "32A2AF2E7B98928A59179CC4C07AD8C8FF5BC9DBC5B4B9A00B66BA5370BB81BF"
+    },
+    {
+      "path": "docs/assets/susceptibility-signal-model.js",
+      "sha256": "B1B84634ED64C6CDB33E75969906E30C565237A54628060CF22927FCCB4B98A3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "docs/assets/swi-processing-model.js",
+      "sha256": "3B29E31EB52001D199BF6F891C57BA7E13629B4664616791C52C782B28B29C9F"
+    },
+    {
+      "path": "docs/assets/bssfp-model.js",
+      "sha256": "B2F5F480B22AE7476E1EF7A22800224C5B11B31DC2F060DE618B87685BEC5008"
+    },
+    {
+      "path": "docs/assets/bssfp-contrast-model.js",
+      "sha256": "23855C462A05EA01B4CCD7862EC340F378B2C9FD7CD36E8C2CE3D0CA8EC51267"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "303AB363BA79C10BF66325E68E60D9F070BF2D3E208BD3B0CFAA412B3B578995"
+    },
+    {
+      "path": "docs/assets/sms-model.js",
+      "sha256": "49D775402BA7A0071A89BD65CF7A71EF33F9217D44149171C663E4C544C1E923"
+    },
+    {
+      "path": "docs/assets/aliasing-model.js",
+      "sha256": "A9FA759B9B024069E19809BA9FB956BC30925EBAE192141926BDD23989D3DB05"
+    },
+    {
+      "path": "docs/assets/motion-model.js",
+      "sha256": "5110FE4CECBE65DF18AFD0D911E3C06241101CDC041220D0A1B08719A461D085"
+    },
+    {
+      "path": "docs/assets/ringing-model.js",
+      "sha256": "CB3EA1F5B5E3570C2CCA1804BAA415E615150A1CA44DFA36D6F5294F951351D5"
+    },
+    {
+      "path": "docs/assets/chemical-artifact-model.js",
+      "sha256": "BD51F04777FEC2C9F69B6E7FED9ECAEEE7C69A99F04C3D359CF387000EBF0B06"
+    },
+    {
+      "path": "docs/assets/field-distortion-model.js",
+      "sha256": "682FB9DDD2EBAEFD9E8230A086D4EB3B9B283E30403AE259E820FD39B46E2CBE"
+    },
+    {
+      "path": "docs/assets/shading-model.js",
+      "sha256": "44D45219CCA228483918C5616A5590F7160C4EB3F46B6D3BB5B18DB49B9B882A"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/t2-limits-model.js",
+      "sha256": "C5013DB430FF34822BD66BBD9866A96DC226BD797F15F8B2A074668121B01E92"
+    },
+    {
+      "path": "docs/assets/t1-fit-model.js",
+      "sha256": "76B3489CE66A269BD5DBE6F9B1A14F4CB7AF8E5AE5F1ABC65AD68137CD0A2CBA"
+    },
+    {
+      "path": "docs/assets/t2star-fit-model.js",
+      "sha256": "CFCB0666AD1DB386BE8BA47D0970F36F3D405D83CB912C95CDC9DF00D63517AA"
+    },
+    {
+      "path": "docs/assets/pdff-t1-model.js",
+      "sha256": "89E7B5CEE1E807045C0D9BB5BC9DBFD18F16809733359A2B42BD3F9D7406122C"
+    },
+    {
+      "path": "docs/assets/pdff-echo-model.js",
+      "sha256": "775074FD6B33BE9BA90711F254337F5EA3D142CC44F19F735668475A6C41A085"
+    },
+    {
+      "path": "docs/assets/complex-fat-fit-model.js",
+      "sha256": "FF6313DCD2B117E18A736236756D689DF3928B1F70BB2DCF25484878A39B756C"
+    },
+    {
+      "path": "docs/assets/contrast-concentration-model.js",
+      "sha256": "049A7B0707E5965BA36D89EBB8F97B174FE6839A56ADEB1750D29AB20CFDF0F3"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/inflow-rf-saturation-model.js",
+      "sha256": "82D9A34A28D265FC0B3F2FD098A8201492384217F91BA7E096F29C21997C1C2A"
+    },
+    {
+      "path": "docs/assets/hemorrhage-state-reading.js",
+      "sha256": "109FE246BD4808DE3C75047A2A3C082245529B1749E4292AFDE4D42810B6CB1A"
+    },
+    {
+      "path": "docs/assets/fid-spectrum-model.js",
+      "sha256": "86CC223D18789288F91CAD7CD74F58A0963A633743B6A85B23D1C7AD8DDE9E44"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "docs/assets/mrs-localization-model.js",
+      "sha256": "63AAAEECF1F9DB08AC9B53E8C78CCB001B0685BCA094CC997049C99E5C64397D"
+    },
+    {
+      "path": "docs/assets/mrs-field-distribution-model.js",
+      "sha256": "09E8275836A935DFC47F3E07FFCEB58B3301DB0446F5FA5C46A5BC312334AD44"
+    },
+    {
+      "path": "docs/assets/ecv-partition-model.js",
+      "sha256": "1FFBF91FFA38266C77671CF52B07D3468055873846D1E1CD502DBAD7B1B8F8AC"
+    },
+    {
+      "path": "docs/assets/finite-slice-rf-model.js",
+      "sha256": "85405A9BF179203C8A56B6741670A3F7CFCEE638E3DBCAA303E9C14075F9BD83"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "docs/assets/mre-motion-encoding-model.js",
+      "sha256": "FC5CEE4B610C663E6579BD65E6D38ED1875993EF68C49E6008FB7DE8D0DC75EE"
+    },
+    {
+      "path": "docs/assets/mre-inversion-model.js",
+      "sha256": "4E29430363D40B98711639A9E53A9A6D026CFC669538986D2BB44D6452AF3CF8"
+    },
+    {
+      "path": "docs/assets/qsm-dipole-model.js",
+      "sha256": "80049AB56CF24C7365951A568ABAEF9A13E0A38C5B5E9F0DB5DB094870071267"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/structure-evaluation-model.js",
+      "sha256": "E0247BC80B853642B1F06A256B70DF7DFB4350FAF53CA30758DC5598DB95F824"
+    },
+    {
+      "path": "docs/assets/processed-t2-model.js",
+      "sha256": "DD84D1963E51DD90944F58FDC92DF39A1024152D22F26FC1293A577F93A4A22C"
+    },
+    {
+      "path": "docs/assets/vendor-ai-reading.js",
+      "sha256": "73BA4B0E9D9DB95E0037253E97D0695F5A711DDFF977A3DE892E1F09773E73DC"
+    },
+    {
+      "path": "docs/assets/ensemble-noise-model.js",
+      "sha256": "08966AEEB3BBDC3B8ADF33FEA2C500F9942BC06D695E64149AB1744A7A9CE74E"
+    },
+    {
+      "path": "docs/assets/magic-angle-model.js",
+      "sha256": "48E20E24AEB8ED362FDB975BC4E13D10B8BCED9A43B5FE6FB0695775B780A0D4"
+    },
+    {
+      "path": "docs/assets/flow-mixture-model.js",
+      "sha256": "2DD2D294E3BCE4BC316C9F575777CBDE9C624D70F3AD63621711FC97E0FE6FD7"
+    },
+    {
+      "path": "docs/assets/blood-refocusing-reading.js",
+      "sha256": "F5CE9C2B296A56544E2AA5D38877E14E0EA4651FF1DDB14B20B0C30DF5617431"
+    },
+    {
+      "path": "docs/assets/phase-contrast-model.js",
+      "sha256": "A8CCF3DF70E9332767158BFD4A8A6352CC860A6CF14DB3C1F25BDDA4C13E3329"
+    },
+    {
+      "path": "docs/assets/linear-field-correction-model.js",
+      "sha256": "3C32A4CF9433582FE52309BFC16E8B3E2B79E90D34C3ECC06E7C81320DEF90D1"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "docs/assets/signed-subtraction-model.js",
+      "sha256": "FE48D3B61DBC8622F40BFE742B2A217E91CE76DBDA0841319942CAA04BFB201E"
+    },
+    {
+      "path": "docs/assets/dsc-rate-transform-model.js",
+      "sha256": "636EADF93B2D76BBDFBB5B7747FAC409A09B5E8BA491595B2088BF71C1945BDB"
+    },
+    {
+      "path": "docs/assets/polynomial-field-model.js",
+      "sha256": "B517E86E3FFEBEBEBC32BB226592ADAF796AC767C98078D46F444C219B376774"
+    },
+    {
+      "path": "docs/assets/compartment-exchange-model.js",
+      "sha256": "6BC0E902D65DD780614DC983A33B573511A9E526F7DBCFB907B4B472C15EC997"
+    },
+    {
+      "path": "docs/assets/label-arrival-model.js",
+      "sha256": "BC3CF9987C377E336A03C4A42301C1B154B3A140570E766DE91ED4885B8B17B9"
+    },
+    {
+      "path": "docs/assets/diffusion-tensor-model.js",
+      "sha256": "77729FC145306D3350E29D67946BB21C983C59CC725E2339BFF79A5886E2A366"
+    },
+    {
+      "path": "docs/assets/diffusion-mixture-model.js",
+      "sha256": "5727B6D116918CE84181FFE84F6B1656DDC59F8AA125E99E49B2EE6905DAB0BD"
+    },
+    {
+      "path": "docs/assets/delayed-response-model.js",
+      "sha256": "2132AC5C2C9CAFC4964A062AD00BBA323CACC928A257330B7B7BA477AA930BBD"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/periodic-window-model.js",
+      "sha256": "AD268EDA03933D16BBBEA84B92CB20C026B3B0DE8C0A29C646B5C7B73A291E06"
+    },
+    {
+      "path": "docs/assets/gradient-compensation-model.js",
+      "sha256": "AA9B06EE3400CBEABEF590B32EFCD7BDE0710C2D7C6F8354C75E03C791BA5555"
+    },
+    {
+      "path": "docs/assets/response-overlap-model.js",
+      "sha256": "96DCB7EF87A4389A58FA29FA0BD137F021955A394F53C6EB01466E679FA6A8E3"
+    },
+    {
+      "path": "docs/assets/magnetic-dipole-model.js",
+      "sha256": "F971E3813C428D8F9F796F7F1F241C2C138D82BBE6761D545583E60B1D8AEE2A"
+    },
+    {
+      "path": "docs/assets/gradient-acceleration-model.js",
+      "sha256": "0BFB78B3D6A945074FB9481DF8D92185D15EE69064B754D615B75298B9C347E6"
+    },
+    {
+      "path": "docs/assets/phantom-rigid-model.js",
+      "sha256": "0A1E29C0EA766E361812AFAC7CC1814EA1035BCD538B584677F48009449C3189"
+    },
+    {
+      "path": "docs/assets/induced-dipole-model.js",
+      "sha256": "686C62F7DBE80ECE25FC9D38EC1BB5F136FB930F6B5A1250D05E6C56711B6981"
+    },
+    {
+      "path": "docs/assets/label-train-model.js",
+      "sha256": "F9C792E9F22B1875DD5F7CB2658E1A22097A3C50BD07376C93032DAAE783D968"
+    },
+    {
+      "path": "docs/assets/window-log-model.js",
+      "sha256": "4BF034449C874CF72C6177C1A912C5800E08A52116AAB25BE52A3D8C8D2FBD91"
+    },
+    {
+      "path": "docs/assets/absorbed-power-model.js",
+      "sha256": "22ABF490139CA503CCE5ACCA6B93966347B996DD0541AE4D79293ABA9C025352"
+    },
+    {
+      "path": "docs/assets/saturating-dipole-model.js",
+      "sha256": "6C3CA007518C72046EDE6403E05B1DEDE65C5BFEF230775DFA94F76C88C83C86"
+    },
+    {
+      "path": "docs/assets/label-outflow-model.js",
+      "sha256": "3532C65A36ABD66281EA12F5BF6D10E7D8DC2B908853654D427B0AE98567411B"
+    },
+    {
+      "path": "docs/assets/rigid-order-model.js",
+      "sha256": "B7CDF2F7CC1A1E03727BB377EB0D446A51D845AD82874E67FD196CFF37B5C763"
+    },
+    {
+      "path": "docs/assets/thermal-loss-model.js",
+      "sha256": "44C766BBEAE90EFEC48FB9EDC22488E7A404EBDBA1AC6FA97C652D142BF58826"
+    },
+    {
+      "path": "docs/assets/compartment-scale-model.js",
+      "sha256": "41A9F9F9E36B7717B3EAA62BBEBC5C8F50F897CFA1CD0B378E53704D5A701795"
+    },
+    {
+      "path": "docs/assets/vascular-compartment-model.js",
+      "sha256": "999D69C5F2ACBEAF07C6AB8FC8E36D16236CF2ADEBD6C5E56C399E7CAECB1510"
+    },
+    {
+      "path": "docs/assets/axis-scale-model.js",
+      "sha256": "242BDBAD6C1D78E69BD399983782FEC3C00326F37DE4BD79462D8E3E46BA6F8F"
+    },
+    {
+      "path": "docs/assets/assumed-spacing-model.js",
+      "sha256": "4E7E3ECD46DA92F9140E6FA3E018AD09FEF3D7464AD3D90A318B419A4DB84C54"
+    },
+    {
+      "path": "docs/assets/ir-phase-reference-model.js",
+      "sha256": "9D5A0546F7EA68199A803E85C7A6F3F0B782F2C8580E29D0BBE02065BF4BDB27"
+    },
+    {
+      "path": "docs/assets/translation-residual-model.js",
+      "sha256": "8B4843031BB4AF36FC70FB8868051EC3ED6125C54EA1B6F701C82246D30B3746"
+    },
+    {
+      "path": "docs/assets/pixel-quantization-model.js",
+      "sha256": "47E045697F58BAC4D6AA6F96802A49C00B9AB60936E544473C57F947151D52F0"
+    },
+    {
+      "path": "docs/assets/ir-intensity-model.js",
+      "sha256": "44CC6AA704FF25D6CCDF795224A3A903F7A45789E1F9FD304FA72F01519ADD4D"
+    },
+    {
+      "path": "docs/assets/two-pool-transfer-model.js",
+      "sha256": "6C6A1E482F1F9CE15147F91CA41219FBF16199926A1C0190F38D3D44E6427D8C"
+    },
+    {
+      "path": "docs/assets/two-pool-release-model.js",
+      "sha256": "DF72CE699B369CE502483E8FA813444940A5CC630956C6CDC4D09FC62766A7A9"
+    },
+    {
+      "path": "docs/assets/ir-normalization-noise-model.js",
+      "sha256": "2121811A959A6D4A0846861B856FD6195759A53D2FB4715E3B3FCF2791B5F21B"
+    },
+    {
+      "path": "docs/assets/two-pool-relaxation-rates-model.js",
+      "sha256": "3E8507A7AB127C25A76AE3AB79576A4E04A793C60453E6E505B301BA262A3D1E"
+    },
+    {
+      "path": "docs/pixel_center_quantization.html",
+      "sha256": "C1D7B50A887180F35F6E5286DAC62BF9F0A62FC8C6BB6DFC6D709C0D4FF2DC65"
+    },
+    {
+      "path": "docs/ir_intensity_normalization.html",
+      "sha256": "7937A5F52B2243E0F9C9304DB01A9C059A64CFEEAF401E3E3DFEC6F4A42EDC61"
+    },
+    {
+      "path": "docs/two_pool_saturation_transfer.html",
+      "sha256": "576B9EBEF122D21961A51F654BACF6DFA51154E68BA9598045A8904B3E91B8FF"
+    },
+    {
+      "path": "docs/two_pool_saturation_release.html",
+      "sha256": "83EAEE6DFA7FDC5F958FEBA02F0F6B2E7F1342998946B54C5FD9438C77F5DA0F"
+    },
+    {
+      "path": "docs/ir_normalization_noise.html",
+      "sha256": "D24536919640C0E2B87A076A1CB0BEA965035D238C773F8846DC84A8F3ED2FA8"
+    },
+    {
+      "path": "docs/two_pool_relaxation_rates.html",
+      "sha256": "3CB368027E248547D8950D7490D3E050314B9DA3D5140B7E8D88FB0810DC5F8A"
+    },
+    {
+      "path": "docs/ir_phase_reference.html",
+      "sha256": "1CB01FCE22255A6A5EC19CF2448B92420AEF89B7EC12C810EEE1A941E3129D75"
+    },
+    {
+      "path": "docs/saturating_dipole_work.html",
+      "sha256": "216FA58C7DBBBC3DD840C4D0B85281BB9E96E4E945F5911FFCA6F23F761F2F8F"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X17-quantization-physics.html",
+      "sha256": "A42CC39B1989777E7116C6B4DA0270C6D45E8AB59059759B924559D99415FB26"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-intensity-physics.html",
+      "sha256": "B1CC6EAF54AFF982E1CBFA296DBD9AE5C5CC24D44CAC89058920D82F079A82D5"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-transfer-physics.html",
+      "sha256": "68E7079428B3D8C81F917C12105BC3C26F729A38F1995E14A750E14DD1428359"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-release-physics.html",
+      "sha256": "474D714035A62713E903907447C58F58195178105BCBCD7C83D3E24FB811C06F"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X11-noise-physics.html",
+      "sha256": "0BA2F65FAB69410DB0CAEB0546979E60652364716E6087C5BE5076FE569DFF2B"
+    },
+    {
+      "path": "docs/verification/2026-10-19/X18-rates-physics.html",
+      "sha256": "F0EFF7C31B7098BB1710C7C721EC860205618E360E53774A3871545BBABEE49B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X11-phase-physics.html",
+      "sha256": "754939D046E18EEF7FC14F3F7B8E984792AAF857DE71FF5AF6A1092DE85FAE1A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-saturation-physics.html",
+      "sha256": "171C80A549768AA50DA422179B1942198B9420A49646CE15C306C0ABD4BB3248"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W105-readability.html",
+      "sha256": "55326586F2E62B361F4A25DECEFCFBE4C257054696ED67771A4456D742BE2CEF"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W109-saturation-clarity.html",
+      "sha256": "2BFB0745D9D31C9421B676610263EC8556C9F01463C15BE45D2AAA06D8BF8E9B"
+    },
+    {
+      "path": "docs/verification/2026-10-19/W112-svg-margins.html",
+      "sha256": "A288FB6E4D1F49DCFCADF5FA3FE1CA01DCB23AAC8598EDF0AF008230772490BF"
+    },
+    {
+      "path": "docs/verification/2026-10-19/publication-0650.html",
+      "sha256": "F083257358BB9BE48FD0F6593D265C51A3911AD2B1E9C8C814F0116478AB1654"
+    }
+  ],
+  "sourceURL": "https://github.com/olclocr/MR_physics/blob/8e6420c88f6ed1fdca77e57a0be8d88d7ba317e6/tests/helpers/two-pool-relaxation-rates-reference.cjs",
+  "sourceStatus": 200,
+  "results": [
+    {
+      "width": 1920,
+      "file": "pixel_center_quantization.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "79.755878"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "-0.244122"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "0.864270"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "0.581790"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 80.000000mm / 중심 양자화 길이 79.755878mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "pixel_center_quantization.html",
+      "button": "exampleConstant",
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "1.118034"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "1.118034"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 80.000000mm / 중심 양자화 길이 80.000000mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "pixel_center_quantization.html",
+      "button": "exampleDiagonal",
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "113.137085"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "113.758516"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "0.621431"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "1.118034"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "0.602892"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 113.137085mm / 중심 양자화 길이 113.758516mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "pixel_center_quantization.html",
+      "button": "exampleVertical",
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "78.892332"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "-1.107668"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "1.023923"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "0.703481"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 80.000000mm / 중심 양자화 길이 78.892332mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "errorGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-19/X17-quantization-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "ir_intensity_normalization.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.681280"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.681280"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 2 / r 1 · 위상 보정 값 -0.681280 / 정규화 값 -0.340640입니다. 실제 Mz -0.340640와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_intensity_normalization.html",
+      "button": "exampleGain",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.170320"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.170320"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 0.5 / r 1 · 위상 보정 값 -0.170320 / 정규화 값 -0.340640입니다. 실제 Mz -0.340640와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_intensity_normalization.html",
+      "button": "exampleReference",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.681280"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.681280"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "-0.425800"
+        },
+        {
+          "id": "errorOutput",
+          "text": "-0.085160"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 2 / r 0.8 · 위상 보정 값 -0.681280 / 정규화 값 -0.425800입니다. 실제 Mz -0.340640와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_intensity_normalization.html",
+      "button": "examplePositive",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.528482"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.528482"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "TI 1000 ms / A 2 / r 1 · 위상 보정 값 0.528482 / 정규화 값 0.264241입니다. 실제 Mz 0.264241와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-19/X11-intensity-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_transfer.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.978624"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.230502"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.021376"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "-0.037406"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.021376"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.115251"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 0.5 s⁻¹ / W 5 s⁻¹에서 w=0.978624, s/.1=0.230502입니다. 물의 직접 포화는0이며 순교환 -0.037406는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_transfer.html",
+      "button": "exampleNoExchange",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.168732"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.084366"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 0 s⁻¹ / W 5 s⁻¹에서 w=1.000000, s/.1=0.168732입니다. 물의 직접 포화는0이며 순교환 0.000000는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_transfer.html",
+      "button": "exampleNoSaturation",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 0.5 s⁻¹ / W 0 s⁻¹에서 w=1.000000, s/.1=1.000000입니다. 물의 직접 포화는0이며 순교환 0.000000는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_transfer.html",
+      "button": "exampleExchange",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.931732"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.359812"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.068268"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "-0.114384"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.068268"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.179906"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 2 s⁻¹ / W 5 s⁻¹에서 w=0.931732, s/.1=0.359812입니다. 물의 직접 포화는0이며 순교환 -0.114384는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-19/X18-transfer-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_release.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.928954"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.627385"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.010732"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "1.147541"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "0.928662"
+        },
+        {
+          "id": "status",
+          "text": "1.2초의 W=0 s⁻¹ / 물 미분 0.010732 M0w/초입니다. 종료 직후 물 미분은 -0.046116이며 작은 풀 미분은 -0.001503→0.178403로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_release.html",
+      "button": "exampleStop",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.931732"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.359812"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "-0.046116"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "1.147541"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "0.928662"
+        },
+        {
+          "id": "status",
+          "text": "1초의 W=0 s⁻¹ / 물 미분 -0.046116 M0w/초입니다. 종료 직후 물 미분은 -0.046116이며 작은 풀 미분은 -0.001503→0.178403로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_release.html",
+      "button": "exampleLater",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.928954"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.627385"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.010732"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "1.147541"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "0.928662"
+        },
+        {
+          "id": "status",
+          "text": "1.2초의 W=0 s⁻¹ / 물 미분 0.010732 M0w/초입니다. 종료 직후 물 미분은 -0.046116이며 작은 풀 미분은 -0.001503→0.178403로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_saturation_release.html",
+      "button": "exampleNoExchange",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.319416"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "없음 (항상1)"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "1.2초의 W=0 s⁻¹ / 물 미분 0.000000 M0w/초입니다. 종료 직후 물 미분은 0.000000이며 작은 풀 미분은 -0.001239→0.083127로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-19/X18-release-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "ir_normalization_noise.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "-0.340947"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.040000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.040221"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "0 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 0.5에서 위상 보정 기대 평균 -0.170320 / 표본 평균 -0.170473입니다. 정규화 기대 평균 -0.340640 / 표본 평균 -0.340947와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 744,
+          "height": 372
+        },
+        {
+          "id": "sdGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_normalization_noise.html",
+      "button": "exampleLow",
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "-0.341253"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.080000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.080442"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "1 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 0.25에서 위상 보정 기대 평균 -0.085160 / 표본 평균 -0.085313입니다. 정규화 기대 평균 -0.340640 / 표본 평균 -0.341253와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 744,
+          "height": 372
+        },
+        {
+          "id": "sdGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_normalization_noise.html",
+      "button": "exampleHigh",
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "-0.340717"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.010000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.010055"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "0 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 2에서 위상 보정 기대 평균 -0.681280 / 표본 평균 -0.681433입니다. 정규화 기대 평균 -0.340640 / 표본 평균 -0.340717와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 744,
+          "height": 372
+        },
+        {
+          "id": "sdGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_normalization_noise.html",
+      "button": "exampleNull",
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "0.006829"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "0.006523"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.040000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.040221"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "0 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 700 ms / A 0.5에서 위상 보정 기대 평균 0.003415 / 표본 평균 0.003261입니다. 정규화 기대 평균 0.006829 / 표본 평균 0.006523와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 744,
+          "height": 372
+        },
+        {
+          "id": "sdGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-19/X11-noise-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_relaxation_rates.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.923644"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.561673"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.003962"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.021916"
+        },
+        {
+          "id": "slowOutput",
+          "text": "0.943082"
+        },
+        {
+          "id": "fastOutput",
+          "text": "2.756918"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=0.5 s⁻¹ (T1s=2초)입니다. 1.2초의 w=0.923644 / s/.1=0.561673이며 종료 뒤 두 결합률은 0.943082 / 2.756918 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_relaxation_rates.html",
+      "button": "exampleFast",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.937776"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.727514"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.020171"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.054497"
+        },
+        {
+          "id": "slowOutput",
+          "text": "1.063771"
+        },
+        {
+          "id": "fastOutput",
+          "text": "4.136229"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=2 s⁻¹ (T1s=0.5초)입니다. 1.2초의 w=0.937776 / s/.1=0.727514이며 종료 뒤 두 결합률은 1.063771 / 4.136229 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_relaxation_rates.html",
+      "button": "exampleEqual",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.928954"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.627385"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.010732"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.037262"
+        },
+        {
+          "id": "slowOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "fastOutput",
+          "text": "3.200000"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=1 s⁻¹ (T1s=1초)입니다. 1.2초의 w=0.928954 / s/.1=0.627385이며 종료 뒤 두 결합률은 1.000000 / 3.200000 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "two_pool_relaxation_rates.html",
+      "button": "exampleWeak",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.974644"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.315882"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "-0.007583"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.034206"
+        },
+        {
+          "id": "slowOutput",
+          "text": "0.864922"
+        },
+        {
+          "id": "fastOutput",
+          "text": "1.185078"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=0.5 s⁻¹ (T1s=2초)입니다. 1.2초의 w=0.974644 / s/.1=0.315882이며 종료 뒤 두 결합률은 0.864922 / 1.185078 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 744,
+          "height": 475.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-19/X18-rates-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 -0.340640입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": "exampleQuarter",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.000000입니다. ε90도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": "exampleFlip",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.170320"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.295003"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.170320입니다. ε120도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "ir_phase_reference.html",
+      "button": "exampleRecovered",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 1000ms의 Mz 0.264241 / magnitude 0.264241 / 참조 제거 실수부 0.264241입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 744,
+          "height": 661.328125
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-18/X11-phase-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.995055mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=3.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleOne",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.761594mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.000000mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "2026-10-18/X16-saturation-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "W105-readability.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "W109-saturation-clarity.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "W112-svg-margins.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "publication-0650.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "pixel_center_quantization.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "79.755878"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "-0.244122"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "0.864270"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "0.581790"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 80.000000mm / 중심 양자화 길이 79.755878mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "pixel_center_quantization.html",
+      "button": "exampleConstant",
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "1.118034"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "1.118034"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 80.000000mm / 중심 양자화 길이 80.000000mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "pixel_center_quantization.html",
+      "button": "exampleDiagonal",
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "113.137085"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "113.758516"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "0.621431"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "1.118034"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "0.602892"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 113.137085mm / 중심 양자화 길이 113.758516mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "pixel_center_quantization.html",
+      "button": "exampleVertical",
+      "outputs": [
+        {
+          "id": "exactOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "quantizedOutput",
+          "text": "78.892332"
+        },
+        {
+          "id": "lengthErrorOutput",
+          "text": "-1.107668"
+        },
+        {
+          "id": "maxErrorOutput",
+          "text": "1.023923"
+        },
+        {
+          "id": "rmsErrorOutput",
+          "text": "0.703481"
+        },
+        {
+          "id": "status",
+          "text": "같은 선분의 정확한 길이 80.000000mm / 중심 양자화 길이 78.892332mm입니다. 점 오차 상한 1.118034mm와 두 점 길이 오차 상한 2.236068mm를 구별하세요."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "errorGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-19/X17-quantization-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "ir_intensity_normalization.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.681280"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.681280"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 2 / r 1 · 위상 보정 값 -0.681280 / 정규화 값 -0.340640입니다. 실제 Mz -0.340640와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_intensity_normalization.html",
+      "button": "exampleGain",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.170320"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.170320"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 0.5 / r 1 · 위상 보정 값 -0.170320 / 정규화 값 -0.340640입니다. 실제 Mz -0.340640와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_intensity_normalization.html",
+      "button": "exampleReference",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.681280"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.681280"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "-0.425800"
+        },
+        {
+          "id": "errorOutput",
+          "text": "-0.085160"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 2 / r 0.8 · 위상 보정 값 -0.681280 / 정규화 값 -0.425800입니다. 실제 Mz -0.340640와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_intensity_normalization.html",
+      "button": "examplePositive",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.528482"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.528482"
+        },
+        {
+          "id": "referenceOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "normalizedOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "TI 1000 ms / A 2 / r 1 · 위상 보정 값 0.528482 / 정규화 값 0.264241입니다. 실제 Mz 0.264241와 구별하세요."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-19/X11-intensity-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_transfer.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.978624"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.230502"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.021376"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "-0.037406"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.021376"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.115251"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 0.5 s⁻¹ / W 5 s⁻¹에서 w=0.978624, s/.1=0.230502입니다. 물의 직접 포화는0이며 순교환 -0.037406는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_transfer.html",
+      "button": "exampleNoExchange",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.168732"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.084366"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 0 s⁻¹ / W 5 s⁻¹에서 w=1.000000, s/.1=0.168732입니다. 물의 직접 포화는0이며 순교환 0.000000는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_transfer.html",
+      "button": "exampleNoSaturation",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 0.5 s⁻¹ / W 0 s⁻¹에서 w=1.000000, s/.1=1.000000입니다. 물의 직접 포화는0이며 순교환 0.000000는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_transfer.html",
+      "button": "exampleExchange",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.931732"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.359812"
+        },
+        {
+          "id": "deficitOutput",
+          "text": "0.068268"
+        },
+        {
+          "id": "exchangeOutput",
+          "text": "-0.114384"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.068268"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.179906"
+        },
+        {
+          "id": "status",
+          "text": "1초 / k 2 s⁻¹ / W 5 s⁻¹에서 w=0.931732, s/.1=0.359812입니다. 물의 직접 포화는0이며 순교환 -0.114384는 M0w 단위/초입니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-19/X18-transfer-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_release.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.928954"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.627385"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.010732"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "1.147541"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "0.928662"
+        },
+        {
+          "id": "status",
+          "text": "1.2초의 W=0 s⁻¹ / 물 미분 0.010732 M0w/초입니다. 종료 직후 물 미분은 -0.046116이며 작은 풀 미분은 -0.001503→0.178403로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_release.html",
+      "button": "exampleStop",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.931732"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.359812"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "-0.046116"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "1.147541"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "0.928662"
+        },
+        {
+          "id": "status",
+          "text": "1초의 W=0 s⁻¹ / 물 미분 -0.046116 M0w/초입니다. 종료 직후 물 미분은 -0.046116이며 작은 풀 미분은 -0.001503→0.178403로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_release.html",
+      "button": "exampleLater",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.928954"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.627385"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.010732"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "1.147541"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "0.928662"
+        },
+        {
+          "id": "status",
+          "text": "1.2초의 W=0 s⁻¹ / 물 미분 0.010732 M0w/초입니다. 종료 직후 물 미분은 -0.046116이며 작은 풀 미분은 -0.001503→0.178403로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_saturation_release.html",
+      "button": "exampleNoExchange",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.319416"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "saturationOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "minimumTimeOutput",
+          "text": "없음 (항상1)"
+        },
+        {
+          "id": "minimumOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "1.2초의 W=0 s⁻¹ / 물 미분 0.000000 M0w/초입니다. 종료 직후 물 미분은 0.000000이며 작은 풀 미분은 -0.001239→0.083127로 바뀝니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-19/X18-release-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "ir_normalization_noise.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "-0.340947"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.040000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.040221"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "0 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 0.5에서 위상 보정 기대 평균 -0.170320 / 표본 평균 -0.170473입니다. 정규화 기대 평균 -0.340640 / 표본 평균 -0.340947와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 313,
+          "height": 156.5
+        },
+        {
+          "id": "sdGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_normalization_noise.html",
+      "button": "exampleLow",
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "-0.341253"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.080000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.080442"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "1 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 0.25에서 위상 보정 기대 평균 -0.085160 / 표본 평균 -0.085313입니다. 정규화 기대 평균 -0.340640 / 표본 평균 -0.341253와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 313,
+          "height": 156.5
+        },
+        {
+          "id": "sdGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_normalization_noise.html",
+      "button": "exampleHigh",
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "-0.340717"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.010000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.010055"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "0 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 400 ms / A 2에서 위상 보정 기대 평균 -0.681280 / 표본 평균 -0.681433입니다. 정규화 기대 평균 -0.340640 / 표본 평균 -0.340717와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 313,
+          "height": 156.5
+        },
+        {
+          "id": "sdGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_normalization_noise.html",
+      "button": "exampleNull",
+      "outputs": [
+        {
+          "id": "expectedMeanOutput",
+          "text": "0.006829"
+        },
+        {
+          "id": "sampleMeanOutput",
+          "text": "0.006523"
+        },
+        {
+          "id": "expectedSdOutput",
+          "text": "0.040000"
+        },
+        {
+          "id": "sampleSdOutput",
+          "text": "0.040221"
+        },
+        {
+          "id": "phaseSdOutput",
+          "text": "0.020111"
+        },
+        {
+          "id": "outsideOutput",
+          "text": "0 / 0"
+        },
+        {
+          "id": "status",
+          "text": "TI 700 ms / A 0.5에서 위상 보정 기대 평균 0.003415 / 표본 평균 0.003261입니다. 정규화 기대 평균 0.006829 / 표본 평균 0.006523와 구별하세요."
+        }
+      ],
+      "tableRows": 2004,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "histogramGraphic",
+          "width": 313,
+          "height": 156.5
+        },
+        {
+          "id": "sdGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-19/X11-noise-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "two_pool_relaxation_rates.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.923644"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.561673"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.003962"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.021916"
+        },
+        {
+          "id": "slowOutput",
+          "text": "0.943082"
+        },
+        {
+          "id": "fastOutput",
+          "text": "2.756918"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=0.5 s⁻¹ (T1s=2초)입니다. 1.2초의 w=0.923644 / s/.1=0.561673이며 종료 뒤 두 결합률은 0.943082 / 2.756918 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_relaxation_rates.html",
+      "button": "exampleFast",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.937776"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.727514"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.020171"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.054497"
+        },
+        {
+          "id": "slowOutput",
+          "text": "1.063771"
+        },
+        {
+          "id": "fastOutput",
+          "text": "4.136229"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=2 s⁻¹ (T1s=0.5초)입니다. 1.2초의 w=0.937776 / s/.1=0.727514이며 종료 뒤 두 결합률은 1.063771 / 4.136229 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_relaxation_rates.html",
+      "button": "exampleEqual",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.928954"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.627385"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "0.010732"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.037262"
+        },
+        {
+          "id": "slowOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "fastOutput",
+          "text": "3.200000"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=1 s⁻¹ (T1s=1초)입니다. 1.2초의 w=0.928954 / s/.1=0.627385이며 종료 뒤 두 결합률은 1.000000 / 3.200000 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "two_pool_relaxation_rates.html",
+      "button": "exampleWeak",
+      "outputs": [
+        {
+          "id": "waterOutput",
+          "text": "0.974644"
+        },
+        {
+          "id": "soluteOutput",
+          "text": "0.315882"
+        },
+        {
+          "id": "derivativeOutput",
+          "text": "-0.007583"
+        },
+        {
+          "id": "recoveryOutput",
+          "text": "0.034206"
+        },
+        {
+          "id": "slowOutput",
+          "text": "0.864922"
+        },
+        {
+          "id": "fastOutput",
+          "text": "1.185078"
+        },
+        {
+          "id": "status",
+          "text": "물의 고유 R1w=1 s⁻¹ / 작은 풀 R1s=0.5 s⁻¹ (T1s=2초)입니다. 1.2초의 w=0.974644 / s/.1=0.315882이며 종료 뒤 두 결합률은 0.864922 / 1.185078 s⁻¹입니다."
+        }
+      ],
+      "tableRows": 404,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "poolGraphic",
+          "width": 313,
+          "height": 199.96875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-19/X18-rates-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 -0.340640입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": "exampleQuarter",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.000000입니다. ε90도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": "exampleFlip",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "-0.340640"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.340640"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.170320"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.295003"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 400ms의 Mz -0.340640 / magnitude 0.340640 / 참조 제거 실수부 0.170320입니다. ε120도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "ir_phase_reference.html",
+      "button": "exampleRecovered",
+      "outputs": [
+        {
+          "id": "mzOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.264241"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "nullOutput",
+          "text": "693.147181"
+        },
+        {
+          "id": "status",
+          "text": "TI 1000ms의 Mz 0.264241 / magnitude 0.264241 / 참조 제거 실수부 0.264241입니다. ε0도는 회복 자화를 바꾸지 않습니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "complexGraphic",
+          "width": 313,
+          "height": 278.21875
+        },
+        {
+          "id": "recoveryGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-18/X11-phase-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.995055mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "status",
+          "text": "선형 B0=3T에서 μ=3.000000mA·m², 힘=3.000000mN입니다. Ueff=-4.500000mJ와 비교용 절반 곱 -4.500000mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleOne",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.761594"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.433781"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.433781"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-0.380797"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=1T에서 μ=0.761594mA·m², 힘=0.761594mN입니다. Ueff=-0.433781mJ와 비교용 절반 곱 -0.380797mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "saturating_dipole_work.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "0.995055"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.309329"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.309329"
+        },
+        {
+          "id": "halfOutput",
+          "text": "-1.492582"
+        },
+        {
+          "id": "status",
+          "text": "포화 예시 B0=3T에서 μ=0.995055mA·m², 힘=0.000000mN입니다. Ueff=-2.309329mJ와 비교용 절반 곱 -1.492582mJ를 구별하세요."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "2026-10-18/X16-saturation-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "W105-readability.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "W109-saturation-clarity.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "W112-svg-margins.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "publication-0650.html",
+      "report": true
+    }
+  ]
+}
