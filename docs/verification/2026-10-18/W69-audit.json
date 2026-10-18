@@ -1,0 +1,30 @@
+{
+  "scope": "W69 presentation-only correction; no new physics pass",
+  "manifests": 62,
+  "uniqueInputs": 447,
+  "unchanged": 444,
+  "changes": [
+    {
+      "path": "docs/contrast_concentration_competition.html",
+      "before": "F2BBD3F4AB5039E3A278765BD360DE97C570700D3C4A149D4323B2AF581B02C7",
+      "after": "3B1B35A8DC14C9C4B552E4AD6C0827EC0D11F87BF6A76FCBF84D096E15D4507D",
+      "reason": "W69 selected row scroll margins only; inline script and all other bytes unchanged"
+    },
+    {
+      "path": "docs/flow_gradient_phase.html",
+      "before": "94EED93A5173BA643A1021BBC55FFF898364B844EB93A0CB2B46CFACECD1F4F4",
+      "after": "AD23EE083FFDCBC9106068FDBE4D693C032F646DAE38A258631848155920BDB4",
+      "reason": "W69 selected row scroll margins only; inline script and all other bytes unchanged"
+    },
+    {
+      "path": "docs/inflow_rf_saturation.html",
+      "before": "E704CC600419E3E59AD8E73AFD660954605ACE469FC85E7E3B6ABC6038069E6C",
+      "after": "BB79DC18E05921A90265921CF724726474A3E0E35F640DD948C31DC383B482C4",
+      "reason": "W69 selected row scroll margins only; inline script and all other bytes unchanged"
+    }
+  ],
+  "displayStates": 36,
+  "displayHashesIdentical": true,
+  "hiddenBefore": 12,
+  "hiddenAfter": 0
+}

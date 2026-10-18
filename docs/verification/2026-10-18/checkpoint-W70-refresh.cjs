@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'../../..'),read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const digest=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase(),hash=p=>digest(fs.readFileSync(path.join(root,p)));
+const manifests=[...read(path.join(__dirname,'checkpoint-W67-scope-manifests.json')),...['X01-mixture','W69','X13-refocusing','X03','X15'].map(id=>'docs/verification/2026-10-18/'+id+'-versions.json')];
+const changes=[],updates=[],link='<a href="temporal_window_bolus.html">X04 · 관측창과 프레임 간격</a>';
+for(const manifest of manifests){const file=path.join(root,manifest),data=read(file);for(const entry of data.files){const after=hash(entry.path);if(after===entry.sha256)continue;if(entry.path!=='docs/scan_time.html')throw Error('Unexpected drift: '+entry.path);const text=fs.readFileSync(path.join(root,entry.path),'utf8');if(digest(Buffer.from(text.replace(link,'')))!==entry.sha256)throw Error('Predecessor change beyond link');changes.push({manifest,path:entry.path,before:entry.sha256,after,reason:'W70 temporal-window follow-up navigation only; exact previous bytes reconstructed by removing link'});entry.sha256=after;}updates.push({file,data});}
+const own=['docs/temporal_window_bolus.html','docs/assets/temporal-window-model.js','docs/assets/ir-lesson.css','tests/temporal-window.test.cjs','tests/helpers/temporal-window-reference.cjs',...['numerical.cjs','numerical.json','display-reference.json','browser-check.js','browser-check.json'].map(p=>'docs/verification/2026-10-18/X04-'+p)];
+const vf=path.join(__dirname,'X04-versions.json');if(fs.existsSync(vf))for(const entry of read(vf).files||[])if(hash(entry.path)!==entry.sha256)throw Error('Reviewed input changed: '+entry.path);
+for(const {file,data}of updates)fs.writeFileSync(file,JSON.stringify(data,null,2)+'\n');
+fs.writeFileSync(vf,JSON.stringify({date:'2026-10-18',baseCommit:'a734a1b6b1e091ca09d0a7fea09b1666d2e072f4',scope:'W70 defined scalar temporal-window integration and sampled frames; own report excluded',files:own.map(p=>({path:p,sha256:hash(p)}))},null,2)+'\n');
+const pages=fs.readdirSync(path.join(root,'docs')).filter(p=>p.endsWith('.html')).sort(),catalog=read(path.join(root,'scripts/validation-reports.json'));
+const inventory=[...pages,...Object.entries(catalog.dates).flatMap(([date,docs])=>docs.map(d=>'verification/'+date+'/'+d.target))];
+fs.writeFileSync(path.join(__dirname,'checkpoint-W70-inventory.json'),JSON.stringify(inventory,null,2)+'\n');
+const cf=path.join(__dirname,'checkpoint-W70-versions.json'),prior=fs.existsSync(cf)?read(cf).changes||[]:[],nav=['README.md','docs/learning-roadmap.md','docs/physics-validation-plan.md','scripts/validation-reports.json',...inventory.map(p=>'docs/'+p)];
+fs.writeFileSync(cf,JSON.stringify({date:'2026-10-18',checkedManifests:manifests.length,changes:[...new Map([...prior,...changes].map(c=>[c.manifest+'|'+c.path+'|'+c.after,c])).values()],navigationFiles:nav.map(p=>({path:p,sha256:hash(p)}))},null,2)+'\n');
+console.log(JSON.stringify({learningPages:pages.length,reports:inventory.length-pages.length,browserStates:inventory.length*2,changes}));

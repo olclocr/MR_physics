@@ -130,21 +130,21 @@
 
 | ID | 내용·모형 검토 및 독립 확인 계획 |
 |---|---|
-| X01 | **전체 검토 중 / 등속 단일 spin 모형 통과** — [W60](verification/2026-10-17/X01-physics.md). SI 궤적/횡 Bloch RK4의18조건·180실제상태, gradient moment/위상/단위 norm. 분포의 복소합·inflow·flow compensation/실제유량은 남음 |
-| X02 | **전체 검토 중 / 균일 slab·TE0 포화 모형 통과** — [W61](verification/2026-10-17/X02-physics.md). 독립 세계선/RF이벤트/RK4의36조건·216실제상태. 실제2D/3D TOF·혈관분포/위상/난류·MIP/임상은 남음 |
-| X03 | phase contrast·VENC·velocity aliasing의 단위·부호 확인. 알려진 속도와 bipolar gradient에서 위상·유량을 독립 계산 |
-| X04 | CE-MRA의 bolus·중심 k-space timing·시간 해상도 확인. 알려진 시간-농도 모형과 획득 순서를 비교 |
-| X05 | **전체 검토 중 / 기본 모형 통과** — [W58](verification/2026-10-17/X05-physics.md). 직접 정의한 농도/R1/R2*와 이상적 GRE·가상 참조, 독립 회전/이완ODE54조건·108실제상태. 실제 약제/투여·구획/시간동태·subtraction/registration은 남음 |
-| X06 | DSC의 신호-농도·AIF·CBF/CBV/MTT·leakage 가정 확인. 입력과 조직 반응이 알려진 perfusion 모형에서 회수값 비교 |
+| X01 | **전체 검토 중 / 등속 단일 spin·두 이산 속도 합 모형 통과** — [W60](verification/2026-10-17/X01-physics.md)과 [W64](verification/2026-10-18/X01-mixture-physics.md). SI 궤적/횡 Bloch RK4의 단일 18조건·180상태와 두 속도 60조건·120상태. 복소합/절댓값합·상쇄 위상 미정을 구별했다. 연속 분포·flow compensation/실제유량은 남음 |
+| X02 | **전체 검토 중 / 균일 slab·TE0 포화 모형 통과** — [W61](verification/2026-10-17/X02-physics.md). 독립 세계선/RF이벤트/RK4의36조건·216실제상태. [W69 표 표시 수정](verification/2026-10-18/W69-selected-row.md)은 계산 불변을 확인했다. 실제2D/3D TOF·혈관분포/위상/난류·MIP/임상은 남음 |
+| X03 | **전체 검토 중 / 단일 속도·두 획득 모형 통과** — [W66](verification/2026-10-18/X03-physics.md). 독립 SI세계선/횡Bloch·합동식63조건/7,623점·126실제상태. 부호/moment·공통 위상 소거·branch/±VENC 경계·2VENC 주기 확인. 실제 분포/유량·noise/배경 위상·4D flow는 남음 |
+| X04 | **전체 검토 중 / 직접 정의한 시간 평균/표본 모형 통과** — [W70](verification/2026-10-18/X04-physics.md). 독립 사건분할Simpson6조합/66프레임·132실제상태. 순간값/창평균·관측창/프레임간격·표본peak·범위밖baseline 확인. 실제농도/RF·k-space획득/재구성·환자bolus는 남음 |
+| X05 | **전체 검토 중 / 농도 기본·signed 뺄셈 부분 모형 통과** — [W58](verification/2026-10-17/X05-physics.md)의54조건·108상태와 [W71](verification/2026-10-18/X05-subtraction-physics.md)의18조건·36상태/실제canvas pixel. 농도/R1/R2*·signed차/ROI/전체보존을 각 범위에서 검토했다. [W69](verification/2026-10-18/W69-selected-row.md)는 표 표시만 수정. 실제약제/구획/동태·신호스케일/보간·환자정합/진단은 남음 |
+| X06 | **전체 검토 중 / 신호비·ΔR2* 변환 부분 모형 통과** — [W72](verification/2026-10-18/X06-physics.md). 독립초단위횡ODE/log편향의9조합/54조건·108실제상태. TEms/t초·신호비/변화율·기준입력/음의추정편향 확인. 실제농도/AIF/CBF/CBV/MTT·T1/누출/noise·환자진단은 남음 |
 | X07 | DCE의 신호 변환·약동학 변수·시간/농도 단위·Ktrans 의미 확인. 알려진 입력 곡선과 독립 fitting 및 모형 불일치 사례 |
 | X08 | ASL labeling·PLD·T1 decay·transit·혈류 정량의 전제 확인. 알려진 transit time/혈류를 가진 모형과 label/control 차이 비교 |
 | X09 | BOLD·hemodynamic response·task/rest·통계의 연결 확인. 뇌 활동과 BOLD를 동일시하지 않는지 검토하고 알려진 합성 시계열로 분석 확인 |
 | X10 | cine·gating·심장 위상·시간 해상도 확인. 박동과 움직임이 알려진 phantom에서 reconstruction phase와 temporal blur 비교 |
 | X11 | LGE·PSIR·TI null·mapping의 조건 확인. 독립 IR/Bloch 계산과 M01/M02 검증을 연결, 해석 범위와 임상 기준은 별도 근거 확인 |
 | X12 | tensor·FA·방향·tractography와 실제 신경 경로의 차이 확인. 알려진 tensor 및 crossing-fiber 모형으로 추정·실패 사례 비교 |
-| X13 | **전체 검토 중 / metHb 세 조건의 정성 근거 읽기 통과** — [W62](verification/2026-10-17/X13-physics.md). 원전 H01–H06/도식/표/정답·18실제상태. 제안/관찰·세포내외/농도·SE조건·날짜 역산 제외를 유지. 다른 산화/철저장·GRE/SWI/임상은 남음 |
-| X14 | magic angle·조직 방향·TE 의존성을 근거와 대조. 각도에 따른 모형과 시각화 비교, 적용 조직/가정 확인 |
-| X15 | B0/B1·shimming·코일·gradient 성능의 단위와 역할 구별. 알려진 field/sensitivity 모형·gradient amplitude/slew 계산을 비교 |
+| X13 | **전체 검토 중 / metHb와 oxy/deoxy/철 저장의 정성 근거 읽기 통과** — [W62](verification/2026-10-17/X13-physics.md)와 [W65](verification/2026-10-18/X13-refocusing-physics.md). H01–H06·R01–R08, 각각18/16실제상태. 구획/농도·이완시간/영상·refocusing/echo 간격·근거 수준을 구별했다. 정량·실제 GRE/SWI/환자 임상은 남음 |
+| X14 | **전체 검토 중 / 직접 정의한 각도/R2 모형 통과** — [W63](verification/2026-10-18/X14-physics.md). 독립 투영/atan근·횡RK4의18조건·36실제상태. 방향 항0/유한바닥·T2/TE·실제 조직값/모형 정의를 구별. 정렬 분포/다성분·환자/보편 TE 기준은 남음 |
+| X15 | **전체 검토 중 / 알려진1차원 field 보정 모형 통과** — [W68](verification/2026-10-18/X15-physics.md). 독립 격자 moment/기하급수·횡ODE의27조건/54실제상태. 평균/σ·공통 위상/크기·직선 투영/공간 상쇄를 구별했다. 실제 field 측정/고차·coil/장비 설정·RF/안전·gradient 성능은 남음 |
 | X16 | force/torque·SAR·발열·소음·PNS 기전을 근거와 대조. 단순 모형의 단위/범위 검산. 실제 안전 조건은 최신 공식 문서·장비/implant 조건의 적용 범위 확인 |
 | X17 | QA 지표·측정법·phantom 조건 확인. 결함과 잡음이 알려진 phantom의 metric을 독립 계산하고 지표별 측정 범위 비교 |
 | X18 | MT·CEST·T1rho의 기전·모형·단위를 분리해 확인. 알려진 교환/회전좌표계 모형의 독립 적분과 특수/극한 조건 비교 |

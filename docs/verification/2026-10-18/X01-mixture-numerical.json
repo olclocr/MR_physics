@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-18",
+  "cases": 60,
+  "fractionPoints": 6060,
+  "nullPhaseCases": 1,
+  "max": {
+    "velocityCmS": 1.4210854715202004e-14,
+    "member": 5.446754158811018e-13,
+    "complex": 5.446754158811018e-13,
+    "magnitude": 1.9565339677060275e-13,
+    "phaseCircular": 9.93294335671635e-12,
+    "scalarSum": 5.329070518200751e-15,
+    "meanPhase": 3.752553823233029e-13
+  },
+  "examples": [
+    {
+      "options": {
+        "speed": "10",
+        "positiveFraction": 0.5,
+        "lobeMs": 2
+      },
+      "velocityCmS": 10,
+      "phaseRad": 0.2140177519735141,
+      "current": {
+        "positiveFraction": 0.5,
+        "negativeFraction": 0.5,
+        "real": 0.9771854829647303,
+        "imaginary": 0,
+        "magnitude": 0.9771854829647303,
+        "phase": 0,
+        "scalarSum": 1,
+        "meanVelocityCmS": 0,
+        "meanAccumulatedPhase": 0
+      }
+    },
+    {
+      "options": {
+        "speed": "v90",
+        "positiveFraction": 0.5,
+        "lobeMs": 2
+      },
+      "velocityCmS": 73.39560911700873,
+      "phaseRad": 1.5707963267948966,
+      "current": {
+        "positiveFraction": 0.5,
+        "negativeFraction": 0.5,
+        "real": 6.123233995736766e-17,
+        "imaginary": 0,
+        "magnitude": 6.123233995736766e-17,
+        "phase": null,
+        "scalarSum": 1,
+        "meanVelocityCmS": 0,
+        "meanAccumulatedPhase": 0
+      }
+    },
+    {
+      "options": {
+        "speed": "v90",
+        "positiveFraction": 0.75,
+        "lobeMs": 2
+      },
+      "velocityCmS": 73.39560911700873,
+      "phaseRad": 1.5707963267948966,
+      "current": {
+        "positiveFraction": 0.75,
+        "negativeFraction": 0.25,
+        "real": 6.123233995736766e-17,
+        "imaginary": 0.5,
+        "magnitude": 0.5,
+        "phase": 1.5707963267948966,
+        "scalarSum": 1,
+        "meanVelocityCmS": 36.697804558504366,
+        "meanAccumulatedPhase": 0.7853981633974483
+      }
+    },
+    {
+      "options": {
+        "speed": "v90",
+        "positiveFraction": 1,
+        "lobeMs": 2
+      },
+      "velocityCmS": 73.39560911700873,
+      "phaseRad": 1.5707963267948966,
+      "current": {
+        "positiveFraction": 1,
+        "negativeFraction": 0,
+        "real": 6.123233995736766e-17,
+        "imaginary": 1,
+        "magnitude": 1,
+        "phase": 1.5707963267948966,
+        "scalarSum": 1,
+        "meanVelocityCmS": 73.39560911700873,
+        "meanAccumulatedPhase": 1.5707963267948966
+      }
+    },
+    {
+      "options": {
+        "speed": "v90",
+        "positiveFraction": 0.5,
+        "lobeMs": 3
+      },
+      "velocityCmS": 73.39560911700873,
+      "phaseRad": 3.534291735288517,
+      "current": {
+        "positiveFraction": 0.5,
+        "negativeFraction": 0.5,
+        "real": -0.9238795325112872,
+        "imaginary": 0,
+        "magnitude": 0.9238795325112872,
+        "phase": 3.141592653589793,
+        "scalarSum": 0.9999999999999999,
+        "meanVelocityCmS": 0,
+        "meanAccumulatedPhase": 0
+      }
+    }
+  ]
+}

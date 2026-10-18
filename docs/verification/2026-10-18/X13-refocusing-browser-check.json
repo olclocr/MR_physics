@@ -1,0 +1,668 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 16,
+  "table": true,
+  "keyboard": true,
+  "examples": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "case": "oxy",
+      "view": "original",
+      "heading": "적혈구 내 oxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "oxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "oxy",
+      "view": "gre",
+      "heading": "적혈구 내 oxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "oxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "deoxy",
+      "view": "original",
+      "heading": "적혈구 내 deoxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "deoxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "deoxy",
+      "view": "gre",
+      "heading": "적혈구 내 deoxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "deoxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "lysate",
+      "view": "original",
+      "heading": "DeoxyHb 용혈액",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 0,
+      "hb": 10,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "lysate",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "lysate",
+      "view": "gre",
+      "heading": "DeoxyHb 용혈액",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 0,
+      "hb": 10,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "lysate",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "storage",
+      "view": "original",
+      "heading": "Ferritin과 hemosiderin 분포",
+      "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+      "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/1690500/",
+      "membranes": 0,
+      "hb": 0,
+      "ferritin": 6,
+      "hemosiderin": 3,
+      "selected": "storage",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "case": "storage",
+      "view": "gre",
+      "heading": "Ferritin과 hemosiderin 분포",
+      "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/1690500/",
+      "membranes": 0,
+      "hb": 0,
+      "ferritin": 6,
+      "hemosiderin": 3,
+      "selected": "storage",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "oxy",
+      "view": "original",
+      "heading": "적혈구 내 oxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "oxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "oxy",
+      "view": "gre",
+      "heading": "적혈구 내 oxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "oxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "deoxy",
+      "view": "original",
+      "heading": "적혈구 내 deoxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "deoxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "deoxy",
+      "view": "gre",
+      "heading": "적혈구 내 deoxyHb",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 3,
+      "hb": 12,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "deoxy",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "lysate",
+      "view": "original",
+      "heading": "DeoxyHb 용혈액",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 0,
+      "hb": 10,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "lysate",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "lysate",
+      "view": "gre",
+      "heading": "DeoxyHb 용혈액",
+      "quantity": "T2 이완시간의 조건 의존성",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3597895/",
+      "membranes": 0,
+      "hb": 10,
+      "ferritin": 0,
+      "hemosiderin": 0,
+      "selected": "lysate",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "storage",
+      "view": "original",
+      "heading": "Ferritin과 hemosiderin 분포",
+      "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+      "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/1690500/",
+      "membranes": 0,
+      "hb": 0,
+      "ferritin": 6,
+      "hemosiderin": 3,
+      "selected": "storage",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 조금 감소"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "용혈액의 T2는 field/echo 간격에 의존하지 않았음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "case": "storage",
+      "view": "gre",
+      "heading": "Ferritin과 hemosiderin 분포",
+      "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+      "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/1690500/",
+      "membranes": 0,
+      "hb": 0,
+      "ferritin": 6,
+      "hemosiderin": 3,
+      "selected": "storage",
+      "rows": [
+        {
+          "id": "oxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 조금 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "deoxy",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "Field 또는 echo 간격이 커질 때 T2가 뚜렷하게 감소",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "lysate",
+          "quantity": "T2 이완시간의 조건 의존성",
+          "finding": "용혈액의 T2는 field/echo 간격에 의존하지 않았음",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        },
+        {
+          "id": "storage",
+          "quantity": "철 저장 물질의 공간 분포와 linewidth 영상의 대응",
+          "finding": "Ferritin 분포가 더 넓었고 linewidth 변화 분포와 유사",
+          "reading": "이 원전 요약만으로 GRE 밝기/정량값을 예측하지 않음"
+        }
+      ],
+      "overflow": false
+    }
+  ]
+}

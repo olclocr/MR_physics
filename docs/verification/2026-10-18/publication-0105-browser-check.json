@@ -1,0 +1,183 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "https://olclocr.github.io/MR_physics/",
+  "commit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "states": 28,
+  "portalWidths": [
+    1920,
+    390
+  ],
+  "sourceURL": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/contrast-concentration-reference.cjs",
+  "sourceStatus": 200,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "file": "ecv_r1_partition.html",
+      "status": 200,
+      "example": "exampleZero",
+      "actual": "정의 불가"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/M02-ecv-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "finite_rf_slice_profile.html",
+      "status": 200,
+      "example": null,
+      "actual": "2.348659 mm"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/G02-rf-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "complex_echo_water_fat_fit.html",
+      "status": 200,
+      "example": "exampleSingle",
+      "actual": "23.307486%"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/M04-fit-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "contrast_concentration_competition.html",
+      "status": 200,
+      "example": "exampleLong",
+      "actual": "0.044493"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/X05-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "flow_gradient_phase.html",
+      "status": 200,
+      "example": "exampleLong",
+      "actual": "0.481540 rad"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/X01-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "inflow_rf_saturation.html",
+      "status": 200,
+      "example": "exampleLarge",
+      "actual": "0.028203"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/X02-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "hemorrhage_state_reading.html",
+      "status": 200,
+      "example": "exampleDense",
+      "actual": "등신호 또는 약한 저신호 가능"
+    },
+    {
+      "width": 1920,
+      "file": "verification/2026-10-17/X13-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "ecv_r1_partition.html",
+      "status": 200,
+      "example": "exampleZero",
+      "actual": "정의 불가"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/M02-ecv-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "finite_rf_slice_profile.html",
+      "status": 200,
+      "example": null,
+      "actual": "2.348659 mm"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/G02-rf-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "complex_echo_water_fat_fit.html",
+      "status": 200,
+      "example": "exampleSingle",
+      "actual": "23.307486%"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/M04-fit-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "contrast_concentration_competition.html",
+      "status": 200,
+      "example": "exampleLong",
+      "actual": "0.044493"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/X05-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "flow_gradient_phase.html",
+      "status": 200,
+      "example": "exampleLong",
+      "actual": "0.481540 rad"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/X01-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "inflow_rf_saturation.html",
+      "status": 200,
+      "example": "exampleLarge",
+      "actual": "0.028203"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/X02-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "hemorrhage_state_reading.html",
+      "status": 200,
+      "example": "exampleDense",
+      "actual": "등신호 또는 약한 저신호 가능"
+    },
+    {
+      "width": 390,
+      "file": "verification/2026-10-17/X13-physics.html",
+      "report": true
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "uncommitted": true,
+  "scope": "W67 publication fingerprint comparison and renderer notice; own report excluded",
+  "files": [
+    {
+      "path": "scripts/publication-fingerprints.cjs",
+      "sha256": "60BEDC19F514789FA99263BF0E2E49964FAC61B5A8070C243E1DC9EED32AE47F"
+    },
+    {
+      "path": "tests/publication-fingerprints.test.cjs",
+      "sha256": "239CCAE249B1FFF93463C8C2E38933AC57F1EF3D65CDDDD50DDB47E58CA2B98B"
+    },
+    {
+      "path": "scripts/render-validation-reports.cjs",
+      "sha256": "AA7D573B52FFB502037D48FAFE96D001F8E54C19DE2B6CD5444BAA3F703A26CB"
+    },
+    {
+      "path": "tests/validation-reports.test.cjs",
+      "sha256": "CD12D33AAEB510F50633092D69D3A9D95019579B24CB4C4D72A4B7E154972D57"
+    },
+    {
+      "path": "scripts/validation-reports.json",
+      "sha256": "E3AE783C2FE418F9721600D33F558D3681D7312021A7D609AAE7DDA9D69E68D7"
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "14E1BC164E64D2A117F681BBB72F33648E4A95B6A3C619392B739618E117671A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/publication-0105-fingerprints.json",
+      "sha256": "DE0FCAAC68E6EE637C45BE9D659F4AC58B8C5943AD47819419AFF441EDE6237D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/publication-0105-fingerprint-replay.json",
+      "sha256": "78109F2DDF28B1B88483585CB9849C40B41EA1629D7F497D63C14495BAEC2582"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W67-public-byte-check.js",
+      "sha256": "DA21A1AD46148AD762F0A79E10381DBC628C53C3E9BDDD8FFFA999B4181709E1"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W67-public-byte-check.json",
+      "sha256": "215ECEB3F910F33D55AD50BB73A4FFB3B6C62E711F64D056D23169D1A459E4C5"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W67-footer-browser.js",
+      "sha256": "17E504B8CD37486A1341C7EB5A6E720E4F30722640A5F0117F125C9EC5B81D93"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W67-footer-browser.json",
+      "sha256": "C9FF5CFE372658254CBF1D70AD6F9BEF186A9B40B103FCAF37FD900AFD0EF973"
+    },
+    {
+      "path": "docs/verification/2026-10-18/checkpoint-W67-science-inputs.json",
+      "sha256": "B630A103C71C0ACCC12EA9871C011CB7508AAE80290E281D7B09259F7E8A8B4F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W67-report-diff-audit.cjs",
+      "sha256": "C9B6C004EB3F1A660BE927391EA4DBAA919C3570DD58CCEC75B5A83D000E17F8"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W67-report-diff-audit.json",
+      "sha256": "8EC5F9C449B197DF9FD79F39A88F5F0C0D5E1554BA6BACFB32D9D900915E6118"
+    }
+  ]
+}

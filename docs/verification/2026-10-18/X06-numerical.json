@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-18",
+  "combinations": 9,
+  "selectedConditions": 54,
+  "curvePoints": 1089,
+  "max": {
+    "signal": 2.392865419698076e-12,
+    "ratio": 1.7834608789790707e-11,
+    "trueRate": 1.4210854715202004e-14,
+    "inferredRate": 2.621256101065228e-9,
+    "biasIdentity": 2.1316282072803006e-14,
+    "convergence": 2.4580018020969874e-9
+  },
+  "examples": [
+    {
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "trueBaseline": 0.40656965974059917,
+      "inputBaseline": 0.40656965974059917,
+      "current": {
+        "timeSec": 10,
+        "trueDeltaR2": 40,
+        "signal": 0.1224564282529819,
+        "ratio": 0.301194211912202,
+        "inferredDeltaR2": 40.00000000000001,
+        "bias": 7.105427357601002e-15
+      }
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "trueBaseline": 0.7408182206817179,
+      "inputBaseline": 0.7408182206817179,
+      "current": {
+        "timeSec": 10,
+        "trueDeltaR2": 40,
+        "signal": 0.4965853037914095,
+        "ratio": 0.6703200460356393,
+        "inferredDeltaR2": 39.99999999999999,
+        "bias": -7.105427357601002e-15
+      }
+    },
+    {
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "trueBaseline": 0.16529888822158656,
+      "inputBaseline": 0.16529888822158656,
+      "current": {
+        "timeSec": 10,
+        "trueDeltaR2": 40,
+        "signal": 0.014995576820477703,
+        "ratio": 0.09071795328941247,
+        "inferredDeltaR2": 40.00000000000001,
+        "bias": 7.105427357601002e-15
+      }
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "trueBaseline": 0.7408182206817179,
+      "inputBaseline": 0.5926545765453743,
+      "current": {
+        "timeSec": 0,
+        "trueDeltaR2": 0,
+        "signal": 0.7408182206817179,
+        "ratio": 1.25,
+        "inferredDeltaR2": -22.314355131420974,
+        "bias": -22.314355131420974
+      }
+    },
+    {
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "trueBaseline": 0.7408182206817179,
+      "inputBaseline": 0.7408182206817179,
+      "current": {
+        "timeSec": 0,
+        "trueDeltaR2": 0,
+        "signal": 0.7408182206817179,
+        "ratio": 1,
+        "inferredDeltaR2": 0,
+        "bias": 0
+      }
+    }
+  ]
+}

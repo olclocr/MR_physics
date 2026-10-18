@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W72 single exponential signal ratio, TE units and baseline input bias; own report excluded",
+  "files": [
+    {
+      "path": "docs/dsc_signal_rate.html",
+      "sha256": "B1566EDEE6608DC47EBED4F685A803CE7FEC9FACB0BAF8AC00FAEECF0DD01CB8"
+    },
+    {
+      "path": "docs/assets/dsc-rate-transform-model.js",
+      "sha256": "636EADF93B2D76BBDFBB5B7747FAC409A09B5E8BA491595B2088BF71C1945BDB"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/dsc-rate-transform.test.cjs",
+      "sha256": "68EAAE12CCF6C5DA30EC14F3D0EF4FF6A0560B9109AD02EC37EF61E5F6CF60FD"
+    },
+    {
+      "path": "tests/helpers/dsc-rate-transform-reference.cjs",
+      "sha256": "D462BD6EF639B442D8DEDA053B152566C9DA1698D35C429F5A84A11ECAED028A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-numerical.cjs",
+      "sha256": "95CC0921185AF25750E01142419C74E7BCF86FD3EE77798A51D76562B2128175"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-numerical.json",
+      "sha256": "C9EEE0DE2F119459D5D14E1B06AA5DFD8267A1FF104079A4E019C9A73628EADC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-display-reference.json",
+      "sha256": "FAC27576CBA33EFF6286AF0C79B1DCCACB18D39AEC1BD23ED418024B6BDCD3FD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-browser-check.js",
+      "sha256": "BCA304DB78D8B40ACAC00D24D64897F41E04B2D43CD6C98EE81A42576C450FDC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X06-browser-check.json",
+      "sha256": "936A3D665DA09882F3E65D637293B45B69DA956C5968CBFAEB876B7898F7FF47"
+    }
+  ]
+}

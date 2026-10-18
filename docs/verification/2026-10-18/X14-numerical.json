@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-18",
+  "cases": 18,
+  "anglePoints": 3258,
+  "timePoints": 1098,
+  "max": {
+    "signal": 1.9240720128266275e-12,
+    "isotropicSignal": 1.9240720128266275e-12,
+    "rate": 5.684341886080801e-13,
+    "time": 7.105427357601002e-15,
+    "factor": 2.6645352591003757e-15,
+    "angle": 0
+  },
+  "examples": [
+    {
+      "angleDeg": 54.735610317245346,
+      "teMs": 2,
+      "factor": 2.220446049250313e-16,
+      "factorSquared": 4.930380657631324e-32,
+      "r2PerS": 50,
+      "t2Ms": 20,
+      "signal": 0.9048374180359595,
+      "isotropicSignal": 0.9048374180359595
+    },
+    {
+      "angleDeg": 0,
+      "teMs": 2,
+      "factor": 2,
+      "factorSquared": 4,
+      "r2PerS": 850,
+      "t2Ms": 1.1764705882352942,
+      "signal": 0.18268352405273466,
+      "isotropicSignal": 0.9048374180359595
+    },
+    {
+      "angleDeg": 90,
+      "teMs": 2,
+      "factor": -1,
+      "factorSquared": 1,
+      "r2PerS": 250,
+      "t2Ms": 4,
+      "signal": 0.6065306597126334,
+      "isotropicSignal": 0.9048374180359595
+    },
+    {
+      "angleDeg": 54.735610317245346,
+      "teMs": 40,
+      "factor": 2.220446049250313e-16,
+      "factorSquared": 4.930380657631324e-32,
+      "r2PerS": 50,
+      "t2Ms": 20,
+      "signal": 0.1353352832366127,
+      "isotropicSignal": 0.1353352832366127
+    }
+  ]
+}

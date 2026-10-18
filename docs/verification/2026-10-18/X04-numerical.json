@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-18",
+  "combinations": 6,
+  "frames": 66,
+  "curvePoints": 1806,
+  "max": {
+    "average": 1.0299538999447577e-12,
+    "instantaneous": 5.551115123125783e-17,
+    "timeSec": 0,
+    "overlap": 1.1102230246251565e-16,
+    "convergence": 9.661160760288112e-13
+  },
+  "examples": [
+    {
+      "options": {
+        "windowSec": 2,
+        "frameIntervalSec": 2,
+        "selectedTimeSec": 10
+      },
+      "current": {
+        "index": 5,
+        "centerSec": 10,
+        "startSec": 9,
+        "endSec": 11,
+        "instantaneous": 0.3,
+        "average": 0.29795395538543323
+      },
+      "peak": {
+        "index": 5,
+        "centerSec": 10,
+        "startSec": 9,
+        "endSec": 11,
+        "instantaneous": 0.3,
+        "average": 0.29795395538543323
+      },
+      "overlapFraction": 0
+    },
+    {
+      "options": {
+        "windowSec": 12,
+        "frameIntervalSec": 2,
+        "selectedTimeSec": 10
+      },
+      "current": {
+        "index": 5,
+        "centerSec": 10,
+        "startSec": 4,
+        "endSec": 16,
+        "instantaneous": 0.3,
+        "average": 0.23806889405338807
+      },
+      "peak": {
+        "index": 5,
+        "centerSec": 10,
+        "startSec": 4,
+        "endSec": 16,
+        "instantaneous": 0.3,
+        "average": 0.23806889405338807
+      },
+      "overlapFraction": 0.8333333333333334
+    },
+    {
+      "options": {
+        "windowSec": 2,
+        "frameIntervalSec": 6,
+        "selectedTimeSec": 10
+      },
+      "current": {
+        "index": 2,
+        "centerSec": 12,
+        "startSec": 11,
+        "endSec": 13,
+        "instantaneous": 0.2761271242968685,
+        "average": 0.2744718394324346
+      },
+      "peak": {
+        "index": 2,
+        "centerSec": 12,
+        "startSec": 11,
+        "endSec": 13,
+        "instantaneous": 0.2761271242968685,
+        "average": 0.2744718394324346
+      },
+      "overlapFraction": 0
+    },
+    {
+      "options": {
+        "windowSec": 12,
+        "frameIntervalSec": 2,
+        "selectedTimeSec": 0
+      },
+      "current": {
+        "index": 0,
+        "centerSec": 0,
+        "startSec": -6,
+        "endSec": 6,
+        "instantaneous": 0.05,
+        "average": 0.08096555297330596
+      },
+      "peak": {
+        "index": 5,
+        "centerSec": 10,
+        "startSec": 4,
+        "endSec": 16,
+        "instantaneous": 0.3,
+        "average": 0.23806889405338807
+      },
+      "overlapFraction": 0.8333333333333334
+    }
+  ]
+}

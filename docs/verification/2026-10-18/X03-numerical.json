@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-18",
+  "cases": 63,
+  "curvePoints": 7623,
+  "max": {
+    "complex": 2.435303936979251e-9,
+    "circularPhase": 2.435300874183709e-9,
+    "velocityCmS": 1.1368683772161603e-13,
+    "unwrappedPhase": 7.283063041541027e-13,
+    "moment": 4.499862532288471e-22,
+    "norm": 2.220446049250313e-16,
+    "referenceConvergence": 1.1409620470637094e-9
+  },
+  "examples": [
+    {
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "gradientMtM": 0.9786081215601168,
+      "deltaMomentMtMs2M": -7.828864972480933,
+      "current": {
+        "velocityCmS": 75,
+        "a": {
+          "x": 0.7071067811865474,
+          "y": -0.7071067811865477,
+          "z": 0
+        },
+        "b": {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0
+        },
+        "phaseA": -0.7853981633974485,
+        "phaseB": 0.7853981633974485,
+        "real": -4.440892098500626e-16,
+        "imaginary": 1,
+        "magnitude": 1,
+        "phase": 1.5707963267948972,
+        "estimatedVelocityCmS": 75.00000000000003,
+        "trueDeltaPhase": 1.570796326794897,
+        "aliasErrorCmS": -2.842170943040401e-14,
+        "boundary": false
+      }
+    },
+    {
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "gradientMtM": 1.9572162431202336,
+      "deltaMomentMtMs2M": -15.657729944961867,
+      "current": {
+        "velocityCmS": 150,
+        "a": {
+          "x": -1,
+          "y": 7.657137397853899e-16,
+          "z": 0
+        },
+        "b": {
+          "x": -1,
+          "y": -7.657137397853899e-16,
+          "z": 0
+        },
+        "phaseA": 3.141592653589793,
+        "phaseB": 3.141592653589793,
+        "real": 1,
+        "imaginary": 1.5314274795707798e-15,
+        "magnitude": 1,
+        "phase": 0,
+        "estimatedVelocityCmS": 0,
+        "trueDeltaPhase": 6.283185307179588,
+        "aliasErrorCmS": 150,
+        "boundary": false
+      }
+    },
+    {
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "gradientMtM": 0.4893040607800584,
+      "deltaMomentMtMs2M": -3.9144324862404667,
+      "current": {
+        "velocityCmS": 150,
+        "a": {
+          "x": 0.7071067811865474,
+          "y": -0.7071067811865477,
+          "z": 0
+        },
+        "b": {
+          "x": 0.7071067811865474,
+          "y": 0.7071067811865477,
+          "z": 0
+        },
+        "phaseA": -0.7853981633974485,
+        "phaseB": 0.7853981633974485,
+        "real": -4.440892098500626e-16,
+        "imaginary": 1,
+        "magnitude": 1,
+        "phase": 1.5707963267948972,
+        "estimatedVelocityCmS": 150.00000000000006,
+        "trueDeltaPhase": 1.570796326794897,
+        "aliasErrorCmS": -5.684341886080802e-14,
+        "boundary": false
+      }
+    },
+    {
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "gradientMtM": 0.9786081215601168,
+      "deltaMomentMtMs2M": -7.828864972480933,
+      "current": {
+        "velocityCmS": -150,
+        "a": {
+          "x": -3.8285686989269494e-16,
+          "y": 1,
+          "z": 0
+        },
+        "b": {
+          "x": -3.8285686989269494e-16,
+          "y": -1,
+          "z": 0
+        },
+        "phaseA": 1.570796326794897,
+        "phaseB": -1.570796326794897,
+        "real": -1,
+        "imaginary": 7.657137397853899e-16,
+        "magnitude": 1,
+        "phase": 3.141592653589793,
+        "estimatedVelocityCmS": 150,
+        "trueDeltaPhase": -3.141592653589794,
+        "aliasErrorCmS": -300,
+        "boundary": true
+      }
+    }
+  ]
+}

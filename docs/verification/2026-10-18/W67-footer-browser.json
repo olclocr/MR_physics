@@ -1,0 +1,68 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 10,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "from": "verification/2026-10-14/index.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 1920,
+      "from": "verification/2026-10-15/C01-physics.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 1920,
+      "from": "verification/2026-10-16/S01-physics.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 1920,
+      "from": "verification/2026-10-17/X13-physics.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 1920,
+      "from": "verification/2026-10-18/X14-physics.html",
+      "url": "publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 390,
+      "from": "verification/2026-10-14/index.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 390,
+      "from": "verification/2026-10-15/C01-physics.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 390,
+      "from": "verification/2026-10-16/S01-physics.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 390,
+      "from": "verification/2026-10-17/X13-physics.html",
+      "url": "../2026-10-18/publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    },
+    {
+      "width": 390,
+      "from": "verification/2026-10-18/X14-physics.html",
+      "url": "publication-0105-fingerprints.html",
+      "target": "http://127.0.0.1:8877/docs/verification/2026-10-18/publication-0105-fingerprints.html"
+    }
+  ]
+}

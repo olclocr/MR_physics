@@ -1,0 +1,9 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),M=require('../../assets/dsc-rate-transform-model.js'),R=require('../../../tests/helpers/dsc-rate-transform-reference.cjs');
+const refs=[],max={signal:0,ratio:0,trueRate:0,inferredRate:0,biasIdentity:0,convergence:0};
+for(const teMs of [10,30,60])for(const baselineFactor of [.8,1,1.2]){
+ const options={teMs,baselineFactor,timeSec:10},a=M.calculate(options),b=R.calculate(options),fine=R.calculate(options,1024);max.signal=Math.max(max.signal,Math.abs(a.trueBaseline-b.trueBaseline),Math.abs(a.inputBaseline-b.inputBaseline));
+ for(const [i,p]of a.curve.entries()){const q=b.curve[i];max.signal=Math.max(max.signal,Math.abs(p.signal-q.signal));max.ratio=Math.max(max.ratio,Math.abs(p.ratio-q.ratio));max.trueRate=Math.max(max.trueRate,Math.abs(p.trueDeltaR2-q.trueDeltaR2));max.inferredRate=Math.max(max.inferredRate,Math.abs(p.inferredDeltaR2-q.inferredDeltaR2));max.biasIdentity=Math.max(max.biasIdentity,Math.abs(p.bias-b.analyticBias));max.convergence=Math.max(max.convergence,Math.abs(q.inferredDeltaR2-fine.curve[i].inferredDeltaR2));}
+ refs.push(b);
+}
+assert(max.signal<1e-8&&max.ratio<1e-8&&max.trueRate<1e-9&&max.inferredRate<1e-6&&max.biasIdentity<1e-9&&max.convergence<1e-6);
+const examples=[M.calculate(),M.calculate({teMs:10}),M.calculate({teMs:60}),M.calculate({teMs:10,baselineFactor:.8,timeSec:0}),M.calculate({teMs:10,timeSec:0})].map(r=>({options:r.options,trueBaseline:r.trueBaseline,inputBaseline:r.inputBaseline,current:r.current}));const result={date:'2026-10-18',combinations:refs.length,selectedConditions:refs.length*6,curvePoints:refs.length*121,max,examples};fs.writeFileSync(path.join(__dirname,'X06-numerical.json'),JSON.stringify(result,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'X06-display-reference.json'),JSON.stringify(refs)+'\n');console.log(JSON.stringify(result));

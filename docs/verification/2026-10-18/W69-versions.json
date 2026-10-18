@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W69 presentation-only correction; no new physics pass",
+  "files": [
+    {
+      "path": "docs/contrast_concentration_competition.html",
+      "sha256": "3B1B35A8DC14C9C4B552E4AD6C0827EC0D11F87BF6A76FCBF84D096E15D4507D"
+    },
+    {
+      "path": "docs/flow_gradient_phase.html",
+      "sha256": "AD23EE083FFDCBC9106068FDBE4D693C032F646DAE38A258631848155920BDB4"
+    },
+    {
+      "path": "docs/inflow_rf_saturation.html",
+      "sha256": "BB79DC18E05921A90265921CF724726474A3E0E35F640DD948C31DC383B482C4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-freeze.cjs",
+      "sha256": "D2322F59B3638E021E98A3171B00F3EFEC6BAAFD4017A1D81476C8260A841F86"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-final-audit.cjs",
+      "sha256": "438ED358C94BD800B7D58C6E23BEDEEA74FC9A38841005B3379A98CCAF9066AE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/checkpoint-W69-inputs.json",
+      "sha256": "1517C1051900F89C1CA0CC2AE45CE2673BDDD32219D8502E46C570F3ADFC8A55"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-before.js",
+      "sha256": "EF7D03FF0EF5E09C76419E7B7DDFA185D966C09651B3AB7D9F7078E2475F552C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-before.json",
+      "sha256": "F8FE016611A7A490A57CAB6431BF3EBD05534B17399539B2A8178C5A17FBEBD8"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-after.js",
+      "sha256": "BADF02E4B853831B886D8538B7DA5E9B952C3483C72776A6F2F7EFD5861E43A3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-browser-after.json",
+      "sha256": "387250430CBD78179801FF142EF64F8202FB737F72EBABE3BC075DF0D2B6E56F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W69-audit.json",
+      "sha256": "AC666A700B5DE9F458F0ED7A908934E2024E7AF407E6AE8081F51FE3140B2B80"
+    }
+  ]
+}

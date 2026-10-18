@@ -1,0 +1,1070 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 132,
+  "maxGraphicError": 4.997603980427812E-06,
+  "keyboard": true,
+  "pointer": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.051023
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 1,
+      "centerSec": 2,
+      "average": 0.075528
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 2,
+      "centerSec": 4,
+      "average": 0.137005
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 3,
+      "centerSec": 6,
+      "average": 0.212995
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 4,
+      "centerSec": 8,
+      "average": 0.274472
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 5,
+      "centerSec": 10,
+      "average": 0.297954
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 6,
+      "centerSec": 12,
+      "average": 0.274472
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 7,
+      "centerSec": 14,
+      "average": 0.212995
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 8,
+      "centerSec": 16,
+      "average": 0.137005
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 9,
+      "centerSec": 18,
+      "average": 0.075528
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 10,
+      "centerSec": 20,
+      "average": 0.051023
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 11,
+      "centerSec": 22,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 12,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 13,
+      "centerSec": 26,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 14,
+      "centerSec": 28,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 15,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.051023
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 1,
+      "centerSec": 6,
+      "average": 0.212995
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 2,
+      "centerSec": 12,
+      "average": 0.274472
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 3,
+      "centerSec": 18,
+      "average": 0.075528
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 4,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 5,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.05885
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 1,
+      "centerSec": 2,
+      "average": 0.087852
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 2,
+      "centerSec": 4,
+      "average": 0.141843
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 3,
+      "centerSec": 6,
+      "average": 0.208157
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 4,
+      "centerSec": 8,
+      "average": 0.261807
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 5,
+      "centerSec": 10,
+      "average": 0.282299
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 6,
+      "centerSec": 12,
+      "average": 0.261807
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 7,
+      "centerSec": 14,
+      "average": 0.208157
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 8,
+      "centerSec": 16,
+      "average": 0.141843
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 9,
+      "centerSec": 18,
+      "average": 0.087852
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 10,
+      "centerSec": 20,
+      "average": 0.05885
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 11,
+      "centerSec": 22,
+      "average": 0.050341
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 12,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 13,
+      "centerSec": 26,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 14,
+      "centerSec": 28,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 15,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.05885
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 1,
+      "centerSec": 6,
+      "average": 0.208157
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 2,
+      "centerSec": 12,
+      "average": 0.261807
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 3,
+      "centerSec": 18,
+      "average": 0.087852
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 4,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 5,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.080966
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 1,
+      "centerSec": 2,
+      "average": 0.113844
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 2,
+      "centerSec": 4,
+      "average": 0.154167
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 3,
+      "centerSec": 6,
+      "average": 0.194489
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 4,
+      "centerSec": 8,
+      "average": 0.226024
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 5,
+      "centerSec": 10,
+      "average": 0.238069
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 6,
+      "centerSec": 12,
+      "average": 0.226024
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 7,
+      "centerSec": 14,
+      "average": 0.194489
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 8,
+      "centerSec": 16,
+      "average": 0.154167
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 9,
+      "centerSec": 18,
+      "average": 0.113844
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 10,
+      "centerSec": 20,
+      "average": 0.080966
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 11,
+      "centerSec": 22,
+      "average": 0.060132
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 12,
+      "centerSec": 24,
+      "average": 0.051344
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 13,
+      "centerSec": 26,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 14,
+      "centerSec": 28,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 15,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.080966
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 1,
+      "centerSec": 6,
+      "average": 0.194489
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 2,
+      "centerSec": 12,
+      "average": 0.226024
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 3,
+      "centerSec": 18,
+      "average": 0.113844
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 4,
+      "centerSec": 24,
+      "average": 0.051344
+    },
+    {
+      "width": 1920,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 5,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.051023
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 1,
+      "centerSec": 2,
+      "average": 0.075528
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 2,
+      "centerSec": 4,
+      "average": 0.137005
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 3,
+      "centerSec": 6,
+      "average": 0.212995
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 4,
+      "centerSec": 8,
+      "average": 0.274472
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 5,
+      "centerSec": 10,
+      "average": 0.297954
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 6,
+      "centerSec": 12,
+      "average": 0.274472
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 7,
+      "centerSec": 14,
+      "average": 0.212995
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 8,
+      "centerSec": 16,
+      "average": 0.137005
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 9,
+      "centerSec": 18,
+      "average": 0.075528
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 10,
+      "centerSec": 20,
+      "average": 0.051023
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 11,
+      "centerSec": 22,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 12,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 13,
+      "centerSec": 26,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 14,
+      "centerSec": 28,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 2,
+      "index": 15,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.051023
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 1,
+      "centerSec": 6,
+      "average": 0.212995
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 2,
+      "centerSec": 12,
+      "average": 0.274472
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 3,
+      "centerSec": 18,
+      "average": 0.075528
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 4,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 2,
+      "frameIntervalSec": 6,
+      "index": 5,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.05885
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 1,
+      "centerSec": 2,
+      "average": 0.087852
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 2,
+      "centerSec": 4,
+      "average": 0.141843
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 3,
+      "centerSec": 6,
+      "average": 0.208157
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 4,
+      "centerSec": 8,
+      "average": 0.261807
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 5,
+      "centerSec": 10,
+      "average": 0.282299
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 6,
+      "centerSec": 12,
+      "average": 0.261807
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 7,
+      "centerSec": 14,
+      "average": 0.208157
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 8,
+      "centerSec": 16,
+      "average": 0.141843
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 9,
+      "centerSec": 18,
+      "average": 0.087852
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 10,
+      "centerSec": 20,
+      "average": 0.05885
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 11,
+      "centerSec": 22,
+      "average": 0.050341
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 12,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 13,
+      "centerSec": 26,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 14,
+      "centerSec": 28,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 2,
+      "index": 15,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.05885
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 1,
+      "centerSec": 6,
+      "average": 0.208157
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 2,
+      "centerSec": 12,
+      "average": 0.261807
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 3,
+      "centerSec": 18,
+      "average": 0.087852
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 4,
+      "centerSec": 24,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 6,
+      "frameIntervalSec": 6,
+      "index": 5,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.080966
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 1,
+      "centerSec": 2,
+      "average": 0.113844
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 2,
+      "centerSec": 4,
+      "average": 0.154167
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 3,
+      "centerSec": 6,
+      "average": 0.194489
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 4,
+      "centerSec": 8,
+      "average": 0.226024
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 5,
+      "centerSec": 10,
+      "average": 0.238069
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 6,
+      "centerSec": 12,
+      "average": 0.226024
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 7,
+      "centerSec": 14,
+      "average": 0.194489
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 8,
+      "centerSec": 16,
+      "average": 0.154167
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 9,
+      "centerSec": 18,
+      "average": 0.113844
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 10,
+      "centerSec": 20,
+      "average": 0.080966
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 11,
+      "centerSec": 22,
+      "average": 0.060132
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 12,
+      "centerSec": 24,
+      "average": 0.051344
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 13,
+      "centerSec": 26,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 14,
+      "centerSec": 28,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 2,
+      "index": 15,
+      "centerSec": 30,
+      "average": 0.05
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 0,
+      "centerSec": 0,
+      "average": 0.080966
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 1,
+      "centerSec": 6,
+      "average": 0.194489
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 2,
+      "centerSec": 12,
+      "average": 0.226024
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 3,
+      "centerSec": 18,
+      "average": 0.113844
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 4,
+      "centerSec": 24,
+      "average": 0.051344
+    },
+    {
+      "width": 390,
+      "windowSec": 12,
+      "frameIntervalSec": 6,
+      "index": 5,
+      "centerSec": 30,
+      "average": 0.05
+    }
+  ]
+}

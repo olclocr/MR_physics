@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W70 defined scalar temporal-window integration and sampled frames; own report excluded",
+  "files": [
+    {
+      "path": "docs/temporal_window_bolus.html",
+      "sha256": "FCBB22EEC6D4CC9B8FA82C0905BB7FE3C1EE283D890E1BB817C102007B8945B0"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/temporal-window.test.cjs",
+      "sha256": "57B885C22E963D7D25815303C53DEA98D2BAABC2A2C95B2E348D2D2B56F0AE1B"
+    },
+    {
+      "path": "tests/helpers/temporal-window-reference.cjs",
+      "sha256": "021236C1C96AD643A638CDD6904619750858B025DE53DF3DE85AE18BE65FAD35"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-numerical.cjs",
+      "sha256": "65F7ADEA6202E4F3BA571001425B443EAC59E06C48CC929D913B7736531A23BB"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-numerical.json",
+      "sha256": "72DB7AF6B5AF3A4288C44DEB2D0102A64D7C49019EEF0DE696EFF58FCEDB7442"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-display-reference.json",
+      "sha256": "E90157B8400F2BAA28E8AA45E3338672D61473C8A479BC9CEDB45961B3460218"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-browser-check.js",
+      "sha256": "3DE4CB6EA405417294794335D762F94BA9F8219EF3E73BBEC0DB427E44492301"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X04-browser-check.json",
+      "sha256": "74DC6B284534C4219371BBA52391798B9A942AAD99FFDE3AFAF49E3C5EBFE9EE"
+    }
+  ]
+}

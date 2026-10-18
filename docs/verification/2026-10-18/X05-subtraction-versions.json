@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W71 signed image subtraction and known integer pixel alignment; own report excluded",
+  "files": [
+    {
+      "path": "docs/signed_subtraction_alignment.html",
+      "sha256": "FF27A5558628F6557405100484C7A456F5E8A33E174B4E7B6AA9FB7B0D60686B"
+    },
+    {
+      "path": "docs/assets/signed-subtraction-model.js",
+      "sha256": "FE48D3B61DBC8622F40BFE742B2A217E91CE76DBDA0841319942CAA04BFB201E"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/signed-subtraction.test.cjs",
+      "sha256": "7CA5609028D1131970FF5225A08F0399F3B1FD3DA95C4A906F7E78122F896855"
+    },
+    {
+      "path": "tests/helpers/signed-subtraction-reference.cjs",
+      "sha256": "5F9531A0497A2947D152AAFD584DF9A824851E4C91CD0FB794D4F37D536E0CCC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-numerical.cjs",
+      "sha256": "88B9128A920127B2602079C2F6272D16AA53E1C90F8D45530FB249A7066FB630"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-numerical.json",
+      "sha256": "224770D6BAC8460D76AC10521C213521481431CCD07F9CB8AF1AE5D97541A747"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-display-reference.json",
+      "sha256": "21DEDE7F6C39589DC3D64F62221D3D36E262BF665E2BC82010F1664CA08959FD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-browser-check.js",
+      "sha256": "41B221A019663C99593A228A368EB2ABE5ABDFACB7D6686B994988080471139F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X05-subtraction-browser-check.json",
+      "sha256": "74E0783F99DCF33CCB4C1D6AF703E966C81BB7930A6BB1C7BC6553EC5870F19D"
+    }
+  ]
+}

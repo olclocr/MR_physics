@@ -364,6 +364,59 @@
         "target": "X13-physics.html",
         "label": "X13 기본 · metHb 상태/정성 근거 검토"
       }
+    ],
+    "2026-10-18": [
+      {
+        "source": "X14-physics.md",
+        "target": "X14-physics.html",
+        "label": "X14 기본 · 방향/magic angle 제한 모형 검증"
+      },
+      {
+        "source": "publication-0105-fingerprints.md",
+        "target": "publication-0105-fingerprints.html",
+        "label": "W67 · 게시 바이트/로컬 검토 지문 대조"
+      },
+      {
+        "source": "X01-mixture-physics.md",
+        "target": "X01-mixture-physics.html",
+        "label": "X01 후속 · 두 속도 복소합/상쇄 검증"
+      },
+      {
+        "source": "W69-selected-row.md",
+        "target": "W69-selected-row.html",
+        "label": "W69 · 고정 제목 아래의 선택 행 표시 복구"
+      },
+      {
+        "source": "X13-refocusing-physics.md",
+        "target": "X13-refocusing-physics.html",
+        "label": "X13 후속 · 혈액 성분/refocusing 조건 검토"
+      },
+      {
+        "source": "X03-physics.md",
+        "target": "X03-physics.html",
+        "label": "X03 기본 · 두 획득 위상차/VENC 검증"
+      },
+      {
+        "source": "X15-physics.md",
+        "target": "X15-physics.html",
+        "label": "X15 기본 · 상수/선형 field 보정 검증"
+      },
+      {
+        "source": "X04-physics.md",
+        "target": "X04-physics.html",
+        "label": "X04 기본 · 관측창/프레임 간격 검증"
+      },
+      {
+        "source": "X05-subtraction-physics.md",
+        "target": "X05-subtraction-physics.html",
+        "label": "X05 후속 · signed 차이/공간 정합 검증"
+      },
+      {
+        "source": "X06-physics.md",
+        "target": "X06-physics.html",
+        "label": "X06 기본 · 신호비/ΔR2* 변환 검증"
+      }
     ]
-  }
+  },
+  "publicationFingerprintReport": "2026-10-18/publication-0105-fingerprints.md"
 }

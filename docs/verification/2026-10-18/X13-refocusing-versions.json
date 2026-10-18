@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W65 qualitative evidence R01-R08; no new quantitative physical model; own report excluded",
+  "files": [
+    {
+      "path": "docs/blood_refocusing_limits.html",
+      "sha256": "8B173E0F3BF0B1AA7EF2894464139518377C749629DB9B8D7BE12B078E914079"
+    },
+    {
+      "path": "docs/assets/blood-refocusing-reading.js",
+      "sha256": "F5CE9C2B296A56544E2AA5D38877E14E0EA4651FF1DDB14B20B0C30DF5617431"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-source-review.md",
+      "sha256": "35BAAC35DDE3FDD106FE8EE6D8E1BB7E9FE1863F11B9812C24785092E1F0DA93"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-display-reference.json",
+      "sha256": "2ECB901672C4F815092653712BDAC0EA3CA1BBBDDAA42AB3A3A542A0788F2024"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-browser-check.js",
+      "sha256": "6D89DD8416E1E684DDC21BA59E680A3F7C53408CAC1DCAE2E096CACE21E81871"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X13-refocusing-browser-check.json",
+      "sha256": "E6A2AD734F4ECC89C9DA5C13DC372D6C3B3EDC76BBD31CBD7F7CD3757500293E"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "browser": "155.0.8059.82",
+  "commit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "assets": 5,
+  "results": [
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "url": "https://olclocr.github.io/MR_physics/assets/ir-lesson.css",
+      "sha256": "B259DB3B6BEED3C46AB010B4C0BA218B8699C5E9194F9DD363F617B6F468249F",
+      "status": "line_endings_only",
+      "httpStatus": 200,
+      "publishedAssetSha256": "B259DB3B6BEED3C46AB010B4C0BA218B8699C5E9194F9DD363F617B6F468249F",
+      "match": true
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "url": "https://olclocr.github.io/MR_physics/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E",
+      "status": "exact",
+      "httpStatus": 200,
+      "publishedAssetSha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E",
+      "match": true
+    },
+    {
+      "path": "docs/hemorrhage_state_reading.html",
+      "url": "https://olclocr.github.io/MR_physics/hemorrhage_state_reading.html",
+      "sha256": "1FDB265C3D420C439D53F7003B72EC3DFFCB0D07F19A5D2970DF106B274DB544",
+      "status": "exact",
+      "httpStatus": 200,
+      "publishedAssetSha256": "1FDB265C3D420C439D53F7003B72EC3DFFCB0D07F19A5D2970DF106B274DB544",
+      "match": true
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-browser-check.js",
+      "url": "https://olclocr.github.io/MR_physics/verification/2026-10-17/X01-browser-check.js",
+      "sha256": "9AF69E52B35263A2EBBB990C67F6E43FDBAF270927ABBEEE910B512B8340F614",
+      "status": "exact",
+      "httpStatus": 200,
+      "publishedAssetSha256": "9AF69E52B35263A2EBBB990C67F6E43FDBAF270927ABBEEE910B512B8340F614",
+      "match": true
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-browser-check.json",
+      "url": "https://olclocr.github.io/MR_physics/verification/2026-10-17/X01-browser-check.json",
+      "sha256": "E2A045FF676F363F241ED6C08DC93CBBA44A0FB4AEA7D1ACC03A06FB68ECE87D",
+      "status": "line_endings_only",
+      "httpStatus": 200,
+      "publishedAssetSha256": "E2A045FF676F363F241ED6C08DC93CBBA44A0FB4AEA7D1ACC03A06FB68ECE87D",
+      "match": true
+    }
+  ]
+}

@@ -1,0 +1,1201 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 108,
+  "maxGraphicError": 4.983418193660327E-06,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "ratio": 1.25,
+      "inferredRate": -22.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 5
+      },
+      "ratio": 1.023413,
+      "inferredRate": -2.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 10
+      },
+      "ratio": 0.8379,
+      "inferredRate": 17.685645,
+      "bias": -22.314355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 15
+      },
+      "ratio": 1.023413,
+      "inferredRate": -2.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 20
+      },
+      "ratio": 1.25,
+      "inferredRate": -22.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 30
+      },
+      "ratio": 1.25,
+      "inferredRate": -22.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 5
+      },
+      "ratio": 0.818731,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "ratio": 0.67032,
+      "inferredRate": 40,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 15
+      },
+      "ratio": 0.818731,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 20
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 30
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 0
+      },
+      "ratio": 0.833333,
+      "inferredRate": 18.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 5
+      },
+      "ratio": 0.682276,
+      "inferredRate": 38.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 10
+      },
+      "ratio": 0.5586,
+      "inferredRate": 58.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 15
+      },
+      "ratio": 0.682276,
+      "inferredRate": 38.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 20
+      },
+      "ratio": 0.833333,
+      "inferredRate": 18.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 30
+      },
+      "ratio": 0.833333,
+      "inferredRate": 18.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "ratio": 1.25,
+      "inferredRate": -7.438118,
+      "bias": -7.438118
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 5
+      },
+      "ratio": 0.686015,
+      "inferredRate": 12.561882,
+      "bias": -7.438118
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 10
+      },
+      "ratio": 0.376493,
+      "inferredRate": 32.561882,
+      "bias": -7.438118
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 15
+      },
+      "ratio": 0.686015,
+      "inferredRate": 12.561882,
+      "bias": -7.438118
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 20
+      },
+      "ratio": 1.25,
+      "inferredRate": -7.438118,
+      "bias": -7.438118
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 30
+      },
+      "ratio": 1.25,
+      "inferredRate": -7.438118,
+      "bias": -7.438118
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 5
+      },
+      "ratio": 0.548812,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "ratio": 0.301194,
+      "inferredRate": 40,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 15
+      },
+      "ratio": 0.548812,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 20
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 30
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 0
+      },
+      "ratio": 0.833333,
+      "inferredRate": 6.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 5
+      },
+      "ratio": 0.457343,
+      "inferredRate": 26.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 10
+      },
+      "ratio": 0.250995,
+      "inferredRate": 46.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 15
+      },
+      "ratio": 0.457343,
+      "inferredRate": 26.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 20
+      },
+      "ratio": 0.833333,
+      "inferredRate": 6.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 30
+      },
+      "ratio": 0.833333,
+      "inferredRate": 6.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "ratio": 1.25,
+      "inferredRate": -3.719059,
+      "bias": -3.719059
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 5
+      },
+      "ratio": 0.376493,
+      "inferredRate": 16.280941,
+      "bias": -3.719059
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 10
+      },
+      "ratio": 0.113397,
+      "inferredRate": 36.280941,
+      "bias": -3.719059
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 15
+      },
+      "ratio": 0.376493,
+      "inferredRate": 16.280941,
+      "bias": -3.719059
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 20
+      },
+      "ratio": 1.25,
+      "inferredRate": -3.719059,
+      "bias": -3.719059
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 30
+      },
+      "ratio": 1.25,
+      "inferredRate": -3.719059,
+      "bias": -3.719059
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 5
+      },
+      "ratio": 0.301194,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "ratio": 0.090718,
+      "inferredRate": 40,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 15
+      },
+      "ratio": 0.301194,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 20
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 30
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 0
+      },
+      "ratio": 0.833333,
+      "inferredRate": 3.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 5
+      },
+      "ratio": 0.250995,
+      "inferredRate": 23.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 10
+      },
+      "ratio": 0.075598,
+      "inferredRate": 43.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 15
+      },
+      "ratio": 0.250995,
+      "inferredRate": 23.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 20
+      },
+      "ratio": 0.833333,
+      "inferredRate": 3.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 1920,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 30
+      },
+      "ratio": 0.833333,
+      "inferredRate": 3.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "ratio": 1.25,
+      "inferredRate": -22.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 5
+      },
+      "ratio": 1.023413,
+      "inferredRate": -2.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 10
+      },
+      "ratio": 0.8379,
+      "inferredRate": 17.685645,
+      "bias": -22.314355
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 15
+      },
+      "ratio": 1.023413,
+      "inferredRate": -2.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 20
+      },
+      "ratio": 1.25,
+      "inferredRate": -22.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 0.8,
+        "timeSec": 30
+      },
+      "ratio": 1.25,
+      "inferredRate": -22.314355,
+      "bias": -22.314355
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 5
+      },
+      "ratio": 0.818731,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "ratio": 0.67032,
+      "inferredRate": 40,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 15
+      },
+      "ratio": 0.818731,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 20
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1,
+        "timeSec": 30
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 0
+      },
+      "ratio": 0.833333,
+      "inferredRate": 18.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 5
+      },
+      "ratio": 0.682276,
+      "inferredRate": 38.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 10
+      },
+      "ratio": 0.5586,
+      "inferredRate": 58.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 15
+      },
+      "ratio": 0.682276,
+      "inferredRate": 38.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 20
+      },
+      "ratio": 0.833333,
+      "inferredRate": 18.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 10,
+        "baselineFactor": 1.2,
+        "timeSec": 30
+      },
+      "ratio": 0.833333,
+      "inferredRate": 18.232156,
+      "bias": 18.232156
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "ratio": 1.25,
+      "inferredRate": -7.438118,
+      "bias": -7.438118
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 5
+      },
+      "ratio": 0.686015,
+      "inferredRate": 12.561882,
+      "bias": -7.438118
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 10
+      },
+      "ratio": 0.376493,
+      "inferredRate": 32.561882,
+      "bias": -7.438118
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 15
+      },
+      "ratio": 0.686015,
+      "inferredRate": 12.561882,
+      "bias": -7.438118
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 20
+      },
+      "ratio": 1.25,
+      "inferredRate": -7.438118,
+      "bias": -7.438118
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 0.8,
+        "timeSec": 30
+      },
+      "ratio": 1.25,
+      "inferredRate": -7.438118,
+      "bias": -7.438118
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 5
+      },
+      "ratio": 0.548812,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "ratio": 0.301194,
+      "inferredRate": 40,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 15
+      },
+      "ratio": 0.548812,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 20
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1,
+        "timeSec": 30
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 0
+      },
+      "ratio": 0.833333,
+      "inferredRate": 6.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 5
+      },
+      "ratio": 0.457343,
+      "inferredRate": 26.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 10
+      },
+      "ratio": 0.250995,
+      "inferredRate": 46.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 15
+      },
+      "ratio": 0.457343,
+      "inferredRate": 26.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 20
+      },
+      "ratio": 0.833333,
+      "inferredRate": 6.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 30,
+        "baselineFactor": 1.2,
+        "timeSec": 30
+      },
+      "ratio": 0.833333,
+      "inferredRate": 6.077385,
+      "bias": 6.077385
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 0
+      },
+      "ratio": 1.25,
+      "inferredRate": -3.719059,
+      "bias": -3.719059
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 5
+      },
+      "ratio": 0.376493,
+      "inferredRate": 16.280941,
+      "bias": -3.719059
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 10
+      },
+      "ratio": 0.113397,
+      "inferredRate": 36.280941,
+      "bias": -3.719059
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 15
+      },
+      "ratio": 0.376493,
+      "inferredRate": 16.280941,
+      "bias": -3.719059
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 20
+      },
+      "ratio": 1.25,
+      "inferredRate": -3.719059,
+      "bias": -3.719059
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 0.8,
+        "timeSec": 30
+      },
+      "ratio": 1.25,
+      "inferredRate": -3.719059,
+      "bias": -3.719059
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 0
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 5
+      },
+      "ratio": 0.301194,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 10
+      },
+      "ratio": 0.090718,
+      "inferredRate": 40,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 15
+      },
+      "ratio": 0.301194,
+      "inferredRate": 20,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 20
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1,
+        "timeSec": 30
+      },
+      "ratio": 1,
+      "inferredRate": 0,
+      "bias": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 0
+      },
+      "ratio": 0.833333,
+      "inferredRate": 3.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 5
+      },
+      "ratio": 0.250995,
+      "inferredRate": 23.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 10
+      },
+      "ratio": 0.075598,
+      "inferredRate": 43.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 15
+      },
+      "ratio": 0.250995,
+      "inferredRate": 23.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 20
+      },
+      "ratio": 0.833333,
+      "inferredRate": 3.038693,
+      "bias": 3.038693
+    },
+    {
+      "width": 390,
+      "options": {
+        "teMs": 60,
+        "baselineFactor": 1.2,
+        "timeSec": 30
+      },
+      "ratio": 0.833333,
+      "inferredRate": 3.038693,
+      "bias": 3.038693
+    }
+  ]
+}

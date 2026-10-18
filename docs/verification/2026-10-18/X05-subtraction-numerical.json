@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-18",
+  "cases": 18,
+  "pixels": 2304,
+  "max": {
+    "pixel": 1.6653345369377348e-16,
+    "integral": 1.7763568394002505e-15,
+    "roiMean": 5.551115123125783e-17,
+    "conservation": 2.220446049250313e-15
+  },
+  "examples": [
+    {
+      "options": {
+        "enhancement": 0,
+        "shiftMm": 8,
+        "alignment": "none"
+      },
+      "roiMean": -0.06666666666666671,
+      "positiveArea": 2.400000000000001,
+      "negativeArea": -2.4000000000000004,
+      "totalArea": 1.6653345369377348e-16,
+      "trueArea": 0
+    },
+    {
+      "options": {
+        "enhancement": 0.3,
+        "shiftMm": 8,
+        "alignment": "none"
+      },
+      "roiMean": 0.033333333333333305,
+      "positiveArea": 6.000000000000002,
+      "negativeArea": -2.4000000000000004,
+      "totalArea": 3.600000000000002,
+      "trueArea": 3.5999999999999996
+    },
+    {
+      "options": {
+        "enhancement": 0.3,
+        "shiftMm": 8,
+        "alignment": "known"
+      },
+      "roiMean": 0.3,
+      "positiveArea": 3.5999999999999996,
+      "negativeArea": 0,
+      "totalArea": 3.5999999999999996,
+      "trueArea": 3.5999999999999996
+    }
+  ]
+}

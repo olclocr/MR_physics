@@ -1,0 +1,1525 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 126,
+  "maxGraphicError": 2.191773660342733E-07,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": -1.570796,
+      "velocity": -150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": -1.570796,
+      "velocity": -150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": -1.570796,
+      "velocity": -150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": -1.570796,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": -1.570796,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": -1.570796,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": -0.785398,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": -0.785398,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": -0.785398,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 1.570796,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 1.570796,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 1.570796,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0.785398,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0.785398,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0.785398,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 1.570796,
+      "velocity": 150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 1.570796,
+      "velocity": 150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 1.570796,
+      "velocity": 150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": -1.570796,
+      "velocity": -150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": -1.570796,
+      "velocity": -150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": -1.570796,
+      "velocity": -150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": -1.570796,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": -1.570796,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": -1.570796,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": -0.785398,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": -0.785398,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": -75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": -0.785398,
+      "velocity": -75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 0,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 75,
+      "boundary": true,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 1.570796,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 1.570796,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 1.570796,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0.785398,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0.785398,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 75,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0.785398,
+      "velocity": 75,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 150,
+      "boundary": true,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 1.570796,
+      "velocity": 150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 1.570796,
+      "velocity": 150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 150,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 1.570796,
+      "velocity": 150,
+      "boundary": false,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 75,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 75,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 5
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 150,
+        "commonPhaseDeg": -120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 0
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 150,
+        "commonPhaseDeg": 120
+      },
+      "phase": 0,
+      "velocity": 0,
+      "boundary": false,
+      "segments": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 300,
+        "commonPhaseDeg": -120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 0
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "velocityCmS": 300,
+        "vencCmS": 300,
+        "commonPhaseDeg": 120
+      },
+      "phase": 3.141593,
+      "velocity": 300,
+      "boundary": true,
+      "segments": 2
+    }
+  ]
+}

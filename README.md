@@ -54,7 +54,15 @@ This repository contains the following interactive simulations located in the [d
 - [E02 basics · Local inversion, sampling and spatial error](docs/mre_inversion_limits.html): compares complex modulus estimates with a fixed known elastic material and explicit exclusion rules. [Partial-model validation](docs/verification/2026-10-17/E02-physics.md).
 - [E01 follow-up · Motion encoding and MR phase](docs/mre_motion_encoding.html): integrates a prescribed effective gradient against known transverse displacement, separating polarity and synchronization from material properties. [Partial-model validation](docs/verification/2026-10-17/E01-encoding-physics.md).
 - [E01 basics · Shear waves and wavelength](docs/mre_shear_wave.html): distinguishes frequency-dependent wavelength from a known uniform elastic modulus. [Partial-model validation](docs/verification/2026-10-17/E01-physics.md).
+- [X01 follow-up · Two-velocity complex signal mixing](docs/flow_velocity_mixture.html): contrasts weighted complex sums with sums of magnitudes, preserving cancellation, undefined phase, and unit single-population limits. [Conditional-model validation](docs/verification/2026-10-18/X01-mixture-physics.md).
+- [X03 basics · Phase difference and VENC](docs/phase_contrast_venc.html): compares common-phase cancellation, single-velocity aliasing, and the shared ±π boundary using two symmetric encodings. [Conditional-model validation](docs/verification/2026-10-18/X03-physics.md).
+- [X15 basics · Constant and linear field correction](docs/linear_field_correction.html): distinguishes mean frequency, spatial spread, and coherent signal after ideal projection of a known one-dimensional field. [Conditional-model validation](docs/verification/2026-10-18/X15-physics.md).
+- [X04 basics · Temporal window and frame spacing](docs/temporal_window_bolus.html): contrasts instantaneous signal, uniform window averages, and sampled peaks in a defined time curve. [Conditional-model validation](docs/verification/2026-10-18/X04-physics.md).
+- [X05 follow-up · Signed subtraction and alignment](docs/signed_subtraction_alignment.html): separates true signal changes from between-image integer translations, with signed boundaries, fixed-ROI readings, and global integrals. [Conditional-model validation](docs/verification/2026-10-18/X05-subtraction-physics.md).
+- [X06 basics · Signal ratio and ΔR2* conversion](docs/dsc_signal_rate.html): distinguishes echo time, dynamic time, and baseline-input bias in a positive monoexponential rate model. [Conditional-model validation](docs/verification/2026-10-18/X06-physics.md).
+- [X14 basics · Orientation and magic angle](docs/magic_angle_orientation.html): separates the angular factor from a defined finite R2 floor and compares orientation with TE in a controlled decay model. [Conditional-model validation](docs/verification/2026-10-18/X14-physics.md).
 - [X13 basics · Reading methemoglobin states](docs/hemorrhage_state_reading.html): compares compartment/concentration conditions in qualitative spin-echo evidence, keeping author proposals, GRE scope, and timing inference distinct. [Claim review](docs/verification/2026-10-17/X13-physics.md).
+- [X13 follow-up · Blood products and refocusing limits](docs/blood_refocusing_limits.html): distinguishes cell integrity, echo spacing, blood T2 measurements, and rat storage-iron linewidth evidence before transferring claims to GRE. [Claim review](docs/verification/2026-10-18/X13-refocusing-physics.md).
 - [X02 basics · Slab inflow and repeated RF saturation](docs/inflow_rf_saturation.html): links depth and velocity to RF exposure, comparing fresh inflow and stationary spins with the same T1. [Conditional-model validation](docs/verification/2026-10-17/X02-physics.md).
 - [X01 basics · Constant velocity and bipolar gradient phase](docs/flow_gradient_phase.html): compares stationary and moving spin trajectories, gradient moments, phase sign, and preserved single-spin magnitude. [Conditional-model validation](docs/verification/2026-10-17/X01-physics.md).
 - [X05 basics · Concentration and T1/T2* competition](docs/contrast_concentration_competition.html): compares two relaxation effects in the same ideal spoiled GRE and shows when a shorter T1 still gives less signal. Educational coefficients, no drug or dose prescription. [Model validation](docs/verification/2026-10-17/X05-physics.md).
@@ -165,6 +173,8 @@ MRI/NMR 물리학의 핵심 직관, 자전거 바퀴 세차운동 비유 및 공
 별도의 빌드나 추가 프로그램 설치가 필요하지 않습니다. 저장소를 클론한 후 `docs` 폴더 안의 `.html` 파일을 브라우저로 직접 열어 실행하거나 위의 라이브 링크를 이용해 주세요.
 
 ## 과학 검증 기록
+
+- [W69 · 고정 제목 아래의 선택 행 표시 복구](docs/verification/2026-10-18/W69-selected-row.md): 세 기존 화면의 스크롤 표시를 수정하고 계산/물리 판정과 구별했다.
 
 [2026-10-14 검증 폴더](docs/verification/2026-10-14/README.md)에 수정 전 보고서, 수정 내역, 수치 검산과 문헌 근거를 보존했습니다. [웹에서 렌더링된 보고서](https://olclocr.github.io/MR_physics/verification/2026-10-14/)도 읽을 수 있습니다.
 

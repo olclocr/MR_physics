@@ -1,0 +1,8 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),M=require('../../assets/signed-subtraction-model.js'),R=require('../../../tests/helpers/signed-subtraction-reference.cjs');
+const refs=[],max={pixel:0,integral:0,roiMean:0,conservation:0};
+for(const enhancement of [0,.1,.3])for(const shiftMm of [-8,0,8])for(const alignment of ['none','known']){
+ const options={enhancement,shiftMm,alignment},a=M.calculate(options),b=R.calculate(options);
+ for(const [i,p]of a.pixels.entries())for(const k of ['xMm','before','shifted','selected','difference'])max.pixel=Math.max(max.pixel,Math.abs(p[k]-b.pixels[i][k]));for(const k of ['positiveArea','negativeArea','totalArea','trueArea'])max.integral=Math.max(max.integral,Math.abs(a[k]-b[k]));max.roiMean=Math.max(max.roiMean,Math.abs(a.roiMean-b.roiMean));max.conservation=Math.max(max.conservation,Math.abs(a.totalArea-12*enhancement));refs.push(b);
+}
+assert(max.pixel<1e-12&&max.integral<1e-10&&max.roiMean<1e-12&&max.conservation<1e-10);
+const examples=[M.calculate({enhancement:0,shiftMm:8}),M.calculate({enhancement:.3,shiftMm:8}),M.calculate({enhancement:.3,shiftMm:8,alignment:'known'})].map(r=>({options:r.options,roiMean:r.roiMean,positiveArea:r.positiveArea,negativeArea:r.negativeArea,totalArea:r.totalArea,trueArea:r.trueArea}));const result={date:'2026-10-18',cases:refs.length,pixels:refs.length*128,max,examples};fs.writeFileSync(path.join(__dirname,'X05-subtraction-numerical.json'),JSON.stringify(result,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'X05-subtraction-display-reference.json'),JSON.stringify(refs)+'\n');console.log(JSON.stringify(result));

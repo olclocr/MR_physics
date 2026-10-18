@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "uncommitted": true,
+  "scope": "W64 two opposite constant velocities and fraction-weighted complex sum; own report excluded",
+  "files": [
+    {
+      "path": "docs/flow_velocity_mixture.html",
+      "sha256": "9FB1471DDFDE5E90A371500531F667CB7F77113BF71F741EA287070B0505344E"
+    },
+    {
+      "path": "docs/assets/flow-mixture-model.js",
+      "sha256": "2DD2D294E3BCE4BC316C9F575777CBDE9C624D70F3AD63621711FC97E0FE6FD7"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/flow-mixture.test.cjs",
+      "sha256": "ACFF4A066B4205D405161CDB50C7616371287E26FFFA09B0C59B21C648C5A217"
+    },
+    {
+      "path": "tests/helpers/flow-mixture-reference.cjs",
+      "sha256": "3D189478459FEE88885053393172CB58462226E0B0D0272F0F5796B539F8FE6A"
+    },
+    {
+      "path": "tests/helpers/flow-gradient-phase-reference.cjs",
+      "sha256": "D9D2E2CC88EBE908B3F3627B4026641B66A0D007A3B74301B8E3AAC1151D5C56"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-numerical.cjs",
+      "sha256": "A463C288CDAFDCF0393DC2523388C3F9268734F53C590CC12E44FF6F1EEEB0F4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-numerical.json",
+      "sha256": "208F0F857C58217DB97D7B5A5F87D2C8CBB5522658B7108E78D10CA22717C018"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-display-reference.json",
+      "sha256": "B7CF1C9B0049F971C1A1553E9BF3B4C29C68CD1B2544A06B3B0D4EA2BCEC3733"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-browser-check.js",
+      "sha256": "8A64CB7846D41D63EFBCEF4D03E900B028387C33093B6E7E7BEAB880537A4D37"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-mixture-browser-check.json",
+      "sha256": "40865CC31C70A4323C6CF1BEFA6CC8441BD137EFFB4C3AEAF2BFE721A8DA2E4D"
+    }
+  ]
+}

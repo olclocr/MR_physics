@@ -79,6 +79,14 @@ function buildReports({baseDir = path.resolve(__dirname, '../docs/verification')
     }
     return url;
   };
+  let fingerprintLink = '';
+  if (reports.publicationFingerprintReport) {
+    const target = path.resolve(baseDir, reports.publicationFingerprintReport);
+    const relative = path.relative(baseDir, target);
+    if (relative === '..' || relative.startsWith('..' + path.sep) || path.isAbsolute(relative)) throw new Error('Fingerprint report must be inside the verification directory');
+    if (!fs.existsSync(target)) throw new Error('Missing fingerprint report: ' + target);
+    fingerprintLink = resolveLink(path.relative(folder, target).split(path.sep).join('/'));
+  }
   // Read every registered input before rendering or writing anything, including on partial runs.
   const inputs = documents.map(doc => ({...doc, markdown: fs.readFileSync(path.join(folder, doc.source), 'utf8')}));
   const selected = inputs.filter(doc => !sources.length || sources.includes(doc.source));
@@ -88,7 +96,8 @@ function buildReports({baseDir = path.resolve(__dirname, '../docs/verification')
     const nav=documents.map(doc => `<a href="${escape(doc.target)}"${compact&&doc.target===target?' aria-current="page"':''}>${escape(doc.label)}</a>`).join('');
     const extraCss=compact?'.report-list{flex-basis:100%}.report-list summary{cursor:pointer;font-weight:700}.report-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 18px;margin-top:14px}.report-links a[aria-current=page]{font-weight:700}summary:focus-visible{outline:3px solid #7c3aed;outline-offset:4px}':'';
     const navigation=compact?`<a href="../../index.html">시뮬레이션 홈</a><a href="${escape(source)}">Markdown 원문</a><details class="report-list"><summary>검증 보고서 목록 (${documents.length})</summary><div class="report-links">${nav}</div></details>`:`<a href="../../index.html">시뮬레이션 홈</a>${nav}<a href="${escape(source)}">Markdown 원문</a>`;
-    const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}${extraCss}</style></head><body><main><nav>${navigation}</nav>${render(markdown, resolveLink)}<footer>${escape(date)} · MR Physics 과학 검증 기록</footer></main></body></html>\n`;
+    const fingerprints=fingerprintLink?`<p class="fingerprint-note">검토 SHA-256는 당시 로컬 바이트 기준입니다. 게시 과정의 줄바꿈 정규화는 별도로 대조하며, <a href="${escape(fingerprintLink)}">게시 바이트 대조</a>에서 대상 범위와 커밋을 확인할 수 있습니다.</p>`:'';
+    const html=`<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><style>${css}${extraCss}</style></head><body><main><nav>${navigation}</nav>${render(markdown, resolveLink)}<footer>${escape(date)} · MR Physics 과학 검증 기록${fingerprints}</footer></main></body></html>\n`;
     return {source: path.join(folder, source), target: path.join(folder, target), html};
   });
   const generated = new Set(output.map(doc => path.resolve(doc.target)));

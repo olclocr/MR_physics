@@ -1,0 +1,362 @@
+{
+  "commit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "reports": 71,
+  "onlyFingerprintNotice": true,
+  "checked": [
+    {
+      "path": "docs/verification/2026-10-14/index.html",
+      "previousSha256": "adfaa70f46df2e8a041204eca99845510ced7fa885deea0e15726ff2156973e7",
+      "withoutNewNoticeSha256": "adfaa70f46df2e8a041204eca99845510ced7fa885deea0e15726ff2156973e7"
+    },
+    {
+      "path": "docs/verification/2026-10-14/original-review.html",
+      "previousSha256": "64a01bdc849a7e1b068df7f0adf7af710699eafd7cfe49da7aadccb2240c75da",
+      "withoutNewNoticeSha256": "64a01bdc849a7e1b068df7f0adf7af710699eafd7cfe49da7aadccb2240c75da"
+    },
+    {
+      "path": "docs/verification/2026-10-14/fix-validation.html",
+      "previousSha256": "3f165d5fdc7c584f99398cb694c4632927621aea5f853363ff3b61bc34905dd7",
+      "withoutNewNoticeSha256": "3f165d5fdc7c584f99398cb694c4632927621aea5f853363ff3b61bc34905dd7"
+    },
+    {
+      "path": "docs/verification/2026-10-14/contrast-chapter.html",
+      "previousSha256": "ecdf9abc78ba0df434ab24385b129df87493c072b986776bc8f0f82b1c0abeb8",
+      "withoutNewNoticeSha256": "ecdf9abc78ba0df434ab24385b129df87493c072b986776bc8f0f82b1c0abeb8"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C01-physics.html",
+      "previousSha256": "77e8a565705bf262e22b680eabebbc760f929656eb37235ff1d5d1d88454bfa2",
+      "withoutNewNoticeSha256": "77e8a565705bf262e22b680eabebbc760f929656eb37235ff1d5d1d88454bfa2"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B02-physics.html",
+      "previousSha256": "e6e6a59046cf6bc90291a1a0d1129e5fc0a6eed2997a14e00d12f5333f1d9806",
+      "withoutNewNoticeSha256": "e6e6a59046cf6bc90291a1a0d1129e5fc0a6eed2997a14e00d12f5333f1d9806"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B03-physics.html",
+      "previousSha256": "26bf2ee43fddcc513a687ebbdfd14acc1f98969eb589edebd967a3e5fe8b6cf8",
+      "withoutNewNoticeSha256": "26bf2ee43fddcc513a687ebbdfd14acc1f98969eb589edebd967a3e5fe8b6cf8"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B01-physics.html",
+      "previousSha256": "c2a48be7780f45582d87d16114b6b6cb827eee70bd511c4ca28478fec126c421",
+      "withoutNewNoticeSha256": "c2a48be7780f45582d87d16114b6b6cb827eee70bd511c4ca28478fec126c421"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B04-physics.html",
+      "previousSha256": "fee3402bb7571ac097d4cc6d69fa414cada49852d75b1d6fcc303a125af4a282",
+      "withoutNewNoticeSha256": "fee3402bb7571ac097d4cc6d69fa414cada49852d75b1d6fcc303a125af4a282"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C02-physics.html",
+      "previousSha256": "4253e55fcbe8855af568bc9739e82600c3098aa95b6620a02b6e326dbc1d2190",
+      "withoutNewNoticeSha256": "4253e55fcbe8855af568bc9739e82600c3098aa95b6620a02b6e326dbc1d2190"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C03-physics.html",
+      "previousSha256": "c15edf4a603e2b107d57f704558fec075cc2524f582fc3cbd40a5714912b46ff",
+      "withoutNewNoticeSha256": "c15edf4a603e2b107d57f704558fec075cc2524f582fc3cbd40a5714912b46ff"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B05-physics.html",
+      "previousSha256": "99088e08db184527998fea7b59c19177084ddca9c0e879221ee61718ef2a3dbd",
+      "withoutNewNoticeSha256": "99088e08db184527998fea7b59c19177084ddca9c0e879221ee61718ef2a3dbd"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G01-physics.html",
+      "previousSha256": "d659d7a048aaf44268f9a2a2be0f575dea6b1d5406a271abc9f902d279ce122f",
+      "withoutNewNoticeSha256": "d659d7a048aaf44268f9a2a2be0f575dea6b1d5406a271abc9f902d279ce122f"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G02-physics.html",
+      "previousSha256": "6b4fd2ecf444ca6a66011371181fff5d6f98dbd77e7cd8322d2ae106e404645e",
+      "withoutNewNoticeSha256": "6b4fd2ecf444ca6a66011371181fff5d6f98dbd77e7cd8322d2ae106e404645e"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q01-physics.html",
+      "previousSha256": "ba4f2a28495074193e24c0857b49d2b5dabd1bf7ef4e6d9daec88a5e87dc4b02",
+      "withoutNewNoticeSha256": "ba4f2a28495074193e24c0857b49d2b5dabd1bf7ef4e6d9daec88a5e87dc4b02"
+    },
+    {
+      "path": "docs/verification/2026-10-15/B00-physics.html",
+      "previousSha256": "270dd91802cf80fa536a6e10989362976689cc5ec06c30ca1395b83065ba183f",
+      "withoutNewNoticeSha256": "270dd91802cf80fa536a6e10989362976689cc5ec06c30ca1395b83065ba183f"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C04-physics.html",
+      "previousSha256": "4511a5681dbb7cbfbe126c5e54a85c624ff18a08d075d22c46758de20516b188",
+      "withoutNewNoticeSha256": "4511a5681dbb7cbfbe126c5e54a85c624ff18a08d075d22c46758de20516b188"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C05-physics.html",
+      "previousSha256": "0faa0d4068fbaf0d6a59a487d94ae01c004998cabdb90acf9dd66ff8d2898707",
+      "withoutNewNoticeSha256": "0faa0d4068fbaf0d6a59a487d94ae01c004998cabdb90acf9dd66ff8d2898707"
+    },
+    {
+      "path": "docs/verification/2026-10-15/G03-physics.html",
+      "previousSha256": "80ca3de5a0c0eb2469aaf9f2dd63999fc4059193059567c69136b7970ab9381f",
+      "withoutNewNoticeSha256": "80ca3de5a0c0eb2469aaf9f2dd63999fc4059193059567c69136b7970ab9381f"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q02-physics.html",
+      "previousSha256": "7a2c6a354f7651dfc38af47c3018ed298f19e26fcb217f28d20f4f088bbdc16e",
+      "withoutNewNoticeSha256": "7a2c6a354f7651dfc38af47c3018ed298f19e26fcb217f28d20f4f088bbdc16e"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q03-physics.html",
+      "previousSha256": "0f7b36d4a417b7fbe492ec51d53276a2a8484049f61663cd85391a6a62044992",
+      "withoutNewNoticeSha256": "0f7b36d4a417b7fbe492ec51d53276a2a8484049f61663cd85391a6a62044992"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C06-physics.html",
+      "previousSha256": "33a8b00aed49aff6b0c075fa955d5c93c7ed48ea00957190573790fbedb16e69",
+      "withoutNewNoticeSha256": "33a8b00aed49aff6b0c075fa955d5c93c7ed48ea00957190573790fbedb16e69"
+    },
+    {
+      "path": "docs/verification/2026-10-15/C07-physics.html",
+      "previousSha256": "806e3cd454ad6aaedfbefe91b2e4269790bb45a64c3926c6938af6934e7b7bab",
+      "withoutNewNoticeSha256": "806e3cd454ad6aaedfbefe91b2e4269790bb45a64c3926c6938af6934e7b7bab"
+    },
+    {
+      "path": "docs/verification/2026-10-15/Q04-physics.html",
+      "previousSha256": "6ad60eee128ac860df2fe5a1eb60634274c728fce11ac9da8966d77fbcd09f58",
+      "withoutNewNoticeSha256": "6ad60eee128ac860df2fe5a1eb60634274c728fce11ac9da8966d77fbcd09f58"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F01-physics.html",
+      "previousSha256": "5af90a44ee55bf292483bb697c0a84aca6647d476244707ef4ce2ce05de23d26",
+      "withoutNewNoticeSha256": "5af90a44ee55bf292483bb697c0a84aca6647d476244707ef4ce2ce05de23d26"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F02-physics.html",
+      "previousSha256": "e1e1d2da8143ef6e174f6c4c492a82a8fa097c63400dc3bdff8648f904c14d5f",
+      "withoutNewNoticeSha256": "e1e1d2da8143ef6e174f6c4c492a82a8fa097c63400dc3bdff8648f904c14d5f"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-physics.html",
+      "previousSha256": "0ff430fb750a6214250d6715b29e2377f46674ba4a888e2ed38c209d99bef883",
+      "withoutNewNoticeSha256": "0ff430fb750a6214250d6715b29e2377f46674ba4a888e2ed38c209d99bef883"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F04-physics.html",
+      "previousSha256": "611f3e4826671c6d42935c19f4c5efca5b50849f3634d38f0fbd7918012e076d",
+      "withoutNewNoticeSha256": "611f3e4826671c6d42935c19f4c5efca5b50849f3634d38f0fbd7918012e076d"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D01-physics.html",
+      "previousSha256": "abcf10f497b8556ae568ecf270218785f09f5ab8c4086765e64322647cb204c4",
+      "withoutNewNoticeSha256": "abcf10f497b8556ae568ecf270218785f09f5ab8c4086765e64322647cb204c4"
+    },
+    {
+      "path": "docs/verification/2026-10-15/D02-physics.html",
+      "previousSha256": "cd6db2fabe24ad676d7f90ba53643a498f7821eeca936b0f1c78868c373f116a",
+      "withoutNewNoticeSha256": "cd6db2fabe24ad676d7f90ba53643a498f7821eeca936b0f1c78868c373f116a"
+    },
+    {
+      "path": "docs/verification/2026-10-15/F03-water-physics.html",
+      "previousSha256": "2fb8319b03bf5ede5652ef17d59e9ea8bbccd265585cfe69e404a02ffa967d94",
+      "withoutNewNoticeSha256": "2fb8319b03bf5ede5652ef17d59e9ea8bbccd265585cfe69e404a02ffa967d94"
+    },
+    {
+      "path": "docs/verification/2026-10-16/D03-physics.html",
+      "previousSha256": "997299fbb6e080f8f68733fcabcf5d018c572745bfd463846ba44cf19fa5b996",
+      "withoutNewNoticeSha256": "997299fbb6e080f8f68733fcabcf5d018c572745bfd463846ba44cf19fa5b996"
+    },
+    {
+      "path": "docs/verification/2026-10-16/S01-physics.html",
+      "previousSha256": "c1ed339af201c817eb18ed5a08d29ae465558f093f867cfab83f44f4b054882e",
+      "withoutNewNoticeSha256": "c1ed339af201c817eb18ed5a08d29ae465558f093f867cfab83f44f4b054882e"
+    },
+    {
+      "path": "docs/verification/2026-10-16/S01-swi-physics.html",
+      "previousSha256": "0b8468a5fb39c09d2e0785c5e106ae73d040fb491aa6c29bc4c9f007e373ad5c",
+      "withoutNewNoticeSha256": "0b8468a5fb39c09d2e0785c5e106ae73d040fb491aa6c29bc4c9f007e373ad5c"
+    },
+    {
+      "path": "docs/verification/2026-10-16/C08-physics.html",
+      "previousSha256": "89884a2f41bb6d733370a7fcf2ee92d3dc8aa0b8dd48ef9ca5ab77da1584033e",
+      "withoutNewNoticeSha256": "89884a2f41bb6d733370a7fcf2ee92d3dc8aa0b8dd48ef9ca5ab77da1584033e"
+    },
+    {
+      "path": "docs/verification/2026-10-16/C08-contrast-physics.html",
+      "previousSha256": "71bb7cf4355875538924369dd1c0eb955df57aeaa27d6bf29b84adb97195e129",
+      "withoutNewNoticeSha256": "71bb7cf4355875538924369dd1c0eb955df57aeaa27d6bf29b84adb97195e129"
+    },
+    {
+      "path": "docs/verification/2026-10-16/Q05-physics.html",
+      "previousSha256": "2bb3bb1c9876024ab7793cb0548d19179a903bdb5e6de51be5c5322898710e3f",
+      "withoutNewNoticeSha256": "2bb3bb1c9876024ab7793cb0548d19179a903bdb5e6de51be5c5322898710e3f"
+    },
+    {
+      "path": "docs/verification/2026-10-16/Q06-physics.html",
+      "previousSha256": "7f3ce8928ebf8be4a708d5e219e9f3e539b2018f64a9e1c710cf1defc8b966d7",
+      "withoutNewNoticeSha256": "7f3ce8928ebf8be4a708d5e219e9f3e539b2018f64a9e1c710cf1defc8b966d7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/Q07-physics.html",
+      "previousSha256": "dccdccade87ded49e1080ed27e45445d1825085c610790270d3e9f9bcfc76fba",
+      "withoutNewNoticeSha256": "dccdccade87ded49e1080ed27e45445d1825085c610790270d3e9f9bcfc76fba"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A01-physics.html",
+      "previousSha256": "73555c5415d84fc15f926189271512c71e4e926f8fcf4ae65e329b3f477aa9e0",
+      "withoutNewNoticeSha256": "73555c5415d84fc15f926189271512c71e4e926f8fcf4ae65e329b3f477aa9e0"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A02-physics.html",
+      "previousSha256": "fd9861d6a9192da36a90298d50672ee5b184d4f4f869ce3d5b53f0affe3740f1",
+      "withoutNewNoticeSha256": "fd9861d6a9192da36a90298d50672ee5b184d4f4f869ce3d5b53f0affe3740f1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A03-physics.html",
+      "previousSha256": "6a85987c066f6e01ecd5118a94be7c4171ff611056066f6329927200374b3435",
+      "withoutNewNoticeSha256": "6a85987c066f6e01ecd5118a94be7c4171ff611056066f6329927200374b3435"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A04-physics.html",
+      "previousSha256": "11662751c500b295bd2fce63bf2cab433dfc4eddd49c914e72616fa7c49bcd5f",
+      "withoutNewNoticeSha256": "11662751c500b295bd2fce63bf2cab433dfc4eddd49c914e72616fa7c49bcd5f"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A05-physics.html",
+      "previousSha256": "3e9decedded88c52539fdfdfd72ed4e74b3deb46849b83da8335dc7cbe5f962f",
+      "withoutNewNoticeSha256": "3e9decedded88c52539fdfdfd72ed4e74b3deb46849b83da8335dc7cbe5f962f"
+    },
+    {
+      "path": "docs/verification/2026-10-17/A06-physics.html",
+      "previousSha256": "45baac9223d101007868e0afa731a1cfe7deb20957cf00427e19ad49a5dd38ee",
+      "withoutNewNoticeSha256": "45baac9223d101007868e0afa731a1cfe7deb20957cf00427e19ad49a5dd38ee"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M01-physics.html",
+      "previousSha256": "e12e11b3bed707891293784a9d44e57a995270f98e110cd96e5dc784fcc28ddc",
+      "withoutNewNoticeSha256": "e12e11b3bed707891293784a9d44e57a995270f98e110cd96e5dc784fcc28ddc"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M01-limits-physics.html",
+      "previousSha256": "26dae4d936b141bb5858963e1d64e3bd38898fd19b00b4a0e91a0788288bde01",
+      "withoutNewNoticeSha256": "26dae4d936b141bb5858963e1d64e3bd38898fd19b00b4a0e91a0788288bde01"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-physics.html",
+      "previousSha256": "26f919dab63a693e874aed7c000c7377105d3da6e7c79949b7b73548c22f96e9",
+      "withoutNewNoticeSha256": "26f919dab63a693e874aed7c000c7377105d3da6e7c79949b7b73548c22f96e9"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M03-physics.html",
+      "previousSha256": "174585f7281566b9132e3800927860ad224976cdcbfb7f65981f095623d9408d",
+      "withoutNewNoticeSha256": "174585f7281566b9132e3800927860ad224976cdcbfb7f65981f095623d9408d"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-physics.html",
+      "previousSha256": "74080beb5bd16798b4beb9888ae6e572efe17a84785b3f8f248e0d62352f1493",
+      "withoutNewNoticeSha256": "74080beb5bd16798b4beb9888ae6e572efe17a84785b3f8f248e0d62352f1493"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-echo-physics.html",
+      "previousSha256": "dac73c893ba78efb9f5d1c222cde6c9420bf57819c694622f91307477d7578f1",
+      "withoutNewNoticeSha256": "dac73c893ba78efb9f5d1c222cde6c9420bf57819c694622f91307477d7578f1"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N01-physics.html",
+      "previousSha256": "27fa5ea5c01f06dd3703fbb079cd4630e363be6282897da3c228e2a858e58b79",
+      "withoutNewNoticeSha256": "27fa5ea5c01f06dd3703fbb079cd4630e363be6282897da3c228e2a858e58b79"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N02-physics.html",
+      "previousSha256": "00b91c280463f53d2a76f117f84125f4e902570ebae57efeca8f30d566f11173",
+      "withoutNewNoticeSha256": "00b91c280463f53d2a76f117f84125f4e902570ebae57efeca8f30d566f11173"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-physics.html",
+      "previousSha256": "81dfe64f4c1c2b08eb72fae700cd651356102b3368fbeab3b86549656e24e701",
+      "withoutNewNoticeSha256": "81dfe64f4c1c2b08eb72fae700cd651356102b3368fbeab3b86549656e24e701"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-physics.html",
+      "previousSha256": "b0f247af1586c617af60dc3f102ddd04c3b6e90a007a9edd4da26c4c1c332382",
+      "withoutNewNoticeSha256": "b0f247af1586c617af60dc3f102ddd04c3b6e90a007a9edd4da26c4c1c332382"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E01-encoding-physics.html",
+      "previousSha256": "50943bc143e9ede4c93ba4dba1fd2caa09cbe7c2a85a96fc2bc50e1aa1dbaff5",
+      "withoutNewNoticeSha256": "50943bc143e9ede4c93ba4dba1fd2caa09cbe7c2a85a96fc2bc50e1aa1dbaff5"
+    },
+    {
+      "path": "docs/verification/2026-10-17/E02-physics.html",
+      "previousSha256": "6e67a712aebf346f56498f8f577098d83352b4e598779eccf1321bf01bfdc5d7",
+      "withoutNewNoticeSha256": "6e67a712aebf346f56498f8f577098d83352b4e598779eccf1321bf01bfdc5d7"
+    },
+    {
+      "path": "docs/verification/2026-10-17/S02-physics.html",
+      "previousSha256": "6d3fb70f6d0c39dd405e829ca234c388f7a5b8792b0e7b97c1184891aa148ab8",
+      "withoutNewNoticeSha256": "6d3fb70f6d0c39dd405e829ca234c388f7a5b8792b0e7b97c1184891aa148ab8"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI01-physics.html",
+      "previousSha256": "422a916c852548ebeadbbaeaff8d358579f12c924168e9f85eeecbcdbc84fa18",
+      "withoutNewNoticeSha256": "422a916c852548ebeadbbaeaff8d358579f12c924168e9f85eeecbcdbc84fa18"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-physics.html",
+      "previousSha256": "4108ccee7673dedc621a502692e6bb200c8c9c1e7443f7ee3b41afad8a519883",
+      "withoutNewNoticeSha256": "4108ccee7673dedc621a502692e6bb200c8c9c1e7443f7ee3b41afad8a519883"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-t2-physics.html",
+      "previousSha256": "c025b7f1d5142c29a446af34cf0c3f3ca78e41278353eebc0cbf2c4ea27ede32",
+      "withoutNewNoticeSha256": "c025b7f1d5142c29a446af34cf0c3f3ca78e41278353eebc0cbf2c4ea27ede32"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI02-physics.html",
+      "previousSha256": "6e3944cd3aa17a16832ac302db21daaabbf76d257baed204c8d4deee9ac6bf2e",
+      "withoutNewNoticeSha256": "6e3944cd3aa17a16832ac302db21daaabbf76d257baed204c8d4deee9ac6bf2e"
+    },
+    {
+      "path": "docs/verification/2026-10-17/AI03-noise-physics.html",
+      "previousSha256": "588810bac61c5e38305f0459b08a2675925a61c6d2ac12c1439572471d24aa44",
+      "withoutNewNoticeSha256": "588810bac61c5e38305f0459b08a2675925a61c6d2ac12c1439572471d24aa44"
+    },
+    {
+      "path": "docs/verification/2026-10-17/N03-field-physics.html",
+      "previousSha256": "e9a162d7550d343f5173322540552c0da69c672884fb7b1197c1667e616dfc81",
+      "withoutNewNoticeSha256": "e9a162d7550d343f5173322540552c0da69c672884fb7b1197c1667e616dfc81"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M02-ecv-physics.html",
+      "previousSha256": "70aedeafc54918506a15ff743b9ab1c581246353f6655f71da7a0cfb2c444790",
+      "withoutNewNoticeSha256": "70aedeafc54918506a15ff743b9ab1c581246353f6655f71da7a0cfb2c444790"
+    },
+    {
+      "path": "docs/verification/2026-10-17/G02-rf-physics.html",
+      "previousSha256": "06b40b1263e5937b7e6cf69ab8e779a7ea0a879c0502229eb1e489636074351b",
+      "withoutNewNoticeSha256": "06b40b1263e5937b7e6cf69ab8e779a7ea0a879c0502229eb1e489636074351b"
+    },
+    {
+      "path": "docs/verification/2026-10-17/M04-fit-physics.html",
+      "previousSha256": "0b479135afcd3e6067dd8667e162e5cd36c36afc719e0d41eb73ca586ae40474",
+      "withoutNewNoticeSha256": "0b479135afcd3e6067dd8667e162e5cd36c36afc719e0d41eb73ca586ae40474"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X05-physics.html",
+      "previousSha256": "e81bb54f136efaedf7d153c3c16b06af7e2a9c9c0d167436c3d4553295efeb93",
+      "withoutNewNoticeSha256": "e81bb54f136efaedf7d153c3c16b06af7e2a9c9c0d167436c3d4553295efeb93"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X01-physics.html",
+      "previousSha256": "dd848f8336d1e36c305294759066650b6849860acec05dbae3489c3a1969e19f",
+      "withoutNewNoticeSha256": "dd848f8336d1e36c305294759066650b6849860acec05dbae3489c3a1969e19f"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X02-physics.html",
+      "previousSha256": "cd472a7f6a99d4f86f101d25e84ef66e0b3bcceb2f136058ae3b57e3e1e850eb",
+      "withoutNewNoticeSha256": "cd472a7f6a99d4f86f101d25e84ef66e0b3bcceb2f136058ae3b57e3e1e850eb"
+    },
+    {
+      "path": "docs/verification/2026-10-17/X13-physics.html",
+      "previousSha256": "0b02a30693189f3abf40cb05c5b03137273bef8fdf8146c936b2fc9aad58dca0",
+      "withoutNewNoticeSha256": "0b02a30693189f3abf40cb05c5b03137273bef8fdf8146c936b2fc9aad58dca0"
+    }
+  ]
+}

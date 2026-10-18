@@ -94,3 +94,16 @@ test('Pages report links use existing repository sources without moving local as
   fs.writeFileSync(source, '# Missing\n\n[Missing](../../../tests/missing.cjs)\n');
   assert.throws(() => buildReports({...options, sources: ['review.md']}), /Missing report link/);
 });
+
+test('fingerprint explanation links to the configured report across dates and rejects missing or outside paths', t => {
+  const options=fixture(t);
+  renderReports({...options,date:'2026-10-15'});
+  options.reports.publicationFingerprintReport='2026-10-15/review.md';
+  const output=buildReports(options);
+  assert.match(output[0].html, /class="fingerprint-note"/);
+  assert.match(output[0].html, /href="..\/2026-10-15\/review.html">게시 바이트 대조/);
+  options.reports.publicationFingerprintReport='missing.md';
+  assert.throws(()=>renderReports(options),/Missing fingerprint report/);
+  options.reports.publicationFingerprintReport='../index.html';
+  assert.throws(()=>renderReports(options),/inside the verification/);
+});

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "uncommitted": true,
+  "scope": "W63 defined angular R2 and finite decay floor; own report excluded",
+  "files": [
+    {
+      "path": "docs/magic_angle_orientation.html",
+      "sha256": "FB1AF208449225671A8D91E91AED3185C27C4B24677E4B986FDF5F774604630C"
+    },
+    {
+      "path": "docs/assets/magic-angle-model.js",
+      "sha256": "48E20E24AEB8ED362FDB975BC4E13D10B8BCED9A43B5FE6FB0695775B780A0D4"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/magic-angle.test.cjs",
+      "sha256": "4B939C8FFC63D7328FA17F18C06803743AB99435E754F7B2B34134CD3A6DC26C"
+    },
+    {
+      "path": "tests/helpers/magic-angle-reference.cjs",
+      "sha256": "B89DBB9CB11BCED0CE0FEF25D50BCD48D466E538A87998BCA213DE962F0EB552"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-numerical.cjs",
+      "sha256": "F5361EACA9C3EAB80201BB2043CF8425997E08B5AE8FAA59E2F6CE6B74B6926A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-numerical.json",
+      "sha256": "ED0DB1149D82EED392B3BB1F876B5E9C9F69B687CBCDB06E9E0E233479F848A6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-display-reference.json",
+      "sha256": "6A8647F3548907DDF0EB49798839456CDC837E52D77AFAC52335D849C25563D9"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-browser-check.js",
+      "sha256": "E3B6C96548C5176EA2AE2241B036A7F998F26C9B1F30B73304431E7203AC8A05"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X14-browser-check.json",
+      "sha256": "B583C310D938D33B2275498CF6616CBD951A0EB5F3B4EAA43D160B009D81531F"
+    }
+  ]
+}

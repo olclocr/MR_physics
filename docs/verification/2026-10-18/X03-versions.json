@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W66 single velocity, symmetric two-encoding phase difference and explicit wrapping; own report excluded",
+  "files": [
+    {
+      "path": "docs/phase_contrast_venc.html",
+      "sha256": "DA6DF1335810F412F93CDB1B2516D3C6D3430CEA627F20C862A2F9B5E275F5A5"
+    },
+    {
+      "path": "docs/assets/phase-contrast-model.js",
+      "sha256": "A8CCF3DF70E9332767158BFD4A8A6352CC860A6CF14DB3C1F25BDDA4C13E3329"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/phase-contrast.test.cjs",
+      "sha256": "D8B4E81F1A5EB6CB4A4719EE436423EDC464539EAF21591CE05DCB799C71006E"
+    },
+    {
+      "path": "tests/helpers/phase-contrast-reference.cjs",
+      "sha256": "13A6EACBD64759EDCF35C5406197D24757CC735B244B6F1163792790B621C8A1"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-numerical.cjs",
+      "sha256": "0EF77BC78FB3D2A14A8CBC937E15569A278A8F2108957B171AE6DD362D0F1CD1"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-numerical.json",
+      "sha256": "0B287D2689122892B8B1208B8C313DEFCBCB287F839FDD17862012AD302CC79B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-display-reference.json",
+      "sha256": "4A388636FD75ECE4D60CE403CAF24EBC3B37A34D352BDAEAD7C7B54501550823"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-browser-check.js",
+      "sha256": "3C1127EE994D4BD4238A3E570C36F8C869A678194651F4B917867F4B696DD7B4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-browser-check.json",
+      "sha256": "4ACA049C12831C6BB6496FBFC652D40F3F5FFE5D01EEA1115A972444F9BAE636"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X03-mobile-graphic.js",
+      "sha256": "3A81B2E855D9B5E583D76A588E9C170E44612E8BBC27D418F04D39FDFCACABFE"
+    }
+  ]
+}

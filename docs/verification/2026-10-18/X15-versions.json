@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "a734a1b6b1e091ca09d0a7fea09b1666d2e072f4",
+  "scope": "W68 known one-dimensional field projection and coherent finite-grid sum; own report excluded",
+  "files": [
+    {
+      "path": "docs/linear_field_correction.html",
+      "sha256": "34EDBB625A3817EDB0CED330D794EE8719180C448EEC0B9C63482D7738518066"
+    },
+    {
+      "path": "docs/assets/linear-field-correction-model.js",
+      "sha256": "3C32A4CF9433582FE52309BFC16E8B3E2B79E90D34C3ECC06E7C81320DEF90D1"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/linear-field-correction.test.cjs",
+      "sha256": "DD95662CE4D0FAD481CE4EC44D57830086AC130717F418D5413C6539A09876B9"
+    },
+    {
+      "path": "tests/helpers/linear-field-correction-reference.cjs",
+      "sha256": "4E6511B60560496C269563353E88944F98945B56991E5E5C2368F15C0FF13FE4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-numerical.cjs",
+      "sha256": "86565E95AA6C40585A84120031434ACBCCB6C3E1F0A4FF2135223B11790A3AE4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-numerical.json",
+      "sha256": "C2281A30721A52790D04B54201C2CA7CCF9FF0F4A9A4829621A4447A6B32A765"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-display-reference.json",
+      "sha256": "EF0DB79C6F11FC5F5426DF6AD70A4A16268F247B08A0D68406556758D2CFD632"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-browser-check.js",
+      "sha256": "83B02EAD36FA645EC4FE23B470C4F7FD893A0DD1A6CA6967F74518C682AAEC7F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-browser-check.json",
+      "sha256": "6CC887A0E0332857F4181B30B6D9A0D2FEE46F8C75C7BF53DFECF998537B0EDE"
+    }
+  ]
+}

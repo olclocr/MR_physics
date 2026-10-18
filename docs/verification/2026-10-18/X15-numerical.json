@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-18",
+  "cases": 27,
+  "spatialPoints": 10827,
+  "timePoints": 3267,
+  "max": {
+    "fieldHz": 1.4210854715202004e-14,
+    "positionMm": 3.552713678800501e-15,
+    "coefficients": 1.0631562131073819e-15,
+    "statistics": 3.552713678800501e-15,
+    "complex": 9.880984919163893e-15,
+    "magnitude": 9.43689570931383e-15,
+    "circularPhase": 1.709743457922741e-14,
+    "ode": 7.150219804262503e-11,
+    "odeConvergence": 6.703607439116632e-11
+  },
+  "examples": [
+    {
+      "options": {
+        "field": "mixed",
+        "correction": "none",
+        "teMs": 5
+      },
+      "beforeMeanHz": 30,
+      "afterMeanHz": 30,
+      "beforeStdHz": 23.093938958184985,
+      "afterStdHz": 23.093938958184985,
+      "current": {
+        "timeMs": 5,
+        "before": {
+          "real": 0.44485231774302186,
+          "imaginary": -0.6122866874211926,
+          "magnitude": 0.7568279673707597,
+          "phase": -0.9424777960769376
+        },
+        "after": {
+          "real": 0.44485231774302186,
+          "imaginary": -0.6122866874211926,
+          "magnitude": 0.7568279673707597,
+          "phase": -0.9424777960769376
+        }
+      }
+    },
+    {
+      "options": {
+        "field": "mixed",
+        "correction": "constant",
+        "teMs": 5
+      },
+      "beforeMeanHz": 30,
+      "afterMeanHz": -1.0631562131073819e-15,
+      "beforeStdHz": 23.093938958184985,
+      "afterStdHz": 23.093938958184985,
+      "current": {
+        "timeMs": 5,
+        "before": {
+          "real": 0.44485231774302186,
+          "imaginary": -0.6122866874211926,
+          "magnitude": 0.7568279673707597,
+          "phase": -0.9424777960769376
+        },
+        "after": {
+          "real": 0.7568279673707593,
+          "imaginary": -8.239936510889834e-18,
+          "magnitude": 0.7568279673707593,
+          "phase": -1.0887463024808127e-17
+        }
+      }
+    },
+    {
+      "options": {
+        "field": "mixed",
+        "correction": "linear",
+        "teMs": 5
+      },
+      "beforeMeanHz": 30,
+      "afterMeanHz": 0,
+      "beforeStdHz": 23.093938958184985,
+      "afterStdHz": 0,
+      "current": {
+        "timeMs": 5,
+        "before": {
+          "real": 0.44485231774302186,
+          "imaginary": -0.6122866874211926,
+          "magnitude": 0.7568279673707597,
+          "phase": -0.9424777960769376
+        },
+        "after": {
+          "real": 0.9999999999999927,
+          "imaginary": 0,
+          "magnitude": 0.9999999999999927,
+          "phase": 0
+        }
+      }
+    },
+    {
+      "options": {
+        "field": "mixed",
+        "correction": "constant",
+        "teMs": 12.5
+      },
+      "beforeMeanHz": 30,
+      "afterMeanHz": -1.0631562131073819e-15,
+      "beforeStdHz": 23.093938958184985,
+      "afterStdHz": 23.093938958184985,
+      "current": {
+        "timeMs": 12.5,
+        "before": {
+          "real": -2.185751579730777e-16,
+          "imaginary": -2.5847379792054426e-16,
+          "magnitude": 3.385022952572496e-16,
+          "phase": null
+        },
+        "after": {
+          "real": 3.8510861166685117e-16,
+          "imaginary": 1.2146452463626667e-17,
+          "magnitude": 3.8530011560784755e-16,
+          "phase": null
+        }
+      }
+    }
+  ]
+}
