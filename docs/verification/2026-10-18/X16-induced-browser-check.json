@@ -1,0 +1,207 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 16,
+  "maxGraphicError": 0.000004705882389544058,
+  "maxAreaErrorMj": 1.999999983404166e-7,
+  "areaToleranceMj": 0.000002,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 1,
+      "force": 0,
+      "energy": -1,
+      "drawnAreaMj": 1.0000000666666669
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 1,
+      "force": 1,
+      "energy": -1,
+      "drawnAreaMj": 1.0000000666666669
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 1,
+      "force": 0,
+      "energy": -3,
+      "drawnAreaMj": 3.0000002000000006
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 1,
+      "force": 1,
+      "energy": -3,
+      "drawnAreaMj": 3.0000002000000006
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 1,
+      "force": 0,
+      "energy": -0.5,
+      "drawnAreaMj": 0.49999999933333383
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 1,
+      "force": 1,
+      "energy": -0.5,
+      "drawnAreaMj": 0.49999999933333383
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 3,
+      "force": 0,
+      "energy": -4.5,
+      "drawnAreaMj": 4.499999998249996
+    },
+    {
+      "width": 1920,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 3,
+      "force": 3,
+      "energy": -4.5,
+      "drawnAreaMj": 4.499999998249996
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 1,
+      "force": 0,
+      "energy": -1,
+      "drawnAreaMj": 1.0000000666666669
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 1,
+      "force": 1,
+      "energy": -1,
+      "drawnAreaMj": 1.0000000666666669
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 1,
+      "force": 0,
+      "energy": -3,
+      "drawnAreaMj": 3.0000002000000006
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "fixed",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 1,
+      "force": 1,
+      "energy": -3,
+      "drawnAreaMj": 3.0000002000000006
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 0
+      },
+      "moment": 1,
+      "force": 0,
+      "energy": -0.5,
+      "drawnAreaMj": 0.49999999933333383
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 1,
+        "gradientTm": 1
+      },
+      "moment": 1,
+      "force": 1,
+      "energy": -0.5,
+      "drawnAreaMj": 0.49999999933333383
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 0
+      },
+      "moment": 3,
+      "force": 0,
+      "energy": -4.5,
+      "drawnAreaMj": 4.499999998249996
+    },
+    {
+      "width": 390,
+      "options": {
+        "kind": "linear",
+        "fieldT": 3,
+        "gradientTm": 1
+      },
+      "moment": 3,
+      "force": 3,
+      "energy": -4.5,
+      "drawnAreaMj": 4.499999998249996
+    }
+  ]
+}

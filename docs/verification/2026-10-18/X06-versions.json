@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/dsc_signal_rate.html",
-      "sha256": "AA866D74649238E4FD8F95708F1ED52E55A3F2F8A6B1A0FCCFF5C5F6A68EDA28"
+      "sha256": "7F4A34A732893AFA1D990D1800C88DF170C2D07F9EBF1D6D0C59DEE93161D150"
     },
     {
       "path": "docs/assets/dsc-rate-transform-model.js",
@@ -54,6 +54,14 @@
     {
       "path": "docs/verification/2026-10-18/X06-browser-check.json",
       "sha256": "936A3D665DA09882F3E65D637293B45B69DA956C5968CBFAEB876B7898F7FF47"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W85",
+      "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "checkedManifests": 85,
+  "checkedEntries": 805,
+  "unchangedEntries": 803,
+  "editedEntries": 2,
+  "exactOwnedReversal": true,
+  "tagsAndAttributesIdentical": true,
+  "calculationScriptsIdenticalAfterMaskingOneFeedbackLiteral": true,
+  "edits": [
+    {
+      "kind": "observation-time",
+      "before": "여기 후 관찰 시간을 TE라고 부르며",
+      "after": "이후 관찰 시간을 TE라고 부르며"
+    },
+    {
+      "kind": "correct-answer",
+      "before": "이번 잡음 없는 직선 field와 이완 0 가정 안에서 성립한다",
+      "after": "이번 잡음 없는 직선 field와 이완 효과를 제외한 가정에서 성립한다"
+    },
+    {
+      "kind": "feedback",
+      "before": "맞습니다. 이 결과는 알려진 직선 field·정확한 보정·이완/잡음0에 한정합니다.",
+      "after": "맞습니다. 이 결과는 알려진 직선 field·정확한 보정·이완 효과 제외/잡음0에 한정합니다."
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

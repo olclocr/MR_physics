@@ -37,3 +37,7 @@ Select Home/End/ArrowUp·시간slider Home/End/ArrowLeft와실제중앙click, �
 [로컬 raw SHA-256](X04-versions.json), [전체 시험](W70-tests.txt), [전체 탐색](checkpoint-W70-navigation.md), [링크 감사](checkpoint-W70-link-audit.json). 기존 Q03에는 후속 링크만 더한다. 현재는 a734a1b 이후 로컬 추가분이며 다음 승인된 예약 게시에서 공개한다.
 
 X04 전체는 부분 구현/검토 중이다. 실제조영농도/RF동태·공간/위상/k-space획득/재구성·동맥/정맥·약제투여·noise/환자bolus최적화/진단은남았다. 곡선/단위·관측가중/사건/baseline·창/프레임/동률·축/표/정답이바뀌면해당범위를재검증한다.
+
+## W85 공백 편집
+
+[정적 본문 공백/표시 보존 검증](../2026-10-18/W85-readability.md)에서 비공백 문자·태그/속성·script/style와 계산/전체 표/SVG 불변을 확인했다. 기존 물리 판정을 보존하며 새 물리 통과로 확대하지 않는다. 과거 문장 assertion은 당시 버전의 기록이며 최신 공백 버전은 W85 절차를 사용한다.

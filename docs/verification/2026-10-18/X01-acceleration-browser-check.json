@@ -1,0 +1,277 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 24,
+  "maxGraphicError": 0.000004999465915034307,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 1,
+        "accelerationMs2": -20
+      },
+      "moment2": 4,
+      "phase": 0.010701,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 1,
+        "accelerationMs2": 0
+      },
+      "moment2": 4,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 1,
+        "accelerationMs2": 20
+      },
+      "moment2": 4,
+      "phase": -0.010701,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 2,
+        "accelerationMs2": -20
+      },
+      "moment2": 32,
+      "phase": 0.085607,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 2,
+        "accelerationMs2": 0
+      },
+      "moment2": 32,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 2,
+        "accelerationMs2": 20
+      },
+      "moment2": 32,
+      "phase": -0.085607,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 1,
+        "accelerationMs2": -20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 1,
+        "accelerationMs2": 0
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 1,
+        "accelerationMs2": 20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 2,
+        "accelerationMs2": -20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 2,
+        "accelerationMs2": 0
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 2,
+        "accelerationMs2": 20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 1,
+        "accelerationMs2": -20
+      },
+      "moment2": 4,
+      "phase": 0.010701,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 1,
+        "accelerationMs2": 0
+      },
+      "moment2": 4,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 1,
+        "accelerationMs2": 20
+      },
+      "moment2": 4,
+      "phase": -0.010701,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 2,
+        "accelerationMs2": -20
+      },
+      "moment2": 32,
+      "phase": 0.085607,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 2,
+        "accelerationMs2": 0
+      },
+      "moment2": 32,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "velocityNull",
+        "lobeMs": 2,
+        "accelerationMs2": 20
+      },
+      "moment2": 32,
+      "phase": -0.085607,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 1,
+        "accelerationMs2": -20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 1,
+        "accelerationMs2": 0
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 1,
+        "accelerationMs2": 20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 2,
+        "accelerationMs2": -20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 2,
+        "accelerationMs2": 0
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "waveform": "accelerationNull",
+        "lobeMs": 2,
+        "accelerationMs2": 20
+      },
+      "moment2": 0,
+      "phase": 0,
+      "magnitude": 1
+    }
+  ]
+}

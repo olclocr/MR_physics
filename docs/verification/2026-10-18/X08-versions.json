@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/label_arrival_decay.html",
-      "sha256": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F"
+      "sha256": "141499F5BF166EA9DE061A7A7E0A73EA5F4DEF45187FA8668D219FC266677A37"
     },
     {
       "path": "docs/assets/label-arrival-model.js",
@@ -62,6 +62,13 @@
           "reason": "W81 static text whitespace only; exact reverse spans and unchanged script/style/tags verified"
         }
       ]
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W91",
+      "proof": "docs/verification/2026-10-18/checkpoint-W91-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

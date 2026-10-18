@@ -1,0 +1,28 @@
+{
+  "conditions": 12,
+  "profilePoints": 4332,
+  "max": {
+    "profile": 2.0114306518992375e-8,
+    "productConvergence": 1.8861247497864442e-8,
+    "referenceConvergence": 3.885780586188048e-16,
+    "mean": 1.0658141036401503e-14,
+    "variance": 4.263256414560601e-14,
+    "odeMean": 2.8787395297284463e-12,
+    "odeVariance": 5.893241450394271e-11,
+    "odeConvergence": 8.849454502524168e-10,
+    "finiteArea": 6.661338147750939e-16
+  },
+  "tolerance": {
+    "profile": 1e-7,
+    "productConvergence": 1e-7,
+    "referenceConvergence": 1e-7,
+    "mean": 1e-8,
+    "variance": 1e-8,
+    "odeMean": 1e-8,
+    "odeVariance": 1e-8,
+    "odeConvergence": 1e-8,
+    "finiteArea": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

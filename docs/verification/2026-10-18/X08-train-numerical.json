@@ -1,0 +1,16 @@
+{
+  "parameterCombinations": 8,
+  "conditions": 40,
+  "uniqueCurvePoints": 1608,
+  "max": {
+    "response": 2.7487678799786863e-11,
+    "fraction": 0,
+    "closedForm": 2.7487456755181938e-11,
+    "quadratureConvergence": 6.661338147750939e-16,
+    "ode": 2.74875677774844e-11,
+    "odeConvergence": 1.0103029524088925e-14
+  },
+  "tolerance": 1e-8,
+  "failed": [],
+  "passed": true
+}

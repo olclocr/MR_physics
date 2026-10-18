@@ -1,0 +1,973 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 80,
+  "maxGraphicError": 0.0000049956544216911425,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0.628333,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.336323,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.180021,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0.712655,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.452348,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.287122,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.336323,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.180021,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.452348,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.287122,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0.314167,
+      "arrived": 0.5,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.398011,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.21304,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0.356328,
+      "arrived": 0.5,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.510061,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.323755,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.398011,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.21304,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.510061,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.323755,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0.628333,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.336323,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.180021,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0.712655,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.452348,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.287122,
+      "arrived": 1,
+      "peakTime": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.336323,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.180021,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.452348,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 0.5,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.287122,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0.314167,
+      "arrived": 0.5,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.398011,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.21304,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0.356328,
+      "arrived": 0.5,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.510061,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 0.5,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.323755,
+      "arrived": 1,
+      "peakTime": 1.5
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 2
+      },
+      "remaining": 0.398011,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 1.6,
+        "timeSec": 3
+      },
+      "remaining": 0.21304,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 0.5
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 1
+      },
+      "remaining": 0,
+      "arrived": 0,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 2
+      },
+      "remaining": 0.510061,
+      "arrived": 1,
+      "peakTime": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "durationSec": 1,
+        "transitSec": 1,
+        "t1Sec": 2.2,
+        "timeSec": 3
+      },
+      "remaining": 0.323755,
+      "arrived": 1,
+      "peakTime": 2
+    }
+  ]
+}

@@ -1,0 +1,661 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 36,
+  "maxGraphicError": 0.000004996963127723575,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0.5,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.08806725056844288,
+        "response": 0.13628208724109886
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0.5,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.1267431675281095,
+        "response": 0.3118299431014085
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 1,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.17613450113688575,
+        "response": 0.22434933780954175
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 1,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.253486335056219,
+        "response": 0.438573110629518
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0.5,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.161661791908476,
+        "response": 0.20987662858113199
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0.5,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.04015069853569753,
+        "response": 0.22523747410899653
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 1,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.323323583816952,
+        "response": 0.37153842048960795
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 1,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.08030139707139505,
+        "response": 0.26538817264469405
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0.5,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0.5,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 1,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 1920,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 1,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0.5,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.08806725056844288,
+        "response": 0.13628208724109886
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 0.5,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.1267431675281095,
+        "response": 0.3118299431014085
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 1,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.17613450113688575,
+        "response": 0.22434933780954175
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 2,
+        "secondAmplitude": 1,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.253486335056219,
+        "response": 0.438573110629518
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0.5,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.161661791908476,
+        "response": 0.20987662858113199
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 0.5,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.04015069853569753,
+        "response": 0.22523747410899653
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 1,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0.323323583816952,
+        "response": 0.37153842048960795
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 6,
+        "secondAmplitude": 1,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0.08030139707139505,
+        "response": 0.26538817264469405
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 2
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0.5,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 0.5,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 3
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 1,
+        "scaleSec": 1
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.048214836672656,
+        "secondResponse": 0,
+        "response": 0.048214836672656
+      },
+      "totalResponseAreaSec": 4
+    },
+    {
+      "width": 390,
+      "options": {
+        "separationSec": 10,
+        "secondAmplitude": 1,
+        "scaleSec": 2
+      },
+      "current": {
+        "timeSec": 10,
+        "firstInput": 0,
+        "secondInput": 0,
+        "input": 0,
+        "firstResponse": 0.185086775573299,
+        "secondResponse": 0,
+        "response": 0.185086775573299
+      },
+      "totalResponseAreaSec": 4
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "parameterCombinations": 9,
+  "conditions": 27,
+  "curvePoints": 1089,
+  "max": {
+    "ratio": 6.898259741205948e-12,
+    "rate": 4.83669992945579e-10,
+    "gap": 3.4777514201778104e-10,
+    "analyticMean": 1.6479617670484004e-10,
+    "quadratureConvergence": 1.865174681370263e-13,
+    "productConvergence": 4.5343995225266553e-10,
+    "constant": 4.760636329592671e-13
+  },
+  "tolerances": {
+    "ratio": 1e-10,
+    "rate": 1e-8,
+    "gap": 1e-8,
+    "analyticMean": 1e-8,
+    "quadratureConvergence": 1e-8,
+    "productConvergence": 1e-8,
+    "constant": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

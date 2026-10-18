@@ -1,0 +1,253 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 24,
+  "maxGraphicError": 0.000015073588201630628,
+  "keyboard": true,
+  "examples": true,
+  "table": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0,
+        "windowMs": 0
+      },
+      "mean": 10,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0,
+        "windowMs": 100
+      },
+      "mean": 9.836316,
+      "motionSd": 0.146093,
+      "profileSd": 1.010615
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0,
+        "windowMs": 400
+      },
+      "mean": 7.568267,
+      "motionSd": 2.101177,
+      "profileSd": 2.327004
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.125,
+        "windowMs": 0
+      },
+      "mean": 7.071068,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.125,
+        "windowMs": 100
+      },
+      "mean": 6.955326,
+      "motionSd": 1.274143,
+      "profileSd": 1.619704
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.125,
+        "windowMs": 400
+      },
+      "mean": 5.351573,
+      "motionSd": 4.62176,
+      "profileSd": 4.728706
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.25,
+        "windowMs": 0
+      },
+      "mean": 0,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.25,
+        "windowMs": 100
+      },
+      "mean": 0,
+      "motionSd": 1.795978,
+      "profileSd": 2.055611
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.25,
+        "windowMs": 400
+      },
+      "mean": 0,
+      "motionSd": 6.189215,
+      "profileSd": 6.26948
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.5,
+        "windowMs": 0
+      },
+      "mean": -10,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.5,
+        "windowMs": 100
+      },
+      "mean": -9.836316,
+      "motionSd": 0.146093,
+      "profileSd": 1.010615
+    },
+    {
+      "width": 1920,
+      "options": {
+        "phase": 0.5,
+        "windowMs": 400
+      },
+      "mean": -7.568267,
+      "motionSd": 2.101177,
+      "profileSd": 2.327004
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0,
+        "windowMs": 0
+      },
+      "mean": 10,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0,
+        "windowMs": 100
+      },
+      "mean": 9.836316,
+      "motionSd": 0.146093,
+      "profileSd": 1.010615
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0,
+        "windowMs": 400
+      },
+      "mean": 7.568267,
+      "motionSd": 2.101177,
+      "profileSd": 2.327004
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.125,
+        "windowMs": 0
+      },
+      "mean": 7.071068,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.125,
+        "windowMs": 100
+      },
+      "mean": 6.955326,
+      "motionSd": 1.274143,
+      "profileSd": 1.619704
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.125,
+        "windowMs": 400
+      },
+      "mean": 5.351573,
+      "motionSd": 4.62176,
+      "profileSd": 4.728706
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.25,
+        "windowMs": 0
+      },
+      "mean": 0,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.25,
+        "windowMs": 100
+      },
+      "mean": 0,
+      "motionSd": 1.795978,
+      "profileSd": 2.055611
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.25,
+        "windowMs": 400
+      },
+      "mean": 0,
+      "motionSd": 6.189215,
+      "profileSd": 6.26948
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.5,
+        "windowMs": 0
+      },
+      "mean": -10,
+      "motionSd": 0,
+      "profileSd": 1
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.5,
+        "windowMs": 100
+      },
+      "mean": -9.836316,
+      "motionSd": 0.146093,
+      "profileSd": 1.010615
+    },
+    {
+      "width": 390,
+      "options": {
+        "phase": 0.5,
+        "windowMs": 400
+      },
+      "mean": -7.568267,
+      "motionSd": 2.101177,
+      "profileSd": 2.327004
+    }
+  ]
+}

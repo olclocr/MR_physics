@@ -1,0 +1,26 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 2,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "header": true,
+      "correctAnswer": true,
+      "feedback": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "header": true,
+      "correctAnswer": true,
+      "feedback": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    }
+  ]
+}

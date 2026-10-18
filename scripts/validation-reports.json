@@ -460,6 +460,56 @@
         "source": "W81-readability.md",
         "target": "W81-readability.html",
         "label": "W81 · 본문 공백/단위 읽기"
+      },
+      {
+        "source": "X10-physics.md",
+        "target": "X10-physics.html",
+        "label": "X10 기본 · 주기 운동/관찰창 검증"
+      },
+      {
+        "source": "X01-compensation-physics.md",
+        "target": "X01-compensation-physics.html",
+        "label": "X01 후속 · 첫 모멘트/위상 보정 검증"
+      },
+      {
+        "source": "X09-overlap-physics.md",
+        "target": "X09-overlap-physics.html",
+        "label": "X09 후속 · 두 입력/반응 겹침 검증"
+      },
+      {
+        "source": "W85-readability.md",
+        "target": "W85-readability.html",
+        "label": "W85 · 혈류/시간곡선 본문 읽기"
+      },
+      {
+        "source": "X16-physics.md",
+        "target": "X16-physics.html",
+        "label": "X16 기본 · 고정 dipole 힘/torque 검증"
+      },
+      {
+        "source": "X01-acceleration-physics.md",
+        "target": "X01-acceleration-physics.html",
+        "label": "X01 후속 · 가속/두 번째 모멘트 검증"
+      },
+      {
+        "source": "X17-rigid-physics.md",
+        "target": "X17-rigid-physics.html",
+        "label": "X17 후속 · 강체 이동/거리 불변 검증"
+      },
+      {
+        "source": "W89-relaxation-clarity.md",
+        "target": "W89-relaxation-clarity.html",
+        "label": "W89 · 관찰 시간/이완 제외 표현"
+      },
+      {
+        "source": "X16-induced-physics.md",
+        "target": "X16-induced-physics.html",
+        "label": "X16 후속 · 유도 모멘트/유효 에너지 검증"
+      },
+      {
+        "source": "X08-train-physics.md",
+        "target": "X08-train-physics.html",
+        "label": "X08 후속 · 유한 방출/도달/T1 검증"
       }
     ]
   },

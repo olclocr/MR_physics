@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W84 two known rectangular inputs, shifted and weighted W79 causal responses; no BOLD or event-count inference; own report excluded",
+  "files": [
+    {
+      "path": "docs/response_overlap.html",
+      "sha256": "1C8FDCE35D367EF07FEC34D3E280A92FFE007E0E74C94EB2A32715B2B40B02ED"
+    },
+    {
+      "path": "docs/assets/response-overlap-model.js",
+      "sha256": "96DCB7EF87A4389A58FA29FA0BD137F021955A394F53C6EB01466E679FA6A8E3"
+    },
+    {
+      "path": "docs/assets/delayed-response-model.js",
+      "sha256": "2132AC5C2C9CAFC4964A062AD00BBA323CACC928A257330B7B7BA477AA930BBD"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/response-overlap.test.cjs",
+      "sha256": "1460C08A16A3766CC8BFAF2B87B74BAC3FC71B7F22102A1821129E9EB07FEBEB"
+    },
+    {
+      "path": "tests/helpers/response-overlap-reference.cjs",
+      "sha256": "946C8C75485E6902448551349ACCE0053E15204A118B1F3E8C761A1BA9CD06B2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-overlap-numerical.cjs",
+      "sha256": "AA9059F72E172C11F7B5BB4DEDBBABC69585A7F6C9299970ED80B9702CB7B3D5"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-overlap-numerical.json",
+      "sha256": "D0D6C26AF514FF1A20020BAA6A3D54420008E4A58058D4E75DF8DAD205B71EC0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-overlap-display-reference.json",
+      "sha256": "06AC2B9610A06ED33B8A3922C41AC19AA5BF6895306852A78ECEB2BD4EEAB63C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-overlap-browser-check.js",
+      "sha256": "2D31441F4E0689B5D4A4583124D69B27D7E22F35F1447B281735521587501535"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-overlap-browser-check.json",
+      "sha256": "1CDA6B4CF1987D5207C65C4780FD17C45AC885EFC9785425482217562A60F923"
+    }
+  ]
+}

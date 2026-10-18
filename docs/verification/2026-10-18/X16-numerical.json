@@ -1,0 +1,23 @@
+{
+  "conditions": 12,
+  "positionPoints": 1212,
+  "anglePoints": 2172,
+  "max": {
+    "forceN": 1.4654076563314078e-14,
+    "torqueNm": 1.2436692300998864e-12,
+    "energyJ": 0,
+    "momentAm2": 0,
+    "derivativeConvergence": 3.756660781062404e-12,
+    "loopConvergence": 1.784683512084939e-14
+  },
+  "tolerance": {
+    "forceN": 1e-10,
+    "torqueNm": 1e-10,
+    "energyJ": 1e-12,
+    "momentAm2": 1e-14,
+    "derivativeConvergence": 1e-10,
+    "loopConvergence": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

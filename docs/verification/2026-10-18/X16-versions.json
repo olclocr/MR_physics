@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W86 fixed prescribed point dipole, local Bz(x) and x-force/torque; no induced magnetization, 3D scanner field, dynamics or safety decision; own report excluded",
+  "files": [
+    {
+      "path": "docs/magnetic_dipole_force_torque.html",
+      "sha256": "3943FDF255AC4433131E753954E833FDFDF1A98549AE49F23571679E9A869863"
+    },
+    {
+      "path": "docs/assets/magnetic-dipole-model.js",
+      "sha256": "F971E3813C428D8F9F796F7F1F241C2C138D82BBE6761D545583E60B1D8AEE2A"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/magnetic-dipole.test.cjs",
+      "sha256": "9EF695E3238EA7222B77A9D8FE1232DBEAE57A7F0D04FA002B47ACAE210D298B"
+    },
+    {
+      "path": "tests/helpers/magnetic-dipole-reference.cjs",
+      "sha256": "732B1031D9B5B071F9931D8032C65A6CD9F09AB78C95AA15777989B0C4A6B2EB"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-numerical.cjs",
+      "sha256": "D27565EE58D8EBF75F36E2AAB6399AC0023C9BCDA94AF1209CA7278D0F4A6EA4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-numerical.json",
+      "sha256": "F6F4885CCA3110C70CD7BF044921D9CC8256398D0F0E06E7E4AE0117EFE44FEC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-display-reference.json",
+      "sha256": "259E0789190778DA06BF683432144DD9CDF4DCC01B9FF92C0ED91CAEEA938CA7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-browser-check.js",
+      "sha256": "CDCB154BE85CFFEA6B7CCF1F51328F6216093F353DA723D77BF1266F2204D7E0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-browser-check.json",
+      "sha256": "D97908A41954EE218F45C49509E235A3B91D79DCF73CF299229D4674DC3479FA"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W90",
+      "proof": "docs/verification/2026-10-18/checkpoint-W90-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
+}

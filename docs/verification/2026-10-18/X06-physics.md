@@ -37,3 +37,7 @@ Select Home/End/ArrowUp·네예시/초기화·Enter, 오답/정답, 수식펼침
 [로컬 raw SHA-256](X06-versions.json), [전체시험](W72-tests.txt), [전체탐색](checkpoint-W72-navigation.md), [링크감사](checkpoint-W72-link-audit.json). 기존 M03에는후속링크만더한다. 현재는a734a1b이후로컬추가분이며다음승인예약게시에서공개한다.
 
 X06전체는부분구현/검토중이다. 실제주입/농도·비단일지수·T1/누출·noise floor·AIF/CBV/CBF/MTT·EPI/gradient획득·환자진단은남았다. rate/시간/TE·기준/스케일·감쇠모형/부호·신호/비의양수범위·축/표/정답이바뀌면해당범위를재검증한다.
+
+## W85 공백 편집
+
+[정적 본문 공백/표시 보존 검증](../2026-10-18/W85-readability.md)에서 비공백 문자·태그/속성·script/style와 계산/전체 표/SVG 불변을 확인했다. 기존 물리 판정을 보존하며 새 물리 통과로 확대하지 않는다. 과거 문장 assertion은 당시 버전의 기록이며 최신 공백 버전은 W85 절차를 사용한다.

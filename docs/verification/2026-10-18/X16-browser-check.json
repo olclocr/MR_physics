@@ -1,0 +1,277 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 24,
+  "maxGraphicError": 0.000004982511569551207,
+  "keyboard": true,
+  "examples": true,
+  "tables": true,
+  "quiz": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 0,
+        "angleDeg": 0
+      },
+      "forceMn": 0,
+      "torqueMnM": 0,
+      "energyMj": -1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 0,
+        "angleDeg": 45
+      },
+      "forceMn": 0,
+      "torqueMnM": -0.707107,
+      "energyMj": -0.707107
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 0,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -1,
+      "energyMj": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 1,
+        "angleDeg": 0
+      },
+      "forceMn": 1,
+      "torqueMnM": 0,
+      "energyMj": -1
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 1,
+        "angleDeg": 45
+      },
+      "forceMn": 0.707107,
+      "torqueMnM": -0.707107,
+      "energyMj": -0.707107
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 1,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -1,
+      "energyMj": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 0,
+        "angleDeg": 0
+      },
+      "forceMn": 0,
+      "torqueMnM": 0,
+      "energyMj": -3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 0,
+        "angleDeg": 45
+      },
+      "forceMn": 0,
+      "torqueMnM": -2.12132,
+      "energyMj": -2.12132
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 0,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -3,
+      "energyMj": 0
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 1,
+        "angleDeg": 0
+      },
+      "forceMn": 1,
+      "torqueMnM": 0,
+      "energyMj": -3
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 1,
+        "angleDeg": 45
+      },
+      "forceMn": 0.707107,
+      "torqueMnM": -2.12132,
+      "energyMj": -2.12132
+    },
+    {
+      "width": 1920,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 1,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -3,
+      "energyMj": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 0,
+        "angleDeg": 0
+      },
+      "forceMn": 0,
+      "torqueMnM": 0,
+      "energyMj": -1
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 0,
+        "angleDeg": 45
+      },
+      "forceMn": 0,
+      "torqueMnM": -0.707107,
+      "energyMj": -0.707107
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 0,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -1,
+      "energyMj": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 1,
+        "angleDeg": 0
+      },
+      "forceMn": 1,
+      "torqueMnM": 0,
+      "energyMj": -1
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 1,
+        "angleDeg": 45
+      },
+      "forceMn": 0.707107,
+      "torqueMnM": -0.707107,
+      "energyMj": -0.707107
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 1,
+        "gradientTm": 1,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -1,
+      "energyMj": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 0,
+        "angleDeg": 0
+      },
+      "forceMn": 0,
+      "torqueMnM": 0,
+      "energyMj": -3
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 0,
+        "angleDeg": 45
+      },
+      "forceMn": 0,
+      "torqueMnM": -2.12132,
+      "energyMj": -2.12132
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 0,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -3,
+      "energyMj": 0
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 1,
+        "angleDeg": 0
+      },
+      "forceMn": 1,
+      "torqueMnM": 0,
+      "energyMj": -3
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 1,
+        "angleDeg": 45
+      },
+      "forceMn": 0.707107,
+      "torqueMnM": -2.12132,
+      "energyMj": -2.12132
+    },
+    {
+      "width": 390,
+      "options": {
+        "fieldT": 3,
+        "gradientTm": 1,
+        "angleDeg": 90
+      },
+      "forceMn": 0,
+      "torqueMnM": -3,
+      "energyMj": 0
+    }
+  ]
+}

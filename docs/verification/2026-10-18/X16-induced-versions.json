@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W90 prescribed fixed/reversible scalar moment response and effective mechanical potential; no real material/3D scanner/implant or safety decision; own report excluded",
+  "files": [
+    {
+      "path": "docs/induced_dipole_energy.html",
+      "sha256": "458D5B4E0384575B7769E0E67EB05AA878C2A577496BB6A5119AA7773E408A43"
+    },
+    {
+      "path": "docs/assets/induced-dipole-model.js",
+      "sha256": "686C62F7DBE80ECE25FC9D38EC1BB5F136FB930F6B5A1250D05E6C56711B6981"
+    },
+    {
+      "path": "docs/assets/magnetic-dipole-model.js",
+      "sha256": "F971E3813C428D8F9F796F7F1F241C2C138D82BBE6761D545583E60B1D8AEE2A"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/induced-dipole.test.cjs",
+      "sha256": "6638BBE1E10765A3D415B9288956AA51C8733F631BEE955D9967825C0B236CA7"
+    },
+    {
+      "path": "tests/helpers/induced-dipole-reference.cjs",
+      "sha256": "C61DEA78620565F2F0B2A09C9A70C32942A33BA91CDAC1E39E1F4B5410960833"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-induced-numerical.cjs",
+      "sha256": "4839BD0935C88A328C0362DF0E4AEDC93FF4A9E536F025C229B195C928BCE867"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-induced-numerical.json",
+      "sha256": "C2F9C07C96DA541A326D1BD753382FE3D9183A829899F016B2B257F47EBE0178"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-induced-display-reference.json",
+      "sha256": "8538094A503C938EAAC371758276E411553A828876EA9A317BE5219B07654325"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-induced-browser-check.js",
+      "sha256": "6A3C6D70BCDA1D5E31C62C24523D9CA00BBDE9AAD65BD0353E027720F5D995EF"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X16-induced-browser-check.json",
+      "sha256": "FDF555B8B1AAC05DE9592BA3B5AC04DD080C63F936BF6C7943CAE9DD18AB4D90"
+    }
+  ]
+}

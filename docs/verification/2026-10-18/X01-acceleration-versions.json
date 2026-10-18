@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W87 constant acceleration single spin and four-lobe zero second moment; no RF echo, ensemble signal recovery or clinical flow correction; own report excluded",
+  "files": [
+    {
+      "path": "docs/gradient_second_moment.html",
+      "sha256": "86F591D615EA9CB7A2DB67023C5D074817E3246D07C8F54A0180C2DA7187FE11"
+    },
+    {
+      "path": "docs/assets/gradient-acceleration-model.js",
+      "sha256": "0BFB78B3D6A945074FB9481DF8D92185D15EE69064B754D615B75298B9C347E6"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/gradient-acceleration.test.cjs",
+      "sha256": "1F35DA7E473CFCF40E0E33CE31A904525BD89B6BBCC8227EF3797E8AE77C658A"
+    },
+    {
+      "path": "tests/helpers/gradient-acceleration-reference.cjs",
+      "sha256": "65549B9A55286925914EB62C1C9BCFB60F089B36673A57D49BD126470723C9A2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-acceleration-numerical.cjs",
+      "sha256": "93814AA97DF95AE5BBEF2FA1DFD3D77061296FED739261C5597482A1F819ED78"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-acceleration-numerical.json",
+      "sha256": "58F8CCCCB048B4FC16775A931ADF0D1D554FB770A86C3CC01117775B22EAEC64"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-acceleration-display-reference.json",
+      "sha256": "69B3FAAF219CB60827E2253AB0A13950F4EC2F7297B15AF0F1552BC3CE23D9AC"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-acceleration-browser-check.js",
+      "sha256": "BD2239FF8DDCA25DA81B7FE6F2809E519F0E667153617619ABF0D6DD991EE0BD"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-acceleration-browser-check.json",
+      "sha256": "ABEB615D75268F1B47F6BB9AD343E74D3E017C19204298E6EFC0E34CAA8A19FA"
+    }
+  ]
+}

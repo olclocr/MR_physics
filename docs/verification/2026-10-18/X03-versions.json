@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/phase_contrast_venc.html",
-      "sha256": "DA6DF1335810F412F93CDB1B2516D3C6D3430CEA627F20C862A2F9B5E275F5A5"
+      "sha256": "83E91570D3937757DB5B98F5A4979698051E4C146FF87ECE26D54B3D7643AE50"
     },
     {
       "path": "docs/assets/phase-contrast-model.js",
@@ -54,6 +54,14 @@
     {
       "path": "docs/verification/2026-10-18/X03-mobile-graphic.js",
       "sha256": "3A81B2E855D9B5E583D76A588E9C170E44612E8BBC27D418F04D39FDFCACABFE"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W85",
+      "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-18/X15-versions.json",
+    "path": "docs/linear_field_correction.html",
+    "before": "92285B8F10C841A60126E317C4F1209D00674DE020E5C27EE7B564A1F5C4D239",
+    "after": "B1F258AA9B72F055311F745155FF3A7EAC9D2A0CB654AFBEE2A8AE84EFA4208C",
+    "reason": "W89 two static phrases and one matching feedback literal only; exact reverse spans and identical model/table/SVG data"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/W85-versions.json",
+    "path": "docs/linear_field_correction.html",
+    "before": "92285B8F10C841A60126E317C4F1209D00674DE020E5C27EE7B564A1F5C4D239",
+    "after": "B1F258AA9B72F055311F745155FF3A7EAC9D2A0CB654AFBEE2A8AE84EFA4208C",
+    "reason": "W89 two static phrases and one matching feedback literal only; exact reverse spans and identical model/table/SVG data"
+  }
+]

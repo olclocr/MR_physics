@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W83 fixed constant-velocity single spin, zero area versus zero first moment; no RF/echo/readout or ensemble signal recovery; own report excluded",
+  "files": [
+    {
+      "path": "docs/gradient_first_moment.html",
+      "sha256": "F761906B56FE4ECD6D124321009339BC723993E41729A888BDDC1B258C1BB7EB"
+    },
+    {
+      "path": "docs/assets/gradient-compensation-model.js",
+      "sha256": "AA9B06EE3400CBEABEF590B32EFCD7BDE0710C2D7C6F8354C75E03C791BA5555"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/gradient-compensation.test.cjs",
+      "sha256": "5F33DC88DF9C2D548844260E08F3E4C6350FF15E41632630545458899BD87DF7"
+    },
+    {
+      "path": "tests/helpers/gradient-compensation-reference.cjs",
+      "sha256": "5AFE4CF44BAA972E5EE6DE89EFE0EFE1440AC7E0FB94124DC4B5E268B61486B5"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-compensation-numerical.cjs",
+      "sha256": "E3A5A049A331894B47715C34DCB945C6ADD3E987B631D5F463FE003F5B2A13CA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-compensation-numerical.json",
+      "sha256": "EC341A7B4E03E9A1751E769A6EC3544D27C22CDA686E3A9CB5EA3302BC624914"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-compensation-display-reference.json",
+      "sha256": "B83925A36D4E0BCA951F89E4B9A7C54392D444FD5B95C0F1013E93A3DF34BA0F"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-compensation-browser-check.js",
+      "sha256": "17B18201B26CC407270313B07B940FCE709DDA7147E599C5A050B3DA1342336C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X01-compensation-browser-check.json",
+      "sha256": "0A0253D89E430B924026490931C86B8AC05911B11DAA0A53E7798A33C003953D"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W87",
+      "proof": "docs/verification/2026-10-18/checkpoint-W87-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
+}

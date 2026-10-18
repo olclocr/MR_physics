@@ -1,0 +1,44 @@
+[
+  {
+    "manifest": "docs/verification/2026-10-17/X01-versions.json",
+    "path": "docs/flow_gradient_phase.html",
+    "before": "4DC096C404B494F2DF52CB84F744674872BA57DFC3702F71785FC17C63234E69",
+    "after": "D7EA35867FC9428056BFD004C7D8A7BC7A65D715CB656A10F4F048EA101B45B9",
+    "reason": "W85 static whitespace only; exact reverse spans in W85-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/W69-versions.json",
+    "path": "docs/flow_gradient_phase.html",
+    "before": "4DC096C404B494F2DF52CB84F744674872BA57DFC3702F71785FC17C63234E69",
+    "after": "D7EA35867FC9428056BFD004C7D8A7BC7A65D715CB656A10F4F048EA101B45B9",
+    "reason": "W85 static whitespace only; exact reverse spans in W85-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X03-versions.json",
+    "path": "docs/phase_contrast_venc.html",
+    "before": "07073B189A536E4FF732C6027EA81211FD249E8A9245A1ACF89E577ADF4752A7",
+    "after": "83E91570D3937757DB5B98F5A4979698051E4C146FF87ECE26D54B3D7643AE50",
+    "reason": "W85 static whitespace only; exact reverse spans in W85-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X15-versions.json",
+    "path": "docs/linear_field_correction.html",
+    "before": "74FC156A93312CC2DF6AFFA5AECBF1A6F036200685A2DDE1C76E9FCA91961F93",
+    "after": "BCFB3592FEC175A6D9DB346678AB6EBEEA43A94770134DA4E29B4CAF9AF8AEF4",
+    "reason": "W85 static whitespace only; exact reverse spans in W85-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X04-versions.json",
+    "path": "docs/temporal_window_bolus.html",
+    "before": "F2A6FBCE159A5CE6DCCC5DACF8B553D31F88817404CD0FDB32EEF948BC8B1BF8",
+    "after": "677320E2E945388A5A14DE14B1BCF7B5CFC98CC6EAB296F80C3ADBC00FDA0154",
+    "reason": "W85 static whitespace only; exact reverse spans in W85-copy-edits.json"
+  },
+  {
+    "manifest": "docs/verification/2026-10-18/X06-versions.json",
+    "path": "docs/dsc_signal_rate.html",
+    "before": "AA866D74649238E4FD8F95708F1ED52E55A3F2F8A6B1A0FCCFF5C5F6A68EDA28",
+    "after": "7F4A34A732893AFA1D990D1800C88DF170C2D07F9EBF1D6D0C59DEE93161D150",
+    "reason": "W85 static whitespace only; exact reverse spans in W85-copy-edits.json"
+  }
+]

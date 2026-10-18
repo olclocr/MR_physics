@@ -9,7 +9,7 @@
     },
     {
       "path": "docs/flow_gradient_phase.html",
-      "sha256": "58F61DCECFFD8B93A1E91B4B2BBF390B5614902781DEC136648E8401D5F2ED34"
+      "sha256": "3B14A170991FAA4AC730254225A796C346278E259534E51DCC6E23937CE3086F"
     },
     {
       "path": "docs/inflow_rf_saturation.html",
@@ -46,6 +46,21 @@
     {
       "path": "docs/verification/2026-10-18/W69-audit.json",
       "sha256": "AC666A700B5DE9F458F0ED7A908934E2024E7AF407E6AE8081F51FE3140B2B80"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W85",
+      "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W87",
+      "proof": "docs/verification/2026-10-18/checkpoint-W87-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

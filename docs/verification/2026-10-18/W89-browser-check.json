@@ -1,0 +1,408 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 8,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": null,
+      "sha256": "A715BF3F437A72F9F68E34497364A3E48107B21D8C31C69792545057C7D3B5E4",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.942478"
+        },
+        {
+          "id": "status",
+          "text": "무보정: 균일 offset과 공간 기울기의 평균/퍼짐을 따로 확인하세요."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": "exampleConstant",
+      "sha256": "0507D77784527D07BB6BD8957ECD235F1F7BF9974DB944656E134F0BC8D6C5B1",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "평균 주파수는0이지만 공간 기울기가 있으면 퍼짐은 남습니다. 상수 보정 전후의 |S|를 비교하세요."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": "exampleLinear",
+      "sha256": "29CCF127AD7043A0B79DA9B3E6D3FE01A4AF41622184605A2C3DE2547C57449B",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 2.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "직선 field를 정확히 제거했습니다. 모든 위치의 잔여 주파수0/동일 위상이며 고유 이완은 이 모형에 없습니다."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "button": "exampleNull",
+      "sha256": "5E8C5B29E10D3ED3A87A0BC05FB057E74DFE1030F1F69EA9F8D9D3FE8CD061F9",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=0.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "상쇄 · 위상 미정"
+        },
+        {
+          "id": "status",
+          "text": "공간의 위상 차이로 복소합이 상쇄되었습니다. 평균 주파수만으로 크기를 판단하지 마세요. 여기서는 크기≤1e−8의 위상을 표시하지 않습니다."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": null,
+      "sha256": "CE23DE58248135CFE5FD6414A695E77784F42E95C4A3A54B55C2AE33EBB1690D",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.942478"
+        },
+        {
+          "id": "status",
+          "text": "무보정: 균일 offset과 공간 기울기의 평균/퍼짐을 따로 확인하세요."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": "exampleConstant",
+      "sha256": "AE9897027F9ED665B1FE0A87F7F4ADD466F5DB545400953C187C7625E1A8BD71",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "평균 주파수는0이지만 공간 기울기가 있으면 퍼짐은 남습니다. 상수 보정 전후의 |S|를 비교하세요."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": "exampleLinear",
+      "sha256": "2D5540A25CD25FC7F9E212A3802A5EE0CA68078F1F54A25031B015FD8627D224",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=30.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 30.000000Hz / 기울기 2.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "직선 field를 정확히 제거했습니다. 모든 위치의 잔여 주파수0/동일 위상이며 고유 이완은 이 모형에 없습니다."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "button": "exampleNull",
+      "sha256": "8744B50F411DF4D941F4022D1BF1B3574345C8AAE88B1E1C042952D96EAF57B8",
+      "outputs": [
+        {
+          "id": "fitOutput",
+          "text": "추정 상수 â=0.000000Hz · 기울기 b̂=2.000000Hz/mm"
+        },
+        {
+          "id": "correctionOutput",
+          "text": "빼는 상수 0.000000Hz / 기울기 0.000000Hz/mm"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "상쇄 · 위상 미정"
+        },
+        {
+          "id": "status",
+          "text": "공간의 위상 차이로 복소합이 상쇄되었습니다. 평균 주파수만으로 크기를 판단하지 마세요. 여기서는 크기≤1e−8의 위상을 표시하지 않습니다."
+        }
+      ],
+      "rows": 522,
+      "overflow": false
+    }
+  ]
+}

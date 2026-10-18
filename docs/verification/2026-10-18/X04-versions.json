@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/temporal_window_bolus.html",
-      "sha256": "FE80EBBB414688DE58BAD6247FD3F19C7C4FBFFA53F258464C3BB142E6D70FBF"
+      "sha256": "677320E2E945388A5A14DE14B1BCF7B5CFC98CC6EAB296F80C3ADBC00FDA0154"
     },
     {
       "path": "docs/assets/temporal-window-model.js",
@@ -42,6 +42,14 @@
     {
       "path": "docs/verification/2026-10-18/X04-browser-check.json",
       "sha256": "74DC6B284534C4219371BBA52391798B9A942AAD99FFDE3AFAF49E3C5EBFE9EE"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W85",
+      "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
     }
   ]
 }

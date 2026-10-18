@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "docs/fov_matrix_resolution.html",
-      "sha256": "AAEC6B3F4B81F034CA31F85323442D7C0A4CA9DBD888E8F9B0CC1A718D337BCD"
+      "sha256": "DC0BD895FDC75BF608B5AD2FB9B64D8E5C92558C1616EC7CCE6AE4992488D034"
     },
     {
       "path": "docs/assets/fov-resolution-model.js",
@@ -35,5 +35,17 @@
       "sha256": "B64D5DD5DFD9BA0B0C9D8E75635C578AF41BC28257474FFF04B622FBF196E66D"
     }
   ],
-  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json"
+  "navigationAudit": "../2026-10-16/checkpoint-W31-browser.json",
+  "navigationRevisions": [
+    {
+      "task": "W86",
+      "proof": "docs/verification/2026-10-18/checkpoint-W86-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W88",
+      "proof": "docs/verification/2026-10-18/checkpoint-W88-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
 }

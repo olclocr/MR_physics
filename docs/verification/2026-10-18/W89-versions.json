@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W89 two static phrases and matching quiz feedback; calculation and model conditions preserved; no new physical signoff; own report excluded",
+  "files": [
+    {
+      "path": "docs/linear_field_correction.html",
+      "sha256": "32C2E4EF327306CC3A5992006E3409BA53F2AA0A06072C492931663300B68078"
+    },
+    {
+      "path": "docs/assets/linear-field-correction-model.js",
+      "sha256": "3C32A4CF9433582FE52309BFC16E8B3E2B79E90D34C3ECC06E7C81320DEF90D1"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-before-versions.json",
+      "sha256": "901E524CF51B45976607ECB0E761D5ACC479A19ED46D82164CFE8C7D1A0C97FA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-copy-edits.json",
+      "sha256": "24596C3E4082E6A670777D75967CC435C82BD73C08FB2DE90631B56E3581CCE2"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-copy-audit.cjs",
+      "sha256": "132703FB754A1F24D620ACE5C6E8ADBCA0D8DFE17E263F864CA4E6E8C59D8F21"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-copy-audit.json",
+      "sha256": "0DF0DEB1D3939A6751C2898A8B76F0B835805707D6F83AD1EE7196574E887CD3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-browser-check.js",
+      "sha256": "F5AD2EB5A9073811A84F9323AB2397F3CF5159ABC54CAF5326B78E1114051290"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-before-browser.json",
+      "sha256": "F16B5D6A37CB6594F564D106F7C2C54EBCB6449400CA601B1AB3F8447FE71ADE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-browser-check.json",
+      "sha256": "F16B5D6A37CB6594F564D106F7C2C54EBCB6449400CA601B1AB3F8447FE71ADE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-browser-comparison.json",
+      "sha256": "3623D2F3520A82EAF4B3E41908CD5DF323F3CCAA997604797208565D5467F267"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-reading-browser.js",
+      "sha256": "5A335C98B1B422ECA90CEE75C9FCC21348081D0FA48291A92FBC00475EA58628"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W89-reading-browser.json",
+      "sha256": "9A30419C4503B0CAFA47C70A670A0920996129D76E2622368CC45D47AC3A2BEB"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W90",
+      "proof": "docs/verification/2026-10-18/checkpoint-W90-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ]
+}

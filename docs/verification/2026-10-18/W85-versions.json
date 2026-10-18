@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W85 static-text ASCII whitespace only; no new physical signoff; own report excluded",
+  "files": [
+    {
+      "path": "docs/flow_gradient_phase.html",
+      "sha256": "3B14A170991FAA4AC730254225A796C346278E259534E51DCC6E23937CE3086F"
+    },
+    {
+      "path": "docs/phase_contrast_venc.html",
+      "sha256": "83E91570D3937757DB5B98F5A4979698051E4C146FF87ECE26D54B3D7643AE50"
+    },
+    {
+      "path": "docs/linear_field_correction.html",
+      "sha256": "32C2E4EF327306CC3A5992006E3409BA53F2AA0A06072C492931663300B68078"
+    },
+    {
+      "path": "docs/temporal_window_bolus.html",
+      "sha256": "677320E2E945388A5A14DE14B1BCF7B5CFC98CC6EAB296F80C3ADBC00FDA0154"
+    },
+    {
+      "path": "docs/dsc_signal_rate.html",
+      "sha256": "7F4A34A732893AFA1D990D1800C88DF170C2D07F9EBF1D6D0C59DEE93161D150"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-before-versions.json",
+      "sha256": "7985DFB4B8C8F3EFD40EDC0F08DB429B1DEA045FDE05DA1E27ABFD2B1D45BB24"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-copy-edits.json",
+      "sha256": "1607928B5853EDB82FE4B4566B330699B558A7DF412C39E74F43A96B3B0AAE52"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-copy-audit.cjs",
+      "sha256": "296867A0DAD235D443C364F1308CC95BCBEE2D7AB4F181E12F379C5EF9741FD3"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-copy-audit.json",
+      "sha256": "520DA0F3FEA5FF135BB2DA530842810E3A921982066AEB68D96A4BFFE19497D6"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-browser-check.js",
+      "sha256": "79116FDECB42E64FCBCC0E67341402EEF8B772ED56F33FD81E54EA1C9F36107C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-before-browser.json",
+      "sha256": "2BF38A6B6B20B31A7FC80AF96A479165DC5637056995C0A3FFC656FD5365A97C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-browser-check.json",
+      "sha256": "2BF38A6B6B20B31A7FC80AF96A479165DC5637056995C0A3FFC656FD5365A97C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-browser-comparison.json",
+      "sha256": "1554A8A968D8F05361D0492574F1C64D152F9468386E789BF15BF787234CEFD0"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-reading-browser.js",
+      "sha256": "312FBBACD499F0640BB17623979B430658FA05B3ED9916E553969D71B5D1FBB5"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W85-reading-browser.json",
+      "sha256": "EDBD815B48F0DAF39ABB392AF47BB817F01672DD5EB8A06DAA2FD8D6E00F7823"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W86",
+      "proof": "docs/verification/2026-10-18/checkpoint-W86-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W87",
+      "proof": "docs/verification/2026-10-18/checkpoint-W87-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W90",
+      "proof": "docs/verification/2026-10-18/checkpoint-W90-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "clarificationRevisions": [
+    {
+      "task": "W89",
+      "proof": "docs/verification/2026-10-18/W89-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W89-copy-edits.json",
+      "scope": "Observation time and excluded relaxation wording; no calculation or physical-condition change"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/linear_field_correction.html",
-      "sha256": "74FC156A93312CC2DF6AFFA5AECBF1A6F036200685A2DDE1C76E9FCA91961F93"
+      "sha256": "32C2E4EF327306CC3A5992006E3409BA53F2AA0A06072C492931663300B68078"
     },
     {
       "path": "docs/assets/linear-field-correction-model.js",
@@ -46,6 +46,34 @@
     {
       "path": "docs/verification/2026-10-18/X15-browser-check.json",
       "sha256": "6CC887A0E0332857F4181B30B6D9A0D2FEE46F8C75C7BF53DFECF998537B0EDE"
+    }
+  ],
+  "editorialRevisions": [
+    {
+      "task": "W85",
+      "proof": "docs/verification/2026-10-18/W85-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W85-copy-edits.json",
+      "scope": "Static text ASCII whitespace; no new physical signoff"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W86",
+      "proof": "docs/verification/2026-10-18/checkpoint-W86-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    },
+    {
+      "task": "W90",
+      "proof": "docs/verification/2026-10-18/checkpoint-W90-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
+    }
+  ],
+  "clarificationRevisions": [
+    {
+      "task": "W89",
+      "proof": "docs/verification/2026-10-18/W89-copy-audit.json",
+      "edits": "docs/verification/2026-10-18/W89-copy-edits.json",
+      "scope": "Observation time and excluded relaxation wording; no calculation or physical-condition change"
     }
   ]
 }

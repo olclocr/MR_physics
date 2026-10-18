@@ -1,0 +1,3454 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "https://olclocr.github.io/MR_physics/",
+  "commit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "states": 72,
+  "errors": [],
+  "outputMismatches": [],
+  "publicBytes": [
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "BFE97AD0AB37E41953FDA86D8415AB22D9B61E1AED6101C3DCA4D6180F75121C"
+    },
+    {
+      "path": "docs/assets/fov-resolution-model.js",
+      "sha256": "3540BBFDFD2FE0102626CE481A9023EB2B7C501E2782631E9506076E7A1D1FF0"
+    },
+    {
+      "path": "docs/assets/slice-selection-model.js",
+      "sha256": "54C2DBDB22268EAFCC46075184B09DC6AA660FA0FED58FBDC547C190B728EB41"
+    },
+    {
+      "path": "docs/assets/snr-averaging-model.js",
+      "sha256": "636E0004B60BD6CAB83552E0C77BD89D3E2478F9953477BF8A38522424FC92CD"
+    },
+    {
+      "path": "docs/assets/inversion-recovery-model.js",
+      "sha256": "78A9389A956DB8B18C6DEBB784C60D2A325CA86F4C95FB20A1B3D579FE695A6F"
+    },
+    {
+      "path": "docs/assets/echo-train-model.js",
+      "sha256": "EBEED552028FA9C065AECC7B2554F539EA546970F7BAB6999A9F32CD64D20D41"
+    },
+    {
+      "path": "docs/assets/volume-geometry-model.js",
+      "sha256": "5BA63E556BB3B6FC4B8D2D134B771D013F0507CDF985CA39AC7C8FCBB4C73FF3"
+    },
+    {
+      "path": "docs/assets/receiver-bandwidth-model.js",
+      "sha256": "964CE8EB3F80028F41ADA973E037BBB13E492799B4A9165A46043EE76CC8B789"
+    },
+    {
+      "path": "docs/assets/scan-time-model.js",
+      "sha256": "F83EF77B2F8BDEBA1D5A6A07508F84BBEF2A903333C2A6B2D58459A64B66A66E"
+    },
+    {
+      "path": "docs/assets/spoiled-gre-model.js",
+      "sha256": "8B4732F9CF17ED15A0D7F30E5348643D0BA2EC1D710D69B4711F2768A67BEDDE"
+    },
+    {
+      "path": "docs/assets/epi-model.js",
+      "sha256": "6C5D5BFA3588DBF7559A6B1CC2ECAB4055BC5621EB5263DED7057FA6C0C51383"
+    },
+    {
+      "path": "docs/assets/parallel-imaging-model.js",
+      "sha256": "3E38B03FE9BBDFEACC9C9597D04D526841D632C5ED8C5B4F3B0C21AABA6EC29A"
+    },
+    {
+      "path": "docs/assets/chemical-shift-model.js",
+      "sha256": "5895489A12325EA37B57FB686456D2C76528C94F80C566A3F594264374BF64D9"
+    },
+    {
+      "path": "docs/assets/dixon-model.js",
+      "sha256": "388EE6DE7658C031F43E8A8F1611DC50219A2AB83B80B1481358DA2A1F547113"
+    },
+    {
+      "path": "docs/assets/spectral-saturation-model.js",
+      "sha256": "19067F84F9C5B7E68C2344B235707B7D7CDD030D257520C2650107F4BAD1E3FE"
+    },
+    {
+      "path": "docs/assets/fat-suppression-comparison.js",
+      "sha256": "404E5F429CC37F4CB4E42C02A6439916CF8C13EB87D4FCD4333204AAD8090E68"
+    },
+    {
+      "path": "docs/assets/diffusion-model.js",
+      "sha256": "0F6C54597E2FFC0357D482535511F924BD16F2EA2D89639EDE2A619111C06F84"
+    },
+    {
+      "path": "docs/assets/adc-fit-model.js",
+      "sha256": "B15565AA8833483F25CB94A5494256E4405C1D0CCD1F94086D57205C6E5D1264"
+    },
+    {
+      "path": "docs/assets/water-excitation-model.js",
+      "sha256": "B3189E425B8E156777A228646343A5DE1187F280AA1B46F207EEFC56B9660A29"
+    },
+    {
+      "path": "docs/assets/dwi-epi-model.js",
+      "sha256": "32A2AF2E7B98928A59179CC4C07AD8C8FF5BC9DBC5B4B9A00B66BA5370BB81BF"
+    },
+    {
+      "path": "docs/assets/susceptibility-signal-model.js",
+      "sha256": "B1B84634ED64C6CDB33E75969906E30C565237A54628060CF22927FCCB4B98A3"
+    },
+    {
+      "path": "docs/assets/dephasing-model.js",
+      "sha256": "BC083A072D47262329A26F0A01C0E3144EF448BBB179ABC6D00475B3F792E212"
+    },
+    {
+      "path": "docs/assets/swi-processing-model.js",
+      "sha256": "3B29E31EB52001D199BF6F891C57BA7E13629B4664616791C52C782B28B29C9F"
+    },
+    {
+      "path": "docs/assets/bssfp-model.js",
+      "sha256": "B2F5F480B22AE7476E1EF7A22800224C5B11B31DC2F060DE618B87685BEC5008"
+    },
+    {
+      "path": "docs/assets/bssfp-contrast-model.js",
+      "sha256": "23855C462A05EA01B4CCD7862EC340F378B2C9FD7CD36E8C2CE3D0CA8EC51267"
+    },
+    {
+      "path": "docs/assets/partial-fourier-model.js",
+      "sha256": "E254BC7C360E2D17C92CF96FA7BB3A6424D7C57D41A452983F892D988BBFB987"
+    },
+    {
+      "path": "docs/assets/compressed-sensing-model.js",
+      "sha256": "303AB363BA79C10BF66325E68E60D9F070BF2D3E208BD3B0CFAA412B3B578995"
+    },
+    {
+      "path": "docs/assets/sms-model.js",
+      "sha256": "49D775402BA7A0071A89BD65CF7A71EF33F9217D44149171C663E4C544C1E923"
+    },
+    {
+      "path": "docs/assets/aliasing-model.js",
+      "sha256": "A9FA759B9B024069E19809BA9FB956BC30925EBAE192141926BDD23989D3DB05"
+    },
+    {
+      "path": "docs/assets/motion-model.js",
+      "sha256": "5110FE4CECBE65DF18AFD0D911E3C06241101CDC041220D0A1B08719A461D085"
+    },
+    {
+      "path": "docs/assets/ringing-model.js",
+      "sha256": "CB3EA1F5B5E3570C2CCA1804BAA415E615150A1CA44DFA36D6F5294F951351D5"
+    },
+    {
+      "path": "docs/assets/chemical-artifact-model.js",
+      "sha256": "BD51F04777FEC2C9F69B6E7FED9ECAEEE7C69A99F04C3D359CF387000EBF0B06"
+    },
+    {
+      "path": "docs/assets/field-distortion-model.js",
+      "sha256": "682FB9DDD2EBAEFD9E8230A086D4EB3B9B283E30403AE259E820FD39B46E2CBE"
+    },
+    {
+      "path": "docs/assets/shading-model.js",
+      "sha256": "44D45219CCA228483918C5616A5590F7160C4EB3F46B6D3BB5B18DB49B9B882A"
+    },
+    {
+      "path": "docs/assets/t2-fit-model.js",
+      "sha256": "5D89C9BCEF786CD510740B70B0D7196A096627D51948250C9084F7B21EB5B781"
+    },
+    {
+      "path": "docs/assets/t2-limits-model.js",
+      "sha256": "C5013DB430FF34822BD66BBD9866A96DC226BD797F15F8B2A074668121B01E92"
+    },
+    {
+      "path": "docs/assets/t1-fit-model.js",
+      "sha256": "76B3489CE66A269BD5DBE6F9B1A14F4CB7AF8E5AE5F1ABC65AD68137CD0A2CBA"
+    },
+    {
+      "path": "docs/assets/t2star-fit-model.js",
+      "sha256": "CFCB0666AD1DB386BE8BA47D0970F36F3D405D83CB912C95CDC9DF00D63517AA"
+    },
+    {
+      "path": "docs/assets/pdff-t1-model.js",
+      "sha256": "89E7B5CEE1E807045C0D9BB5BC9DBFD18F16809733359A2B42BD3F9D7406122C"
+    },
+    {
+      "path": "docs/assets/pdff-echo-model.js",
+      "sha256": "775074FD6B33BE9BA90711F254337F5EA3D142CC44F19F735668475A6C41A085"
+    },
+    {
+      "path": "docs/assets/complex-fat-fit-model.js",
+      "sha256": "FF6313DCD2B117E18A736236756D689DF3928B1F70BB2DCF25484878A39B756C"
+    },
+    {
+      "path": "docs/assets/contrast-concentration-model.js",
+      "sha256": "049A7B0707E5965BA36D89EBB8F97B174FE6839A56ADEB1750D29AB20CFDF0F3"
+    },
+    {
+      "path": "docs/assets/flow-gradient-phase-model.js",
+      "sha256": "A3D4DDA63C598AF01B381EB08853B21B3A583A6328B5EC35D28796B8D1CEF19E"
+    },
+    {
+      "path": "docs/assets/inflow-rf-saturation-model.js",
+      "sha256": "82D9A34A28D265FC0B3F2FD098A8201492384217F91BA7E096F29C21997C1C2A"
+    },
+    {
+      "path": "docs/assets/hemorrhage-state-reading.js",
+      "sha256": "109FE246BD4808DE3C75047A2A3C082245529B1749E4292AFDE4D42810B6CB1A"
+    },
+    {
+      "path": "docs/assets/fid-spectrum-model.js",
+      "sha256": "86CC223D18789288F91CAD7CD74F58A0963A633743B6A85B23D1C7AD8DDE9E44"
+    },
+    {
+      "path": "docs/assets/spectral-line-model.js",
+      "sha256": "E2A0172E23C29605EB71B05F96527FE41E4A8A1978C1B935CAC3AB3CDE55E575"
+    },
+    {
+      "path": "docs/assets/mrs-localization-model.js",
+      "sha256": "63AAAEECF1F9DB08AC9B53E8C78CCB001B0685BCA094CC997049C99E5C64397D"
+    },
+    {
+      "path": "docs/assets/mrs-field-distribution-model.js",
+      "sha256": "09E8275836A935DFC47F3E07FFCEB58B3301DB0446F5FA5C46A5BC312334AD44"
+    },
+    {
+      "path": "docs/assets/ecv-partition-model.js",
+      "sha256": "1FFBF91FFA38266C77671CF52B07D3468055873846D1E1CD502DBAD7B1B8F8AC"
+    },
+    {
+      "path": "docs/assets/finite-slice-rf-model.js",
+      "sha256": "85405A9BF179203C8A56B6741670A3F7CFCEE638E3DBCAA303E9C14075F9BD83"
+    },
+    {
+      "path": "docs/assets/shear-wave-model.js",
+      "sha256": "37A6CCE1F5FF2F5A781BB0D3FC92FA28435609EAB9E2EE5214E1B9C6CE1A405C"
+    },
+    {
+      "path": "docs/assets/mre-motion-encoding-model.js",
+      "sha256": "FC5CEE4B610C663E6579BD65E6D38ED1875993EF68C49E6008FB7DE8D0DC75EE"
+    },
+    {
+      "path": "docs/assets/mre-inversion-model.js",
+      "sha256": "4E29430363D40B98711639A9E53A9A6D026CFC669538986D2BB44D6452AF3CF8"
+    },
+    {
+      "path": "docs/assets/qsm-dipole-model.js",
+      "sha256": "80049AB56CF24C7365951A568ABAEF9A13E0A38C5B5E9F0DB5DB094870071267"
+    },
+    {
+      "path": "docs/assets/reconstruction-roles-model.js",
+      "sha256": "197E8CA3F7E5FC82A3695ED396B9725F8492117FCE9B8C8112021D1C3E3D4D51"
+    },
+    {
+      "path": "docs/assets/structure-evaluation-model.js",
+      "sha256": "E0247BC80B853642B1F06A256B70DF7DFB4350FAF53CA30758DC5598DB95F824"
+    },
+    {
+      "path": "docs/assets/processed-t2-model.js",
+      "sha256": "DD84D1963E51DD90944F58FDC92DF39A1024152D22F26FC1293A577F93A4A22C"
+    },
+    {
+      "path": "docs/assets/vendor-ai-reading.js",
+      "sha256": "73BA4B0E9D9DB95E0037253E97D0695F5A711DDFF977A3DE892E1F09773E73DC"
+    },
+    {
+      "path": "docs/assets/ensemble-noise-model.js",
+      "sha256": "08966AEEB3BBDC3B8ADF33FEA2C500F9942BC06D695E64149AB1744A7A9CE74E"
+    },
+    {
+      "path": "docs/assets/magic-angle-model.js",
+      "sha256": "48E20E24AEB8ED362FDB975BC4E13D10B8BCED9A43B5FE6FB0695775B780A0D4"
+    },
+    {
+      "path": "docs/assets/flow-mixture-model.js",
+      "sha256": "2DD2D294E3BCE4BC316C9F575777CBDE9C624D70F3AD63621711FC97E0FE6FD7"
+    },
+    {
+      "path": "docs/assets/blood-refocusing-reading.js",
+      "sha256": "F5CE9C2B296A56544E2AA5D38877E14E0EA4651FF1DDB14B20B0C30DF5617431"
+    },
+    {
+      "path": "docs/assets/phase-contrast-model.js",
+      "sha256": "A8CCF3DF70E9332767158BFD4A8A6352CC860A6CF14DB3C1F25BDDA4C13E3329"
+    },
+    {
+      "path": "docs/assets/linear-field-correction-model.js",
+      "sha256": "3C32A4CF9433582FE52309BFC16E8B3E2B79E90D34C3ECC06E7C81320DEF90D1"
+    },
+    {
+      "path": "docs/assets/temporal-window-model.js",
+      "sha256": "415D6272F24888108F0531871A0A1A6AA6ED376FEAC5E934140D7719FD340531"
+    },
+    {
+      "path": "docs/assets/signed-subtraction-model.js",
+      "sha256": "FE48D3B61DBC8622F40BFE742B2A217E91CE76DBDA0841319942CAA04BFB201E"
+    },
+    {
+      "path": "docs/assets/dsc-rate-transform-model.js",
+      "sha256": "636EADF93B2D76BBDFBB5B7747FAC409A09B5E8BA491595B2088BF71C1945BDB"
+    },
+    {
+      "path": "docs/assets/polynomial-field-model.js",
+      "sha256": "B517E86E3FFEBEBEBC32BB226592ADAF796AC767C98078D46F444C219B376774"
+    },
+    {
+      "path": "docs/assets/compartment-exchange-model.js",
+      "sha256": "2FCCE0D25060FD02A2F3980F8E4900F02F15E3B9B160E09B55247369D827E224"
+    },
+    {
+      "path": "docs/assets/label-arrival-model.js",
+      "sha256": "BC3CF9987C377E336A03C4A42301C1B154B3A140570E766DE91ED4885B8B17B9"
+    },
+    {
+      "path": "docs/assets/diffusion-tensor-model.js",
+      "sha256": "77729FC145306D3350E29D67946BB21C983C59CC725E2339BFF79A5886E2A366"
+    },
+    {
+      "path": "docs/assets/diffusion-mixture-model.js",
+      "sha256": "5727B6D116918CE84181FFE84F6B1656DDC59F8AA125E99E49B2EE6905DAB0BD"
+    },
+    {
+      "path": "docs/assets/delayed-response-model.js",
+      "sha256": "2132AC5C2C9CAFC4964A062AD00BBA323CACC928A257330B7B7BA477AA930BBD"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/polynomial_field_basis.html",
+      "sha256": "87C165A4763077A7275A50D0EF4AA0DEEFCD7C732A385EC4ECD97C7E003F01AB"
+    },
+    {
+      "path": "docs/compartment_input_washout.html",
+      "sha256": "3B0126A9D21A3995927DD4E548D16258E862C9989302AE13E7D9359737C01AF8"
+    },
+    {
+      "path": "docs/label_arrival_decay.html",
+      "sha256": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F"
+    },
+    {
+      "path": "docs/diffusion_tensor_direction.html",
+      "sha256": "A8E4F8157E40DB28A103BBF14AD15A028AE88E7194961088D53E125C205359BC"
+    },
+    {
+      "path": "docs/diffusion_tensor_mixture.html",
+      "sha256": "A2582FF946578DE2433DA09AFF58D7EC7BF9FA9744304A8C125ADABF06FFF944"
+    },
+    {
+      "path": "docs/delayed_response_kernel.html",
+      "sha256": "A23523BDACE99395B8CAF8233060B9B1165FF2D788CD303FCF8F4E5C0CBED9DF"
+    },
+    {
+      "path": "docs/phantom_grid_distance.html",
+      "sha256": "B4D5810A21BA66062AF6697B90E28D7C4CB1869EC04C3634EE0760DE49940AA4"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X15-basis-physics.html",
+      "sha256": "1B25BCA4D929C2108725E751F052762EEA86212A39172F3CA60FA0CD617D8148"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X07-physics.html",
+      "sha256": "ED8654183E39193206837C72C9E606A0007C8E60204C6EF68984BEA7A377D229"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-physics.html",
+      "sha256": "040A2D7708810D9BAD23664106A24AA98EDC52DDE231C5FB4566E227D1B707AA"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-physics.html",
+      "sha256": "FC767AC11715EDEC51AAF4FF84B5D4123AC159EF94A283079BC1C057B2CBF3F7"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X12-mixture-physics.html",
+      "sha256": "FCC21A1758064BC51E1987EE6C13FE759656BFC2C3AD16686F3537DA7BE215EE"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X09-physics.html",
+      "sha256": "A014DEB113B2D864624C31A82661C107026EE5A88B66E2FE3929452B87545757"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-physics.html",
+      "sha256": "3B98AA1739B6DDADD67B7B85888CAC3544E0292313939D8A462512161EDC8A2B"
+    },
+    {
+      "path": "docs/verification/2026-10-18/W81-readability.html",
+      "sha256": "B61815C530F5789A04CB19538F95928706B772A183D075ECA8D8B3D1048AFA81"
+    }
+  ],
+  "sourceURL": "https://github.com/olclocr/MR_physics/blob/main/tests/helpers/phantom-geometry-reference.cjs",
+  "sourceStatus": 200,
+  "results": [
+    {
+      "width": 1920,
+      "file": "polynomial_field_basis.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=43.333250Hz / β1=2.000000Hz/mm / β2=0.000000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "43.333250"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "25.991303"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "11.925510"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.717881"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.931568"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.005821"
+        },
+        {
+          "id": "status",
+          "text": "평균과 기울기를 없애도 곡률 잔여가 남습니다. 평균0/σ>0과 복소합을 함께 확인하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "polynomial_field_basis.html",
+      "button": "exampleResidual",
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=43.333250Hz / β1=2.000000Hz/mm / β2=0.000000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "43.333250"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "25.991303"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "11.925510"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.717881"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.931568"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.005821"
+        },
+        {
+          "id": "status",
+          "text": "평균과 기울기를 없애도 곡률 잔여가 남습니다. 평균0/σ>0과 복소합을 함께 확인하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "polynomial_field_basis.html",
+      "button": "exampleMatch",
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=30.000000Hz / β1=2.000000Hz/mm / β2=0.100000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "43.333250"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "25.991303"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.717881"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "알려진2차field를 정확히 포함하는 기저입니다. 이번 이상적 모형의 잔여주파수0/복소합크기1입니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "polynomial_field_basis.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=30.000000Hz / β1=2.000000Hz/mm / β2=0.000000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "원래 직선이므로 선형 기저로 충분합니다. 더 큰 기저가 필요한 field는 아닙니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X15-basis-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_washout.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "Ct의 peak=0.126424mmol/L조직 · t1분"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.046509"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.232544"
+        },
+        {
+          "id": "kepOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "0.693147"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.046509"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.200000 − 누적유출 0.153491 = 잔류Ct 0.046509 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "입력은0이지만 구획의잔류농도와유출은계속될수있습니다. 입력종료뒤의washout을관찰하세요."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_washout.html",
+      "button": "exampleFast",
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "Ct의 peak=0.172933mmol/L조직 · t1분"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.023404"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.117020"
+        },
+        {
+          "id": "kepOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "0.346574"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.046808"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.400000 − 누적유출 0.376596 = 잔류Ct 0.023404 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "입력은0이지만 구획의잔류농도와유출은계속될수있습니다. 입력종료뒤의washout을관찰하세요."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_washout.html",
+      "button": "exampleVolume",
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "Ct의 peak=0.157388mmol/L조직 · t1분"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.095460"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.238651"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "1.386294"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.047730"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.200000 − 누적유출 0.104540 = 잔류Ct 0.095460 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "입력은0이지만 구획의잔류농도와유출은계속될수있습니다. 입력종료뒤의washout을관찰하세요."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "compartment_input_washout.html",
+      "button": "exampleZero",
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "전달0 · 모든 시각Ct0"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "정의하지 않음"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.000000 − 누적유출 0.000000 = 잔류Ct 0.000000 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "혈장 입력이 있어도 전달상수0이므로 이 구획의Ct/Ce와유출은모두0입니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "rateGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X07-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "label_arrival_decay.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "0.426990"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.286505"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 · 보관"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.286505"
+        },
+        {
+          "id": "status",
+          "text": "도착 뒤 관찰값은 이packet에남은차이입니다. T1회복은표지직후부터2.000000초동안진행했습니다."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 744,
+          "height": 237.65625
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_arrival_decay.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "-0.463231"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.731616"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 전"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰위치에는아직도착하지않았습니다. Packet의남은차이와관찰값0을구별하세요."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 744,
+          "height": 237.65625
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_arrival_decay.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "0.729329"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.135335"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 · 보관"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.135335"
+        },
+        {
+          "id": "status",
+          "text": "도착 뒤 관찰값은 이packet에남은차이입니다. T1회복은표지직후부터2.000000초동안진행했습니다."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 744,
+          "height": 237.65625
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_arrival_decay.html",
+      "button": "exampleLate",
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "0.693290"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.153355"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 · 보관"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.153355"
+        },
+        {
+          "id": "status",
+          "text": "도착 뒤 관찰값은 이packet에남은차이입니다. T1회복은표지직후부터3.000000초동안진행했습니다."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 744,
+          "height": 237.65625
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X08-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_direction.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 1.400000 / 0.500000 / 0.500000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.573819"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.246597"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "측정방향에따라ADC와신호가달라집니다. 회전은방향패턴을옮기고MD/FA는유지합니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_direction.html",
+      "button": "exampleIsotropic",
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 0.800000 / 0.800000 / 0.800000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.449329"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.449329"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.449329"
+        },
+        {
+          "id": "status",
+          "text": "세고유값이같아모든방향ADC와신호가같습니다. 같은MD의회색기준과겹칩니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_direction.html",
+      "button": "exampleRotate",
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 1.400000 / 0.500000 / 0.500000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.573819"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "측정방향에따라ADC와신호가달라집니다. 회전은방향패턴을옮기고MD/FA는유지합니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_direction.html",
+      "button": "exampleOblate",
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 1.100000 / 1.100000 / 0.200000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.573819"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.332871"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.332871"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.818731"
+        },
+        {
+          "id": "status",
+          "text": "xy두고유값이같아xy곡선은일정하지만Z방향은다릅니다. 한값큰모형과MD/FA가같아도모양은다릅니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X12-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_mixture.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=0.900602 / Dyy=0.900602 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.034648"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.049398"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "status",
+          "text": "두성분혼합의방향ADC가단일tensor형태를벗어날수있습니다. 잔차는이교육모형의불일치이며실제원인/성분수추정은아닙니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "residualGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_mixture.html",
+      "button": "exampleAligned",
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=1.400000 / Dyy=0.500000 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.246597"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "이조건의곡선은단일tensor형태로맞습니다. 잔차0이실제성분수1개를증명하지는않습니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "residualGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_mixture.html",
+      "button": "exampleCrossed",
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=0.900602 / Dyy=0.900602 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.034648"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.049398"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "status",
+          "text": "두성분혼합의방향ADC가단일tensor형태를벗어날수있습니다. 잔차는이교육모형의불일치이며실제원인/성분수추정은아닙니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "residualGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "diffusion_tensor_mixture.html",
+      "button": "exampleSingle",
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=1.400000 / Dyy=0.500000 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.246597"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "이조건의곡선은단일tensor형태로맞습니다. 잔차0이실제성분수1개를증명하지는않습니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 744,
+          "height": 330.65625
+        },
+        {
+          "id": "residualGraphic",
+          "width": 744,
+          "height": 330.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X12-mixture-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "delayed_response_kernel.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.176135"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "5.163953"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.499731"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 4)초입니다. 선택 t=8초에서 입력 0, 반응 0.176135입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "delayed_response_kernel.html",
+      "button": "exampleEnd",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.323324"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "5.163953"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.499731"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 4)초입니다. 선택 t=4초에서 입력 0, 반응 0.323324입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "delayed_response_kernel.html",
+      "button": "exampleSlow",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.253486"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "7.082988"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.265147"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 4)초입니다. 선택 t=8초에서 입력 0, 반응 0.253486입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "delayed_response_kernel.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.938031"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "8.314374"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.946576"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 8)초입니다. 선택 t=8초에서 입력 0, 반응 0.938031입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X09-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "phantom_grid_distance.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "2.262742"
+        },
+        {
+          "id": "status",
+          "text": "중심 가로: A r2c0 → B r2c4. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 1.600000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 651
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 744,
+          "height": 392.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phantom_grid_distance.html",
+      "button": "exampleSpacing",
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "중심 세로: A r4c2 → B r0c2. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 0.000000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 651
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 744,
+          "height": 392.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phantom_grid_distance.html",
+      "button": "exampleEdge",
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "86.400000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "86.400000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "6.400000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "4.525483"
+        },
+        {
+          "id": "status",
+          "text": "가장자리 가로: A r0c0 → B r0c4. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 6.400000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 651
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 744,
+          "height": 392.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phantom_grid_distance.html",
+      "button": "exampleCenter",
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "83.200000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "83.200000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "3.200000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "4.525483"
+        },
+        {
+          "id": "status",
+          "text": "중심 가로: A r2c0 → B r2c4. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 3.200000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 651
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 744,
+          "height": 392.65625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X17-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "polynomial_field_basis.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=43.333250Hz / β1=2.000000Hz/mm / β2=0.000000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "43.333250"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "25.991303"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "11.925510"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.717881"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.931568"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.005821"
+        },
+        {
+          "id": "status",
+          "text": "평균과 기울기를 없애도 곡률 잔여가 남습니다. 평균0/σ>0과 복소합을 함께 확인하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "polynomial_field_basis.html",
+      "button": "exampleResidual",
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=43.333250Hz / β1=2.000000Hz/mm / β2=0.000000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "43.333250"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "25.991303"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "11.925510"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.717881"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "0.931568"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.005821"
+        },
+        {
+          "id": "status",
+          "text": "평균과 기울기를 없애도 곡률 잔여가 남습니다. 평균0/σ>0과 복소합을 함께 확인하세요."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "polynomial_field_basis.html",
+      "button": "exampleMatch",
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=30.000000Hz / β1=2.000000Hz/mm / β2=0.100000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "43.333250"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "25.991303"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.717881"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "알려진2차field를 정확히 포함하는 기저입니다. 이번 이상적 모형의 잔여주파수0/복소합크기1입니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "polynomial_field_basis.html",
+      "button": "exampleLinear",
+      "outputs": [
+        {
+          "id": "coefficientOutput",
+          "text": "빼는 계수: β0=30.000000Hz / β1=2.000000Hz/mm / β2=0.000000Hz/mm²"
+        },
+        {
+          "id": "beforeMeanOutput",
+          "text": "30.000000"
+        },
+        {
+          "id": "afterMeanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeStdOutput",
+          "text": "23.093939"
+        },
+        {
+          "id": "afterStdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "beforeSignalOutput",
+          "text": "0.756828"
+        },
+        {
+          "id": "afterSignalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "원래 직선이므로 선형 기저로 충분합니다. 더 큰 기저가 필요한 field는 아닙니다."
+        }
+      ],
+      "tableRows": 522,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "fieldGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X15-basis-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_washout.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "Ct의 peak=0.126424mmol/L조직 · t1분"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.046509"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.232544"
+        },
+        {
+          "id": "kepOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "0.693147"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.046509"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.200000 − 누적유출 0.153491 = 잔류Ct 0.046509 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "입력은0이지만 구획의잔류농도와유출은계속될수있습니다. 입력종료뒤의washout을관찰하세요."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_washout.html",
+      "button": "exampleFast",
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "Ct의 peak=0.172933mmol/L조직 · t1분"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.023404"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.117020"
+        },
+        {
+          "id": "kepOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "0.346574"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.046808"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.400000 − 누적유출 0.376596 = 잔류Ct 0.023404 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "입력은0이지만 구획의잔류농도와유출은계속될수있습니다. 입력종료뒤의washout을관찰하세요."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_washout.html",
+      "button": "exampleVolume",
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "Ct의 peak=0.157388mmol/L조직 · t1분"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.095460"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.238651"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "1.386294"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.047730"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.200000 − 누적유출 0.104540 = 잔류Ct 0.095460 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "입력은0이지만 구획의잔류농도와유출은계속될수있습니다. 입력종료뒤의washout을관찰하세요."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "compartment_input_washout.html",
+      "button": "exampleZero",
+      "outputs": [
+        {
+          "id": "peakOutput",
+          "text": "전달0 · 모든 시각Ct0"
+        },
+        {
+          "id": "plasmaOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "tissueOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "eesOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "kepOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "halfOutput",
+          "text": "정의하지 않음"
+        },
+        {
+          "id": "influxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "effluxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "balanceOutput",
+          "text": "누적유입 0.000000 − 누적유출 0.000000 = 잔류Ct 0.000000 mmol/L조직"
+        },
+        {
+          "id": "status",
+          "text": "혈장 입력이 있어도 전달상수0이므로 이 구획의Ct/Ce와유출은모두0입니다."
+        }
+      ],
+      "tableRows": 121,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "concentrationGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "rateGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X07-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "label_arrival_decay.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "0.426990"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.286505"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 · 보관"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.286505"
+        },
+        {
+          "id": "status",
+          "text": "도착 뒤 관찰값은 이packet에남은차이입니다. T1회복은표지직후부터2.000000초동안진행했습니다."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 313,
+          "height": 99.984375
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_arrival_decay.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "-0.463231"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.731616"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 전"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰위치에는아직도착하지않았습니다. Packet의남은차이와관찰값0을구별하세요."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 313,
+          "height": 99.984375
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_arrival_decay.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "0.729329"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.135335"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 · 보관"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.135335"
+        },
+        {
+          "id": "status",
+          "text": "도착 뒤 관찰값은 이packet에남은차이입니다. T1회복은표지직후부터2.000000초동안진행했습니다."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 313,
+          "height": 99.984375
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_arrival_decay.html",
+      "button": "exampleLate",
+      "outputs": [
+        {
+          "id": "arrivalOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "20.000000"
+        },
+        {
+          "id": "controlOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "labelOutput",
+          "text": "0.693290"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.153355"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "도착 · 보관"
+        },
+        {
+          "id": "observedOutput",
+          "text": "0.153355"
+        },
+        {
+          "id": "status",
+          "text": "도착 뒤 관찰값은 이packet에남은차이입니다. T1회복은표지직후부터3.000000초동안진행했습니다."
+        }
+      ],
+      "tableRows": 61,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "routeGraphic",
+          "width": 313,
+          "height": 99.984375
+        },
+        {
+          "id": "differenceGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X08-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_direction.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 1.400000 / 0.500000 / 0.500000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.573819"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.246597"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "측정방향에따라ADC와신호가달라집니다. 회전은방향패턴을옮기고MD/FA는유지합니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_direction.html",
+      "button": "exampleIsotropic",
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 0.800000 / 0.800000 / 0.800000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.449329"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.449329"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.449329"
+        },
+        {
+          "id": "status",
+          "text": "세고유값이같아모든방향ADC와신호가같습니다. 같은MD의회색기준과겹칩니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_direction.html",
+      "button": "exampleRotate",
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 1.400000 / 0.500000 / 0.500000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.573819"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "측정방향에따라ADC와신호가달라집니다. 회전은방향패턴을옮기고MD/FA는유지합니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_direction.html",
+      "button": "exampleOblate",
+      "outputs": [
+        {
+          "id": "eigenOutput",
+          "text": "모형 λ: 1.100000 / 1.100000 / 0.200000 ×10⁻³mm²/s"
+        },
+        {
+          "id": "mdOutput",
+          "text": "0.800000"
+        },
+        {
+          "id": "faOutput",
+          "text": "0.573819"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.332871"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.332871"
+        },
+        {
+          "id": "zSignalOutput",
+          "text": "0.818731"
+        },
+        {
+          "id": "status",
+          "text": "xy두고유값이같아xy곡선은일정하지만Z방향은다릅니다. 한값큰모형과MD/FA가같아도모양은다릅니다."
+        }
+      ],
+      "tableRows": 40,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "adcGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X12-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_mixture.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=0.900602 / Dyy=0.900602 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.034648"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.049398"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "status",
+          "text": "두성분혼합의방향ADC가단일tensor형태를벗어날수있습니다. 잔차는이교육모형의불일치이며실제원인/성분수추정은아닙니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "residualGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_mixture.html",
+      "button": "exampleAligned",
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=1.400000 / Dyy=0.500000 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.246597"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "이조건의곡선은단일tensor형태로맞습니다. 잔차0이실제성분수1개를증명하지는않습니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "residualGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_mixture.html",
+      "button": "exampleCrossed",
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=0.900602 / Dyy=0.900602 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.034648"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.049398"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.426564"
+        },
+        {
+          "id": "status",
+          "text": "두성분혼합의방향ADC가단일tensor형태를벗어날수있습니다. 잔차는이교육모형의불일치이며실제원인/성분수추정은아닙니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "residualGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "diffusion_tensor_mixture.html",
+      "button": "exampleSingle",
+      "outputs": [
+        {
+          "id": "componentOutput",
+          "text": "각성분의모형MD=0.800000×10⁻³mm²/s · FA=0.573819"
+        },
+        {
+          "id": "coefficientOutput",
+          "text": "제한fit 계수: Dxx=1.400000 / Dyy=0.500000 / Dxy=0.000000 (10⁻³mm²/s)"
+        },
+        {
+          "id": "rmsOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maxOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "xSignalOutput",
+          "text": "0.246597"
+        },
+        {
+          "id": "diagonalSignalOutput",
+          "text": "0.386741"
+        },
+        {
+          "id": "ySignalOutput",
+          "text": "0.606531"
+        },
+        {
+          "id": "status",
+          "text": "이조건의곡선은단일tensor형태로맞습니다. 잔차0이실제성분수1개를증명하지는않습니다."
+        }
+      ],
+      "tableRows": 37,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "signalGraphic",
+          "width": 313,
+          "height": 139.109375
+        },
+        {
+          "id": "residualGraphic",
+          "width": 313,
+          "height": 139.109375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X12-mixture-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "delayed_response_kernel.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.176135"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "5.163953"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.499731"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 4)초입니다. 선택 t=8초에서 입력 0, 반응 0.176135입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "delayed_response_kernel.html",
+      "button": "exampleEnd",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.323324"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "5.163953"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.499731"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 4)초입니다. 선택 t=4초에서 입력 0, 반응 0.323324입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "delayed_response_kernel.html",
+      "button": "exampleSlow",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.253486"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "7.082988"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.265147"
+        },
+        {
+          "id": "areaOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 4)초입니다. 선택 t=8초에서 입력 0, 반응 0.253486입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "delayed_response_kernel.html",
+      "button": "exampleLong",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.938031"
+        },
+        {
+          "id": "kernelPeakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "8.314374"
+        },
+        {
+          "id": "peakResponseOutput",
+          "text": "0.946576"
+        },
+        {
+          "id": "areaOutput",
+          "text": "6.000000"
+        },
+        {
+          "id": "status",
+          "text": "입력 구간은 [2, 8)초입니다. 선택 t=8초에서 입력 0, 반응 0.938031입니다. 반응의 전체 면적은 표시창 밖까지 포함한 값입니다."
+        }
+      ],
+      "tableRows": 362,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "kernelGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X09-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "phantom_grid_distance.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "81.600000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "2.262742"
+        },
+        {
+          "id": "status",
+          "text": "중심 가로: A r2c0 → B r2c4. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 1.600000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 273.875
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 313,
+          "height": 165.1875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phantom_grid_distance.html",
+      "button": "exampleSpacing",
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "중심 세로: A r4c2 → B r0c2. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 0.000000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 273.875
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 313,
+          "height": 165.1875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phantom_grid_distance.html",
+      "button": "exampleEdge",
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "86.400000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "86.400000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "6.400000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "4.525483"
+        },
+        {
+          "id": "status",
+          "text": "가장자리 가로: A r0c0 → B r0c4. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 6.400000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 273.875
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 313,
+          "height": 165.1875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phantom_grid_distance.html",
+      "button": "exampleCenter",
+      "outputs": [
+        {
+          "id": "deltaUOutput",
+          "text": "83.200000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "convertedOutput",
+          "text": "83.200000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "3.200000"
+        },
+        {
+          "id": "percentOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "displacementOutput",
+          "text": "4.525483"
+        },
+        {
+          "id": "status",
+          "text": "중심 가로: A r2c0 → B r2c4. 중심점은 항상 제자리이며, 이 조건의 선택 길이 차이는 3.200000mm입니다. 합격/불합격을 판정하지 않습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 273.875
+        },
+        {
+          "id": "spacingGraphic",
+          "width": 313,
+          "height": 165.1875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X17-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "W81-readability.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "W81-readability.html",
+      "report": true
+    }
+  ]
+}

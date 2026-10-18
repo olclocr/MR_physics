@@ -1,0 +1,29 @@
+{
+  "conditions": 12,
+  "timePoints": 4812,
+  "max": {
+    "phase": 1.3717915692268434e-12,
+    "complex": 1.3994083669643942e-12,
+    "positionMm": 1.2816414596272807e-12,
+    "velocityCmS": 1.2530421145129367e-11,
+    "moment0": 6.657678965418801e-19,
+    "moment1": 3.970466940254533e-23,
+    "moment2": 4.911384887033602e-25,
+    "norm": 9.769962616701378e-15,
+    "convergence": 1.56106239046494e-11
+  },
+  "maxPhase": 3.281605530260549,
+  "tolerance": {
+    "phase": 1e-8,
+    "complex": 1e-8,
+    "positionMm": 1e-8,
+    "velocityCmS": 1e-8,
+    "moment0": 1e-14,
+    "moment1": 1e-17,
+    "moment2": 1e-20,
+    "norm": 1e-10,
+    "convergence": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

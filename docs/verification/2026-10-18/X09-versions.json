@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "docs/delayed_response_kernel.html",
-      "sha256": "A23523BDACE99395B8CAF8233060B9B1165FF2D788CD303FCF8F4E5C0CBED9DF"
+      "sha256": "09DB170A8FC0B3F9F63EB72C0EC704ED8813B792289C4BBB279188753CD34D55"
     },
     {
       "path": "docs/assets/delayed-response-model.js",
@@ -43,6 +43,13 @@
     {
       "path": "docs/verification/2026-10-18/X09-browser-check.json",
       "sha256": "F136A0F596BE5FEF7BCCA15B9B1D22D1BC180B6C778473B905940FFFAB42FD8E"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W91",
+      "proof": "docs/verification/2026-10-18/checkpoint-W91-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

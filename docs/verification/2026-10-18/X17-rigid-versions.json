@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W88 prescribed 2D rigid coordinates and anisotropic pixel metric; no image registration estimation, resampling or scanner QA decision; own report excluded",
+  "files": [
+    {
+      "path": "docs/phantom_rigid_distance.html",
+      "sha256": "F702F32A219742B5D99E1AC5A14722509DEC98642EEC7EAFA0AAC505DC50FA88"
+    },
+    {
+      "path": "docs/assets/phantom-rigid-model.js",
+      "sha256": "0A1E29C0EA766E361812AFAC7CC1814EA1035BCD538B584677F48009449C3189"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/phantom-geometry-model.js",
+      "sha256": "14D0A5A954F56002BC05782D09EAC3B4DEBA1963B59B12C65AD580230F59E36C"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/phantom-rigid.test.cjs",
+      "sha256": "D168859C901075570C23147BC79A346D452236C167C4EBE593F0ED4F7C5E522D"
+    },
+    {
+      "path": "tests/helpers/phantom-rigid-reference.cjs",
+      "sha256": "0CFEB48228103E75982ADA83B5A70838FC84009A374E9155126C2F40F1CAB58E"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-rigid-numerical.cjs",
+      "sha256": "261D283A699A6286722090B28CE6C98F00BCDEB9BE2FDAC1DC6A4FAACDB28461"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-rigid-numerical.json",
+      "sha256": "37075ACB95B4D8DC2FF77CF41F9CBD3D17ED947283EDF0417669018E84B5598D"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-rigid-display-reference.json",
+      "sha256": "B04D0C6383AFB4B58118C6067E19B55D20F15C532F6EE6722910E8961D554BB5"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-rigid-browser-check.js",
+      "sha256": "1885670EA3742ADC9E74C11591369CD2AA5C9A3C9C52EBAF93E335C764729D45"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X17-rigid-browser-check.json",
+      "sha256": "C1C2583235945DCD9E7B7D66CAD12E8DCD23AA12B8504B6557221203E803D09F"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 10,
+  "results": [
+    {
+      "width": 1920,
+      "file": "flow_gradient_phase.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "phase_contrast_venc.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "linear_field_correction.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "temporal_window_bolus.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "file": "dsc_signal_rate.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "flow_gradient_phase.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "phase_contrast_venc.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "linear_field_correction.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "temporal_window_bolus.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "file": "dsc_signal_rate.html",
+      "phrase": true,
+      "details": true,
+      "quizButtons": 4,
+      "keyboardReset": true,
+      "overflow": false
+    }
+  ]
+}

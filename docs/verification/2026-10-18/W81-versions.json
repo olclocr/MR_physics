@@ -13,7 +13,7 @@
     },
     {
       "path": "docs/label_arrival_decay.html",
-      "sha256": "07F1497CB94B2B724C892A7F6E2E8DB0524E2AFDB25BF76304E9B7EA8D8DE47F"
+      "sha256": "141499F5BF166EA9DE061A7A7E0A73EA5F4DEF45187FA8668D219FC266677A37"
     },
     {
       "path": "docs/diffusion_tensor_direction.html",
@@ -66,6 +66,13 @@
     {
       "path": "docs/verification/2026-10-18/W81-reading-browser.json",
       "sha256": "6BD199D385CEEF39FD27BC520DEFE937B2D6C85048CF0D56EDD98ED9646A48D6"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W91",
+      "proof": "docs/verification/2026-10-18/checkpoint-W91-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

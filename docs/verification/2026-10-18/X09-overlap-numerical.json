@@ -1,0 +1,17 @@
+{
+  "conditions": 18,
+  "timePoints": 4338,
+  "max": {
+    "component": 1.5487611193520934e-14,
+    "total": 1.5487611193520934e-14,
+    "quadratureConvergence": 2.3869795029440866e-13,
+    "ode": 4.718447854656915e-13,
+    "odeConvergence": 7.1062045137182395e-12,
+    "wholeAreaSec": 1.580957587066223e-13,
+    "wholeAreaConvergence": 1.1235457009206584e-13
+  },
+  "maxResponse": 0.8142460098991957,
+  "tolerance": 1e-8,
+  "failed": [],
+  "passed": true
+}

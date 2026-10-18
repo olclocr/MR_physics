@@ -5,7 +5,7 @@
   "files": [
     {
       "path": "docs/phantom_grid_distance.html",
-      "sha256": "B4D5810A21BA66062AF6697B90E28D7C4CB1869EC04C3634EE0760DE49940AA4"
+      "sha256": "E57B17E6AF30F60A81312FB5F2378A11366A73B71C160AA03607E0513D39B049"
     },
     {
       "path": "docs/assets/phantom-geometry-model.js",
@@ -42,6 +42,13 @@
     {
       "path": "docs/verification/2026-10-18/X17-browser-check.json",
       "sha256": "707C71795EB3419EE2314748B9E5C5B47EC2C076C35C7ED2F2E74B162E742DDB"
+    }
+  ],
+  "navigationRevisions": [
+    {
+      "task": "W88",
+      "proof": "docs/verification/2026-10-18/checkpoint-W88-versions.json",
+      "scope": "One successor link; exact previous bytes reconstructed by removing it"
     }
   ]
 }

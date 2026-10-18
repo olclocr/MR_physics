@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "ef58ab49d0ac337a28685fe4c7724734937f1f0c",
+  "scope": "W91 normalized finite release and retained packets with equal T1; own report excluded; no actual ASL/readout/CBF",
+  "files": [
+    {
+      "path": "docs/label_train_arrival.html",
+      "sha256": "AB65CDB6FBB90152DC9CDEFC20E0885537B42EDF9485BC18B15D7A3911A5A38E"
+    },
+    {
+      "path": "docs/assets/label-train-model.js",
+      "sha256": "F9C792E9F22B1875DD5F7CB2658E1A22097A3C50BD07376C93032DAAE783D968"
+    },
+    {
+      "path": "docs/assets/mr-physics-models.js",
+      "sha256": "48141B90F69B7914C1B5196170BBE6ECA8E9FC9C631B34818F7B5685F2EA5DD0"
+    },
+    {
+      "path": "docs/assets/ir-lesson.css",
+      "sha256": "09AA2071C23DD038853D4896E9870D01BA23F567902D41FDF71158FFA0ED1709"
+    },
+    {
+      "path": "tests/label-train.test.cjs",
+      "sha256": "FFD8BFDE5CA92F10F69D86C74E97A9DBE6CBE09557BCC3D2057C53D30D93F519"
+    },
+    {
+      "path": "tests/helpers/label-train-reference.cjs",
+      "sha256": "415D2280E497C49CE8FB05FBF9DDBBCCE5676C38F75E08C72F1872713112F686"
+    },
+    {
+      "path": "tests/helpers/periodic-window-reference.cjs",
+      "sha256": "5B80AB902F8A1864C315BA77FF9D4B72C39A6C19A14E2542955109682E27113C"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-train-numerical.cjs",
+      "sha256": "65FE92FCC2C43A12C5EB8E2CC0F5921FD3611D8CDF7CAA28BBF1BDF52B58A389"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-train-numerical.json",
+      "sha256": "A0F064E080AB6EF7EFF78FFA6C2BC6DBD73F897FB10F52085C799A09E964DE9A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-train-display-reference.json",
+      "sha256": "783F7C192F9847A261549689DAF4A273BC7B53A997AD0873E535995EFFBA7924"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-train-browser-check.js",
+      "sha256": "AF7EA49BE40C39290CFB2EC7AE54B48C2297D7BEAB71E4FD17825381A54B844A"
+    },
+    {
+      "path": "docs/verification/2026-10-18/X08-train-browser-check.json",
+      "sha256": "AFF76FF665613D17714FFB852D3FB7588B5E8098AE12149741EB56481E598F59"
+    }
+  ]
+}

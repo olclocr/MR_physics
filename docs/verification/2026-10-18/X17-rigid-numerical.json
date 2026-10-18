@@ -1,0 +1,17 @@
+{
+  "conditions": 48,
+  "pointChecks": 1200,
+  "pairChecks": 14400,
+  "max": {
+    "coordinateMm": 1.0658141036401503e-14,
+    "pixelCoordinate": 2.842170943040401e-14,
+    "lengthMm": 1.4210854715202004e-14,
+    "displacementMm": 1.4210854715202004e-14,
+    "inverseMm": 1.4210854715202004e-14,
+    "pairSquaredMm2": 1.8189894035458565e-12
+  },
+  "maximumCoordinate": 59.64101615137754,
+  "tolerance": 1e-10,
+  "failed": [],
+  "passed": true
+}

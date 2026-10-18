@@ -1,0 +1,18 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "results": [
+    {
+      "width": 1920,
+      "portal": true,
+      "predecessors": 2,
+      "report": true
+    },
+    {
+      "width": 390,
+      "portal": true,
+      "predecessors": 2,
+      "report": true
+    }
+  ]
+}

@@ -1,0 +1,3170 @@
+{
+  "browser": "155.0.8059.82",
+  "root": "http://127.0.0.1:8877/docs/",
+  "states": 82,
+  "errors": [],
+  "results": [
+    {
+      "width": 1920,
+      "file": "periodic_motion_window.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "1.795978"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "2.055611"
+        },
+        {
+          "id": "startOutput",
+          "text": "0.200000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "status",
+          "text": "창 안의 위치 평균은 0.000000mm, 위치 표준편차는 1.795978mm입니다. 평균 주위 단면 폭에는 원래 Gaussian 폭 1mm도 포함됩니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "profileGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "periodic_motion_window.html",
+      "button": "exampleWide",
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "6.189215"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "6.269480"
+        },
+        {
+          "id": "startOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.450000"
+        },
+        {
+          "id": "status",
+          "text": "창 안의 위치 평균은 0.000000mm, 위치 표준편차는 6.189215mm입니다. 평균 주위 단면 폭에는 원래 Gaussian 폭 1mm도 포함됩니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "profileGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "periodic_motion_window.html",
+      "button": "exampleTurn",
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "7.568267"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "2.101177"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "2.327004"
+        },
+        {
+          "id": "startOutput",
+          "text": "-0.200000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.200000"
+        },
+        {
+          "id": "status",
+          "text": "창 안의 위치 평균은 7.568267mm, 위치 표준편차는 2.101177mm입니다. 평균 주위 단면 폭에는 원래 Gaussian 폭 1mm도 포함됩니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "profileGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "periodic_motion_window.html",
+      "button": "exampleInstant",
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "startOutput",
+          "text": "0.250000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.250000"
+        },
+        {
+          "id": "status",
+          "text": "창 0은 순간 극한입니다. 두 단면이 같고 위치의 표준편차는 0이지만 정의한 단면 폭 1mm는 남습니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "profileGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X10-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "gradient_first_moment.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "-8.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.214018"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.212388"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.214018 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "gradient_first_moment.html",
+      "button": "exampleCompensated",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "realOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.000000 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "gradient_first_moment.html",
+      "button": "exampleStationary",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "-8.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "realOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.000000 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "gradient_first_moment.html",
+      "button": "examplePosition",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "-8.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.214018"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.212388"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "-0.400000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.214018 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X01-compensation-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "response_overlap.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.323324"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.371538"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [8,10)초, 크기 1입니다. 10초의 합은 0.371538입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "response_overlap.html",
+      "button": "exampleClose",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.176135"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.224349"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [4,6)초, 크기 1입니다. 10초의 합은 0.224349입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "response_overlap.html",
+      "button": "exampleFar",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "12.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [12,14)초, 크기 1입니다. 10초의 합은 0.048215입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "response_overlap.html",
+      "button": "exampleHalf",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.161662"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.209877"
+        },
+        {
+          "id": "areaOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [8,10)초, 크기 0.5입니다. 10초의 합은 0.209877입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X09-overlap-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "0.707107"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=0.707107 mN, τy=-2.121320 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "positionGraphic",
+          "width": 1066,
+          "height": 503.375
+        },
+        {
+          "id": "angleGraphic",
+          "width": 1066,
+          "height": 503.375
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=0.000000 mN, τy=-2.121320 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "positionGraphic",
+          "width": 1066,
+          "height": 503.375
+        },
+        {
+          "id": "angleGraphic",
+          "width": 1066,
+          "height": 503.375
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": "exampleAligned",
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-3.000000"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.001000"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=1.000000 mN, τy=0.000000 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "positionGraphic",
+          "width": 1066,
+          "height": 503.375
+        },
+        {
+          "id": "angleGraphic",
+          "width": 1066,
+          "height": 503.375
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": "exampleLow",
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "0.707107"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "-0.707107"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.707107"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=0.707107 mN, τy=-0.707107 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "positionGraphic",
+          "width": 1066,
+          "height": 503.375
+        },
+        {
+          "id": "angleGraphic",
+          "width": 1066,
+          "height": 503.375
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X16-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "gradient_second_moment.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "32.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.085607"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 -0.085607 rad, 전체 위상 -0.085607 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "gradient_second_moment.html",
+      "button": "exampleCompensated",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 0.000000 rad, 전체 위상 0.000000 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "gradient_second_moment.html",
+      "button": "exampleConstant",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "32.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 0.000000 rad, 전체 위상 0.000000 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "gradient_second_moment.html",
+      "button": "exampleReverse",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "32.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.085607"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 0.085607 rad, 전체 위상 0.085607 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X01-acceleration-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "phantom_rigid_distance.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "33.705003"
+        },
+        {
+          "id": "centerOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "69.282032"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-20.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(2,1) mm, 격자 128×64입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phantom_rigid_distance.html",
+      "button": "exampleTranslation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "centerOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(1,1) mm, 격자 128×128입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phantom_rigid_distance.html",
+      "button": "exampleRotation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "centerOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(2,1) mm, 격자 128×64입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "phantom_rigid_distance.html",
+      "button": "exampleSpacing",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "33.705003"
+        },
+        {
+          "id": "centerOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "69.282032"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(1,1) mm, 격자 128×128입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 744,
+          "height": 661.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X17-rigid-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "induced_dipole_energy.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "status",
+          "text": "B0=3 T에서 현재 모멘트 3.000000 mA·m², 힘 3.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "induced_dipole_energy.html",
+      "button": "exampleEqual",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "status",
+          "text": "B0=1 T에서 현재 모멘트 1.000000 mA·m², 힘 1.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "induced_dipole_energy.html",
+      "button": "exampleFixed",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-3.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "status",
+          "text": "B0=3 T에서 현재 모멘트 1.000000 mA·m², 힘 1.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "induced_dipole_energy.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "status",
+          "text": "B0=3 T에서 현재 모멘트 3.000000 mA·m², 힘 0.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 744,
+          "height": 351.328125
+        },
+        {
+          "id": "energyGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X16-induced-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "label_train_arrival.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "status",
+          "text": "t=2.000000초에서 도달 분율 1.000000, 남은 차이량 0.398011입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 744,
+          "height": 268.65625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_train_arrival.html",
+      "button": "exampleComplete",
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "status",
+          "text": "t=2.000000초에서 도달 분율 1.000000, 남은 차이량 0.398011입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 744,
+          "height": 268.65625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_train_arrival.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.314167"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "1.500000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.544016"
+        },
+        {
+          "id": "status",
+          "text": "t=1.000000초에서 도달 분율 0.500000, 남은 차이량 0.314167입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 744,
+          "height": 268.65625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "label_train_arrival.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.336323"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "1.500000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.459699"
+        },
+        {
+          "id": "status",
+          "text": "t=2.000000초에서 도달 분율 1.000000, 남은 차이량 0.336323입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 744,
+          "height": 268.65625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 744,
+          "height": 351.328125
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "file": "X08-train-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "periodic_motion_window.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "1.795978"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "2.055611"
+        },
+        {
+          "id": "startOutput",
+          "text": "0.200000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.300000"
+        },
+        {
+          "id": "status",
+          "text": "창 안의 위치 평균은 0.000000mm, 위치 표준편차는 1.795978mm입니다. 평균 주위 단면 폭에는 원래 Gaussian 폭 1mm도 포함됩니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "profileGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "periodic_motion_window.html",
+      "button": "exampleWide",
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "6.189215"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "6.269480"
+        },
+        {
+          "id": "startOutput",
+          "text": "0.050000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.450000"
+        },
+        {
+          "id": "status",
+          "text": "창 안의 위치 평균은 0.000000mm, 위치 표준편차는 6.189215mm입니다. 평균 주위 단면 폭에는 원래 Gaussian 폭 1mm도 포함됩니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "profileGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "periodic_motion_window.html",
+      "button": "exampleTurn",
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "10.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "7.568267"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "2.101177"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "2.327004"
+        },
+        {
+          "id": "startOutput",
+          "text": "-0.200000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.200000"
+        },
+        {
+          "id": "status",
+          "text": "창 안의 위치 평균은 7.568267mm, 위치 표준편차는 2.101177mm입니다. 평균 주위 단면 폭에는 원래 Gaussian 폭 1mm도 포함됩니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "profileGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "periodic_motion_window.html",
+      "button": "exampleInstant",
+      "outputs": [
+        {
+          "id": "instantOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "meanOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "motionSdOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "profileSdOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "startOutput",
+          "text": "0.250000"
+        },
+        {
+          "id": "endOutput",
+          "text": "0.250000"
+        },
+        {
+          "id": "status",
+          "text": "창 0은 순간 극한입니다. 두 단면이 같고 위치의 표준편차는 0이지만 정의한 단면 폭 1mm는 남습니다."
+        }
+      ],
+      "tableRows": 662,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "motionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "profileGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X10-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "gradient_first_moment.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "-8.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.214018"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.212388"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.214018 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "gradient_first_moment.html",
+      "button": "exampleCompensated",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "realOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "1.600000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.000000 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "gradient_first_moment.html",
+      "button": "exampleStationary",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "-8.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "realOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.000000 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "gradient_first_moment.html",
+      "button": "examplePosition",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "-8.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.214018"
+        },
+        {
+          "id": "realOutput",
+          "text": "0.977185"
+        },
+        {
+          "id": "imaginaryOutput",
+          "text": "0.212388"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "positionOutput",
+          "text": "-0.400000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 TE=6.000000 ms에서 위상 0.214018 rad, 크기 1.000000입니다. 초기 위치 항과 등속 항은 전체 표/곡선에서 따로 확인합니다."
+        }
+      ],
+      "tableRows": 301,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X01-compensation-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "response_overlap.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.323324"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.371538"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [8,10)초, 크기 1입니다. 10초의 합은 0.371538입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "response_overlap.html",
+      "button": "exampleClose",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.176135"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.224349"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [4,6)초, 크기 1입니다. 10초의 합은 0.224349입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "response_overlap.html",
+      "button": "exampleFar",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "12.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [12,14)초, 크기 1입니다. 10초의 합은 0.048215입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "response_overlap.html",
+      "button": "exampleHalf",
+      "outputs": [
+        {
+          "id": "inputOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "firstOutput",
+          "text": "0.048215"
+        },
+        {
+          "id": "secondOutput",
+          "text": "0.161662"
+        },
+        {
+          "id": "responseOutput",
+          "text": "0.209877"
+        },
+        {
+          "id": "areaOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "secondOnsetOutput",
+          "text": "8.000000"
+        },
+        {
+          "id": "status",
+          "text": "첫 입력 [2,4)초, 둘째 구간 [8,10)초, 크기 0.5입니다. 10초의 합은 0.209877입니다. 전체 면적은 표시창 밖까지 포함합니다."
+        }
+      ],
+      "tableRows": 241,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "inputGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X09-overlap-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "0.707107"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=0.707107 mN, τy=-2.121320 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-2.121320"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=0.000000 mN, τy=-2.121320 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": "exampleAligned",
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-3.000000"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.001000"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=1.000000 mN, τy=0.000000 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "magnetic_dipole_force_torque.html",
+      "button": "exampleLow",
+      "outputs": [
+        {
+          "id": "forceOutput",
+          "text": "0.707107"
+        },
+        {
+          "id": "torqueOutput",
+          "text": "-0.707107"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.707107"
+        },
+        {
+          "id": "fieldOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "momentXOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "momentZOutput",
+          "text": "0.000707"
+        },
+        {
+          "id": "status",
+          "text": "고정 μ에서 Fx=0.707107 mN, τy=-0.707107 mN·m입니다. θ와 x는 지정한 조건이며 실제 움직임이나 안전 허용 여부를 계산하지 않습니다."
+        }
+      ],
+      "tableRows": 282,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "directionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "positionGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "angleGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X16-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "gradient_second_moment.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "32.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "-0.085607"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 -0.085607 rad, 전체 위상 -0.085607 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "gradient_second_moment.html",
+      "button": "exampleCompensated",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 0.000000 rad, 전체 위상 0.000000 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "gradient_second_moment.html",
+      "button": "exampleConstant",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "32.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 0.000000 rad, 전체 위상 0.000000 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "gradient_second_moment.html",
+      "button": "exampleReverse",
+      "outputs": [
+        {
+          "id": "moment0Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment1Output",
+          "text": "0.000000"
+        },
+        {
+          "id": "moment2Output",
+          "text": "32.000000"
+        },
+        {
+          "id": "phaseOutput",
+          "text": "0.085607"
+        },
+        {
+          "id": "magnitudeOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "status",
+          "text": "관찰 종료 8.000000 ms에서 가속 위상 0.085607 rad, 전체 위상 0.085607 rad, 크기 1.000000입니다."
+        }
+      ],
+      "tableRows": 401,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gradientGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "phaseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X01-acceleration-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "phantom_rigid_distance.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "33.705003"
+        },
+        {
+          "id": "centerOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "69.282032"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-20.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(2,1) mm, 격자 128×64입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phantom_rigid_distance.html",
+      "button": "exampleTranslation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "centerOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(1,1) mm, 격자 128×128입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phantom_rigid_distance.html",
+      "button": "exampleRotation",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "centerOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(2,1) mm, 격자 128×64입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "phantom_rigid_distance.html",
+      "button": "exampleSpacing",
+      "outputs": [
+        {
+          "id": "knownOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "lengthOutput",
+          "text": "80.000000"
+        },
+        {
+          "id": "errorOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "maximumOutput",
+          "text": "33.705003"
+        },
+        {
+          "id": "centerOutput",
+          "text": "5.000000"
+        },
+        {
+          "id": "deltaUOutput",
+          "text": "69.282032"
+        },
+        {
+          "id": "deltaVOutput",
+          "text": "-40.000000"
+        },
+        {
+          "id": "status",
+          "text": "선택 A=r2c0, B=r2c4입니다. Pixel Spacing (행,열)=(1,1) mm, 격자 128×128입니다. 각 점은 움직여도 이 강체 모형의 물리 길이는 같습니다."
+        }
+      ],
+      "tableRows": 25,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "gridGraphic",
+          "width": 313,
+          "height": 278.21875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X17-rigid-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "induced_dipole_energy.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "status",
+          "text": "B0=3 T에서 현재 모멘트 3.000000 mA·m², 힘 3.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "induced_dipole_energy.html",
+      "button": "exampleEqual",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-0.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "status",
+          "text": "B0=1 T에서 현재 모멘트 1.000000 mA·m², 힘 1.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "induced_dipole_energy.html",
+      "button": "exampleFixed",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-3.000000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "status",
+          "text": "B0=3 T에서 현재 모멘트 1.000000 mA·m², 힘 1.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "induced_dipole_energy.html",
+      "button": "exampleUniform",
+      "outputs": [
+        {
+          "id": "momentOutput",
+          "text": "3.000000"
+        },
+        {
+          "id": "forceOutput",
+          "text": "0.000000"
+        },
+        {
+          "id": "energyOutput",
+          "text": "-4.500000"
+        },
+        {
+          "id": "areaOutput",
+          "text": "4.500000"
+        },
+        {
+          "id": "status",
+          "text": "B0=3 T에서 현재 모멘트 3.000000 mA·m², 힘 0.000000 mN입니다. Ueff는 각 모형의 0 T를 기준으로 한 기계적 유효 위치 에너지입니다."
+        }
+      ],
+      "tableRows": 161,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "momentGraphic",
+          "width": 313,
+          "height": 147.796875
+        },
+        {
+          "id": "energyGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X16-induced-physics.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "label_train_arrival.html",
+      "button": null,
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "status",
+          "text": "t=2.000000초에서 도달 분율 1.000000, 남은 차이량 0.398011입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 313,
+          "height": 113.015625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_train_arrival.html",
+      "button": "exampleComplete",
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "2.000000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.398011"
+        },
+        {
+          "id": "status",
+          "text": "t=2.000000초에서 도달 분율 1.000000, 남은 차이량 0.398011입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 313,
+          "height": 113.015625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_train_arrival.html",
+      "button": "exampleEarly",
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "0.500000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.314167"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "1.500000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.544016"
+        },
+        {
+          "id": "status",
+          "text": "t=1.000000초에서 도달 분율 0.500000, 남은 차이량 0.314167입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 313,
+          "height": 113.015625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "label_train_arrival.html",
+      "button": "exampleShort",
+      "outputs": [
+        {
+          "id": "releasedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "arrivedOutput",
+          "text": "1.000000"
+        },
+        {
+          "id": "remainingOutput",
+          "text": "0.336323"
+        },
+        {
+          "id": "peakTimeOutput",
+          "text": "1.500000"
+        },
+        {
+          "id": "peakOutput",
+          "text": "0.459699"
+        },
+        {
+          "id": "status",
+          "text": "t=2.000000초에서 도달 분율 1.000000, 남은 차이량 0.336323입니다. 전체 초기 차이량은 1, 각 packet의 T1 시계는 방출부터입니다."
+        }
+      ],
+      "tableRows": 201,
+      "overflow": false,
+      "graphics": [
+        {
+          "id": "timingGraphic",
+          "width": 313,
+          "height": 113.015625
+        },
+        {
+          "id": "responseGraphic",
+          "width": 313,
+          "height": 147.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "X08-train-physics.html",
+      "report": true
+    },
+    {
+      "width": 1920,
+      "file": "W89-relaxation-clarity.html",
+      "report": true
+    },
+    {
+      "width": 390,
+      "file": "W89-relaxation-clarity.html",
+      "report": true
+    }
+  ]
+}

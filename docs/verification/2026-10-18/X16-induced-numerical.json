@@ -1,0 +1,24 @@
+{
+  "conditions": 8,
+  "fieldPoints": 1288,
+  "max": {
+    "momentAm2": 0,
+    "energyJ": 2.6020852139652106e-18,
+    "forceN": 2.789348613196907e-14,
+    "quadratureConvergence": 1.951563910473908e-18,
+    "derivativeConvergence": 3.903127820947816e-14,
+    "minimumEnergyJ": 2.6020852139652106e-18,
+    "minimumMomentAm2": 6.609554310116339e-11
+  },
+  "tolerance": {
+    "momentAm2": 1e-12,
+    "energyJ": 1e-12,
+    "forceN": 1e-10,
+    "quadratureConvergence": 1e-12,
+    "derivativeConvergence": 1e-10,
+    "minimumEnergyJ": 1e-12,
+    "minimumMomentAm2": 1e-10
+  },
+  "failed": [],
+  "passed": true
+}

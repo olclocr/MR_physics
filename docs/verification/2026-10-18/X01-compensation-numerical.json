@@ -1,0 +1,27 @@
+{
+  "conditions": 36,
+  "curvePoints": 10836,
+  "max": {
+    "phase": 3.559375016948252e-13,
+    "complex": 2.1746493494845254e-13,
+    "positionMm": 4.807265696626928e-13,
+    "moment0": 3.4728350837426314e-19,
+    "moment1": 7.230867179291915e-22,
+    "norm": 2.220446049250313e-16,
+    "convergence": 1.0811074258043618e-12
+  },
+  "range": {
+    "phaseAbs": 1.6051331398013553
+  },
+  "tolerance": {
+    "phase": 1e-8,
+    "complex": 1e-8,
+    "positionMm": 1e-8,
+    "moment0": 1e-14,
+    "moment1": 1e-14,
+    "norm": 1e-10,
+    "convergence": 1e-8
+  },
+  "failed": [],
+  "passed": true
+}

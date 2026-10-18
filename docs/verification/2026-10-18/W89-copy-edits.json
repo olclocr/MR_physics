@@ -1,0 +1,33 @@
+{
+  "scope": "Two static phrases and one explanatory feedback literal only; all calculation/markup and numerical model settings preserved",
+  "files": [
+    {
+      "path": "docs/linear_field_correction.html",
+      "beforeSha256": "92285B8F10C841A60126E317C4F1209D00674DE020E5C27EE7B564A1F5C4D239",
+      "afterSha256": "B1F258AA9B72F055311F745155FF3A7EAC9D2A0CB654AFBEE2A8AE84EFA4208C",
+      "edits": [
+        {
+          "kind": "observation-time",
+          "before": "여기 후 관찰 시간을 TE라고 부르며",
+          "after": "이후 관찰 시간을 TE라고 부르며",
+          "beforeOffset": 1767,
+          "afterOffset": 1767
+        },
+        {
+          "kind": "correct-answer",
+          "before": "이번 잡음 없는 직선 field와 이완 0 가정 안에서 성립한다",
+          "after": "이번 잡음 없는 직선 field와 이완 효과를 제외한 가정에서 성립한다",
+          "beforeOffset": 6401,
+          "afterOffset": 6399
+        },
+        {
+          "kind": "feedback",
+          "before": "맞습니다. 이 결과는 알려진 직선 field·정확한 보정·이완/잡음0에 한정합니다.",
+          "after": "맞습니다. 이 결과는 알려진 직선 field·정확한 보정·이완 효과 제외/잡음0에 한정합니다.",
+          "beforeOffset": 12063,
+          "afterOffset": 12065
+        }
+      ]
+    }
+  ]
+}
